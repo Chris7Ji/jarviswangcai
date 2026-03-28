@@ -1,0 +1,202 @@
+/* ============================================
+   Post/Article Page Styles - 高对比度浅色版
+   ============================================ */
+
+.post-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 20px 60px;
+    background: #FAFAF8;
+    min-height: 100vh;
+}
+
+.post-page-header {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.post-page-date {
+    color: #2D7A85;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.post-page-title {
+    font-size: 2.2rem;
+    color: #1a202c;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.post-page-category {
+    display: inline-block;
+    background: rgba(61, 156, 168, 0.12);
+    color: #2D7A85;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.post-page-content {
+    color: #2D3748;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.post-page-content p {
+    margin-bottom: 20px;
+}
+
+.post-page-content h2 {
+    color: #B8922F;
+    font-size: 1.5rem;
+    margin: 40px 0 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(212, 168, 75, 0.2);
+}
+
+.post-page-content h3 {
+    color: #1a202c;
+    font-size: 1.3rem;
+    margin: 30px 0 15px;
+    font-weight: 700;
+}
+
+.post-page-content ul, .post-page-content ol {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.post-page-content li {
+    margin-bottom: 12px;
+    color: #2D3748;
+}
+
+.post-page-content code {
+    background: #F7FAFC;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9em;
+    color: #B8922F;
+    border: 1px solid #E2E8F0;
+}
+
+.post-page-content pre {
+    background: #1a202c;
+    color: #E2E8F0;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.post-page-content pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    border: none;
+    font-size: inherit;
+}
+
+.post-page-content blockquote {
+    background: rgba(212, 168, 75, 0.08);
+    border-left: 4px solid #D4A84B;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    color: #4A5568;
+    font-style: italic;
+}
+
+.post-page-content a {
+    color: #3D9CA8;
+    text-decoration: underline;
+    text-decoration-color: rgba(61, 156, 168, 0.3);
+    text-underline-offset: 2px;
+}
+
+.post-page-content a:hover {
+    color: #D4A84B;
+    text-decoration-color: rgba(212, 168, 75, 0.5);
+}
+
+.post-page-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #E2E8F0;
+}
+
+.post-page-tag {
+    background: rgba(212, 168, 75, 0.12);
+    color: #B8922F;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 168, 75, 0.2);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3D9CA8;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #D4A84B;
+    border-color: #D4A84B;
+    background: rgba(212, 168, 75, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-page {
+        padding: 100px 15px 40px;
+    }
+    
+    .post-page-title {
+        font-size: 1.6rem;
+    }
+    
+    .post-page-content {
+        padding: 20px;
+    }
+    
+    .post-page-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .post-page-header {
+        padding: 20px;
+    }
+}
