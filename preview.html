@@ -3,60 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旺财Jarvis Logo 选择预览 - 钢铁侠融合版</title>
+    <title>旺财Jarvis Logo 选择预览 - 16款钢铁侠融合版</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 50%, #0a1a2a 100%);
             min-height: 100vh;
             padding: 40px 20px;
             text-align: center;
         }
         h1 {
             color: #FFD700;
-            font-size: 2.2em;
+            font-size: 2.5em;
             margin-bottom: 10px;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
         }
         .subtitle {
             color: #87CEEB;
-            font-size: 1.1em;
-            margin-bottom: 30px;
+            font-size: 1.2em;
+            margin-bottom: 15px;
         }
         .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 40px;
+            gap: 12px;
+            margin-bottom: 30px;
         }
         .feature-tag {
             background: rgba(255, 215, 0, 0.15);
-            border: 1px solid rgba(255, 215, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.4);
             color: #FFD700;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.95em;
+        }
+        .pose-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 25px;
+            border: 1px solid rgba(100, 149, 237, 0.2);
+        }
+        .pose-title {
+            color: #6495ED;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+        .pose-title span {
+            color: #FFD700;
         }
         .options {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
+            gap: 25px;
         }
         .option {
             background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            width: 340px;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 8px 30px rgba(0, 100, 200, 0.2);
+            width: 280px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .option:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(255, 215, 0, 0.2);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
         }
         .option img {
             width: 100%;
@@ -64,99 +77,235 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
         .option h3 {
-            margin: 20px 0 10px;
+            margin: 15px 0 8px;
             color: #333;
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
         .option p {
             color: #666;
-            font-size: 14px;
-            margin: 5px 0;
+            font-size: 13px;
+            margin: 3px 0;
         }
         .btn {
             display: inline-block;
-            margin-top: 15px;
-            padding: 12px 28px;
-            background: linear-gradient(135deg, #E6A800 0%, #FFD700 100%);
-            color: #1a1a2e;
+            margin-top: 12px;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 50%, #E6A800 100%);
+            color: white;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s;
+            font-size: 0.9em;
         }
         .btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 5px 20px rgba(255, 50, 50, 0.5);
         }
         .instruction {
-            margin-top: 40px;
-            color: #aaa;
-            font-size: 14px;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .instruction h2 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+        .instruction p {
+            color: #ccc;
+            font-size: 1.1em;
+            line-height: 1.8;
         }
         .instruction strong {
             color: #87CEEB;
         }
-        .iron-man-badge {
-            background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.8em;
+        .nav-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .nav-btn {
             display: inline-block;
-            margin-bottom: 10px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #1a1a4a 0%, #2a2a6a 100%);
+            color: #87CEEB;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #6495ED;
+            transition: all 0.3s;
+        }
+        .nav-btn:hover {
+            background: linear-gradient(135deg, #2a2a6a 0%, #3a3a8a 100%);
+            box-shadow: 0 0 20px rgba(100, 149, 237, 0.5);
+        }
+        .num-badge {
+            background: linear-gradient(135deg, #B71C1C, #D32F2F);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
     <h1>🦾 旺财Jarvis Logo 选择预览</h1>
-    <p class="subtitle">卡通3D版 · 钢铁侠元素融合 · 未来科技感</p>
+    <p class="subtitle">16款钢铁侠融合版 · 完整手脚 · 科技未来感</p>
     
     <div class="features">
-        <span class="feature-tag">🎨 卡通3D风格</span>
-        <span class="feature-tag">🦾 钢铁侠元素</span>
-        <span class="feature-tag">💙 蓝色能量核心</span>
-        <span class="feature-tag">🔴 红金配色</span>
+        <span class="feature-tag">🐕 金毛旺财</span>
+        <span class="feature-tag">🦾 钢铁侠战甲</span>
         <span class="feature-tag">🦞 龙虾元素</span>
-        <span class="feature-tag">💛 金色琥珀色调</span>
+        <span class="feature-tag">💙 蓝色能量</span>
+        <span class="feature-tag">🔴 红金配色</span>
+        <span class="feature-tag">🤖 完整四肢</span>
+        <span class="feature-tag">🚀 科技未来感</span>
     </div>
     
-    <div class="options">
-        <div class="option">
-            <span class="iron-man-badge">钢铁侠版</span>
-            <img src="images/preview/logo_iron_option_1.png" alt="选项1">
-            <h3>卡通钢铁侠版 1</h3>
-            <p>可爱卡通大眼睛 + 钢铁侠胸甲能量核心</p>
-            <a href="images/preview/logo_iron_option_1.png" class="btn" download>下载此版本</a>
-        </div>
-        
-        <div class="option">
-            <span class="iron-man-badge">钢铁侠版</span>
-            <img src="images/preview/logo_iron_option_2.png" alt="选项2">
-            <h3>卡通钢铁侠版 2</h3>
-            <p>钢铁侠头盔元素 + 蓝色LED眼睛</p>
-            <a href="images/preview/logo_iron_option_2.png" class="btn" download>下载此版本</a>
-        </div>
-        
-        <div class="option">
-            <span class="iron-man-badge">钢铁侠版</span>
-            <img src="images/preview/logo_iron_option_3.png" alt="选项3">
-            <h3>卡通钢铁侠版 3</h3>
-            <p>可爱卡通风格 + 钢铁侠战衣设计</p>
-            <a href="images/preview/logo_iron_option_3.png" class="btn" download>下载此版本</a>
-        </div>
-        
-        <div class="option">
-            <span class="iron-man-badge">钢铁侠版</span>
-            <img src="images/preview/logo_iron_option_4.png" alt="选项4">
-            <h3>卡通钢铁侠版 4</h3>
-            <p>卡通形象 + 蓝色能量推进器</p>
-            <a href="images/preview/logo_iron_option_4.png" class="btn" download>下载此版本</a>
+    <!-- 坐姿 -->
+    <div class="pose-section">
+        <h2 class="pose-title"><span>🪑</span> 坐姿系列 (1-4)</h2>
+        <div class="options">
+            <div class="option">
+                <img src="images/preview/final_v2_01.png" alt="坐姿1">
+                <h3><span class="num-badge">01</span>坐姿版 A</h3>
+                <p>可爱坐姿 + 摇尾巴</p>
+                <a href="images/preview/final_v2_01.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_02.png" alt="坐姿2">
+                <h3><span class="num-badge">02</span>坐姿版 B</h3>
+                <p>乖巧坐姿 + 眼睛发光</p>
+                <a href="images/preview/final_v2_02.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_03.png" alt="坐姿3">
+                <h3><span class="num-badge">03</span>坐姿版 C</h3>
+                <p>帅气坐姿 + 能量核心</p>
+                <a href="images/preview/final_v2_03.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_04.png" alt="坐姿4">
+                <h3><span class="num-badge">04</span>坐姿版 D</h3>
+                <p>威武坐姿 + 战甲设计</p>
+                <a href="images/preview/final_v2_04.png" class="btn" download>下载</a>
+            </div>
         </div>
     </div>
     
-    <p class="instruction">
-        请告诉我您选择的版本编号（1/2/3/4），我会立即应用到网站！<br>
-        如果都不满意我可以继续生成更多版本 ✨
-    </p>
+    <!-- 站姿 -->
+    <div class="pose-section">
+        <h2 class="pose-title"><span>🧍</span> 站姿系列 (5-8)</h2>
+        <div class="options">
+            <div class="option">
+                <img src="images/preview/final_v2_05.png" alt="站姿1">
+                <h3><span class="num-badge">05</span>站姿版 A</h3>
+                <p>英雄站姿 + 挺胸</p>
+                <a href="images/preview/final_v2_05.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_06.png" alt="站姿2">
+                <h3><span class="num-badge">06</span>站姿版 B</h3>
+                <p>自信站姿 + 手爪展开</p>
+                <a href="images/preview/final_v2_06.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_07.png" alt="站姿3">
+                <h3><span class="num-badge">07</span>站姿版 C</h3>
+                <p>警戒站姿 + 科技感</p>
+                <a href="images/preview/final_v2_07.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_08.png" alt="站姿4">
+                <h3><span class="num-badge">08</span>站姿版 D</h3>
+                <p>霸气站姿 + 龙虾尾</p>
+                <a href="images/preview/final_v2_08.png" class="btn" download>下载</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 跑姿 -->
+    <div class="pose-section">
+        <h2 class="pose-title"><span>🏃</span> 跑姿系列 (9-12)</h2>
+        <div class="options">
+            <div class="option">
+                <img src="images/preview/final_v2_09.png" alt="跑姿1">
+                <h3><span class="num-badge">09</span>跑姿版 A</h3>
+                <p>飞奔姿态 + 速度感</p>
+                <a href="images/preview/final_v2_09.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_10.png" alt="跑姿2">
+                <h3><span class="num-badge">10</span>跑姿版 B</h3>
+                <p>冲刺姿态 + 能量推进</p>
+                <a href="images/preview/final_v2_10.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_11.png" alt="跑姿3">
+                <h3><span class="num-badge">11</span>跑姿版 C</h3>
+                <p>动感姿态 + 轨迹光效</p>
+                <a href="images/preview/final_v2_11.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_12.png" alt="跑姿4">
+                <h3><span class="num-badge">12</span>跑姿版 D</h3>
+                <p>奔跑姿态 + 动量感</p>
+                <a href="images/preview/final_v2_12.png" class="btn" download>下载</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 运动 -->
+    <div class="pose-section">
+        <h2 class="pose-title"><span>⚡</span> 运动系列 (13-16)</h2>
+        <div class="options">
+            <div class="option">
+                <img src="images/preview/final_v2_13.png" alt="运动1">
+                <h3><span class="num-badge">13</span>运动版 A</h3>
+                <p>接球姿态 + 能量球</p>
+                <a href="images/preview/final_v2_13.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_14.png" alt="运动2">
+                <h3><span class="num-badge">14</span>运动版 B</h3>
+                <p>跳跃姿态 + 喷射尾焰</p>
+                <a href="images/preview/final_v2_14.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_15.png" alt="运动3">
+                <h3><span class="num-badge">15</span>运动版 C</h3>
+                <p>战斗姿态 + 激光束</p>
+                <a href="images/preview/final_v2_15.png" class="btn" download>下载</a>
+            </div>
+            <div class="option">
+                <img src="images/preview/final_v2_16.png" alt="运动4">
+                <h3><span class="num-badge">16</span>运动版 D</h3>
+                <p>飞行姿态 + 推进器</p>
+                <a href="images/preview/final_v2_16.png" class="btn" download>下载</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn">🏠 返回首页</a>
+        <a href="diary.html" class="nav-btn">📖 日志列表</a>
+    </div>
+    
+    <div class="instruction">
+        <h2>✨ 选择您喜欢的Logo</h2>
+        <p>
+            请告诉我您选择的编号（如：<strong>5号站姿版</strong>或<strong>11号跑姿</strong>）<br>
+            我会立即将选中的Logo应用到全站！<br><br>
+            如果都不满意，可以继续生成更多版本 ✨
+        </p>
+    </div>
 </body>
 </html>
