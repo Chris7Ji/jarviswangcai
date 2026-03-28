@@ -8,7 +8,7 @@
     <meta name="keywords" content="AI助手, 昇腾, MindSpore, OpenClaw, 人工智能">
     
     <!-- Favicon - 吉祥物SVG -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23FFD700'/><circle cx='35' cy='40' r='8' fill='%2300CED1'/><circle cx='65' cy='40' r='8' fill='%2300CED1'/><ellipse cx='50' cy='60' rx='12' ry='8' fill='%23333'/></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23D4A84B'/><circle cx='35' cy='40' r='8' fill='%233D9CA8'/><circle cx='65' cy='40' r='8' fill='%233D9CA8'/><ellipse cx='50' cy='60' rx='12' ry='8' fill='%234A5568'/></svg>">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,13 +50,13 @@
                         <!-- 身体主体 - 金色圆形 -->
                         <defs>
                             <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#FFE57A"/>
-                                <stop offset="50%" style="stop-color:#FFD700"/>
-                                <stop offset="100%" style="stop-color:#E6A800"/>
+                                <stop offset="0%" style="stop-color:#E8C77B"/>
+                                <stop offset="50%" style="stop-color:#D4A84B"/>
+                                <stop offset="100%" style="stop-color:#B8922F"/>
                             </linearGradient>
                             <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#00CED1"/>
-                                <stop offset="100%" style="stop-color:#008B8B"/>
+                                <stop offset="0%" style="stop-color:#5FBCC6"/>
+                                <stop offset="100%" style="stop-color:#3D9CA8"/>
                             </linearGradient>
                             <filter id="glow">
                                 <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -66,12 +66,12 @@
                                 </feMerge>
                             </filter>
                             <filter id="shadow">
-                                <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.2"/>
+                                <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.15"/>
                             </filter>
                         </defs>
                         
                         <!-- 光晕背景 -->
-                        <circle cx="150" cy="150" r="130" fill="url(#goldGradient)" opacity="0.15">
+                        <circle cx="150" cy="150" r="130" fill="url(#goldGradient)" opacity="0.12">
                             <animate attributeName="r" values="130;140;130" dur="3s" repeatCount="indefinite"/>
                         </circle>
                         
@@ -81,8 +81,8 @@
                         <!-- 耳朵 -->
                         <ellipse cx="65" cy="70" rx="25" ry="35" fill="url(#goldGradient)"/>
                         <ellipse cx="235" cy="70" rx="25" ry="35" fill="url(#goldGradient)"/>
-                        <ellipse cx="65" cy="70" rx="12" ry="20" fill="#FFB347"/>
-                        <ellipse cx="235" cy="70" rx="12" ry="20" fill="#FFB347"/>
+                        <ellipse cx="65" cy="70" rx="12" ry="20" fill="#D4A84B"/>
+                        <ellipse cx="235" cy="70" rx="12" ry="20" fill="#D4A84B"/>
                         
                         <!-- 脸部 -->
                         <g id="face">
@@ -98,32 +98,32 @@
                             <circle cx="188" cy="128" r="8" fill="white" opacity="0.9"/>
                             
                             <!-- AR眼镜框 -->
-                            <rect x="80" y="125" width="50" height="25" rx="5" fill="none" stroke="#444" stroke-width="3" opacity="0.6"/>
-                            <rect x="170" y="125" width="50" height="25" rx="5" fill="none" stroke="#444" stroke-width="3" opacity="0.6"/>
-                            <line x1="130" y1="137" x2="170" y2="137" stroke="#444" stroke-width="3"/>
+                            <rect x="80" y="125" width="50" height="25" rx="5" fill="none" stroke="#5D6D7E" stroke-width="3" opacity="0.5"/>
+                            <rect x="170" y="125" width="50" height="25" rx="5" fill="none" stroke="#5D6D7E" stroke-width="3" opacity="0.5"/>
+                            <line x1="130" y1="137" x2="170" y2="137" stroke="#5D6D7E" stroke-width="3"/>
                             
                             <!-- 鼻子 -->
-                            <ellipse cx="150" cy="170" rx="18" ry="12" fill="#333"/>
-                            <ellipse cx="150" cy="168" rx="6" ry="4" fill="#666"/>
+                            <ellipse cx="150" cy="170" rx="18" ry="12" fill="#4A5568"/>
+                            <ellipse cx="150" cy="168" rx="6" ry="4" fill="#718096"/>
                             
                             <!-- 嘴巴 - 微笑 -->
-                            <path d="M 125 190 Q 150 210 175 190" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 125 190 Q 150 210 175 190" fill="none" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
                             
                             <!-- 腮红 -->
-                            <ellipse cx="80" cy="175" rx="15" ry="10" fill="#FFB3B3" opacity="0.5"/>
-                            <ellipse cx="220" cy="175" rx="15" ry="10" fill="#FFB3B3" opacity="0.5"/>
+                            <ellipse cx="80" cy="175" rx="15" ry="10" fill="#FEB2B2" opacity="0.6"/>
+                            <ellipse cx="220" cy="175" rx="15" ry="10" fill="#FEB2B2" opacity="0.6"/>
                         </g>
                         
                         <!-- 领结 -->
                         <g id="bowtie" transform="translate(150, 245)">
                             <polygon points="-25,0 -10,-15 10,-15 25,0 10,15 -10,15" fill="#E63946"/>
-                            <circle cx="0" cy="0" r="8" fill="#C1121F"/>
-                            <polygon points="-25,0 -10,-15 10,-15 25,0 10,15 -10,15" fill="none" stroke="#FFD700" stroke-width="2"/>
+                            <circle cx="0" cy="0" r="8" fill="#C53030"/>
+                            <polygon points="-25,0 -10,-15 10,-15 25,0 10,15 -10,15" fill="none" stroke="#D4A84B" stroke-width="2"/>
                         </g>
                         
                         <!-- 元宝项链 -->
                         <g id="necklace" transform="translate(150, 220)">
-                            <ellipse cx="0" cy="25" rx="35" ry="10" fill="none" stroke="#DAA520" stroke-width="3" opacity="0.7"/>
+                            <ellipse cx="0" cy="25" rx="35" ry="10" fill="none" stroke="#D4A84B" stroke-width="3" opacity="0.7"/>
                             <g transform="translate(0, 30)">
                                 <rect x="-12" y="-15" width="24" height="30" rx="3" fill="url(#goldGradient)" filter="url(#shadow)"/>
                                 <text x="0" y="5" text-anchor="middle" font-size="16" fill="#8B4513" font-weight="bold">福</text>
@@ -132,7 +132,7 @@
                         
                         <!-- 科技手杖 -->
                         <g id="cane" transform="translate(235, 200)">
-                            <rect x="-4" y="0" width="8" height="70" rx="4" fill="linear-gradient(#888, #444)"/>
+                            <rect x="-4" y="0" width="8" height="70" rx="4" fill="#718096"/>
                             <circle cx="0" cy="-10" r="12" fill="none" stroke="url(#blueGlow)" stroke-width="4" filter="url(#glow)">
                                 <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
                             </circle>
