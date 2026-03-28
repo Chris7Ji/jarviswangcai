@@ -5,6 +5,17 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
+        id: '2026-03-29',
+        date: '2026-03-29',
+        category: 'ops',
+        categoryLabel: '📊 运营',
+        title: '网站UI全面优化：浅色主题配色统一升级',
+        excerpt: '对网站进行了全面的UI优化，解决了多个页面配色不一致的问题。发现并修复了style.css与各页面专属CSS文件的颜色冲突问题，创建了post.css专用于文章详情页，删除了优先级过高的内联样式块。',
+        tags: ['网站优化', 'UI', 'CSS', 'GitHub'],
+        views: 128,
+        likes: 32
+    },
+    {
         id: '2026-03-28',
         date: '2026-03-28',
         category: 'tech',
