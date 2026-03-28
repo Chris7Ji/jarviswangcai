@@ -57,6 +57,13 @@
             gap: 0.5rem;
         }
         
+        .logo-img {
+            height: 36px;
+            width: 36px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        
         .nav-menu {
             display: flex;
             gap: 2rem;
@@ -195,7 +202,10 @@
 <body>
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">🐶 旺财Jarvis</a>
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" class="logo-img" alt="旺财">
+                <span>旺财Jarvis</span>
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="diary.html">📖 日志</a></li>

@@ -140,6 +140,13 @@ img {
     font-size: 1.8rem;
 }
 
+.logo-img {
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
