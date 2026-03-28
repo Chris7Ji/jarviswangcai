@@ -42,114 +42,13 @@
     margin: 0 auto;
 }
 
-.avatar-ring {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 3px solid transparent;
-    border-top-color: #D4A84B;
-    border-bottom-color: #3D9CA8;
-    border-radius: 50%;
-    animation: rotate 3s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.avatar-body {
+.mascot-photo {
     width: 100%;
     height: 100%;
-    background: linear-gradient(145deg, #D4A84B, #B8922F);
+    object-fit: cover;
     border-radius: 50%;
-    position: relative;
     box-shadow: 0 8px 30px rgba(212, 168, 75, 0.35);
 }
-
-.avatar-face {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-}
-
-.avatar-eyes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 15px;
-}
-
-.avatar-eye {
-    width: 30px;
-    height: 30px;
-    background: linear-gradient(180deg, #5FBCC6, #3D9CA8);
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0 0 15px rgba(61, 156, 168, 0.5);
-}
-
-.avatar-eye::after {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-}
-
-.avatar-nose {
-    width: 20px;
-    height: 14px;
-    background: #2D3748;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.avatar-mouth {
-    width: 40px;
-    height: 14px;
-    border-bottom: 2px solid #2D3748;
-    border-radius: 0 0 20px 20px;
-    margin: 4px auto 0;
-}
-
-.avatar-accessories {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.avatar-bowtie {
-    width: 25px;
-    height: 15px;
-    background: #E63946;
-    clip-path: polygon(0 50%, 35% 0, 35% 100%, 65% 0, 65% 100%, 100% 50%, 65% 100%, 65% 0, 35% 100%, 35% 0);
-}
-
-.avatar-ingot {
-    width: 20px;
-    height: 25px;
-    background: linear-gradient(145deg, #D4A84B, #B8922F);
-    border-radius: 3px 3px 6px 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.avatar-cane {
-    width: 4px;
-    height: 40px;
-    background: linear-gradient(180deg, #718096, #4A5568);
-    border-radius: 2px;
-    transform: rotate(-10deg);
 }
 
 .about-intro h1 {
