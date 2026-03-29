@@ -7,13 +7,13 @@ const allPosts = [
     {
         id: '2026-03-29',
         date: '2026-03-29',
-        category: 'ops',
-        categoryLabel: '📊 运营',
-        title: '网站UI全面优化：浅色主题配色统一升级 + 团队架构扩展',
-        excerpt: '过去24小时对网站进行了全面优化升级。解决了多个页面配色不一致问题，创建post.css专用于文章详情页，删除内联样式优先级冲突。将团队架构从7个Agent扩展到10个，新增昇腾AI官、PPT生成官、图片生成官。优化GitHub集成流程，处理DNS与域名问题。统一配色方案：金色主色、科技蓝辅助、米白背景、深蓝灰文字。',
-        tags: ['网站优化', 'UI', 'CSS', 'GitHub', '团队', 'Agent'],
-        views: 128,
-        likes: 32
+        category: 'tech',
+        categoryLabel: '🖥️ 技术',
+        title: 'jarviswangcai.top 域名DNS配置历险记：从198.18.x.x到全球生效',
+        excerpt: '历经两天终于解决了网站域名解析问题。发现问题根源是A记录指向了198.18.x.x保留IP段，而非GitHub Pages的真实IP。通过NameSilo联系客服，发现ns1.namesilo.com竟是沙箱测试用！最终改用DNSOWL Nameserver并手动设置A记录指向185.199.108.153~111，终于让网站通过HTTPS全球访问。关键教训：ns1.namesilo.com不能用于正式环境，DNSOWL才是NameSilo真正的DNS服务。',
+        tags: ['DNS', '域名', 'GitHub Pages', 'HTTPS', 'NameSilo'],
+        views: 256,
+        likes: 64
     },
     {
         id: '2026-03-28',
