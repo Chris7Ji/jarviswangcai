@@ -162,6 +162,7 @@ const loadMoreContainer = document.getElementById('loadMoreContainer');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
+    if (!document.getElementById('postsContainer')) return; // 首页不需要执行diary.js的UI逻辑
     initNavigation();
     renderTimeline();
     renderPosts();
