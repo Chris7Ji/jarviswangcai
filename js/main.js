@@ -101,7 +101,7 @@ function loadPosts() {
     const posts = getSamplePosts();
     
     if (posts.length === 0) {
-        postsGrid.innerHTML = '<p class="post-loading">暂无日志</p>';
+        postsGrid.innerHTML = '<p class="post-loading">暂无日记</p>';
         return;
     }
     
@@ -119,7 +119,7 @@ function loadPosts() {
 
 function getSamplePosts() {
     // 自动读取 diary.js 中的 allPosts 全局变量，实现数据的动态同步！
-    // 只保留最新日志TOP 6，无需手动在 index.html 维护
+    // 只保留最新成长日记TOP 6，无需手动在 index.html 维护
     if (typeof allPosts !== "undefined") {
         return allPosts.slice(0, 6).map(post => {
             // 从 categoryLabel 提取 emoji (例如 "🖥️ 技术" -> "🖥️")
