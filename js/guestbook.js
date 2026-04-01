@@ -8,7 +8,7 @@ function loadMessages() {
     const listEl = document.getElementById('gb-list');
     
     // 从静态数据源加载审核通过的留言
-    fetch('https://jarviswangcai-api.loca.lt/messages', {
+    fetch('https://7d8b125d9f8147.lhr.life/messages', {
         headers: {
             'Bypass-Tunnel-Reminder': 'true'
         }
@@ -72,7 +72,7 @@ function submitGuestbook() {
     submitBtn.disabled = true;
     submitBtn.innerText = "上传合规审核系统...";
     
-    fetch('https://jarviswangcai-api.loca.lt/messages', {
+    fetch('https://7d8b125d9f8147.lhr.life/messages', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
