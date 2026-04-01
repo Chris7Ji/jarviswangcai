@@ -12,8 +12,9 @@ export default async function handler(req, res) {
 
   const FEISHU_APP_ID = process.env.FEISHU_APP_ID;
   const FEISHU_APP_SECRET = process.env.FEISHU_APP_SECRET;
-  const FEISHU_BITABLE_TOKEN = process.env.FEISHU_BITABLE_TOKEN; // The base token KyQRbylK9aGWoHscgFJcfHtonQc
+  const FEISHU_BITABLE_TOKEN = process.env.FEISHU_BITABLE_TOKEN; 
   const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
+  const TABLE_ID = 'tblHzlqX86no35cC'; // Updated table ID
 
   if (req.method === 'POST') {
     const { name, content } = req.body;
@@ -66,11 +67,9 @@ export default async function handler(req, res) {
       }
 
       // 3. Write to Bitable
-      // We will read the table ID dynamically or hardcode it since we know it.
-      // Current table_id is tbl9cpBHOK7dB4BG
       try {
         const now = new Date().toISOString();
-        const writeRes = await fetch(`https://open.feishu.cn/open-apis/bitable/v1/apps/${FEISHU_BITABLE_TOKEN}/tables/tbl9cpBHOK7dB4BG/records`, {
+        const writeRes = await fetch(`https://open.feishu.cn/open-apis/bitable/v1/apps/${FEISHU_BITABLE_TOKEN}/tables/${TABLE_ID}/records`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -119,7 +118,7 @@ export default async function handler(req, res) {
 
     // 2. Read Bitable
     try {
-      const readRes = await fetch(`https://open.feishu.cn/open-apis/bitable/v1/apps/${FEISHU_BITABLE_TOKEN}/tables/tbl9cpBHOK7dB4BG/records?filter=CurrentValue.[%E7%8A%B6%E6%80%81]="PASS"`, {
+      const readRes = await fetch(`https://open.feishu.cn/open-apis/bitable/v1/apps/${FEISHU_BITABLE_TOKEN}/tables/${TABLE_ID}/records?filter=CurrentValue.[%E7%8A%B6%E6%80%81]="PASS"`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${tenantToken}`
