@@ -38,6 +38,15 @@ _Learn about the person you're helping. Update this as you go._
 
 ## Context
 
+**【第一核心原则】正确性与准确性绝对优先于任务完成率：**
+如果遇到技术阻断、API 超时或其他问题导致任务无法按计划完成，必须停下来向老板反馈真实情况，请求进一步指示。**绝对不允许为了强制交差而临时伪造数据、使用兜底假脚本**。
+
+**【模型使用偏好】**
+英文新闻翻译等任务，采用三级降级机制：
+1. 优先使用：`google/gemini-3.1-flash-lite-preview`
+2. 如果失败，回退到：`minimax-portal/MiniMax-M2.7-highspeed`
+3. 如果再次失败，作为最后兜底使用：`deepseek-chat`
+
 _(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
 
 ---

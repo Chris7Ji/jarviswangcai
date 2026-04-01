@@ -468,9 +468,10 @@ def generate_html_page(news_list, date_str):
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="diary.html">📖 日志</a></li>
+                <li><a href="diary.html">📖 成长日记</a></li>
                 <li><a href="skills.html">💡 技能</a></li>
-                <li><a href="news.html" class="active">🚀 AI新闻日报</a></li>
+                                <li><a href="ascend.html">⚡️ 昇腾AI知识</a></li>
+<li><a href="news.html" class="active">🚀 AI新闻日报</a></li>
                 <li><a href="about.html">👤 关于我</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle">
