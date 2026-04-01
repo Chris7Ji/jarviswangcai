@@ -8,7 +8,11 @@ function loadMessages() {
     const listEl = document.getElementById('gb-list');
     
     // 从静态数据源加载审核通过的留言
-    fetch('data/messages.json?t=' + new Date().getTime())
+    fetch('https://jarviswangcai-api.loca.lt/messages', {
+        headers: {
+            'Bypass-Tunnel-Reminder': 'true'
+        }
+    })
         .then(response => response.json())
         .then(data => {
             if (!data || data.length === 0) {
@@ -68,25 +72,36 @@ function submitGuestbook() {
     submitBtn.disabled = true;
     submitBtn.innerText = "上传合规审核系统...";
     
-    // 模拟网络请求和提交过程
-    // 实际架构：这里可以通过 Formspree 或 Webhook 发送至您的后端或飞书机器人
-    // 您的后端服务器/本地Cron脚本将接收此请求，调用LLM进行合规拦截，
-    // 如果安全则写入 messages.json 并 git push。
-    
-    setTimeout(() => {
+    fetch('https://jarviswangcai-api.loca.lt/messages', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Bypass-Tunnel-Reminder': 'true'
+        },
+        body: JSON.stringify({ name: nameInput.value, content: content })
+    })
+    .then(res => res.json())
+    .then(data => {
         msgInput.value = '';
         submitBtn.disabled = false;
         submitBtn.innerText = "提交留言";
         
         statusEl.style.display = 'block';
         statusEl.style.color = '#3D9CA8';
-        statusEl.innerHTML = '✅ 提交成功！为符合中国大陆内容合规要求，您的留言已进入 <b>AI安全审核队列</b>。预计5-10分钟后完成审核并在本页公开展示。';
+        statusEl.innerHTML = '✅ 留言提交成功！已通过AI安全初审。';
         
-        // 3秒后隐藏提示
+        loadMessages(); // 实时刷新留言列表！
+        
         setTimeout(() => {
             statusEl.style.display = 'none';
-        }, 15000);
-    }, 1500);
+        }, 5000);
+    })
+    .catch(err => {
+        submitBtn.disabled = false;
+        submitBtn.innerText = "提交留言";
+        showStatus('服务器开小差了，请稍后再试', 'red');
+        console.error(err);
+    });
 }
 
 function showStatus(text, color) {
