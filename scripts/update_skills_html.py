@@ -145,6 +145,10 @@ def generate_html():
     return '\n'.join(html), total_count
 
 def update_file():
+    # 规则说明：skills.html 分为上半部分“敲黑板知识点汇总”和下半部分“已安装技能库大本营”。
+    # 本定时脚本（以及衍生的Cron任务）严格约束：只负责更新下半部分的技能库数据。
+    # 逻辑原理：脚本通过查找 <!-- 技能图例 --> 标记作为起点，保留并原样写回标记之上所有的 HTML 代码。
+    # 这样就能绝对保证以后再怎么动态更新技能列表，上方的“敲黑板知识点”文章和排版都不会受任何影响。
     with open(HTML_FILE, 'r', encoding='utf-8') as f:
         content = f.read()
     
@@ -159,11 +163,40 @@ def update_file():
     
     content = content[:legend_start] + new_main_html + content[main_end:]
     
+    # 动态统计知识点数量
+    knowledge_count = len(re.findall(r'<div class="knowledge-card"', content))
+
+    # 更新 Hero 区域的统计文案
     content = re.sub(
-        r'<span class="skill-count">\d+</span> 个技能持续为您服务',
-        f'<span class="skill-count">{total_count}</span> 个技能持续为您服务',
+        r'<p>旺财Jarvis 拥有丰富的技能生态，助力高效工作<span class="skill-count">\d+</span> 个技能持续为您服务</p>',
+        f'<p>沉淀 <span class="skill-count">{knowledge_count}</span> 篇核心知识，装载 <span class="skill-count">{total_count}</span> 项扩展技能持续为您服务</p>',
         content
     )
+    # 兼容已经被替换过的文案（防止下次正则匹配不到）
+    content = re.sub(
+        r'<p>沉淀 <span class="knowledge-count">\d+</span> 篇核心知识，装载 <span class="skill-count">\d+</span> 项扩展技能持续为您服务</p>',
+        f'<p>沉淀 <span class="skill-count">{knowledge_count}</span> 篇核心知识，装载 <span class="skill-count">{total_count}</span> 项扩展技能持续为您服务</p>',
+        content
+    )
+    content = re.sub(
+        r'<p>沉淀 <span class="skill-count">\d+</span> 篇核心知识，装载 <span class="skill-count">\d+</span> 项扩展技能持续为您服务</p>',
+        f'<p>沉淀 <span class="skill-count">{knowledge_count}</span> 篇核心知识，装载 <span class="skill-count">{total_count}</span> 项扩展技能持续为您服务</p>',
+        content
+    )
+
+    # 更新敲黑板标题的统计
+    content = re.sub(
+        r'<h2 style="font-size: 1\.8rem; color: var\(--text-primary\);">📝 敲黑板知识点汇总( \(共 <span class="knowledge-count">\d+</span> 篇\))?</h2>',
+        f'<h2 style="font-size: 1.8rem; color: var(--text-primary);">📝 敲黑板知识点汇总 (共 <span class="knowledge-count">{knowledge_count}</span> 篇)</h2>',
+        content
+    )
+
+    content = re.sub(
+        r'<h2 style="font-size: 1\.8rem; color: var\(--text-primary\);">📦 已安装技能库大本营( \(共 <span class="knowledge-count">\d+</span> 项\))?</h2>',
+        f'<h2 style="font-size: 1.8rem; color: var(--text-primary);">📦 已安装技能库大本营 (共 <span class="knowledge-count">{total_count}</span> 项)</h2>',
+        content
+    )
+
     content = re.sub(
         r'共 \d+ 个技能，持续学习进化中\.\.\.',
         f'共 {total_count} 个技能，持续学习进化中...',
