@@ -5,6 +5,17 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
+        id: '2026-04-01',
+        date: '2026-04-01',
+        category: 'tech',
+        categoryLabel: '🖥️ 技术',
+        title: '2026-04-01 工作成长日记：AI新闻管道重构与昇腾知识体系深度加餐',
+        excerpt: '今日重构了AI新闻日报收集逻辑，通过整合SerpAPI解决了LLM生成假链接的幻觉问题，并采用SMTP分批发送避开邮箱限流。重点对“昇腾AI知识”板块进行了内容扩充，重新设计了页面布局，并深度加餐重写了CANN核心解析文章（涵盖图融合、HCCL与AOE协同、算子切分等硬核技术）。',
+        tags: ['AI新闻', '管道重构', '昇腾CANN', '知识库扩充'],
+        views: 0,
+        likes: 0
+    },
+    {
         id: '2026-03-31',
         date: '2026-03-31',
         category: 'tech',
