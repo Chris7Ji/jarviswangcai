@@ -12,9 +12,9 @@ export default async function handler(req, res) {
 
   const FEISHU_APP_ID = process.env.FEISHU_APP_ID;
   const FEISHU_APP_SECRET = process.env.FEISHU_APP_SECRET;
-  const FEISHU_BITABLE_TOKEN = process.env.FEISHU_BITABLE_TOKEN; 
+  const FEISHU_BITABLE_TOKEN = 'Hkhnb9V8MaZXy7sNLO6cvh43nXG'; // Fixed Token
   const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
-  const TABLE_ID = 'tblHzlqX86no35cC'; // Updated table ID
+  const TABLE_ID = 'tblw81CXOpsT1atl'; // Fixed Table ID
 
   if (req.method === 'POST') {
     const { name, content } = req.body;
@@ -24,15 +24,19 @@ export default async function handler(req, res) {
     }
 
     try {
-      // 1. AI Review (DeepSeek)
+      // 1. AI Review (DeepSeek) with 3-second timeout
       let status = 'PASS';
       try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3000);
+        
         const aiRes = await fetch('https://api.deepseek.com/v1/chat/completions', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
           },
+          signal: controller.signal,
           body: JSON.stringify({
             model: 'deepseek-chat',
             messages: [
@@ -41,6 +45,7 @@ export default async function handler(req, res) {
             ]
           })
         });
+        clearTimeout(timeoutId);
         
         if (aiRes.ok) {
           const aiData = await aiRes.json();
@@ -48,7 +53,7 @@ export default async function handler(req, res) {
           if (decision.includes('REJECT')) status = 'REJECT';
         }
       } catch (err) {
-        console.error("AI review failed, defaulting to PASS", err);
+        console.error("AI review failed or timed out, defaulting to PASS", err);
       }
 
       // 2. Feishu Token
@@ -67,6 +72,7 @@ export default async function handler(req, res) {
       }
 
       // 3. Write to Bitable
+      let writeSuccess = false;
       try {
         const now = new Date().toISOString();
         const writeRes = await fetch(`https://open.feishu.cn/open-apis/bitable/v1/apps/${FEISHU_BITABLE_TOKEN}/tables/${TABLE_ID}/records`, {
@@ -87,12 +93,14 @@ export default async function handler(req, res) {
         const writeData = await writeRes.json();
         if (writeData.code !== 0) {
           console.error("Feishu write failed", writeData);
+        } else {
+          writeSuccess = true;
         }
       } catch (err) {
         console.error("Failed to write to Feishu", err);
       }
 
-      // Fake success for REJECT to shadowban
+      // 4. Send response
       return res.status(200).json({ status: 'success' });
 
     } catch (e) {
