@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-02T00:35:13.259507",
+  "last_updated": "2026-04-02T22:21:18.524499",
   "news_by_date": {
     "2026-03-30": [
       {
@@ -167,6 +167,56 @@
         "source": "Simply Wall Street",
         "date": "2026-04-01",
         "article_date": "5 hours ago"
+      }
+    ],
+    "2026-04-02": [
+      {
+        "title": "英伟达极致协同设计创下MLPerf推理新纪录 | 英伟达技术博客",
+        "summary": "英伟达通过硬件、软件与模型的协同设计，在MLPerf推理基准测试中创造了多项新纪录。这种端到端的优化方法不仅实现了最高的人工智能工厂吞吐量，还显著降低了每个token的处理成本。协同设计超越了单一组件性能的局限，通过系统级优化释放了AI基础设施的完整潜力。这一突破将加速大规模AI应用的部署，为企业和研究机构提供更高效、经济的AI计算解决方案，推动人工智能技术在各行业的落地进程。",
+        "url": "https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/",
+        "source": "NVIDIA Developer",
+        "date": "2026-04-02",
+        "article_date": "23 hours ago"
+      },
+      {
+        "title": "在布朗大学演讲中，Yann LeCun探讨人工智能新路径",
+        "summary": "人工智能先驱Yann LeCun在布朗大学向满座听众表示，大型语言模型并非AI的未来，并阐述了一种新的研究方向。他认为当前基于大语言模型的AI存在局限性，无法实现真正的理解与推理，因此需要探索更接近人类认知的架构。这一观点可能影响AI领域的研究方向，促使更多学者转向开发能处理复杂现实世界任务、具备常识推理能力的新型AI系统，对学术界和产业界都具有重要启示意义。",
+        "url": "https://www.brown.edu/news/2026-04-01/yann-lecun-artificial-intelligence-pioneer",
+        "source": "Brown University",
+        "date": "2026-04-02",
+        "article_date": "12 hours ago"
+      },
+      {
+        "title": "SPARC AI新平台详情披露：聚焦Overwatch技术及全球部署计划",
+        "summary": "SPARC AI最新发布的战略文件详细阐述了其Overwatch技术的核心地位及全球化布局。该技术专为GPS信号缺失或不可靠的环境设计，通过先进的人工智能算法实现精确定位与导航。文件系统介绍了SPARC AI的技术架构、市场战略及未来增长路径，强调Overwatch在军事、应急救援和偏远地区作业等关键场景的应用价值。这一部署将推动定位技术革新，增强全球用户在复杂环境下的操作能力，同时可能重塑相关行业的技术标准与竞争格局。",
+        "url": "https://www.stocktitan.net/news/SPAIF/sparc-ai-releases-latest-investor-02xeh2cov8zo.html",
+        "source": "Stock Titan",
+        "date": "2026-04-02",
+        "article_date": "2 hours ago"
+      },
+      {
+        "title": "OpenAI 不仅想回答问题，更想管理你的数字生活",
+        "summary": "OpenAI 的最新路线图显示，人工智能的发展重心正在转变。该公司正致力于将 AI 从聊天机器人演变为主动工具，朝着构建一个统一的数字助手迈进。这意味着未来的 AI 不仅能被动响应查询，还能主动管理用户的日程、邮件、文件等数字事务，深度融入日常生活。这一转变可能彻底改变人机交互方式，提升效率的同时也引发对隐私、数据安全和 AI 控制权的广泛讨论。",
+        "url": "https://www.techradar.com/ai-platforms-assistants/openai-doesnt-just-want-to-answer-your-questions-it-wants-to-run-your-digital-life",
+        "source": "TechRadar",
+        "date": "2026-04-02",
+        "article_date": "3 hours ago"
+      },
+      {
+        "title": "OpenAI融资1220亿美元加速人工智能下一阶段发展",
+        "summary": "OpenAI今日宣布完成最新一轮融资，获得1220亿美元承诺资本，投后估值达8520亿美元。这笔巨额融资将用于加速人工智能技术的下一阶段发展，OpenAI正成为人工智能领域的核心力量。此次融资不仅彰显了投资者对AI技术前景的强烈信心，也将推动OpenAI在通用人工智能（AGI）研发、模型优化及商业化应用等方面取得突破性进展，可能重塑全球科技竞争格局，并对各行各业产生深远影响。",
+        "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+        "source": "OpenAI",
+        "date": "2026-04-02",
+        "article_date": "1 day ago"
+      },
+      {
+        "title": "Anthropic最新失误加剧AI与网络安全公司对立",
+        "summary": "随着AI模型能力突飞猛进，AI开发者与网络安全供应商之间的紧张关系日益凸显。最新事件中，Anthropic公司的技术失误导致双方矛盾公开化，反映出AI快速迭代与网络安全防护之间的根本性冲突。这一矛盾不仅影响技术合作，还可能延缓AI在关键安全领域的应用进程，促使行业重新审视AI开发与安全防护的协同机制。",
+        "url": "https://www.govinfosecurity.com/latest-anthropic-miscue-puts-ai-cyber-firms-at-odds-a-31318",
+        "source": "GovInfoSecurity",
+        "date": "2026-04-02",
+        "article_date": "12 hours ago"
       }
     ]
   }
