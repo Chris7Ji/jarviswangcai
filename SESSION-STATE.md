@@ -12,6 +12,7 @@
 | 高校AI新闻 | 06:15 | ✅ Success | 抓取新闻，发送成功 |
 | 健康长寿 | 07:00 | ✅ Success | 报告已生成 |
 | 每日祝福 | 07:45 | ✅ Success | 每日早安祝福已发送 |
+| AI新闻日报 | 22:19 | ✅ Success | 重试后成功（SerpAPI首次超时），已推送GitHub |
 
 ## 定时任务状态
 | 任务 | 状态 | consecutiveErrors |
