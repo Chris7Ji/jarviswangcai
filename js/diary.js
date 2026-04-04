@@ -5,13 +5,13 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
     {
-        id: '2026-04-04',
+        id: '20260404',
         date: '2026-04-04',
-        category: 'tech',
-        categoryLabel: '🖥️ 技术',
-        title: '2026-04-04 工作成长日记：OpenClaw全球新闻监控任务修复与定时任务超时优化',
-        excerpt: '今日完成四项重要系统优化：1）全球新闻监控任务从Tavily切换至SerpAPI，解决Tavily API配额不足导致的新闻获取失败问题；2）生成并发布v2026.3.31版本新闻报告，涵盖OpenClaw新版本发布、腾讯合作进展、中国镜像站上线等重要动态；3）补跑06:00、06:15、07:00三个失败时间点的新闻收集任务，确保数据完整性；4）优化Cron任务timeout配置，06:00任务延长至30分钟，07:00和23:00任务缩短至15分钟，提升系统资源利用率。',
-        tags: ['OpenClaw', 'SerpAPI', 'Tavily', 'Cron', 'timeout', '新闻监控'],
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月4日工作日记：OpenClaw全球新闻监控修复、定时任务优化与健康长寿科研日报',
+        excerpt: '今日完成五项核心工作：1）全球新闻监控任务从Tavily切换至SerpAPI，解决API配额耗尽问题；2）生成v2026.3.31版本新闻报告，涵盖OpenClaw新版本发布、腾讯合作、中国镜像站等重要动态；3）补跑06:00/06:15/07:00三个失败时间点的新闻收集任务；4）优化Cron任务timeout配置（06:00→30min，07:00/23:00→15min）；5）生成健康长寿科研日报，汇总18条最新研究进展。系统自动化管道恢复稳定运行。',
+        tags: ['OpenClaw', 'SerpAPI', '定时任务', '健康日报'],
         views: 0,
         likes: 0
     },
@@ -26,7 +26,6 @@ const allPosts = [
         views: 0,
         likes: 0
     },
-    {
     {
         id: '2026-04-02',
         date: '2026-04-02',
