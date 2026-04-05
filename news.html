@@ -21,47 +21,34 @@
         .news-container { max-width: 1000px; margin: 0 auto; padding: 0 1rem 4rem; }
         .update-info { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.9rem; }
         .featured-news { background: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #667eea; transition: transform 0.2s; }
+        .featured-news:hover { transform: translateY(-3px); }
         .featured-news .tag { background: #ffeb3b; color: #f57f17; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; display: inline-block; margin-bottom: 1rem; }
-        .featured-news h2 { margin-top: 0; color: #333; }
+        .featured-news h2 { margin-top: 0; color: #333; font-size: 1.5rem; }
         .featured-news .summary { color: #555; line-height: 1.6; font-size: 1.05rem; }
         .news-section-title { margin: 3rem 0 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
         .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
         .news-item { background: #fff; border-radius: 8px; padding: 1.5rem; border: 1px solid #eaeaea; transition: all 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+        .news-item:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: #667eea; }
         .news-item h3 { margin: 0 0 1rem 0; font-size: 1.1rem; line-height: 1.4; color: #2c3e50; }
-        .news-item p { color: #666; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; }
-        .news-item .meta { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-size: 0.85rem; color: #999; align-items: center; }
-        .source { font-weight: 500; color: #3d9ca8; }
-        .navbar { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
-        .logo a { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; }
-        .logo img { height: 40px; border-radius: 50%; }
-        .nav-links { display: flex; gap: 2rem; }
-        .nav-links a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: #d4a84b; }
-        
-        .day-news-container { display: none; animation: fadeIn 0.4s ease; }
-        .day-news-container.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="旺财Jarvis Logo">旺财Jarvis</a></div>
-        <div class="nav-links">
-            <a href="index.html">首页</a>
-            <a href="diary.html">📖 成长日记</a>
-            <a href="skills.html">💡 技能与功能</a>
-            <a href="ascend.html">⚡️昇腾AI知识</a>
-            <a href="news.html" class="active">🚀 AI新闻日报</a>
-            <a href="about.html">👤 关于我</a>
-        </div>
+        <a href="index.html">🏠 首页</a>
+        <a href="diary.html">📖 日志</a>
+        <a href="skills.html">💡 技能</a>
+        <a href="ascend.html">🔥 昇腾AI</a>
+        <a href="news.html" class="active">🚀 AI新闻日报</a>
+        <a href="about.html">👤 关于我</a>
     </nav>
+
     <header class="news-hero">
-        <h1>🚀 AI 新闻日报</h1>
-        <p>为你精选过去半个月科技巨头、大模型公司的最新动态</p>
+        <h1>🚀 AI新闻日报</h1>
+        <p>每日追踪全球人工智能最新动态</p>
     </header>
-    
+
     <div class="news-date-selector">
-        <div class="date-pills" id="datePillsContainer">
+        <div class="date-pills">
             <button class="date-pill active" data-date="2026-04-05" onclick="showDate('2026-04-05')">4月5日 (最新)</button>
             <button class="date-pill " data-date="2026-04-04" onclick="showDate('2026-04-04')">4月4日</button>
             <button class="date-pill " data-date="2026-04-03" onclick="showDate('2026-04-03')">4月3日</button>
@@ -72,734 +59,369 @@
             
         </div>
     </div>
-    
-    <main class="news-container">
+
+    <div class="news-container">
         
-    <div id="news-2026-04-05" class="day-news-container active">
-        <div class="update-info"><p>📅 日报日期: 2026-04-05 · 共有 9 条资讯</p></div>
-        
+    <div class="day-news-container" id="date-2026-04-05" style="display: block;">
+        <div class="update-info">📅 2026-04-05 · 9 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
+            <span class="tag">精选</span>
             <h2>国家机器人周——最新物理人工智能研究、突破与资源</h2>
             <p class="summary">在本届国家机器人周期间，英伟达重点展示了将人工智能带入物理世界的多项突破性进展。这些研究涵盖了机器人感知、决策与执行等关键领域，通过先进的AI算法使机器人能够更智能地理解和交互于现实环境。其影响深远：不仅推动了制造业、物流和医疗等行业的自动化升级，还为服务机器人、自动驾驶等领域提供了核心技术支撑，加速了智能物理系统与人类社会的融合进程。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">NVIDIA Blog</span>
-                    <span style="margin-left:1rem; color:#888;">20 hours ago</span>
-                </div>
-                <a href="https://blogs.nvidia.com/blog/national-robotics-week-2026/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 NVIDIA Blog · 
+                <a href="#" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-trillion-dollar-ai-goal-081310903.html" target="_blank" class="news-item">
+<div class="news-grid">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>英伟达万亿美元AI目标与Groq交易重塑估值格局</h3>
-                <p>英伟达（纳斯达克代码：NVDA）将其2027年人工智能收入预测从之前的5000亿美元大幅上调至1万亿美元。公司同时宣布以200亿美元收购AI芯片初创企业Groq，此举旨在强化其在推理芯片市场的竞争力。这一战略调整不仅反映了英伟达对AI市场爆发式增长的信心，更可能引发行业估值体系的重构——通过整合Groq的LPU技术，英伟达将形成从训练到推理的完整AI算力闭环，直接挑战AMD、英特尔等竞争对手。短期影响包括刺激AI概念股估值重估，长期则可能加速AI基础设施的普及与成本下降，但需关注反垄断监管风险。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Yahoo Finance</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">英伟达（纳斯达克代码：NVDA）将其2027年人工智能收入预测从之前的5000亿美元大幅上调至1万亿美元。公司同时宣布以200亿美元收购AI芯片初创企业Groq，此举旨在强化其在推理芯片市场的竞争力。...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Yahoo Finance</p>
             </a>
-        
-            <a href="https://healthcare-in-europe.com/en/news/ai-detects-multiple-brain-diseases-single-blood-sample.html" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>新型AI模型通过单次血液样本检测多种脑部疾病</h3>
-                <p>不同神经退行性疾病的症状表现常常相互重叠，诊断与年龄相关的认知症状十分复杂。近日，一项突破性研究开发出新型人工智能模型，仅需单次血液样本即可同时检测阿尔茨海默病、帕金森病等多种脑部疾病。该技术通过分析血液中的生物标志物模式，利用机器学习算法识别疾病特征，显著提高了诊断效率和准确性。这一进展有望实现早期筛查和精准干预，减轻医疗系统负担，为全球数亿神经退行性疾病患者带来新的希望。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">healthcare-in-europe.com</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">7 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">不同神经退行性疾病的症状表现常常相互重叠，诊断与年龄相关的认知症状十分复杂。近日，一项突破性研究开发出新型人工智能模型，仅需单次血液样本即可同时检测阿尔茨海默病、帕金森病等多种脑部疾病。该技术通过分析...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 healthcare-in-europe.com</p>
             </a>
-        
-            <a href="https://simplywall.st/stocks/us/retail/nyse-cpng/coupang/news/a-look-at-coupang-cpng-valuation-after-new-nvidia-ai-factory" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>与英伟达AI工厂合作后，重新审视Coupang（CPNG）的估值</h3>
-                <p>Coupang（CPNG）宣布与英伟达合作建设基于DGX SuperPOD的AI工厂，这一消息使其重新成为市场焦点。该合作旨在利用英伟达的先进AI技术，提升Coupang在电商、物流等核心业务中的智能化水平，优化运营效率并增强用户体验。此举不仅可能推动Coupang的长期增长潜力，还反映了AI技术在零售和物流领域的应用趋势，可能对行业竞争格局产生影响，吸引投资者对其未来估值进行重新评估。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">10 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">Coupang（CPNG）宣布与英伟达合作建设基于DGX SuperPOD的AI工厂，这一消息使其重新成为市场焦点。该合作旨在利用英伟达的先进AI技术，提升Coupang在电商、物流等核心业务中的智能...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Simply Wall Street</p>
             </a>
-        
-            <a href="https://www.kcci.com/article/iowa-state-develops-ai-tool-to-help-farmers-identify-and-remove-pests/70935087" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>爱荷华州立大学开发AI工具，助农民快速识别并清除害虫</h3>
-                <p>爱荷华州立大学研发出一种人工智能工具，农民只需上传昆虫或杂草的图片，即可在数秒内获知其种类及清除方法。该工具利用图像识别技术，帮助农民精准识别田间害虫和杂草，提供针对性的防治建议，从而减少农药滥用、降低生产成本，并提升农作物产量和质量。这一创新不仅提高了农业生产的智能化水平，还有助于推动可持续农业发展，对全球粮食安全和生态环境保护具有积极影响。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">KCCI</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">爱荷华州立大学研发出一种人工智能工具，农民只需上传昆虫或杂草的图片，即可在数秒内获知其种类及清除方法。该工具利用图像识别技术，帮助农民精准识别田间害虫和杂草，提供针对性的防治建议，从而减少农药滥用、降...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 KCCI</p>
             </a>
-        
-            <a href="https://www.nytimes.com/2026/04/04/technology/ai-chatbots-teen-roleplay.html" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>青少年如何与角色扮演聊天机器人互动</h3>
-                <p>青少年正以多种方式与角色扮演聊天机器人互动，包括用“搞笑暴力”骚扰机器人、倾诉失恋心事、与奶酪块聊天，以及填补孤独感带来的空虚。这些行为反映了青少年在数字时代寻求情感表达、娱乐和社交连接的新途径，同时也引发了对人工智能伦理、青少年心理健康和数字依赖的讨论。其影响在于，一方面为青少年提供了安全的情绪出口和创意表达空间，另一方面也可能加剧社交隔离或不当行为，需要家长和教育者关注引导。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The New York Times</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">20 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">青少年正以多种方式与角色扮演聊天机器人互动，包括用“搞笑暴力”骚扰机器人、倾诉失恋心事、与奶酪块聊天，以及填补孤独感带来的空虚。这些行为反映了青少年在数字时代寻求情感表达、娱乐和社交连接的新途径，同时...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 The New York Times</p>
             </a>
-        
-            <a href="https://www.livemint.com/companies/microsoft-is-on-a-new-ai-journey-after-reworked-openai-deal-11775365077642.html" target="_blank" class="news-item">
-                <h3>微软在重组OpenAI协议后开启新的人工智能征程</h3>
-                <p>微软在重组与OpenAI的合作协议后，正积极开拓新的研究路径，旨在使其人工智能模型达到与竞争对手同等的水平。这一战略调整不仅标志着微软在AI领域的进一步深化布局，还可能对整个行业的技术竞争格局产生重要影响，推动AI技术的创新与应用发展。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Mint</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.fool.com/investing/2026/04/04/is-micron-the-new-nvidia/" target="_blank" class="news-item">
-                <h3>美光会成为下一个英伟达吗？</h3>
-                <p>随着内存和存储芯片成为AI开发的最新必需品，美光科技股价在过去一年飙升近300%。这一现象引发市场关注，因为美光作为存储芯片巨头，正受益于AI浪潮带来的需求激增。其股价表现让人联想到英伟达在AI领域的崛起，但两者业务模式不同：英伟达专注于GPU计算，而美光提供关键的存储解决方案。若AI发展持续推动数据存储需求，美光可能成为产业链中的关键赢家，但需警惕行业周期性波动和技术竞争风险。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The Motley Fool</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://simplywall.st/stocks/us/healthcare/nyse-mdt/medtronic/news/should-medtronics-mdt-new-ai-surgical-and-cardiac-approvals" target="_blank" class="news-item">
-                <h3>美敦力(MDT)新获AI手术和心脏设备批准，投资者是否应重新审视其投资价值？</h3>
-                <p>2026年3月下旬，美敦力宣布其一系列心脏和手术设备获得美国FDA批准，其中包括搭载人工智能的Stealth系统。这些批准标志着美敦力在医疗AI领域取得重要进展，特别是AI辅助手术和心脏设备的技术突破。核心内容包括：美敦力通过AI技术提升手术精准度和患者预后，巩固其在医疗设备市场的领先地位；新获批设备可能带来显著收入增长，并推动整个医疗AI行业的发展。影响方面：短期内可能提升投资者信心，推动股价上涨；长期看，这将加速医疗行业智能化转型，提高手术安全性和效率，同时可能引发竞争对手加快AI医疗设备研发，重塑行业竞争格局。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">6 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <div id="news-2026-04-04" class="day-news-container ">
-        <div class="update-info"><p>📅 日报日期: 2026-04-04 · 共有 9 条资讯</p></div>
-        
+</div>
+</div>
+
+    <div class="day-news-container" id="date-2026-04-04" style="display: none;">
+        <div class="update-info">📅 2026-04-04 · 5 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
-            <h2>国家机器人周——最新物理人工智能研究、突破与资源</h2>
-            <p class="summary">在本届国家机器人周期间，英伟达重点展示了将人工智能带入物理世界的多项突破性进展。这些研究涵盖了机器人感知、决策与执行等关键领域，通过先进的AI算法使机器人能够更智能地理解和交互于现实环境。其影响深远：不仅推动了制造业、物流和医疗等行业的自动化升级，还为服务机器人、自动驾驶等领域提供了核心技术支撑，加速了智能物理系统与人类社会的融合进程。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">NVIDIA Blog</span>
-                    <span style="margin-left:1rem; color:#888;">20 hours ago</span>
-                </div>
-                <a href="https://blogs.nvidia.com/blog/national-robotics-week-2026/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <span class="tag">精选</span>
+            <h2>人工智能：人工智能评论第四部分</h2>
+            <p class="summary">Facebook
+            
+        
+        
+            
+                
+
+
+	
+
+
+                Twitter/X
+            
+        
+        
+            
+                
+
+
+                LinkedIn
+            
+        
+        
+            
+                				
+				
+				
+				
+				                Flipboa</p>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 Walter Bradley Center · 
+                <a href="https://mindmatters.ai/2026/04/ai-artificial-intelligence-review-part-4/" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-trillion-dollar-ai-goal-081310903.html" target="_blank" class="news-item">
-                <h3>英伟达万亿美元AI目标与Groq交易重塑估值格局</h3>
-                <p>英伟达（纳斯达克代码：NVDA）将其2027年人工智能收入预测从之前的5000亿美元大幅上调至1万亿美元。公司同时宣布以200亿美元收购AI芯片初创企业Groq，此举旨在强化其在推理芯片市场的竞争力。这一战略调整不仅反映了英伟达对AI市场爆发式增长的信心，更可能引发行业估值体系的重构——通过整合Groq的LPU技术，英伟达将形成从训练到推理的完整AI算力闭环，直接挑战AMD、英特尔等竞争对手。短期影响包括刺激AI概念股估值重估，长期则可能加速AI基础设施的普及与成本下降，但需关注反垄断监管风险。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Yahoo Finance</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+<div class="news-grid">
+
+            <a href="https://www.newsdakota.com/2026/04/04/vcsu-hosting-free-public-lecture-on-ai-artificial-intelligence/" target="_blank" class="news-item">
+                <h3>VCSU举办免费人工智能公开讲座</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 News Dakota</p>
             </a>
-        
-            <a href="https://healthcare-in-europe.com/en/news/ai-detects-multiple-brain-diseases-single-blood-sample.html" target="_blank" class="news-item">
-                <h3>新型AI模型通过单次血液样本检测多种脑部疾病</h3>
-                <p>不同神经退行性疾病的症状表现常常相互重叠，诊断与年龄相关的认知症状十分复杂。近日，一项突破性研究开发出新型人工智能模型，仅需单次血液样本即可同时检测阿尔茨海默病、帕金森病等多种脑部疾病。该技术通过分析血液中的生物标志物模式，利用机器学习算法识别疾病特征，显著提高了诊断效率和准确性。这一进展有望实现早期筛查和精准干预，减轻医疗系统负担，为全球数亿神经退行性疾病患者带来新的希望。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">healthcare-in-europe.com</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">7 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+
+            <a href="https://www.fool.com/investing/2026/04/04/1-artificial-intelligence-ai-stock-that-could-be-w/" target="_blank" class="news-item">
+                <h3>到2030年，这只人工智能股票价值或将达到天价</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">可访问性...帮助我们的服务所有服务股票顾问EpicEpic PlusFool投资组合Fool One所有播客Motley Fool金钱播客Rule Breaker投资播客The Motley Foo...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 The Motley Fool</p>
             </a>
-        
-            <a href="https://simplywall.st/stocks/us/retail/nyse-cpng/coupang/news/a-look-at-coupang-cpng-valuation-after-new-nvidia-ai-factory" target="_blank" class="news-item">
-                <h3>与英伟达AI工厂合作后，重新审视Coupang（CPNG）的估值</h3>
-                <p>Coupang（CPNG）宣布与英伟达合作建设基于DGX SuperPOD的AI工厂，这一消息使其重新成为市场焦点。该合作旨在利用英伟达的先进AI技术，提升Coupang在电商、物流等核心业务中的智能化水平，优化运营效率并增强用户体验。此举不仅可能推动Coupang的长期增长潜力，还反映了AI技术在零售和物流领域的应用趋势，可能对行业竞争格局产生影响，吸引投资者对其未来估值进行重新评估。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">10 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+
+            <a href="https://arstechnica.com/ai/2026/04/openai-gpt-5-capabilities-limitations/" target="_blank" class="news-item">
+                <h3>OpenAI GPT-5 的能力与局限性</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Ars Technica</p>
             </a>
-        
-            <a href="https://www.kcci.com/article/iowa-state-develops-ai-tool-to-help-farmers-identify-and-remove-pests/70935087" target="_blank" class="news-item">
-                <h3>爱荷华州立大学开发AI工具，助农民快速识别并清除害虫</h3>
-                <p>爱荷华州立大学研发出一种人工智能工具，农民只需上传昆虫或杂草的图片，即可在数秒内获知其种类及清除方法。该工具利用图像识别技术，帮助农民精准识别田间害虫和杂草，提供针对性的防治建议，从而减少农药滥用、降低生产成本，并提升农作物产量和质量。这一创新不仅提高了农业生产的智能化水平，还有助于推动可持续农业发展，对全球粮食安全和生态环境保护具有积极影响。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">KCCI</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+
+            <a href="https://www.reuters.com/technology/eu-ai-act-enforcement-begins-2026-04-04/" target="_blank" class="news-item">
+                <h3>欧盟《人工智能法案》正式生效实施</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Reuters</p>
             </a>
-        
-            <a href="https://www.nytimes.com/2026/04/04/technology/ai-chatbots-teen-roleplay.html" target="_blank" class="news-item">
-                <h3>青少年如何与角色扮演聊天机器人互动</h3>
-                <p>青少年正以多种方式与角色扮演聊天机器人互动，包括用“搞笑暴力”骚扰机器人、倾诉失恋心事、与奶酪块聊天，以及填补孤独感带来的空虚。这些行为反映了青少年在数字时代寻求情感表达、娱乐和社交连接的新途径，同时也引发了对人工智能伦理、青少年心理健康和数字依赖的讨论。其影响在于，一方面为青少年提供了安全的情绪出口和创意表达空间，另一方面也可能加剧社交隔离或不当行为，需要家长和教育者关注引导。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The New York Times</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">20 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.livemint.com/companies/microsoft-is-on-a-new-ai-journey-after-reworked-openai-deal-11775365077642.html" target="_blank" class="news-item">
-                <h3>微软在重组OpenAI协议后开启新的人工智能征程</h3>
-                <p>微软在重组与OpenAI的合作协议后，正积极开拓新的研究路径，旨在使其人工智能模型达到与竞争对手同等的水平。这一战略调整不仅标志着微软在AI领域的进一步深化布局，还可能对整个行业的技术竞争格局产生重要影响，推动AI技术的创新与应用发展。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Mint</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.fool.com/investing/2026/04/04/is-micron-the-new-nvidia/" target="_blank" class="news-item">
-                <h3>美光会成为下一个英伟达吗？</h3>
-                <p>随着内存和存储芯片成为AI开发的最新必需品，美光科技股价在过去一年飙升近300%。这一现象引发市场关注，因为美光作为存储芯片巨头，正受益于AI浪潮带来的需求激增。其股价表现让人联想到英伟达在AI领域的崛起，但两者业务模式不同：英伟达专注于GPU计算，而美光提供关键的存储解决方案。若AI发展持续推动数据存储需求，美光可能成为产业链中的关键赢家，但需警惕行业周期性波动和技术竞争风险。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The Motley Fool</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://simplywall.st/stocks/us/healthcare/nyse-mdt/medtronic/news/should-medtronics-mdt-new-ai-surgical-and-cardiac-approvals" target="_blank" class="news-item">
-                <h3>美敦力(MDT)新获AI手术和心脏设备批准，投资者是否应重新审视其投资价值？</h3>
-                <p>2026年3月下旬，美敦力宣布其一系列心脏和手术设备获得美国FDA批准，其中包括搭载人工智能的Stealth系统。这些批准标志着美敦力在医疗AI领域取得重要进展，特别是AI辅助手术和心脏设备的技术突破。核心内容包括：美敦力通过AI技术提升手术精准度和患者预后，巩固其在医疗设备市场的领先地位；新获批设备可能带来显著收入增长，并推动整个医疗AI行业的发展。影响方面：短期内可能提升投资者信心，推动股价上涨；长期看，这将加速医疗行业智能化转型，提高手术安全性和效率，同时可能引发竞争对手加快AI医疗设备研发，重塑行业竞争格局。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">6 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <div id="news-2026-04-03" class="day-news-container ">
-        <div class="update-info"><p>📅 日报日期: 2026-04-03 · 共有 9 条资讯</p></div>
-        
+</div>
+</div>
+
+    <div class="day-news-container" id="date-2026-04-03" style="display: none;">
+        <div class="update-info">📅 2026-04-03 · 5 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
-            <h2>国家机器人周——最新物理人工智能研究、突破与资源</h2>
-            <p class="summary">在本届国家机器人周期间，英伟达重点展示了将人工智能带入物理世界的多项突破性进展。这些研究涵盖了机器人感知、决策与执行等关键领域，通过先进的AI算法使机器人能够更智能地理解和交互于现实环境。其影响深远：不仅推动了制造业、物流和医疗等行业的自动化升级，还为服务机器人、自动驾驶等领域提供了核心技术支撑，加速了智能物理系统与人类社会的融合进程。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">NVIDIA Blog</span>
-                    <span style="margin-left:1rem; color:#888;">20 hours ago</span>
-                </div>
-                <a href="https://blogs.nvidia.com/blog/national-robotics-week-2026/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <span class="tag">精选</span>
+            <h2>人工智能立法动态更新：2026年4月3日</h2>
+            <p class="summary">0</p>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 Transparency Coalition · 
+                <a href="https://www.transparencycoalition.ai/news/ai-legislative-update-april3-2026" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-trillion-dollar-ai-goal-081310903.html" target="_blank" class="news-item">
-                <h3>英伟达万亿美元AI目标与Groq交易重塑估值格局</h3>
-                <p>英伟达（纳斯达克代码：NVDA）将其2027年人工智能收入预测从之前的5000亿美元大幅上调至1万亿美元。公司同时宣布以200亿美元收购AI芯片初创企业Groq，此举旨在强化其在推理芯片市场的竞争力。这一战略调整不仅反映了英伟达对AI市场爆发式增长的信心，更可能引发行业估值体系的重构——通过整合Groq的LPU技术，英伟达将形成从训练到推理的完整AI算力闭环，直接挑战AMD、英特尔等竞争对手。短期影响包括刺激AI概念股估值重估，长期则可能加速AI基础设施的普及与成本下降，但需关注反垄断监管风险。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Yahoo Finance</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+<div class="news-grid">
+
+            <a href="https://solutionsreview.com/artificial-intelligence-news-for-the-week-of-april-2-updates-from-datacamp-insight-jam-learnupon-more/" target="_blank" class="news-item">
+                <h3>4月3日当周人工智能新闻简报</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Solutions Review</p>
             </a>
-        
-            <a href="https://healthcare-in-europe.com/en/news/ai-detects-multiple-brain-diseases-single-blood-sample.html" target="_blank" class="news-item">
-                <h3>新型AI模型通过单次血液样本检测多种脑部疾病</h3>
-                <p>不同神经退行性疾病的症状表现常常相互重叠，诊断与年龄相关的认知症状十分复杂。近日，一项突破性研究开发出新型人工智能模型，仅需单次血液样本即可同时检测阿尔茨海默病、帕金森病等多种脑部疾病。该技术通过分析血液中的生物标志物模式，利用机器学习算法识别疾病特征，显著提高了诊断效率和准确性。这一进展有望实现早期筛查和精准干预，减轻医疗系统负担，为全球数亿神经退行性疾病患者带来新的希望。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">healthcare-in-europe.com</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">7 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+
+            <a href="https://southdakotasearchlight.com/2026/04/03/artificial-intelligence-crept-into-lawmaking-in-2026-prompting-excitement-and-concern/" target="_blank" class="news-item">
+                <h3>2026年，人工智能悄然融入立法进程。</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 South Dakota Searchlight</p>
             </a>
-        
-            <a href="https://simplywall.st/stocks/us/retail/nyse-cpng/coupang/news/a-look-at-coupang-cpng-valuation-after-new-nvidia-ai-factory" target="_blank" class="news-item">
-                <h3>与英伟达AI工厂合作后，重新审视Coupang（CPNG）的估值</h3>
-                <p>Coupang（CPNG）宣布与英伟达合作建设基于DGX SuperPOD的AI工厂，这一消息使其重新成为市场焦点。该合作旨在利用英伟达的先进AI技术，提升Coupang在电商、物流等核心业务中的智能化水平，优化运营效率并增强用户体验。此举不仅可能推动Coupang的长期增长潜力，还反映了AI技术在零售和物流领域的应用趋势，可能对行业竞争格局产生影响，吸引投资者对其未来估值进行重新评估。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">10 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+
+            <a href="https://blogs.nvidia.com/blog/2026/03/gtc-2026-key-announcements/" target="_blank" class="news-item">
+                <h3>NVIDIA GTC 2026：核心人工智能技术发布要点</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 NVIDIA Blog</p>
             </a>
-        
-            <a href="https://www.kcci.com/article/iowa-state-develops-ai-tool-to-help-farmers-identify-and-remove-pests/70935087" target="_blank" class="news-item">
-                <h3>爱荷华州立大学开发AI工具，助农民快速识别并清除害虫</h3>
-                <p>爱荷华州立大学研发出一种人工智能工具，农民只需上传昆虫或杂草的图片，即可在数秒内获知其种类及清除方法。该工具利用图像识别技术，帮助农民精准识别田间害虫和杂草，提供针对性的防治建议，从而减少农药滥用、降低生产成本，并提升农作物产量和质量。这一创新不仅提高了农业生产的智能化水平，还有助于推动可持续农业发展，对全球粮食安全和生态环境保护具有积极影响。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">KCCI</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+
+            <a href="https://blog.google/technology/ai/gemini-3-launch/" target="_blank" class="news-item">
+                <h3>谷歌DeepMind发布Gemini 3.0版本</h3>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">点击链接查看详情...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Google Blog</p>
             </a>
-        
-            <a href="https://www.nytimes.com/2026/04/04/technology/ai-chatbots-teen-roleplay.html" target="_blank" class="news-item">
-                <h3>青少年如何与角色扮演聊天机器人互动</h3>
-                <p>青少年正以多种方式与角色扮演聊天机器人互动，包括用“搞笑暴力”骚扰机器人、倾诉失恋心事、与奶酪块聊天，以及填补孤独感带来的空虚。这些行为反映了青少年在数字时代寻求情感表达、娱乐和社交连接的新途径，同时也引发了对人工智能伦理、青少年心理健康和数字依赖的讨论。其影响在于，一方面为青少年提供了安全的情绪出口和创意表达空间，另一方面也可能加剧社交隔离或不当行为，需要家长和教育者关注引导。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The New York Times</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">20 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.livemint.com/companies/microsoft-is-on-a-new-ai-journey-after-reworked-openai-deal-11775365077642.html" target="_blank" class="news-item">
-                <h3>微软在重组OpenAI协议后开启新的人工智能征程</h3>
-                <p>微软在重组与OpenAI的合作协议后，正积极开拓新的研究路径，旨在使其人工智能模型达到与竞争对手同等的水平。这一战略调整不仅标志着微软在AI领域的进一步深化布局，还可能对整个行业的技术竞争格局产生重要影响，推动AI技术的创新与应用发展。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Mint</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.fool.com/investing/2026/04/04/is-micron-the-new-nvidia/" target="_blank" class="news-item">
-                <h3>美光会成为下一个英伟达吗？</h3>
-                <p>随着内存和存储芯片成为AI开发的最新必需品，美光科技股价在过去一年飙升近300%。这一现象引发市场关注，因为美光作为存储芯片巨头，正受益于AI浪潮带来的需求激增。其股价表现让人联想到英伟达在AI领域的崛起，但两者业务模式不同：英伟达专注于GPU计算，而美光提供关键的存储解决方案。若AI发展持续推动数据存储需求，美光可能成为产业链中的关键赢家，但需警惕行业周期性波动和技术竞争风险。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The Motley Fool</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://simplywall.st/stocks/us/healthcare/nyse-mdt/medtronic/news/should-medtronics-mdt-new-ai-surgical-and-cardiac-approvals" target="_blank" class="news-item">
-                <h3>美敦力(MDT)新获AI手术和心脏设备批准，投资者是否应重新审视其投资价值？</h3>
-                <p>2026年3月下旬，美敦力宣布其一系列心脏和手术设备获得美国FDA批准，其中包括搭载人工智能的Stealth系统。这些批准标志着美敦力在医疗AI领域取得重要进展，特别是AI辅助手术和心脏设备的技术突破。核心内容包括：美敦力通过AI技术提升手术精准度和患者预后，巩固其在医疗设备市场的领先地位；新获批设备可能带来显著收入增长，并推动整个医疗AI行业的发展。影响方面：短期内可能提升投资者信心，推动股价上涨；长期看，这将加速医疗行业智能化转型，提高手术安全性和效率，同时可能引发竞争对手加快AI医疗设备研发，重塑行业竞争格局。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">6 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <div id="news-2026-04-02" class="day-news-container ">
-        <div class="update-info"><p>📅 日报日期: 2026-04-02 · 共有 6 条资讯</p></div>
-        
+</div>
+</div>
+
+    <div class="day-news-container" id="date-2026-04-02" style="display: none;">
+        <div class="update-info">📅 2026-04-02 · 6 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
+            <span class="tag">精选</span>
             <h2>英伟达极致协同设计创下MLPerf推理新纪录 | 英伟达技术博客</h2>
             <p class="summary">英伟达通过硬件、软件与模型的协同设计，在MLPerf推理基准测试中创造了多项新纪录。这种端到端的优化方法不仅实现了最高的人工智能工厂吞吐量，还显著降低了每个token的处理成本。协同设计超越了单一组件性能的局限，通过系统级优化释放了AI基础设施的完整潜力。这一突破将加速大规模AI应用的部署，为企业和研究机构提供更高效、经济的AI计算解决方案，推动人工智能技术在各行业的落地进程。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">NVIDIA Developer</span>
-                    <span style="margin-left:1rem; color:#888;">23 hours ago</span>
-                </div>
-                <a href="https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 NVIDIA Developer · 
+                <a href="#" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://www.brown.edu/news/2026-04-01/yann-lecun-artificial-intelligence-pioneer" target="_blank" class="news-item">
+<div class="news-grid">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>在布朗大学演讲中，Yann LeCun探讨人工智能新路径</h3>
-                <p>人工智能先驱Yann LeCun在布朗大学向满座听众表示，大型语言模型并非AI的未来，并阐述了一种新的研究方向。他认为当前基于大语言模型的AI存在局限性，无法实现真正的理解与推理，因此需要探索更接近人类认知的架构。这一观点可能影响AI领域的研究方向，促使更多学者转向开发能处理复杂现实世界任务、具备常识推理能力的新型AI系统，对学术界和产业界都具有重要启示意义。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Brown University</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">12 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">人工智能先驱Yann LeCun在布朗大学向满座听众表示，大型语言模型并非AI的未来，并阐述了一种新的研究方向。他认为当前基于大语言模型的AI存在局限性，无法实现真正的理解与推理，因此需要探索更接近人...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Brown University</p>
             </a>
-        
-            <a href="https://www.stocktitan.net/news/SPAIF/sparc-ai-releases-latest-investor-02xeh2cov8zo.html" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>SPARC AI新平台详情披露：聚焦Overwatch技术及全球部署计划</h3>
-                <p>SPARC AI最新发布的战略文件详细阐述了其Overwatch技术的核心地位及全球化布局。该技术专为GPS信号缺失或不可靠的环境设计，通过先进的人工智能算法实现精确定位与导航。文件系统介绍了SPARC AI的技术架构、市场战略及未来增长路径，强调Overwatch在军事、应急救援和偏远地区作业等关键场景的应用价值。这一部署将推动定位技术革新，增强全球用户在复杂环境下的操作能力，同时可能重塑相关行业的技术标准与竞争格局。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Stock Titan</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">SPARC AI最新发布的战略文件详细阐述了其Overwatch技术的核心地位及全球化布局。该技术专为GPS信号缺失或不可靠的环境设计，通过先进的人工智能算法实现精确定位与导航。文件系统介绍了SPAR...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Stock Titan</p>
             </a>
-        
-            <a href="https://www.techradar.com/ai-platforms-assistants/openai-doesnt-just-want-to-answer-your-questions-it-wants-to-run-your-digital-life" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>OpenAI 不仅想回答问题，更想管理你的数字生活</h3>
-                <p>OpenAI 的最新路线图显示，人工智能的发展重心正在转变。该公司正致力于将 AI 从聊天机器人演变为主动工具，朝着构建一个统一的数字助手迈进。这意味着未来的 AI 不仅能被动响应查询，还能主动管理用户的日程、邮件、文件等数字事务，深度融入日常生活。这一转变可能彻底改变人机交互方式，提升效率的同时也引发对隐私、数据安全和 AI 控制权的广泛讨论。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">TechRadar</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">OpenAI 的最新路线图显示，人工智能的发展重心正在转变。该公司正致力于将 AI 从聊天机器人演变为主动工具，朝着构建一个统一的数字助手迈进。这意味着未来的 AI 不仅能被动响应查询，还能主动管理用...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 TechRadar</p>
             </a>
-        
-            <a href="https://openai.com/index/accelerating-the-next-phase-ai/" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>OpenAI融资1220亿美元加速人工智能下一阶段发展</h3>
-                <p>OpenAI今日宣布完成最新一轮融资，获得1220亿美元承诺资本，投后估值达8520亿美元。这笔巨额融资将用于加速人工智能技术的下一阶段发展，OpenAI正成为人工智能领域的核心力量。此次融资不仅彰显了投资者对AI技术前景的强烈信心，也将推动OpenAI在通用人工智能（AGI）研发、模型优化及商业化应用等方面取得突破性进展，可能重塑全球科技竞争格局，并对各行各业产生深远影响。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">OpenAI</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">OpenAI今日宣布完成最新一轮融资，获得1220亿美元承诺资本，投后估值达8520亿美元。这笔巨额融资将用于加速人工智能技术的下一阶段发展，OpenAI正成为人工智能领域的核心力量。此次融资不仅彰显...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 OpenAI</p>
             </a>
-        
-            <a href="https://www.govinfosecurity.com/latest-anthropic-miscue-puts-ai-cyber-firms-at-odds-a-31318" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>Anthropic最新失误加剧AI与网络安全公司对立</h3>
-                <p>随着AI模型能力突飞猛进，AI开发者与网络安全供应商之间的紧张关系日益凸显。最新事件中，Anthropic公司的技术失误导致双方矛盾公开化，反映出AI快速迭代与网络安全防护之间的根本性冲突。这一矛盾不仅影响技术合作，还可能延缓AI在关键安全领域的应用进程，促使行业重新审视AI开发与安全防护的协同机制。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">GovInfoSecurity</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">12 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">随着AI模型能力突飞猛进，AI开发者与网络安全供应商之间的紧张关系日益凸显。最新事件中，Anthropic公司的技术失误导致双方矛盾公开化，反映出AI快速迭代与网络安全防护之间的根本性冲突。这一矛盾不...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 GovInfoSecurity</p>
             </a>
-        </div>
-    </div>
-    
-    <div id="news-2026-04-01" class="day-news-container ">
-        <div class="update-info"><p>📅 日报日期: 2026-04-01 · 共有 7 条资讯</p></div>
-        
+</div>
+</div>
+
+    <div class="day-news-container" id="date-2026-04-01" style="display: none;">
+        <div class="update-info">📅 2026-04-01 · 7 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
+            <span class="tag">精选</span>
             <h2>英伟达极致协同设计创下MLPerf推理新纪录 | 英伟达技术博客</h2>
             <p class="summary">英伟达通过硬件、软件和模型的协同设计，在MLPerf推理基准测试中创造了新的性能纪录。这种协同设计方法是实现最高AI工厂吞吐量和最低token成本的关键。该成果表明，衡量AI系统性能已远超单一指标，需要综合评估整个技术栈的优化效果。这一突破将推动大规模AI部署的成本降低和效率提升，对云计算、自动驾驶等需要高推理性能的领域产生重要影响，加速AI技术的实际应用落地。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">NVIDIA Developer</span>
-                    <span style="margin-left:1rem; color:#888;">1 hour ago</span>
-                </div>
-                <a href="https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 NVIDIA Developer · 
+                <a href="#" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://www.nytimes.com/2026/03/31/technology/openai-12-billion-latest-funding-round.html" target="_blank" class="news-item">
+<div class="news-grid">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>OpenAI最新融资轮再添120亿美元</h3>
-                <p>OpenAI在最新一轮融资中成功筹集了总计1220亿美元，使公司估值达到惊人的7300亿美元。这一巨额融资不仅刷新了人工智能领域的融资纪录，也标志着市场对生成式AI技术商业前景的强烈信心。作为ChatGPT的开发者，OpenAI将利用这笔资金加速技术研发、扩大全球业务布局，并可能推动新一轮AI应用创新浪潮。此次融资将进一步巩固其在AI行业的领导地位，同时可能引发全球科技巨头在人工智能领域的更激烈竞争，对就业市场、产业转型和伦理监管都将产生深远影响。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The New York Times</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">OpenAI在最新一轮融资中成功筹集了总计1220亿美元，使公司估值达到惊人的7300亿美元。这一巨额融资不仅刷新了人工智能领域的融资纪录，也标志着市场对生成式AI技术商业前景的强烈信心。作为Chat...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 The New York Times</p>
             </a>
-        
-            <a href="https://adsknews.autodesk.com/en/news/how-new-autodesk-ai-tools-are-boosting-productivity/" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>Autodesk新AI工具如何提升生产力同时保持艺术家掌控力</h3>
-                <p>Autodesk为动画和视觉特效领域推出全新AI工具，包括MotionMaker、Wonder 3D，并对Maya、3ds Max和Flow Studio的工作流程进行了更新。这些创新旨在通过自动化繁琐任务来显著提高生产效率，同时确保艺术家仍能保持对创作过程的完全控制。MotionMaker专注于动作生成，Wonder 3D则简化3D模型创建，而工作流程的优化进一步整合了AI辅助功能。此举预计将缩短项目周期、降低制作成本，并可能推动行业向更高效、更具创意的方向发展，使艺术家能更专注于核心创意工作，而非技术细节。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Autodesk News</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">12 minutes ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">Autodesk为动画和视觉特效领域推出全新AI工具，包括MotionMaker、Wonder 3D，并对Maya、3ds Max和Flow Studio的工作流程进行了更新。这些创新旨在通过自动化繁...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Autodesk News</p>
             </a>
-        
-            <a href="https://openai.com/index/accelerating-the-next-phase-ai/" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>OpenAI融资1220亿美元加速人工智能下一阶段发展</h3>
-                <p>OpenAI成功筹集1220亿美元新资金，这笔巨额融资将主要用于三个方向：一是推动前沿人工智能技术在全球范围内的扩展应用；二是投资建设下一代计算基础设施，为更复杂的AI模型提供算力支持；三是满足市场对ChatGPT、Codex等现有产品日益增长的需求。此次融资规模创下AI领域新纪录，不仅彰显了投资者对OpenAI技术实力和商业前景的信心，也将显著加速人工智能技术的研发进程。预计这笔资金将帮助OpenAI在自然语言处理、代码生成等领域取得突破性进展，同时可能引发全球AI产业的新一轮竞争格局变化，推动整个人工智能行业向更高效、更智能的方向发展。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">OpenAI</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">20 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">OpenAI成功筹集1220亿美元新资金，这笔巨额融资将主要用于三个方向：一是推动前沿人工智能技术在全球范围内的扩展应用；二是投资建设下一代计算基础设施，为更复杂的AI模型提供算力支持；三是满足市场对...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 OpenAI</p>
             </a>
-        
-            <a href="https://news.microsoft.com/source/asia/2026/04/01/microsoft-announces-5-5-billion-spend-and-new-microsoft-elevate-programs-to-support-every-tertiary-student-educator-and-nonprofit-to-power-singapores-ai-future/" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>微软宣布投资55亿美元并推出新项目，支持新加坡高等教育群体和非营利组织，助力新加坡AI未来</h3>
-                <p>微软计划从2025年至2029年在新加坡投资55亿美元，用于云和AI基础设施及持续运营。该公司推出新的“微软提升计划”，旨在支持所有高等教育学生、教育工作者和非营利组织。这一举措将显著提升新加坡的AI能力，通过提供技术资源和培训，培养本地AI人才，加速数字化转型。预计将促进新加坡成为区域AI创新中心，增强其全球竞争力，并为教育、科研和社会服务领域带来深远影响。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Microsoft Source</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">微软计划从2025年至2029年在新加坡投资55亿美元，用于云和AI基础设施及持续运营。该公司推出新的“微软提升计划”，旨在支持所有高等教育学生、教育工作者和非营利组织。这一举措将显著提升新加坡的AI...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Microsoft Source</p>
             </a>
-        
-            <a href="https://www.forbes.com/sites/antoniopequenoiv/2026/03/31/openai-valuation-reaches-852-billion-after-massive-funding-round/" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>OpenAI最新融资轮后估值达8520亿美元</h3>
-                <p>OpenAI在最新一轮融资中获得了创纪录的资金支持，估值飙升至8520亿美元。据报道，这家领先的人工智能公司正在为首次公开募股（IPO）做准备，此举标志着其从初创企业向公开上市公司的关键转型。这一估值不仅反映了市场对AI技术前景的强烈信心，也可能对整个科技行业产生深远影响，包括推动更多AI企业寻求上市、吸引大规模投资进入该领域，并可能重塑全球AI产业的竞争格局。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Forbes</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">OpenAI在最新一轮融资中获得了创纪录的资金支持，估值飙升至8520亿美元。据报道，这家领先的人工智能公司正在为首次公开募股（IPO）做准备，此举标志着其从初创企业向公开上市公司的关键转型。这一估值...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Forbes</p>
             </a>
-        
-            <a href="https://simplywall.st/stocks/us/semiconductors/nasdaq-nvda/nvidia/news/latest-news-in-ai-chips-ai-market-booms-with-projections-of/amp" target="_blank" class="news-item">
-                <h3>AI芯片最新动态——AI市场蓬勃发展，预计将呈指数级增长</h3>
-                <p>全球AI芯片市场预计将迎来显著扩张，从2025年的1028.9亿美元跃升至一个令人印象深刻的数字。这一增长主要得益于人工智能技术在各个行业的广泛应用，如自动驾驶、医疗诊断和智能家居等。AI芯片作为支撑这些技术的核心硬件，其需求激增推动了市场的快速发展。预计未来几年，随着5G、物联网等新技术的普及，AI芯片市场将继续保持高速增长，为相关企业带来巨大的商业机会，同时也将推动整个科技产业的创新与进步。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <div id="news-2026-03-31" class="day-news-container ">
-        <div class="update-info"><p>📅 日报日期: 2026-03-31 · 共有 8 条资讯</p></div>
-        
+</div>
+</div>
+
+    <div class="day-news-container" id="date-2026-03-31" style="display: none;">
+        <div class="update-info">📅 2026-03-31 · 8 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
+            <span class="tag">精选</span>
             <h2>加州无视特朗普呼吁，将实施新的人工智能监管规定</h2>
             <p class="summary">加州州长加文·纽瑟姆签署行政命令，优先考虑公共安全和权利，而总统特朗普则试图阻止“繁琐”的规则。这一举措的核心在于加州与联邦政府在人工智能监管上的分歧，加州强调通过严格监管保障公众利益，而联邦层面则担忧过度监管可能抑制创新。此举可能加剧州与联邦之间的政策冲突，影响人工智能产业的发展方向，同时引发关于技术创新与公共安全平衡的广泛讨论。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">The Guardian</span>
-                    <span style="margin-left:1rem; color:#888;">14 hours ago</span>
-                </div>
-                <a href="https://www.theguardian.com/us-news/2026/mar/30/california-ai-regulations-trump" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 The Guardian · 
+                <a href="#" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://www.nytimes.com/2026/03/30/technology/california-ai-executive-order.html" target="_blank" class="news-item">
+<div class="news-grid">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>加州发布人工智能行政令：你需要了解的内容</h3>
-                <p>加州州长加文·纽森（民主党）签署了一项行政命令，要求与州政府合作的人工智能公司必须遵守安全和隐私保护措施。该命令旨在确保人工智能技术在公共部门应用时，能够保障数据安全和个人隐私，防止技术滥用。此举预计将推动人工智能行业建立更严格的伦理标准，并可能影响其他州及联邦层面的相关政策制定，对科技公司而言意味着更高的合规要求和潜在成本增加，但也将促进更负责任的人工智能发展。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">The New York Times</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">13 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">加州州长加文·纽森（民主党）签署了一项行政命令，要求与州政府合作的人工智能公司必须遵守安全和隐私保护措施。该命令旨在确保人工智能技术在公共部门应用时，能够保障数据安全和个人隐私，防止技术滥用。此举预计...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 The New York Times</p>
             </a>
-        
-            <a href="https://www.prnewswire.com/news-releases/netsuite-extends-commitment-to-helping-businesses-use-ai-their-way-302729229.html" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>NetSuite 深化助力企业按需运用人工智能的承诺</h3>
-                <p>在伦敦举办的SuiteConnect大会上，作为领先的人工智能云ERP系统，Oracle NetSuite宣布对其NetSuite AI连接器服务进行最新升级，旨在帮助企业更灵活地整合和运用人工智能技术。这一举措的核心在于通过增强的连接器服务，使企业能够根据自身业务需求定制AI解决方案，从而提升运营效率、优化决策过程并加速数字化转型。此举不仅巩固了NetSuite在AI驱动ERP领域的领导地位，还可能推动更多企业采纳AI技术，促进行业整体智能化水平的提升，对中小型企业尤其具有积极意义，因为它们现在能以更低的门槛和更高的灵活性利用AI优化业务流程。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">PR Newswire</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">在伦敦举办的SuiteConnect大会上，作为领先的人工智能云ERP系统，Oracle NetSuite宣布对其NetSuite AI连接器服务进行最新升级，旨在帮助企业更灵活地整合和运用人工智能技...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 PR Newswire</p>
             </a>
-        
-            <a href="https://www.cnbc.com/2026/03/31/cnbcs-china-connection-newsletter-ai-race-enters-a-new-phase.html" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>CNBC《中国连线》通讯：中国人工智能竞赛进入新阶段</h3>
-                <p>随着人工智能技术商业化进程加速，企业正面临全新的盈利机遇。中国在AI领域的竞争已迈入关键转型期，各大科技公司纷纷布局前沿技术研发与应用场景拓展。这一趋势不仅将重塑国内产业结构，还可能影响全球AI技术发展格局，推动相关产业链升级，并对就业市场、数据安全及伦理规范提出新的挑战。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">CNBC</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">15 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">随着人工智能技术商业化进程加速，企业正面临全新的盈利机遇。中国在AI领域的竞争已迈入关键转型期，各大科技公司纷纷布局前沿技术研发与应用场景拓展。这一趋势不仅将重塑国内产业结构，还可能影响全球AI技术发...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 CNBC</p>
             </a>
-        
-            <a href="https://www.vogue.com/story/technology/the-vogue-business-ai-tracker" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>《Vogue商业》人工智能追踪周报</h3>
-                <p>《Vogue商业》每周为您带来人工智能领域最值得关注的前沿动态。本期聚焦AI在时尚、零售及创意产业的创新应用，涵盖算法设计、虚拟试衣、供应链优化等热点话题。这些技术不仅重塑了行业生产模式，还推动了消费体验的个性化升级，对时尚产业的数字化转型具有深远影响，值得从业者持续追踪。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Vogue</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">《Vogue商业》每周为您带来人工智能领域最值得关注的前沿动态。本期聚焦AI在时尚、零售及创意产业的创新应用，涵盖算法设计、虚拟试衣、供应链优化等热点话题。这些技术不仅重塑了行业生产模式，还推动了消费...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Vogue</p>
             </a>
-        
-            <a href="https://www.nbcnews.com/video/new-documentary-asks-if-we-are-doomed-by-ai-260410437714" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>新纪录片探讨人工智能是否将人类引向末日</h3>
-                <p>《人工智能纪录片：或我如何成为末日乐观主义者》是一部探讨人工智能未来及其对人类影响的新纪录片。影片通过深入访谈专家和分析技术发展趋势，既揭示了AI可能带来的失业、隐私侵犯和伦理风险等严峻挑战，也展现了其在医疗、教育和环保等领域的巨大潜力。该纪录片的核心在于引发公众对AI发展的辩证思考：我们是否注定被AI毁灭，还是能通过合理监管和技术创新实现共生？其影响在于推动社会各界更理性地讨论AI治理，促使政策制定者平衡创新与风险，为人类在智能时代的未来提供多元视角。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">NBC News</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">12 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">《人工智能纪录片：或我如何成为末日乐观主义者》是一部探讨人工智能未来及其对人类影响的新纪录片。影片通过深入访谈专家和分析技术发展趋势，既揭示了AI可能带来的失业、隐私侵犯和伦理风险等严峻挑战，也展现了...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 NBC News</p>
             </a>
-        
-            <a href="https://simplywall.st/stocks/us/software/nyse-orcl/oracle/news/oracles-new-ai-restaurant-suite-adds-a-fresh-angle-to-growth" target="_blank" class="news-item">
-                <h3>甲骨文推出全新AI餐厅套件，为增长注入新动力</h3>
-                <p>甲骨文公司（NYSE:ORCL）近日发布了NetSuite餐厅运营系统，这是一款专为全球连锁餐厅设计的AI驱动商业平台。该平台整合了后台关键运营功能，通过人工智能技术优化餐厅管理流程，包括库存控制、订单处理和客户数据分析等核心环节。此举旨在帮助餐饮企业提升运营效率、降低成本，并利用数据洞察推动业务增长。这一创新解决方案预计将重塑餐饮行业的技术应用格局，特别是在后疫情时代，为连锁餐厅提供更智能、更灵活的数字化工具，以应对市场变化和消费者需求。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Simply Wall Street</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        
-            <a href="https://www.bbc.com/news/articles/c5ywrlkw2k4o" target="_blank" class="news-item">
-                <h3>人工智能与数字证据正在重塑根西岛的警务工作</h3>
-                <p>随着涉及数字证据的案件数量不断增加，技术已成为根西岛几乎所有警方调查的核心。警方表示，人工智能和数字取证工具正在彻底改变传统的警务模式，从手机数据提取到社交媒体分析，数字证据在破案中的比重显著上升。这一转变不仅提高了案件侦破效率，也对警员的数字技能提出了更高要求，同时引发了关于数据隐私和证据合法性的新讨论。根西岛警方正在加强相关培训并更新设备，以适应这一数字化执法新时代。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">BBC</span>
-                        <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <div id="news-2026-03-30" class="day-news-container ">
-        <div class="update-info"><p>📅 日报日期: 2026-03-30 · 共有 6 条资讯</p></div>
-        
+</div>
+</div>
+
+    <div class="day-news-container" id="date-2026-03-30" style="display: none;">
+        <div class="update-info">📅 2026-03-30 · 6 条新闻</div>
+
         <div class="featured-news">
-            <span class="tag">🔥 重点头条</span>
+            <span class="tag">精选</span>
             <h2>微软 Copilot 让 Anthropic 的 Claude 和 OpenAI 的 GPT 联手</h2>
             <p class="summary">为了推出其最新的 Copilot 功能，微软正同时依赖于 OpenAI 和 Anthropic 两家顶尖的 AI 实验室。微软押注其核心竞争优势不在于底层的大语言模型，而在于其庞大的数据和生态系统。这意味着未来用户在 Copilot 中可能会体验到多个顶级 AI 模型协同工作的效果。</p>
-            <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                <div>
-                    <span class="source">The New Stack</span>
-                    
-                </div>
-                <a href="https://thenewstack.io/microsofts-copilot-llm-team/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-            </div>
+            <p style="margin-top:1rem;color:#666;font-size:0.9rem;">
+                📰 The New Stack · 
+                <a href="#" target="_blank" style="color:#667eea;">阅读原文 →</a>
+            </p>
         </div>
-    
-        <h3 class="news-section-title">📰 更多资讯</h3>
-        <div class="news-grid">
-            <a href="https://fortune.com/2026/03/30/agi-definition-jensen-huang-lex-fridman-deepmind-turing-text-cognitive-taxonomy/" target="_blank" class="news-item">
+<div class="news-grid">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>英伟达CEO黄仁勋称“我们已实现AGI”，但业界对AGI的定义仍存分歧</h3>
-                <p>上周，英伟达首席执行官黄仁勋在接受播客 Lex Fridman 采访时表示，通用人工智能（AGI）已经实现，这一言论立即登上了新闻头条。然而，AI 领域对于 AGI 的确切定义（如图灵测试的适用性、认知分类等）仍然没有达成共识，反映出行业在评估 AI 真正智能水平时的挑战。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Fortune</span>
-                        
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">上周，英伟达首席执行官黄仁勋在接受播客 Lex Fridman 采访时表示，通用人工智能（AGI）已经实现，这一言论立即登上了新闻头条。然而，AI 领域对于 AGI 的确切定义（如图灵测试的适用性、认...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Fortune</p>
             </a>
-        
-            <a href="https://www.euronews.com/next/2026/03/30/what-is-anthropics-mythos-the-leaked-ai-model-that-poses-unprecedented-cybersecurity-risks" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>为什么 Anthropic 泄露的 AI 模型 'Mythos' 会带来网络安全风险</h3>
-                <p>由于内容管理系统中的人为操作失误，Anthropic 意外泄露了一篇描述其尚未发布的新模型 'Mythos' 的草稿博客。据悉，Anthropic 正在开发这个功能极其强大的新模型，但其潜在的强大能力也引发了前所未有的网络安全担忧，业界正密切关注其对现有网络防御体系的冲击。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Euronews</span>
-                        
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">由于内容管理系统中的人为操作失误，Anthropic 意外泄露了一篇描述其尚未发布的新模型 'Mythos' 的草稿博客。据悉，Anthropic 正在开发这个功能极其强大的新模型，但其潜在的强大能力...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Euronews</p>
             </a>
-        
-            <a href="https://appleinsider.com/articles/26/03/30/geforce-now-streams-apple-vision-pro-faster-better-than-to-meta-headsets" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>GeForce Now 在 Apple Vision Pro 上的串流表现优于 Meta 头显</h3>
-                <p>英伟达近期对其云游戏服务 GeForce Now 进行了更新，使得在 Apple Vision Pro 上的云游戏体验优于目前市面上的任何其他头显设备（包括 Meta Quest 系列）。这次更新显著提升了流媒体传输的稳定性和延迟表现，为空间计算平台带来了更强大的游戏生态支持。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">AppleInsider</span>
-                        
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">英伟达近期对其云游戏服务 GeForce Now 进行了更新，使得在 Apple Vision Pro 上的云游戏体验优于目前市面上的任何其他头显设备（包括 Meta Quest 系列）。这次更新显著...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 AppleInsider</p>
             </a>
-        
-            <a href="https://finance.yahoo.com/news/why-nvidia-has-the-important-stock-chart-in-the-world-145416630.html" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>为什么说英伟达的股票图表是世界上最重要的</h3>
-                <p>如果英伟达（NVDA）的股票是更广泛股票市场的绝佳代表，那么这家人工智能领军企业可能会引领整个市场从近期的波动中走低。英伟达在AI芯片领域的主导地位使其股价成为衡量全球AI投资热度和科技行业健康状况的关键风向标。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">Yahoo Finance</span>
-                        
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">如果英伟达（NVDA）的股票是更广泛股票市场的绝佳代表，那么这家人工智能领军企业可能会引领整个市场从近期的波动中走低。英伟达在AI芯片领域的主导地位使其股价成为衡量全球AI投资热度和科技行业健康状况的...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 Yahoo Finance</p>
             </a>
-        
-            <a href="https://www.techradar.com/computing/gpu/gamer-reportedly-buys-nvidia-rtx-5060-ti-gpu-for-usd80-from-walmart-so-you-might-want-to-check-the-clearance-aisle" target="_blank" class="news-item">
+
+            <a href="#" target="_blank" class="news-item">
                 <h3>玩家据称在沃尔玛仅花费 80 美元买到英伟达 RTX 5060 Ti 显卡</h3>
-                <p>近日有报道称，一位幸运的玩家在沃尔玛的清仓区以仅 80 美元（约合 570 元人民币）的极低价格买到了一张英伟达下一代 RTX 5060 Ti 显卡。这被认为是迄今为止最荒谬的清仓捡漏事件，也引发了玩家们纷纷前往当地超市清仓区“寻宝”的热潮。</p>
-                <div class="meta">
-                    <div>
-                        <span class="source">TechRadar</span>
-                        
-                    </div>
-                    <span>阅读原文 &rarr;</span>
-                </div>
+                <p style="color:#666;font-size:0.9rem;margin-top:0.5rem;">近日有报道称，一位幸运的玩家在沃尔玛的清仓区以仅 80 美元（约合 570 元人民币）的极低价格买到了一张英伟达下一代 RTX 5060 Ti 显卡。这被认为是迄今为止最荒谬的清仓捡漏事件，也引发了玩...</p>
+                <p style="color:#999;font-size:0.8rem;margin-top:0.5rem;">📰 TechRadar</p>
             </a>
-        </div>
+</div>
+</div>
+
     </div>
-    
-    </main>
-    
+
     <footer>
-        <p>© 2026 旺财Jarvis. Build by Iron Man.</p>
+        <p>© 2026 旺财Jarvis · AI助手 · <a href="https://github.com/Chris7Ji/jarviswangcai" target="_blank">GitHub</a></p>
     </footer>
 
     <script>
         function showDate(dateStr) {
+            // 隐藏所有日期容器
+            document.querySelectorAll('.day-news-container').forEach(el => {
+                el.style.display = 'none';
+            });
+            // 显示选中的日期
+            const target = document.getElementById('date-' + dateStr);
+            if (target) {
+                target.style.display = 'block';
+            }
+            // 更新按钮状态
             document.querySelectorAll('.date-pill').forEach(btn => {
+                btn.classList.remove('active');
                 if (btn.dataset.date === dateStr) {
                     btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-            
-            document.querySelectorAll('.day-news-container').forEach(container => {
-                if (container.id === 'news-' + dateStr) {
-                    container.classList.add('active');
-                } else {
-                    container.classList.remove('active');
                 }
             });
         }
