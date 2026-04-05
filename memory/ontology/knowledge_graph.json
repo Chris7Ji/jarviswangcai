@@ -289,6 +289,14 @@
       }
     },
     {
+      "id": "doc:news_2026_04_03.md",
+      "type": "Document",
+      "label": "news_2026_04_03.md",
+      "properties": {
+        "path": "news_2026_04_03.md"
+      }
+    },
+    {
       "id": "doc:THIRD_PARTY_PUBLISH_GUIDE.md",
       "type": "Document",
       "label": "THIRD_PARTY_PUBLISH_GUIDE.md",
@@ -2407,9 +2415,9 @@
       "properties": {}
     },
     {
-      "id": "concept:本体图谱",
+      "id": "concept:关系密度",
       "type": "Concept",
-      "label": "本体图谱",
+      "label": "关系密度",
       "properties": {}
     },
     {
@@ -2419,15 +2427,9 @@
       "properties": {}
     },
     {
-      "id": "concept:关系推理",
+      "id": "concept:本体图谱",
       "type": "Concept",
-      "label": "关系推理",
-      "properties": {}
-    },
-    {
-      "id": "concept:关系密度",
-      "type": "Concept",
-      "label": "关系密度",
+      "label": "本体图谱",
       "properties": {}
     },
     {
@@ -4044,41 +4046,6 @@
     },
     {
       "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识发现",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:关系推理",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:概念关联",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识网络",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
       "target": "concept:关系密度",
       "relation": "mentions"
     },
@@ -4306,41 +4273,6 @@
       "source": "doc:archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:概念关联",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识网络",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识发现",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:关系推理",
-      "relation": "mentions"
     },
     {
       "source": "doc:.learnings/LEARNINGS.md",
