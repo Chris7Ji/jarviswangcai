@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海交通大学计算机学院保研完全指南 - 旺财Jarvis</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --gold: #d4a84b;
+            --text: #eaeaea;
+            --text-muted: #a0a0a0;
+            --bg: #0f0f1a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(233,69,96,0.2);
+        }
+        .header h1 {
+            font-size: 1.8em;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95em;
+        }
+        .header .source {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(233,69,96,0.1);
+            border-radius: 8px;
+            font-size: 0.85em;
+            color: var(--accent);
+        }
+        .section {
+            background: var(--primary);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .section h2 {
+            color: var(--accent);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+        .section h3 {
+            color: var(--gold);
+            font-size: 1.1em;
+            margin: 20px 0 10px 0;
+        }
+        .section p, .section li {
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 25px;
+        }
+        .section li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: rgba(212,168,75,0.1);
+            border-left: 4px solid var(--gold);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: rgba(233,69,96,0.1);
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        .timeline-item .time {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+        .timeline-item .content {
+            color: var(--text);
+            margin-top: 5px;
+        }
+        .checklist {
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 10px 0;
+        }
+        .checklist li {
+            list-style: none;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th {
+            background: var(--secondary);
+            color: var(--gold);
+        }
+        td { color: var(--text); }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .header h1 { font-size: 1.4em; }
+            .section { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🎓 上海交通大学计算机学院<br>保研（推免）完全指南</h1>
+    <p class="subtitle">针对大二学生的系统性准备方案 | 2026年秋季入学</p>
+    <p class="source">📌 信息来源：上海交通大学研究生院(sjtu.edu.cn)、计算机学院(cs.sjtu.edu.cn)官方通知</p>
+</div>
+
+<div class="section">
+    <h2>一、学院概况与实力</h2>
+    <p>上海交通大学计算机学院（网络空间安全学院、密码学院）于<strong>2025年正式成立</strong>，由原计算机科学与工程系、软件学院、网络空间安全学院、约翰·霍普克罗夫夫特计算机科学中心、人工智能研究院等机构重组而成。</p>
+    
+    <h3>🏆 学科实力</h3>
+    <ul>
+        <li><strong>计算机科学与技术</strong>：首批国家一级重点学科</li>
+        <li>首批国家<strong>双一流学科</strong>，形成国际影响力</li>
+        <li>学院与华为、阿里、中国移动、中国电信等头部企业建立联合实验室</li>
+        <li>研究领域：并行与分布式计算、计算机网络、信息安全、密码学、数据与服务计算、系统软件、智能人机交互等</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>二、申请条件（硬性要求）</h2>
+    
+    <h3>📋 基本条件</h3>
+    <div class="highlight-box">
+        <ol>
+            <li>拥护中国共产党，热爱祖国，品德优良，遵纪守法，身心健康</li>
+            <li>诚实守信，学风端正（无考试作弊、剽窃他人学术成果等行为）</li>
+            <li>健康状况符合教育部规定的研究生体检标准</li>
+        </ol>
+    </div>
+
+    <h3>📊 学业成绩要求</h3>
+    <div class="highlight-box">
+        <p><strong>本科前六学期成绩的专业排名在前20%</strong></p>
+        <p>※ C9高校或教育部基础学科拔尖学生培养计划2.0基地拔尖班的同学，排名可适当放宽</p>
+    </div>
+
+    <h3>🌐 英语水平要求</h3>
+    <table>
+        <tr><th>考试类型</th><th>最低分数要求</th></tr>
+        <tr><td>CET-6</td><td>≥ 425分</td></tr>
+        <tr><td>TOEFL</td><td>≥ 90分</td></tr>
+        <tr><td>IELTS</td><td>≥ 6.0分</td></tr>
+    </table>
+
+    <h3>🎯 特别说明</h3>
+    <div class="warning-box">
+        <p><strong>特别优秀者</strong>（如发表高水平论文、竞赛获奖等）第4、5条学业要求可适当放宽！</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>三、招生专业</h2>
+    <table>
+        <tr><th>专业代码</th><th>专业名称</th><th>学位类型</th></tr>
+        <tr><td>081200</td><td>计算机科学与技术</td><td>学术学位（直博/直硕）</td></tr>
+        <tr><td>083900</td><td>网络空间安全</td><td>学术学位（直博/直硕）</td></tr>
+        <tr><td>085400</td><td>电子信息</td><td>专业学位（直硕/直博）</td></tr>
+    </table>
+    <p><strong>注意：</strong>085400电子信息包含工程硕博士培养改革专项，与企业联合培养，第2年起进入联培单位。</p>
+</div>
+
+<div class="section">
+    <h2>四、选拔流程与时间线</h2>
+    
+    <h3>📅 完整时间线（以2026届为参考）</h3>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="time">大三下学期 3-5月</div>
+            <div class="content">开始准备申请材料、提升GPA、参与科研项目</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">大三下学期 6-7月</div>
+            <div class="content"><strong>夏令营报名</strong>（约6月初发布通知，7月3日截止）</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">大三下学期 7月中下旬</div>
+            <div class="content"><strong>夏令营选拔</strong>（现场面试，在交大闵行校区）</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">大三下学期 8月</div>
+            <div class="content">夏令营结果公布，获得"优秀生源"资格</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">大四上学期 9月初</div>
+            <div class="content"><strong>预推免报名</strong>（约9月9日截止）</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">大四上学期 9月14日左右</div>
+            <div class="content"><strong>预推免复试</strong>（交大闵行校区面试）</div>
+        </div>
+        <div class="timeline-item">
+            <div class="time">大四上学期 9月下旬</div>
+            <div class="content">教育部推免系统开放，正式填报志愿、确认录取</div>
+        </div>
+    </div>
+
+    <h3>🔄 两条路径：夏令营 vs 预推免</h3>
+    <div class="highlight-box">
+        <p><strong>夏令营（7月）</strong>：提前选拔，竞争相对较小，7月额满的专业9月不再选拔</p>
+        <p><strong>预推免（9月）</strong>：补充选拔，名额有限，建议优先参加夏令营</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>五、申请材料清单</h2>
+    <div class="checklist">
+        <ol>
+            <li><strong>申请表</strong>（官网下载，签名部分手写）</li>
+            <li><strong>本科成绩单</strong>（需加盖教务部门公章）</li>
+            <li><strong>专业排名证明</strong>（需加盖教务部门公章）</li>
+            <li><strong>英语水平证明</strong>（CET-6/TOEFL/IELTS成绩单）</li>
+            <li><strong>身份证+学生证</strong>（彩色扫描件）</li>
+            <li><strong>个人简历</strong>（2页内）</li>
+            <li><strong>专家推荐信</strong>（直博必须，1封）</li>
+            <li><strong>其他材料</strong>：获奖证书、论文、科研发成果等</li>
+        </ol>
+    </div>
+</div>
+
+<div class="section">
+    <h2>六、复试考核内容</h2>
+    <p>根据上海交大研究生院官方文件，综合考核包括：</p>
+    <div class="highlight-box">
+        <h3>📚 专业素养考核</h3>
+        <ul>
+            <li>数据结构与算法</li>
+            <li>操作系统</li>
+            <li>计算机网络</li>
+            <li>数据库原理</li>
+            <li>专业核心课程知识</li>
+        </ul>
+        
+        <h3>🔬 科研潜质与创新能力</h3>
+        <ul>
+            <li>科研项目经历</li>
+            <li>论文发表情况</li>
+            <li>竞赛获奖情况（ACM、数学建模等）</li>
+            <li>项目实践经验</li>
+        </ul>
+
+        <h3>🎯 综合素质</h3>
+        <ul>
+            <li>逻辑思维能力</li>
+            <li>表达与沟通能力</li>
+            <li>学术道德与科研伦理</li>
+            <li>对专业的理解和热情</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>七、大二学生备战攻略</h2>
+    
+    <h3>📌 现在开始，你需要：</h3>
+    <div class="section">
+        <h3>1️⃣ 学业成绩（最核心）</h3>
+        <ul>
+            <li>保持GPA在专业前10%更稳妥</li>
+            <li>重点：数据结构、算法、操作系统、计算机网络等核心课程</li>
+            <li>每一学期都重要，不要有"先玩玩后补"的侥幸心理</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>2️⃣ 英语能力</h3>
+        <ul>
+            <li><strong>大二上学期</strong>：把六级考到500+（或托福90+/雅思6.0+）</li>
+            <li>英语不仅是门槛，复试中英语口语也很重要</li>
+            <li>有空可以阅读英文技术文档和论文</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>3️⃣ 科研经历（关键加分项）</h3>
+        <ul>
+            <li><strong>尽早进入实验室</strong>：联系计算机学院的老师，争取参与科研项目</li>
+            <li><strong>发表论文</strong>：至少一篇高质量论文（或在投）</li>
+            <li><strong>参与开源项目</strong>：GitHub上有活跃贡献</li>
+            <li><strong>大创项目</strong>：主持或参与省级/国家级大学生创新创业项目</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>4️⃣ 学科竞赛</h3>
+        <table>
+            <tr><th>竞赛</th><th>级别</th><th>加分权重</th></tr>
+            <tr><td>ACM-ICPC / CCPC</td><td>国际/国家级</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>全国大学生数学建模竞赛</td><td>国家级</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td>挑战杯 / 互联网+</td><td>国家级</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td>蓝桥杯</td><td>省级/国家级</td><td>⭐⭐⭐</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>5️⃣ 了解导师与方向</h3>
+        <ul>
+            <li>提前了解计算机学院的导师研究方向</li>
+            <li>明确自己的兴趣方向（AI、系统、网络安全、软件工程等）</li>
+            <li>导师列表：https://365.kdocs.cn/l/ctuflIIu8zSe</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>八、注意事项与红线</h2>
+    
+    <div class="warning-box">
+        <h3>⚠️ 这些行为会导致取消资格：</h3>
+        <ul>
+            <li>提供虚假材料（成绩单、排名、论文等）</li>
+            <li>论文抄袭或科研成果造假</li>
+            <li>考试作弊或受处分</li>
+            <li>最后一学年课程有不及格记录</li>
+            <li>无法获得本科毕业证书和学位证书</li>
+            <li>思想品德考核不合格</li>
+        </ul>
+    </div>
+
+    <div class="highlight-box">
+        <h3>✅ 重要提醒：</h3>
+        <ul>
+            <li>被拟录取后，<strong>不得办理出国手续，不得列入就业计划，不得再次报名统考</strong></li>
+            <li>如果获得优秀营员资格，必须在教育部推免系统完成确认，否则视为放弃</li>
+            <li>推免名额以教育部推免系统备案信息为准，未经公示和备案的申请无效</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <h2>九、联系方式</h2>
+    <table>
+        <tr><th>咨询内容</th><th>联系人</th><th>邮箱</th></tr>
+        <tr><td>直博咨询</td><td>杜老师</td><td>du_xd@sjtu.edu.cn</td></tr>
+        <tr><td>直硕咨询</td><td>刘老师</td><td>liuhq99@sjtu.edu.cn</td></tr>
+        <tr><td>工程硕博士专项</td><td>卓工学院</td><td>gs.zjb@sjtu.edu.cn</td></tr>
+        <tr><td>研究生院招生办</td><td>—</td><td>yzb-ss@sjtu.edu.cn</td></tr>
+    </table>
+    <p><strong>地址：</strong>上海市闵行区东川路800号陈瑞球楼339室</p>
+    <p><strong>电话：</strong>021-62821069</p>
+</div>
+
+<div class="footer">
+    <p>📌 本指南依据上海交通大学官方文件整理，仅供参考</p>
+    <p>信息来源：</p>
+    <p>• 上海交通大学研究生院 https://gs.sjtu.edu.cn</p>
+    <p>• 上海交通大学计算机学院 https://www.cs.sjtu.edu.cn</p>
+    <p>• 上海交通大学研究生招生网 https://yzb.sjtu.edu.cn</p>
+    <p style="margin-top: 15px; color: var(--gold);">整理 by 旺财Jarvis | 报告生成时间：2026-04-07</p>
+</div>
+
+</body>
+</html>
