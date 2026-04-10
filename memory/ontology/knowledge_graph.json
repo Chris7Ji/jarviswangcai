@@ -947,6 +947,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-10-session-start.md",
+      "type": "Document",
+      "label": "2026-04-10-session-start.md",
+      "properties": {
+        "path": "memory/2026-04-10-session-start.md"
+      }
+    },
+    {
       "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_GUIDE.md",
@@ -1008,6 +1016,14 @@
       "label": "ascend_cann_knowledge.md",
       "properties": {
         "path": "memory/ascend_cann_knowledge.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-10-content-sync.md",
+      "type": "Document",
+      "label": "2026-04-10-content-sync.md",
+      "properties": {
+        "path": "memory/2026-04-10-content-sync.md"
       }
     },
     {
@@ -2497,6 +2513,22 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/ascend_pytorch_content.md",
+      "type": "Document",
+      "label": "ascend_pytorch_content.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/ascend_pytorch_content.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/ascend-ai-knowledge.md",
+      "type": "Document",
+      "label": "ascend-ai-knowledge.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/ascend-ai-knowledge.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_2026_04_03.md",
       "type": "Document",
       "label": "news_2026_04_03.md",
@@ -2510,6 +2542,14 @@
       "label": "README.md",
       "properties": {
         "path": "jiaviswangcai.ai/README.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/links.md",
+      "type": "Document",
+      "label": "links.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/links.md"
       }
     },
     {
