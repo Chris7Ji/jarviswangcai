@@ -285,9 +285,10 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      padding: 14px 0 0;
+      padding: 16px 0 0;
       font-size: 14px;
       color: var(--muted);
+      margin-top: 70px;
     }
     .breadcrumb a {
       color: var(--accent);
@@ -295,6 +296,68 @@
       font-weight: 500;
     }
     .breadcrumb a:hover { text-decoration: underline; }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(253, 251, 247, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #B8922F;
+      font-weight: 700;
+      font-size: 1.3rem;
+      text-decoration: none;
+    }
+    .nav-logo:hover { color: #D4A84B; }
+    .logo-img {
+      height: 36px;
+      width: 36px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    .nav-menu a {
+      color: #5a5a7a;
+      font-weight: 500;
+      padding: 8px 0;
+      text-decoration: none;
+      position: relative;
+    }
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: #D4A84B;
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+    .nav-menu a:hover { color: #B8922F; }
+    .nav-menu a:hover::after,
+    .nav-menu a.active::after { transform: scaleX(1); }
+    .nav-menu a:hover,
+    .nav-menu a.active { color: #B8922F; }
   </style>
 </head>
 <body>
