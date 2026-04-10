@@ -2,27 +2,19 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>昇腾PyTorch插件深度解析与性能调优指南</title>
-    <!-- 引入美化后的 CSS -->
-    <link rel="stylesheet" href="css/article.css">
-    <!-- 引入 marked.js 实现 Markdown 的高质量自动解析 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>昇腾PyTorch插件深度解析</title>
     <style>
-        /* 额外微调，确保 Markdown 解析后的元素样式美观 */
-        #md-output { padding: 2rem; background: #fff; border-radius: 8px; }
-        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 2rem; color: #333; }
+        pre { background: #eee; padding: 1rem; overflow-x: auto; }
     </style>
 </head>
 <body>
-    <article id="md-output"></article>
-    <script>
-        // 获取 Markdown 原文
-        const markdownSource = `
+    <div id="main-article">
 # 昇腾 PyTorch 插件（torch_npu）架构与实现深度解析
 
-> 来源仓库：https://gitcode.com/Ascend/pytorch/
-> GitHub 镜像：https://github.com/Ascend/pytorch
-> 整理时间：2026-04-10
+&gt; 来源仓库：https://gitcode.com/Ascend/pytorch/
+&gt; GitHub 镜像：https://github.com/Ascend/pytorch
+&gt; 整理时间：2026-04-10
 
 ---
 
@@ -249,7 +241,7 @@ PyTorch 原生算子不能满足所有需求，昇腾提供了一套高度优化
 
 ## 四、算子融合技术详解
 
-> 本章节专门拆解"算子融合"技术——这是现代 AI 编译器提升计算性能的核心手段。
+&gt; 本章节专门拆解"算子融合"技术——这是现代 AI 编译器提升计算性能的核心手段。
 
 ### 4.1 为什么要融合？——性能瓶颈的根源
 
@@ -404,7 +396,7 @@ model = multihead_attention(embed_dim=512, num_heads=8)
 
 ## 五、HCCL 分布式训练详解
 
-> 本章节深入剖析 HCCL 在多机多卡训练中的通信机制——这是大模型分布式训练的核心基础设施。
+&gt; 本章节深入剖析 HCCL 在多机多卡训练中的通信机制——这是大模型分布式训练的核心基础设施。
 
 ### 5.1 为什么分布式训练需要集合通信？
 
@@ -560,7 +552,7 @@ dist.init_process_group(
 torch.cuda.set_device(rank)  # 在昇腾上等效于 torch.npu.set_device()
 ```
 
-> 💡 科普：`torch.distributed` 的 `backend` 参数在昇腾上写 `"nccl"` 实际会路由到 HCCL，因为昇腾实现了与 NCCL 兼容的接口，PyTorch 分布式训练的代码几乎不需要修改就能跑在昇腾上。
+&gt; 💡 科普：`torch.distributed` 的 `backend` 参数在昇腾上写 `"nccl"` 实际会路由到 HCCL，因为昇腾实现了与 NCCL 兼容的接口，PyTorch 分布式训练的代码几乎不需要修改就能跑在昇腾上。
 
 #### 5.4.2 数据并行训练（最常见的场景）
 
@@ -808,7 +800,7 @@ for data, target in dataloader:
 
 ## 九、支持的硬件（Atlas 全系列）
 
-> 本章节详细列出昇腾 Atlas 全系列硬件产品，确保覆盖范围准确。
+&gt; 本章节详细列出昇腾 Atlas 全系列硬件产品，确保覆盖范围准确。
 
 ### 9.1 Atlas 训练系列产品
 
@@ -899,9 +891,6 @@ for data, target in dataloader:
 ---
 
 *本文基于 https://gitcode.com/Ascend/pytorch 仓库源码和文档分析整理，内容截至 2026-04-10。*
-        `;
-        // 使用 marked 解析为 HTML
-        document.getElementById('md-output').innerHTML = marked.parse(markdownSource);
-    </script>
+    </div>
 </body>
 </html>
