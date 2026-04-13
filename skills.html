@@ -213,11 +213,23 @@
         <!-- 新增：敲黑板知识点汇总 -->
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
             <div style="width: 8px; height: 32px; background: var(--accent-gold); border-radius: 4px;"></div>
-            <h2 style="font-size: 1.8rem; color: var(--text-primary);">📝 敲黑板知识点汇总 (共 <span class="knowledge-count">3</span> 篇)</h2>
+            <h2 style="font-size: 1.8rem; color: var(--text-primary);">📝 敲黑板知识点汇总 (共 <span class="knowledge-count">4</span> 篇)</h2>
         </div>
 
         <section class="knowledge-list" style="margin-bottom: 4rem; display: flex; flex-direction: column; gap: 1.5rem;">
-            <!-- 第三篇：Serverless 无服务器 + 飞书多维表格 (最新) -->
+            <!-- 第四篇：Hermes Agent 自主AI代理 (最新) -->
+            <div class="knowledge-card" style="background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s; cursor: pointer;" onclick="window.location.href='article_hermes_agent.html'">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.4rem; color: var(--accent-blue); margin: 0;">🤖 Hermes Agent：开发者的下一代自主进化 AI 代理</h3>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.2rem 0.6rem; border-radius: 20px;">2026-04-13</span>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; font-size: 1.05rem;">
+                    Hermes Agent 是一款面向开发者的自主式 AI 代理框架，它不只是回答问题的聊天机器人，而是一个能够理解目标、规划步骤、执行任务、自我修正的智能体。本文深度解析其三层架构（感知层、推理层、执行层），并提供 macOS 独立环境一键部署脚本，帮助开发者快速拥有属于自己的自主进化 AI 助手。
+                </p>
+                <a href="article_hermes_agent.html" style="color: var(--accent-gold); text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">查看全文 <span style="font-size: 1.2em;">→</span></a>
+            </div>
+
+            <!-- 第三篇：Serverless 无服务器 + 飞书多维表格 -->)
             <div class="knowledge-card" style="background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s; cursor: pointer;" onclick="window.location.href='article_serverless_bitable.html'">
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
                     <h3 style="font-size: 1.4rem; color: var(--accent-blue); margin: 0;">🚀 Serverless 无服务器 + 飞书多维表格：业界最标准的现代化建站方案</h3>
