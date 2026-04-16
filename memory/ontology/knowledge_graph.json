@@ -183,11 +183,27 @@
       }
     },
     {
+      "id": "doc:ascend_pytorch_content.md",
+      "type": "Document",
+      "label": "ascend_pytorch_content.md",
+      "properties": {
+        "path": "ascend_pytorch_content.md"
+      }
+    },
+    {
       "id": "doc:今日会议提醒_10点.md",
       "type": "Document",
       "label": "今日会议提醒_10点.md",
       "properties": {
         "path": "今日会议提醒_10点.md"
+      }
+    },
+    {
+      "id": "doc:ascend-ai-knowledge.md",
+      "type": "Document",
+      "label": "ascend-ai-knowledge.md",
+      "properties": {
+        "path": "ascend-ai-knowledge.md"
       }
     },
     {
@@ -574,6 +590,14 @@
       "label": "100_skills_analysis_report.md",
       "properties": {
         "path": "100_skills_analysis_report.md"
+      }
+    },
+    {
+      "id": "doc:links.md",
+      "type": "Document",
+      "label": "links.md",
+      "properties": {
+        "path": "links.md"
       }
     },
     {
