@@ -1,2 +1,6 @@
 Surfshark.dmgSurfshark.dmg
 *.dmg
+
+# Node.js dependencies
+node_modules/
+*.node
