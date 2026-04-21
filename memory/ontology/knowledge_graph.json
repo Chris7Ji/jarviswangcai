@@ -1145,6 +1145,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-21.md",
+      "type": "Document",
+      "label": "2026-04-21.md",
+      "properties": {
+        "path": "memory/2026-04-21.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-04-01.md",
       "type": "Document",
       "label": "2026-04-01.md",
