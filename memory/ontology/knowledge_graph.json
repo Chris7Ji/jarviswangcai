@@ -5551,18 +5551,6 @@
       }
     },
     {
-      "id": "concept:project-name",
-      "type": "Concept",
-      "label": "project-name",
-      "properties": {}
-    },
-    {
-      "id": "concept:wikilink",
-      "type": "Concept",
-      "label": "wikilink",
-      "properties": {}
-    },
-    {
       "id": "doc:.learnings/by-topic/email.md",
       "type": "Document",
       "label": "email.md",
@@ -7156,6 +7144,12 @@
       "id": "concept:不存在的页面",
       "type": "Concept",
       "label": "不存在的页面",
+      "properties": {}
+    },
+    {
+      "id": "concept:wikilink",
+      "type": "Concept",
+      "label": "wikilink",
       "properties": {}
     },
     {
@@ -9739,16 +9733,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/daily-insights.md",
-      "target": "concept:project-name",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/daily-insights.md",
-      "target": "concept:wikilink",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:archive/monthly/2026-04/THIRD_PARTY_PUBLISH_GUIDE.md",
       "target": "tag:1E3A5F",
       "relation": "has_tag"
@@ -11487,16 +11471,6 @@
       "source": "doc:jiaviswangcai.ai/archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/daily-insights.md",
-      "target": "concept:project-name",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/daily-insights.md",
-      "target": "concept:wikilink",
-      "relation": "mentions"
     }
   ]
 }
