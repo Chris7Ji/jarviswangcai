@@ -9859,16 +9859,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:memory/ontology/feedback/daily-insights.md",
-      "target": "concept:project-name",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/daily-insights.md",
-      "target": "concept:wikilink",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:.learnings/LEARNINGS.md",
       "target": "concept:私有知识星图自动构建",
       "relation": "mentions"
