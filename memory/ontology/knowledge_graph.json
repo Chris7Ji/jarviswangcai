@@ -1829,6 +1829,68 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-04-28.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-04-28.md"
+      }
+    },
+    {
+      "id": "tag:70765",
+      "type": "Tag",
+      "label": "#70765",
+      "properties": {}
+    },
+    {
+      "id": "tag:58823",
+      "type": "Tag",
+      "label": "#58823",
+      "properties": {}
+    },
+    {
+      "id": "tag:72290",
+      "type": "Tag",
+      "label": "#72290",
+      "properties": {}
+    },
+    {
+      "id": "tag:72287",
+      "type": "Tag",
+      "label": "#72287",
+      "properties": {}
+    },
+    {
+      "id": "tag:73041",
+      "type": "Tag",
+      "label": "#73041",
+      "properties": {}
+    },
+    {
+      "id": "tag:72999",
+      "type": "Tag",
+      "label": "#72999",
+      "properties": {}
+    },
+    {
+      "id": "tag:36630",
+      "type": "Tag",
+      "label": "#36630",
+      "properties": {}
+    },
+    {
+      "id": "tag:73054",
+      "type": "Tag",
+      "label": "#73054",
+      "properties": {}
+    },
+    {
+      "id": "tag:46303",
+      "type": "Tag",
+      "label": "#46303",
+      "properties": {}
+    },
+    {
       "id": "doc:news_summaries/ai_news_2026-03-14_enhanced.md",
       "type": "Document",
       "label": "ai_news_2026-03-14_enhanced.md",
@@ -8698,6 +8760,61 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-23.md",
       "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:70765",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:58823",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:72290",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:72287",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:73041",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:72999",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:36630",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:73054",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:46303",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:72290",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
+      "target": "tag:58823",
       "relation": "has_tag"
     },
     {
