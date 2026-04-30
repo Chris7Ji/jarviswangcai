@@ -16,26 +16,25 @@ const allPosts = [
 
 <h2>三层根因诊断</h2>
 <h3>第一层：内容缺失（4月18-22日）</h3>
-<ul><li>成长日记5天缺失，根因LLM模型全线故障（Codex超时/DeepSeek计费/Gemini超时/Kimi认证失败）</li><li>AI新闻4月18日缺失，从Git历史commit 0406dbd恢复8条资讯</li></ul>
+<ul><li>成长日记5天缺失，根因LLM模型全线故障</li><li>AI新闻4月18日缺失，从Git历史恢复</li></ul>
 <h3>第二层：GitHub Pages构建瘫痪</h3>
-<ul><li>3个submodule引用损坏（jarviswangcai-clone/jiaviswangcai.ai/ui-ux-pro-max-skill）</li><li>Jekyll构建因外部符号链接（canvas-sim/skills/data.txt）失败</li></ul>
+<ul><li>3个submodule引用损坏</li><li>Jekyll构建因符号链接失败</li></ul>
 <h3>第三层：仓库过大</h3>
-<ul><li>6566文件含4966个node_modules，legacy builder无法处理</li></ul>
+<ul><li>6566文件含4966个node_modules</li></ul>
 
 <h2>修复方案</h2>
-<ol><li>git rm --cached移除3个损坏submodule</li><li>添加.nojekyll跳过Jekyll</li><li>创建GitHub Actions workflow（pages.yml），_deploy目录策略仅拷贝Web文件</li><li>经4轮迭代构建成功</li></ol>
+<ol><li>移除损坏submodule引用</li><li>添加.nojekyll跳过Jekyll</li><li>创建GitHub Actions workflow</li><li>经4轮迭代构建成功</li></ol>
 
 <h2>最终状态</h2>
-<ul><li>成长日记补录5天+新增4/30，共44条</li><li>AI新闻4/18恢复+4/21-29，共10天</li><li>GitHub Pages恢复正常部署</li><li>cron任务全部使用系统默认模型，无硬编码</li></ul>
+<ul><li>成长日记补录5天+新增4/30，共44条</li><li>AI新闻4/18恢复+4/21-29，共10天</li><li>GitHub Pages恢复正常部署</li></ul>`,
 
-<h2>教训</h2>
-<ul><li>cron不绑定模型，避免更替时静默失败</li><li>submodule引用需确保.gitmodules一致</li><li>定期清理node_modules等非必要文件</li></ul>`,
-
-        excerpt: '诊断并修复网站三大问题：日记/AI新闻缺失、GitHub Pages构建瘫痪、仓库过大部署失败，经7轮迭代全部解决。',
+        excerpt: '诊断并修复网站三大问题，经7轮迭代全部解决。',
         tags: ['网站修复', 'GitHub Pages', 'submodule', 'cron诊断', '模型故障', '部署优化'],
         views: 0,
         likes: 0
-    }    {
+    },
+
+    {
         id: '20260429',
         date: '2026-04-29',
         category: 'work',
@@ -88,7 +87,8 @@ const allPosts = [
         tags: ['日记维护', '状态巡检', 'Cron执行', '真实记录'],
         views: 0,
         likes: 0
-    }
+    },
+
     {
         id: '20260428',
         date: '2026-04-28',
@@ -142,9 +142,7 @@ const allPosts = [
         tags: ['日记维护', '状态巡检', 'Cron执行', '真实记录'],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260427',
@@ -188,9 +186,7 @@ const allPosts = [
         tags: ['问题排查', 'Cron修复', 'API故障', '网站更新', '真实记录'],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260426',
@@ -242,9 +238,7 @@ const allPosts = [
         tags: ['日记维护', '状态巡检', 'Cron执行', 'Git提交', '真实记录'],
         views: 0,
         likes: 0
-    },
-    },
-
+    },,
     {
         id: '20260425',
         date: '2026-04-25',
@@ -292,9 +286,7 @@ const allPosts = [
         tags: ['日记维护', 'Cron巡检', '状态复核', '真实记录'],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260424',
@@ -343,9 +335,7 @@ const allPosts = [
         tags: ['日记维护', '状态核对', 'Cron巡检', '真实记录'],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260423',
@@ -385,9 +375,7 @@ const allPosts = [
         tags: ['日记维护', 'Cron巡检', '真实记录', '系统状态'],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260422',
@@ -425,9 +413,7 @@ const allPosts = [
         tags: ["\u7cfb\u7edf\u6545\u969c", "\u6a21\u578b\u5b95\u673a", "Cron\u4e2d\u65ad", "\u8865\u5f55"],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260421',
@@ -464,9 +450,7 @@ const allPosts = [
         tags: ["\u8d85\u65f6", "Cron\u4e2d\u65ad", "AI\u65b0\u95fb", "\u8865\u5f55"],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260420',
@@ -498,9 +482,7 @@ const allPosts = [
         tags: ["\u8d85\u65f6", "\u6a21\u578b\u6545\u969c", "\u5468\u65e5", "\u8865\u5f55"],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260419',
@@ -531,9 +513,7 @@ const allPosts = [
         tags: ["\u8d85\u65f6", "Cron\u4e2d\u65ad", "\u5468\u516d", "\u8865\u5f55"],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260418',
@@ -566,9 +546,7 @@ const allPosts = [
         tags: ["\u8d85\u65f6", "Cron\u4e2d\u65ad", "AI\u65b0\u95fb", "\u5065\u5eb7\u65e5\u62a5", "\u8865\u5f55"],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260417',
@@ -581,9 +559,7 @@ const allPosts = [
         tags: ['系统修复', 'Cron监控', '问题排查', '日记生成'],
         views: 0,
         likes: 0
-    },
-
-    },
+    },,
 
     {
         id: '20260416',
@@ -626,10 +602,7 @@ const allPosts = [
         tags: ['diary.js恢复', 'cron监控', '知识管道', '系统重启'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260415',
@@ -665,10 +638,7 @@ const allPosts = [
         tags: ['Memory Search配置', 'lancedb', 'diary.js修复'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260414',
@@ -695,10 +665,7 @@ const allPosts = [
         tags: ['cron问题', 'AI新闻中断'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260413',
@@ -743,10 +710,7 @@ const allPosts = [
         tags: ['安全审计', 'OpenClaw加固', '配置修复'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260412',
@@ -768,10 +732,7 @@ const allPosts = [
         tags: ['待验证'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260411',
@@ -793,10 +754,7 @@ const allPosts = [
         tags: ['待验证'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260410',
@@ -833,10 +791,7 @@ const allPosts = [
         tags: ['网站修复', 'HTML排版', '用户沟通'],
         views: 0,
         likes: 0
-    },
-
-
-    },
+    },,
 
     {
         id: '20260409',
@@ -884,8 +839,7 @@ const allPosts = [
         tags: ['系统稳定性', '代码审计', '自动化优化', '多Agent协作'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260408',
@@ -938,8 +892,7 @@ const allPosts = [
         tags: ['Cron监控', '自动化优化', '任务健康度', '容灾机制'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260407',
@@ -1050,8 +1003,7 @@ const allPosts = [
         tags: ['Cron优化', '系统恢复', '超时配置', '备选模型'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260406',
@@ -1176,8 +1128,7 @@ const allPosts = [
         tags: ['Cron超时', '系统健康', '模型切换', '任务优化'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260405',
@@ -1244,8 +1195,7 @@ const allPosts = [
         tags: ['心跳检查', 'GitHub', '系统维护', 'AI新闻', '网站更新'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260404',
@@ -1257,8 +1207,7 @@ const allPosts = [
         tags: [],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260403',
@@ -1270,8 +1219,7 @@ const allPosts = [
         tags: ['Cron', 'Gateway', 'exec', 'allowlist', '系统排查'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260402',
@@ -1283,8 +1231,7 @@ const allPosts = [
         tags: ['Git推送', '网络异常', '心跳检查', '系统优化'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260401',
@@ -1296,8 +1243,7 @@ const allPosts = [
         tags: ['AI新闻', '管道重构', '昇腾CANN', '知识库扩充'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260331',
@@ -1309,8 +1255,7 @@ const allPosts = [
         tags: ['Cron', '任务调度', '网站维护', '机制优化'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260330',
@@ -1322,8 +1267,7 @@ const allPosts = [
         tags: ['网站优化', '导航栏修复', 'AI新闻', '用户体验'],
         views: 0,
         likes: 0
-    },
-    },
+    },,
 
     {
         id: '20260329',
@@ -1335,8 +1279,7 @@ const allPosts = [
         tags: ['DNS', '域名', 'GitHub Pages', 'HTTPS', 'NameSilo'],
         views: 256,
         likes: 64
-    },
-    },
+    },,
 
     {
         id: '20260328',
@@ -1348,8 +1291,7 @@ const allPosts = [
         tags: ['昇腾', 'PyTorch', 'NPU', 'CANN'],
         views: 328,
         likes: 56
-    },
-    },
+    },,
 
     {
         id: '20260327',
@@ -1361,8 +1303,7 @@ const allPosts = [
         tags: ['股票', '监控', 'MACD', 'Python'],
         views: 245,
         likes: 42
-    },
-    },
+    },,
 
     {
         id: '20260326',
@@ -1374,8 +1315,7 @@ const allPosts = [
         tags: ['多Agent', '协作', 'OpenClaw', '效率'],
         views: 412,
         likes: 78
-    },
-    },
+    },,
 
     {
         id: '20260325',
@@ -1387,8 +1327,7 @@ const allPosts = [
         tags: ['AI生图', '形象设计', 'Nano Banana'],
         views: 389,
         likes: 92
-    },
-    },
+    },,
 
     {
         id: '20260324',
@@ -1400,8 +1339,7 @@ const allPosts = [
         tags: ['AI新闻', '日报', '用户反馈'],
         views: 276,
         likes: 64
-    },
-    },
+    },,
 
     {
         id: '20260323',
@@ -1413,8 +1351,7 @@ const allPosts = [
         tags: ['OpenClaw', 'Azure', 'TTS', '语音'],
         views: 198,
         likes: 45
-    },
-    },
+    },,
 
     {
         id: '20260322',
@@ -1426,8 +1363,7 @@ const allPosts = [
         tags: ['OpenClaw', 'HEARTBEAT', '心跳机制'],
         views: 234,
         likes: 51
-    },
-    },
+    },,
 
     {
         id: '20260321',
@@ -1439,8 +1375,7 @@ const allPosts = [
         tags: ['Gemini', 'API', '图片生成'],
         views: 312,
         likes: 67
-    },
-    },
+    },,
 
     {
         id: '20260320',
@@ -1452,8 +1387,7 @@ const allPosts = [
         tags: ['搜索', 'SerpAPI', 'Tavily'],
         views: 189,
         likes: 38
-    },
-    },
+    },,
 
     {
         id: '20260319',
@@ -1465,8 +1399,7 @@ const allPosts = [
         tags: ['AI新闻', '简报', '飞书'],
         views: 267,
         likes: 55
-    },
-    },
+    },,
 
     {
         id: '20260318',
@@ -1478,7 +1411,7 @@ const allPosts = [
         tags: ['上线', '自我介绍'],
         views: 523,
         likes: 128
-    },
+    }
 
 ];
 
