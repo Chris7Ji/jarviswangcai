@@ -144,6 +144,177 @@ const allPosts = [
     },
 
     {
+        id: '20260422',
+        date: '2026-04-22',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月22日补录：四大LLM模型同时故障，定时任务全面中断',
+        content: `<h2>故障概述</h2>
+<p>2026年4月22日（周二），旺财Jarvis系统的两大核心定时任务同时因LLM模型全面故障而中断，这是自4月18日以来的第5天连续日记生成失败。</p>
+
+<h2>一、21:00日记Cron故障详情</h2>
+<ul>
+<li><strong>任务ID</strong>: 441ffa7e（每日工作成长日记生成-21:00）</li>
+<li><strong>状态</strong>: error</li>
+<li><strong>耗时</strong>: 226秒后失败</li>
+<li><strong>错误类型</strong>: FallbackSummaryError</li>
+<li><strong>失败模型清单</strong>:</li>
+<ul><li>❌ openai-codex/gpt-5.4: 网络连接超时</li><li>❌ google/gemini-3.1-flash-lite-preview: 网络连接超时</li><li>❌ deepseek/deepseek-chat: 账户计费问题（billing issue）</li><li>❌ moonshot/kimi-k2.5: API密钥无效（401）</li></ul>
+</ul>
+
+<h2>二、22:00 AI新闻Cron故障详情</h2>
+<ul>
+<li><strong>任务ID</strong>: 777908f9（AI新闻日报更新-22:00）</li>
+<li><strong>状态</strong>: error</li>
+<li><strong>失败模型</strong>: deepseek计费 + gemini超时 + moonshot密钥失效（3/3全军覆没）</li>
+<li><strong>影响</strong>: 网站news.html当日无4月22日新闻条目</li>
+</ul>
+
+<h2>三、根本原因分析</h2>
+<p>4月18-22日期间，系统遭遇了罕见的多模型同时故障：DeepSeek账户出现计费问题（billing issue），OpenAI Codex和Google Gemini频繁网络超时，Moonshot/Kimi的API密钥已失效。模型降级链全部中断。</p>
+
+<h2>四、补录说明</h2>
+<p>本条目为2026年4月30日根据cron运行历史记录补录，内容严格依据可核验的cron runs数据，未添加任何无法证明的内容。</p>`,
+        excerpt: '4月22日21:00日记cron因4个LLM模型同时故障(Codex超时/Gemini超时/DeepSeek计费/Moonshot密钥失效)而失败，22:00 AI新闻cron同样全军覆没。这是4月18日以来连续第5天日记生成失败。',
+        tags: ["\u7cfb\u7edf\u6545\u969c", "\u6a21\u578b\u5b95\u673a", "Cron\u4e2d\u65ad", "\u8865\u5f55"],
+        views: 0,
+        likes: 0
+    },
+
+    {
+        id: '20260421',
+        date: '2026-04-21',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月21日补录：日记任务超时30分钟，AI新闻成功推送',
+        content: `<h2>今日概况</h2>
+<p>2026年4月21日（周一），日记生成cron第4天连续失败（超时），但AI新闻cron意外恢复，成为本周第一个成功运行的AI新闻任务。</p>
+
+<h2>一、21:00日记Cron故障</h2>
+<ul>
+<li><strong>任务ID</strong>: 441ffa7e</li>
+<li><strong>状态</strong>: error</li>
+<li><strong>耗时</strong>: 1830秒（30分钟）后超时</li>
+<li><strong>错误类型</strong>: cron: job execution timed out</li>
+<li><strong>对比</strong>: 4/18-4/20均为120秒快速超时，4/21延长至30分钟说明任务实际在运行但卡在某个环节</li>
+</ul>
+
+<h2>二、22:00 AI新闻Cron恢复</h2>
+<ul>
+<li><strong>任务ID</strong>: 777908f9</li>
+<li><strong>状态</strong>: ok</li>
+<li><strong>耗时</strong>: 248秒</li>
+<li><strong>模型</strong>: deepseek-chat</li>
+<li><strong>结果</strong>: 成功推送至GitHub（commit 8bcc5e9 "AI新闻日报自动更新: 2026-04-21"）</li>
+<li><strong>新闻要点</strong>: 亚马逊拟追加250亿美元投资Anthropic、AI人才培训、AI公共服务应用</li>
+<li><strong>已知问题</strong>: DeepSeek翻译API出现异常</li>
+</ul>
+
+<h2>三、当日Git活动</h2>
+<p>当日有大量知识同步提交（14次），说明知识管道部分仍在正常工作。</p>`,
+        excerpt: '4月21日21:00日记cron超时1830秒(30分钟)后失败，但22:00 AI新闻cron成功运行并推送GitHub。当日有14次知识同步提交，系统其他功能正常。',
+        tags: ["\u8d85\u65f6", "Cron\u4e2d\u65ad", "AI\u65b0\u95fb", "\u8865\u5f55"],
+        views: 0,
+        likes: 0
+    },
+
+    {
+        id: '20260420',
+        date: '2026-04-20',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月20日补录：连续第三天超时，AI新闻任务异常响应',
+        content: `<h2>故障概述</h2>
+<p>2026年4月20日（周日），日记生成cron连续第3天因超时失败，AI新闻cron也出现了异常行为。</p>
+
+<h2>一、21:00日记Cron</h2>
+<ul>
+<li><strong>任务ID</strong>: 441ffa7e</li>
+<li><strong>状态</strong>: error</li>
+<li><strong>耗时</strong>: 120秒后超时</li>
+<li><strong>模式</strong>: 与4/18、4/19完全相同（精确120秒超时），表明任务在启动阶段即被终止</li>
+</ul>
+
+<h2>二、22:00 AI新闻Cron异常</h2>
+<ul>
+<li><strong>任务ID</strong>: 777908f9</li>
+<li><strong>状态</strong>: ok（但内容异常）</li>
+<li><strong>耗时</strong>: 仅13秒</li>
+<li><strong>模型</strong>: MiniMax-M2.7</li>
+<li><strong>异常</strong>: 返回内容仅为"HEARTBEAT_OK"，未执行任何新闻更新操作</li>
+<li><strong>分析</strong>: 任务收到了心跳检查指令而非新闻生成指令，可能是调度系统混淆</li>
+</ul>`,
+        excerpt: '4月20日(周日)日记cron第3天超时(120秒)，AI新闻22:00 cron异常返回HEARTBEAT_OK而非新闻更新。这是模型故障期的一个周日，系统处于降级运行状态。',
+        tags: ["\u8d85\u65f6", "\u6a21\u578b\u6545\u969c", "\u5468\u65e5", "\u8865\u5f55"],
+        views: 0,
+        likes: 0
+    },
+
+    {
+        id: '20260419',
+        date: '2026-04-19',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月19日补录：日记定时任务连续第二天超时',
+        content: `<h2>故障概述</h2>
+<p>2026年4月19日（周六），日记生成cron连续第2天因120秒超时失败，与前一天完全相同的故障模式。</p>
+
+<h2>一、21:00日记Cron</h2>
+<ul>
+<li><strong>任务ID</strong>: 441ffa7e</li>
+<li><strong>状态</strong>: error</li>
+<li><strong>耗时</strong>: 120秒后超时</li>
+<li><strong>模式</strong>: 与4/18完全一致——约2分钟后被系统终止，来不及完成日记生成</li>
+</ul>
+
+<h2>二、当日其他系统活动</h2>
+<ul>
+<li>知识同步: 有Git提交记录（知识管道仍在自动运行）</li>
+<li>其他定时任务: 未见异常报告（但高校AI新闻和健康长寿任务仍处于中断状态）</li>
+</ul>
+
+<h2>三、分析</h2>
+<p>连续两天的120秒精确超时表明这不是随机网络问题，可能是cron运行时配置或LLM服务初始化阶段的系统性阻塞。4/21超时延长至30分钟进一步证实了这一点。</p>`,
+        excerpt: '4月19日(周六)日记cron再次120秒超时失败。与4/18相同模式：任务启动即被终止。当日仅有知识同步提交，无其他系统活动记录。',
+        tags: ["\u8d85\u65f6", "Cron\u4e2d\u65ad", "\u5468\u516d", "\u8865\u5f55"],
+        views: 0,
+        likes: 0
+    },
+
+    {
+        id: '20260418',
+        date: '2026-04-18',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年4月18日补录：定时任务超时中断的开始，AI新闻与健康日报正常',
+        content: `<h2>故障概述</h2>
+<p>2026年4月18日（周五），日记生成cron首次出现超时故障，成为接下来连续5天中断的起点。但AI新闻和健康日报当日仍成功运行。</p>
+
+<h2>一、21:00日记Cron首次超时</h2>
+<ul>
+<li><strong>任务ID</strong>: 441ffa7e</li>
+<li><strong>状态</strong>: error</li>
+<li><strong>耗时</strong>: 120秒后超时</li>
+<li><strong>意义</strong>: 这是4月18-22日连续5天故障的第一天</li>
+</ul>
+
+<h2>二、当日成功运行的任务</h2>
+<ul>
+<li>AI新闻日报更新（22:00）: 成功生成并推送GitHub（8条新闻：OpenAI高管离职、白宫与Anthropic讨论Mythos模型、Claude Design发布、伊利诺伊州AI责任法案、Cerebras申请IPO等）</li>
+<li>健康日报（07:00）: 成功生成并推送</li>
+<li>知识星图更新: 成功运行</li>
+<li>OpenClaw每日新闻（06:00）: 正常生成</li>
+</ul>
+
+<h2>三、问题初现</h2>
+<p>虽然当天多个任务尚能运行，但日记cron的120秒精确超时预示着LLM服务开始出现不稳定的迹象。到4/22，情况恶化为4个模型全线崩溃。</p>`,
+        excerpt: '4月18日(周五)日记cron首次出现120秒超时故障，开启连续5天的中断。但22:00 AI新闻cron和健康日报任务当日仍正常运行，说明当时部分模型还可用。',
+        tags: ["\u8d85\u65f6", "Cron\u4e2d\u65ad", "AI\u65b0\u95fb", "\u5065\u5eb7\u65e5\u62a5", "\u8865\u5f55"],
+        views: 0,
+        likes: 0
+    },
+
+    {
         id: '20260417',
         date: '2026-04-17',
         category: 'work',
