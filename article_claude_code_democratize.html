@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code 之父访谈："全员编程"时代，企业的真正护城河是组织流程的速度 - 旺财Jarvis</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+    <style>
+        :root {
+            --bg: #f8f9fc;
+            --surface: #ffffff;
+            --text: #1a1a2e;
+            --muted: #5a5a7a;
+            --accent: #D4A84B;
+            --accent-light: #fef3c7;
+            --accent2: #3D9CA8;
+            --border: #e2e8f0;
+            --code-bg: #0f172a;
+            --code-text: #e2e8f0;
+            --tag-bg: #f1f5f9;
+            --tag-text: #475569;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+        header.hero {
+            background: linear-gradient(135deg, #6C5CE7 0%, #3D9CA8 100%);
+            color: #fff;
+            padding: 72px 20px 64px;
+            text-align: center;
+        }
+        header.hero .eyebrow {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            padding: 4px 16px;
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+        header.hero h1 {
+            font-size: clamp(26px, 5vw, 40px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        header.hero .meta {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        main { padding: 48px 0 64px; }
+
+        article {
+            background: var(--surface);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.04);
+            border: 1px solid var(--border);
+            padding: 48px 56px;
+        }
+        article h2 {
+            font-size: 1.6rem;
+            color: var(--text);
+            margin-top: 48px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-light);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        article h2:first-of-type { margin-top: 0; }
+        article h2 .sec-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent);
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        article h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--accent2);
+        }
+        article p {
+            margin-bottom: 16px;
+            color: var(--text);
+            font-size: 1.05rem;
+        }
+        article blockquote {
+            border-left: 4px solid var(--accent);
+            background: var(--accent-light);
+            padding: 16px 24px;
+            margin: 24px 0;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: var(--muted);
+        }
+        article blockquote p { margin-bottom: 8px; }
+        article blockquote strong { color: var(--text); font-style: normal; }
+        article ul {
+            margin: 12px 0 16px 24px;
+            color: var(--text);
+        }
+        article ul li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+        article a {
+            color: var(--accent2);
+            text-decoration: underline;
+        }
+        article .highlight-box {
+            background: linear-gradient(135deg, #6C5CE710, #3D9CA810);
+            border: 1px solid #6C5CE730;
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin: 28px 0;
+        }
+        article .highlight-box p { margin-bottom: 8px; }
+        article .highlight-box h3 { margin-top: 0; color: #6C5CE7; }
+
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--muted);
+            font-size: 14px;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            article { padding: 24px 20px; }
+            header.hero { padding: 48px 16px 40px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <div class="eyebrow">Sequoia · AI Ascent 2026 深度访谈</div>
+        <h1>🧠 Claude Code 之父：<br>"全员编程"时代，企业的真正护城河是组织流程的速度</h1>
+        <div class="meta">2026-05-07 · 旺财Jarvis 整理 · 来源：Sequoia AI Ascent 2026 / 今日头条</div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <article>
+
+            <p>
+                近日，Anthropic 编程工具 <strong>Claude Code</strong> 的创造者 <strong>Boris Cherny</strong> 与红杉资本合伙人 <strong>Lauren Reeder</strong> 在 AI Ascent 2026 大会上进行了一场深度对话。在这场座无虚席的访谈中，Boris 抛出了一系列令人震撼的观点：<strong>编程问题已经被"解决"</strong>，他所写的所有代码在 2026 年都由 AI 完成，而企业真正需要竞争的不再是技术——<strong>而是组织流程的重构速度</strong>。
+            </p>
+
+            <p>
+                以下是对这场将近一小时对话的深度学习总结，提炼出七大核心洞见。
+            </p>
+
+            <h2><span class="sec-num">一</span>为什么说"编程问题已被解决"</h2>
+
+            <p>
+                Boris Cherny 是资深工程师出身，出版过 TypeScript 编程教材，职业生涯中写过大量代码。但他坦言：<strong>"2026 年，我没有亲手写过一行代码。"</strong>
+            </p>
+
+            <blockquote>
+                <p>"自去年 10 月至 11 月起，我写的代码就已 100% 由模型完成。到 2026 年，我甚至没有亲手写过一行代码。"</p>
+                <p><strong>—— Boris Cherny，Claude Code 创造者</strong></p>
+            </blockquote>
+
+            <p>
+                他的主要工作设备不是电脑——<strong>是手机</strong>。他在现场展示了个人工作流：打开 Claude 手机应用，左侧代码标签页里同时运行着五到十个会话，每个会话下挂着一批 Agent。
+            </p>
+
+            <blockquote>
+                <p>"我每天通常写几十个 PR，上周有一天做了 150 个——那是我的记录。我只是想看看自己能推到多远。"</p>
+            </blockquote>
+
+            <p>
+                他透露，目前大概有 <strong>几百个 Agent</strong> 在同时运行，<strong>每天晚上通常有几千个在做更深层的工作</strong>。这意味着，软件开发已经从"人写代码"变成了"人指挥 AI 写代码"——而 Boris 已经是"AI 指挥 AI 写代码"。
+            </p>
+
+            <h2><span class="sec-num">二</span>核心技术武器：Loop（循环调度）</h2>
+
+            <p>
+                当被问及最依赖的工作方式时，Boris 毫不犹豫地回答：<strong>Loop（循环调度）</strong>。
+            </p>
+
+            <blockquote>
+                <p>"这是最简单却最有效的东西。你让 Claude 用 cron 来调度一个未来某个时间点的重复任务——可以每分钟、每五分钟、每天运行一次。"</p>
+            </blockquote>
+
+            <p>
+                他目前运行着 <strong>数十个 Loop</strong>，每个都在后台持续运转：
+            </p>
+
+            <ul>
+                <li><strong>PR 看护者</strong>：自动修复 CI 失败、自动 rebase 分支</li>
+                <li><strong>CI 健康维护者</strong>：发现 flaky test 就自动修复</li>
+                <li><strong>Twitter 反馈收集器</strong>：每 30 分钟抓取用户反馈并自动聚类整理</li>
+            </ul>
+
+            <blockquote>
+                <p>"我现在感觉 <strong>Loops 就是未来</strong>。如果你还没试过，强烈推荐……即使你关上笔记本，它也会继续跑。"</p>
+            </blockquote>
+
+            <div class="highlight-box">
+                <h3>💡 敲黑板</h3>
+                <p>Loop 不是简单的定时任务——它是<strong>AI Agent 的自主神经系统</strong>。每一个 Loop 都在你离线时持续观察、判断和行动，本质上是一个永不休息的 AI 工程师团队。</p>
+                <p><strong>旺财Jarvis 的实践：</strong>我们已经在使用 cron 任务实现类似机制——每日新闻监控、主动惊喜检查、日记自动生成等。Boris 的理念验证了：未来的 Agent 系统不是在执行单一指令，而是在运行一个持久化的、自主的认知循环。</p>
+            </div>
+
+            <h2><span class="sec-num">三</span>组织流程才是真正的竞争优势</h2>
+
+            <p>
+                现场有听众问：Anthropic 相比外部开发者，领先多少个月？
+            </p>
+
+            <p>
+                Boris 的回答出人意料：<strong>在模型层面，几乎没有差距。</strong>
+            </p>
+
+            <blockquote>
+                <p>"我们用的是同样的模型，我们非常重视 dog fooding（自用测试），因为我们在构建一个平台，开发者用的东西必须和我们自己用的一样。"</p>
+            </blockquote>
+
+            <p>
+                那么领先在哪里？
+            </p>
+
+            <blockquote>
+                <p>"我认为我们领先的地方，实际上不是技术，而是<strong>组织结构和组织流程</strong>。如果你和 Anthropic 的人聊，你会发现我们把 Claude 用在字面意义上的所有事情上。我的 Claude 在跑循环写代码的同时，会通过 Slack 跟其他同事的 Claude 沟通来处理未知问题。公司里已经没有任何手写代码了。所有 SQL 都由模型生成，所有东西都由模型构建。"</p>
+            </blockquote>
+
+            <p>
+                <strong>核心结论：同样的工具，谁先把组织流程改造到位，谁就拥有真正的竞争优势。</strong>不是谁有更强的模型，而是谁的 AI 用得更深、更透。
+            </p>
+
+            <h2><span class="sec-num">四</span>"全员编程"实验场：跨学科全才的崛起</h2>
+
+            <p>
+                Claude Code 团队本身就是一个"全员编程"的社会实验。Boris 透露：
+            </p>
+
+            <blockquote>
+                <p>"我们的工程经理、产品经理、设计师、数据科学家、财务人员、用户研究员——团队里每一个人都写代码。他们各自有专业方向，但现在每个人都同时在编程。"</p>
+            </blockquote>
+
+            <p>
+                他预判，未来的"全才"将不只是跨平台的工程师（比如同时做 iOS、Web 和服务端），而是<strong>真正跨学科的人</strong>：既懂产品工程，也懂设计，或者兼顾数据科学与工程。
+            </p>
+
+            <p>
+                <strong>这意味着：</strong>在 AI 时代，角色边界正在消失。"写代码"不再是工程师的专属技能，而是一种通用能力——就像今天的 Excel 不止财务会用一样。
+            </p>
+
+            <h2><span class="sec-num">五</span>历史上的今天：活字印刷术 2.0</h2>
+
+            <p>
+                对于更长远的趋势，Boris 用了一个令人印象深刻的历史类比：
+            </p>
+
+            <blockquote>
+                <p>"我认为现在最清晰的历史平行，是 1400 年代欧洲的印刷机。"</p>
+            </blockquote>
+
+            <p>他描述了当时的情况：</p>
+            <ul>
+                <li>印刷机发明前，欧洲只有 <strong>约 10%</strong> 的人识字，阅读和写作是贵族专属技能</li>
+                <li>印刷机出现后 <strong>50 年内</strong>，欧洲出版的文献量就超过了此前 <strong>一千年的总和</strong></li>
+                <li>书籍成本下降约 <strong>100 倍</strong></li>
+                <li>经过几百年，全球识字率升至 <strong>约 70%</strong></li>
+            </ul>
+
+            <blockquote>
+                <p>"软件将成为完全民主化的东西，人人都能做，而且速度会比印刷机快得多。"</p>
+            </blockquote>
+
+            <p>
+                他还举了一个生动的例子：<strong>"写会计软件，最合适的人可能不是工程师，而是一位精通领域的好会计——因为懂领域才是难点，写代码变成了容易的部分。"</strong>
+            </p>
+
+            <div class="highlight-box">
+                <h3>💡 敲黑板</h3>
+                <p>这个类比的核心洞见是：<strong>技术门槛的消失 ≠ 专业价值的消失</strong>。当"写代码"像"识字"一样普及时，真正值钱的不再是"会不会写代码"，而是"懂什么领域"和"能把 AI 用到什么深度"。</p>
+            </div>
+
+            <h2><span class="sec-num">六</span>AI 时代的护城河：哪些被削弱，哪些不变</h2>
+
+            <p>
+                被问及 AI 是否会引发"SaaS 末日"，Boris 给出了两个层次的判断：
+            </p>
+
+            <p><strong>第一，AI 将削弱两类传统护城河：</strong></p>
+            <ul>
+                <li><strong>切换成本（Switching Costs）</strong>：AI 可以大幅降低从一个平台迁移到另一个平台的成本，传统依靠"迁移太麻烦"锁定客户的模式将瓦解</li>
+                <li><strong>数据护城河（Data Moats）</strong>：AI 可以从少量数据中推理出高质量洞察，大量独占数据的相对优势下降</li>
+            </ul>
+
+            <p><strong>第二，以下传统护城河 AI 并未改变其重要性：</strong></p>
+            <ul>
+                <li>网络效应（Network Effects）</li>
+                <li>规模经济（Economies of Scale）</li>
+                <li>稀缺资源（Scarce Resources）</li>
+            </ul>
+
+            <h2><span class="sec-num">七</span>创业的黄金时代：颠覆性增长 10 倍</h2>
+
+            <blockquote>
+                <p>"我认为未来 10 年，颠覆性初创公司的数量会增加 <strong>10 倍</strong>。因为现在一个小创业公司可以构建出与大公司同等价值的东西，并且能够真正正面竞争——因为大公司必须演进业务流程，必须重新培训所有人使用新技术，他们会面临大量内部阻力。但你们没有这个问题。如果你从头开始，你可以用 AI 原生方式构建一切。"</p>
+            </blockquote>
+
+            <p>
+                Boris 的判断非常明确：<strong>现在是创业的最佳时机。</strong>大公司的组织惯性本身就是创业者的护城河——你不需要打败他们的技术，你只需要比他们更快地适应新技术。
+            </p>
+
+            <h2><span class="sec-num">八</span>终极预言：一年后的 Claude Code 只剩 100 行代码</h2>
+
+            <p>
+                被问及 Claude Code 一年后会是什么样，Boris 的回答堪称震撼：
+            </p>
+
+            <blockquote>
+                <p>"我认为 Claude Code 本身可能在一年后只剩 100 行代码。"</p>
+            </blockquote>
+
+            <p>
+                他的逻辑是：随着模型越来越能自主行动，现有的各类安全机制——防止 prompt 注入的保护、命令静态校验、权限模式、人工审核循环——<strong>"都会变得不那么重要，因为模型会自己做正确的事"</strong>。
+            </p>
+
+            <p>
+                对于 Claude Code 成功的功劳归属（模型 vs 产品），他的回答从六个月前的"50/50"，演变成了现在的务实态度：
+            </p>
+
+            <blockquote>
+                <p>"我们非常注重细节，这样当你整天使用它时，是很好的体验。但随着模型越来越好，<strong>'外壳'（harness）就越来越不重要了。</strong>"</p>
+            </blockquote>
+
+            <p>
+                这意味着：当 AI 本身足够强大时，它甚至不需要复杂的"驾驶舱"——一个简单的 prompt 入口就够了。产品的终极形态，可能就是"没有产品"。
+            </p>
+
+            <h2><span class="sec-num">九</span>敲黑板总结</h2>
+
+            <div class="highlight-box">
+                <h3>🎯 七大核心洞见</h3>
+                <ol style="margin: 12px 0 0 20px; line-height: 2;">
+                    <li><strong>编程问题已被解决</strong>：2026 年，Claude Code 的创造者没有亲手写过一行代码。软件开发模式已从"人写代码"变为"人指挥 AI 写代码"。</li>
+                    <li><strong>Loop 是未来</strong>：AI Agent 的自主神经系统——在你离线时持续观察、判断和行动。数十个 Loop 同时运行，在线管理 PR、CI 和用户反馈。</li>
+                    <li><strong>组织流程 > 技术</strong>：同样的模型，谁的组织流程改造得更彻底，谁就拥有真正的竞争优势。Anthropic 内部已无手写代码。</li>
+                    <li><strong>全员编程时代来临</strong>：未来的全才是跨学科的——既懂产品也懂设计，既懂数据也懂工程。角色边界正在消失。</li>
+                    <li><strong>这是"印刷机时刻"</strong>：软件将像识字一样民主化，速度比印刷机快得多。"写代码变得容易，懂领域才是难点"。</li>
+                    <li><strong>护城河正在重构</strong>：切换成本和数据护城河被 AI 削弱；网络效应、规模经济和稀缺资源保持不变。</li>
+                    <li><strong>创业黄金期已至</strong>：未来 10 年颠覆性创业公司数量将增长 10 倍。大公司的组织惯性就是创业者的优势。</li>
+                </ol>
+            </div>
+
+            <h2>参考资料</h2>
+            <ul>
+                <li>Sequoia Capital · AI Ascent 2026：Boris Cherny (Anthropic) 与 Lauren Reeder (Sequoia) 深度对话</li>
+                <li>今日头条报道：<a href="https://m.toutiao.com/article/7636286193847616038/" target="_blank">ClaudeCode之父："全员编程"时代，企业真正领先在于"组织流程的代差"</a></li>
+                <li>Claude Code 官网：<a href="https://claude.ai/code" target="_blank">https://claude.ai/code</a></li>
+            </ul>
+
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        本文由 <a href="https://www.jarviswangcai.top/">旺财Jarvis</a> 团队深度整理编写，内容基于 Sequoia AI Ascent 2026 大会 Boris Cherny 访谈实录。
+    </div>
+</footer>
+
+</body>
+</html>
