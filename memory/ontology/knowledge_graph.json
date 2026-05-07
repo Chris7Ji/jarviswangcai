@@ -895,20 +895,6 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-20-session-summary.md",
-      "type": "Document",
-      "label": "2026-04-20-session-summary.md",
-      "properties": {
-        "path": "memory/2026-04-20-session-summary.md"
-      }
-    },
-    {
-      "id": "concept:reply_to_current",
-      "type": "Concept",
-      "label": "reply_to_current",
-      "properties": {}
-    },
-    {
       "id": "doc:memory/working-buffer.md",
       "type": "Document",
       "label": "working-buffer.md",
@@ -917,35 +903,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-20-0630.md",
-      "type": "Document",
-      "label": "2026-04-20-0630.md",
-      "properties": {
-        "path": "memory/2026-04-20-0630.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-13.md",
-      "type": "Document",
-      "label": "2026-04-13.md",
-      "properties": {
-        "path": "memory/2026-04-13.md"
-      }
-    },
-    {
       "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_GUIDE.md",
       "properties": {
         "path": "memory/MEMORY_SYSTEM_GUIDE.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-16.md",
-      "type": "Document",
-      "label": "2026-04-16.md",
-      "properties": {
-        "path": "memory/2026-04-16.md"
       }
     },
     {
@@ -973,22 +935,6 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-10-content-sync.md",
-      "type": "Document",
-      "label": "2026-04-10-content-sync.md",
-      "properties": {
-        "path": "memory/2026-04-10-content-sync.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-15.md",
-      "type": "Document",
-      "label": "2026-04-15.md",
-      "properties": {
-        "path": "memory/2026-04-15.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-04-21.md",
       "type": "Document",
       "label": "2026-04-21.md",
@@ -1010,22 +956,6 @@
       "label": "user_preferences.md",
       "properties": {
         "path": "memory/user_preferences.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-13-安全审计与加固.md",
-      "type": "Document",
-      "label": "2026-04-13-安全审计与加固.md",
-      "properties": {
-        "path": "memory/2026-04-13-安全审计与加固.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-20-0627.md",
-      "type": "Document",
-      "label": "2026-04-20-0627.md",
-      "properties": {
-        "path": "memory/2026-04-20-0627.md"
       }
     },
     {
@@ -3461,6 +3391,12 @@
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-session-summary.md"
       }
+    },
+    {
+      "id": "concept:reply_to_current",
+      "type": "Concept",
+      "label": "reply_to_current",
+      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/memory/2026-03-06.md",
@@ -6535,6 +6471,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-20-session-summary.md",
+      "type": "Document",
+      "label": "2026-04-20-session-summary.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-session-summary.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-06.md",
       "type": "Document",
       "label": "2026-03-06.md",
@@ -6615,6 +6559,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-20-0630.md",
+      "type": "Document",
+      "label": "2026-04-20-0630.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-0630.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-29-400-status-code-no-body.md",
       "type": "Document",
       "label": "2026-03-29-400-status-code-no-body.md",
@@ -6663,6 +6615,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-13.md",
+      "type": "Document",
+      "label": "2026-04-13.md",
+      "properties": {
+        "path": "memory/archive/2026-04-13.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-02-13.md",
       "type": "Document",
       "label": "2026-02-13.md",
@@ -6692,6 +6652,14 @@
       "label": "2026-03-29.md",
       "properties": {
         "path": "memory/archive/2026-03-29.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-16.md",
+      "type": "Document",
+      "label": "2026-04-16.md",
+      "properties": {
+        "path": "memory/archive/2026-04-16.md"
       }
     },
     {
@@ -6735,11 +6703,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-10-content-sync.md",
+      "type": "Document",
+      "label": "2026-04-10-content-sync.md",
+      "properties": {
+        "path": "memory/archive/2026-04-10-content-sync.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-28-openclaw-config-tips.md",
       "type": "Document",
       "label": "2026-03-28-openclaw-config-tips.md",
       "properties": {
         "path": "memory/archive/2026-03-28-openclaw-config-tips.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-15.md",
+      "type": "Document",
+      "label": "2026-04-15.md",
+      "properties": {
+        "path": "memory/archive/2026-04-15.md"
       }
     },
     {
@@ -6839,11 +6823,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-13-安全审计与加固.md",
+      "type": "Document",
+      "label": "2026-04-13-安全审计与加固.md",
+      "properties": {
+        "path": "memory/archive/2026-04-13-安全审计与加固.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-04.md",
       "type": "Document",
       "label": "2026-03-04.md",
       "properties": {
         "path": "memory/archive/2026-03-04.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-20-0627.md",
+      "type": "Document",
+      "label": "2026-04-20-0627.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-0627.md"
       }
     },
     {
@@ -8795,11 +8795,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:memory/2026-04-20-session-summary.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
       "target": "tag:44639",
       "relation": "has_tag"
@@ -10528,6 +10523,11 @@
       "source": "doc:archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/archive/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
     },
     {
       "source": "doc:memory/archive/2026-03-29-400-status-code-no-body.md",
