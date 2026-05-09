@@ -1633,6 +1633,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/opc_daily_2026-05-09.md",
+      "type": "Document",
+      "label": "opc_daily_2026-05-09.md",
+      "properties": {
+        "path": "news_summaries/opc_daily_2026-05-09.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/ai_news_2026-03-17_v2.md",
       "type": "Document",
       "label": "ai_news_2026-03-17_v2.md",
@@ -6780,6 +6788,14 @@
       "label": "2026-03-30-1718.md",
       "properties": {
         "path": "memory/archive/2026-03-30-1718.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/working-buffer-2026-03-14.md",
+      "type": "Document",
+      "label": "working-buffer-2026-03-14.md",
+      "properties": {
+        "path": "memory/archive/working-buffer-2026-03-14.md"
       }
     },
     {
