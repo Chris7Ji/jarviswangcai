@@ -417,6 +417,68 @@
       }
     },
     {
+      "id": "doc:website_building_prompt_summary.md",
+      "type": "Document",
+      "label": "website_building_prompt_summary.md",
+      "properties": {
+        "path": "website_building_prompt_summary.md"
+      }
+    },
+    {
+      "id": "tag:B8922F",
+      "type": "Tag",
+      "label": "#B8922F",
+      "properties": {}
+    },
+    {
+      "id": "tag:2D7A85",
+      "type": "Tag",
+      "label": "#2D7A85",
+      "properties": {}
+    },
+    {
+      "id": "tag:FDFBF7",
+      "type": "Tag",
+      "label": "#FDFBF7",
+      "properties": {}
+    },
+    {
+      "id": "tag:FF8C00",
+      "type": "Tag",
+      "label": "#FF8C00",
+      "properties": {}
+    },
+    {
+      "id": "tag:FFA500",
+      "type": "Tag",
+      "label": "#FFA500",
+      "properties": {}
+    },
+    {
+      "id": "tag:1E90FF",
+      "type": "Tag",
+      "label": "#1E90FF",
+      "properties": {}
+    },
+    {
+      "id": "tag:00BFFF",
+      "type": "Tag",
+      "label": "#00BFFF",
+      "properties": {}
+    },
+    {
+      "id": "tag:1A1A1A",
+      "type": "Tag",
+      "label": "#1A1A1A",
+      "properties": {}
+    },
+    {
+      "id": "tag:4169E1",
+      "type": "Tag",
+      "label": "#4169E1",
+      "properties": {}
+    },
+    {
       "id": "doc:skill_finder_guide.md",
       "type": "Document",
       "label": "skill_finder_guide.md",
@@ -750,30 +812,6 @@
       "id": "tag:00CED1",
       "type": "Tag",
       "label": "#00CED1",
-      "properties": {}
-    },
-    {
-      "id": "tag:FF8C00",
-      "type": "Tag",
-      "label": "#FF8C00",
-      "properties": {}
-    },
-    {
-      "id": "tag:1E90FF",
-      "type": "Tag",
-      "label": "#1E90FF",
-      "properties": {}
-    },
-    {
-      "id": "tag:FFA500",
-      "type": "Tag",
-      "label": "#FFA500",
-      "properties": {}
-    },
-    {
-      "id": "tag:00BFFF",
-      "type": "Tag",
-      "label": "#00BFFF",
       "properties": {}
     },
     {
@@ -2360,6 +2398,14 @@
       "label": "ai_news_2026-03-21.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-21.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/opc_daily_2026-05-11.md",
+      "type": "Document",
+      "label": "opc_daily_2026-05-11.md",
+      "properties": {
+        "path": "news_summaries/opc_daily_2026-05-11.md"
       }
     },
     {
@@ -8805,6 +8851,121 @@
       "source": "doc:PROGRESS.md",
       "target": "concept:WikiLink",
       "relation": "mentions"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:D4A84B",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:B8922F",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:3D9CA8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2D7A85",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:FDFBF7",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:3D9CA8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:3D9CA8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:FDFBF7",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:FFFFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:2C3E50",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:FFFFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:FF8C00",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:FFA500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:1E90FF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:00BFFF",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:1A1A1A",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:website_building_prompt_summary.md",
+      "target": "tag:4169E1",
+      "relation": "has_tag"
     },
     {
       "source": "doc:MEMORY.md",
