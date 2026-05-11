@@ -2101,6 +2101,20 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-11.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-11.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-05-11.md"
+      }
+    },
+    {
+      "id": "tag:OpenClaw",
+      "type": "Tag",
+      "label": "#OpenClaw",
+      "properties": {}
+    },
+    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-01.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-05-01.md",
@@ -9320,6 +9334,11 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:12975",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-11.md",
+      "target": "tag:OpenClaw",
       "relation": "has_tag"
     },
     {
