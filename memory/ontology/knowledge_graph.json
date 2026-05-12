@@ -941,6 +941,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-05-12.md",
+      "type": "Document",
+      "label": "2026-05-12.md",
+      "properties": {
+        "path": "memory/2026-05-12.md"
+      }
+    },
+    {
       "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_GUIDE.md",
