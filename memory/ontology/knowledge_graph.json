@@ -1239,6 +1239,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/opc_daily_2026-05-13.md",
+      "type": "Document",
+      "label": "opc_daily_2026-05-13.md",
+      "properties": {
+        "path": "news_summaries/opc_daily_2026-05-13.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/ai_news_2026-03-07.md",
       "type": "Document",
       "label": "ai_news_2026-03-07.md",
