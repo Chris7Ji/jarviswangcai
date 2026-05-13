@@ -933,6 +933,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-05-13.md",
+      "type": "Document",
+      "label": "2026-05-13.md",
+      "properties": {
+        "path": "memory/2026-05-13.md"
+      }
+    },
+    {
       "id": "doc:memory/working-buffer.md",
       "type": "Document",
       "label": "working-buffer.md",
