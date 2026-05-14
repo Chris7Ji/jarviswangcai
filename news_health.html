@@ -1,116 +1,138 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 - 2026年5月14日</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f0f2f5; color: #333; line-height: 1.8; }
-.header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 40px 20px; text-align: center; }
-.header h1 { font-size: 28px; margin-bottom: 8px; }
-.header .date { font-size: 16px; opacity: 0.85; }
-.header .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 14px; border-radius: 20px; margin-top: 10px; font-size: 13px; }
-.container { max-width: 860px; margin: 0 auto; padding: 20px; }
-.article-card { background: white; border-radius: 12px; padding: 28px 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: box-shadow 0.2s; }
-.article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
-.article-card h2 { font-size: 20px; color: #1a73e8; margin-bottom: 10px; }
-.article-card .meta { font-size: 13px; color: #888; margin-bottom: 14px; }
-.article-card .meta span { margin-right: 16px; }
-.article-card .meta .source { color: #1a73e8; font-weight: 500; }
-.article-card .meta .tag { display: inline-block; padding: 1px 10px; border-radius: 10px; font-size: 12px; background: #e8f0fe; color: #1a73e8; }
-.article-card p { font-size: 15px; color: #444; text-indent: 2em; margin-bottom: 12px; }
-.article-card .link { display: inline-block; margin-top: 8px; font-size: 13px; color: #1a73e8; text-decoration: none; }
-.article-card .link:hover { text-decoration: underline; }
-.footer { text-align: center; padding: 30px; color: #999; font-size: 13px; }
-.highlight-box { background: #e8f5e9; border-left: 4px solid #43a047; padding: 12px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; color: #2e7d32; }
-@media (max-width: 600px) {
-  .header h1 { font-size: 22px; }
-  .article-card { padding: 20px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康长寿科研简报 - 2026年5月15日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f0f4f8; color: #1a2332; line-height: 1.8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #1a365d 0%, #2d5a8e 50%, #4299e1 100%); color: white; padding: 40px; border-radius: 16px; margin-bottom: 24px; text-align: center; position: relative; overflow: hidden; }
+        .header::before { content: '🔬'; position: absolute; font-size: 120px; opacity: 0.1; top: -20px; right: -10px; }
+        .header h1 { font-size: 28px; margin-bottom: 8px; letter-spacing: 2px; }
+        .header .subtitle { font-size: 14px; opacity: 0.85; }
+        .header .date-badge { display: inline-block; background: rgba(255,255,255,0.15); padding: 4px 16px; border-radius: 20px; font-size: 13px; margin-top: 12px; }
+        .summary-card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .summary-card h2 { font-size: 18px; color: #2d5a8e; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .summary-card ul { padding-left: 20px; }
+        .summary-card li { margin-bottom: 8px; font-size: 14px; color: #4a5568; }
+        .article { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #4299e1; transition: transform 0.2s; }
+        .article:hover { transform: translateX(4px); }
+        .article.primary { border-left-color: #c53030; }
+        .article .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-right: 8px; }
+        .badge-nature { background: #c53030; color: white; }
+        .badge-tech { background: #3182ce; color: white; }
+        .badge-science { background: #38a169; color: white; }
+        .article h3 { font-size: 18px; color: #1a2332; margin-bottom: 6px; }
+        .article .meta { font-size: 13px; color: #718096; margin-bottom: 12px; }
+        .article .meta span { margin-right: 16px; }
+        .article .abstract { font-size: 14px; color: #4a5568; }
+        .footer { text-align: center; padding: 20px; color: #a0aec0; font-size: 12px; }
+    </style>
 </head>
 <body>
-<div class="header">
-  <h1>🧬 健康长寿科研简报</h1>
-  <div class="date">2026年5月14日 · 周四</div>
-  <div class="badge">📊 本期收录 5 条前沿动态</div>
-</div>
-<div class="container">
+    <div class="container">
+        <div class="header">
+            <h1>🧬 健康长寿科研简报</h1>
+            <div class="subtitle">Health &amp; Longevity Research Briefing</div>
+            <div class="date-badge">📅 2026年5月15日 · 第20期</div>
+        </div>
 
-  <!-- Article 1 -->
-  <div class="article-card">
-    <h2>🧪 长寿医学十大进展揭示抗衰老新路径</h2>
-    <div class="meta">
-      <span class="source">📰 新华网</span>
-      <span>📅 2026-01-16</span>
-      <span class="tag">🏆 年度盘点</span>
+        <div class="summary-card">
+            <h2>📋 本期速览</h2>
+            <ul>
+                <li><strong>表观遗传重编程</strong> — 首个人体试验正式获批，Life Biosciences的ER-100获FDA批准，将用Yamanaka因子治疗青光眼</li>
+                <li><strong>器官特异性蛋白质组学时钟</strong> — Nature Aging发表基于血浆蛋白质组学开发的10种器官衰老时钟，中英美三队列验证</li>
+                <li><strong>血浆蛋白质组预测阿尔茨海默病</strong> — Nature Medicine研究显示脑衰老风险与APOE4携带者相当（HR=3.1）</li>
+                <li><strong>长寿与表观遗传衰老的遗传机制</strong> — npj Aging整合分析发现胆固醇、免疫细胞特征和IGF-1与长寿相关</li>
+                <li><strong>从小鼠到人的长寿突破</strong> — PEARL雷帕霉素试验、GLP-1 SELECT死亡率数据、CRISPR等十项里程碑</li>
+            </ul>
+        </div>
+
+        <div class="article primary">
+            <span class="badge badge-tech">MIT Technology Review</span>
+            <h3>🧪 人体重返青春试验即将启动：首个人类重编程疗法获FDA批准</h3>
+            <div class="meta">
+                <span>📰 Antonio Regalado</span>
+                <span>📅 2026年1月27日</span>
+                <span>🔗 <a href="https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/" target="_blank">原文链接</a></span>
+            </div>
+            <div class="abstract">
+                <p>哈佛大学教授David Sinclair联合创立的Life Biosciences公司已获得FDA批准，将启动首个针对人类年龄逆转的临床试验。代号为<strong>ER-100</strong>的疗法采用表观遗传重编程（epigenetic reprogramming）技术通过病毒载体将三种Yamanaka重编程基因注入患者眼部，以治疗青光眼。</p>
+                <p>为确保安全性，这些重编程基因受一个特殊的基因开关控制，仅当患者服用低剂量抗生素多西环素（doxycycline）时才被激活。初始阶段患者将服药约两个月，用于监测效果。这项技术的核心观念在于：衰老有一个相对简单的解释，并且是可逆的。该领域已吸引包括Altos Labs、New Limit和Retro Biosciences在内的硅谷公司数亿美元投资。公司COO Michael Ringel表示："这是人类历史上第一次寻找真正逆转衰老的东西。"</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <span class="badge badge-nature">Nature Aging</span>
+            <h3>🧬 器官特异性蛋白质组学时钟可跨人群预测疾病与长寿</h3>
+            <div class="meta">
+                <span>📰 Wang, Yunhe 等</span>
+                <span>📅 2026年</span>
+                <span>🔗 <a href="https://www.nature.com/articles/s43587-025-01016-8" target="_blank">原文链接</a></span>
+            </div>
+            <div class="abstract">
+                <p>该研究利用血浆蛋白质组学数据与机器学习方法，在UK Biobank（n=43,616）中开发了整体衰老时钟和十种器官特异性衰老时钟，并在中国队列（n=3,977）和美国队列（n=800）中验证了其高准确性（跨队列 r=0.98 和 0.93）。</p>
+                <p>研究发现：器官衰老加速可预测疾病发生、进展和死亡率，其预测能力超越临床和遗传风险因素。<strong>脑衰老与死亡率的关联最为显著</strong>。器官衰老同时反映遗传和环境因素：脑衰老与生活方式、GABBR1和ECM1基因以及脑结构相关。不同器官的致病通路各不相同，脑和动脉时钟将突触丢失与血管老化联系起来。这项研究提供了首个跨种族验证的器官特异性衰老时钟，为精准抗衰老干预提供了新工具。</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <span class="badge badge-nature">Nature Medicine</span>
+            <h3>🧠 血浆蛋白质组学揭示脑衰老与免疫系统衰老对健康寿命的影响</h3>
+            <div class="meta">
+                <span>📰 Oh, Hamilton Se-Hwee 等</span>
+                <span>📅 2025–2026年</span>
+                <span>🔗 <a href="https://www.nature.com/articles/s41591-025-03798-1" target="_blank">原文链接</a></span>
+            </div>
+            <div class="abstract">
+                <p>研究团队利用UK Biobank中44,498名参与者的血浆蛋白质组学数据（2,916种蛋白质），对11个器官的生物学年龄进行了估算。结果显示，器官年龄估算对生活方式因素和药物具有敏感性，并可预测多种疾病在未来17年内的发生风险，包括<strong>心力衰竭、慢性阻塞性肺病、2型糖尿病和阿尔茨海默病</strong>。</p>
+                <p>值得注意的是，<strong>脑部显著衰老的个体患阿尔茨海默病的风险（HR=3.1）与携带一个APOE4等位基因相当</strong>。这一发现表明，血浆蛋白质组学有潜力成为一种非侵入性的器官衰老评估工具，为早期干预和个体化健康管理提供依据。</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <span class="badge badge-nature">npj Aging</span>
+            <h3>🧪 人类长寿与表观遗传衰老的遗传及分子机制</h3>
+            <div class="meta">
+                <span>📰 Gai, Kai 等</span>
+                <span>📅 2026年</span>
+                <span>🔗 <a href="https://www.nature.com/articles/s41514-026-00384-8" target="_blank">原文链接</a></span>
+            </div>
+            <div class="abstract">
+                <p>这项综合性整合分析研究针对四种表观遗传衰老加速指标和人类长寿进行了系统的风险因素和分子机制探索。通过全基因组关联研究（GWAS）数据，研究团队识别出与长寿相关的风险因素和分子表型。</p>
+                <p>关键发现包括：<strong>胆固醇水平、免疫细胞特征和胰岛素样生长因子-1（IGF-1）</strong>与长寿显著相关。研究进一步整合了表观遗传衰老和长寿的GWAS汇总数据与五种类型的分子数量性状位点（QTL）数据，深入揭示了这些因素调控衰老的分子通路。这为理解生物衰老的复杂过程及其分子基础提供了新的见解，并可能为未来开发针对性的抗衰老干预策略提供靶点。</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <span class="badge badge-science">前沿综述</span>
+            <h3>🏆 2026年十项从小鼠跨越到人类的长寿突破</h3>
+            <div class="meta">
+                <span>📰 StackingYears</span>
+                <span>📅 2025–2026年</span>
+                <span>🔗 <a href="https://www.stackingyears.com/blog/longevity-breakthroughs-mice-to-humans-2026" target="_blank">原文链接</a></span>
+            </div>
+            <div class="abstract">
+                <p>2025至2026年标志着长寿科学开始产出<strong>人体证据</strong>的关键转折点。以下是从小鼠研究跨越到人类验证的十项里程碑突破：</p>
+                <p><strong>① 首个体表观遗传重编程IND获批</strong> — FDA批准Life Biosciences的ER-100进入人体试验。<strong>② PEARL雷帕霉素试验</strong> — 首个提供人类健康寿命数据的雷帕霉素临床试验（PMID 40188830）。<strong>③ GLP-1 SELECT死亡率结果</strong> — 司美格鲁肽降低心血管死亡率在大型临床试验中验证。<strong>④ Compass赛洛西宾III期数据</strong> — 迷幻药治疗抑郁症的III期临床数据公布。<strong>⑤ 婴儿KJ CRISPR治疗</strong> — 基因编辑在早衰症等疾病中的新应用。<strong>⑥-⑩</strong> 还包括多种新型senolytic药物、NAD+增强剂、间歇性禁食临床试验以及肠道菌群与衰老关联的新发现。这些突破共同标志着抗衰老研究已从概念验证进入临床转化的新时代。</p>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <h2>📎 延伸阅读</h2>
+            <ul>
+                <li><strong>Harvard Science Review</strong> (2026.02.23) — 《GLP-1的后遗症：科学告诉你肌肉流失与细胞老化》：GLP-1药物导致的肌肉流失可能加速细胞衰老 <a href="https://harvardsciencereview.org/2026/02/23/the-glp-1-aftermath-what-the-science-says-about-muscle-loss-and-cellular-aging/" target="_blank">阅读</a></li>
+                <li><strong>U.S. News</strong> — 《GLP-1效应：从减肥到长寿》：GLP-1药物对整体健康和抗衰老的新发现 <a href="https://health.usnews.com/wellness/articles/the-glp-1-effect" target="_blank">阅读</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>📡 数据来源：MIT Technology Review · Nature Aging · Nature Medicine · npj Aging · StackingYears</p>
+            <p>🤖 由 旺财Jarvis 自动采集生成 · 仅供参考，不构成医疗建议</p>
+            <p>© 2026 健康长寿科研简报</p>
+        </div>
     </div>
-    <p>2026年1月15日，2025年长寿医学十大进展发布会在清华大学举行，由北京银发健康长寿研究院主办。本次发布的十大进展涵盖生命科学基础研究、创新技术研发转化、中西医结合应用及临床应用场景建设等关键领域。</p>
-    <p>亮点成果包括：中国科学院刘光慧团队构建了"衰老度量—机制解析—多元干预"完整研究体系；美国霍华德·休斯医学研究所张锋团队运用LNP-mRNA技术成功重建衰老小鼠的免疫功能；同济大学毛志勇团队通过破解裸鼹鼠的长寿秘密，发现促进DNA修复的新靶点。在干预策略方面，厦门大学林圣彩团队明确了卡路里限制的关键效应分子石胆酸及其作用机制；诺和诺德、礼来等的研究揭示了GLP-1受体激动剂在心血管保护、抗炎等多方面的抗衰老潜能；美国Altos Labs首次证实"间充质漂移"是普适性衰老过程，并发现可通过部分重编程进行逆转。</p>
-    <p>应用转化方面，澳门大学刘畅团队开发的集成氢气补充的鼻腔雾化吸入装置为肺纤维化治疗提供了新平台；北京老年医院主导的国内首批公立医院"抗衰老医学研究转化与临床应用中心"已正式落成。2025年发布了《抗衰老医学门诊设置基本要求》，引领抗衰老医学规范化发展。专家表示，中国已将抗衰老产业纳入"银发经济"重点范畴，未来将通过结合人工智能与个体数据，推动从"治病养老"向"主动养功能"的转变。</p>
-    <a class="link" href="http://www.news.cn/health/20260116/933e63ea59b14acd97dc0a3b1d80ba84/c.html" target="_blank">🔗 阅读原文 →</a>
-  </div>
-
-  <!-- Article 2 -->
-  <div class="article-card">
-    <h2>💊 GLP-1药物的下一步：从减重到多疾病治疗</h2>
-    <div class="meta">
-      <span class="source">📰 Harvard Gazette</span>
-      <span>📅 2026-02-18</span>
-      <span class="tag">🔬 顶级学术报道</span>
-    </div>
-    <p>哈佛大学官方媒体Harvard Gazette发表深度报道，解析GLP-1类药物的未来发展方向。在GLP-1药物已经革命性地改变了数千万美国人的肥胖和2型糖尿病治疗方式后，科学家们正在探索将这些药物用于治疗一系列其他慢性疾病——其中许多疾病目前缺乏有效的治疗方案。</p>
-    <p>哈佛医学院讲师、布里格姆妇女医院研究人员Nils Krüger博士领导的近期研究发现，GLP-1药物对射血分数保留型心力衰竭（HFpEF）患者高度有效，相较于传统糖尿病药物，其相对风险降低了40%。除此之外，GLP-1s还在慢性肝病、阻塞性睡眠呼吸暂停甚至物质使用障碍（成瘾）等领域展现出治疗潜力。研究人员指出，GLP-1s不仅能促进减重，还能系统性降低炎症水平、改善胰岛素敏感性，并在大幅减重之前就已经开始改善空腹及餐后血糖，显示出真正的代谢重新校准效应，而非单一通路作用。</p>
-    <a class="link" href="https://news.harvard.edu/gazette/story/2026/02/whats-next-for-glp-1s/" target="_blank">🔗 阅读原文 →</a>
-  </div>
-
-  <!-- Article 3 -->
-  <div class="article-card">
-    <h2>🔬 2026年长寿突破：从表观遗传时钟到代谢健康</h2>
-    <div class="meta">
-      <span class="source">📰 LongevityVisa</span>
-      <span>📅 2026年</span>
-      <span class="tag">📋 行业综述</span>
-    </div>
-    <p>基于200多位从事长寿医学、功能医学和预防医学的临床医生洞察，LongevityVisa发布了2026年长寿突破综述。2026年的长寿医学不再追求极端生物黑客或追逐长生不老，而是专注于可衡量的、循证的方式来延长健康寿命。</p>
-    <p>关键突破方向包括：<strong>表观遗传时钟</strong>正在重新定义我们测量衰老的方式——大脑、肝脏、免疫系统可能以不同速度老化，单纯的测试不能解决问题，改变睡眠、饮食、运动、压力和恢复才是根本。<strong>口腔健康</strong>被确认为新的长寿标志物，口腔状况可能比想象中更快加速衰老。<strong>代谢健康</strong>被确立为长寿的基础——长寿医学正从关注体重转向关注代谢功能。此外，研究重点不再仅仅是提升NAD+水平，而是阻止NAD+的"泄漏"。2026年的核心理念是：长寿不再是极端行为，而是保护肌肉、骨骼和代谢健康。</p>
-    <a class="link" href="https://www.longevityvisa.com/2026longevitybreakthroughs" target="_blank">🔗 阅读原文 →</a>
-  </div>
-
-  <!-- Article 4 -->
-  <div class="article-card">
-    <h2>📈 26项定义2026年的长寿趋势</h2>
-    <div class="meta">
-      <span class="source">📰 Hone Health</span>
-      <span>📅 2026年</span>
-      <span class="tag">🌐 趋势前瞻</span>
-    </div>
-    <p>Hone Health长寿专家团队发布了2026年26项关键长寿趋势报告。核心趋势显示，长寿医学正在将口腔健康、炎症和生物学衰老之间的联系打通，利用微生物组图谱和超声检查等工具早期发现功能失调。</p>
-    <p>关于<strong>GLP-1类药物</strong>，人体研究表明它们能在显著减重发生之前就降低系统性炎症、改善胰岛素敏感性、恢复正常空腹和餐后血糖水平，同时还改善血压、血脂和心血管风险标志物，表明其实现了真正的代谢重新校准。在<strong>雷帕霉素</strong>研究方面，这是首次获得真实人体研究数据的支持（而不仅仅是动物数据），65岁以上成年人中显示对免疫功能和心脏功能有益。此外，<strong>线粒体健康</strong>和细胞更新方面的研究也在加速推进，一种支持线粒体健康和细胞再生的化合物可能在免疫衰老、应激恢复和能量代谢中发挥作用，并增强肌肉耐力和力量训练效果。<strong>肠道健康优先</strong>的长寿策略——高纤维摄入支持微生物组多样性，稳定血糖，降低炎症，对代谢和心血管健康产生涟漪效应。</p>
-    <a class="link" href="https://honehealth.com/edge/longevity-trends/" target="_blank">🔗 阅读原文 →</a>
-  </div>
-
-  <!-- Article 5 -->
-  <div class="article-card">
-    <h2>🧫 干细胞疗法与新范式：2026年长寿医学进入"掌握自身生物学"时代</h2>
-    <div class="meta">
-      <span class="source">📰 ForeverLabs</span>
-      <span>📅 2026年</span>
-      <span class="tag">🧬 再生医学</span>
-    </div>
-    <p>ForeverLabs发布的2026年长寿展望指出，长寿正在成为医疗标准——生物学年龄检测将像年度体检一样普及。先进的间充质干细胞（MSC）疗法正被越来越多地认可为连接寿命和健康寿命的主要桥梁，通过对抗驱动主要年龄相关疾病的慢性炎症发挥作用。</p>
-    <p>2026年提出的新概念——<strong>"生物流动性"（Bio-liquidity）</strong>——指的是保存更年轻、更具表观遗传相容性的细胞，以备终身再生治疗使用。现代MSC临床标准包括<strong>MSC预激活</strong>（Priming）技术，即对储存的细胞进行训练使其更坚韧、更有效能之后再回输到体内。美国佛罗里达州和德克萨斯州的新法规框架，正在简化自体干细胞疗法在骨科和疼痛管理中的应用，同时在严格的安全和制造标准下进行。此外，表观遗传重编程（Epigenetic Resetting）技术也在快速发展，为逆转衰老提供了新的可能性。</p>
-    <a class="link" href="https://www.foreverlabs.com/articles/blog/2026-the-year-of-longevity-and-owning-your-biology" target="_blank">🔗 阅读原文 →</a>
-  </div>
-
-  <div class="highlight-box">
-    🔍 <strong>本期关键词：</strong>GLP-1多疾病治疗 · 表观遗传时钟 · 间充质干细胞 · 代谢健康 · 口腔健康与衰老 · 雷帕霉素人体研究 · 生物流动性 · 银发经济
-  </div>
-</div>
-<div class="footer">
-  <p>📡 数据来源：新华网 · Harvard Gazette · LongevityVisa · Hone Health · ForeverLabs</p>
-  <p style="margin-top:6px;">🕐 生成时间：2026-05-14 07:00 AM · 由旺财Jarvis自动采集</p>
-</div>
 </body>
 </html>
