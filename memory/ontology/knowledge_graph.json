@@ -2085,6 +2085,20 @@
       "properties": {}
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-15.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-15.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-05-15.md"
+      }
+    },
+    {
+      "id": "tag:81489",
+      "type": "Tag",
+      "label": "#81489",
+      "properties": {}
+    },
+    {
       "id": "doc:news_summaries/ai_news_2026-03-07_short.md",
       "type": "Document",
       "label": "ai_news_2026-03-07_short.md",
@@ -9522,6 +9536,11 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-24.md",
       "target": "tag:52922",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-15.md",
+      "target": "tag:81489",
       "relation": "has_tag"
     },
     {
