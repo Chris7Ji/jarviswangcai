@@ -2423,6 +2423,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/opc_daily_2026-05-15.md",
+      "type": "Document",
+      "label": "opc_daily_2026-05-15.md",
+      "properties": {
+        "path": "news_summaries/opc_daily_2026-05-15.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/sample_new_format.md",
       "type": "Document",
       "label": "sample_new_format.md",
