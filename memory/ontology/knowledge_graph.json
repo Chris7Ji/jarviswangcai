@@ -383,18 +383,6 @@
       }
     },
     {
-      "id": "tag:2",
-      "type": "Tag",
-      "label": "#2",
-      "properties": {}
-    },
-    {
-      "id": "tag:6",
-      "type": "Tag",
-      "label": "#6",
-      "properties": {}
-    },
-    {
       "id": "concept:WikiLink",
       "type": "Concept",
       "label": "WikiLink",
@@ -415,68 +403,6 @@
       "properties": {
         "path": "PHASE3_PLAN.md"
       }
-    },
-    {
-      "id": "doc:website_building_prompt_summary.md",
-      "type": "Document",
-      "label": "website_building_prompt_summary.md",
-      "properties": {
-        "path": "website_building_prompt_summary.md"
-      }
-    },
-    {
-      "id": "tag:B8922F",
-      "type": "Tag",
-      "label": "#B8922F",
-      "properties": {}
-    },
-    {
-      "id": "tag:2D7A85",
-      "type": "Tag",
-      "label": "#2D7A85",
-      "properties": {}
-    },
-    {
-      "id": "tag:FDFBF7",
-      "type": "Tag",
-      "label": "#FDFBF7",
-      "properties": {}
-    },
-    {
-      "id": "tag:FF8C00",
-      "type": "Tag",
-      "label": "#FF8C00",
-      "properties": {}
-    },
-    {
-      "id": "tag:FFA500",
-      "type": "Tag",
-      "label": "#FFA500",
-      "properties": {}
-    },
-    {
-      "id": "tag:1E90FF",
-      "type": "Tag",
-      "label": "#1E90FF",
-      "properties": {}
-    },
-    {
-      "id": "tag:00BFFF",
-      "type": "Tag",
-      "label": "#00BFFF",
-      "properties": {}
-    },
-    {
-      "id": "tag:1A1A1A",
-      "type": "Tag",
-      "label": "#1A1A1A",
-      "properties": {}
-    },
-    {
-      "id": "tag:4169E1",
-      "type": "Tag",
-      "label": "#4169E1",
-      "properties": {}
     },
     {
       "id": "doc:skill_finder_guide.md",
@@ -815,6 +741,30 @@
       "properties": {}
     },
     {
+      "id": "tag:FF8C00",
+      "type": "Tag",
+      "label": "#FF8C00",
+      "properties": {}
+    },
+    {
+      "id": "tag:1E90FF",
+      "type": "Tag",
+      "label": "#1E90FF",
+      "properties": {}
+    },
+    {
+      "id": "tag:FFA500",
+      "type": "Tag",
+      "label": "#FFA500",
+      "properties": {}
+    },
+    {
+      "id": "tag:00BFFF",
+      "type": "Tag",
+      "label": "#00BFFF",
+      "properties": {}
+    },
+    {
       "id": "doc:ONBOARDING.md",
       "type": "Document",
       "label": "ONBOARDING.md",
@@ -933,12 +883,18 @@
       }
     },
     {
-      "id": "doc:memory/2026-05-13.md",
+      "id": "doc:memory/2026-04-20-session-summary.md",
       "type": "Document",
-      "label": "2026-05-13.md",
+      "label": "2026-04-20-session-summary.md",
       "properties": {
-        "path": "memory/2026-05-13.md"
+        "path": "memory/2026-04-20-session-summary.md"
       }
+    },
+    {
+      "id": "concept:reply_to_current",
+      "type": "Concept",
+      "label": "reply_to_current",
+      "properties": {}
     },
     {
       "id": "doc:memory/working-buffer.md",
@@ -949,11 +905,27 @@
       }
     },
     {
-      "id": "doc:memory/2026-05-12.md",
+      "id": "doc:memory/2026-04-20-new-session.md",
       "type": "Document",
-      "label": "2026-05-12.md",
+      "label": "2026-04-20-new-session.md",
       "properties": {
-        "path": "memory/2026-05-12.md"
+        "path": "memory/2026-04-20-new-session.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0634.md",
+      "type": "Document",
+      "label": "2026-04-20-0634.md",
+      "properties": {
+        "path": "memory/2026-04-20-0634.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0630.md",
+      "type": "Document",
+      "label": "2026-04-20-0630.md",
+      "properties": {
+        "path": "memory/2026-04-20-0630.md"
       }
     },
     {
@@ -962,6 +934,14 @@
       "label": "MEMORY_SYSTEM_GUIDE.md",
       "properties": {
         "path": "memory/MEMORY_SYSTEM_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-16.md",
+      "type": "Document",
+      "label": "2026-04-16.md",
+      "properties": {
+        "path": "memory/2026-04-16.md"
       }
     },
     {
@@ -981,19 +961,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-21.md",
+      "id": "doc:memory/2026-04-15.md",
       "type": "Document",
-      "label": "2026-04-21.md",
+      "label": "2026-04-15.md",
       "properties": {
-        "path": "memory/2026-04-21.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-30.md",
-      "type": "Document",
-      "label": "2026-04-30.md",
-      "properties": {
-        "path": "memory/2026-04-30.md"
+        "path": "memory/2026-04-15.md"
       }
     },
     {
@@ -1005,6 +977,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-20-0627.md",
+      "type": "Document",
+      "label": "2026-04-20-0627.md",
+      "properties": {
+        "path": "memory/2026-04-20-0627.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-05-04.md",
       "type": "Document",
       "label": "2026-05-04.md",
@@ -1013,11 +993,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-05-14.md",
+      "id": "doc:memory/2026-04-20-0632.md",
       "type": "Document",
-      "label": "2026-05-14.md",
+      "label": "2026-04-20-0632.md",
       "properties": {
-        "path": "memory/2026-05-14.md"
+        "path": "memory/2026-04-20-0632.md"
       }
     },
     {
@@ -1171,27 +1151,11 @@
       }
     },
     {
-      "id": "doc:news_summaries/opc_daily_2026-05-12.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-12.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-12.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-06.md",
       "type": "Document",
       "label": "ai_news_2026-03-06.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-06.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-08.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-08.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-08.md"
       }
     },
     {
@@ -1239,27 +1203,11 @@
       }
     },
     {
-      "id": "doc:news_summaries/opc_daily_2026-05-13.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-13.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-13.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-07.md",
       "type": "Document",
       "label": "ai_news_2026-03-07.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-07.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-09.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-09.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-09.md"
       }
     },
     {
@@ -1269,56 +1217,6 @@
       "properties": {
         "path": "news_summaries/openclaw_news_high_quality_2026-04-07.md"
       }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-27.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-27.md"
-      }
-    },
-    {
-      "id": "tag:71780",
-      "type": "Tag",
-      "label": "#71780",
-      "properties": {}
-    },
-    {
-      "id": "tag:72245",
-      "type": "Tag",
-      "label": "#72245",
-      "properties": {}
-    },
-    {
-      "id": "tag:71857",
-      "type": "Tag",
-      "label": "#71857",
-      "properties": {}
-    },
-    {
-      "id": "tag:72352",
-      "type": "Tag",
-      "label": "#72352",
-      "properties": {}
-    },
-    {
-      "id": "tag:72209",
-      "type": "Tag",
-      "label": "#72209",
-      "properties": {}
-    },
-    {
-      "id": "tag:72266",
-      "type": "Tag",
-      "label": "#72266",
-      "properties": {}
-    },
-    {
-      "id": "tag:72381",
-      "type": "Tag",
-      "label": "#72381",
-      "properties": {}
     },
     {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-12_enhanced.md",
@@ -1497,40 +1395,6 @@
       "properties": {}
     },
     {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-18.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-18.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-18.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-06.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-06.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-06.md"
-      }
-    },
-    {
-      "id": "tag:77064",
-      "type": "Tag",
-      "label": "#77064",
-      "properties": {}
-    },
-    {
-      "id": "tag:77708",
-      "type": "Tag",
-      "label": "#77708",
-      "properties": {}
-    },
-    {
-      "id": "tag:78050",
-      "type": "Tag",
-      "label": "#78050",
-      "properties": {}
-    },
-    {
       "id": "doc:news_summaries/ascend_news_2026-03-15.md",
       "type": "Document",
       "label": "ascend_news_2026-03-15.md",
@@ -1577,97 +1441,11 @@
       }
     },
     {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-28.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-28.md"
-      }
-    },
-    {
-      "id": "tag:70765",
-      "type": "Tag",
-      "label": "#70765",
-      "properties": {}
-    },
-    {
-      "id": "tag:58823",
-      "type": "Tag",
-      "label": "#58823",
-      "properties": {}
-    },
-    {
-      "id": "tag:72290",
-      "type": "Tag",
-      "label": "#72290",
-      "properties": {}
-    },
-    {
-      "id": "tag:72287",
-      "type": "Tag",
-      "label": "#72287",
-      "properties": {}
-    },
-    {
-      "id": "tag:73041",
-      "type": "Tag",
-      "label": "#73041",
-      "properties": {}
-    },
-    {
-      "id": "tag:72999",
-      "type": "Tag",
-      "label": "#72999",
-      "properties": {}
-    },
-    {
-      "id": "tag:36630",
-      "type": "Tag",
-      "label": "#36630",
-      "properties": {}
-    },
-    {
-      "id": "tag:73054",
-      "type": "Tag",
-      "label": "#73054",
-      "properties": {}
-    },
-    {
-      "id": "tag:46303",
-      "type": "Tag",
-      "label": "#46303",
-      "properties": {}
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-12.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-12.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-12.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-02.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-02.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-02.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-14_enhanced.md",
       "type": "Document",
       "label": "ai_news_2026-03-14_enhanced.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-14_enhanced.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/OPENCLAW_REPORT_FORMAT.md",
-      "type": "Document",
-      "label": "OPENCLAW_REPORT_FORMAT.md",
-      "properties": {
-        "path": "news_summaries/OPENCLAW_REPORT_FORMAT.md"
       }
     },
     {
@@ -1703,14 +1481,6 @@
       }
     },
     {
-      "id": "doc:news_summaries/opc_daily_2026-05-09.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-09.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-09.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-17_v2.md",
       "type": "Document",
       "label": "ai_news_2026-03-17_v2.md",
@@ -1732,60 +1502,6 @@
       "label": "health_longevity_20260320.md",
       "properties": {
         "path": "news_summaries/health_longevity_20260320.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-29.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-29.md"
-      }
-    },
-    {
-      "id": "tag:60248",
-      "type": "Tag",
-      "label": "#60248",
-      "properties": {}
-    },
-    {
-      "id": "tag:59859",
-      "type": "Tag",
-      "label": "#59859",
-      "properties": {}
-    },
-    {
-      "id": "tag:59752",
-      "type": "Tag",
-      "label": "#59752",
-      "properties": {}
-    },
-    {
-      "id": "tag:67946",
-      "type": "Tag",
-      "label": "#67946",
-      "properties": {}
-    },
-    {
-      "id": "tag:59697",
-      "type": "Tag",
-      "label": "#59697",
-      "properties": {}
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-13.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-13.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-13.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-03.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-03.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-03.md"
       }
     },
     {
@@ -1826,14 +1542,6 @@
       "label": "ai_news_2026-03-16_fresh.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-16_fresh.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-07.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-07.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-07.md"
       }
     },
     {
@@ -1899,14 +1607,6 @@
       }
     },
     {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-10.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-10.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-10.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-11.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-03-11.md",
@@ -1944,22 +1644,6 @@
       "label": "openclaw_news_high_quality_2026-03-25.md",
       "properties": {
         "path": "news_summaries/openclaw_news_high_quality_2026-03-25.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-14.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-14.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-14.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-04.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-04.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-04.md"
       }
     },
     {
@@ -2085,33 +1769,11 @@
       "properties": {}
     },
     {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-15.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-15.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-15.md"
-      }
-    },
-    {
-      "id": "tag:81489",
-      "type": "Tag",
-      "label": "#81489",
-      "properties": {}
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-07_short.md",
       "type": "Document",
       "label": "ai_news_2026-03-07_short.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-07_short.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-05.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-05.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-05.md"
       }
     },
     {
@@ -2201,28 +1863,6 @@
       }
     },
     {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-11.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-11.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-11.md"
-      }
-    },
-    {
-      "id": "tag:OpenClaw",
-      "type": "Tag",
-      "label": "#OpenClaw",
-      "properties": {}
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-01.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-05-01.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-05-01.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-30.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-03-30.md",
@@ -2255,82 +1895,12 @@
       }
     },
     {
-      "id": "doc:news_summaries/opc_daily_2026-05-10.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-10.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-10.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-04.md",
       "type": "Document",
       "label": "ai_news_2026-03-04.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-04.md"
       }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-30.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-30.md"
-      }
-    },
-    {
-      "id": "tag:53682",
-      "type": "Tag",
-      "label": "#53682",
-      "properties": {}
-    },
-    {
-      "id": "tag:53809",
-      "type": "Tag",
-      "label": "#53809",
-      "properties": {}
-    },
-    {
-      "id": "tag:71940",
-      "type": "Tag",
-      "label": "#71940",
-      "properties": {}
-    },
-    {
-      "id": "tag:66150",
-      "type": "Tag",
-      "label": "#66150",
-      "properties": {}
-    },
-    {
-      "id": "tag:74578",
-      "type": "Tag",
-      "label": "#74578",
-      "properties": {}
-    },
-    {
-      "id": "tag:74162",
-      "type": "Tag",
-      "label": "#74162",
-      "properties": {}
-    },
-    {
-      "id": "tag:74622",
-      "type": "Tag",
-      "label": "#74622",
-      "properties": {}
-    },
-    {
-      "id": "tag:74636",
-      "type": "Tag",
-      "label": "#74636",
-      "properties": {}
-    },
-    {
-      "id": "tag:71ab341",
-      "type": "Tag",
-      "label": "#71ab341",
-      "properties": {}
     },
     {
       "id": "doc:news_summaries/openclaw_news_2026-03-10.md",
@@ -2341,54 +1911,12 @@
       }
     },
     {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-24.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-24.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-24.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/ai_news_2026-03-10.md",
       "type": "Document",
       "label": "ai_news_2026-03-10.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-10.md"
       }
-    },
-    {
-      "id": "doc:news_summaries/opc_daily_2026-05-14.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-14.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-14.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-25.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-25.md"
-      }
-    },
-    {
-      "id": "tag:71270",
-      "type": "Tag",
-      "label": "#71270",
-      "properties": {}
-    },
-    {
-      "id": "tag:71196",
-      "type": "Tag",
-      "label": "#71196",
-      "properties": {}
-    },
-    {
-      "id": "tag:70864",
-      "type": "Tag",
-      "label": "#70864",
-      "properties": {}
     },
     {
       "id": "doc:news_summaries/cron_status_2026-03-04.md",
@@ -2423,35 +1951,11 @@
       }
     },
     {
-      "id": "doc:news_summaries/opc_daily_2026-05-15.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-15.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-15.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/sample_new_format.md",
-      "type": "Document",
-      "label": "sample_new_format.md",
-      "properties": {
-        "path": "news_summaries/sample_new_format.md"
-      }
-    },
-    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-01.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-04-01.md",
       "properties": {
         "path": "news_summaries/openclaw_news_high_quality_2026-04-01.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-21.md",
-      "type": "Document",
-      "label": "openclaw_news_high_quality_2026-04-21.md",
-      "properties": {
-        "path": "news_summaries/openclaw_news_high_quality_2026-04-21.md"
       }
     },
     {
@@ -2476,14 +1980,6 @@
       "label": "ai_news_2026-03-21.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-21.md"
-      }
-    },
-    {
-      "id": "doc:news_summaries/opc_daily_2026-05-11.md",
-      "type": "Document",
-      "label": "opc_daily_2026-05-11.md",
-      "properties": {
-        "path": "news_summaries/opc_daily_2026-05-11.md"
       }
     },
     {
@@ -2548,14 +2044,6 @@
       "label": "memory.md",
       "properties": {
         "path": "competitor-research/memory.md"
-      }
-    },
-    {
-      "id": "doc:notes/SESSION-STATE.md",
-      "type": "Document",
-      "label": "SESSION-STATE.md",
-      "properties": {
-        "path": "notes/SESSION-STATE.md"
       }
     },
     {
@@ -2793,6 +2281,60 @@
       "properties": {
         "path": ".learnings/LEARNINGS.md"
       }
+    },
+    {
+      "id": "concept:私有知识星图自动构建",
+      "type": "Concept",
+      "label": "私有知识星图自动构建",
+      "properties": {}
+    },
+    {
+      "id": "concept:Obsidian 知识库",
+      "type": "Concept",
+      "label": "Obsidian 知识库",
+      "properties": {}
+    },
+    {
+      "id": "concept:概念关联",
+      "type": "Concept",
+      "label": "概念关联",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识网络",
+      "type": "Concept",
+      "label": "知识网络",
+      "properties": {}
+    },
+    {
+      "id": "concept:关系密度",
+      "type": "Concept",
+      "label": "关系密度",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识发现",
+      "type": "Concept",
+      "label": "知识发现",
+      "properties": {}
+    },
+    {
+      "id": "concept:本体图谱",
+      "type": "Concept",
+      "label": "本体图谱",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识检索",
+      "type": "Concept",
+      "label": "知识检索",
+      "properties": {}
+    },
+    {
+      "id": "concept:AI分析",
+      "type": "Concept",
+      "label": "AI分析",
+      "properties": {}
     },
     {
       "id": "doc:.learnings/QUARTERLY_REVIEW.md",
@@ -3569,12 +3111,6 @@
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-session-summary.md"
       }
-    },
-    {
-      "id": "concept:reply_to_current",
-      "type": "Concept",
-      "label": "reply_to_current",
-      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/memory/2026-03-06.md",
@@ -4815,60 +4351,6 @@
       }
     },
     {
-      "id": "concept:私有知识星图自动构建",
-      "type": "Concept",
-      "label": "私有知识星图自动构建",
-      "properties": {}
-    },
-    {
-      "id": "concept:Obsidian 知识库",
-      "type": "Concept",
-      "label": "Obsidian 知识库",
-      "properties": {}
-    },
-    {
-      "id": "concept:概念关联",
-      "type": "Concept",
-      "label": "概念关联",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识网络",
-      "type": "Concept",
-      "label": "知识网络",
-      "properties": {}
-    },
-    {
-      "id": "concept:关系密度",
-      "type": "Concept",
-      "label": "关系密度",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识发现",
-      "type": "Concept",
-      "label": "知识发现",
-      "properties": {}
-    },
-    {
-      "id": "concept:本体图谱",
-      "type": "Concept",
-      "label": "本体图谱",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识检索",
-      "type": "Concept",
-      "label": "知识检索",
-      "properties": {}
-    },
-    {
-      "id": "concept:AI分析",
-      "type": "Concept",
-      "label": "AI分析",
-      "properties": {}
-    },
-    {
       "id": "doc:jiaviswangcai.ai/.learnings/QUARTERLY_REVIEW.md",
       "type": "Document",
       "label": "QUARTERLY_REVIEW.md",
@@ -5805,22 +5287,6 @@
       }
     },
     {
-      "id": "doc:notes/areas/SESSION-STATE.md",
-      "type": "Document",
-      "label": "SESSION-STATE.md",
-      "properties": {
-        "path": "notes/areas/SESSION-STATE.md"
-      }
-    },
-    {
-      "id": "doc:notes/areas/PROGRESS.md",
-      "type": "Document",
-      "label": "PROGRESS.md",
-      "properties": {
-        "path": "notes/areas/PROGRESS.md"
-      }
-    },
-    {
       "id": "doc:notes/areas/HEARTBEAT.md",
       "type": "Document",
       "label": "HEARTBEAT.md",
@@ -5835,18 +5301,6 @@
       "properties": {
         "path": "notes/areas/proactive-tracker.md"
       }
-    },
-    {
-      "id": "tag:7",
-      "type": "Tag",
-      "label": "#7",
-      "properties": {}
-    },
-    {
-      "id": "tag:8",
-      "type": "Tag",
-      "label": "#8",
-      "properties": {}
     },
     {
       "id": "doc:notes/areas/outcome-journal.md",
@@ -5878,14 +5332,6 @@
       "label": "LICENSE.md",
       "properties": {
         "path": "venv_ppt/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md"
-      }
-    },
-    {
-      "id": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "type": "Document",
-      "label": "LEARNINGS_full_2026-05-01.md",
-      "properties": {
-        "path": "archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md"
       }
     },
     {
@@ -6649,14 +6095,6 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-20-session-summary.md",
-      "type": "Document",
-      "label": "2026-04-20-session-summary.md",
-      "properties": {
-        "path": "memory/archive/2026-04-20-session-summary.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-03-06.md",
       "type": "Document",
       "label": "2026-03-06.md",
@@ -6681,27 +6119,11 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-20-new-session.md",
-      "type": "Document",
-      "label": "2026-04-20-new-session.md",
-      "properties": {
-        "path": "memory/archive/2026-04-20-new-session.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-03-07.md",
       "type": "Document",
       "label": "2026-03-07.md",
       "properties": {
         "path": "memory/archive/2026-03-07.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-20-0634.md",
-      "type": "Document",
-      "label": "2026-04-20-0634.md",
-      "properties": {
-        "path": "memory/archive/2026-04-20-0634.md"
       }
     },
     {
@@ -6721,14 +6143,6 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-30-model-config.md",
-      "type": "Document",
-      "label": "2026-04-30-model-config.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-model-config.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-03-03.md",
       "type": "Document",
       "label": "2026-03-03.md",
@@ -6737,27 +6151,11 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-20-0630.md",
-      "type": "Document",
-      "label": "2026-04-20-0630.md",
-      "properties": {
-        "path": "memory/archive/2026-04-20-0630.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-03-29-400-status-code-no-body.md",
       "type": "Document",
       "label": "2026-03-29-400-status-code-no-body.md",
       "properties": {
         "path": "memory/archive/2026-03-29-400-status-code-no-body.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-30-the-conversation-is-a-single-q.md",
-      "type": "Document",
-      "label": "2026-04-30-the-conversation-is-a-single-q.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-the-conversation-is-a-single-q.md"
       }
     },
     {
@@ -6774,14 +6172,6 @@
       "label": "2026-03-14-0829.md",
       "properties": {
         "path": "memory/archive/2026-03-14-0829.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-30-the-conversation-is-about-1-a-.md",
-      "type": "Document",
-      "label": "2026-04-30-the-conversation-is-about-1-a-.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-the-conversation-is-about-1-a-.md"
       }
     },
     {
@@ -6833,35 +6223,11 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-16.md",
-      "type": "Document",
-      "label": "2026-04-16.md",
-      "properties": {
-        "path": "memory/archive/2026-04-16.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-30-heartbeat-poll.md",
-      "type": "Document",
-      "label": "2026-04-30-heartbeat-poll.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-heartbeat-poll.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-02-23.md",
       "type": "Document",
       "label": "2026-02-23.md",
       "properties": {
         "path": "memory/archive/2026-02-23.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-21-skills-description-fix.md",
-      "type": "Document",
-      "label": "2026-04-21-skills-description-fix.md",
-      "properties": {
-        "path": "memory/archive/2026-04-21-skills-description-fix.md"
       }
     },
     {
@@ -6905,27 +6271,11 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-15.md",
-      "type": "Document",
-      "label": "2026-04-15.md",
-      "properties": {
-        "path": "memory/archive/2026-04-15.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-04-01.md",
       "type": "Document",
       "label": "2026-04-01.md",
       "properties": {
         "path": "memory/archive/2026-04-01.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-30-model-config-update.md",
-      "type": "Document",
-      "label": "2026-04-30-model-config-update.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-model-config-update.md"
       }
     },
     {
@@ -6953,22 +6303,6 @@
       }
     },
     {
-      "id": "doc:memory/archive/working-buffer-2026-03-14.md",
-      "type": "Document",
-      "label": "working-buffer-2026-03-14.md",
-      "properties": {
-        "path": "memory/archive/working-buffer-2026-03-14.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-30-exec-denied.md",
-      "type": "Document",
-      "label": "2026-04-30-exec-denied.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-exec-denied.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-03-20-ai-news-retry.md",
       "type": "Document",
       "label": "2026-03-20-ai-news-retry.md",
@@ -6982,14 +6316,6 @@
       "label": "voice_recognition_project.md",
       "properties": {
         "path": "memory/archive/voice_recognition_project.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-30-heartbeat-check.md",
-      "type": "Document",
-      "label": "2026-04-30-heartbeat-check.md",
-      "properties": {
-        "path": "memory/archive/2026-04-30-heartbeat-check.md"
       }
     },
     {
@@ -7033,22 +6359,6 @@
       }
     },
     {
-      "id": "doc:memory/archive/2026-04-20-0627.md",
-      "type": "Document",
-      "label": "2026-04-20-0627.md",
-      "properties": {
-        "path": "memory/archive/2026-04-20-0627.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-21-session-greeting.md",
-      "type": "Document",
-      "label": "2026-04-21-session-greeting.md",
-      "properties": {
-        "path": "memory/archive/2026-04-21-session-greeting.md"
-      }
-    },
-    {
       "id": "doc:memory/archive/2026-04-02-css-fix-links.md",
       "type": "Document",
       "label": "2026-04-02-css-fix-links.md",
@@ -7086,14 +6396,6 @@
       "label": "2026-03-01.md",
       "properties": {
         "path": "memory/archive/2026-03-01.md"
-      }
-    },
-    {
-      "id": "doc:memory/archive/2026-04-20-0632.md",
-      "type": "Document",
-      "label": "2026-04-20-0632.md",
-      "properties": {
-        "path": "memory/archive/2026-04-20-0632.md"
       }
     },
     {
@@ -7337,9 +6639,27 @@
       "properties": {}
     },
     {
+      "id": "tag:2",
+      "type": "Tag",
+      "label": "#2",
+      "properties": {}
+    },
+    {
       "id": "tag:3",
       "type": "Tag",
       "label": "#3",
+      "properties": {}
+    },
+    {
+      "id": "tag:7",
+      "type": "Tag",
+      "label": "#7",
+      "properties": {}
+    },
+    {
+      "id": "tag:8",
+      "type": "Tag",
+      "label": "#8",
       "properties": {}
     },
     {
@@ -8933,133 +8253,8 @@
     },
     {
       "source": "doc:PROGRESS.md",
-      "target": "tag:2",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:PROGRESS.md",
-      "target": "tag:6",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:PROGRESS.md",
       "target": "concept:WikiLink",
       "relation": "mentions"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:D4A84B",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:B8922F",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:3D9CA8",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2D7A85",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:FDFBF7",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:3D9CA8",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:3D9CA8",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:FDFBF7",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:FFFFFF",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:2C3E50",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:FFFFFF",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:FF8C00",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:FFA500",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:1E90FF",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:00BFFF",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:1A1A1A",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:website_building_prompt_summary.md",
-      "target": "tag:4169E1",
-      "relation": "has_tag"
     },
     {
       "source": "doc:MEMORY.md",
@@ -9112,6 +8307,11 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:memory/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
       "target": "tag:44639",
       "relation": "has_tag"
@@ -9154,46 +8354,6 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-07.md",
       "target": "tag:60544",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:71780",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:72245",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:71857",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:72352",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:72209",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:72266",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:71780",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-27.md",
-      "target": "tag:72381",
       "relation": "has_tag"
     },
     {
@@ -9332,113 +8492,8 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-06.md",
-      "target": "tag:77064",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-06.md",
-      "target": "tag:77708",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-06.md",
-      "target": "tag:78050",
-      "relation": "has_tag"
-    },
-    {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-23.md",
       "target": "tag:51500",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:70765",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:58823",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:72290",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:72287",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:73041",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:72999",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:36630",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:73054",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:46303",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:72290",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-28.md",
-      "target": "tag:58823",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:60248",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:59859",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:59752",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:67946",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:59697",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:60248",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-29.md",
-      "target": "tag:59859",
       "relation": "has_tag"
     },
     {
@@ -9547,11 +8602,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-15.md",
-      "target": "tag:81489",
-      "relation": "has_tag"
-    },
-    {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:20177",
       "relation": "has_tag"
@@ -9594,106 +8644,6 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:12975",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-11.md",
-      "target": "tag:OpenClaw",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:53682",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:53809",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:71940",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:66150",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:74578",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:74162",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:53682",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:53809",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:71940",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:74622",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:74636",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:71ab341",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-30.md",
-      "target": "tag:74622",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "target": "tag:71270",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "target": "tag:71196",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "target": "tag:70864",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "target": "tag:71270",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "target": "tag:71196",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:news_summaries/openclaw_news_high_quality_2026-04-25.md",
-      "target": "tag:70864",
       "relation": "has_tag"
     },
     {
@@ -9815,6 +8765,86 @@
       "source": "doc:design-systems/ascend-ecosystem-design-system.md",
       "target": "tag:000000",
       "relation": "has_tag"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:AI分析",
+      "relation": "mentions"
     },
     {
       "source": "doc:jiaviswangcai.ai/CSS_GUIDELINES.md",
@@ -10647,101 +9677,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:notes/areas/proactive-tracker.md",
-      "target": "tag:7",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:notes/areas/proactive-tracker.md",
-      "target": "tag:2",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:notes/areas/proactive-tracker.md",
-      "target": "tag:8",
-      "relation": "has_tag"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:概念关联",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:知识网络",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:关系密度",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:知识发现",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:知识检索",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:知识检索",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:archive/monthly/2026-05/LEARNINGS_full_2026-05-01.md",
-      "target": "concept:AI分析",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:archive/monthly/2026-04/THIRD_PARTY_PUBLISH_GUIDE.md",
       "target": "tag:1E3A5F",
       "relation": "has_tag"
@@ -10852,11 +9787,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:memory/archive/2026-04-20-session-summary.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:memory/archive/2026-03-29-400-status-code-no-body.md",
       "target": "concept:reply_to_current",
       "relation": "mentions"
@@ -10894,6 +9824,86 @@
     {
       "source": "doc:memory/archive/2026-03-31-chinese-output.md",
       "target": "concept:概念",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:AI分析",
       "relation": "mentions"
     },
     {
