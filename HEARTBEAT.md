@@ -162,5 +162,5 @@
 
 ---
 
-*最后更新：2026-03-29*
+*最后更新：2026-05-16*
 *参考：sanwan.ai OpenClaw AGENTS.md 完全指南 + skill-heartbeat.html*

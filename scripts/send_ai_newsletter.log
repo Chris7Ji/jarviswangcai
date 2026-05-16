@@ -106,3 +106,37 @@
 2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:321] - ==================================================
 2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:322] - 高校分队AI新闻简报邮件发送脚本启动
 2026-04-14 07:43:59 - AINewsletter - INFO - [send_ai_newsletter.py:323] - ==================================================
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:74] - 日志文件位置: /Users/jiyingguo/.openclaw/workspace/scripts/send_ai_newsletter.log
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:321] - ==================================================
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:322] - 高校分队AI新闻简报邮件发送脚本启动
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:323] - ==================================================
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:328] - HTML文件: news_summaries/gaoxiao_news_2026-05-16.html
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:329] - 邮件主题: [2026-05-16] 高校分队 AI 新闻每日简报
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:105] - 正在读取HTML文件: news_summaries/gaoxiao_news_2026-05-16.html
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:119] - 成功读取HTML文件，大小: 5844 字符
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:175] - 开始发送邮件，收件人: jiyingguo@huawei.com, xushengsheng@huawei.com, 86940135@qq.com
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:176] - ⚠️ 注意：使用QQ邮箱(86940135@qq.com)发送邮件到华为邮箱可能被拦截
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:177] - ⚠️ 建议：华为邮箱用户检查垃圾邮件文件夹或联系IT部门
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:146] - 创建邮件消息，主题: [2026-05-16] 高校分队 AI 新闻每日简报
+2026-05-16 07:38:48 - AINewsletter - DEBUG - [send_ai_newsletter.py:161] - 邮件消息创建完成
+2026-05-16 07:38:48 - AINewsletter - INFO - [send_ai_newsletter.py:183] - 第 1/3 次尝试发送...
+2026-05-16 07:38:48 - AINewsletter - DEBUG - [send_ai_newsletter.py:186] - 连接SMTP服务器: smtp.qq.com:587
+2026-05-16 07:38:48 - AINewsletter - DEBUG - [send_ai_newsletter.py:191] - 启动TLS加密...
+2026-05-16 07:38:48 - AINewsletter - DEBUG - [send_ai_newsletter.py:195] - 登录邮箱: 86940135@qq.com
+2026-05-16 07:38:49 - AINewsletter - ERROR - [send_ai_newsletter.py:232] - ❌ SMTP错误: Connection unexpectedly closed
+2026-05-16 07:38:49 - AINewsletter - INFO - [send_ai_newsletter.py:242] - 5秒后重试...
+2026-05-16 07:38:54 - AINewsletter - INFO - [send_ai_newsletter.py:183] - 第 2/3 次尝试发送...
+2026-05-16 07:38:54 - AINewsletter - DEBUG - [send_ai_newsletter.py:186] - 连接SMTP服务器: smtp.qq.com:587
+2026-05-16 07:38:54 - AINewsletter - DEBUG - [send_ai_newsletter.py:191] - 启动TLS加密...
+2026-05-16 07:38:54 - AINewsletter - DEBUG - [send_ai_newsletter.py:195] - 登录邮箱: 86940135@qq.com
+2026-05-16 07:38:54 - AINewsletter - ERROR - [send_ai_newsletter.py:232] - ❌ SMTP错误: Connection unexpectedly closed
+2026-05-16 07:38:54 - AINewsletter - INFO - [send_ai_newsletter.py:242] - 5秒后重试...
+2026-05-16 07:38:59 - AINewsletter - INFO - [send_ai_newsletter.py:183] - 第 3/3 次尝试发送...
+2026-05-16 07:38:59 - AINewsletter - DEBUG - [send_ai_newsletter.py:186] - 连接SMTP服务器: smtp.qq.com:587
+2026-05-16 07:38:59 - AINewsletter - DEBUG - [send_ai_newsletter.py:191] - 启动TLS加密...
+2026-05-16 07:38:59 - AINewsletter - DEBUG - [send_ai_newsletter.py:195] - 登录邮箱: 86940135@qq.com
+2026-05-16 07:38:59 - AINewsletter - ERROR - [send_ai_newsletter.py:232] - ❌ SMTP错误: Connection unexpectedly closed
+2026-05-16 07:38:59 - AINewsletter - ERROR - [send_ai_newsletter.py:245] - ❌ 邮件发送失败，已重试 3 次
+2026-05-16 07:38:59 - AINewsletter - ERROR - [send_ai_newsletter.py:341] - ==================================================
+2026-05-16 07:38:59 - AINewsletter - ERROR - [send_ai_newsletter.py:342] - ❌ 任务失败！
+2026-05-16 07:38:59 - AINewsletter - ERROR - [send_ai_newsletter.py:343] - ==================================================
