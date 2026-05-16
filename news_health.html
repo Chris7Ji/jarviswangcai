@@ -3,111 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 | 2026-05-16</title>
+<title>健康长寿科研简报 · 2026-05-17</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
-  .container { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
-
-  .header { text-align: center; padding: 36px 20px 28px; background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%); border-radius: 16px; margin-bottom: 24px; }
-  .header h1 { font-size: 26px; color: #e8d5b7; letter-spacing: 2px; }
-  .header .subtitle { color: #8899bb; font-size: 14px; margin-top: 8px; }
-  .header .date-badge { display: inline-block; background: #e8d5b7; color: #0f3460; padding: 4px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-top: 10px; }
-
-  .card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); transition: box-shadow 0.2s; }
-  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
-  .card .tag { display: inline-block; font-size: 11px; padding: 2px 10px; border-radius: 10px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 10px; }
-  .tag-science { background: #d4e6f1; color: #1a5276; }
-  .tag-clinical { background: #d5f5e3; color: #1e8449; }
-  .tag-drug { background: #fdebd0; color: #b9770e; }
-  .tag-policy { background: #e8daef; color: #7d3c98; }
-  .tag-trend { background: #f2d7d5; color: #922b21; }
-  .card h2 { font-size: 18px; margin-bottom: 6px; line-height: 1.5; }
-  .card h2 a { color: #0f3460; text-decoration: none; }
-  .card h2 a:hover { text-decoration: underline; }
-  .card .meta { font-size: 13px; color: #8899bb; margin-bottom: 12px; }
-  .card .summary { font-size: 15px; color: #2c3e50; }
-  .card .summary p { margin-bottom: 8px; }
-  .card .source-link { display: inline-block; margin-top: 12px; font-size: 13px; color: #2980b9; text-decoration: none; }
-  .card .source-link:hover { text-decoration: underline; }
-
-  .footer { text-align: center; padding: 20px; color: #8899bb; font-size: 13px; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .header { background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%); color: #fff; padding: 40px 20px; text-align: center; }
+  .header h1 { font-size: 28px; margin-bottom: 8px; letter-spacing: 2px; }
+  .header .subtitle { color: #a0c4ff; font-size: 14px; }
+  .header .date { color: #f0c27f; font-size: 13px; margin-top: 6px; }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .card { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #0f3460; transition: transform 0.2s; }
+  .card:hover { transform: translateX(4px); }
+  .card .badge { display: inline-block; background: #0f3460; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 10px; margin-bottom: 10px; font-weight: 600; }
+  .card .badge.nature { background: #2a7a3b; }
+  .card .badge.nyt { background: #1a1a2e; }
+  .card .badge.mit { background: #b31b1b; }
+  .card .badge.gov { background: #0066cc; }
+  .card .badge.harvard { background: #a51c30; }
+  .card h2 { font-size: 20px; margin-bottom: 8px; color: #0f3460; line-height: 1.4; }
+  .card h2 .en { display: block; font-size: 14px; font-weight: 400; color: #666; margin-top: 4px; }
+  .card .meta { font-size: 13px; color: #888; margin-bottom: 12px; }
+  .card .meta a { color: #0f3460; text-decoration: underline; }
+  .card p { font-size: 15px; color: #333; margin-bottom: 10px; text-indent: 2em; }
+  .card .keyword { display: inline-block; background: #e8f0fe; color: #0f3460; font-size: 12px; padding: 2px 10px; border-radius: 10px; margin: 4px 4px 0 0; }
+  .footer { text-align: center; padding: 30px; color: #999; font-size: 13px; }
+  .summary-box { background: #f0f4ff; border-radius: 10px; padding: 16px 20px; margin: 16px 0 0; border: 1px solid #d4e0ff; }
+  .summary-box h3 { font-size: 14px; color: #0f3460; margin-bottom: 6px; }
+  .summary-box p { text-indent: 0; font-size: 14px; }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 22px; }
+    .card { padding: 20px; }
+    .card h2 { font-size: 17px; }
+  }
 </style>
 </head>
 <body>
+
+<div class="header">
+  <h1>🧬 健康长寿科研简报</h1>
+  <div class="subtitle">Longevity &amp; Healthspan Research Brief</div>
+  <div class="date">📅 2026 年 5 月 17 日 · 星期日</div>
+</div>
+
 <div class="container">
 
-  <div class="header">
-    <h1>🧬 健康长寿科研简报</h1>
-    <div class="subtitle">旺财Jarvis · 每周AI精选</div>
-    <div class="date-badge">📅 2026年5月16日 · 星期六</div>
-  </div>
-
-  <!-- Article 1 -->
+  <!-- Article 1: Nature -->
   <div class="card">
-    <span class="tag tag-policy">💰 政策资助</span>
-    <h2><a href="https://news.sciencenet.cn/htmlnews/2026/4/562817.shtm" target="_blank">美国 ARPA-H 投入1.44亿美元启动PROSPR项目，加速抗衰老药物III期临床</a></h2>
-    <div class="meta">📰 科学网/中国科学报 · 2026-04-09 · 作者：文乐乐</div>
-    <div class="summary">
-      <p><strong>摘要：</strong>美国健康高级研究计划局（ARPA-H）通过其"延长健康韧性主动解决方案"（PROSPR）项目，向7个团队（4个学术团队 + 3家生物技术公司）发放总额1.44亿美元的资金，旨在为延长健康寿命的干预措施开展III期临床试验奠定基础。ARPA-H项目主管Andrew Brack表示，这是首次尝试将实验动物中的抗衰老成功经验应用于人类。研究团队正致力于验证可替代长期随访的衰老生物标志物——包括DNA甲基化模式、步行速度和面部皱纹分析等，并计划开发家用自测工具包。丹麦哥本哈根大学教授Morten Scheibye-Knudsen称该项目"可能对人口健康产生深远影响"。</p>
-      <p>这是美国政府在抗衰老领域的里程碑式投资，标志着衰老作为可治疗疾病的监管路径开始打通。Brack预测未来5年内长寿研究领域将迎来巨大变革。</p>
+    <span class="badge nature">Nature · 顶刊论文</span>
+    <h2>
+      逆转细胞衰老的方法即将在人体中测试
+      <span class="en">This method to reverse cellular ageing is about to be tested in humans</span>
+    </h2>
+    <div class="meta">
+      📰 <em>Nature</em> | 2026 年 4 月 | Vol.652, No.8109, pp.291-293
+      · <a href="https://pubmed.ncbi.nlm.nih.gov/41946989/" target="_blank">PubMed</a>
+      · <a href="https://doi.org/10.1038/d41586-026-01024-7" target="_blank">DOI</a>
     </div>
-    <a class="source-link" href="https://news.sciencenet.cn/htmlnews/2026/4/562817.shtm" target="_blank">→ 阅读原文</a>
+    <p>
+      2025 年初 FDA 批准了一项开创性基因疗法的临床试验，该疗法旨在逆转人类细胞内的生物性衰老。由哈佛大学 David Sinclair 联合创立的 Life Biosciences 公司开发的 ER-100 基因疗法，试图利用部分表观遗传重编程（partial epigenetic reprogramming）技术，重置老化细胞的表观基因组，使其恢复年轻时的基因表达模式。首位志愿者预计在短期内接受治疗，试验重点关注与衰老相关的眼科疾病。
+    </p>
+    <p>
+      这项临床试验标志着表观遗传重编程从实验室走向人体的关键转折点。2006 年山中伸弥发现的 Yamanaka 因子（Oct4, Sox2, Klf4, c-Myc）曾被用于将体细胞重编程为诱导多能干细胞，但会导致癌变。近年来发现的"部分重编程"方法——在有限时间内短暂表达这些因子——可在不失去细胞身份的前提下逆转衰老迹象。若成功，这将为数百种衰老相关疾病开辟全新治疗路径。
+    </p>
+    <div class="summary-box">
+      <h3>💡 一句话亮点</h3>
+      <p><strong>Nature 刊发专题报道：</strong>首个旨在逆转细胞衰老的基因疗法 ER-100 已获 FDA 批准进入人体试验，由哈佛团队主导。</p>
+    </div>
+    <span class="keyword">#表观遗传重编程</span>
+    <span class="keyword">#ER-100</span>
+    <span class="keyword">#LifeBiosciences</span>
+    <span class="keyword">#DavidSinclair</span>
+    <span class="keyword">#FDA临床试验</span>
   </div>
 
-  <!-- Article 2 -->
+  <!-- Article 2: NYT Magazine -->
   <div class="card">
-    <span class="tag tag-science">🧪 前沿科学</span>
-    <h2><a href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">哈佛David Sinclair在世界政府峰会上宣布：衰老将可逆，人体临床试验即将启动</a></h2>
-    <div class="meta">📰 World Governments Summit (WAM) · 2026-02-05</div>
-    <div class="summary">
-      <p><strong>摘要：</strong>在国际公认的长寿领域领军人物、哈佛医学院遗传学教授David Sinclair在世界政府峰会（WGS 2026）上宣布，人类正站在自发现清洁水源和疫苗以来最重要的健康变革边缘。他指出人类长期以来忽视了衰老，而现在不应再将衰老视为不可避免的生命进程。</p>
-      <p>Sinclair教授透露，他的团队正准备启动旨在逆转衰老过程的人体临床试验。他认为衰老应被视为一种"医疗状况"而非自然规律，并强调若能将健康寿命延长一年，仅美国就能产生约38万亿美元的经济价值。这一宣言为2026年的抗衰老研究注入了极大的期待和信心。</p>
+    <span class="badge nyt">The New York Times Magazine · 封面报道</span>
+    <h2>
+      细胞重编程的潜力：逆转衰老不再是科幻
+      <span class="en">Cellular Rejuvenation Has the Potential to Reverse Aging</span>
+    </h2>
+    <div class="meta">
+      📰 <em>The New York Times Magazine</em> | 2026 年 4 月 27 日
+      · <a href="https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html" target="_blank">原文链接</a>
     </div>
-    <a class="source-link" href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">→ 阅读原文</a>
+    <p>
+      《纽约时报杂志》4 月刊发重磅长篇报道，深入探访由 Jeff Bezos 等人投资的 Altos Labs 以及多家长寿生物科技公司。报道指出，细胞重编程技术有潜力治疗数百种疾病——甚至逆转衰老本身。科学家们正在探索一种被称为"部分重编程"的方法，通过在细胞中短暂引入特定重编程因子，擦除衰老的表观遗传标记，使细胞恢复年轻功能。
+    </p>
+    <p>
+      报道强调，虽然长寿领域长期被质疑为"富豪的青春幻想"，但 2026 年正在成为转折点：多项临床试验正式启动，政府资金大规模投入，学术界和产业界的共识正在形成——延缓衰老不再是"能不能做"的问题，而是"何时做到"的问题。The Longevity Biotech Fellowship 等组织也在推动该领域的人才培养和商业化进程。
+    </p>
+    <div class="summary-box">
+      <h3>💡 一句话亮点</h3>
+      <p><strong>NYT 重磅报道：</strong>Altos Labs 等公司推动的细胞重编程技术，正在将"逆转衰老"从科幻变为临床现实。</p>
+    </div>
+    <span class="keyword">#细胞重编程</span>
+    <span class="keyword">#AltosLabs</span>
+    <span class="keyword">#逆转衰老</span>
+    <span class="keyword">#长寿科技</span>
   </div>
 
-  <!-- Article 3 -->
+  <!-- Article 3: MIT Tech Review -->
   <div class="card">
-    <span class="tag tag-clinical">🏥 临床应用</span>
-    <h2><a href="https://news.harvard.edu/gazette/story/2026/02/whats-next-for-glp-1s/" target="_blank">GLP-1药物革命性进展：除减重和糖尿病外，对心衰、肝病、睡眠呼吸暂停等多种疾病有效</a></h2>
-    <div class="meta">📰 Harvard Gazette · 2026-02</div>
-    <div class="summary">
-      <p><strong>摘要：</strong>哈佛大学最新综述指出，GLP-1受体激动剂类药物已彻底改变了数百万美国人对肥胖和2型糖尿病的治疗方式，而科学家正深入探索这些药物对一系列其他慢性疾病——包括心力衰竭、慢性肝病、阻塞性睡眠呼吸暂停甚至物质使用障碍——的治疗潜力。</p>
-      <p>哈佛医学院和布莱根妇女医院的Nils Krüger教授团队研究发现，GLP-1药物对射血分数保留型心力衰竭（HFpEF）患者表现出卓越疗效——相比传统糖尿病药物，心血管事件风险降低了40%。这些发现表明GLP-1类药物可能成为多种缺乏有效治疗手段的慢性疾病的突破性方案，其应用前景远超减重本身。</p>
+    <span class="badge mit">MIT Technology Review · 前沿报道</span>
+    <h2>
+      人类首次逆龄试验即将开启：基因疗法旨在治疗失明
+      <span class="en">The first human test of a rejuvenation method will begin "shortly"</span>
+    </h2>
+    <div class="meta">
+      📰 <em>MIT Technology Review</em> | 2026 年 1 月 27 日
+      · <a href="https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/" target="_blank">原文链接</a>
     </div>
-    <a class="source-link" href="https://news.harvard.edu/gazette/story/2026/02/whats-next-for-glp-1s/" target="_blank">→ 阅读原文</a>
+    <p>
+      2026 年 1 月，FDA 正式批准了 Life Biosciences 公司 ER-100 疗法的临床试验申请（IND），目标是对抗与年龄相关的眼部疾病，如青光眼。这是人类历史上首次尝试在活人身上测试"年龄逆转"疗法。ER-100 是一种基因疗法，通过向眼内细胞递送特定重编程因子，试图重置细胞的表观遗传状态，恢复年轻时的功能。
+    </p>
+    <p>
+      该公司的联合创始人 David Sinclair 表示，这是检验"衰老信息理论"的关键时刻——该理论认为衰老是由于细胞逐渐丧失正确的表观遗传信息导致的。Elon Musk 在接受采访时也被问及此事，他表示虽然自己未深入该领域，但相信衰老问题"非常可解"，当科学家发现衰老原因时，答案可能会"显而易见"。
+    </p>
+    <div class="summary-box">
+      <h3>💡 一句话亮点</h3>
+      <p><strong>人类历史首次：</strong>FDA 批准了直接以"逆转衰老"为目标的人体基因疗法临床试验，标志着长寿科学进入全新纪元。</p>
+    </div>
+    <span class="keyword">#首次人体试验</span>
+    <span class="keyword">#基因疗法</span>
+    <span class="keyword">#青光眼</span>
+    <span class="keyword">#FDA批准</span>
   </div>
 
-  <!-- Article 4 -->
+  <!-- Article 4: ARPA-H / 科学网 -->
   <div class="card">
-    <span class="tag tag-drug">💊 新药突破</span>
-    <h2><a href="https://www.wtwco.com/en-us/insights/2026/04/the-next-wave-of-anti-obesity-medications-2026-2028-market-outlook" target="_blank">FDA 2026年4月批准首个口服GLP-1减肥药orforglipron (Foundayo)，2026成"减肥药丸之年"</a></h2>
-    <div class="meta">📰 WTW / CNBC · 2026-04-01</div>
-    <div class="summary">
-      <p><strong>摘要：</strong>2026年4月1日，美国FDA正式批准了礼来（Eli Lilly）的口服GLP-1药物orforglipron（商品名Foundayo），用于肥胖或超重且至少有一种体重相关合并症的成人患者。这是全球首个无需注射的口服GLP-1减肥药获批，标志着肥胖治疗迈入口服时代。</p>
-      <p>此前诺和诺德（Novo Nordisk）已推出首款GLP-1口服减肥药（与注射剂Wegovy同名）。CNBC分析指出，2026年将成为"减肥药丸之年"，口服剂型可吸引大量此前不愿接受注射治疗的新患者，极大扩展减重药物市场规模。新一代药物配方还着眼于减少肌肉流失、提高便利性（无需空腹服用），推动了整个GLP-1市场的迭代升级。</p>
+    <span class="badge gov">中国科学报 · 政府资助</span>
+    <h2>
+      美国投入 1.44 亿美元开展延缓衰老研究
+      <span class="en">ARPA-H Awards $144M for Aging Intervention Research — PROSPR Program</span>
+    </h2>
+    <div class="meta">
+      📰 <em>中国科学报 / ScienceNet</em> | 2026 年 4 月 9 日
+      · <a href="https://news.sciencenet.cn/htmlnews/2026/4/562817.shtm" target="_blank">原文链接</a>
     </div>
-    <a class="source-link" href="https://www.wtwco.com/en-us/insights/2026/04/the-next-wave-of-anti-obesity-medications-2026-2028-market-outlook" target="_blank">→ 阅读原文</a>
+    <p>
+      美国健康高级研究计划局（ARPA-H）通过其"延长健康韧性主动解决方案"（PROSPR）项目，向 4 个学术界团队和 3 个生物技术公司团队拨款总额 1.44 亿美元，旨在寻找能够延缓衰老的药物。这是美国政府迄今在衰老干预领域最大手笔的投资之一。
+    </p>
+    <p>
+      报道指出：衰老是导致许多晚年疾病的"幕后共谋者"，但迄今为止尚未有任何一种针对衰老的治疗方法经过严格测试并获得监管批准。PROSPR 项目将资助多个不同路径的研究，包括针对衰老标志（如细胞衰老、线粒体功能障碍、慢性炎症等）的药物筛选和临床试验准备。这一举措标志着美国政府正式将延缓衰老作为公共卫生优先方向。
+    </p>
+    <div class="summary-box">
+      <h3>💡 一句话亮点</h3>
+      <p><strong>美国政府重注衰老研究：</strong>ARPA-H 拨款 1.44 亿美元支持 7 个团队开发延缓衰老药物，试图打破"无药获批"的僵局。</p>
+    </div>
+    <span class="keyword">#ARPA-H</span>
+    <span class="keyword">#PROSPR</span>
+    <span class="keyword">#延缓衰老</span>
+    <span class="keyword">#政府资助</span>
+    <span class="keyword">#药物研发</span>
   </div>
 
-  <!-- Article 5 -->
+  <!-- Article 5: Harvard GLP-1 -->
   <div class="card">
-    <span class="tag tag-trend">🔮 趋势展望</span>
-    <h2><a href="https://www.foreverlabs.com/articles/blog/2026-the-year-of-longevity-and-owning-your-biology" target="_blank">2026：长寿元年——生物年龄检测成为常规体检，干细胞疗法连接健康寿命与寿命延长</a></h2>
-    <div class="meta">📰 ForeverLabs · 2026</div>
-    <div class="summary">
-      <p><strong>摘要：</strong>2026年被定义为"长寿元年"，生物年龄检测正像年度体检一样成为医疗常规。"生物流动性"概念兴起——人们开始将年轻时更具表观遗传相容性的细胞储存起来，以备未来再生治疗使用。间充质干细胞（MSC）疗法被视为连接健康寿命与总寿命的关键桥梁，通过对抗驱动衰老相关疾病的慢性炎症发挥作用。</p>
-      <p>新一代MSC"预激活"（Priming）技术让储存的细胞在被重新引入体内前接受训练，变得更坚韧、更有效。佛罗里达和德克萨斯等州颁布新法规，在严格安全标准下简化自体干细胞疗法的骨科和疼痛管理应用。同时，端粒修复、线粒体支持、CRISPR基因编辑等前沿技术也在加速走向临床应用。</p>
+    <span class="badge harvard">Harvard Gazette · 医学前沿</span>
+    <h2>
+      GLP-1 药物的下一步：从减肥到治疗多种慢性疾病
+      <span class="en">What's next for GLP-1s? Scientists explore benefits beyond obesity and diabetes</span>
+    </h2>
+    <div class="meta">
+      📰 <em>Harvard Gazette</em> | 2026 年 2 月
+      · <a href="https://news.harvard.edu/gazette/story/2026/02/whats-next-for-glp-1s/" target="_blank">原文链接</a>
     </div>
-    <a class="source-link" href="https://www.foreverlabs.com/articles/blog/2026-the-year-of-longevity-and-owning-your-biology" target="_blank">→ 阅读原文</a>
+    <p>
+      在 GLP-1 受体激动剂（如司美格鲁肽/Ozempic、替尔泊肽/Mounjaro）彻底改变肥胖和 2 型糖尿病治疗格局之后，科学家们正在探索这类药物对多种其他慢性疾病的治疗潜力。哈佛大学医学院及布莱根妇女医院的 Nils Krüger 教授团队对 GLP-1 药物的广泛正面效应进行了系统研究。
+    </p>
+    <p>
+      研究显示，GLP-1 药物可能对以下疾病产生显著疗效：心力衰竭（保留射血分数型）、慢性肝病（代谢相关脂肪性肝炎 MASH）、阻塞性睡眠呼吸暂停、物质使用障碍（成瘾行为），以及可能的神经保护作用（帕金森病、阿尔茨海默病）。CNN 也报道了一项 2026 年新研究显示，GLP-1 药物还能降低物质使用障碍的发病风险。诺和诺德（Novo Nordisk）和礼来（Eli Lilly）的口服 GLP-1 药物正在 2026 年密集推进市场，将彻底改变这一领域。
+    </p>
+    <div class="summary-box">
+      <h3>💡 一句话亮点</h3>
+      <p><strong>GLP-1 的跨界潜力：</strong>哈佛综述揭示 GLP-1 药物在心力衰竭、肝病、睡眠呼吸暂停甚至成瘾治疗中的全新应用前景。</p>
+    </div>
+    <span class="keyword">#GLP-1</span>
+    <span class="keyword">#司美格鲁肽</span>
+    <span class="keyword">#肥胖治疗</span>
+    <span class="keyword">#慢性疾病</span>
+    <span class="keyword">#口服减肥药</span>
   </div>
 
-  <div class="footer">
-    <p>📧 由旺财Jarvis自动生成 · 数据来源公开学术报道</p>
-    <p>⚠️ 内容仅供参考，不构成医疗建议</p>
+  <!-- Summary section -->
+  <div style="background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%); border-radius: 12px; padding: 28px; color: #fff; margin-top: 20px;">
+    <h3 style="font-size: 18px; margin-bottom: 14px; color: #f0c27f;">📊 本期简报总结</h3>
+    <table style="width:100%; border-collapse: collapse; font-size: 14px;">
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+        <td style="padding: 8px 4px; width: 40px;">1️⃣</td>
+        <td style="padding: 8px 4px; color: #a0c4ff;">Nature 论文</td>
+        <td style="padding: 8px 4px;">细胞重编程首次人体试验即将启动</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+        <td style="padding: 8px 4px;">2️⃣</td>
+        <td style="padding: 8px 4px; color: #a0c4ff;">NYT 杂志</td>
+        <td style="padding: 8px 4px;">Altos Labs 领衔的"逆转衰老"产业全景</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+        <td style="padding: 8px 4px;">3️⃣</td>
+        <td style="padding: 8px 4px; color: #a0c4ff;">MIT Tech Review</td>
+        <td style="padding: 8px 4px;">Life Biosciences ER-100 基因疗法获 FDA 批准</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+        <td style="padding: 8px 4px;">4️⃣</td>
+        <td style="padding: 8px 4px; color: #a0c4ff;">中国科学报</td>
+        <td style="padding: 8px 4px;">美国 ARPA-H 拨款 1.44 亿美元研发延缓衰老药物</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 4px;">5️⃣</td>
+        <td style="padding: 8px 4px; color: #a0c4ff;">Harvard Gazette</td>
+        <td style="padding: 8px 4px;">GLP-1 药物从减肥向多种慢病治疗拓展</td>
+      </tr>
+    </table>
   </div>
 
 </div>
+
+<div class="footer">
+  <p>🤖 由 旺财Jarvis 自动生成 · 数据来源公开科技新闻 · 仅供学习参考</p>
+  <p style="margin-top:4px;">生成时间：2026-05-17 07:27 CST</p>
+</div>
+
 </body>
 </html>
