@@ -3141,35 +3141,11 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-02.md",
-      "type": "Document",
-      "label": "2026-03-02.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-02.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-26.md",
-      "type": "Document",
-      "label": "2026-03-26.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-26.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/MEMORY_SYSTEM_BUILD_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_BUILD_GUIDE.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/MEMORY_SYSTEM_BUILD_GUIDE.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-02-0440.md",
-      "type": "Document",
-      "label": "2026-04-02-0440.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-02-0440.md"
       }
     },
     {
@@ -3181,35 +3157,11 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-06.md",
-      "type": "Document",
-      "label": "2026-03-06.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-06.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/working-buffer.md",
       "type": "Document",
       "label": "working-buffer.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/working-buffer.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-16.md",
-      "type": "Document",
-      "label": "2026-03-16.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-16.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-22.md",
-      "type": "Document",
-      "label": "2026-03-22.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-22.md"
       }
     },
     {
@@ -3221,43 +3173,11 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-07.md",
-      "type": "Document",
-      "label": "2026-03-07.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-07.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/2026-04-20-0634.md",
       "type": "Document",
       "label": "2026-04-20-0634.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-0634.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-17.md",
-      "type": "Document",
-      "label": "2026-03-17.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-17.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-23.md",
-      "type": "Document",
-      "label": "2026-03-23.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-23.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-03.md",
-      "type": "Document",
-      "label": "2026-03-03.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-03.md"
       }
     },
     {
@@ -3269,67 +3189,11 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-29-400-status-code-no-body.md",
-      "type": "Document",
-      "label": "2026-03-29-400-status-code-no-body.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-29-400-status-code-no-body.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-08.md",
-      "type": "Document",
-      "label": "2026-03-08.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-08.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-14-0829.md",
-      "type": "Document",
-      "label": "2026-03-14-0829.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-14-0829.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-10-session-start.md",
-      "type": "Document",
-      "label": "2026-04-10-session-start.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-10-session-start.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-13.md",
-      "type": "Document",
-      "label": "2026-04-13.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-13.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/MEMORY_SYSTEM_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_GUIDE.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/MEMORY_SYSTEM_GUIDE.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-02-cann-expansion.md",
-      "type": "Document",
-      "label": "2026-04-02-cann-expansion.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-02-cann-expansion.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-29.md",
-      "type": "Document",
-      "label": "2026-03-29.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-29.md"
       }
     },
     {
@@ -3349,51 +3213,11 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-19.md",
-      "type": "Document",
-      "label": "2026-03-19.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-19.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-28-new-session.md",
-      "type": "Document",
-      "label": "2026-03-28-new-session.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-28-new-session.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-29-dns-fix.md",
-      "type": "Document",
-      "label": "2026-03-29-dns-fix.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-29-dns-fix.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/ascend_cann_knowledge.md",
       "type": "Document",
       "label": "ascend_cann_knowledge.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/ascend_cann_knowledge.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-10-content-sync.md",
-      "type": "Document",
-      "label": "2026-04-10-content-sync.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-10-content-sync.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "type": "Document",
-      "label": "2026-03-28-openclaw-config-tips.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md"
       }
     },
     {
@@ -3405,30 +3229,6 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-01.md",
-      "type": "Document",
-      "label": "2026-04-01.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-01.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-30-1718.md",
-      "type": "Document",
-      "label": "2026-03-30-1718.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-30-1718.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-20-ai-news-retry.md",
-      "type": "Document",
-      "label": "2026-03-20-ai-news-retry.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-20-ai-news-retry.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/user_preferences.md",
       "type": "Document",
       "label": "user_preferences.md",
@@ -3437,89 +3237,11 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-30.md",
-      "type": "Document",
-      "label": "2026-03-30.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-30.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-29-自建Analytics方案.md",
-      "type": "Document",
-      "label": "2026-03-29-自建Analytics方案.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-29-自建Analytics方案.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-13-安全审计与加固.md",
-      "type": "Document",
-      "label": "2026-04-13-安全审计与加固.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-13-安全审计与加固.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-04.md",
-      "type": "Document",
-      "label": "2026-03-04.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-04.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/2026-04-20-0627.md",
       "type": "Document",
       "label": "2026-04-20-0627.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-0627.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-04-02-css-fix-links.md",
-      "type": "Document",
-      "label": "2026-04-02-css-fix-links.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-04-02-css-fix-links.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-14.md",
-      "type": "Document",
-      "label": "2026-03-14.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-14.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-31-chinese-output.md",
-      "type": "Document",
-      "label": "2026-03-31-chinese-output.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-31-chinese-output.md"
-      }
-    },
-    {
-      "id": "concept:概念",
-      "type": "Concept",
-      "label": "概念",
-      "properties": {}
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-30-1430.md",
-      "type": "Document",
-      "label": "2026-03-30-1430.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-30-1430.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-01.md",
-      "type": "Document",
-      "label": "2026-03-01.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-01.md"
       }
     },
     {
@@ -3536,30 +3258,6 @@
       "label": "2026-04-20-0632.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-0632.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-31.md",
-      "type": "Document",
-      "label": "2026-03-31.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-31.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-30-exec-debug.md",
-      "type": "Document",
-      "label": "2026-03-30-exec-debug.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-30-exec-debug.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/memory/2026-03-15.md",
-      "type": "Document",
-      "label": "2026-03-15.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/memory/2026-03-15.md"
       }
     },
     {
@@ -6451,6 +6149,12 @@
       }
     },
     {
+      "id": "concept:概念",
+      "type": "Concept",
+      "label": "概念",
+      "properties": {}
+    },
+    {
       "id": "doc:memory/archive/2026-03-30-1430.md",
       "type": "Document",
       "label": "2026-03-30-1430.md",
@@ -9110,46 +8814,6 @@
       "relation": "mentions"
     },
     {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-29-400-status-code-no-body.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-04-02-css-fix-links.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-04-02-css-fix-links.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-31-chinese-output.md",
-      "target": "concept:概念",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-19.md",
       "target": "tag:44639",
       "relation": "has_tag"
@@ -10167,46 +9831,6 @@
     {
       "source": "doc:jiaviswangcai.ai/memory/2026-04-20-session-summary.md",
       "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-29-400-status-code-no-body.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-28-openclaw-config-tips.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-04-02-css-fix-links.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-04-02-css-fix-links.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/2026-03-31-chinese-output.md",
-      "target": "concept:概念",
       "relation": "mentions"
     },
     {
