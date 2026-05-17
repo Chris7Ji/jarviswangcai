@@ -5013,6 +5013,14 @@
       }
     },
     {
+      "id": "doc:notes/areas/SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "notes/areas/SESSION-STATE.md"
+      }
+    },
+    {
       "id": "doc:notes/areas/HEARTBEAT.md",
       "type": "Document",
       "label": "HEARTBEAT.md",
