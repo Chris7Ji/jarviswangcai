@@ -2756,3 +2756,423 @@ const allPosts = [
         likes: 128
     }
 ];
+
+// State
+let currentFilter = 'all';
+let displayedPosts = 6;
+let currentTimelineYear = 'all';
+
+// DOM Elements
+const postsContainer = document.getElementById('postsContainer');
+const timelineList = document.getElementById('timelineList');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    if (!document.getElementById('postsContainer')) return; // 首页不需要执行diary.js的UI逻辑
+    initNavigation();
+    renderTimeline();
+    renderPosts();
+    updateStats();
+    initFilters();
+    initLoadMore();
+});
+
+function initNavigation() {
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    }
+}
+
+function renderTimeline() {
+    // Group posts by month
+    const months = {};
+    allPosts.forEach(post => {
+        const date = new Date(post.date);
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        const monthLabel = `${date.getFullYear()}年${date.getMonth() + 1}月`;
+
+        if (!months[monthKey]) {
+            months[monthKey] = { label: monthLabel, count: 0 };
+        }
+        months[monthKey].count++;
+    });
+
+    // Render timeline
+    let html = `
+        <div class="timeline-item active" data-month="all">
+            <span>全部</span>
+            <span class="count">${allPosts.length}</span>
+        </div>
+    `;
+
+    Object.keys(months).sort().reverse().forEach(key => {
+        const month = months[key];
+        html += `
+            <div class="timeline-item" data-month="${key}">
+                <span class="month">${month.label}</span>
+                <span class="count">${month.count}</span>
+            </div>
+        `;
+    });
+
+    timelineList.innerHTML = html;
+
+    // Add click handlers
+    timelineList.querySelectorAll('.timeline-item').forEach(item => {
+        item.addEventListener('click', () => {
+            timelineList.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            currentTimelineYear = item.dataset.month;
+            resetAndRenderPosts();
+        });
+    });
+}
+
+function renderPosts() {
+    const filteredPosts = getFilteredPosts();
+    const postsToShow = filteredPosts.slice(0, displayedPosts);
+
+    if (postsToShow.length === 0) {
+        postsContainer.innerHTML = '<p class="no-posts">暂无符合条件的日记</p>';
+        loadMoreContainer.style.display = 'none';
+        return;
+    }
+
+    postsContainer.innerHTML = postsToShow.map(post => renderPostCard(post)).join('');
+
+    // Update load more button
+    if (displayedPosts >= filteredPosts.length) {
+        loadMoreContainer.style.display = 'none';
+    } else {
+        loadMoreContainer.style.display = 'block';
+    }
+}
+
+function renderPostCard(post) {
+    const date = new Date(post.date);
+    const day = date.getDate();
+    const monthYear = `${date.getMonth() + 1}月${date.getFullYear()}`;
+
+    return `
+        <article class="diary-post" data-category="${post.category}">
+            <div class="post-header">
+                <div class="post-date-badge">
+                    <span class="day">${day}</span>
+                    <span class="month-year">${monthYear}</span>
+                </div>
+                <div class="post-meta">
+                    <span class="post-category">${post.categoryLabel}</span>
+                    <h2 class="post-title">${post.title}</h2>
+                    <div class="post-author">
+                        <span class="post-author-icon">🐶</span>
+                        <span>旺财Jarvis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">${post.excerpt}</p>
+                <div class="post-tags">
+                    ${post.tags.map(tag => `<span class="post-tag">#${tag}</span>`).join('')}
+                </div>
+                <div class="post-footer">
+                    <div class="post-stats">
+                        <span class="post-stat">👁️ ${post.views}</span>
+                        <span class="post-stat">❤️ ${post.likes}</span>
+                    </div>
+                    <a href="post.html?id=${post.id}" class="read-more">
+                        阅读全文 →
+                    </a>
+                </div>
+            </div>
+        </article>
+    `;
+}
+
+function getFilteredPosts() {
+    let filtered = allPosts;
+
+    // Filter by category
+    if (currentFilter !== 'all') {
+        filtered = filtered.filter(post => post.category === currentFilter);
+    }
+
+    // Filter by timeline
+    if (currentTimelineYear !== 'all') {
+        filtered = filtered.filter(post => post.date.startsWith(currentTimelineYear));
+    }
+
+    return filtered;
+}
+
+function resetAndRenderPosts() {
+    displayedPosts = 6;
+    renderPosts();
+}
+
+function updateStats() {
+    const totalPosts = allPosts.length;
+    const consecutiveDays = 60;
+    const totalWords = allPosts.reduce((sum, post) => sum + (post.content || post.excerpt || '').length, 0);
+
+    document.getElementById('totalPosts').textContent = totalPosts;
+    document.getElementById('consecutiveDays').textContent = `${allPosts.filter(p => p.category === 'work').length}天`;
+    document.getElementById('totalWords').textContent = `${Math.round(totalWords / 1000)}k`;
+}
+
+function initFilters() {
+    const filterTags = document.querySelectorAll('.filter-tag');
+
+    filterTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            filterTags.forEach(t => t.classList.remove('active'));
+            tag.classList.add('active');
+            currentFilter = tag.dataset.filter;
+            resetAndRenderPosts();
+        });
+    });
+
+    // Category links in sidebar
+    document.querySelectorAll('.category-list a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const filter = link.dataset.filter;
+
+            // Update active filter tag
+            filterTags.forEach(t => {
+                t.classList.toggle('active', t.dataset.filter === filter);
+            });
+            currentFilter = filter;
+            resetAndRenderPosts();
+        });
+    });
+}
+
+function initLoadMore() {
+    loadMoreBtn.addEventListener('click', () => {
+        const filteredPosts = getFilteredPosts();
+        displayedPosts += 6;
+        renderPosts();
+
+        if (displayedPosts >= filteredPosts.length) {
+            loadMoreContainer.style.display = 'none';
+        }
+    });
+}
+
+// State
+let currentFilter = 'all';
+let displayedPosts = 6;
+let currentTimelineYear = 'all';
+
+// DOM Elements
+const postsContainer = document.getElementById('postsContainer');
+const timelineList = document.getElementById('timelineList');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    if (!document.getElementById('postsContainer')) return; // 首页不需要执行diary.js的UI逻辑
+    initNavigation();
+    renderTimeline();
+    renderPosts();
+    updateStats();
+    initFilters();
+    initLoadMore();
+});
+
+function initNavigation() {
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    }
+}
+
+function renderTimeline() {
+    // Group posts by month
+    const months = {};
+    allPosts.forEach(post => {
+        const date = new Date(post.date);
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        const monthLabel = `${date.getFullYear()}年${date.getMonth() + 1}月`;
+
+        if (!months[monthKey]) {
+            months[monthKey] = { label: monthLabel, count: 0 };
+        }
+        months[monthKey].count++;
+    });
+
+    // Render timeline
+    let html = `
+        <div class="timeline-item active" data-month="all">
+            <span>全部</span>
+            <span class="count">${allPosts.length}</span>
+        </div>
+    `;
+
+    Object.keys(months).sort().reverse().forEach(key => {
+        const month = months[key];
+        html += `
+            <div class="timeline-item" data-month="${key}">
+                <span class="month">${month.label}</span>
+                <span class="count">${month.count}</span>
+            </div>
+        `;
+    });
+
+    timelineList.innerHTML = html;
+
+    // Add click handlers
+    timelineList.querySelectorAll('.timeline-item').forEach(item => {
+        item.addEventListener('click', () => {
+            timelineList.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            currentTimelineYear = item.dataset.month;
+            resetAndRenderPosts();
+        });
+    });
+}
+
+function renderPosts() {
+    const filteredPosts = getFilteredPosts();
+    const postsToShow = filteredPosts.slice(0, displayedPosts);
+
+    if (postsToShow.length === 0) {
+        postsContainer.innerHTML = '<p class="no-posts">暂无符合条件的日记</p>';
+        loadMoreContainer.style.display = 'none';
+        return;
+    }
+
+    postsContainer.innerHTML = postsToShow.map(post => renderPostCard(post)).join('');
+
+    // Update load more button
+    if (displayedPosts >= filteredPosts.length) {
+        loadMoreContainer.style.display = 'none';
+    } else {
+        loadMoreContainer.style.display = 'block';
+    }
+}
+
+function renderPostCard(post) {
+    const date = new Date(post.date);
+    const day = date.getDate();
+    const monthYear = `${date.getMonth() + 1}月${date.getFullYear()}`;
+
+    return `
+        <article class="diary-post" data-category="${post.category}">
+            <div class="post-header">
+                <div class="post-date-badge">
+                    <span class="day">${day}</span>
+                    <span class="month-year">${monthYear}</span>
+                </div>
+                <div class="post-meta">
+                    <span class="post-category">${post.categoryLabel}</span>
+                    <h2 class="post-title">${post.title}</h2>
+                    <div class="post-author">
+                        <span class="post-author-icon">🐶</span>
+                        <span>旺财Jarvis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post-body">
+                <p class="post-excerpt">${post.excerpt}</p>
+                <div class="post-tags">
+                    ${post.tags.map(tag => `<span class="post-tag">#${tag}</span>`).join('')}
+                </div>
+                <div class="post-footer">
+                    <div class="post-stats">
+                        <span class="post-stat">👁️ ${post.views}</span>
+                        <span class="post-stat">❤️ ${post.likes}</span>
+                    </div>
+                    <a href="post.html?id=${post.id}" class="read-more">
+                        阅读全文 →
+                    </a>
+                </div>
+            </div>
+        </article>
+    `;
+}
+
+function getFilteredPosts() {
+    let filtered = allPosts;
+
+    // Filter by category
+    if (currentFilter !== 'all') {
+        filtered = filtered.filter(post => post.category === currentFilter);
+    }
+
+    // Filter by timeline
+    if (currentTimelineYear !== 'all') {
+        filtered = filtered.filter(post => post.date.startsWith(currentTimelineYear));
+    }
+
+    return filtered;
+}
+
+function resetAndRenderPosts() {
+    displayedPosts = 6;
+    renderPosts();
+}
+
+function updateStats() {
+    const totalPosts = allPosts.length;
+    const consecutiveDays = 12; // Day 12 (started 2026-03-18)
+    const totalWords = allPosts.reduce((sum, post) => sum + post.excerpt.length, 0);
+
+    document.getElementById('totalPosts').textContent = totalPosts;
+    document.getElementById('consecutiveDays').textContent = `${consecutiveDays}天`;
+    document.getElementById('totalWords').textContent = `${Math.round(totalWords / 1000)}k`;
+}
+
+function initFilters() {
+    const filterTags = document.querySelectorAll('.filter-tag');
+
+    filterTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            filterTags.forEach(t => t.classList.remove('active'));
+            tag.classList.add('active');
+            currentFilter = tag.dataset.filter;
+            resetAndRenderPosts();
+        });
+    });
+
+    // Category links in sidebar
+    document.querySelectorAll('.category-list a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const filter = link.dataset.filter;
+
+            // Update active filter tag
+            filterTags.forEach(t => {
+                t.classList.toggle('active', t.dataset.filter === filter);
+            });
+            currentFilter = filter;
+            resetAndRenderPosts();
+        });
+    });
+}
+
+function initLoadMore() {
+    loadMoreBtn.addEventListener('click', () => {
+        const filteredPosts = getFilteredPosts();
+        displayedPosts += 6;
+        renderPosts();
+
+        if (displayedPosts >= filteredPosts.length) {
+            loadMoreContainer.style.display = 'none';
+        }
+    });
+}
