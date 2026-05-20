@@ -3,213 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 - 旺财Jarvis</title>
+<title>健康长寿科研简报 - 2026-05-21</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: #f0f4f8;
-    color: #1a1a2e;
-    line-height: 1.8;
-    padding: 20px;
-  }
-  .container { max-width: 900px; margin: 0 auto; }
-  .header {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    color: #fff;
-    padding: 40px 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .header h1 {
-    font-size: 28px;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-  }
-  .header .subtitle {
-    font-size: 14px;
-    opacity: 0.8;
-  }
-  .header .date {
-    font-size: 13px;
-    opacity: 0.65;
-    margin-top: 6px;
-  }
-  .card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 28px 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    border-left: 4px solid #0f3460;
-    transition: transform 0.2s;
-  }
-  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-  .card .number {
-    display: inline-block;
-    background: #0f3460;
-    color: #fff;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 28px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-  .card h2 {
-    display: inline;
-    font-size: 18px;
-    color: #0f3460;
-    vertical-align: middle;
-  }
-  .card .meta {
-    font-size: 13px;
-    color: #888;
-    margin: 10px 0 12px;
-  }
-  .card .meta span { margin-right: 16px; }
-  .card .meta .source { color: #e74c3c; }
-  .card .meta .journal { color: #2980b9; }
-  .card p {
-    font-size: 15px;
-    color: #333;
-    text-indent: 2em;
-  }
-  .card .link {
-    display: inline-block;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #0f3460;
-    text-decoration: none;
-  }
-  .card .link:hover { text-decoration: underline; }
-  .footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 12px;
-    color: #999;
-  }
-  .tag {
-    display: inline-block;
-    background: #e8f4fd;
-    color: #0f3460;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-right: 6px;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; background: #f0f4f8; color: #1a2332; line-height: 1.7; }
+  .header { background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%); color: #fff; padding: 48px 24px; text-align: center; }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: 1px; }
+  .header p { font-size: 15px; opacity: 0.85; }
+  .container { max-width: 860px; margin: 0 auto; padding: 32px 20px; }
+  .article { background: #fff; border-radius: 12px; margin-bottom: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; }
+  .article-badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-right: 8px; }
+  .badge-nature { background: #dbeafe; color: #1e40af; }
+  .badge-cell { background: #fce7f3; color: #9d174d; }
+  .badge-aging { background: #fef3c7; color: #92400e; }
+  .badge-eve { background: #d1fae5; color: #065f46; }
+  .badge-ncomms { background: #ede9fe; color: #5b21b6; }
+  .article-title { padding: 24px 24px 0; font-size: 20px; font-weight: 700; color: #1a365d; line-height: 1.4; }
+  .article-meta { padding: 6px 24px 0; font-size: 13px; color: #64748b; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .article-meta .source { font-weight: 600; }
+  .article-body { padding: 16px 24px 24px; font-size: 15px; color: #334155; }
+  .article-body p { margin-bottom: 12px; }
+  .article-body p:last-child { margin-bottom: 0; }
+  .article-link { padding: 0 24px 20px; }
+  .article-link a { color: #2563eb; font-size: 14px; text-decoration: none; font-weight: 500; }
+  .article-link a:hover { text-decoration: underline; }
+  .footer { text-align: center; padding: 32px 20px; color: #94a3b8; font-size: 13px; }
 </style>
 </head>
 <body>
-<div class="container">
 
 <div class="header">
   <h1>🧬 健康长寿科研简报</h1>
-  <div class="subtitle">旺财Jarvis · 健康科研成果追踪</div>
-  <div class="date">2026年5月19日 · 第2期</div>
+  <p>2026年5月21日 · 第6期 · 旺财Jarvis 整理</p>
 </div>
 
-<!-- 1 -->
-<div class="card">
-  <div><span class="number">1</span><h2>FDA批准首个人体细胞表观遗传重编程临床试验</h2></div>
-  <div class="meta">
-    <span class="journal">📖 Nature Biotechnology</span>
-    <span>📅 2026年</span>
-    <span class="tag">表观遗传重编程</span>
-    <span class="tag">人体临床试验</span>
+<div class="container">
+
+  <!-- 1 -->
+  <div class="article">
+    <div class="article-title">
+      <span class="article-badge badge-aging">Aging Cell</span>
+      研究生灵光一现：适体技术锁定"僵尸细胞"，开辟衰老研究新路径
+    </div>
+    <div class="article-meta">
+      <span class="source">📰 Mayo Clinic / ScienceDaily</span>
+      <span>📅 2026-05-15</span>
+    </div>
+    <div class="article-body">
+      <p>衰老细胞（又称"僵尸细胞"）是衰老研究中的核心难题——它们停止分裂但拒绝正常死亡，在体内堆积并与癌症、阿尔茨海默病等多种疾病相关。然而，如何在健康细胞中可靠识别这些隐藏的衰老细胞，一直是科学家的重大障碍。</p>
+      <p>梅奥诊所（Mayo Clinic）团队在《Aging Cell》期刊发表突破性研究：利用名为"适体"（aptamers）的合成DNA短链来标记衰老细胞。适体是人工合成的单链DNA分子，能自然折叠成复杂的三维形状，从而附着在细胞表面的特定蛋白质上。团队从小鼠细胞中筛选了超过100万亿个随机DNA序列，发现了数种罕见的、能特异性结合衰老细胞表面蛋白的适体。</p>
+      <p>这项研究的起源颇具传奇色彩——来自两位研究生在学术活动中的一次偶然交谈。Keenan Pearson博士（适体方向）与Sarah Jachim博士（衰老方向）在交流各自课题时碰撞出火花，随后说服导师Darren Baker等人支持合作。项目导师Jim Maher教授坦言最初觉得这个想法"疯狂"，但最终被学生们的热情和成果折服。该研究不仅提供了识别衰老细胞的新工具，还发现了衰老细胞表面一种纤维连接蛋白变体，为深入理解衰老细胞的独特性开辟了新思路。</p>
+    </div>
+    <div class="article-link">
+      <a href="https://www.sciencedaily.com/releases/2026/05/260515001733.htm" target="_blank">🔗 阅读原文 →</a>
+    </div>
   </div>
-  <p>
-    Life Biosciences公司（基于哈佛大学David Sinclair教授的细胞重编程研究）获得FDA批准，将启动全球首个部分表观遗传重编程（partial epigenetic reprogramming）人体临床试验。该试验旨在通过Yamanaka因子（去除致癌风险因子c-Myc）的部分表达，逆转衰老细胞表观遗传状态，首期目标为年龄相关性视网膜疾病。研究人员在前期小鼠实验中已证实，部分重编程可安全改善皮肤再生、心肌修复并提升记忆力。Scientific American对此评论指出："抗衰老从来不是理论上的追求——这一领域正迈入人类临床阶段。" 该试验被视为抗衰老研究从实验室走向临床的分水岭事件，标志着人类首次系统性地测试"能否通过重编程安全逆转衰老"这一根本性问题。
-  </p>
-  <a class="link" href="https://www.nature.com/articles/s41587-026-03037-z" target="_blank">🔗 Nature Biotechnology 原文 →</a>&nbsp;
-  <a class="link" href="https://www.scientificamerican.com/article/this-method-to-reverse-cellular-aging-is-about-to-be-tested-in-humans/" target="_blank">📰 Scientific American 报道 →</a>
-</div>
 
-<!-- 2 -->
-<div class="card">
-  <div><span class="number">2</span><h2>GLP-1受体激动剂多组学研究揭示全身性抗衰老机制</h2></div>
-  <div class="meta">
-    <span class="journal">📖 Cell Metabolism</span>
-    <span>📅 2025年</span>
-    <span class="tag">GLP-1</span>
-    <span class="tag">多组学</span>
-    <span class="tag">衰老逆转</span>
+  <!-- 2 -->
+  <div class="article">
+    <div class="article-title">
+      <span class="article-badge badge-eve">J. Extracellular Vesicles</span>
+      简单鼻喷雾或可逆转脑衰老：两剂治疗显著改善记忆与炎症
+    </div>
+    <div class="article-meta">
+      <span class="source">📰 Texas A&M University</span>
+      <span>📅 2026-04-14</span>
+    </div>
+    <div class="article-body">
+      <p>德州农工大学（Texas A&M）医学院的里程碑式研究表明，导致脑衰老和"脑雾"的炎症过程或许是可逆的——而解决方案不是脑部手术，而是一种简单的鼻喷雾。</p>
+      <p>由Ashok Shetty教授领导的团队开发了一种基于细胞外囊泡（Extracellular Vesicles, EVs）的鼻喷雾剂，仅需两剂即可显著减少大脑炎症、恢复记忆功能。研究发表在《Journal of Extracellular Vesicles》。这些微小的生物囊泡像快递车一样携带强大的遗传货物——microRNA，通过鼻喷雾绕过血脑屏障直接进入脑组织。</p>
+      <p>研究团队将这种现象称为"神经炎性衰老"（neuroinflammaging），并证明这种慢性炎症是可以逆转的。令人振奋的是，治疗效果在雌性和雄性中表现一致——这在生物医学研究中较为罕见。Shetty教授表示："我们的方法重新定义了衰老的意义——我们追求的是成功的脑衰老：让人们保持敏锐、活跃和连接，不仅活得更久，而且活得更聪明、更健康。"该研究对未来治疗痴呆症、甚至帮助中风幸存者重建脑功能具有深远意义。</p>
+    </div>
+    <div class="article-link">
+      <a href="https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/" target="_blank">🔗 阅读原文 →</a>
+    </div>
   </div>
-  <p>
-    Cell Metabolism发表的多组学研究首次系统揭示了GLP-1受体激动剂（如司美格鲁肽等GLP-1RA药物）对衰老的全身性逆转效果。研究对老年小鼠施用GLP-1RA 13周后，分析其多器官多组学数据，发现GLP-1信号通过下丘脑介导全身性分子年龄逆转效应，效果在18个月龄（相当于人类60岁）开始治疗的组别中尤为显著。最引人注目的是，该效应在很大程度上不依赖体重减轻，提示GLP-1药物可能通过脑-体轴独立于减重效应发挥抗衰老作用。研究指出，GLP-1RA能为保护肌肉力量和器官弹性提供一条"不依赖减重的新路径"。The Economist杂志对此发表专题文章《Should you take GLP-1 drugs for longevity?》，探讨这一趋势背后的科学证据与争议。
-  </p>
-  <a class="link" href="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(25)00474-7" target="_blank">🔗 Cell Metabolism 原文 →</a>&nbsp;
-  <a class="link" href="https://www.economist.com/science-and-technology/2026/03/13/should-you-take-glp-1-drugs-for-longevity" target="_blank">📰 The Economist 报道 →</a>
-</div>
 
-<!-- 3 -->
-<div class="card">
-  <div><span class="number">3</span><h2>Senolytic CAR-T细胞：长期预防衰老代谢疾病的免疫疗法</h2></div>
-  <div class="meta">
-    <span class="journal">📖 Nature Aging</span>
-    <span>📅 2024-2026年</span>
-    <span class="tag">CAR-T</span>
-    <span class="tag">清除衰老细胞</span>
-    <span class="tag">代谢疾病</span>
+  <!-- 3 -->
+  <div class="article">
+    <div class="article-title">
+      <span class="article-badge badge-nature">Nature</span>
+      裸鼹鼠长寿基因成功移植小鼠：寿命延长4.4%，癌症风险显著降低
+    </div>
+    <div class="article-meta">
+      <span class="source">📰 University of Rochester / SciTechDaily</span>
+      <span>📅 2026-03（更新报道）</span>
+    </div>
+    <div class="article-body">
+      <p>罗彻斯特大学（University of Rochester）的研究团队在长寿生物学领域取得了里程碑式突破——将裸鼹鼠（naked mole rat）的长寿基因成功转入小鼠体内，使小鼠的中位寿命延长约4.4%，同时表现出多项健康改善指标。</p>
+      <p>裸鼹鼠因其超长寿命（可活30年以上，是同等体型啮齿动物的10倍）和对癌症的天然抵抗力，成为衰老研究的明星物种。研究团队在2023年发表于《Nature》的研究中发现，关键机制是裸鼹鼠体内产生超大分子量的透明质酸（HMW-HA）。通过将裸鼹鼠版本的透明质酸合成酶2基因（HAS2）转入小鼠，工程化小鼠不仅寿命延长，还表现出对自发肿瘤和化学诱导皮肤癌的更强防护能力，全身炎症水平显著降低，肠道屏障功能随衰老也得到更好维护。</p>
+      <p>"我们的研究证明了一个原理——在长寿哺乳动物物种中进化出的独特长寿机制，是可以移植到其他哺乳动物身上的，"项目负责人Vera Gorbunova教授表示。团队已规划两条转化路径：增加HMW-HA的合成或减缓其降解。目前已发现一些能抑制透明质酸降解的小分子（如水果中的花翠素delphinidin）并在临床前试验中测试。不过，团队也强调基因转移本身并非治疗的终点，关键在于精准控制透明质酸的分子形式，避免产生促炎的小片段。</p>
+    </div>
+    <div class="article-link">
+      <a href="https://scitechdaily.com/scientists-successfully-transfer-longevity-gene-paving-the-way-for-extending-human-lifespan/" target="_blank">🔗 阅读原文 →</a>
+    </div>
   </div>
-  <p>
-    Nature Aging发表的研究证实，靶向uPAR（尿激酶纤溶酶原激活物受体）的senolytic（衰老细胞清除）CAR-T细胞疗法能在小鼠模型中长效预防年龄相关性代谢功能障碍。经m.uPAR-m.28z CAR-T细胞治疗的老年小鼠，其多个组织中的衰老细胞（SA-β-gal和uPAR阳性细胞）比例显著降低，代谢功能改善，寿命延长。冷泉港实验室的研究进一步发现，年轻小鼠经单次CAR-T细胞治疗后老化速度减慢，并对自然衰老伴随的肥胖和糖尿病产生保护作用。基于这些发现，研究团队正在推进将该技术转向临床转化。这一方向将细胞免疫疗法从肿瘤治疗领域拓展至抗衰老干预，开辟了"一次性治疗、长期抗衰老"的新范式。
-  </p>
-  <a class="link" href="https://www.nature.com/articles/s43587-023-00560-5" target="_blank">🔗 Nature Aging 原文 →</a>&nbsp;
-  <a class="link" href="https://www.cshl.edu/the-fountain-of-youth-is-a-t-cell/" target="_blank">🔬 冷泉港实验室报道 →</a>
-</div>
 
-<!-- 4 -->
-<div class="card">
-  <div><span class="number">4</span><h2>长寿科学跨越临床门槛：2026 GESDA全球科学突破雷达</h2></div>
-  <div class="meta">
-    <span class="journal">🌐 GESDA Global</span>
-    <span>📅 2025年12月发布</span>
-    <span class="tag">科学雷达</span>
-    <span class="tag">临床转折点</span>
+  <!-- 4 -->
+  <div class="article">
+    <div class="article-title">
+      <span class="article-badge badge-cell">Cell Stem Cell</span>
+      惊人突破：单剂干细胞治疗逆转老年衰弱症，步行能力提升20%
+    </div>
+    <div class="article-meta">
+      <span class="source">📰 Longeveron / BBC Science Focus</span>
+      <span>📅 2026-03（发表）</span>
+    </div>
+    <div class="article-body">
+      <p>发表在《Cell Stem Cell》上的一项随机、安慰剂对照临床试验显示：单剂干细胞治疗即可显著改善衰弱症（frailty）老年人的身体功能。衰弱症影响着65岁以上约十分之一的老年人，其特征包括肌肉力量下降、耐力减退，以及残疾、住院和死亡风险显著增加。</p>
+      <p>研究测试了四种递增剂量的laromestrocel（一种源自捐献骨髓的间充质干细胞疗法），纳入148名70-85岁、被正式诊断为衰弱症的老年人。9个月后，接受最高剂量的参与者相比安慰剂组，在标准六分钟步行测试中平均多走了60米——提高了约20%。</p>
+      <p>"结果令人震惊，"开发该疗法的Longeveron公司首席科学官Joshua Hare博士表示，"剂量越高，改善效果越明显。"该疗法的机制在于间充质干细胞能够调节免疫系统、抑制慢性炎症（"炎性衰老"）。这些干细胞几乎不携带会引发免疫排斥的表面蛋白，因此受试者无需服用免疫抑制药物。值得注意的是，该研究并未将α-半乳糖综合征（alpha-gal syndrome，即红肉过敏症）列为排除标准——近期研究提示该疾病与衰老相关。</p>
+    </div>
+    <div class="article-link">
+      <a href="https://www.sciencefocus.com/news/stem-cell-reverse-frailty" target="_blank">🔗 阅读原文 →</a>
+    </div>
   </div>
-  <p>
-    日内瓦科学与外交预测器（GESDA）在2026年科学突破雷达报告中，将长寿科学列为已跨越临床门槛的核心突破领域。报告指出，从"延长寿命"转向"延长健康寿命"（healthspan）已不再是理论追求。分子诊断技术的突破性进展和靶向药物开发的双轮驱动，使长寿科学加速向临床现实演进。报告特别强调生物标志物验证——即通过基于生物标志物的生理年龄测量来诊断加速衰老并靶向干预——是推动该领域的核心杠杆。然而，报告同时警示：这一加速发展带来了全球治理危机，需要外交层面的关注，因为突破性寿命延长技术可能引发深刻的社会、经济和伦理挑战。
-  </p>
-  <a class="link" href="https://www.gesda.global/radar-spotlight-longevity-science-crosses-clinical-threshold/" target="_blank">🔗 GESDA 报告全文 →</a>
-</div>
 
-<!-- 5 -->
-<div class="card">
-  <div><span class="number">5</span><h2>细胞再生疗法：Altos Labs等团队推动逆转衰老进入临床前冲刺</h2></div>
-  <div class="meta">
-    <span class="journal">📰 The New York Times Magazine</span>
-    <span>📅 2026年4月27日</span>
-    <span class="tag">细胞再生</span>
-    <span class="tag">Altos Labs</span>
-    <span class="tag">临床前</span>
+  <!-- 5 -->
+  <div class="article">
+    <div class="article-title">
+      <span class="article-badge badge-ncomms">Nature Communications</span>
+      "死亡蛋白"MLKL的新角色：连接细胞压力与造血干细胞衰老的关键枢纽
+    </div>
+    <div class="article-meta">
+      <span class="source">📰 University of Tokyo / St. Jude / ScienceDaily</span>
+      <span>📅 2026-04-16</span>
+    </div>
+    <div class="article-body">
+      <p>随着年龄增长，人体的血液和免疫系统逐渐衰退，其根源之一在于造血干细胞（HSCs）的功能下降。这些干细胞负责产生所有类型的血细胞，但科学家对其衰老机制的理解一直不完整。</p>
+      <p>东京大学和圣裘德儿童研究医院的研究团队在《Nature Communications》上发表突破性发现：一种名为MLKL的"死亡执行蛋白"在造血干细胞衰老中扮演了意想不到的关键角色。MLKL传统上被认为只负责执行程序性坏死（necroptosis），但研究发现它在造血干细胞中激活后，并不会导致细胞死亡，而是短暂移动到线粒体，破坏线粒体膜电位、改变结构并降低能量产出。这些损伤累积后导致干细胞再生能力下降、免疫功能减弱。</p>
+      <p>当研究团队敲除或抑制MLKL基因后，造血干细胞的衰老进程显著减缓：DNA损伤减少、线粒体功能改善、再生能力保留、免疫细胞产量也更健康。这一发现为理解造血系统衰老提供了全新视角，未来可能引导开发出保护化疗、放疗患者造血功能的新疗法。</p>
+    </div>
+    <div class="article-link">
+      <a href="https://www.sciencedaily.com/releases/2026/04/260416071951.htm" target="_blank">🔗 阅读原文 →</a>
+    </div>
   </div>
-  <p>
-    《纽约时报杂志》长篇专题报道了以Altos Labs为代表的新一代细胞再生疗法前沿。下一代细胞重编程技术正在从实验室概念走向治疗数百种疾病的潜在平台——包括逆转衰老本身。该领域的核心进展包括：连续循环式Yamanaka因子表达可安全改善认知功能（老年小鼠记忆测试表现提升）；去除c-Myc因子的三因子策略在动物体内未引发肿瘤；Shift Bioscience等公司开发了新型安全控制方法。2026年被业界称为"长寿元年"，生物年龄检测正变得像年度体检一样普及，间充质干细胞等先进细胞疗法也开始进入临床应用。ForeverLabs等机构预测：长寿将逐渐成为标准治疗的一部分。
-  </p>
-  <a class="link" href="https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html" target="_blank">🔗 NYT 原文 →</a>&nbsp;
-  <a class="link" href="https://www.foreverlabs.com/articles/blog/2026-the-year-of-longevity-and-owning-your-biology" target="_blank">📰 ForeverLabs 分析 →</a>
-</div>
 
-<div class="card" style="border-left-color: #e74c3c; background: #fff5f5;">
-  <h2 style="display:block; font-size:16px; color:#e74c3c; margin-bottom:10px;">📊 本期简报统计</h2>
-  <p style="text-indent:0;">
-    ✅ 收录突破 <strong>5</strong> 条<br>
-    📚 覆盖顶刊：Nature Biotechnology · Cell Metabolism · Nature Aging · GESDA Radar · NYT<br>
-    🏷 关键方向：表观遗传重编程 · GLP-1抗衰老 · CAR-T清除衰老细胞 · 长寿临床转化<br>
-    🔗 合计链接 <strong>12</strong> 个（含原文与报道）<br>
-    🕐 生成时间：2026-05-19 07:00 CST
-  </p>
 </div>
 
 <div class="footer">
-  由 旺财Jarvis · OpenClaw 自动生成 | 数据来源：Tavily Search · Nature · Cell · GESDA · NYT
+  <p>📧 本文由旺财Jarvis自动生成 · 数据来源包括 ScienceDaily、SciTechDaily、BBC Science Focus、Texas A&M 等</p>
+  <p>© 2026 健康长寿科研简报 · 持续追踪前沿长寿科学</p>
 </div>
 
-</div>
 </body>
 </html>
