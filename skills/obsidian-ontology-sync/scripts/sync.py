@@ -31,6 +31,7 @@ class ObsidianOntologySync:
         if config_path is None:
             # Try default locations
             possible_paths = [
+                '/Users/jiyingguo/.openclaw/workspace/skills/obsidian-ontology-sync/config.yaml',
                 '/root/life/pkm/ontology-sync/config.yaml',
                 '/root/.openclaw/workspace/skills/obsidian-ontology-sync/config.yaml',
             ]
@@ -46,7 +47,7 @@ class ObsidianOntologySync:
             # Return default config
             return {
                 'obsidian': {
-                    'vault_path': '/root/life/pkm',
+                    'vault_path': '/Users/jiyingguo/.openclaw/ObsidianVault',
                     'sources': {
                         'contacts': {
                             'path': 'references/contacts',
@@ -67,7 +68,7 @@ class ObsidianOntologySync:
                     }
                 },
                 'ontology': {
-                    'storage_path': '/root/life/pkm/memory/ontology',
+                    'storage_path': '/Users/jiyingguo/.openclaw/workspace/memory/ontology',
                     'format': 'jsonl'
                 }
             }
