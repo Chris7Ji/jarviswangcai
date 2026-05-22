@@ -633,14 +633,6 @@
       }
     },
     {
-      "id": "doc:MEMORY_backup_2026-03-11.md",
-      "type": "Document",
-      "label": "MEMORY_backup_2026-03-11.md",
-      "properties": {
-        "path": "MEMORY_backup_2026-03-11.md"
-      }
-    },
-    {
       "id": "doc:SECURITY_AUDIT_REPORT_2026-04-07.md",
       "type": "Document",
       "label": "SECURITY_AUDIT_REPORT_2026-04-07.md",
@@ -827,14 +819,6 @@
       }
     },
     {
-      "id": "doc:MEMORY_backup_2026-03-10.md",
-      "type": "Document",
-      "label": "MEMORY_backup_2026-03-10.md",
-      "properties": {
-        "path": "MEMORY_backup_2026-03-10.md"
-      }
-    },
-    {
       "id": "doc:current_status_and_plan.md",
       "type": "Document",
       "label": "current_status_and_plan.md",
@@ -875,28 +859,6 @@
       }
     },
     {
-      "id": "doc:memory/MEMORY_SYSTEM_BUILD_GUIDE.md",
-      "type": "Document",
-      "label": "MEMORY_SYSTEM_BUILD_GUIDE.md",
-      "properties": {
-        "path": "memory/MEMORY_SYSTEM_BUILD_GUIDE.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-20-session-summary.md",
-      "type": "Document",
-      "label": "2026-04-20-session-summary.md",
-      "properties": {
-        "path": "memory/2026-04-20-session-summary.md"
-      }
-    },
-    {
-      "id": "concept:reply_to_current",
-      "type": "Concept",
-      "label": "reply_to_current",
-      "properties": {}
-    },
-    {
       "id": "doc:memory/working-buffer.md",
       "type": "Document",
       "label": "working-buffer.md",
@@ -905,51 +867,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-04-20-0630.md",
-      "type": "Document",
-      "label": "2026-04-20-0630.md",
-      "properties": {
-        "path": "memory/2026-04-20-0630.md"
-      }
-    },
-    {
-      "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
-      "type": "Document",
-      "label": "MEMORY_SYSTEM_GUIDE.md",
-      "properties": {
-        "path": "memory/MEMORY_SYSTEM_GUIDE.md"
-      }
-    },
-    {
-      "id": "doc:memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
-      "type": "Document",
-      "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
-      "properties": {
-        "path": "memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
-      }
-    },
-    {
-      "id": "doc:memory/ascend_cann_knowledge.md",
-      "type": "Document",
-      "label": "ascend_cann_knowledge.md",
-      "properties": {
-        "path": "memory/ascend_cann_knowledge.md"
-      }
-    },
-    {
       "id": "doc:memory/user_preferences.md",
       "type": "Document",
       "label": "user_preferences.md",
       "properties": {
         "path": "memory/user_preferences.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-04-20-0627.md",
-      "type": "Document",
-      "label": "2026-04-20-0627.md",
-      "properties": {
-        "path": "memory/2026-04-20-0627.md"
       }
     },
     {
@@ -3253,6 +3175,12 @@
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-session-summary.md"
       }
+    },
+    {
+      "id": "concept:reply_to_current",
+      "type": "Concept",
+      "label": "reply_to_current",
+      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/memory/working-buffer.md",
@@ -6013,11 +5941,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "properties": {
+        "path": "memory/archive/MEMORY_SYSTEM_BUILD_GUIDE.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-04-02-0440.md",
       "type": "Document",
       "label": "2026-04-02-0440.md",
       "properties": {
         "path": "memory/archive/2026-04-02-0440.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-04-20-session-summary.md",
+      "type": "Document",
+      "label": "2026-04-20-session-summary.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-session-summary.md"
       }
     },
     {
@@ -6093,6 +6037,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-20-0630.md",
+      "type": "Document",
+      "label": "2026-04-20-0630.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-0630.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-29-400-status-code-no-body.md",
       "type": "Document",
       "label": "2026-03-29-400-status-code-no-body.md",
@@ -6130,6 +6082,14 @@
       "label": "2026-04-13.md",
       "properties": {
         "path": "memory/archive/2026-04-13.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/MEMORY_SYSTEM_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_GUIDE.md",
+      "properties": {
+        "path": "memory/archive/MEMORY_SYSTEM_GUIDE.md"
       }
     },
     {
@@ -6173,6 +6133,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "type": "Document",
+      "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "properties": {
+        "path": "memory/archive/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-02-23.md",
       "type": "Document",
       "label": "2026-02-23.md",
@@ -6202,6 +6170,14 @@
       "label": "2026-03-29-dns-fix.md",
       "properties": {
         "path": "memory/archive/2026-03-29-dns-fix.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/ascend_cann_knowledge.md",
+      "type": "Document",
+      "label": "ascend_cann_knowledge.md",
+      "properties": {
+        "path": "memory/archive/ascend_cann_knowledge.md"
       }
     },
     {
@@ -6317,11 +6293,27 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-04-20-0627.md",
+      "type": "Document",
+      "label": "2026-04-20-0627.md",
+      "properties": {
+        "path": "memory/archive/2026-04-20-0627.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-04-02-css-fix-links.md",
       "type": "Document",
       "label": "2026-04-02-css-fix-links.md",
       "properties": {
         "path": "memory/archive/2026-04-02-css-fix-links.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/MEMORY_backup_2026-03-11.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-11.md",
+      "properties": {
+        "path": "memory/archive/MEMORY_backup_2026-03-11.md"
       }
     },
     {
@@ -6384,6 +6376,14 @@
       "label": "2026-03-30-exec-debug.md",
       "properties": {
         "path": "memory/archive/2026-03-30-exec-debug.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/MEMORY_backup_2026-03-10.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-10.md",
+      "properties": {
+        "path": "memory/archive/MEMORY_backup_2026-03-10.md"
       }
     },
     {
@@ -8279,11 +8279,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:memory/2026-04-20-session-summary.md",
-      "target": "concept:reply_to_current",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
       "target": "tag:44639",
       "relation": "has_tag"
@@ -9897,6 +9892,11 @@
       "source": "doc:archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/archive/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
     },
     {
       "source": "doc:memory/archive/2026-03-29-400-status-code-no-body.md",
