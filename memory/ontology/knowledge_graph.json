@@ -633,6 +633,14 @@
       }
     },
     {
+      "id": "doc:MEMORY_backup_2026-03-11.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-11.md",
+      "properties": {
+        "path": "MEMORY_backup_2026-03-11.md"
+      }
+    },
+    {
       "id": "doc:SECURITY_AUDIT_REPORT_2026-04-07.md",
       "type": "Document",
       "label": "SECURITY_AUDIT_REPORT_2026-04-07.md",
@@ -819,6 +827,14 @@
       }
     },
     {
+      "id": "doc:MEMORY_backup_2026-03-10.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-10.md",
+      "properties": {
+        "path": "MEMORY_backup_2026-03-10.md"
+      }
+    },
+    {
       "id": "doc:current_status_and_plan.md",
       "type": "Document",
       "label": "current_status_and_plan.md",
@@ -859,11 +875,81 @@
       }
     },
     {
+      "id": "doc:memory/MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "properties": {
+        "path": "memory/MEMORY_SYSTEM_BUILD_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-session-summary.md",
+      "type": "Document",
+      "label": "2026-04-20-session-summary.md",
+      "properties": {
+        "path": "memory/2026-04-20-session-summary.md"
+      }
+    },
+    {
+      "id": "concept:reply_to_current",
+      "type": "Concept",
+      "label": "reply_to_current",
+      "properties": {}
+    },
+    {
+      "id": "doc:memory/2026-04-20-new-session.md",
+      "type": "Document",
+      "label": "2026-04-20-new-session.md",
+      "properties": {
+        "path": "memory/2026-04-20-new-session.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0634.md",
+      "type": "Document",
+      "label": "2026-04-20-0634.md",
+      "properties": {
+        "path": "memory/2026-04-20-0634.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0630.md",
+      "type": "Document",
+      "label": "2026-04-20-0630.md",
+      "properties": {
+        "path": "memory/2026-04-20-0630.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-16.md",
+      "type": "Document",
+      "label": "2026-04-16.md",
+      "properties": {
+        "path": "memory/2026-04-16.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-15.md",
+      "type": "Document",
+      "label": "2026-04-15.md",
+      "properties": {
+        "path": "memory/2026-04-15.md"
+      }
+    },
+    {
       "id": "doc:memory/user_preferences.md",
       "type": "Document",
       "label": "user_preferences.md",
       "properties": {
         "path": "memory/user_preferences.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0627.md",
+      "type": "Document",
+      "label": "2026-04-20-0627.md",
+      "properties": {
+        "path": "memory/2026-04-20-0627.md"
       }
     },
     {
@@ -880,6 +966,14 @@
       "label": "2026-05-04.md",
       "properties": {
         "path": "memory/2026-05-04.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0632.md",
+      "type": "Document",
+      "label": "2026-04-20-0632.md",
+      "properties": {
+        "path": "memory/2026-04-20-0632.md"
       }
     },
     {
@@ -3175,12 +3269,6 @@
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-session-summary.md"
       }
-    },
-    {
-      "id": "concept:reply_to_current",
-      "type": "Concept",
-      "label": "reply_to_current",
-      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/memory/working-buffer.md",
@@ -8285,6 +8373,11 @@
       "source": "doc:MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
     },
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
