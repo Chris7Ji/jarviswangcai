@@ -977,6 +977,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-05-24.md",
+      "type": "Document",
+      "label": "2026-05-24.md",
+      "properties": {
+        "path": "memory/2026-05-24.md"
+      }
+    },
+    {
       "id": "doc:config/huawei_email_config.md",
       "type": "Document",
       "label": "huawei_email_config.md",
