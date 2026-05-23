@@ -859,14 +859,6 @@
       }
     },
     {
-      "id": "doc:memory/working-buffer.md",
-      "type": "Document",
-      "label": "working-buffer.md",
-      "properties": {
-        "path": "memory/working-buffer.md"
-      }
-    },
-    {
       "id": "doc:memory/user_preferences.md",
       "type": "Document",
       "label": "user_preferences.md",
@@ -6098,6 +6090,14 @@
       "label": "MEMORY_SYSTEM_GUIDE.md",
       "properties": {
         "path": "memory/archive/MEMORY_SYSTEM_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/working-buffer_2026-05-23.md",
+      "type": "Document",
+      "label": "working-buffer_2026-05-23.md",
+      "properties": {
+        "path": "memory/archive/working-buffer_2026-05-23.md"
       }
     },
     {
