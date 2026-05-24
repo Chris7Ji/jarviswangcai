@@ -1,190 +1,119 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>健康长寿科研简报 | 2026-05-24</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-      background: #f0f4f8;
-      color: #1a2332;
-      line-height: 1.7;
-    }
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    .header {
-      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
-      color: white;
-      padding: 30px 40px;
-      border-radius: 16px;
-      margin-bottom: 24px;
-    }
-    .header h1 { font-size: 28px; margin-bottom: 8px; }
-    .header .subtitle { font-size: 14px; opacity: 0.8; }
-    .header .date { font-size: 14px; opacity: 0.7; margin-top: 4px; }
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 24px 28px;
-      margin-bottom: 18px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      border-left: 4px solid #2b6cb0;
-      transition: transform 0.15s;
-    }
-    .card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
-    .card .tag {
-      display: inline-block;
-      background: #ebf4ff;
-      color: #2b6cb0;
-      font-size: 12px;
-      padding: 2px 10px;
-      border-radius: 20px;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    .card h2 { font-size: 20px; margin-bottom: 6px; color: #1a365d; }
-    .card .meta { font-size: 13px; color: #718096; margin-bottom: 12px; }
-    .card .meta span { margin-right: 16px; }
-    .card .summary { font-size: 15px; color: #2d3748; }
-    .card .summary strong { color: #1a365d; }
-    .card .link {
-      display: inline-block;
-      margin-top: 12px;
-      font-size: 13px;
-      color: #3182ce;
-      text-decoration: none;
-    }
-    .card .link:hover { text-decoration: underline; }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #a0aec0;
-      padding: 20px;
-    }
-    @media (max-width: 640px) {
-      .container { padding: 12px; }
-      .header { padding: 20px; }
-      .header h1 { font-size: 22px; }
-      .card { padding: 18px 20px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健康长寿科研简报 - 2026年5月25日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f0f4f8; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; border-radius: 16px; padding: 32px; margin-bottom: 24px; text-align: center; }
+  header h1 { font-size: 28px; margin-bottom: 8px; letter-spacing: 1px; }
+  header .subtitle { color: #a0c4ff; font-size: 15px; }
+  header .date { color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 6px; }
+  .summary-box { background: linear-gradient(135deg, #e8f4f8, #f0f0ff); border-left: 4px solid #0f3460; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+  .summary-box h2 { font-size: 16px; color: #0f3460; margin-bottom: 8px; }
+  .summary-box p { font-size: 14px; color: #444; }
+  .article { background: #fff; border-radius: 14px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.15s; }
+  .article:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+  .article .tag { display: inline-block; background: #0f3460; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-bottom: 10px; font-weight: 600; letter-spacing: 0.5px; }
+  .article .tag.hot { background: #e63946; }
+  .article .tag.clinical { background: #2a9d8f; }
+  .article .tag.china { background: #e76f51; }
+  .article h3 { font-size: 18px; margin-bottom: 6px; color: #1a1a2e; }
+  .article .meta { font-size: 13px; color: #888; margin-bottom: 12px; }
+  .article .meta a { color: #0f3460; text-decoration: none; }
+  .article .meta a:hover { text-decoration: underline; }
+  .article .abstract { font-size: 14.5px; color: #333; line-height: 1.8; }
+  .article .abstract strong { color: #0f3460; }
+  .article .trans-badge { display: inline-block; background: #e8f4f8; color: #0f3460; font-size: 11px; padding: 1px 8px; border-radius: 10px; margin-left: 6px; }
+  .footer { text-align: center; color: #999; font-size: 12px; padding: 20px 0; }
+</style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
 
-    <div class="header">
-      <h1>🧬 健康长寿科研简报</h1>
-      <div class="subtitle">旺财Jarvis · 智能追踪</div>
-      <div class="date">📅 2026年5月24日 星期日</div>
-    </div>
+<header>
+  <h1>🧬 健康长寿科研简报</h1>
+  <div class="subtitle">Longevity & Healthspan Research Brief</div>
+  <div class="date">2026年5月25日 星期一 · 第5期</div>
+</header>
 
-    <!-- 1 -->
-    <div class="card">
-      <div class="tag">⭐ 细胞衰老 · 颠覆性发现</div>
-      <h2>"僵尸细胞"并非总是坏事——可能重塑抗衰老医学</h2>
-      <div class="meta">
-        <span>📰 ScienceDaily / Impact Journals LLC</span>
-        <span>📅 2026-05-22</span>
-      </div>
-      <div class="summary">
-        <strong>突破点：</strong>科学家们揭示了一个关于衰老细胞的惊人真相：部分衰老细胞可能并非全盘有害，甚至在某些情况下发挥保护作用。传统认知将衰老细胞（俗称"僵尸细胞"）视为机体衰老的根源，但最新研究颠覆了这一观点——不同类型的衰老细胞功能各异，有些确实损害组织，有些则可能维护健康。这一发现有望彻底改变抗衰老药物的研发方向，从"清除所有衰老细胞"转向"精准调控特定细胞类别"，为开发更安全、更有效的衰老干预手段打开全新窗口。
-      </div>
-      <a class="link" href="https://www.sciencedaily.com/releases/2026/05/260521072402.htm" target="_blank">🔗 查看原文 →</a>
-    </div>
+<div class="summary-box">
+  <h2>📊 本期概览</h2>
+  <p>本期精选5项最新健康长寿突破：① 脑衰老鼻腔喷雾疗法进入视野；② Mayo Clinic发现DNA适配体标记衰老细胞新方法；③ 细胞重编程逆转衰老首次启动人体临床试验；④ GLP-1药物减重显著降低多种肥胖并发症风险；⑤ 中国团队破解"炎性衰老"密码入选2025中国科学十大进展。</p>
+</div>
 
-    <!-- 2 -->
-    <div class="card">
-      <div class="tag">💼 长寿科技 · 资本风向</div>
-      <h2>Sam Altman 投资的长寿初创公司 Retro Biosciences 估值达 18 亿美元</h2>
-      <div class="meta">
-        <span>📰 STAT News</span>
-        <span>📅 2026-05-22</span>
-      </div>
-      <div class="summary">
-        <strong>突破点：</strong>由 OpenAI CEO Sam Altman 支持的长寿科技公司 Retro Biosciences 完成新一轮融资，估值飙升至 18 亿美元。该公司专注于通过多种前沿技术组合，将人类健康寿命延长10年。其研发管线涵盖细胞重编程、自体吞噬激活和血浆因子疗法三大方向，正在从实验室走向临床验证。这笔巨额融资标志着资本市场对长寿科技赛道的信心持续升温——将生物科技从"治疗疾病"推向"主动延长健康寿命"的新范式。
-      </div>
-      <a class="link" href="https://www.statnews.com/2026/05/22/retro-biosciences-longevity-valuation/" target="_blank">🔗 查看原文 →</a>
-    </div>
-
-    <!-- 3 -->
-    <div class="card">
-      <div class="tag">🔬 肝脏衰老 · 可逆性突破</div>
-      <h2>以色列科学家发现肝脏衰老可能可逆——重大长寿突破</h2>
-      <div class="meta">
-        <span>📰 ynetnews / 巴伊兰大学</span>
-        <span>📅 2026-05-19</span>
-      </div>
-      <div class="summary">
-        <strong>突破点：</strong>以色列巴伊兰大学（Bar-Ilan University）的研究团队取得重大发现：肝脏细胞中某些与年龄相关的变化可能是可逆的。研究人员通过增强特定细胞通路，成功逆转了肝脏衰老标志物。该研究指出，肝脏作为人体主要的代谢和解毒器官，其衰老状态直接影响整体健康寿命。如果肝脏细胞的年龄相关损伤可以被逆转，将为治愈一系列与年龄相关的肝病（如脂肪肝、肝纤维化）打开全新治疗途径，并为全身性抗衰老提供关键的器官靶点。
-      </div>
-      <a class="link" href="https://www.ynetnews.com/health_science/article/h1cllqfjzx" target="_blank">🔗 查看原文 →</a>
-    </div>
-
-    <!-- 4 -->
-    <div class="card">
-      <div class="tag">🧪 Mayo Clinic · 意外发现</div>
-      <h2>研究生突发奇想引发重大衰老研究突破——梅奥诊所发现新型细胞机制</h2>
-      <div class="meta">
-        <span>📰 ScienceDaily / 梅奥诊所（Mayo Clinic）</span>
-        <span>📅 2026-05-15</span>
-      </div>
-      <div class="summary">
-        <strong>突破点：</strong>梅奥诊所（Mayo Clinic）发布了一项源于研究生之间一次闲聊的重大衰老突破。研究团队发现了一种此前未知的细胞衰老调控机制，意外揭开了推动衰老进程的新的分子通路。这一发现源于研究生在日常讨论中产生的灵感，最终通过系统实验验证并发表。这项研究不仅揭示了衰老过程中细胞层面更复杂的调控网络，还可能催生全新的抗衰老药物靶点。它同时生动说明了基础科学中"非定向探索"的不可预测价值——有时最好的发现来自最偶然的灵感碰撞。
-      </div>
-      <a class="link" href="https://www.sciencedaily.com/releases/2026/05/260515001733.htm" target="_blank">🔗 查看原文 →</a>
-    </div>
-
-    <!-- 5 -->
-    <div class="card">
-      <div class="tag">🇨🇳 中国科研 · 炎性衰老</div>
-      <h2>破解"炎性衰老"密码——中国科研团队开辟衰老精准干预新路径</h2>
-      <div class="meta">
-        <span>📰 新华社 · 入选中国科学十大进展</span>
-        <span>📅 2026-03-28</span>
-      </div>
-      <div class="summary">
-        <strong>突破点：</strong>国家自然科学基金委员会发布的2025年度"中国科学十大进展"中，"炎性衰老机制解析与多维靶向干预"入选。中国科研团队深入解析了慢性低度炎症驱动衰老的核心分子机制，揭示了炎症信号通路与细胞衰老之间的双向调控关系。研究发现，通过多维靶向干预特定炎症因子，可有效延缓多个器官系统的衰老进程。该成果为开发基于炎症调控的抗衰老药物提供了理论基础和分子靶标，标志着中国在衰老研究领域迈入国际前沿行列，为"健康老龄化"国家战略提供了重要的科技支撑。
-      </div>
-      <a class="link" href="https://finance.sina.cn/stock/jdts/2026-03-28/detail-inhspryw5798828.d.html" target="_blank">🔗 查看原文 →</a>
-    </div>
-
-    <!-- 附：GLP-1 专题 -->
-    <div style="margin: 30px 0 18px;">
-      <h2 style="font-size: 18px; color: #1a365d;">📊 本期专题：GLP-1 药物与抗衰老</h2>
-    </div>
-
-    <div class="card" style="border-left-color: #38a169;">
-      <div class="tag" style="background: #f0fff4; color: #276749;">💊 GLP-1 · 老年人群</div>
-      <h2>Ozempic 在 65 岁以上成年人中实现显著减重</h2>
-      <div class="meta">
-        <span>📰 ScienceDaily / 欧洲肥胖研究协会（EASO）</span>
-        <span>📅 2026-05-11</span>
-      </div>
-      <div class="summary">
-        <strong>核心发现：</strong>一项由欧洲肥胖研究协会发布的大型荟萃分析表明，司美格鲁肽（semaglutide，商品名 Ozempic/Wegovy）在 65 岁以上老年肥胖人群中同样安全有效，减重效果与年轻人群相当。这一发现尤为重要——老年肥胖常伴随肌肉衰减（sarcopenia）和多重共病，GLP-1 药物在减重的同时未显著加剧肌肉流失风险，为老年肥胖管理提供了安全有效的药物选择，也拓展了 GLP-1 在健康老龄化中的应用边界。
-      </div>
-      <a class="link" href="https://www.sciencedaily.com/releases/2026/05/260510234654.htm" target="_blank">🔗 查看原文 →</a>
-    </div>
-
-    <div class="card" style="border-left-color: #38a169;">
-      <div class="tag" style="background: #f0fff4; color: #276749;">💊 GLP-1 · 跨人群</div>
-      <h2>GLP-1 减肥药对不同年龄、种族和基线体重的患者效果相当</h2>
-      <div class="meta">
-        <span>📰 约翰霍普金斯大学布隆伯格公共卫生学院</span>
-        <span>📅 2026-03-02</span>
-      </div>
-      <div class="summary">
-        <strong>核心发现：</strong>约翰霍普金斯大学对 64 项临床试验的荟萃分析显示，GLP-1 受体激动剂的减重效果在不同年龄、种族和起始体重人群中具有一致性，女性患者的疗效略优。这一发现证实了 GLP-1 作为广谱抗肥胖药物的普适性。更重要的是，越来越多的研究正将 GLP-1 的视野从单纯的减重扩展到心血管保护、神经退行性疾病预防和衰老干预，GLP-1 正在从"减肥神药"进化为潜在的"长寿药物"。
-      </div>
-      <a class="link" href="https://publichealth.jhu.edu/2026/glp-1-weight-loss-drugs-comparably-effective-for-patients-across-age-race-and-starting-weight" target="_blank">🔗 查看原文 →</a>
-    </div>
-
-    <div class="footer">
-      <p>📬 健康长寿科研简报 · 由旺财Jarvis自动生成 · 每日 07:00</p>
-      <p style="margin-top: 4px;">数据来源：SerpAPI · 涵盖 Nature / Science / Cell 等顶级期刊</p>
-    </div>
-
+<!-- Article 1 -->
+<div class="article">
+  <span class="tag hot">突破进展</span>
+  <h3>鼻喷疗法逆转脑衰老：修复炎症、恢复记忆</h3>
+  <div class="meta">
+    <span>📰 Texas A&M University</span> · <span>📅 2026年4月14日</span> · <a href="https://stories.tamu.edu/news/2026/04/14/scientists-reverse-brain-aging-with-a-nasal-spray/" target="_blank">🔗 原文链接</a>
   </div>
+  <div class="abstract">
+    <p><strong>德克萨斯农工大学</strong>科学家开发出一种新型鼻腔喷雾疗法，能够逆转大脑衰老——修复神经炎症、恢复认知功能和记忆能力。研究团队将大脑衰老比作一台高性能发动机：数十年的运转不仅造成磨损，更在脑部记忆中枢深处燃起"炎症之火"，导致持续性脑雾、学习能力下降和阿尔茨海默病风险升高。这种被称为"神经炎性衰老"（neuroinflammaging）的现象，曾被认为是无法逆转的衰老必然代价。新疗法通过鼻腔给药直接靶向大脑炎症通路，在动物模型中成功"拨回"了大脑的生理时钟。这一成果为治疗阿尔茨海默病及其他年龄相关神经退行性疾病开辟了全新路径，也预示着鼻腔给药可能成为中枢神经系统疾病治疗的革命性递送方式。</p>
+  </div>
+</div>
+
+<!-- Article 2 -->
+<div class="article">
+  <span class="tag hot">技术突破</span>
+  <h3>DNA适配体精准标记衰老"僵尸细胞"——源于研究生的奇思妙想</h3>
+  <div class="meta">
+    <span>📰 Mayo Clinic / Aging Cell</span> · <span>📅 2026年5月15日</span> · <a href="https://www.sciencedaily.com/releases/2026/05/260515001733.htm" target="_blank">🔗 原文链接</a>
+  </div>
+  <div class="abstract">
+    <p>衰老研究领域长期面临一大难题：如何从健康组织中精确识别出衰老细胞（senescent cells，俗称"僵尸细胞"）。这些细胞停止分裂却拒绝正常凋亡，在体内不断累积，与癌症、阿尔茨海默病和神经退行性疾病密切相关。一段偶然的<strong>研究生课间对话</strong>催生了Mayo Clinic团队的突破性发现——利用短短的人工合成DNA片段（aptamers，适配体）作为精准探针来识别衰老细胞。</p>
+    <p>适配体是能自发折叠为复杂三维结构的短DNA链，可特异性结合细胞表面蛋白。研究团队从小鼠细胞出发，从超过<strong>100万亿</strong>条随机DNA序列中筛选出若干稀有适配体，能够有效识别衰老细胞表面的标志蛋白。研究成果发表于《Aging Cell》期刊。尽管目前仍处于原理验证阶段，但这一技术为抗衰老药物的靶向递送、衰老细胞的清除（senolysis）提供了前所未有的精准工具，有望解锁全新的抗衰老治疗策略。</p>
+  </div>
+</div>
+
+<!-- Article 3 -->
+<div class="article">
+  <span class="tag clinical">临床试验</span>
+  <h3>细胞重编程逆转衰老：首个人体临床试验即将启动</h3>
+  <div class="meta">
+    <span>📰 Nature / Scientific American</span> · <span>📅 2026年4月13日</span> · <a href="https://www.scientificamerican.com/article/this-method-to-reverse-cellular-aging-is-about-to-be-tested-in-humans/" target="_blank">🔗 原文链接</a>
+  </div>
+  <div class="abstract">
+    <p>一项有望写入教科书的里程碑即将到来：<strong>细胞重编程（cellular reprogramming）抗衰老技术将首次进入人体临床试验</strong>。该技术源自山中伸弥（Shinya Yamanaka）的诺贝尔奖级发现——通过导入特定转录因子可将体细胞"拨回"到胚胎状态。近年来，科学家们发现<strong>部分重编程（partial reprogramming）</strong>——在不完全抹去细胞身份的前提下——可以安全地刷新衰老组织的生物学年龄。</p>
+    <p>据《Nature》杂志和《Scientific American》报道，这一蓬勃发展领域的首个人体临床试验正在筹备中，目标是验证"将细胞发育时钟往回拨"能否安全地恢复衰老组织和器官的功能。细胞重编程抗衰老已经成为投资热点，吸引了大量资金。如果人体试验成功，将从根本上改变人类对衰老的认知——衰老不再是不可逆转的宿命，而是一个可以被干预和修复的生物学过程。不过，科学家们也提醒，从动物模型到人体存在巨大鸿沟，安全性和肿瘤风险仍需要严格评估。</p>
+  </div>
+</div>
+
+<!-- Article 4 -->
+<div class="article">
+  <span class="tag clinical">临床研究</span>
+  <h3>GLP-1减重药物新证据：大幅减重显著降低多种疾病风险</h3>
+  <div class="meta">
+    <span>📰 ECO 2026 / ScienceDaily</span> · <span>📅 2026年5月19日</span> · <a href="https://www.sciencedaily.com/releases/2026/05/260518041432.htm" target="_blank">🔗 原文链接</a>
+  </div>
+  <div class="abstract">
+    <p>2026年欧洲肥胖大会（ECO 2026）上公布的一项大规模真实世界研究，为GLP-1类药物的健康获益提供了强有力的新证据。由英国利物浦大学John Wilding教授领导的团队分析了近<strong>9万名患者</strong>的电子健康记录和保险理赔数据，发现服用Ozempic、Wegovy、Mounjaro和Saxenda等GLP-1药物后<strong>体重显著下降的患者</strong>，其阻塞性睡眠呼吸暂停、慢性肾病、骨关节炎和心力衰竭等肥胖相关并发症的风险大幅降低。相反，那些体重反而增加的患者——即使在一年内停药——面临着更高的健康风险，尤其是心力衰竭。</p>
+    <p>这项研究的重要性不仅在于确认了"减重越多，获益越大"的剂量-效应关系，更在于它证实了GLP-1药物的健康益处远不止减重本身。GLP-1正从单纯的减肥工具向<strong>抗衰老长寿药物</strong>演进，对心血管、肾脏和代谢系统的保护作用令人期待。</p>
+  </div>
+</div>
+
+<!-- Article 5 -->
+<div class="article">
+  <span class="tag china">中国突破</span>
+  <h3>破解"炎性衰老"密码：中国科研团队开辟衰老精准干预新路径</h3>
+  <div class="meta">
+    <span>📰 新华社 / 中国科学十大进展</span> · <span>📅 2026年3月28日</span> · <a href="https://finance.sina.cn/stock/jdts/2026-03-28/detail-inhspryw5798828.d.html" target="_blank">🔗 原文链接</a>
+  </div>
+  <div class="abstract">
+    <p>国家自然科学基金委员会发布的<strong>2025年度"中国科学十大进展"</strong>中，<strong>"炎性衰老机制解析与多维靶向干预"</strong>成功入选。这一由中国科研团队主导的突破性成果，系统解析了慢性低度炎症驱动衰老的分子机制，揭示了"炎症-衰老-疾病"之间的因果链条。团队发现，随着年龄增长，机体内环境中的炎症信号通路持续低水平激活，形成一种称为"炎性衰老"（inflammaging）的状态，这是许多年龄相关疾病（心血管病、代谢疾病、神经退行性疾病）的共同底层驱动力。</p>
+    <p>基于这一机制认识，研究团队提出了多维度精准干预策略，包括靶向炎症通路、调节免疫微环境、以及代谢重编程等方向。这一成果标志着中国在衰老生物学基础研究领域迈入国际前沿，为延缓衰老和预防衰老相关疾病提供了坚实的科学基础和全新的精准干预靶点。</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>📡 来源：SerpAPI新闻搜索 · 数据采集于2026年5月25日 07:00 CST</p>
+  <p>🤖 由旺财Jarvis自动生成 · 信息仅供参考，请以原文为准</p>
+</div>
+
+</div>
 </body>
 </html>
