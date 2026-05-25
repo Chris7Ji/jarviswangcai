@@ -5075,60 +5075,6 @@
       }
     },
     {
-      "id": "concept:项目名称",
-      "type": "Concept",
-      "label": "项目名称",
-      "properties": {}
-    },
-    {
-      "id": "concept:项目A",
-      "type": "Concept",
-      "label": "项目A",
-      "properties": {}
-    },
-    {
-      "id": "concept:上级姓名",
-      "type": "Concept",
-      "label": "上级姓名",
-      "properties": {}
-    },
-    {
-      "id": "concept:联系人姓名",
-      "type": "Concept",
-      "label": "联系人姓名",
-      "properties": {}
-    },
-    {
-      "id": "concept:客户名称",
-      "type": "Concept",
-      "label": "客户名称",
-      "properties": {}
-    },
-    {
-      "id": "concept:成员A",
-      "type": "Concept",
-      "label": "成员A",
-      "properties": {}
-    },
-    {
-      "id": "concept:同事A",
-      "type": "Concept",
-      "label": "同事A",
-      "properties": {}
-    },
-    {
-      "id": "concept:客户B",
-      "type": "Concept",
-      "label": "客户B",
-      "properties": {}
-    },
-    {
-      "id": "concept:团队成员姓名",
-      "type": "Concept",
-      "label": "团队成员姓名",
-      "properties": {}
-    },
-    {
       "id": "doc:jiaviswangcai.ai/memory/ontology/feedback/daily-insights.md",
       "type": "Document",
       "label": "daily-insights.md",
@@ -9807,61 +9753,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目名称",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:上级姓名",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:联系人姓名",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:客户名称",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:成员A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:同事A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:客户B",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:团队成员姓名",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:archive/monthly/2026-04/THIRD_PARTY_PUBLISH_GUIDE.md",
       "target": "tag:1E3A5F",
       "relation": "has_tag"
@@ -11605,61 +11496,6 @@
       "source": "doc:jiaviswangcai.ai/archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
       "relation": "has_tag"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目名称",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:上级姓名",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:联系人姓名",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:客户名称",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:成员A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:同事A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:客户B",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:jiaviswangcai.ai/memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:团队成员姓名",
-      "relation": "mentions"
     }
   ]
 }
