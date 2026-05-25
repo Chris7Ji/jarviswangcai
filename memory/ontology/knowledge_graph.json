@@ -883,6 +883,14 @@
       }
     },
     {
+      "id": "doc:memory/domain-jarviswangcai-top.md",
+      "type": "Document",
+      "label": "domain-jarviswangcai-top.md",
+      "properties": {
+        "path": "memory/domain-jarviswangcai-top.md"
+      }
+    },
+    {
       "id": "doc:memory/user_preferences.md",
       "type": "Document",
       "label": "user_preferences.md",
@@ -891,27 +899,11 @@
       }
     },
     {
-      "id": "doc:memory/2026-05-21.md",
-      "type": "Document",
-      "label": "2026-05-21.md",
-      "properties": {
-        "path": "memory/2026-05-21.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-05-04.md",
       "type": "Document",
       "label": "2026-05-04.md",
       "properties": {
         "path": "memory/2026-05-04.md"
-      }
-    },
-    {
-      "id": "doc:memory/2026-05-24.md",
-      "type": "Document",
-      "label": "2026-05-24.md",
-      "properties": {
-        "path": "memory/2026-05-24.md"
       }
     },
     {
@@ -6339,6 +6331,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/2026-05-21.md",
+      "type": "Document",
+      "label": "2026-05-21.md",
+      "properties": {
+        "path": "memory/archive/2026-05-21.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-31-chinese-output.md",
       "type": "Document",
       "label": "2026-03-31-chinese-output.md",
@@ -6398,6 +6398,14 @@
       "label": "MEMORY_backup_2026-03-10.md",
       "properties": {
         "path": "memory/archive/MEMORY_backup_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-05-24.md",
+      "type": "Document",
+      "label": "2026-05-24.md",
+      "properties": {
+        "path": "memory/archive/2026-05-24.md"
       }
     },
     {
