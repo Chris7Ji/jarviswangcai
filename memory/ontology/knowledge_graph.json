@@ -10017,61 +10017,6 @@
       "relation": "mentions"
     },
     {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目名称",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:上级姓名",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:联系人姓名",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:客户名称",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:成员A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:同事A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:项目A",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:客户B",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:memory/ontology/feedback/weekly-feedback.md",
-      "target": "concept:团队成员姓名",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:.learnings/LEARNINGS.md",
       "target": "concept:私有知识星图自动构建",
       "relation": "mentions"
