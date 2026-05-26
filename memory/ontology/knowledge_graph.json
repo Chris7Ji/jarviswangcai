@@ -1505,6 +1505,20 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-27.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-05-27.md"
+      }
+    },
+    {
+      "id": "tag:82264",
+      "type": "Tag",
+      "label": "#82264",
+      "properties": {}
+    },
+    {
       "id": "doc:news_summaries/明日策略调整.md",
       "type": "Document",
       "label": "明日策略调整.md",
@@ -8544,6 +8558,16 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-23.md",
       "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "target": "tag:82264",
       "relation": "has_tag"
     },
     {
