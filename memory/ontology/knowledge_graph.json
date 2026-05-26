@@ -1001,6 +1001,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/translation_task.md",
+      "type": "Document",
+      "label": "translation_task.md",
+      "properties": {
+        "path": "news_summaries/translation_task.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/openclaw_news_2026-03-16_formatted.md",
       "type": "Document",
       "label": "openclaw_news_2026-03-16_formatted.md",
