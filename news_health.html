@@ -3,76 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 - 2026年5月27日</title>
+<title>健康长寿科研简报 — 2026-05-29</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 860px; margin: 0 auto; padding: 20px; background: #f8f9fa; color: #333; }
-h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-h2 { color: #2980b9; margin-top: 30px; }
-.source { color: #7f8c8d; font-size: 14px; margin-bottom: 5px; }
-.date { color: #95a5a6; font-size: 13px; }
-.abstract { background: #fff; border-left: 4px solid #3498db; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; line-height: 1.7; }
-.tag { display: inline-block; background: #e8f4fd; color: #2980b9; padding: 2px 10px; border-radius: 12px; font-size: 12px; margin-right: 5px; }
-.footer { margin-top: 40px; color: #95a5a6; font-size: 12px; text-align: center; border-top: 1px solid #eee; padding-top: 15px; }
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #38bdf8;
+  --gold: #fbbf24;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 2rem 1rem;
+}
+.container { max-width: 800px; margin: 0 auto; }
+header {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+header .subtitle {
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+header .date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+.article {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent);
+  transition: transform 0.2s;
+}
+.article:hover { transform: translateX(4px); }
+.article .meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.article .source {
+  color: var(--gold);
+  font-weight: 600;
+}
+.article h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+.article h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+.article h2 a:hover { color: var(--accent); }
+.article .summary {
+  font-size: 0.92rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.article .summary-en {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.6;
+  border-top: 1px solid #334155;
+  padding-top: 0.75rem;
+}
+.article .readmore {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+.article .readmore:hover { text-decoration: underline; }
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid #334155;
+  margin-top: 2rem;
+}
+.tag { display: inline-block; background: #334155; color: var(--accent); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.3rem; }
 </style>
 </head>
 <body>
+<div class="container">
 
-<h1>🧬 健康长寿科研简报</h1>
-<p style="color:#7f8c8d;">2026年5月27日 · 涵盖长寿机制、抗衰老药物、GLP-1疗法等前沿突破</p>
+<header>
+  <h1>🧬 健康长寿科研简报</h1>
+  <div class="subtitle">Longevity &amp; Healthspan Research Briefing</div>
+  <div class="date">📅 2026年5月29日（星期五）</div>
+</header>
 
-<!-- === 条目 1 === -->
-<h2>1. 细胞重编程疗法：逆转衰老的临床曙光</h2>
-<div class="source">📰 The New York Times Magazine · Altos Labs</div>
-<div class="date">📅 2026年4月27日</div>
-<div class="tag">细胞重编程</div>
-<div class="tag">age reversal</div>
-<div class="abstract">
-<strong>【摘要】</strong>《纽约时报》杂志深度报道了细胞重编程技术在抗衰老领域的突破性进展。由Jeff Bezos和Yuri Milner等科技巨头投资30亿美元的Altos Labs等机构，正推动细胞重编程从实验室走向临床应用。科学家通过部分重编程（partial reprogramming）技术——短暂表达Yamanaka因子——成功逆转了小鼠和人类细胞中的表观遗传衰老标志。该技术有望治疗数百种与年龄相关的疾病，甚至从根本上逆转衰老进程。研究团队正在探索将这一疗法从动物模型推进到人体临床试验的路径，标志着"衰老可逆"的概念正从科幻走向科学现实。
+<!-- Article 1 -->
+<div class="article">
+  <div class="meta">
+    <span class="source">The New York Times · Magazine</span>
+    <span>📰 2026-05-01</span>
+    <span><span class="tag">细胞重编程</span><span class="tag">Altos Labs</span></span>
+  </div>
+  <h2><a href="https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html" target="_blank">细胞年轻化：逆转衰老的全新疗法</a></h2>
+  <div class="summary">
+    <p>纽约时报杂志重磅报道：Altos Labs 开发的细胞重编程（Cellular Rejuvenation）技术有望治愈数百种疾病，甚至逆转衰老本身。这项基于山中因子（Yamanaka factors）的表观遗传重编程技术，已在动物实验中成功恢复老年小鼠的视力、认知能力和组织再生能力，将生物学年龄大幅回拨。Altos Labs 获得了超过30亿美元的投资，正在推进人体临床试验。如果成功，这将彻底改变人类对衰老的认知——从"衰老不可逆"转向"衰老可治愈"。</p>
+  </div>
+  <div class="summary-en">
+    <strong>原文摘要：</strong> A new therapy has the potential to cure hundreds of diseases — and even reverse aging. Altos Labs' cellular rejuvenation technology, based on epigenetic reprogramming, has restored vision, cognition, and tissue regeneration in aged mice. With $3B+ funding, human trials are underway to test if biological age can be turned back.
+  </div>
+  <a class="readmore" href="https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- === 条目 2 === -->
-<h2>2. 美国ARPA-H投入1.44亿美元启动PROSPR项目：为抗衰老药物III期临床铺路</h2>
-<div class="source">📰 科学网/中国科学报 · ARPA-H</div>
-<div class="date">📅 2026年4月9日</div>
-<div class="tag">政策资助</div>
-<div class="tag">临床转化</div>
-<div class="abstract">
-<strong>【摘要】</strong>美国健康高级研究计划局（ARPA-H）发放总额1.44亿美元的合同，启动"延长健康韧性主动解决方案"（PROSPR）项目。该项目向7个研究团队（4个来自学术界、3个来自生物技术公司）拨付资金，旨在为延长健康寿命的干预措施开展III期临床试验奠定基础。ARPA-H项目经理Andrew Brack表示，PROSPR的愿景是为大型临床研究"铺设轨道"，研究是获得监管机构批准的必要条件。他预测未来5年内，因为PROSPR项目的推动，将有望见到首个获批的延缓衰老药物面世。这是美国政府首次以系统性方式押注衰老干预临床转化，具有里程碑意义。
+<!-- Article 2 -->
+<div class="article">
+  <div class="meta">
+    <span class="source">World Governments Summit · WAM</span>
+    <span>📰 2026-02-04</span>
+    <span><span class="tag">表观遗传编程</span><span class="tag">Harvard</span></span>
+  </div>
+  <h2><a href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">哈佛科学家：衰老即将成为可逆转的医学病症</a></h2>
+  <div class="summary">
+    <p>在2026年世界政府峰会上，哈佛医学院遗传学教授 David Sinclair 发表了重磅演讲。他表示，人类正处于自发现清洁水源和疫苗以来最重要的健康变革边缘。Sinclair 团队正准备启动首批人类临床试验，测试基于表观遗传编程（epigenetic programming）的疗法能否逆转衰老过程。"我们即将首次在历史上测试，是否能够逆转衰老并治愈疾病，"Sinclair 说。他指出，消除所有癌症只能将平均寿命延长2.5年，因为其他疾病仍会发展；而针对衰老本身的治疗，才是解决所有年龄相关疾病的根本途径。他预测未来10-20年内，现代医疗体系将因衰老治疗的出现而过时。</p>
+  </div>
+  <div class="summary-en">
+    <strong>原文摘要：</strong> Prof. David Sinclair told the World Governments Summit that humanity is on the verge of the most significant health transformation since clean water and vaccines. His team is launching human trials using epigenetic programming to reverse aging, potentially making modern healthcare systems obsolete in 10-20 years.
+  </div>
+  <a class="readmore" href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- === 条目 3 === -->
-<h2>3. 中科院动物所"炎性衰老机制解析与多维靶向干预"入选2025中国科学十大进展</h2>
-<div class="source">📰 中国科学院动物研究所</div>
-<div class="date">📅 2026年3月25日</div>
-<div class="tag">炎性衰老</div>
-<div class="tag">中国科学十大进展</div>
-<div class="abstract">
-<strong>【摘要】</strong>中国科学院动物研究所的研究成果"炎性衰老机制解析与多维靶向干预"入选2025年度"中国科学十大进展"。该研究绘制了跨越人类50年生命周期的衰老轨迹与特征，揭示了淀粉样蛋白积聚及炎症应激是器官衰老的核心驱动机制。研究团队发现肾脏来源的内源代谢物甜菜碱可作为促炎激酶TBK1的天然抑制剂，在分子层面模拟运动的抗炎效应，为延缓衰老提供了具有明确靶点的候选分子。此外，针对干细胞耗竭问题，团队基于合成生物学构建了长寿基因FOXO3增强的工程化干细胞，在老年灵长类动物模型中显著改善多组织衰老指标、抑制慢性炎症，并展现出逆转认知与生殖功能衰老相关衰退的潜能。该研究实现了从机制解析、靶点发现到干预验证的完整闭环，为衰老相关疾病的精准干预开辟了新范式。
+<!-- Article 3 -->
+<div class="article">
+  <div class="meta">
+    <span class="source">EurekAlert! · Targeting Longevity 2026</span>
+    <span>📰 2026-02-10</span>
+    <span><span class="tag">线粒体</span><span class="tag">微生物群</span></span>
+  </div>
+  <h2><a href="https://www.eurekalert.org/news-releases/1116021" target="_blank">2026年长寿靶向研究：线粒体信号与微生物群-大脑轴重塑衰老轨迹</a></h2>
+  <div class="summary">
+    <p>Targeting Longevity 2026 世界大会（2026年4月8-9日，柏林）发布的报告指出，长寿科学正在发生范式转变。最新研究揭示了线粒体信号如何影响衰老过程中的炎症反应（inflammaging），以及微生物群-大脑轴如何塑造衰老轨迹。研究人员证实，通过靶向线粒体功能障碍和调节肠道微生物组，可以显著延长健康寿命（healthspan）。此外，AI驱动的药物发现平台正在加速识别新型 senolytics（衰老细胞清除药物），这些进展正在重新定义长寿策略——从"延长寿命"转向"延长健康寿命"。</p>
+  </div>
+  <div class="summary-en">
+    <strong>原文摘要：</strong> Studies now show how mitochondrial signaling influences inflammation in senescence, how microbiota–brain interactions shape aging trajectories, and how AI-driven senolytic discovery can redefine longevity strategies. The shift from lifespan extension to healthspan optimization is accelerating.
+  </div>
+  <a class="readmore" href="https://www.eurekalert.org/news-releases/1116021" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- === 条目 4 === -->
-<h2>4. 南京瑞初医药RC017获FDA批准临床：中国首个抗衰老创新药获批</h2>
-<div class="source">📰 钛媒体/深观商业</div>
-<div class="date">📅 2026年4月2日</div>
-<div class="tag">创新药</div>
-<div class="tag">FDA</div>
-<div class="abstract">
-<strong>【摘要】</strong>2026年3月，南京瑞初医药自主研发的靶向衰老机制创新药RC017正式获得美国FDA批准开展临床试验，这是FDA历史上首次批准中国抗衰老创新药的临床申请。RC017是一款靶向衰老核心机制的小分子药物，标志着中国在抗衰老药物研发领域进入国际第一梯队。同期全球抗衰老赛道热度空前：扎克伯格通过CZI承诺十年内捐赠30亿美元推动生物医学研究，其中6亿美元启动BioHub生物中心；谷歌Calico累计投入超7亿美元研究衰老干预；OpenAI创始人Sam Altman个人投资1.8亿美元押注长寿科技。细胞抗衰正从基础研究走向临床验证的关键拐点。
+<!-- Article 4 -->
+<div class="article">
+  <div class="meta">
+    <span class="source">Targeting Longevity Congress</span>
+    <span>📰 2025-07-30</span>
+    <span><span class="tag">衰老图谱</span><span class="tag">大数据</span></span>
+  </div>
+  <h2><a href="https://targeting-longevity.com/news/breakthrough-scientists-map-human-aging-across-50-years/" target="_blank">突破：科学家绘制50年人类衰老全景图谱</a></h2>
+  <div class="summary">
+    <p>科学家成功绘制了跨越50年的人类衰老全景图谱，这是迄今为止最全面的人类衰老分子图谱。该研究追踪了数千名参与者从成年早期到老年（30-80岁）的分子变化，包括转录组、蛋白质组、代谢组和表观基因组的动态演变。研究发现，衰老并非线性过程，而是在44岁和60岁左右出现两次剧烈的分子"浪潮"（wave-like changes）。这一发现解释了为什么某些年龄相关疾病（如心血管疾病、神经退行性疾病）往往在特定年龄段集中爆发。该图谱为开发精准抗衰老干预措施提供了关键参考——治疗窗口期可能就在这些分子浪潮之前。</p>
+  </div>
+  <div class="summary-en">
+    <strong>原文摘要：</strong> Scientists have created the most comprehensive map of human aging across 50 years, tracking molecular changes in transcriptome, proteome, metabolome, and epigenome. Two dramatic waves of aging at ~44 and ~60 years were discovered, explaining age-related disease clustering and revealing intervention windows.
+  </div>
+  <a class="readmore" href="https://targeting-longevity.com/news/breakthrough-scientists-map-human-aging-across-50-years/" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- === 条目 5 === -->
-<h2>5. WHO发布GLP-1治疗成人肥胖指南：类GLP-1药物进入全球规范化时代</h2>
-<div class="source">📰 JAMA · 世界卫生组织（WHO）</div>
-<div class="date">📅 2026年</div>
-<div class="tag">GLP-1</div>
-<div class="tag">肥胖治疗</div>
-<div class="abstract">
-<strong>【摘要】</strong>世界卫生组织（WHO）在《JAMA》发布关于GLP-1类药物治疗成人肥胖的专题指南，系统总结了GLP-1受体激动剂在肥胖管理中的循证医学证据，并呼吁各国将此类药物纳入国家肥胖管理策略。同期多项临床研究取得重要进展：Johns Hopkins大学的大规模分析显示，GLP-1类药物在不同年龄、种族和初始体重的患者中效果一致——女性平均减重约11%，男性约7%；FDA于2025年12月批准了首款口服GLP-1制剂（诺和诺德Wegovy口服片）；美国CMS宣布自2026年7月起将Wegovy、Zepbound等GLP-1药物纳入Medicare Part D覆盖范围。GLP-1药物正从糖尿病治疗扩展为全球性健康老龄化管理的核心工具，其抗炎、心血管保护等多重获益也为衰老干预提供了新视角。
+<!-- Article 5 -->
+<div class="article">
+  <div class="meta">
+    <span class="source">CMS · Centers for Medicare &amp; Medicaid Services</span>
+    <span>📰 2026-05-12</span>
+    <span><span class="tag">GLP-1</span><span class="tag">Medicare</span><span class="tag">政策</span></span>
+  </div>
+  <h2><a href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge" target="_blank">Medicare GLP-1 桥梁计划：减肥药纳入医保新时代</a></h2>
+  <div class="summary">
+    <p>美国医疗保险和医疗补助服务中心（CMS）宣布，自2026年7月1日起，Wegovy、Zepbound 等 GLP-1 类减肥药物的特定制剂将纳入 Medicare Part D 覆盖范围。这项"GLP-1桥梁计划"是联邦医保在抗肥胖药物覆盖方面的重大政策转向。此前，Medicare 禁止覆盖用于减肥的药物，但近年研究显示 GLP-1 受体激动剂不仅对减重有效，还能显著降低心血管事件风险、改善代谢健康。此外，诺和诺德在2025年12月获得了每日口服 Wegovy 片剂的 FDA 批准，这是首个口服 GLP-1 减肥药，标志着从注射到口服的重大转变，将大幅提升患者依从性。</p>
+  </div>
+  <div class="summary-en">
+    <strong>原文摘要：</strong> Beginning July 1, 2026, formulations of Wegovy and Zepbound will be available under Medicare Part D. The first once-daily oral tablet of Wegovy (FDA-approved Dec 2025) marks a major shift from injection to oral GLP-1 therapy, improving accessibility for obesity treatment.
+  </div>
+  <a class="readmore" href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge" target="_blank">阅读原文 →</a>
 </div>
 
-<div class="footer">
-旺财Jarvis · 健康长寿科研简报 · 数据来源：SerpAPI搜索 · 生成时间：2026-05-27 07:00 CST
-</div>
+<footer>
+  <p>🧬 健康长寿科研简报 · 旺财Jarvis 自动生成</p>
+  <p>数据来源：SerpAPI · Google News · Nature · Science · Cell · CMS</p>
+  <p>📅 2026-05-29 07:00 CST</p>
+</footer>
 
+</div>
 </body>
 </html>
