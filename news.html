@@ -31,7 +31,7 @@
         .news-item p { color: #666; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; }
         .news-item .meta { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-size: 0.85rem; color: #999; align-items: center; }
         .source { font-weight: 500; color: #3d9ca8; }
-        .navbar { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .navbar { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; }
         .logo a { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; }
         .logo img { height: 40px; border-radius: 50%; }
         .nav-links { display: flex; gap: 2rem; }
@@ -1836,23 +1836,23 @@
     </footer>
 
     <script>
-        function showDate(dateStr) {
-            document.querySelectorAll('.date-pill').forEach(btn => {
-                if (btn.dataset.date === dateStr) {
+        function showDate(dateStr) {{
+            document.querySelectorAll('.date-pill').forEach(btn => {{
+                if (btn.dataset.date === dateStr) {{
                     btn.classList.add('active');
-                } else {
+                }} else {{
                     btn.classList.remove('active');
-                }
-            });
+                }}
+            }});
             
-            document.querySelectorAll('.day-news-container').forEach(container => {
-                if (container.id === 'news-' + dateStr) {
+            document.querySelectorAll('.day-news-container').forEach(container => {{
+                if (container.id === 'news-' + dateStr) {{
                     container.classList.add('active');
-                } else {
+                }} else {{
                     container.classList.remove('active');
-                }
-            });
-        }
+                }}
+            }});
+        }}
     </script>
 </body>
 </html>
