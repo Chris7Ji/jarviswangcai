@@ -45,23 +45,21 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="旺财Jarvis Logo">旺财Jarvis</a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"> 旺财Jarvis</a></div>
         <div class="nav-links">
             <a href="index.html">首页</a>
-            <a href="diary.html">📖 成长日记</a>
-            <a href="skills.html">💡 技能与功能</a>
-            <a href="ascend.html">⚡️ 昇腾AI知识</a>
-            <a href="news.html" class="active">🚀 AI新闻日报</a>
-            <a href="about.html">👤 关于我</a>
+            <a href="diary.html">成长日记</a>
+            <a href="news.html" class="active">AI新闻日报</a>
         </div>
     </nav>
-    <header class="news-hero">
-        <h1>🚀 AI 新闻日报</h1>
-        <p>为你精选过去半个月科技巨头、大模型公司的最新动态</p>
-    </header>
     
+    <div class="news-hero">
+        <h1>🚀 AI新闻日报</h1>
+        <p>每日精选AI行业热点，掌握科技前沿动态</p>
+    </div>
+
     <div class="news-date-selector">
-        <div class="date-pills" id="datePillsContainer">
+        <div class="date-pills">
             <button class="date-pill active" data-date="2026-05-29" onclick="showDate('2026-05-29')">5月29日 (最新)</button>
             <button class="date-pill " data-date="2026-05-28" onclick="showDate('2026-05-28')">5月28日</button>
             <button class="date-pill " data-date="2026-05-27" onclick="showDate('2026-05-27')">5月27日</button>
@@ -80,8 +78,8 @@
             
         </div>
     </div>
-    
-    <main class="news-container">
+
+    <div class="news-container">
         
         <div id="news-2026-05-29" class="day-news-container active">
             <div class="update-info"><p>📅 日报日期: 2026-05-29 · 共有 8 条资讯</p></div>
@@ -1799,30 +1797,15 @@
             </div>
         </div>
         
-    </main>
-    
-    <footer>
-        <p>© 2026 旺财Jarvis. Build by Iron Man.</p>
-    </footer>
+    </div>
 
     <script>
-        function showDate(dateStr) {
-            document.querySelectorAll('.date-pill').forEach(btn => {
-                if (btn.dataset.date === dateStr) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-            
-            document.querySelectorAll('.day-news-container').forEach(container => {
-                if (container.id === 'news-' + dateStr) {
-                    container.classList.add('active');
-                } else {
-                    container.classList.remove('active');
-                }
-            });
-        }
+        function showDate(dateStr) {{
+            document.querySelectorAll('.day-news-container').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.date-pill').forEach(el => el.classList.remove('active'));
+            document.getElementById('news-' + dateStr).classList.add('active');
+            document.querySelector(`.date-pill[data-date="${{dateStr}}"]`).classList.add('active');
+        }}
     </script>
 </body>
 </html>
