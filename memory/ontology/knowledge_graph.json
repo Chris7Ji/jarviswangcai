@@ -891,6 +891,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-05-29.md",
+      "type": "Document",
+      "label": "2026-05-29.md",
+      "properties": {
+        "path": "memory/2026-05-29.md"
+      }
+    },
+    {
       "id": "doc:memory/user_preferences.md",
       "type": "Document",
       "label": "user_preferences.md",
