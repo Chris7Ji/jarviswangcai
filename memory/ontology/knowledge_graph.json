@@ -159,14 +159,6 @@
       }
     },
     {
-      "id": "doc:working-buffer.md",
-      "type": "Document",
-      "label": "working-buffer.md",
-      "properties": {
-        "path": "working-buffer.md"
-      }
-    },
-    {
       "id": "doc:ascend_ai_officer.md",
       "type": "Document",
       "label": "ascend_ai_officer.md",
@@ -566,6 +558,14 @@
       "label": "mac_mini_feishu_deepseek_guide_continued.md",
       "properties": {
         "path": "mac_mini_feishu_deepseek_guide_continued.md"
+      }
+    },
+    {
+      "id": "doc:DREAMS.md",
+      "type": "Document",
+      "label": "DREAMS.md",
+      "properties": {
+        "path": "DREAMS.md"
       }
     },
     {
@@ -6083,6 +6083,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/working-buffer_2026-03-19.md",
+      "type": "Document",
+      "label": "working-buffer_2026-03-19.md",
+      "properties": {
+        "path": "memory/archive/working-buffer_2026-03-19.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-23.md",
       "type": "Document",
       "label": "2026-03-23.md",
@@ -6478,6 +6486,30 @@
       "label": "2026-03-15.md",
       "properties": {
         "path": "memory/archive/2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/deep/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-05-30.md"
       }
     },
     {
