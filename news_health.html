@@ -3,209 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 — 2026-05-29</title>
+<title>健康长寿科研简报 | 2026-05-30</title>
 <style>
-:root {
-  --bg: #0f172a;
-  --card: #1e293b;
-  --accent: #38bdf8;
-  --gold: #fbbf24;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-}
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  padding: 2rem 1rem;
-}
-.container { max-width: 800px; margin: 0 auto; }
-header {
-  text-align: center;
-  padding: 2rem 0 1.5rem;
-  border-bottom: 2px solid var(--accent);
-  margin-bottom: 2rem;
-}
-header h1 {
-  font-size: 1.8rem;
-  color: var(--accent);
-  margin-bottom: 0.3rem;
-}
-header .subtitle {
-  color: var(--gold);
-  font-size: 0.95rem;
-}
-header .date {
-  color: var(--muted);
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-}
-.article {
-  background: var(--card);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-left: 4px solid var(--accent);
-  transition: transform 0.2s;
-}
-.article:hover { transform: translateX(4px); }
-.article .meta {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-}
-.article .source {
-  color: var(--gold);
-  font-weight: 600;
-}
-.article h2 {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-bottom: 0.75rem;
-  line-height: 1.4;
-}
-.article h2 a {
-  color: #fff;
-  text-decoration: none;
-}
-.article h2 a:hover { color: var(--accent); }
-.article .summary {
-  font-size: 0.92rem;
-  color: var(--text);
-  margin-bottom: 0.75rem;
-}
-.article .summary-en {
-  font-size: 0.85rem;
-  color: var(--muted);
-  font-style: italic;
-  line-height: 1.6;
-  border-top: 1px solid #334155;
-  padding-top: 0.75rem;
-}
-.article .readmore {
-  display: inline-block;
-  color: var(--accent);
-  font-size: 0.85rem;
-  text-decoration: none;
-  font-weight: 500;
-}
-.article .readmore:hover { text-decoration: underline; }
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  color: var(--muted);
-  font-size: 0.8rem;
-  border-top: 1px solid #334155;
-  margin-top: 2rem;
-}
-.tag { display: inline-block; background: #334155; color: var(--accent); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.3rem; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+.header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 40px 20px; text-align: center; }
+.header h1 { font-size: 28px; margin-bottom: 8px; }
+.header p { font-size: 14px; opacity: 0.85; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.article { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 24px; overflow: hidden; }
+.article-header { padding: 20px 24px 12px; }
+.article-header h2 { font-size: 20px; color: #1a1a2e; margin-bottom: 8px; }
+.article-meta { font-size: 13px; color: #888; }
+.article-meta .source { color: #667eea; font-weight: 600; }
+.article-meta .date { margin-left: 12px; }
+.article-body { padding: 0 24px 20px; }
+.article-body p { font-size: 15px; color: #444; margin-bottom: 10px; text-indent: 2em; }
+.article-body .translation-label { display: inline-block; font-size: 12px; background: #667eea; color: #fff; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
+.article-body .en-original { color: #999; font-size: 13px; font-style: italic; margin-bottom: 10px; }
+.article-link { display: inline-block; margin-top: 8px; padding: 6px 16px; background: #f0f2ff; color: #667eea; text-decoration: none; border-radius: 6px; font-size: 13px; transition: background 0.2s; }
+.article-link:hover { background: #e0e4ff; }
+.footer { text-align: center; padding: 30px; color: #aaa; font-size: 13px; }
+.tag { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 12px; margin-right: 6px; margin-top: 8px; }
+.tag-red { background: #ffe8e8; color: #d63031; }
+.tag-blue { background: #e8f0ff; color: #2d6dc1; }
+.tag-green { background: #e8f8e8; color: #27ae60; }
+.tag-purple { background: #f0e8ff; color: #8e44ad; }
+.tag-orange { background: #fff3e0; color: #e67e22; }
 </style>
 </head>
 <body>
+
+<div class="header">
+  <h1>🔬 健康长寿科研简报</h1>
+  <p>2026年5月30日 · 每周科研速递</p>
+</div>
+
 <div class="container">
 
-<header>
-  <h1>🧬 健康长寿科研简报</h1>
-  <div class="subtitle">Longevity &amp; Healthspan Research Briefing</div>
-  <div class="date">📅 2026年5月29日（星期五）</div>
-</header>
+  <!-- Article 1: siRNA Therapeutics -->
+  <div class="article">
+    <div class="article-header">
+      <h2>Junevity 公布 siRNA 疗法抗衰老突破性数据</h2>
+      <div class="article-meta">
+        <span class="source">📰 Business Wire</span>
+        <span class="date">📅 2026-05-28</span>
+        <span class="tag tag-red">长寿</span>
+        <span class="tag tag-blue">siRNA</span>
+      </div>
+    </div>
+    <div class="article-body">
+      <span class="translation-label">中文摘要</span>
+      <p>Junevity 公司在美国衰老研究协会（American Aging Association）2026年度会议上公布了其 siRNA 疗法的突破性研究成果。这是全球首次展示 siRNA 治疗药物能够恢复与衰老相关的全局基因表达模式。该药物通过靶向特定衰老相关基因的 mRNA，从转录层面干预衰老进程，为开发可逆转化衰老的 RNA 疗法奠定了基础。研究数据显示，siRNA 技术能够有效沉默衰老相关基因，同时恢复年轻状态下的基因表达谱。这一成果被认为是衰老干预领域从"概念验证"迈向"临床转化"的重要里程碑。公司联合创始人将在大会上做口头报告，详细阐述这一开创性发现。</p>
+      <p class="en-original">🔤 Junevity to Present Breakthrough Research on siRNA Therapeutics at American Aging Association's 2026 Annual Meeting — First ever data showing an siRNA therapeutic can restore global gene expression patterns associated with aging.</p>
+      <a class="article-link" href="https://www.businesswire.com/news/home/20260527230677/en/" target="_blank">🔗 查看原文</a>
+    </div>
+  </div>
 
-<!-- Article 1 -->
-<div class="article">
-  <div class="meta">
-    <span class="source">The New York Times · Magazine</span>
-    <span>📰 2026-05-01</span>
-    <span><span class="tag">细胞重编程</span><span class="tag">Altos Labs</span></span>
+  <!-- Article 2: Mayo Clinic aptamer -->
+  <div class="article">
+    <div class="article-header">
+      <h2>梅奥诊所重大突破：DNA适配体精准靶向衰老"僵尸细胞"</h2>
+      <div class="article-meta">
+        <span class="source">📰 ScienceDaily</span>
+        <span class="date">📅 2026-05-15</span>
+        <span class="tag tag-red">衰老</span>
+        <span class="tag tag-purple">DNA适配体</span>
+      </div>
+    </div>
+    <div class="article-body">
+      <span class="translation-label">中文摘要</span>
+      <p>梅奥诊所（Mayo Clinic）的研究人员取得了一项意外突破——这一发现源于研究生之间的一次随意交谈。他们发现，名为"适配体"（aptamers）的微小合成 DNA 分子能够选择性地附着在衰老细胞（senescent "zombie cells"）上。这些"僵尸细胞"是衰老、癌症和神经退行性疾病的关键驱动因素。传统上难以在活体组织中精确识别和靶向这些细胞，但适配体的出现为这一难题提供了全新解决方案。该技术有望让科学家以前所未有的精度在活体组织中识别和靶向衰老细胞，为开发新一代抗衰老诊断工具和靶向治疗铺平道路。研究团队表示，这一方法将极大推动衰老细胞清除疗法（senolytics）的研究进程。</p>
+      <p class="en-original">🔤 A grad student's wild idea sparks a major aging breakthrough — Researchers discovered that tiny synthetic DNA molecules called aptamers can selectively attach to senescent "zombie cells," which are linked to aging, cancer, and neurodegenerative disease.</p>
+      <a class="article-link" href="https://www.sciencedaily.com/releases/2026/05/260515001733.htm" target="_blank">🔗 查看原文</a>
+    </div>
   </div>
-  <h2><a href="https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html" target="_blank">细胞年轻化：逆转衰老的全新疗法</a></h2>
-  <div class="summary">
-    <p>纽约时报杂志重磅报道：Altos Labs 开发的细胞重编程（Cellular Rejuvenation）技术有望治愈数百种疾病，甚至逆转衰老本身。这项基于山中因子（Yamanaka factors）的表观遗传重编程技术，已在动物实验中成功恢复老年小鼠的视力、认知能力和组织再生能力，将生物学年龄大幅回拨。Altos Labs 获得了超过30亿美元的投资，正在推进人体临床试验。如果成功，这将彻底改变人类对衰老的认知——从"衰老不可逆"转向"衰老可治愈"。</p>
-  </div>
-  <div class="summary-en">
-    <strong>原文摘要：</strong> A new therapy has the potential to cure hundreds of diseases — and even reverse aging. Altos Labs' cellular rejuvenation technology, based on epigenetic reprogramming, has restored vision, cognition, and tissue regeneration in aged mice. With $3B+ funding, human trials are underway to test if biological age can be turned back.
-  </div>
-  <a class="readmore" href="https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html" target="_blank">阅读原文 →</a>
-</div>
 
-<!-- Article 2 -->
-<div class="article">
-  <div class="meta">
-    <span class="source">World Governments Summit · WAM</span>
-    <span>📰 2026-02-04</span>
-    <span><span class="tag">表观遗传编程</span><span class="tag">Harvard</span></span>
+  <!-- Article 3: Scientific American cellular reprogramming -->
+  <div class="article">
+    <div class="article-header">
+      <h2>细胞重编程逆转衰老：首个人体临床实验即将启动</h2>
+      <div class="article-meta">
+        <span class="source">📰 Scientific American</span>
+        <span class="date">📅 2026-04-13</span>
+        <span class="tag tag-red">逆转衰老</span>
+        <span class="tag tag-green">临床实验</span>
+      </div>
+    </div>
+    <div class="article-body">
+      <span class="translation-label">中文摘要</span>
+      <p>《科学美国人》（Scientific American）深度报道了细胞重编程（cellular reprogramming）抗衰老领域的历史性进展——该技术即将首次进入人体临床试验。这一被称为"部分重编程"（partial reprogramming）的方法，通过引入山中因子（Yamanaka factors）将细胞"拨回"更年轻的发展阶段，同时又不会让细胞完全失去身份转变为干细胞。哈佛医学院和多个研究机构此前已在动物模型中证明，该方法能够恢复老年小鼠的视力、改善认知功能并延长寿命。耶鲁大学 LU 团队的研究显示，在小鼠眼睛中引入三种基因后，衰老的视网膜神经细胞成功恢复年轻状态。如今这一技术正在向人体转化，首个临床试验将验证其在老年人体内安全刷新老化组织和器官的潜力。如果成功，这将彻底改变人类对衰老的医学干预方式。</p>
+      <p class="en-original">🔤 This method to reverse cellular aging is about to be tested in humans — A burgeoning field is launching its first clinical trial to find out whether dialing back cell development can safely refresh aged tissues and organs.</p>
+      <a class="article-link" href="https://www.scientificamerican.com/article/this-method-to-reverse-cellular-aging-is-about-to-be-tested-in-humans/" target="_blank">🔗 查看原文</a>
+    </div>
   </div>
-  <h2><a href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">哈佛科学家：衰老即将成为可逆转的医学病症</a></h2>
-  <div class="summary">
-    <p>在2026年世界政府峰会上，哈佛医学院遗传学教授 David Sinclair 发表了重磅演讲。他表示，人类正处于自发现清洁水源和疫苗以来最重要的健康变革边缘。Sinclair 团队正准备启动首批人类临床试验，测试基于表观遗传编程（epigenetic programming）的疗法能否逆转衰老过程。"我们即将首次在历史上测试，是否能够逆转衰老并治愈疾病，"Sinclair 说。他指出，消除所有癌症只能将平均寿命延长2.5年，因为其他疾病仍会发展；而针对衰老本身的治疗，才是解决所有年龄相关疾病的根本途径。他预测未来10-20年内，现代医疗体系将因衰老治疗的出现而过时。</p>
-  </div>
-  <div class="summary-en">
-    <strong>原文摘要：</strong> Prof. David Sinclair told the World Governments Summit that humanity is on the verge of the most significant health transformation since clean water and vaccines. His team is launching human trials using epigenetic programming to reverse aging, potentially making modern healthcare systems obsolete in 10-20 years.
-  </div>
-  <a class="readmore" href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">阅读原文 →</a>
-</div>
 
-<!-- Article 3 -->
-<div class="article">
-  <div class="meta">
-    <span class="source">EurekAlert! · Targeting Longevity 2026</span>
-    <span>📰 2026-02-10</span>
-    <span><span class="tag">线粒体</span><span class="tag">微生物群</span></span>
+  <!-- Article 4: Ozempic older adults -->
+  <div class="article">
+    <div class="article-header">
+      <h2>Ozempic 在65岁以上老年人中展现显著减肥与心血管获益</h2>
+      <div class="article-meta">
+        <span class="source">📰 ScienceDaily</span>
+        <span class="date">📅 2026-05-11</span>
+        <span class="tag tag-orange">GLP-1</span>
+        <span class="tag tag-blue">老年健康</span>
+      </div>
+    </div>
+    <div class="article-body">
+      <span class="translation-label">中文摘要</span>
+      <p>据欧洲肥胖研究协会（EASO）发布的一项重大新分析显示，司美格鲁肽（semaglutide，商品名 Ozempic/Wegovy）在65岁以上成年人中同样表现出显著的减肥和健康获益。研究参与者平均减重超过15%，远超安慰剂组。许多受试者不仅成功脱离肥胖类别，还达到了更健康的体重水平。更重要的是，该药物同时改善了心血管和代谢健康指标，这对于老年人群尤为关键——他们往往同时面临肥胖、心血管疾病和代谢综合征的多重负担。这项研究为GLP-1受体激动剂在老年肥胖管理中的安全性和有效性提供了强有力的证据支持，填补了该人群临床数据的空白。分析指出，年龄不应成为阻碍老年肥胖患者使用这一有效治疗方案的因素。</p>
+      <p class="en-original">🔤 Ozempic delivers major weight loss in adults over 65, study finds — Participants taking the drug lost over 15% of their body weight on average, far more than those receiving placebo treatment. Many moved out of obesity categories entirely.</p>
+      <a class="article-link" href="https://www.sciencedaily.com/releases/2026/05/260510234654.htm" target="_blank">🔗 查看原文</a>
+    </div>
   </div>
-  <h2><a href="https://www.eurekalert.org/news-releases/1116021" target="_blank">2026年长寿靶向研究：线粒体信号与微生物群-大脑轴重塑衰老轨迹</a></h2>
-  <div class="summary">
-    <p>Targeting Longevity 2026 世界大会（2026年4月8-9日，柏林）发布的报告指出，长寿科学正在发生范式转变。最新研究揭示了线粒体信号如何影响衰老过程中的炎症反应（inflammaging），以及微生物群-大脑轴如何塑造衰老轨迹。研究人员证实，通过靶向线粒体功能障碍和调节肠道微生物组，可以显著延长健康寿命（healthspan）。此外，AI驱动的药物发现平台正在加速识别新型 senolytics（衰老细胞清除药物），这些进展正在重新定义长寿策略——从"延长寿命"转向"延长健康寿命"。</p>
-  </div>
-  <div class="summary-en">
-    <strong>原文摘要：</strong> Studies now show how mitochondrial signaling influences inflammation in senescence, how microbiota–brain interactions shape aging trajectories, and how AI-driven senolytic discovery can redefine longevity strategies. The shift from lifespan extension to healthspan optimization is accelerating.
-  </div>
-  <a class="readmore" href="https://www.eurekalert.org/news-releases/1116021" target="_blank">阅读原文 →</a>
-</div>
 
-<!-- Article 4 -->
-<div class="article">
-  <div class="meta">
-    <span class="source">Targeting Longevity Congress</span>
-    <span>📰 2025-07-30</span>
-    <span><span class="tag">衰老图谱</span><span class="tag">大数据</span></span>
+  <!-- Article 5: PQQ vs NMN/NR -->
+  <div class="article">
+    <div class="article-header">
+      <h2>Ageing Research Reviews：PQQ 与 NMN/NR 抗衰老功效对比及联合应用前景</h2>
+      <div class="article-meta">
+        <span class="source">📰 药智新闻 / Ageing Research Reviews</span>
+        <span class="date">📅 2026-05月上旬</span>
+        <span class="tag tag-green">营养干预</span>
+        <span class="tag tag-purple">NMN</span>
+      </div>
+    </div>
+    <div class="article-body">
+      <span class="translation-label">中文摘要</span>
+      <p>国际权威衰老研究期刊《Ageing Research Reviews》发表了关于吡咯喹啉醌（PQQ）与烟酰胺单核苷酸（NMN）及烟酰胺核苷（NR）抗衰老功效的系统性综述。该综述全面比较了这三种热门抗衰老补充剂的分子机制、功效差异和潜在协同作用。NMN/NR 主要通过提升 NAD⁺（烟酰胺腺嘌呤二核苷酸）水平来激活 sirtuins 长寿蛋白家族，改善线粒体功能和 DNA 修复能力；而 PQQ 则通过其卓越的氧化还原能力促进线粒体生物合成，保护神经细胞免受氧化损伤。研究指出，两种途径具有互补性——NMN/NR 提升细胞能量货币 NAD⁺，PQQ 则促进"能量工厂"线粒体本身的数量和效率。综述提出了二者联合应用的可行性分析，认为组合疗法可能比单独使用任何一种更为有效，为开发下一代抗衰老营养干预策略提供了重要的科学依据。</p>
+      <p class="en-original">🔤 Ageing Research Reviews publishes comparative study on PQQ vs NMN/NR anti-aging efficacy — Analyzing potential synergistic benefits of combined application for more effective anti-aging interventions.</p>
+      <a class="article-link" href="https://news.yaozh.com/archive/47977.html" target="_blank">🔗 查看原文</a>
+    </div>
   </div>
-  <h2><a href="https://targeting-longevity.com/news/breakthrough-scientists-map-human-aging-across-50-years/" target="_blank">突破：科学家绘制50年人类衰老全景图谱</a></h2>
-  <div class="summary">
-    <p>科学家成功绘制了跨越50年的人类衰老全景图谱，这是迄今为止最全面的人类衰老分子图谱。该研究追踪了数千名参与者从成年早期到老年（30-80岁）的分子变化，包括转录组、蛋白质组、代谢组和表观基因组的动态演变。研究发现，衰老并非线性过程，而是在44岁和60岁左右出现两次剧烈的分子"浪潮"（wave-like changes）。这一发现解释了为什么某些年龄相关疾病（如心血管疾病、神经退行性疾病）往往在特定年龄段集中爆发。该图谱为开发精准抗衰老干预措施提供了关键参考——治疗窗口期可能就在这些分子浪潮之前。</p>
-  </div>
-  <div class="summary-en">
-    <strong>原文摘要：</strong> Scientists have created the most comprehensive map of human aging across 50 years, tracking molecular changes in transcriptome, proteome, metabolome, and epigenome. Two dramatic waves of aging at ~44 and ~60 years were discovered, explaining age-related disease clustering and revealing intervention windows.
-  </div>
-  <a class="readmore" href="https://targeting-longevity.com/news/breakthrough-scientists-map-human-aging-across-50-years/" target="_blank">阅读原文 →</a>
-</div>
-
-<!-- Article 5 -->
-<div class="article">
-  <div class="meta">
-    <span class="source">CMS · Centers for Medicare &amp; Medicaid Services</span>
-    <span>📰 2026-05-12</span>
-    <span><span class="tag">GLP-1</span><span class="tag">Medicare</span><span class="tag">政策</span></span>
-  </div>
-  <h2><a href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge" target="_blank">Medicare GLP-1 桥梁计划：减肥药纳入医保新时代</a></h2>
-  <div class="summary">
-    <p>美国医疗保险和医疗补助服务中心（CMS）宣布，自2026年7月1日起，Wegovy、Zepbound 等 GLP-1 类减肥药物的特定制剂将纳入 Medicare Part D 覆盖范围。这项"GLP-1桥梁计划"是联邦医保在抗肥胖药物覆盖方面的重大政策转向。此前，Medicare 禁止覆盖用于减肥的药物，但近年研究显示 GLP-1 受体激动剂不仅对减重有效，还能显著降低心血管事件风险、改善代谢健康。此外，诺和诺德在2025年12月获得了每日口服 Wegovy 片剂的 FDA 批准，这是首个口服 GLP-1 减肥药，标志着从注射到口服的重大转变，将大幅提升患者依从性。</p>
-  </div>
-  <div class="summary-en">
-    <strong>原文摘要：</strong> Beginning July 1, 2026, formulations of Wegovy and Zepbound will be available under Medicare Part D. The first once-daily oral tablet of Wegovy (FDA-approved Dec 2025) marks a major shift from injection to oral GLP-1 therapy, improving accessibility for obesity treatment.
-  </div>
-  <a class="readmore" href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge" target="_blank">阅读原文 →</a>
-</div>
-
-<footer>
-  <p>🧬 健康长寿科研简报 · 旺财Jarvis 自动生成</p>
-  <p>数据来源：SerpAPI · Google News · Nature · Science · Cell · CMS</p>
-  <p>📅 2026-05-29 07:00 CST</p>
-</footer>
 
 </div>
+
+<div class="footer">
+  <p>📡 数据来源：SerpAPI 多源搜索 · 自动生成于 2026-05-30 07:00 CST</p>
+  <p>🤖 由 旺财Jarvis 科研监控系统自动采集生成</p>
+</div>
+
 </body>
 </html>
