@@ -569,6 +569,12 @@
       }
     },
     {
+      "id": "tag:4A7BB5",
+      "type": "Tag",
+      "label": "#4A7BB5",
+      "properties": {}
+    },
+    {
       "id": "doc:USER.md",
       "type": "Document",
       "label": "USER.md",
@@ -6505,6 +6511,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-05-31.md",
+      "type": "Document",
+      "label": "2026-05-31.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-05-31.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-05-30.md",
       "type": "Document",
       "label": "2026-05-30.md",
@@ -6513,11 +6527,27 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-05-31.md",
+      "type": "Document",
+      "label": "2026-05-31.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-05-31.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-05-30.md",
       "type": "Document",
       "label": "2026-05-30.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-05-31.md",
+      "type": "Document",
+      "label": "2026-05-31.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-05-31.md"
       }
     },
     {
@@ -8376,6 +8406,11 @@
       "source": "doc:MEMORY.md",
       "target": "concept:报错_ETIMEDOUT",
       "relation": "mentions"
+    },
+    {
+      "source": "doc:DREAMS.md",
+      "target": "tag:4A7BB5",
+      "relation": "has_tag"
     },
     {
       "source": "doc:MASCOT.md",
