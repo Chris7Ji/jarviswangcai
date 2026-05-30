@@ -915,6 +915,14 @@
       }
     },
     {
+      "id": "doc:memory/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "memory/2026-05-30.md"
+      }
+    },
+    {
       "id": "doc:config/huawei_email_config.md",
       "type": "Document",
       "label": "huawei_email_config.md",
