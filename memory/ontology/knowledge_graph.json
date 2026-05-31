@@ -5241,6 +5241,62 @@
       }
     },
     {
+      "id": "doc:backup/2026-06/SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "backup/2026-06/SESSION-STATE.md"
+      }
+    },
+    {
+      "id": "doc:backup/2026-06/IDENTITY.md",
+      "type": "Document",
+      "label": "IDENTITY.md",
+      "properties": {
+        "path": "backup/2026-06/IDENTITY.md"
+      }
+    },
+    {
+      "id": "doc:backup/2026-06/HEARTBEAT.md",
+      "type": "Document",
+      "label": "HEARTBEAT.md",
+      "properties": {
+        "path": "backup/2026-06/HEARTBEAT.md"
+      }
+    },
+    {
+      "id": "doc:backup/2026-06/USER.md",
+      "type": "Document",
+      "label": "USER.md",
+      "properties": {
+        "path": "backup/2026-06/USER.md"
+      }
+    },
+    {
+      "id": "doc:backup/2026-06/SOUL.md",
+      "type": "Document",
+      "label": "SOUL.md",
+      "properties": {
+        "path": "backup/2026-06/SOUL.md"
+      }
+    },
+    {
+      "id": "doc:backup/2026-06/AGENTS.md",
+      "type": "Document",
+      "label": "AGENTS.md",
+      "properties": {
+        "path": "backup/2026-06/AGENTS.md"
+      }
+    },
+    {
+      "id": "doc:backup/2026-06/TOOLS.md",
+      "type": "Document",
+      "label": "TOOLS.md",
+      "properties": {
+        "path": "backup/2026-06/TOOLS.md"
+      }
+    },
+    {
       "id": "doc:notes/areas/recurring-patterns.md",
       "type": "Document",
       "label": "recurring-patterns.md",
@@ -6543,6 +6599,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-01.md",
+      "type": "Document",
+      "label": "2026-06-01.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-01.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-05-31.md",
       "type": "Document",
       "label": "2026-05-31.md",
@@ -6559,6 +6623,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-01.md",
+      "type": "Document",
+      "label": "2026-06-01.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-01.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-05-31.md",
       "type": "Document",
       "label": "2026-05-31.md",
@@ -6572,6 +6644,14 @@
       "label": "2026-05-30.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-01.md",
+      "type": "Document",
+      "label": "2026-06-01.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-01.md"
       }
     },
     {
