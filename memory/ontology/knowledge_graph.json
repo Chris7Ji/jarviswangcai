@@ -2621,60 +2621,6 @@
       }
     },
     {
-      "id": "concept:私有知识星图自动构建",
-      "type": "Concept",
-      "label": "私有知识星图自动构建",
-      "properties": {}
-    },
-    {
-      "id": "concept:Obsidian 知识库",
-      "type": "Concept",
-      "label": "Obsidian 知识库",
-      "properties": {}
-    },
-    {
-      "id": "concept:概念关联",
-      "type": "Concept",
-      "label": "概念关联",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识网络",
-      "type": "Concept",
-      "label": "知识网络",
-      "properties": {}
-    },
-    {
-      "id": "concept:关系密度",
-      "type": "Concept",
-      "label": "关系密度",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识发现",
-      "type": "Concept",
-      "label": "知识发现",
-      "properties": {}
-    },
-    {
-      "id": "concept:本体图谱",
-      "type": "Concept",
-      "label": "本体图谱",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识检索",
-      "type": "Concept",
-      "label": "知识检索",
-      "properties": {}
-    },
-    {
-      "id": "concept:AI分析",
-      "type": "Concept",
-      "label": "AI分析",
-      "properties": {}
-    },
-    {
       "id": "doc:.learnings/QUARTERLY_REVIEW.md",
       "type": "Document",
       "label": "QUARTERLY_REVIEW.md",
@@ -4391,6 +4337,60 @@
       "properties": {
         "path": "jiaviswangcai.ai/.learnings/LEARNINGS.md"
       }
+    },
+    {
+      "id": "concept:私有知识星图自动构建",
+      "type": "Concept",
+      "label": "私有知识星图自动构建",
+      "properties": {}
+    },
+    {
+      "id": "concept:Obsidian 知识库",
+      "type": "Concept",
+      "label": "Obsidian 知识库",
+      "properties": {}
+    },
+    {
+      "id": "concept:概念关联",
+      "type": "Concept",
+      "label": "概念关联",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识网络",
+      "type": "Concept",
+      "label": "知识网络",
+      "properties": {}
+    },
+    {
+      "id": "concept:关系密度",
+      "type": "Concept",
+      "label": "关系密度",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识发现",
+      "type": "Concept",
+      "label": "知识发现",
+      "properties": {}
+    },
+    {
+      "id": "concept:本体图谱",
+      "type": "Concept",
+      "label": "本体图谱",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识检索",
+      "type": "Concept",
+      "label": "知识检索",
+      "properties": {}
+    },
+    {
+      "id": "concept:AI分析",
+      "type": "Concept",
+      "label": "AI分析",
+      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/.learnings/QUARTERLY_REVIEW.md",
@@ -6166,6 +6166,22 @@
       "label": "VIDEO_GENERATOR_GUIDE.md",
       "properties": {
         "path": "archive/monthly/2026-04/VIDEO_GENERATOR_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "type": "Document",
+      "label": "LEARNINGS_2026-06-01.md",
+      "properties": {
+        "path": "archive/monthly/2026-06/LEARNINGS_2026-06-01.md"
+      }
+    },
+    {
+      "id": "doc:archive/monthly/2026-06/ERRORS_2026-06-01.md",
+      "type": "Document",
+      "label": "ERRORS_2026-06-01.md",
+      "properties": {
+        "path": "archive/monthly/2026-06/ERRORS_2026-06-01.md"
       }
     },
     {
@@ -9370,86 +9386,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:概念关联",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识网络",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:关系密度",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识发现",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识检索",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识检索",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:AI分析",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:jiaviswangcai.ai/CSS_GUIDELINES.md",
       "target": "tag:FFFFFF",
       "relation": "has_tag"
@@ -10350,6 +10286,86 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:AI分析",
+      "relation": "mentions"
+    },
+    {
       "source": "doc:memory/archive/2026-04-20-session-summary.md",
       "target": "concept:reply_to_current",
       "relation": "mentions"
@@ -10392,86 +10408,6 @@
     {
       "source": "doc:memory/archive/2026-03-31-chinese-output.md",
       "target": "concept:概念",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:概念关联",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识网络",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:关系密度",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识发现",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:Obsidian 知识库",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识检索",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:私有知识星图自动构建",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:本体图谱",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:知识检索",
-      "relation": "mentions"
-    },
-    {
-      "source": "doc:.learnings/LEARNINGS.md",
-      "target": "concept:AI分析",
       "relation": "mentions"
     },
     {
