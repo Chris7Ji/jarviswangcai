@@ -6695,6 +6695,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-02.md",
+      "type": "Document",
+      "label": "2026-06-02.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-02.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-01.md",
       "type": "Document",
       "label": "2026-06-01.md",
@@ -6719,6 +6727,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-02.md",
+      "type": "Document",
+      "label": "2026-06-02.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-02.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-01.md",
       "type": "Document",
       "label": "2026-06-01.md",
@@ -6740,6 +6756,14 @@
       "label": "2026-05-30.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-02.md",
+      "type": "Document",
+      "label": "2026-06-02.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-02.md"
       }
     },
     {
@@ -10409,6 +10433,11 @@
       "source": "doc:memory/archive/2026-03-31-chinese-output.md",
       "target": "concept:概念",
       "relation": "mentions"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-02.md",
+      "target": "tag:4A7BB5",
+      "relation": "has_tag"
     },
     {
       "source": "doc:jiaviswangcai.ai/CSS_GUIDELINES.md",
