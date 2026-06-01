@@ -3,202 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>健康长寿科研简报 — 2026年6月1日</title>
+<title>健康长寿科研简报 - 2026年6月2日</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
-.container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
-header { text-align: center; padding: 40px 0 30px; border-bottom: 3px solid #e63946; margin-bottom: 35px; }
-header h1 { font-size: 28px; color: #1a1a2e; margin-bottom: 8px; }
-header h1 span { color: #e63946; }
-header .date { font-size: 14px; color: #6c757d; }
-header .subtitle { font-size: 16px; color: #457b9d; margin-top: 6px; }
-.news-card { background: #fff; border-radius: 14px; padding: 28px 30px; margin-bottom: 25px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 5px solid #1d3557; }
-.news-card:nth-child(2) { border-left-color: #e63946; }
-.news-card:nth-child(3) { border-left-color: #457b9d; }
-.news-card:nth-child(4) { border-left-color: #2a9d8f; }
-.news-card:nth-child(5) { border-left-color: #e9c46a; }
-.news-card:nth-child(6) { border-left-color: #f4a261; }
-.card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
-.badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
-.badge-hot { background: #e63946; color: #fff; }
-.badge-nature { background: #1d3557; color: #fff; }
-.badge-china { background: #e63946; color: #fff; }
-.badge-glp { background: #2a9d8f; color: #fff; }
-.badge-clinical { background: #457b9d; color: #fff; }
-.badge-science { background: #e9c46a; color: #1a1a2e; }
-.card-header h2 { font-size: 20px; color: #1a1a2e; flex: 1; line-height: 1.4; }
-.meta { font-size: 13px; color: #888; margin-bottom: 14px; }
-.meta span { margin-right: 18px; }
-.meta .source { font-weight: 600; color: #457b9d; }
-.summary { font-size: 15px; color: #333; text-align: justify; }
-.summary p { margin-bottom: 10px; }
-.summary p:last-child { margin-bottom: 0; }
-.summary strong { color: #1d3557; }
-.summary .highlight { background: #fff3cd; padding: 1px 4px; border-radius: 3px; }
-.summary .cn-highlight { background: #ffe0e0; padding: 1px 4px; border-radius: 3px; }
-.link { margin-top: 12px; }
-.link a { font-size: 13px; color: #457b9d; text-decoration: none; }
-.link a:hover { text-decoration: underline; }
-footer { text-align: center; padding: 40px 0 20px; border-top: 1px solid #e0e0e0; margin-top: 35px; font-size: 13px; color: #999; }
-.stats { display: flex; justify-content: center; gap: 40px; margin: 20px 0; }
-.stat-item { text-align: center; }
-.stat-num { font-size: 28px; font-weight: 700; color: #e63946; }
-.stat-label { font-size: 13px; color: #666; }
+body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f0f4f8; color: #1a202c; line-height: 1.8; }
+.container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+.header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 40px 30px; border-radius: 16px; margin-bottom: 32px; text-align: center; }
+.header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+.header .date { font-size: 15px; opacity: 0.85; }
+.header .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 14px; border-radius: 20px; font-size: 13px; margin-top: 12px; }
+.card { background: #fff; border-radius: 14px; padding: 28px 30px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #667eea; transition: transform 0.15s; }
+.card:hover { transform: translateX(4px); }
+.card .num { display: inline-block; width: 28px; height: 28px; background: #667eea; color: #fff; border-radius: 50%; text-align: center; line-height: 28px; font-size: 14px; font-weight: 700; margin-right: 10px; vertical-align: middle; }
+.card .source { display: inline-block; font-size: 13px; color: #667eea; background: #eef2ff; padding: 2px 10px; border-radius: 4px; }
+.card .date-tag { font-size: 13px; color: #a0aec0; margin-left: 8px; }
+.card h2 { font-size: 20px; font-weight: 600; margin: 12px 0 10px; line-height: 1.5; }
+.card h2 a { color: #2d3748; text-decoration: none; }
+.card h2 a:hover { color: #667eea; }
+.card .abstract { color: #4a5568; font-size: 15px; margin-top: 8px; text-align: justify; }
+.card .link { display: inline-block; margin-top: 14px; font-size: 13px; color: #667eea; text-decoration: none; }
+.card .link:hover { text-decoration: underline; }
+.footer { text-align: center; color: #a0aec0; font-size: 12px; padding: 20px; }
+.tag-nature { border-left-color: #2d3748; }
+.tag-nature .source { color: #2d3748; background: #edf2f7; }
+.tag-nature .num { background: #2d3748; }
+.tag-cell { border-left-color: #e53e3e; }
+.tag-cell .source { color: #e53e3e; background: #fff5f5; }
+.tag-cell .num { background: #e53e3e; }
+.tag-fda { border-left-color: #38a169; }
+.tag-fda .source { color: #38a169; background: #f0fff4; }
+.tag-fda .num { background: #38a169; }
+.tag-nih { border-left-color: #d69e2e; }
+.tag-nih .source { color: #d69e2e; background: #fffff0; }
+.tag-nih .num { background: #d69e2e; }
 @media (max-width: 600px) {
-  .container { padding: 15px 12px; }
-  .news-card { padding: 20px 16px; }
-  .card-header h2 { font-size: 17px; }
+  .container { padding: 16px 12px; }
+  .header { padding: 28px 20px; }
+  .header h1 { font-size: 22px; }
+  .card { padding: 20px; }
+  .card h2 { font-size: 17px; }
 }
 </style>
 </head>
 <body>
 <div class="container">
 
-<header>
-  <h1>🧬 <span>健康长寿</span>科研简报</h1>
-  <div class="subtitle">Longevity &amp; Healthspan Research Briefing</div>
-  <div class="date">📅 2026年6月1日（星期一）</div>
-</header>
-
-<div class="stats">
-  <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">本期精研</div></div>
-  <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">中国成果</div></div>
-  <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">临床进展</div></div>
+<div class="header">
+  <h1>🧬 健康长寿科研简报</h1>
+  <div class="date">2026年6月2日 星期二 · 第22期</div>
+  <div class="badge">🔬 本期收录 5 项最新科研突破</div>
 </div>
 
-<!-- ========== 1 ========== -->
-<div class="news-card">
-  <div class="card-header">
-    <span class="badge badge-china">🏆 中国科学十大进展</span>
-    <h2>炎性衰老机制解析与多维靶向干预</h2>
+<!-- 1. CAS Cell -->
+<div class="card tag-cell">
+  <div>
+    <span class="num">1</span>
+    <span class="source">📕 Cell</span>
+    <span class="date-tag">2026年5月</span>
   </div>
-  <div class="meta">
-    <span class="source">🔬 中国科学院动物研究所</span>
-    <span>📆 2026-03-25</span>
-    <span>🔗 中国科学十大进展</span>
+  <h2><a href="https://www.cas.cn/syky/202605/t20260511_5109135.shtml" target="_blank">中科院团队构建衰老数字人体全息框架，六大器官独立衰老时钟问世</a></h2>
+  <div class="abstract">
+    <p>中国科学院北京基因组研究所联合动物研究所等单位，在《细胞》（Cell）上发表重磅研究，构建了全球首个衰老数字人体全息框架，实现多维度衰老数据向个体化数字孪生模型映射。研究团队采集了240余项生理指标，搭建了多模态、多层次、可解释的衰老时钟体系，将生物学年龄预测误差降至3.87年。</p>
+    <p style="margin-top:8px;">该研究同时构建了脑、肝脏、肺、肌肉、血管、皮肤六大器官的独立衰老时钟，证实器官衰老存在显著"异步性"——肝脏的衰老拐点早于大脑。研究识别出40-50岁和60-70岁两个非线性加速衰老窗口，其中60-70岁阶段伴随凝血通路显著激活。关键发现是：衰老肝脏来源的凝血因子（如F13B）可经血液循环诱发远端器官衰老，小鼠实验证实注射F13B即可加速多组织衰老。这一发现将凝血因子确立为驱动血管及多器官衰老的核心分子。</p>
+    <p style="margin-top:8px;">该研究标志着衰老科学从描述性向系统性、因果性的范式转变，血液检测或成为评估生物学年龄的可行路径。研究团队正持续迭代模型，致力于构建动态健康孪生引擎。</p>
   </div>
-  <div class="summary">
-    <p>该成果入选2025年度"中国科学十大进展"（由2026中关村论坛年会发布）。研究团队由中国科学院动物研究所刘光慧领衔，联合首都医科大学宣武医院、中科院北京基因组研究所、四川大学华西医院等单位完成。</p>
-    <p>研究<strong>绘制了跨越人类50年生命周期的衰老轨迹与特征</strong>，首次系统揭示<strong>淀粉样蛋白积聚及炎症应激是器官衰老的核心驱动机制</strong>。在此基础上，团队发现<strong>肾脏来源的内源代谢物甜菜碱</strong>可作为促炎激酶TBK1的天然抑制剂，在分子层面模拟运动的抗炎效应，为延缓衰老提供了具有明确靶点的候选分子。</p>
-    <p>针对干细胞耗竭这一核心问题，研究基于合成生物学构建了<strong>长寿基因FOXO3增强的工程化干细胞</strong>，证实其在老年灵长类动物模型中可显著改善多组织衰老指标、抑制慢性炎症，并在认知与生殖功能上展现出<strong>逆转衰老相关衰退</strong>的潜能。该工作实现了从机制解析、靶点发现到干预验证的完整闭环，为衰老相关疾病的精准干预开辟了新范式。</p>
-  </div>
-  <div class="link"><a href="http://ioz.cas.cn/gb2018/xwdt/yw/202603/t20260326_8175644.html" target="_blank">📎 查看原文 &rarr;</a></div>
+  <a class="link" href="https://www.cas.cn/syky/202605/t20260511_5109135.shtml" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- ========== 2 ========== -->
-<div class="news-card">
-  <div class="card-header">
-    <span class="badge badge-nature">⚡ 国际前沿</span>
-    <h2>哈佛科学家：衰老即将可逆，人类临床试验即将启动</h2>
+<!-- 2. Nature Gene Expression -->
+<div class="card tag-nature">
+  <div>
+    <span class="num">2</span>
+    <span class="source">🌿 Nature</span>
+    <span class="date-tag">2026年5月27日</span>
   </div>
-  <div class="meta">
-    <span class="source">🌐 World Governments Summit (迪拜)</span>
-    <span>📆 2026</span>
-    <span>🎤 Prof. David Sinclair, 哈佛医学院</span>
+  <h2><a href="https://www.nature.com/articles/d41586-026-01326-w" target="_blank">基因表达模式可预测死亡风险和生理年龄</a></h2>
+  <div class="abstract">
+    <p>Nature 发表重磅研究：大规模RNA转录本分析（涵盖啮齿类、猴子和人类）揭示，基因表达模式可用于估算死亡风险和生理年龄。研究团队通过分析海量转录组数据，识别出一组衰老核心标志物，这些标志物在不同物种间高度保守。</p>
+    <p style="margin-top:8px;">该方法通过血液RNA表达谱即可快速评估个体生物学年龄，相较于传统的表观遗传时钟，RNA时钟具有更高的时间分辨率和动态响应能力——能够更敏锐地捕捉到短期生活方式干预（如饮食、运动）对衰老的影响。这一发现不仅提供了新的衰老评估工具，更将加速抗衰老干预措施的临床开发进程，为精准衰老管理奠定分子基础。</p>
   </div>
-  <div class="summary">
-    <p>在迪拜世界政府峰会（WGS 2026）"活得更久更好"专场中，哈佛医学院遗传学教授David Sinclair发表了震撼演讲。他指出，人类正处于自<strong>清洁水源和疫苗发现以来最重大的健康变革</strong>的前夜。</p>
-    <p>Sinclair强调，针对癌症等个别疾病的治疗只能带来有限获益——<strong>消除所有癌症仅能延长平均寿命2.5年</strong>，因为其他疾病仍会发展。他主张将衰老本身作为疾病来治疗。</p>
-    <p>在重大科学里程碑上，Sinclair透露其团队<strong>正在准备启动旨在逆转衰老过程的人类临床试验</strong>，将测试<strong>表观遗传重编程疗法</strong>——通过将细胞恢复到更年轻的状态来逆转衰老。他表示："我们即将首次在历史上测试<strong>能否逆转衰老并治愈疾病</strong>。"他将衰老称为"逐渐可被干预、甚至被治疗的狀態"，而非不可避免的自然过程。</p>
-    <p>Sinclair预测，未来10到20年内，现代医疗体系可能因抗衰疗法的普及而显得过时。他提出的核心理念是：<strong>从"延长寿命"转向"延长健康寿命</strong>，即在生命末期压缩疾病时间。</p>
-  </div>
-  <div class="link"><a href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" target="_blank">📎 查看原文 &rarr;</a></div>
+  <a class="link" href="https://www.nature.com/articles/d41586-026-01326-w" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- ========== 3 ========== -->
-<div class="news-card">
-  <div class="card-header">
-    <span class="badge badge-clinical">💊 FDA里程碑</span>
-    <h2>南京瑞初RC017获FDA批准临床：中国抗衰老创新药首次登陆美国</h2>
+<!-- 3. Nature Sleep -->
+<div class="card tag-nature">
+  <div>
+    <span class="num">3</span>
+    <span class="source">🌿 Nature</span>
+    <span class="date-tag">2026年5月20日</span>
   </div>
-  <div class="meta">
-    <span class="source">📰 钛媒体 · 深观商业</span>
-    <span>📆 2026-04-02</span>
+  <h2><a href="https://www.nature.com/articles/d41586-026-01564-y" target="_blank">睡眠过多或过少均加速全身器官衰老</a></h2>
+  <div class="abstract">
+    <p>Nature 发表多模态分析研究，揭示睡眠时长与生物学衰老之间存在显著的"U型"关联——睡眠不足与睡眠过多均加速全身各器官系统的生物学老化。研究通过多维度数据（包括影像学、血液标志物、表观遗传学等）全面评估了睡眠行为对衰老速率的影响。</p>
+    <p style="margin-top:8px;">研究发现，极端睡眠时长对衰老的影响具有器官差异性，其中心血管系统和代谢系统的受影响程度最为显著。此外，该研究首次揭示生物学衰老在极端睡眠与晚年抑郁症之间发挥关键的介导作用——即睡眠问题通过加速衰老进而增加抑郁风险。这一发现为"睡眠是健康长寿的基石"提供了坚实的科学证据，也强调了保持规律充足睡眠的重要性。</p>
   </div>
-  <div class="summary">
-    <p>2026年3月，南京瑞初医药自主研发的靶向衰老机制创新药<strong>RC017</strong>正式获得美国FDA批准开展临床试验。这是<strong>FDA历史上首次批准中国抗衰老创新药的临床申请</strong>，标志着中国在抗衰老药物研发领域取得了里程碑式突破。</p>
-    <p>与此同时，全球资本正在疯狂押注抗衰赛道：</p>
-    <p>
-      • <strong>扎克伯格</strong>通过CZI承诺10年捐赠30亿美元，成立BioHub生物中心进行细胞图谱绘制，后续追加最高10亿美元<br>
-      • <strong>贝索斯</strong>投资Altos Labs（细胞重编程方向），挖角诺奖得主山中伸弥<br>
-      • <strong>山姆·奥特曼</strong>个人投资1.8亿美元于Retro生物科技公司<br>
-      • <strong>布莱恩·阿姆斯特朗</strong>（Coinbase CEO）联合创立NewLimit，融资超2.75亿美元
-    </p>
-    <p>国内方面，李超人、潘石屹等也纷纷布局细胞存储、干细胞研发、代谢调控等全产业链。中科创星、太平医疗健康基金等机构领投了菁童生命、赛隽生物等多家抗衰创新药企业。</p>
-    <p>专家指出，尽管技术瓶颈和研发困境仍然存在，但<strong>衰老作为可干预靶点已成共识</strong>，千亿级市场正在加速形成。</p>
-  </div>
-  <div class="link"><a href="https://www.tmtpost.com/7939654.html" target="_blank">📎 查看原文 &rarr;</a></div>
+  <a class="link" href="https://www.nature.com/articles/d41586-026-01564-y" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- ========== 4 ========== -->
-<div class="news-card">
-  <div class="card-header">
-    <span class="badge badge-science">🇺🇸 政府投入</span>
-    <h2>美国ARPA-H投入1.44亿美元启动PROSPR项目：验证衰老生物标志物</h2>
+<!-- 4. FDA Partial Reprogramming -->
+<div class="card tag-fda">
+  <div>
+    <span class="num">4</span>
+    <span class="source">🧪 FDA / Fight Aging!</span>
+    <span class="date-tag">2026年2月4日</span>
   </div>
-  <div class="meta">
-    <span class="source">📰 科学网（新闻）</span>
-    <span>📆 2026-04</span>
+  <h2><a href="https://www.fightaging.org/archives/2026/02/the-first-clinical-trial-of-partial-reprogramming-will-start-soon/" target="_blank">FDA批准全球首个部分表观遗传重编程人体临床试验</a></h2>
+  <div class="abstract">
+    <p>美国FDA正式批准了全球首个部分表观遗传重编程（Partial Epigenetic Reprogramming）人体临床试验，标志着抗衰老研究从实验室走向临床的历史性转折。该疗法基于Yamanaka因子（Oct4、Sox2、Klf4、c-Myc）的改良版本，使用缩减后、安全性更高的重编程因子组合，旨在从表观遗传根源上逆转与年龄相关的多种退行性疾病。</p>
+    <p style="margin-top:8px;">部分重编程的核心原理是：短暂表达重编程因子可重置细胞表观基因组至更年轻状态，但又不会完全去分化形成肿瘤。动物实验已证明，该方法可改善老年小鼠的认知功能、肌肉再生能力和代谢健康，且未观察到致瘤风险。此次人体试验将首先聚焦于年龄相关的退行性疾病，若成功将为"逆转衰老"从科幻走向现实奠定里程碑。</p>
   </div>
-  <div class="summary">
-    <p>美国高级卫生研究计划署（ARPA-H）宣布投入<strong>1.44亿美元</strong>启动PROSPR项目（验证衰老生物标志物），旨在找到衡量"生物年龄"的可靠标准。</p>
-    <p>科学家已提出许多候选指标，包括：与年龄相关的<strong>DNA甲基化模式</strong>（表观遗传时钟）、<strong>步行速度</strong>、甚至通过照片记录的<strong>面部皱纹积累情况</strong>。ARPA-H的目标之一是验证一种能够客观衡量衰老速度的生物标志物，从而为抗衰老临床试验提供标准化的评估工具。</p>
-    <p><strong>核心意义</strong>：没有可靠的衰老生物标志物，就无法证明一种药物是否真的能延缓人类衰老。PROSPR项目的推进将极大加速抗衰老药物的临床验证流程，被视为抗衰老领域基础设施级别的突破。</p>
-    <p>这一投入反映了美国政府已将<strong>延缓衰老正式列为国家级科研优先方向</strong>，为未来抗衰老药物的审批和标准化评估铺平道路。</p>
-  </div>
-  <div class="link"><a href="https://news.sciencenet.cn/sbhtmlnews/2026/4/389189.shtm" target="_blank">📎 查看原文 &rarr;</a></div>
+  <a class="link" href="https://www.fightaging.org/archives/2026/02/the-first-clinical-trial-of-partial-reprogramming-will-start-soon/" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- ========== 5 ========== -->
-<div class="news-card">
-  <div class="card-header">
-    <span class="badge badge-glp">📊 代谢健康</span>
-    <h2>GLP-1减肥药效果不受年龄/种族影响，但美国老年人停药率惊人</h2>
+<!-- 5. NIH GLP-1 -->
+<div class="card tag-nih">
+  <div>
+    <span class="num">5</span>
+    <span class="source">🏛️ NIH / Nature Biotechnology</span>
+    <span class="date-tag">2026年5月22日</span>
   </div>
-  <div class="meta">
-    <span class="source">🏛️ Johns Hopkins / KFF Health News</span>
-    <span>📆 2026-01~04</span>
+  <h2><a href="https://www.nih.gov/news-events/news-releases/nih-researchers-identify-avenue-enhanced-glp-1-induced-weight-loss" target="_blank">NIH锁定GLP-1减重关键胞内信号通路；Nature探讨GLP-1能否成为首款"长寿药物"</a></h2>
+  <div class="abstract">
+    <p>美国国立卫生研究院（NIH）在小鼠研究中识别出GLP-1药物（如司美格鲁肽）减重效应的关键胞内信号传导通路，为开发更高效、副作用更低的下一代减肥药物提供了分子靶点。与此同时，Nature Biotechnology 发表深度评论文章《Are GLP-1s the first longevity drugs?》，系统探讨GLP-1受体激动剂在延缓衰老方面的潜力。</p>
+    <p style="margin-top:8px;">GLP-1药物正在从单纯的减重药物向"抗衰老多效药"演进：多项研究证实其可降低心血管事件风险、改善认知功能、减少炎症、甚至延缓生物衰老。高度期待的evoke和evoke+ III期试验正在评估司美格鲁肽在早期症状性阿尔茨海默病中的疗效。Nature评论认为，随着制药巨头纷纷押注衰老相关疾病赛道，GLP-1可能成为首类被正式认证的"长寿药物"，开创疾病预防的新纪元。</p>
   </div>
-  <div class="summary">
-    <p><strong>【积极面】</strong> 约翰斯·霍普金斯大学公共卫生学院发布大规模分析：GLP-1受体激动剂（如司美格鲁肽/替西帕肽类）的减肥效果在不同年龄、种族和初始体重的患者中保持<strong>持续一致</strong>。女性平均减重约<strong>11%</strong>，男性约<strong>7%</strong>，且对65岁以上人群同样安全有效。</p>
-    <p><strong>【警示面】</strong> 然而KFF健康新闻的调查揭示了一个严峻的现实：<strong>约一半的患者在一年内停用GLP-1药物</strong>，其中老年人停药比例尤其高。主要原因包括：</p>
-    <p>
-      ① <strong>费用高昂</strong>：即使在Medicare覆盖下，患者仍需支付较高自费部分<br>
-      ② <strong>副作用</strong>：胃肠道不适（恶心、呕吐、腹泻）是常见停药原因<br>
-      ③ <strong>供应波动</strong>：2026年市场增长虽缓解了短缺，但部分地区仍存在供应问题
-    </p>
-    <p><strong>最新政策</strong>：自2026年7月1日起，美国Medicare将启动"GLP-1 Bridge"示范项目，为符合条件的老年人提供减重药物覆盖。同时，Wegovy新增了<strong>非酒精性脂肪性肝炎（NASH）</strong>适应症，GLP-1药物的用途正从减重扩展至更广泛的代谢疾病管理。</p>
-  </div>
-  <div class="link"><a href="https://kffhealthnews.org/aging/glp1-older-americans-quitting-weight-loss-drugs/" target="_blank">📎 查看原文 &rarr;</a></div>
+  <a class="link" href="https://www.nih.gov/news-events/news-releases/nih-researchers-identify-avenue-enhanced-glp-1-induced-weight-loss" target="_blank">阅读原文 →</a>
 </div>
 
-<!-- ========== Bonus ========== -->
-<div class="news-card" style="border-left-color:#6c63ff;">
-  <div class="card-header">
-    <span class="badge" style="background:#6c63ff;color:#fff;">📚 科研回顾</span>
-    <h2>2026年4月长寿研究回顾：表观遗传时钟与免疫衰老新发现</h2>
-  </div>
-  <div class="meta">
-    <span class="source">🧪 Summarized Science</span>
-    <span>📆 2026-04</span>
-  </div>
-  <div class="summary">
-    <p>据Summarized Science汇总的2026年4月长寿与衰老研究月度综述，以下发现值得关注：</p>
-    <p>• <strong>衰老细胞</strong>：在人类皮肤样本中检测到β-半乳糖苷酶（SA-β-Gal）标记物随年龄增长而积累，为体内衰老细胞的存在提供了直接证据</p>
-    <p>• <strong>心肺健康</strong>：中年期高水平心肺适能与更长健康寿命显著相关，高适能人群健康寿命延长约<strong>2%</strong>（Clare Meernik等）</p>
-    <p>• <strong>免疫系统</strong>：转录因子<strong>RUNX1</strong>被鉴定为T细胞衰老的"减速器"，有望成为延缓免疫衰老的治疗靶点（Ping等）</p>
-    <p>• <strong>基因框架</strong>：衰老遗传和体细胞权衡协变揭示了年龄和性别对寿命的特异性效应，为精准干预提供了遗传学基础</p>
-    <p>这些研究表明，衰老研究正在从单一通路向<strong>多维度整合分析</strong>演进，精准抗衰干预的前景越来越清晰。</p>
-  </div>
-  <div class="link"><a href="https://summarized.science/topics/longevity-aging/en/2026/april/" target="_blank">📎 查看原文 &rarr;</a></div>
+<div class="footer">
+  <p>📡 数据来源：Cell · Nature · Nature Aging · Nature Biotechnology · NIH · FDA</p>
+  <p>🤖 由旺财Jarvis 自动采集生成 · 2026-06-02</p>
 </div>
-
-<footer>
-  <p>🤖 旺财Jarvis · 健康长寿科研简报 · 自动生成于 2026-06-01 07:00 CST</p>
-  <p>数据来源：SerpAPI / EurekAlert / CAS / WGS / 钛媒体 / ScienceNet / JHU / KFF / Summarized Science</p>
-  <p style="margin-top:8px; font-size:12px; color:#bbb;">本简报由AI自动搜集整理，仅供参考，不构成医疗建议。</p>
-</footer>
 
 </div>
 </body>
