@@ -6529,6 +6529,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/ARCHIVE_LOG.md",
+      "type": "Document",
+      "label": "ARCHIVE_LOG.md",
+      "properties": {
+        "path": "memory/archive/ARCHIVE_LOG.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-03-20-ai-news-retry.md",
       "type": "Document",
       "label": "2026-03-20-ai-news-retry.md",
