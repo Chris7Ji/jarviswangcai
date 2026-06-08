@@ -913,14 +913,6 @@
       }
     },
     {
-      "id": "doc:memory/2026-05-04.md",
-      "type": "Document",
-      "label": "2026-05-04.md",
-      "properties": {
-        "path": "memory/2026-05-04.md"
-      }
-    },
-    {
       "id": "doc:memory/2026-05-30.md",
       "type": "Document",
       "label": "2026-05-30.md",
@@ -6660,6 +6652,14 @@
       "label": "2026-03-01.md",
       "properties": {
         "path": "memory/archive/2026-03-01.md"
+      }
+    },
+    {
+      "id": "doc:memory/archive/2026-05-04.md",
+      "type": "Document",
+      "label": "2026-05-04.md",
+      "properties": {
+        "path": "memory/archive/2026-05-04.md"
       }
     },
     {
