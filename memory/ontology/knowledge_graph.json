@@ -6783,6 +6783,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-10.md",
+      "type": "Document",
+      "label": "2026-06-10.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-10.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-05-31.md",
       "type": "Document",
       "label": "2026-05-31.md",
@@ -6868,6 +6876,14 @@
       "label": "2026-06-04.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-06-04.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-06-10.md",
+      "type": "Document",
+      "label": "2026-06-10.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-10.md"
       }
     },
     {
@@ -6969,6 +6985,14 @@
       "type": "Tag",
       "label": "#FF6B35",
       "properties": {}
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-10.md",
+      "type": "Document",
+      "label": "2026-06-10.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-10.md"
+      }
     },
     {
       "id": "doc:memory/dreaming/light/2026-05-31.md",
