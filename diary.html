@@ -167,5 +167,133 @@
     </footer>
 
     <script src="js/diary.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof allPosts === 'undefined') return;
+        
+        // 渲染日记列表
+        const postsContainer = document.getElementById('postsContainer');
+        const timelineList = document.getElementById('timelineList');
+        const loadMoreContainer = document.getElementById('loadMoreContainer');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        
+        if (!postsContainer) return;
+        
+        // 统计信息
+        const totalPostsEl = document.getElementById('totalPosts');
+        const consecutiveDaysEl = document.getElementById('consecutiveDays');
+        const totalWordsEl = document.getElementById('totalWords');
+        if (totalPostsEl) totalPostsEl.textContent = allPosts.length;
+        
+        // 计算总字数
+        let words = 0;
+        allPosts.forEach(p => { if (p.content) words += p.content.replace(/<[^>]*>/g, '').length; });
+        if (totalWordsEl) totalWordsEl.textContent = words.toLocaleString();
+        
+        // 连续天数（按日期排序）
+        if (consecutiveDaysEl && allPosts.length > 0) {
+            const dates = allPosts.map(p => p.date).sort().reverse();
+            let streak = 1;
+            for (let i = 1; i < dates.length; i++) {
+                const prev = new Date(dates[i-1]);
+                const curr = new Date(dates[i]);
+                const diff = (prev - curr) / (1000*60*60*24);
+                if (diff <= 1.5) streak++;
+                else break;
+            }
+            consecutiveDaysEl.textContent = streak;
+        }
+        
+        // 筛选功能
+        let currentFilter = 'all';
+        let currentPage = 1;
+        const perPage = 10;
+        
+        const filterBtns = document.querySelectorAll('.filter-tag');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                currentPage = 1;
+                renderPosts();
+            });
+        });
+        
+        function getFilteredPosts() {
+            if (currentFilter === 'all') return allPosts;
+            return allPosts.filter(p => p.category === currentFilter);
+        }
+        
+        function renderPosts() {
+            const filtered = getFilteredPosts();
+            const start = 0;
+            const end = currentPage * perPage;
+            const toShow = filtered.slice(start, end);
+            
+            postsContainer.innerHTML = toShow.map(post => `
+                <article class="diary-post" onclick="location.href='post.html?id=${post.id}'" style="cursor:pointer;">
+                    <div class="post-header">
+                        <div class="post-date-badge">
+                            <span class="day">${post.date.substring(8)}</span>
+                            <span class="month-year">${post.date.substring(0,7)}</span>
+                        </div>
+                        <div class="post-meta">
+                            <div class="post-category">${post.categoryLabel || ''}</div>
+                            <h3 class="post-title">${post.title}</h3>
+                        </div>
+                    </div>
+                    <div class="post-body">
+                        <p class="post-excerpt">${post.excerpt || ''}</p>
+                        <div class="post-tags">
+                            ${(post.tags || []).slice(0,5).map(t => `<span class="post-tag">#${t}</span>`).join('')}
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+            
+            // 加载更多按钮
+            if (loadMoreContainer && loadMoreBtn) {
+                if (end >= filtered.length) {
+                    loadMoreContainer.style.display = 'none';
+                } else {
+                    loadMoreContainer.style.display = 'block';
+                }
+            }
+        }
+        
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', function() {
+                currentPage++;
+                renderPosts();
+            });
+        }
+        
+        // 渲染时间线
+        function renderTimeline() {
+            if (!timelineList) return;
+            const months = {};
+            allPosts.forEach(p => {
+                const ym = p.date.substring(0, 7);
+                if (!months[ym]) months[ym] = [];
+                months[ym].push(p);
+            });
+            timelineList.innerHTML = Object.entries(months).reverse().map(([ym, posts]) => `
+                <div class="timeline-month">
+                    <h4 class="month-label" style="font-size:0.9rem;color:#2D7A85;font-weight:700;margin:12px 0 6px;">${ym.replace('-', '年')}月</h4>
+                    <ul style="list-style:none;padding:0;margin:0;">
+                        ${posts.reverse().map(p => `
+                            <li style="margin-bottom:4px;"><a href="post.html?id=${p.id}" style="color:#4A5568;font-size:0.85rem;text-decoration:none;">${p.date.substring(8)}日 ${p.title.substring(0,18)}...</a></li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `).join('');
+        }
+        
+        renderPosts();
+        renderTimeline();
+    });
+    </script>
 </body>
 </html>
