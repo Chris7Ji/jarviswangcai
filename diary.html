@@ -279,12 +279,13 @@
                 if (!months[ym]) months[ym] = [];
                 months[ym].push(p);
             });
-            timelineList.innerHTML = Object.entries(months).reverse().map(([ym, posts]) => `
+            // 时间线按月份降序排列（最新在上），同月内也按日期降序
+            timelineList.innerHTML = Object.entries(months).map(([ym, posts]) => `
                 <div class="timeline-month">
                     <h4 class="month-label" style="font-size:0.9rem;color:#2D7A85;font-weight:700;margin:12px 0 6px;">${ym.replace('-', '年')}月</h4>
                     <ul style="list-style:none;padding:0;margin:0;">
-                        ${posts.reverse().map(p => `
-                            <li style="margin-bottom:4px;"><a href="post.html?id=${p.id}" style="color:#4A5568;font-size:0.85rem;text-decoration:none;">${p.date.substring(8)}日 ${p.title.substring(0,18)}...</a></li>
+                        ${posts.map(p => `
+                            <li style="margin-bottom:4px;"><a href="post.html?id=${p.id}" style="color:#4A5568;font-size:0.85rem;text-decoration:none;">${p.date.substring(8)}日 ${p.title.substring(0,24)}...</a></li>
                         `).join('')}
                     </ul>
                 </div>
