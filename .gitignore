@@ -11,3 +11,15 @@ venv/
 env/
 *.pyc
 __pycache__/
+
+# 安全 - 凭证文件（不应提交）
+*.env
+.env.*
+**/secrets/
+**/credentials/
+**/auth-profiles.json
+**/catalog.json
+**/openclaw.json
+**/config.json
+# 日志
+*.log

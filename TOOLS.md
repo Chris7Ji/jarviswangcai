@@ -11,7 +11,7 @@
 - 终结点: https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1
 
 ### 邮件配置（全局）
-- 发件: 86940135@qq.com, 授权码: icxhfzuyzbhbbjie
+- 发件: 86940135@qq.com, 授权码: （已隐去，存于 openclaw.json）
 - SMTP: smtp.qq.com:587
 - 收件默认: 86940135@qq.com, jiyingguo@huawei.com
 
@@ -20,8 +20,8 @@
 - 接收人Open ID: ou_b6c7778820b20031cd97bdc45d1cd9fa
 
 ### 搜索API（全局）
-- **SerpAPI**: b28c2426b9015470508315f27a6782b552a5a5b39550fbc9b62ff381e67c360f（2026-03-20新增，主力搜索）
-- Tavily API: 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（备用，配额有限）
+- **SerpAPI**: b28c24…360f（2026-03-20新增，主力搜索）
+- Tavily API: tvly-dev…7MV5（备用，配额有限）
 
 ### 常用路径
 - Workspace: /Users/jiyingguo/.openclaw/workspace/
