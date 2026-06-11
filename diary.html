@@ -280,7 +280,10 @@
                 months[ym].push(p);
             });
             // 时间线按月份降序排列（最新在上），同月内也按日期降序
-            timelineList.innerHTML = Object.entries(months).map(([ym, posts]) => `
+            const sortedMonths = Object.keys(months).sort().reverse();
+            timelineList.innerHTML = sortedMonths.map(ym => {
+                const posts = months[ym].sort((a,b) => b.id.localeCompare(a.id));
+                return `
                 <div class="timeline-month">
                     <h4 class="month-label" style="font-size:0.9rem;color:#2D7A85;font-weight:700;margin:12px 0 6px;">${ym.replace('-', '年')}月</h4>
                     <ul style="list-style:none;padding:0;margin:0;">
@@ -289,7 +292,8 @@
                         `).join('')}
                     </ul>
                 </div>
-            `).join('');
+            `;
+            }).join('');
         }
         
         renderPosts();
