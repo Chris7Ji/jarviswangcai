@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 AI新闻日报 - 旺财Jarvis</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/diary.css">
+    <style>
+        .news-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 2rem 3rem; text-align: center; border-radius: 0 0 20px 20px; }
+        .news-hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .news-hero p { opacity: 0.9; font-size: 1.1rem; }
+        .news-date-selector { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .date-pills { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.5rem; justify-content: flex-start; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+        .date-pills::-webkit-scrollbar { height: 6px; }
+        .date-pills::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+        .date-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #f0f0f0; color: #333; text-decoration: none; transition: all 0.2s; white-space: nowrap; cursor: pointer; border: none; font-size: 0.95rem; font-family: inherit; }
+        .date-pill:hover { background: #e0e0e0; }
+        .date-pill.active { background: #667eea; color: white; font-weight: bold; }
+        .news-container { max-width: 1000px; margin: 0 auto; padding: 0 1rem 4rem; }
+        .update-info { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.9rem; }
+        .featured-news { background: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #667eea; transition: transform 0.2s; }
+        .featured-news .tag { background: #ffeb3b; color: #f57f17; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; display: inline-block; margin-bottom: 1rem; }
+        .featured-news h2 { margin-top: 0; color: #333; }
+        .featured-news .summary { color: #555; line-height: 1.6; font-size: 1.05rem; }
+        .news-section-title { margin: 3rem 0 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .news-item { background: #fff; border-radius: 8px; padding: 1.5rem; border: 1px solid #eaeaea; transition: all 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+        .news-item h3 { margin: 0 0 1rem 0; font-size: 1.1rem; line-height: 1.4; color: #2c3e50; }
+        .news-item p { color: #666; font-size: 0.95rem; line-height: 1.5; flex-grow: 1; }
+        .news-item .meta { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; font-size: 0.85rem; color: #999; align-items: center; }
+        .source { font-weight: 500; color: #3d9ca8; }
+        .navbar { background: white; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo a { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem; }
+        .logo img { height: 40px; border-radius: 50%; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #666; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #d4a84b; }
+        
+        .day-news-container { display: none; animation: fadeIn 0.4s ease; }
+        .day-news-container.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="旺财Jarvis Logo">旺财Jarvis</a></div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="diary.html">📖 成长日记</a>
+            <a href="skills.html">💡 技能与功能</a>
+            <a href="ascend.html">⚡️ 昇腾AI知识</a>
+            <a href="news.html" class="active">🚀 AI新闻日报</a>
+            <a href="about.html">👤 关于我</a>
+        </div>
+    </nav>
+    <header class="news-hero">
+        <h1>🚀 AI 新闻日报</h1>
+        <p>为你精选过去半个月科技巨头、大模型公司的最新动态</p>
+    </header>
+    
+    <div class="news-date-selector">
+        <div class="date-pills" id="datePillsContainer">
+            <button class="date-pill active" data-date="2026-06-09" onclick="showDate('2026-06-09')">6月9日 (最新)</button>
+            <button class="date-pill " data-date="2026-06-04" onclick="showDate('2026-06-04')">6月4日</button>
+            <button class="date-pill " data-date="2026-06-02" onclick="showDate('2026-06-02')">6月2日</button>
+            <button class="date-pill " data-date="2026-06-01" onclick="showDate('2026-06-01')">6月1日</button>
+            <button class="date-pill " data-date="2026-05-31" onclick="showDate('2026-05-31')">5月31日</button>
+            <button class="date-pill " data-date="2026-05-30" onclick="showDate('2026-05-30')">5月30日</button>
+            <button class="date-pill " data-date="2026-05-29" onclick="showDate('2026-05-29')">5月29日</button>
+            <button class="date-pill " data-date="2026-05-28" onclick="showDate('2026-05-28')">5月28日</button>
+            <button class="date-pill " data-date="2026-05-27" onclick="showDate('2026-05-27')">5月27日</button>
+            <button class="date-pill " data-date="2026-05-26" onclick="showDate('2026-05-26')">5月26日</button>
+            <button class="date-pill " data-date="2026-05-25" onclick="showDate('2026-05-25')">5月25日</button>
+            <button class="date-pill " data-date="2026-05-24" onclick="showDate('2026-05-24')">5月24日</button>
+            <button class="date-pill " data-date="2026-05-23" onclick="showDate('2026-05-23')">5月23日</button>
+            <button class="date-pill " data-date="2026-05-22" onclick="showDate('2026-05-22')">5月22日</button>
+            <button class="date-pill " data-date="2026-05-21" onclick="showDate('2026-05-21')">5月21日</button>
+            
+        </div>
+    </div>
+    
+    <main class="news-container">
+        
+        <div id="news-2026-06-09" class="day-news-container active">
+            <div class="update-info"><p>📅 日报日期: 2026-06-09 · 共有 7 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Apple introduces Siri AI, a profoundly more capable and personal assistant</h2>
+                <p class="summary">Powered by Apple Intelligence, the new version of Siri is profoundly more capable and conversational, and deeply integrated across products.</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">Apple</span>
+                        <span style="margin-left:1rem; color:#888;">10 hours ago</span>
+                    </div>
+                    <a href="https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.axios.com/2026/06/09/apple-siri-ai-agents-wwdc" target="_blank" class="news-item">
+                    <h3>Apple's Siri AI is both cool and 2 years too late</h3>
+                    <p>OpenAI and Anthropic have been locked in a hype battle promoting their agentic AI tools for both coders and office workers.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Axios</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/06/08/technology/openai-ipo.html" target="_blank" class="news-item">
+                    <h3>OpenAI Files Confidentially for IPO as AI Companies Rush to Wall St.</h3>
+                    <p>The company hopes to raise billions in a highly anticipated public offering that could unlock a new generation of tech industry wealth.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://news.crunchbase.com/venture/new-unicorn-startups-may-2026-openai-anthropic-ipos-spacex-robotics/" target="_blank" class="news-item">
+                    <h3>AI Services And Robotics Lead Diverse Crop Of 29 New May Unicorns As SpaceX, Anthropic And OpenAI Line Up Blockbuster Exits</h3>
+                    <p>A total of 29 companies joined The Crunchbase Unicorn Board in May, but the standout trend was not new AI models, but rather the businesses helping...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Crunchbase News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.npr.org/2026/06/08/nx-s1-5847937/apple-wwdc-2026-siri-ai-tim-cook" target="_blank" class="news-item">
+                    <h3>Hey, Siri: Apple just announced a long-awaited AI update</h3>
+                    <p>At its annual developers' conference, Apple put the spotlight on new AI features, while highlighting security and child safety — and critiquing the...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">NPR</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html" target="_blank" class="news-item">
+                    <h3>OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut</h3>
+                    <p>OpenAI's confidential filing lands days before SpaceX is set to go public and a week after Anthropic announced its confidential disclosure with the SEC.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nbcnews.com/tech/tech-news/apple-renames-siri-siri-ai-new-push-artificial-intelligence-rcna349048" target="_blank" class="news-item">
+                    <h3>Apple renames Siri as ‘Siri AI’ with new push into artificial intelligence</h3>
+                    <p>The overhaul puts Siri into more direct competition with modern AI assistants such as ChatGPT.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">NBC News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">18 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-06-04" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-06-04 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Can These Ads Make You Love A.I.?</h2>
+                <p class="summary">A campaign for ChatGPT relies on heartwarming retro vibes to sell a product that has become a source of concern for most Americans.</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">The New York Times</span>
+                        <span style="margin-left:1rem; color:#888;">5 hours ago</span>
+                    </div>
+                    <a href="https://www.nytimes.com/2026/06/04/style/chatgpt-advertising-campaign-artificial-intelligence.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.politico.com/news/2026/06/03/openai-white-house-ai-safety-rules-00948478" target="_blank" class="news-item">
+                    <h3>OpenAI diverges from White House on AI safety rules</h3>
+                    <p>The tech giant unveiled a regulatory framework for advanced AI that splits from new White House plans for voluntary vetting and an enhanced role for the...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Politico</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">20 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/sectors/technology/articles/exclusive-nvidia-snaps-kumo-ai-203027676.html" target="_blank" class="news-item">
+                    <h3>Exclusive: Nvidia snaps up Kumo AI in latest acquisition</h3>
+                    <p>The startup develops foundation models designed to help companies make more accurate business predictions, according to sources familiar with the deal.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.travelweekly.com/Travel-News/Travel-Agent-Issues/Priceline-rolls-out-latest-version-of-AI-travel-assistant" target="_blank" class="news-item">
+                    <h3>Priceline says its AI travel assistant is more efficient</h3>
+                    <p>The latest version of Penny, Priceline's AI-powered travel assistant, enables users to book trips without leaving their conversation, thanks to agentic AI...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Travel Weekly</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order" target="_blank" class="news-item">
+                    <h3>Trump signs AI safety order seeking voluntary review of new models</h3>
+                    <p>The order asks AI companies to voluntarily submit their most powerful models for the government to test up to 30 days before releasing them to the public.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">NPR</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.atlanticcouncil.org/dispatches/reading-between-the-lines-of-trumps-new-executive-order-on-ai/" target="_blank" class="news-item">
+                    <h3>Reading between the lines of Trump’s new executive order on AI</h3>
+                    <p>Where's the sweet spot between speed and safety? On Tuesday, US President Donald Trump signed an executive order on artificial intelligence (AI) that aims...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Atlantic Council</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">20 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank" class="news-item">
+                    <h3>Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers</h3>
+                    <p>At its Build developer conference, Microsoft announced a series of generative AI models to try and crack a market controlled by OpenAI, Anthropic and...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack" target="_blank" class="news-item">
+                    <h3>What we learned mapping a year’s worth of AI-enabled cyber threats</h3>
+                    <p>As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Anthropic</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-06-02" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-06-02 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Nvidia's new PC chips represent CEO Huang's bid to win at every layer of AI stack</h2>
+                <p class="summary">Nvidia's announced entry into the PC chip market sent shares of AMD, Intel and Qualcomm lower as Wall Street recognized the threat.</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">CNBC</span>
+                        <span style="margin-left:1rem; color:#888;">2 hours ago</span>
+                    </div>
+                    <a href="https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.euronews.com/business/2026/06/02/worlds-most-valuable-ai-start-up-anthropic-files-for-ipo-five-things-to-know" target="_blank" class="news-item">
+                    <h3>Five things to know about Anthropic's stock market debut plans</h3>
+                    <p>Anthropic appears to have gained an early lead over OpenAI in the race to go public. Its IPO filing signals that one of the industry's biggest players could...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Euronews.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">6 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/sectors/technology/articles/latest-news-cloud-ai-bridging-123748067.html" target="_blank" class="news-item">
+                    <h3>Latest News In Cloud AI - Bridging The Adoption Gap With Hands-On Experiences</h3>
+                    <p>The rapidly evolving landscape of Cloud AI has highlighted a significant challenge as the pace of AI technology advancements outstrips customers' ability to...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.intc.com/news-events/press-releases/detail/1771/intel-announces-new-ai-innovations-at-computex-chip-to" target="_blank" class="news-item">
+                    <h3>Intel Announces New AI Innovations at Computex — Chip to Rackscale AI Solutions Delivered to Customers with the Help of Strategic Industry Partners</h3>
+                    <p>TAIPEI, Taiwan--(BUSINESS WIRE)-- Today at Computex 2026, Intel unveiled new innovations that address customers' chip-to-systems-level AI needs with...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Investor Relations :: Intel Corporation (INTC)</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">7 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.prnewswire.com/news-releases/workday-launches-new-tools-for-developers-to-build-connect-and-verify-ai-agents-for-hr-finance-and-it-302787997.html" target="_blank" class="news-item">
+                    <h3>Workday Launches New Tools for Developers to Build, Connect, and Verify AI Agents For HR, Finance, and IT</h3>
+                    <p>PRNewswire/ -- Workday DevCon — Workday, Inc. (NASDAQ: WDAY), the enterprise AI platform for HR, finance, and IT, today unveiled new agentic capabilities in...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">PR Newswire</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">55 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/06/01/technology/anthropic-ipo.html" target="_blank" class="news-item">
+                    <h3>Anthropic Files to Go Public, Setting Stage for Huge I.P.O.</h3>
+                    <p>The artificial intelligence company, which is racing OpenAI to the stock market, has seen explosive growth over the last year thanks largely to technology...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://apnews.com/article/nvidia-microsoft-ai-laptops-jensen-chip-c807f7333b93b9927b62b1240dcf65a1" target="_blank" class="news-item">
+                    <h3>Nvidia bets on AI personal computers with new ‘superchip’ powering Windows laptops</h3>
+                    <p>TAIPEI, Taiwan (AP) — Nvidia on Monday unveiled new powerful chips that would bring advanced artificial intelligence functions into laptops and desktop...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">AP News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">12 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.aljazeera.com/economy/2026/6/1/nvidia-unveils-new-chip-to-bring-ai-directly-to-personal-computers" target="_blank" class="news-item">
+                    <h3>Nvidia unveils new chip to bring AI directly to personal computers</h3>
+                    <p>Nvidia's new chip will power new Windows laptop and desktop computer models to make 'AI personal computers'.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Al Jazeera</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-06-01" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-06-01 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>NVIDIA and Microsoft Reinvent Windows PCs for the Age of Personal AI</h2>
+                <p class="summary">NVIDIA today unveiled NVIDIA RTX Spark™, a new superchip that reinvents Windows PCs for the era of personal AI agents — offering a new class of computer...</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">NVIDIA Newsroom</span>
+                        <span style="margin-left:1rem; color:#888;">9 hours ago</span>
+                    </div>
+                    <a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.cnbc.com/2026/06/01/nvidia-meta-walmart-among-top-companies-adopting-ai.html" target="_blank" class="news-item">
+                    <h3>Nvidia, Meta and Schlumberger rank among top companies adopting AI, new study says</h3>
+                    <p>The AI-Driven Enterprise Institute released new research that breaks down how well S&P 500 companies are adopting AI compared to their peers.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cbsnews.com/news/nvidia-consumer-pc-push-new-ai-superchip/" target="_blank" class="news-item">
+                    <h3>Nvidia making consumer PC push with new AI superchip</h3>
+                    <p>Nvidia unveiled new powerful chips that would bring advanced AI functions to laptops and desktop computers, with PC models from brands including Microsoft...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CBS News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">39 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/06/01/technology/nvidia-chips-personal-computers.html" target="_blank" class="news-item">
+                    <h3>Nvidia Has a Plan to Put Its Chips in Personal Computers</h3>
+                    <p>The world's most valuable company is chasing Intel and Apple as it tries to bring A.I. agents to laptops and desktops.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.bloomberg.com/news/articles/2026-06-01/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd" target="_blank" class="news-item">
+                    <h3>Nvidia Enters Windows Laptop Market, Taking On Intel and AMD</h3>
+                    <p>Nvidia Corp. is entering the PC market with a new chip aimed at loosening the stranglehold of Intel Corp. technology in that arena and modernizing the...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Bloomberg.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">25 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.familywealthreport.com/article.php/Digital-Digest%3A-The-Latest-Tech-News-%E2%80%93-FMG-Expands-Internal-AI-Use?id=207843" target="_blank" class="news-item">
+                    <h3>Digital Digest: The Latest Tech News – FMG Expands Internal AI Use</h3>
+                    <p>FMG FMG, a San Diego-based marketing technology platform for wealth management and insurance organizations, has launched its Marketing Intelligence System,...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Family Wealth Report</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/sectors/technology/articles/latest-news-ai-chips-nvidia-113758313.html" target="_blank" class="news-item">
+                    <h3>Latest News In AI Chips - NVIDIA Partners With Xage For Enhanced AI Security Solutions</h3>
+                    <p>Xage Security has announced its enhanced integration with NVIDIA's cutting-edge AI solutions, including the NVIDIA DOCA security and Vera BlueField-4 STX...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.theguardian.com/technology/2026/jun/01/nvidia-launches-chip-ai-laptops-pc-rtx-spark-microsoft-windows" target="_blank" class="news-item">
+                    <h3>Nvidia launches ‘superchip’ putting AI power into laptops and PCs</h3>
+                    <p>Firm says its RTX Spark PC chip for Microsoft Windows will let AI agents replace the mouse and keyboard. Business live – latest updates.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Guardian</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-31" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-31 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>NVDA Stock Quote Price and Forecast</h2>
+                <p class="summary">View NVIDIA Corporation NVDA stock quote prices, financial information, real-time forecasts, and company news from CNN.</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">CNN</span>
+                        <span style="margin-left:1rem; color:#888;">3 hours ago</span>
+                    </div>
+                    <a href="https://www.cnn.com/markets/stocks/NVDA" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://stocktwits.com/news-articles/markets/equity/michael-burry-calls-adobe-a-fat-pitch-in-latest-saas-analysis-backs-firefly-and-ai-tie-ups-with-open-ai-google/cZgSWDzRet8" target="_blank" class="news-item">
+                    <h3>Michael Burry Calls Adobe A ‘Fat Pitch’ In Latest Saas Analysis – Backs Firefly And AI Tie-Ups With OpenAI, Google</h3>
+                    <p>The Big Short” argued that Adobe's forward outlook remains stronger than the market assumes, despite fears that AI could disrupt its core creative software...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Stocktwits</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.ft.com/content/da80e72b-31e5-42ca-995c-5fc7d457915e?syn-25a6b1a6=1" target="_blank" class="news-item">
+                    <h3>AI is here. What do you want from it?</h3>
+                    <p>The technology's development belongs to everyone — share your vision with us.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Financial Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">10 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.aol.com/articles/anthropic-just-delivered-spectacular-news-230500725.html" target="_blank" class="news-item">
+                    <h3>Anthropic Just Delivered Spectacular News For Amazon and Alphabet</h3>
+                    <p>AI start-up Anthropic just raised $65 billion at a post-money valuation of $965 billion. The company also launched its latest model, Claude Opus 4.8.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">AOL.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/05/30/opinion/ai-high-school.html" target="_blank" class="news-item">
+                    <h3>Opinion | The First A.I. High School in the U.S. Is Surprisingly Human</h3>
+                    <p>Schools are not like start-ups, because children's minds should not be tied to the whims of the marketplace.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://simplywall.st/stocks/us/tech/nyse-jbl/jabil/news/jabil-leans-on-ai-infrastructure-growth-as-stock-trades-abov/amp" target="_blank" class="news-item">
+                    <h3>Jabil Leans On AI Infrastructure Growth As Stock Trades Above Targets</h3>
+                    <p>Jabil's Intelligent Infrastructure division reported a 52% year over year revenue increase, driven by demand for AI enabled data center and networking...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Simply Wall Street</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://apnews.com/article/ai-song-generator-musician-parkinsons-ac2a6ed263256c12f68eb827f7e8238a" target="_blank" class="news-item">
+                    <h3>AI helped a musician with Parkinson’s finish his new album when he could no longer play guitar</h3>
+                    <p>Artificial intelligence is helping a London-based singer-songwriter continue writing and recording music after Parkinson's disease largely took away his...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">AP News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">21 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/05/29/business/economy/ai-jobs-productivity.html" target="_blank" class="news-item">
+                    <h3>A.I. Doesn’t Have to Mean Layoffs</h3>
+                    <p>A French multinational, Schneider Electric, decided to use artificial intelligence in manufacturing to make workers more productive, rather than to replace...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">24 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-30" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-30 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Anthropic超越OpenAI成为最具价值AI初创公司，最新融资估值逼近万亿美元</h2>
+                <p class="summary">Anthropic在最新一轮650亿美元融资后，成为硅谷估值最高的AI公司，总估值逼近1万亿美元，超越OpenAI成为行业新领头羊。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">CNBC</span>
+                        <span style="margin-left:1rem; color:#888;">1 day ago</span>
+                    </div>
+                    <a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.nytimes.com/2026/05/30/us/politics/anthropic-openai-super-pacs-midterms.html" target="_blank" class="news-item">
+                    <h3>「这是一场战争」：强大的AI超级政治行动委员会如何在中期选举中对决</h3>
+                    <p>一个与Anthropic结盟，另一个与OpenAI关联。两大AI超级政治行动委员会正投入数百万美元影响中期选举，引发各界对AI政治影响力的担忧。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.scientificamerican.com/article/new-protein-folding-ai-vastly-expands-on-alphafolds-efforts/" target="_blank" class="news-item">
+                    <h3>新型蛋白质折叠AI大幅扩展AlphaFold的研究成果</h3>
+                    <p>名为ESMFold2的新型AI工具生成了开源蛋白质图谱，极大扩展了已知蛋白质宇宙的边界，为药物研发和生物学研究提供全新资源。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Scientific American</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.kget.com/news/local-news/csub-partners-with-ai-company-for-new-first-in-the-nation-program/" target="_blank" class="news-item">
+                    <h3>加州州立大学贝克斯菲尔德分校与OpenAI合作推出全美首个校企AI合作项目</h3>
+                    <p>人工智能公司与大学的首次合作项目在贝克斯菲尔德落地。CSUB与OpenAI联手推出全美首创的合作计划，推动AI教育与产业融合。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">KGET.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">14 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://fedscoop.com/nist-ai-consortium-reemerges-new-name-scope-members/" target="_blank" class="news-item">
+                    <h3>NIST AI联盟更名换面重新启动，扩大范围并招募新成员</h3>
+                    <p>美国国家标准与技术研究院（NIST）旗下的AI联盟以新名称和更广泛的使命重新启动。此前其AI安全研究所已更名为AI标准与创新中心。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">FedScoop</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members" target="_blank" class="news-item">
+                    <h3>NIST扩大AI联盟范围，面向全球招募新成员</h3>
+                    <p>该联盟将聚焦AI创新与应用，设立六个工作组分别专注于AI测量科学与评估的不同方面，推动AI标准化进程。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">National Institute of Standards and Technology (.gov)</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://federalnewsnetwork.com/artificial-intelligence/2026/05/as-ai-reshapes-work-a-new-program-is-showing-what-it-takes-to-keep-up/" target="_blank" class="news-item">
+                    <h3>AI重塑工作方式，新项目展示员工如何跟上变革步伐</h3>
+                    <p>随着AI改变工作方式，一项全新的实践项目正在展示员工需要具备哪些技能才能跟上技术变革，为劳动力适应AI时代提供参考路径。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Federal News Network</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://simplywall.st/stocks/us/semiconductors/nasdaq-on/on-semiconductor/news/on-semiconductors-ai-data-center-surge-fuels-beat-and-raises/amp" target="_blank" class="news-item">
+                    <h3>安森美半导体AI数据中心业务激增推动业绩超预期，估值问题随之而来</h3>
+                    <p>安森美半导体公布第一季度业绩，营收和利润均超预期。公司强调AI数据中心收入增长是主要驱动力，但高速增长也引发了对其估值合理性的讨论。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Simply Wall Street</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-29" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-29 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Anthropic tops OpenAI as most valuable AI startup, nears $1 trillion valuation in latest round</h2>
+                <p class="summary">Anthropic is now the most valuable AI company in Silicon Valley after a new $65 billion funding round.</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">CNBC</span>
+                        <span style="margin-left:1rem; color:#888;">19 hours ago</span>
+                    </div>
+                    <a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.bloomberg.com/news/articles/2026-05-29/some-japanese-banks-to-get-access-to-latest-openai-model" target="_blank" class="news-item">
+                    <h3>Some Japanese Banks to Get Access to Latest OpenAI Model</h3>
+                    <p>Some Japanese financial institutions will get access to OpenAI's latest artificial intelligence model as they look to beef up preparedness against...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Bloomberg.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">6 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/05/28/technology/anthropic-tops-openai-valuation.html" target="_blank" class="news-item">
+                    <h3>Anthropic Tops OpenAI to Become the World’s Most Valuable A.I. Start-Up</h3>
+                    <p>Anthropic raised $65 billion in new fund-raising that put its value at $900 billion, ahead of OpenAI's last valuation of $730 billion, as the companies duel...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">21 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/sectors/technology/articles/latest-news-ai-chips-ai-113746462.html" target="_blank" class="news-item">
+                    <h3>Latest News In AI Chips - AI Transforms Industrial Maintenance with Digital Workforce Expansion</h3>
+                    <p>In recent developments within the AI Chips arena, Ultimo has introduced an expanded suite of digital workers aimed at transforming industrial maintenance...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://seekingalpha.com/news/4598245-openais-new-ai-models-access-granted-to-some-japanese-banks" target="_blank" class="news-item">
+                    <h3>OpenAI's new AI model's access granted to some Japanese banks</h3>
+                    <p>Some Japanese ‌financial institutions have been granted access to OpenAI's (OPENAI) GPT-5.5 model ​to defend against cyberattacks.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Seeking Alpha</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/" target="_blank" class="news-item">
+                    <h3>The latest AI-powered martech news and releases</h3>
+                    <p>Quattr released an AI generator for landing pages to bridge the gap between paid ads and search visibility. The tool creates pages that align with user intent...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">MarTech</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">11 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://thehill.com/policy/technology/5900111-anthropic-valuation-openai-race/" target="_blank" class="news-item">
+                    <h3>Anthropic hits $965B valuation with latest funding round, overtaking OpenAI</h3>
+                    <p>Anthropic raises $65 billion, surpassing OpenAI's valuation as AI startups race to go public. New Mythos model sparks cybersecurity concerns.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Hill</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">18 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.theguardian.com/technology/2026/may/28/anthropic-ai-valuation" target="_blank" class="news-item">
+                    <h3>Anthropic reaches valuation of $965bn, beating OpenAI to become world’s most valuable AI firm</h3>
+                    <p>Claude's parent company's $65bn in latest funding round underscores vast sums of money still flowing into industry.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Guardian</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">18 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-28" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-28 · 共有 9 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Researchers develop new way to eliminate AI hallucinations</h2>
+                <p class="summary">As chatbots powered by artificial intelligence become more ingrained in our everyday lives, people are increasingly using them to help diagnose their...</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">Binghamton University</span>
+                        <span style="margin-left:1rem; color:#888;">2 hours ago</span>
+                    </div>
+                    <a href="https://www.binghamton.edu/news/story/6294/ai-without-hallucinations-binghamton-university-researchers-develop-new-way-to-eliminate-troublesome-fake-info" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://spectrumnews1.com/oh/columbus/news/2026/05/28/new-program-teaches-small-businesses-to-master-ai-" target="_blank" class="news-item">
+                    <h3>New program teaches small businesses to master AI</h3>
+                    <p>New training program helps close the growing artificial intelligence skills gap.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Spectrum News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">22 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://mistral.ai/news/vibe-agent/" target="_blank" class="news-item">
+                    <h3>Vibe gets to work.</h3>
+                    <p>The unified agent for long-horizon productivity and coding, launching with Work and Code modes. Plus, a new Vibe VS Code extension.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Mistral AI</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://hai.stanford.edu/news/how-ai-is-transforming-scientific-discovery-while-keeping-humans-at-the-center" target="_blank" class="news-item">
+                    <h3>How AI is Transforming Scientific Discovery While Keeping Humans at the Center</h3>
+                    <p>Artificial intelligence is poised to upend scientific inquiry across disciplines from neuroscience to cosmology, opening up “entirely new vistas” just as...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Stanford HAI</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">18 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://news.bloomberglaw.com/ip-law/cnn-latest-news-outlet-to-sue-perplexity-ai-over-data-scraping" target="_blank" class="news-item">
+                    <h3>CNN Latest News Outlet to Sue Perplexity AI Over Data Scraping</h3>
+                    <p>Cable News Network Inc. hit Perplexity AI Inc. with a lawsuit alleging the artificial intelligence company violated federal copyright law by copying more...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Bloomberg Law News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">41 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnn.com/2026/05/28/media/cnn-sues-perplexity-ai-copyright" target="_blank" class="news-item">
+                    <h3>CNN sues Perplexity over alleged AI copyright theft</h3>
+                    <p>CNN is suing Perplexity, accusing the AI company of unlawfully copying and distributing CNN's content.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNN</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/" target="_blank" class="news-item">
+                    <h3>The AI Hype Index: AI gets booed in graduation season</h3>
+                    <p>MIT Technology Review's highly subjective take on the latest buzz about AI.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">MIT Technology Review</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/markets/stocks/articles/why-crowdstrike-crwd-latest-ai-121747527.html" target="_blank" class="news-item">
+                    <h3>Why CrowdStrike’s (CRWD) Latest AI Partnership Could Be Strategically Important</h3>
+                    <p>With a five-year EPS forecast of 29.02%, CrowdStrike Holdings, Inc. (NASDAQ:CRWD) is among the 12 Best Future Stocks to Buy Right Now.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://en.belsat.eu/93511482/first-drones-now-ai-the-latest-addition-to-belaruss-school-syllabus" target="_blank" class="news-item">
+                    <h3>First drones, now AI: The latest addition to Belarus's school syllabus</h3>
+                    <p>For students in grades 8-11, a new elective course on artificial intelligence will be introduced starting in the new academic year.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">belsat.eu</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-27" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-27 · 共有 9 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>Supermicro and Verda Deliver Sustainable, Full-Stack AI Cloud Infrastructure for Next-Generation AI Workloads</h2>
+                <p class="summary">Verda deploys Supermicro's latest liquid-cooled NVIDIA Blackwell-accelerated systems to power next-generation AI workloads at scale Vertically integrated,...</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">Supermicro</span>
+                        <span style="margin-left:1rem; color:#888;">55 minutes ago</span>
+                    </div>
+                    <a href="https://ir.supermicro.com/news/news-details/2026/Supermicro-and-Verda-Deliver-Sustainable-Full-Stack-AI-Cloud-Infrastructure-for-Next-Generation-AI-Workloads/default.aspx" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.nytimes.com/2026/05/27/business/dealbook/ai-chips-war-samsung-micron.html" target="_blank" class="news-item">
+                    <h3>Why Memory Chips Are Dominating the A.I. Rally</h3>
+                    <p>Andrew here. Forget about A.I. processors. Memory chips are the new market winner, with Micron and the South Korean giant SK Hynix becoming the latest...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-magnifica-humanitas-presentation-ai-disarmament.html" target="_blank" class="news-item">
+                    <h3>Pope Leo presents 'Magnifica humanitas’ calling for disarmament of AI</h3>
+                    <p>Pope Leo XIV presents "Magnifica Humanitas" as the Church's response to the challenges posed by artificial intelligence, calling for AI to be ...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Vatican News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.newyorker.com/news/the-lede/what-pope-leo-xiv-said-about-ai" target="_blank" class="news-item">
+                    <h3>What the Pope Said About A.I.</h3>
+                    <p>Jill Lepore on Pope Leo XIV's encyclical “Magnifica Humanitas,” on the risks of artificial intelligence.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New Yorker</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.ncronline.org/vatican/vatican-news/pope-leo-calls-disarm-ai-major-document-warns-technologic-threats-humanity" target="_blank" class="news-item">
+                    <h3>Pope Leo calls to 'disarm' AI in major document, warns of technologic threats to humanity</h3>
+                    <p>In Magnifica Humanitas, the pope says just war theory is "outdated," condemns lethal AI weapons and asks pardon for the church's delayed condemnation of...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">National Catholic Reporter</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">31 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html" target="_blank" class="news-item">
+                    <h3>Taiwan chip stocks climb after Nvidia announces $150 billion spending plans</h3>
+                    <p>Taiwan's Taiex closed at a fresh record high after Nvidia announced plans to spend $150 billion a year in the region. CEO Jensen Huang said Nvidia will...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.scmp.com/tech/tech-trends/article/3355039/alibabas-new-ai-model-scores-higher-openai-google-rivals-coding-ranking" target="_blank" class="news-item">
+                    <h3>Alibaba AI beats Google and OpenAI in global coding rankings</h3>
+                    <p>The Chinese tech giant is the only non-US firm to crack the top five in Code Arena's latest leaderboard. 2-MIN READ2-MIN. 4. Listen. Google News Preferred...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">South China Morning Post</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.dentons.com/en/insights/newsletters/2026/may/27/eu-ai-and-gdpr-key-trends-and-insights/ai-and-gdpr-monthly-update-may/ai-and-gdpr-monthly-update-april-eng" target="_blank" class="news-item">
+                    <h3>AI and GDPR Monthly Update</h3>
+                    <p>Welcome to another edition of the AI and GDPR Monthly Update, bringing you the latest insights into artificial intelligence and data protection.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Dentons</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.thetimes.com/us/news-today/article/new-york-ai-photography-danziger-gallery-f6zz6qn55" target="_blank" class="news-item">
+                    <h3>Ansel Adams trust sees red over New York gallery’s AI-altered work</h3>
+                    <p>The founder of the Danziger Gallery says he created 'new and transformative work' after using AI to colourise iconic 1941 black-and-white photograph.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-26" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-26 · 共有 9 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>诺基亚最新AI创新实验室能否推动数据中心业务增长？</h2>
+                <p class="summary">诺基亚在森尼韦尔开设AI网络实验室，与合作伙伴共同构建AI原生数据中心技术，验证真实世界中的多厂商设计方案。此举旨在抓住AI浪潮带来的数据中心网络需求增长机会，推动业务发展。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">Zacks Investment Research</span>
+                        <span style="margin-left:1rem; color:#888;">27 minutes ago</span>
+                    </div>
+                    <a href="https://www.zacks.com/stock/news/2926768/can-nokias-latest-ai-innovation-lab-for-data-centers-drive-growth" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.bloomberg.com/news/articles/2026-05-26/ing-s-vibe-coding-ai-is-building-its-new-trading-systems" target="_blank" class="news-item">
+                    <h3>ING银行用"氛围编程"AI构建新一代交易系统</h3>
+                    <p>荷兰ING集团正采用"氛围编程"（Vibe Coding）方式构建外汇和信用电子交易工具，这是该行利用人工智能提升竞争力的最新举措，展示了AI在金融交易领域的创新应用前景。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Bloomberg.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">6 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/05/26/opinion/progressives-left-ai.html" target="_blank" class="news-item">
+                    <h3>观点｜进步派在AI问题上听错了人</h3>
+                    <p>今年三月，佛蒙特州参议员伯尼·桑德斯举办了一场奇特的活动，他"采访"了Anthropic的AI聊天机器人Claude。评论认为进步派在AI政策方向上应回归理性思考，而不是被技术公司牵着鼻子走。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.ft.com/content/1be506e5-8fdb-49d3-847c-7fa05ee9aa4f?syn-25a6b1a6=1" target="_blank" class="news-item">
+                    <h3>AI与交易的新世界</h3>
+                    <p>全球并购市场正被控制世界能源、光纤网络和算力的竞赛所主导。AI技术的快速发展正在深刻改变交易格局，推动资本向基础设施和计算资源领域集中，开启交易新时代。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Financial Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">10 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.infoq.com/news/2026/05/online-cohort-certification-prog/" target="_blank" class="news-item">
+                    <h3>InfoQ在线认证计划新增AI工程与组织架构方向</h3>
+                    <p>InfoQ扩展其在线认证组合，新增AI工程和组织架构两个方向，为高级从业者提供保密环境下的专业学习机会，帮助技术领导者掌握AI时代的工程管理和组织变革技能。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">infoq.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.bizjournals.com/bizwomen/news/latest-news/2026/05/ask-marcia-what-human-leaders-do-better-than-ai.html" target="_blank" class="news-item">
+                    <h3>问Marcia：从问责到关怀——人类领导者比AI强在哪</h3>
+                    <p>领导者必须从控制人员转向设计系统，让人工智能和人类判断力有效协同工作。文章探讨了在AI时代，人类领导者独特的情感关怀、责任感和同理心等不可替代的价值。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Business Journals</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.stocktitan.net/news/ZENA/zena-tech-opens-new-chapter-of-growth-through-partnerships-inviting-c5a34oek2p4p.html" target="_blank" class="news-item">
+                    <h3>ZenaTech寻求收购盈利的创始人领导型无人机和AI公司</h3>
+                    <p>ZenaTech（纳斯达克：ZENA）宣布新的收购合作计划，目标锁定国防科技领域内由创始人领导、已实现盈利的公司，通过战略整合加速在无人机和人工智能领域的发展布局。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Stock Titan</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnn.com/2026/05/26/us/5-things-to-know-for-may-26-pope-leo-on-ai-texas-runoffs-iran-negotiations-new-orleans-chemical-tank-scare" target="_blank" class="news-item">
+                    <h3>5月26日要闻速览：教皇Leo谈AI、德州决选、伊朗谈判等</h3>
+                    <p>CNN早间新闻速递带来今日重要资讯：教皇Leo对AI发展的看法、德州选举决选、伊朗谈判进展、新奥尔良动态以及化学品油罐恐慌事件，涵盖AI伦理与全球热点。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNN</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.foxnews.com/media/conservatives-say-ai-chatbots-being-weaponized-left-wing-media-bias-millions-rely-them" target="_blank" class="news-item">
+                    <h3>保守派指责AI聊天机器人被左翼媒体偏见武器化</h3>
+                    <p>随着数百万人依赖AI聊天机器人获取信息，保守派人士批评AI系统存在左翼媒体偏见。Conservative领导人David Bozell表示硅谷的"新玩具"已不再中立可靠，引发AI偏见争议。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Fox News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-25" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-25 · 共有 8 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>One Job That Is Growing in the A.I. Era? Cybersecurity Experts.</h2>
+                <p class="summary">Demand for security engineers has surged as artificial intelligence generates a glut of new code and models like Anthropic's Mythos create new concerns.</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">The New York Times</span>
+                        <span style="margin-left:1rem; color:#888;">22 minutes ago</span>
+                    </div>
+                    <a href="https://www.nytimes.com/2026/05/24/technology/one-job-that-is-growing-in-the-ai-era-cybersecurity-experts.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html" target="_blank" class="news-item">
+                    <h3>Pope Leo’s ‘Magnifica humanitas’: AI must serve humanity not concentrate power</h3>
+                    <p>Marking the 135th anniversary of Rerum novarum, Pope Leo XIV releases his first encyclical, entitled 'Magnifica humanitas: On Safeguarding the Human ...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Vatican News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://gizmodo.com/john-grishams-new-legal-drama-is-a-real-life-fight-against-ai-audiobooks-on-youtube-2000762996" target="_blank" class="news-item">
+                    <h3>John Grisham’s New Legal Drama Is a Real Life Fight Against AI Audiobooks on YouTube</h3>
+                    <p>There's an argument to be made that audiobooks are the finest form of content. You take a book—already off to a good start—and you get to have someone read...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Gizmodo</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.detroitcatholic.com/news/babel-nehemiah-and-algorithms-a-guide-to-key-terms-in-pope-leos-new-encyclical-on-ai" target="_blank" class="news-item">
+                    <h3>Babel, Nehemiah and algorithms: A guide to key terms in Pope Leo's new encyclical on AI</h3>
+                    <p>(OSV News) -- What do the Tower of Babel, the biblical figure Nehemiah, algorithms and realpolitik have in common? They're all discussed -- along with...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Detroit Catholic</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/sectors/technology/articles/ai-chips-ai-platform-gausspeed-113733211.html" target="_blank" class="news-item">
+                    <h3>AI Chips Update - AI Platform Gausspeed Boosts Digital Content Workflow Efficiency</h3>
+                    <p>Global Mofy AI Limited has announced a significant development milestone for its generative AI platform, Gausspeed. This advancement integrates NVIDIA...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.huffpost.com/entry/pope-leo-artificial-intelligence_n_6a141b72e4b062ca52d48c78" target="_blank" class="news-item">
+                    <h3>Pope Leo's New Major AI Warning Sets Up Fresh Clash With Donald Trump</h3>
+                    <p>The pontiff's first encyclical set up another potential flash point with the Trump administration, which has worked aggressively to deregulate AI...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">HuffPost</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://en.as.com/soccer/world-cup/ai-picks-a-winner-this-is-who-will-lift-the-2026-world-cup-according-to-three-major-chatbots-f202605-n/?outputType=amp" target="_blank" class="news-item">
+                    <h3>AI picks a winner: This is who will lift the 2026 World Cup, according to three major chatbots</h3>
+                    <p>In an exercise of the utmost journalistic rigor, AS USA canvassed a trio of artificial-intelligence tools for their World Cup predictions.</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Diario AS</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://simplywall.st/stocks/us/software/nasdaq-akam/akamai-technologies/news/is-akamais-new-ai-brand-presence-platform-reshaping-the-inve" target="_blank" class="news-item">
+                    <h3>Is Akamai’s New AI Brand Presence Platform Reshaping The Investment Case For Akamai Technologies (AKAM)?</h3>
+                    <p>In May 2026, Akamai Technologies launched AI Brand Presence, an edge-based platform that automatically translates website content for large language model...</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Simply Wall Street</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-24" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-24 · 共有 9 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>探访英国实验室：AI潜藏危险的「守门人」</h2>
+                <p class="summary">英国政府设立的AI安全研究所由来自OpenAI和谷歌的前员工组成，正成为各国应对AI新兴风险的典范。该机构致力于在AI系统部署前发现潜在威胁，为全球AI监管提供重要参考。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">The New York Times</span>
+                        <span style="margin-left:1rem; color:#888;">5 hours ago</span>
+                    </div>
+                    <a href="https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.govtech.com/blogs/lohrmann-on-cybersecurity/how-new-college-grads-can-succeed-in-an-ai-economy" target="_blank" class="news-item">
+                    <h3>新毕业大学生如何在AI经济中脱颖而出</h3>
+                    <p>正值毕业季，尽管2026年招聘市场放缓，但进入职场的新人可以通过掌握实用技能——包括AI工具应用、批判性思维和跨领域协作——将挑战转化为职业起跳板。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">GovTech</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/markets/stocks/articles/nvidia-quietly-builds-major-ai-071112516.html" target="_blank" class="news-item">
+                    <h3>英伟达悄然构建庞大AI投资组合，影响投资者风险与选择</h3>
+                    <p>在CEO黄仁勋的带领下，英伟达已建立硅谷最大的私有AI投资组合之一。该公司去年几乎将其AI领域的投资翻倍，通过战略布局深度影响整个AI产业链的走向和投资者的风险考量。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">7 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.fool.com/investing/2026/05/23/prediction-nvidia-will-become-the-worlds-first-15/" target="_blank" class="news-item">
+                    <h3>预测：英伟达将在2029年成为全球首家15万亿美元公司</h3>
+                    <p>分析师预测英伟达股价可能在未来三年内再翻三倍，凭借其惊人的增长潜力——包括AI芯片市场需求持续爆发、数据中心业务扩张和新产品线——有望率先突破15万亿美元市值。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Motley Fool</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">15 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://9to5mac.com/2026/05/23/apple-new-gen-ai-subdomain-ahead-of-wwdc/" target="_blank" class="news-item">
+                    <h3>苹果WWDC前注册全新「gen AI」子域名，AI复兴大幕拉开</h3>
+                    <p>苹果在WWDC前夕注册了genai.apple.com子域名。种种迹象表明，2026年WWDC将成为苹果AI战略的转折点，预计将发布重大AI功能更新，开启苹果的AI复兴时代。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">9to5Mac</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">15 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://simplywall.st/stocks/us/software/nasdaq-wyfi/whitefiber/news/a-look-at-whitefiber-wyfi-valuation-after-new-us160-million" target="_blank" class="news-item">
+                    <h3>WhiteFiber获1.6亿美元欧洲AI基础设施协议，估值引关注</h3>
+                    <p>WhiteFiber与一家投资级科技公司签署了为期五年的法国AI算力基础设施协议，总价值1.6亿美元。该消息推动WYFI股价上涨，市场对其在AI基础设施领域的增长潜力展开热议。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Simply Wall Street</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnn.com/2026/05/23/tech/ai-internet-search" target="_blank" class="news-item">
+                    <h3>AI正在永远改变互联网：搜索引擎迎来25年来最大变革</h3>
+                    <p>谷歌正对搜索栏进行25年来最大规模升级，这标志着AI正在从根本上改变人们使用互联网和获取信息的方式。从智能摘要到对话式搜索，AI驱动的搜索体验正在重塑整个网络生态。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNN</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nytimes.com/2026/05/24/business/meat-computer-brain-artificial-intelligence.html" target="_blank" class="news-item">
+                    <h3>在AI高管眼里，我们都只是「肉计算机」</h3>
+                    <p>这个最初源于哲学和认知科学领域的术语，如今被赋予了更令人不安的含义。一些AI高管用「肉计算机」来形容人类，引发了对AI行业如何看待人类价值的广泛讨论和担忧。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.nbcnews.com/video/new-concerns-over-use-of-a-i-to-draft-police-reports-263861829884" target="_blank" class="news-item">
+                    <h3>AI撰写警方报告引发新担忧</h3>
+                    <p>部分警察部门开始使用人工智能起草警方报告。一款名为Axon Draft One的工具已在加利福尼亚州丘拉维斯塔市投入使用，帮助警官自动生成报告，但引发了关于准确性、偏见和问责制的担忧。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">NBC News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">15 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-23" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-23 · 共有 10 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>谷歌发布Gemini Omni：全能AI模型登场</h2>
+                <p class="summary">去年Nano Banana将Gemini的智能引入图像生成和编辑领域，如今谷歌正式推出Gemini Omni——一个集文本、图像、音频等多种模态于一体的全能AI模型，标志着多模态AI技术的重要里程碑。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">blog.google</span>
+                        <span style="margin-left:1rem; color:#888;">53 seconds ago</span>
+                    </div>
+                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://www.nytimes.com/2026/05/22/us/politics/spy-agencies-ai-chips-shortage.html" target="_blank" class="news-item">
+                    <h3>白宫批准90亿美元推动情报机构AI现代化</h3>
+                    <p>美国白宫批准90亿美元专项资金，用于中央情报局和国家安全局等情报机构加速AI能力建设。目前这些机构因芯片短缺无法在机密网络上全面部署最新AI模型，资金将重点解决硬件瓶颈和安全部署问题。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The New York Times</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cnbc.com/2026/05/23/microsofts-new-responsible-tech-lead-on-high-speed-ai-development.html" target="_blank" class="news-item">
+                    <h3>微软新任技术责任主管：如何让高速AI开发更人性化</h3>
+                    <p>微软可信技术集团负责人Jenny Lay-Flurrie表示，在AI迅猛发展的背景下，负责任的技术开发不应拖慢创新步伐，而是要将人文关怀融入开发过程。她强调了AI治理与业务增长之间的平衡之道。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CNBC</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://finance.yahoo.com/markets/stocks/articles/beaten-down-ai-stock-buy-122000959.html" target="_blank" class="news-item">
+                    <h3>这只被低估的AI股票现在值得买入吗？</h3>
+                    <p>ServiceNow是本年度AI板块轮动中受冲击最严重的股票之一。分析人士正在评估其当前估值是否已触及底部，以及在AI自动化领域的长期增长前景能否支撑股价反弹。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.govtech.com/security/new-generation-of-ai-driven-cyber-attacks-is-looming" target="_blank" class="news-item">
+                    <h3>新一代AI驱动网络攻击即将到来</h3>
+                    <p>Palo Alto Networks高管警告称，新一代基于AI的网络安全威胁正在酝酿中。攻击者正利用AI技术开发更智能、更难检测的攻击方式，企业和政府亟需升级防御策略。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">GovTech</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cbsnews.com/news/ai-layoffs-hiring-entry-level-workers/" target="_blank" class="news-item">
+                    <h3>AI导致裁员上升，但专家称这只是冰山一角</h3>
+                    <p>经济学家指出，AI正在重塑美国劳动力市场——不仅直接导致裁员，更在抑制招聘增长，尤其影响入门级岗位。企业更倾向于用AI替代人工，招聘放缓的趋势可能比裁员本身更具长期影响。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CBS News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://fedscoop.com/usda-ai-farmers-senate-bill/" target="_blank" class="news-item">
+                    <h3>美国参议院法案拟加大农业部AI资助和农民培训</h3>
+                    <p>由参议员Ted Budd提出的两党法案旨在通过增加AI研究拨款、推动农民AI教育培训，帮助美国农业领域加速数字化转型，提升农业生产效率和竞争力。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">FedScoop</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://garymarcus.substack.com/p/checking-the-math-behind-openai-and" target="_blank" class="news-item">
+                    <h3>细数OpenAI与Anthropic最新成果的真实分量</h3>
+                    <p>OpenAI在Erdos数学问题上取得重要突破，Anthropic也在模型能力上持续发力。然而分析人士提醒，在关注这些亮眼宣传的同时，也需要审慎审视实际技术进展与商业化之间的差距。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Marcus on AI | Substack</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.forbes.com/sites/lanceeliot/2026/05/22/if-majoring-in-computer-science-is-doomed-due-to-ai-the-latest-claim-is-that-majoring-in-philosophy-is-the-next-best-choice/" target="_blank" class="news-item">
+                    <h3>AI会让哲学成为新的计算机科学吗？</h3>
+                    <p>随着AI重塑编程和白领工作方式，越来越多学生开始质疑计算机科学专业的未来前景。有观点认为，哲学——这一培养批判性思维和伦理判断的传统学科——可能成为AI时代最受追捧的专业之一。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Forbes</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.foxnews.com/outkick-culture/ozzy-osbournes-latest-reinvention-ai-powered-interactive-hologram-experience" target="_blank" class="news-item">
+                    <h3>摇滚传奇Ozzy Osbourne联手AI打造全息互动体验</h3>
+                    <p>摇滚传奇Ozzy Osbourne的家人宣布与HYPERREAL合作，利用AI技术创建一位交互式全息版本的Ozzy，为粉丝带来前所未有的沉浸式演出体验，展示了AI在娱乐产业的创新应用。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Fox News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-22" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-22 · 共有 10 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>验证OpenAI与Anthropic最新头条背后的数学真相</h2>
+                <p class="summary">OpenAI在埃尔多斯数学问题上取得重大突破，引发业界对其与Anthropic在基础数学研究领域竞争态势的新一轮讨论，展示了AI在推理能力方面的持续进步。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">Marcus on AI | Substack</span>
+                        <span style="margin-left:1rem; color:#888;">20 hours ago</span>
+                    </div>
+                    <a href="https://garymarcus.substack.com/p/checking-the-math-behind-openai-and" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://finance.yahoo.com/sectors/technology/articles/latest-news-ai-chips-amd-113829305.html" target="_blank" class="news-item">
+                    <h3>AI芯片最新动态：AMD以2nm EPYC处理器引领AI创新</h3>
+                    <p>AMD已启动代号“威尼斯”的第六代EPYC处理器大规模量产，采用台积电2nm制程工艺，标志着AI芯片在高性能计算领域迈入新纪元，与英伟达的竞争进一步升级。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Yahoo Finance</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/" target="_blank" class="news-item">
+                    <h3>谷歌推出Gemini Omni：全能型多模态AI模型</h3>
+                    <p>谷歌发布Gemini Omni，这是一个支持从任意输入创建内容并可用自然语言进行编辑的全能型AI模型，进一步拓展了多模态AI的能力边界。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">blog.google</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">11 minutes ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.businessinsider.com/satya-nadella-microsoft-ai-leadership-reset-2026-5" target="_blank" class="news-item">
+                    <h3>纳德拉重组微软：围绕AI重塑高层权力架构</h3>
+                    <p>微软CEO萨提亚·纳德拉拆解了沿用数十年的高级领导层架构，组建新的核心圈层，围绕人工智能重新分配权力，标志着微软组织架构的重大转型。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Business Insider</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.pbs.org/newshour/politics/watch-trump-explains-why-he-postponed-signing-ai-executive-order" target="_blank" class="news-item">
+                    <h3>特朗普解释推迟签署AI行政令的原因</h3>
+                    <p>美国总统特朗普取消了原定的人工智能行政令签署仪式，理由是担心该命令可能削弱美国在AI领域的竞争优势，引发了对美国AI政策走向的新思考。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">PBS</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">21 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.fool.com/investing/2026/05/22/nvidia-ai-partner-bargain-hiding-corning/" target="_blank" class="news-item">
+                    <h3>英伟达最新AI合作方：低调的隐形宝藏，现在还值得买入吗？</h3>
+                    <p>英伟达与康宁等低调公司的AI合作引起投资者关注，分析人士审视这些藏在眼皮底下的合作伙伴是否仍是值得买入的价值标的。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Motley Fool</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.bu.edu/wheelock/news/articles/2026/a-new-way-of-looking-at-the-ai-conversation/" target="_blank" class="news-item">
+                    <h3>重新审视AI对话：教育领域的新视角</h3>
+                    <p>波士顿大学博士生Maya Bialik合著新书《不可替代：AI如何改变一切（又什么都没改变）》，探讨AI在教学中的角色定位，为教育科技领域提供了新思考。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Boston University</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.fridaythings.com/recent-posts/granta-commonwealth-prize-jamir-nazir-ai-serpent-in-the-grove" target="_blank" class="news-item">
+                    <h3>最新AI文学丑闻的核心问题并非AI本身</h3>
+                    <p>特立尼达作家赢得文学奖后被指控使用AI创作，引发网络热议。然而深入分析发现，这场争议的核心其实并非AI技术，而是文学界更深层的系统性偏见。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Friday Things</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.cbsnews.com/newyork/video/nyc-comptroller-warns-of-potential-ai-fallout/" target="_blank" class="news-item">
+                    <h3>纽约审计长警告：AI可能引发经济衰退需储备资金</h3>
+                    <p>纽约市审计长Mark Levine敦促立法者建立应急基金，以应对人工智能可能引发的经济衰退风险，保护纽约市民免受AI带来的劳动力市场冲击。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">CBS News</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.politico.com/news/2026/05/21/house-ai-talks-spark-backlash-from-ny-state-lawmakers-00933075" target="_blank" class="news-item">
+                    <h3>纽约州议员炮轰国会AI谈判：要求众议院代表投反对票</h3>
+                    <p>纽约州人工智能法案的两位发起议员要求代表该州的众议院民主党人拒绝一项早期阶段的国会AI法案，州级与联邦层面的AI监管分歧进一步加剧。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Politico</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="news-2026-05-21" class="day-news-container ">
+            <div class="update-info"><p>📅 日报日期: 2026-05-21 · 共有 9 条资讯</p></div>
+            
+            <div class="featured-news">
+                <span class="tag">🔥 重点头条</span>
+                <h2>SpaceX、OpenAI和Anthropic争相冲刺上市</h2>
+                <p class="summary">SpaceX、OpenAI和Anthropic这三家AI领域巨头正争相测试投资者对股票市场的兴趣。它们各自准备首次公开募股（IPO），标志着AI行业从私募市场向公开资本市场的重大转变。</p>
+                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <span class="source">The New York Times</span>
+                        <span style="margin-left:1rem; color:#888;">2 hours ago</span>
+                    </div>
+                    <a href="https://www.nytimes.com/2026/05/21/business/dealbook/spacex-openai-anthropic-ipo.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
+                </div>
+            </div>
+        
+            <h3 class="news-section-title">📰 更多资讯</h3>
+            <div class="news-grid">
+                <a href="https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/" target="_blank" class="news-item">
+                    <h3>Gemini for Science：AI实验工具开启科学探索新时代</h3>
+                    <p>Google推出全新Gemini for Science计划，发布多项AI实验工具帮助科研人员进行科学发现。包括Google Antigravity中的科学技能以及Google Labs上的三个实验性工具，旨在加速科学研究进程。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">blog.google</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.bloomberg.com/news/articles/2026-05-21/anthropic-s-new-consulting-venture-makes-its-first-acquisition" target="_blank" class="news-item">
+                    <h3>Anthropic新咨询部门完成首次收购</h3>
+                    <p>由Blackstone、Anthropic PBC和Hellman & Friedman联合投资的新AI企业服务公司，完成了对旧金山一家公司的首次收购。这标志着Anthropic从模型开发商向企业服务生态的扩展迈出重要一步。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Bloomberg.com</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.aljazeera.com/economy/2026/5/21/nvidia-posts-record-profit-and-revenue-amid-ai-chip-boom" target="_blank" class="news-item">
+                    <h3>英伟达公布创纪录利润583亿美元，AI芯片需求持续火爆</h3>
+                    <p>芯片巨头英伟达宣布800亿美元股票回购计划和股息上调，为股东带来丰厚回报。受AI芯片需求持续增长的推动，公司营收和利润均创下历史新高。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Al Jazeera</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027" target="_blank" class="news-item">
+                    <h3>英伟达发布2027财年第一季度财报：营收816亿美元</h3>
+                    <p>英伟达（NASDAQ: NVDA）公布截至2026年4月26日的第一季度财报，创下816亿美元的季度营收纪录，环比增长20%，同比增长显著。AI训练和推理芯片需求是主要增长驱动力。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">NVIDIA Newsroom</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://hai.stanford.edu/news/new-approach-to-scaling-laws-could-change-how-ai-models-are-trained" target="_blank" class="news-item">
+                    <h3>AI缩放定律新方法有望改变模型训练方式</h3>
+                    <p>斯坦福HAI研究院的研究人员借鉴测量科学和教育领域的统计学概念，大幅降低了预测模型性能扩展规律所需的计算资源需求。这一突破可能改变未来AI模型的训练策略和资源配置。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Stanford HAI</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">13 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.networkworld.com/article/3562856/nvidia-latest-news-and-insights__trashed.html" target="_blank" class="news-item">
+                    <h3>英伟达最新动态：产品与公司新闻概览</h3>
+                    <p>本文汇总了AI和处理器巨头英伟达的最新产品发布和公司新闻，帮助投资者和技术爱好者全面了解这家芯片巨头的最近动向。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Network World</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://gizmodo.com/pentagon-reportedly-plans-to-adopt-and-weaponize-latest-cyber-capable-ai-models-2000761651" target="_blank" class="news-item">
+                    <h3>五角大楼据报计划采用并武器化最新AI模型</h3>
+                    <p>报道称，五角大楼计划将具备网络攻击能力的最新AI模型用于军事目的，其中可能涉及Anthropic的Claude Mythos Preview模型，尽管该公司已被标记为供应链风险。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">Gizmodo</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            
+                <a href="https://www.fool.com/investing/2026/05/21/is-nvidia-a-buy-after-their-latest-earnings-report/" target="_blank" class="news-item">
+                    <h3>英伟达财报后值得买入吗？分析师深度解读</h3>
+                    <p>英伟达预计本季度销售额同比增长高达95%，而且这还不包括中国市场的收入。投资者正在评估在创纪录的财报发布后，英伟达股票是否仍然值得买入。</p>
+                    <div class="meta">
+                        <div>
+                            <span class="source">The Motley Fool</span>
+                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
+                        </div>
+                        <span>阅读原文 &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>© 2026 旺财Jarvis. Build by Iron Man.</p>
+    </footer>
+
+    <script>
+        function showDate(dateStr) {
+            document.querySelectorAll('.date-pill').forEach(btn => {
+                if (btn.dataset.date === dateStr) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            document.querySelectorAll('.day-news-container').forEach(container => {
+                if (container.id === 'news-' + dateStr) {
+                    container.classList.add('active');
+                } else {
+                    container.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
