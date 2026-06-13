@@ -61,29 +61,91 @@
     </header>
     
     <div class="news-date-selector">
-        <div class="date-pills" id="datePillsContainer">
-            <button class="date-pill active" data-date="2026-06-09" onclick="showDate('2026-06-09')">6月9日 (最新)</button>
-            <button class="date-pill " data-date="2026-06-04" onclick="showDate('2026-06-04')">6月4日</button>
-            <button class="date-pill " data-date="2026-06-02" onclick="showDate('2026-06-02')">6月2日</button>
-            <button class="date-pill " data-date="2026-06-01" onclick="showDate('2026-06-01')">6月1日</button>
-            <button class="date-pill " data-date="2026-05-31" onclick="showDate('2026-05-31')">5月31日</button>
-            <button class="date-pill " data-date="2026-05-30" onclick="showDate('2026-05-30')">5月30日</button>
-            <button class="date-pill " data-date="2026-05-29" onclick="showDate('2026-05-29')">5月29日</button>
-            <button class="date-pill " data-date="2026-05-28" onclick="showDate('2026-05-28')">5月28日</button>
-            <button class="date-pill " data-date="2026-05-27" onclick="showDate('2026-05-27')">5月27日</button>
-            <button class="date-pill " data-date="2026-05-26" onclick="showDate('2026-05-26')">5月26日</button>
-            <button class="date-pill " data-date="2026-05-25" onclick="showDate('2026-05-25')">5月25日</button>
-            <button class="date-pill " data-date="2026-05-24" onclick="showDate('2026-05-24')">5月24日</button>
-            <button class="date-pill " data-date="2026-05-23" onclick="showDate('2026-05-23')">5月23日</button>
-            <button class="date-pill " data-date="2026-05-22" onclick="showDate('2026-05-22')">5月22日</button>
-            <button class="date-pill " data-date="2026-05-21" onclick="showDate('2026-05-21')">5月21日</button>
+                <div class="date-pills" id="datePillsContainer">
+        <button class="date-pill active" data-date="2026-06-12" onclick="showDate('2026-06-12')">6月12日 (最新)</button>
+        <button class="date-pill" data-date="2026-06-09" onclick="showDate('2026-06-09')">6月9日</button>
+        <button class="date-pill" data-date="2026-06-04" onclick="showDate('2026-06-04')">6月4日</button>
+        <button class="date-pill" data-date="2026-06-02" onclick="showDate('2026-06-02')">6月2日</button>
+        <button class="date-pill" data-date="2026-06-01" onclick="showDate('2026-06-01')">6月1日</button>
+        <button class="date-pill" data-date="2026-05-31" onclick="showDate('2026-05-31')">5月31日</button>
+        <button class="date-pill" data-date="2026-05-30" onclick="showDate('2026-05-30')">5月30日</button>
+        <button class="date-pill" data-date="2026-05-29" onclick="showDate('2026-05-29')">5月29日</button>
+        <button class="date-pill" data-date="2026-05-28" onclick="showDate('2026-05-28')">5月28日</button>
+        <button class="date-pill" data-date="2026-05-27" onclick="showDate('2026-05-27')">5月27日</button>
+        <button class="date-pill" data-date="2026-05-26" onclick="showDate('2026-05-26')">5月26日</button>
+        <button class="date-pill" data-date="2026-05-25" onclick="showDate('2026-05-25')">5月25日</button>
+        <button class="date-pill" data-date="2026-05-24" onclick="showDate('2026-05-24')">5月24日</button>
+        <button class="date-pill" data-date="2026-05-23" onclick="showDate('2026-05-23')">5月23日</button>
             
         </div>
-    </div>
+
     
-    <main class="news-container">
-        
-        <div id="news-2026-06-09" class="day-news-container active">
+        <main class="news-container">
+<div id="news-2026-06-12" class="day-news-container active">
+<div class="update-info"><p>📅 日报日期: 2026-06-12 · 共 8 条资讯</p></div>
+<div class="featured-news">
+<span class="tag">🔥 重点头条</span>
+<h2>The latest AI news we announced in April 2026</h2>
+<p class="summary">Google announced a bunch of new AI tools in April to help people work, study and create more easily. They launched features like a free video</p>
+<div class="meta" style="margin-top:1rem;font-size:0.9rem;">
+<div><span class="source">AI News</span></div>
+<a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026" target="_blank" style="color:#667eea;font-weight:bold;">阅读原文 →</a>
+</div></div>
+<h3 class="news-section-title">📰 更多资讯</h3>
+<div class="news-grid">
+<a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" class="news-item">
+<h3>Latest AI News and Breakthroughs That Matter Most</h3>
+<p>Stay ahead with the latest AI news in Mar, April, May, June 2026: major model launches, record funding rounds, and breakthroughs shaping business, work,</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026" target="_blank" class="news-item">
+<h3>2026 10 Things That Matter in AI Right Now</h3>
+<p>MIT Technology Review&#39;s authoritative overview of the 10 technologies, emerging trends, bold ideas, and powerful movements in AI in 2026.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026" target="_blank" class="news-item">
+<h3>What&#39;s next in AI: 7 trends to watch in 2026</h3>
+<p>Seven AI trends to watch in 2026 will make AI a true partner — boosting teamwork, security, research momentum and infrastructure efficiency.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" target="_blank" class="news-item">
+<h3>The trends that will shape AI and tech in 2026</h3>
+<p>Reporter Anabelle Nicoud spoke to several experts across AI, security, quantum and beyond to better understand where tech will take us in 2026.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://hai.stanford.edu/news/stanford-ai-experts-predict-what-will-happen-in-2026" target="_blank" class="news-item">
+<h3>Stanford AI Experts Predict What Will Happen in 2026</h3>
+<p>After years of fast expansion and billion-dollar bets, 2026 may mark the moment artificial intelligence confronts its actual utility.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://aibreakthroughawards.com" target="_blank" class="news-item">
+<h3>AI Breakthrough Awards</h3>
+<p>[![Image 1: AI Breakthrough Awards](https://aibreakthroughawards.com/wp-content/uploads/2018/03/AI_Breakthrough_Awards_Logo-outlined-1.png)](https://aibreakthroughawards.com/). ![Image 2](https://aibreakthroughawards.com/wp-content/uploads/2023/04/AI_Breakthrough_Awards_Logo.png). Now in its 9th year, the annual AI Breakthrough Awards reflect nearly a decade at the forefront of the Artificial Intelligence industry – tracking its evolution from early experimentation to real-world, enterprise-scale impact. ![Image 3](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-004.png). ![Image 20](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-008.png). An AI Breakthrough Award positions your organization among the innovators defining the future of intelligent technology. ![Image 21](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-004.png). ![Image 22](https://aibreakthroughawards.com/wp-content/uploads/2023/03/AI-Illustrations_05.png). The AI Breakthrough Awards program offers an unparalleled opportunity to showcase your innovation, gain global recognition and solidify your position as a leader in the AI industry. Winning an AI Breakthrough Award highlights your company as a trailblazer in AI technology innovation. With thousands of nominations coming in each year across a wide range of categories, winning an AI Breakthrough Award places your organization among the top innovators in the global artificial intelligence technology space. As an AI Breakthrough winner, you become part of a global community of artificial intelligence technology innovators.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.ironhack.com/us/blog/artificial-intelligence-breakthroughs-a-look-ahead-to-2024" target="_blank" class="news-item">
+<h3>Artificial Intelligence Breakthroughs: Key Developments to Expect in ...</h3>
+<p>*   ![Image 25](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 26](blob:http://localhost/87be05f2c43941fa2cd089f23c6d1d1b)     ### [AI Engineering: Building Artificial Intelligence Models](https://www.ironhack.com/us/blog/ai-engineering-comprendre-le-metier-qui-transforme-l-intelligence-artificielle-en). [Read article](https://www.ironhack.com/us/blog/ai-engineering-comprendre-le-metier-qui-transforme-l-intelligence-artificielle-en). *   ![Image 27](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 28](blob:http://localhost/211d6afa17148d735931136d55ad9484)     ### [AI Consultant: Role and Skills](https://www.ironhack.com/us/blog/ai-consultant-role-and-skills). [Read article](https://www.ironhack.com/us/blog/ai-consultant-role-and-skills). *   ![Image 35](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 36](blob:http://localhost/eb8e709fc81c765f244be9103881e695)   5 minutes   ### [ChatGPT Atlas: The AI Browser That Could Change How We Surf the Web](https://www.ironhack.com/us/blog/chatgpt-atlas-the-ai-browser-that-could-change-how-we-surf-the-web). [Read article](https://www.ironhack.com/us/blog/chatgpt-atlas-the-ai-browser-that-could-change-how-we-surf-the-web). *   ![Image 39](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 40](blob:http://localhost/e053f23fac837fec071e77d3b106b482)     ### [Mistral AI: Models and Uses](https://www.ironhack.com/us/blog/mistral-ai-models-and-uses). *   ![Image 41](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 42](blob:http://localhost/6ce14a07d49e25fe20d4d4aeeccfbaca)     ### [The Web Developer’s AI Toolkit in 2025: Cursor, Claude, Replit](https://www.ironhack.com/us/blog/les-outils-ai-du-developpeur-web-en-2025-cursor-claude-replit). *   ![Image 43](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 44](blob:http://localhost/6ce14a07d49e25fe20d4d4aeeccfbaca)     ### [The Web Developer’s AI Toolkit in 2025: Cursor, Claude, Replit](https://www.ironhack.com/us/blog/the-web-developer-s-ai-toolkit-in-2025-cursor-claude-replit). From code editing to generating entire applications, certain tools are transf… [Read article](https://www.ironhack.com/us/blog/the-web-developer-s-ai-toolkit-in-2025-cursor-claude-replit). *   ![Image 45](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 46](blob:http://localhost/d1825e04f01831bc5fd77f101075f5f4)     ### [AI – How to Create Your First Prompt](https://www.ironhack.com/us/blog/ia-creer-son-premier-prompt). *   ![Image 47](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 48](blob:http://localhost/d1825e04f01831bc5fd77f101075f5f4)     ### [AI – How to Create Your First Prompt](https://www.ironhack.com/us/blog/ai-how-to-create-your-first-prompt). You’re not a… [Read article](https://www.ironhack.com/us/blog/ai-how-to-create-your-first-prompt). *   ![Image 49](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 50](blob:http://localhost/1f6ad8204480e996de7c253c3e02bd57)   7 minutes   ### [Learn Data Science and Machine Learning with Ironhack’s New Bootcamp](https://www.ironhack.com/us/blog/learn-data-science-and-machine-learning-with-ironhack-s-new-bootcamp). *   ![Image 71](blob:http://localhost/1e7b14f778e62d26060548fbcce46933)![Image 72](blob:http://localhost/3b04a71760e19dd7b47e27fe30b962f8)   8 minutes   ### [Top Coding Languages to Learn in 2025: Stay Ahead in Tech](https://www.ironhack.com/us/blog/coding-languages-to-learn-in-2024).</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+</div>
+</div>
+
+<div id="news-2026-06-09" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-06-09 · 共有 7 条资讯</p></div>
             
             <div class="featured-news">
@@ -174,8 +236,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-06-04" class="day-news-container ">
+
+<div id="news-2026-06-04" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-06-04 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -278,8 +340,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-06-02" class="day-news-container ">
+
+<div id="news-2026-06-02" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-06-02 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -382,8 +444,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-06-01" class="day-news-container ">
+
+<div id="news-2026-06-01" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-06-01 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -486,8 +548,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-31" class="day-news-container ">
+
+<div id="news-2026-05-31" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-31 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -590,8 +652,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-30" class="day-news-container ">
+
+<div id="news-2026-05-30" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-30 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -694,8 +756,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-29" class="day-news-container ">
+
+<div id="news-2026-05-29" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-29 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -798,8 +860,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-28" class="day-news-container ">
+
+<div id="news-2026-05-28" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-28 · 共有 9 条资讯</p></div>
             
             <div class="featured-news">
@@ -914,8 +976,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-27" class="day-news-container ">
+
+<div id="news-2026-05-27" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-27 · 共有 9 条资讯</p></div>
             
             <div class="featured-news">
@@ -1030,8 +1092,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-26" class="day-news-container ">
+
+<div id="news-2026-05-26" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-26 · 共有 9 条资讯</p></div>
             
             <div class="featured-news">
@@ -1146,8 +1208,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-25" class="day-news-container ">
+
+<div id="news-2026-05-25" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-25 · 共有 8 条资讯</p></div>
             
             <div class="featured-news">
@@ -1250,8 +1312,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-24" class="day-news-container ">
+
+<div id="news-2026-05-24" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-24 · 共有 9 条资讯</p></div>
             
             <div class="featured-news">
@@ -1366,8 +1428,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-23" class="day-news-container ">
+
+<div id="news-2026-05-23" class="day-news-container">
             <div class="update-info"><p>📅 日报日期: 2026-05-23 · 共有 10 条资讯</p></div>
             
             <div class="featured-news">
@@ -1494,254 +1556,8 @@
                 </a>
             </div>
         </div>
-        
-        <div id="news-2026-05-22" class="day-news-container ">
-            <div class="update-info"><p>📅 日报日期: 2026-05-22 · 共有 10 条资讯</p></div>
-            
-            <div class="featured-news">
-                <span class="tag">🔥 重点头条</span>
-                <h2>验证OpenAI与Anthropic最新头条背后的数学真相</h2>
-                <p class="summary">OpenAI在埃尔多斯数学问题上取得重大突破，引发业界对其与Anthropic在基础数学研究领域竞争态势的新一轮讨论，展示了AI在推理能力方面的持续进步。</p>
-                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div>
-                        <span class="source">Marcus on AI | Substack</span>
-                        <span style="margin-left:1rem; color:#888;">20 hours ago</span>
-                    </div>
-                    <a href="https://garymarcus.substack.com/p/checking-the-math-behind-openai-and" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-                </div>
-            </div>
-        
-            <h3 class="news-section-title">📰 更多资讯</h3>
-            <div class="news-grid">
-                <a href="https://finance.yahoo.com/sectors/technology/articles/latest-news-ai-chips-amd-113829305.html" target="_blank" class="news-item">
-                    <h3>AI芯片最新动态：AMD以2nm EPYC处理器引领AI创新</h3>
-                    <p>AMD已启动代号“威尼斯”的第六代EPYC处理器大规模量产，采用台积电2nm制程工艺，标志着AI芯片在高性能计算领域迈入新纪元，与英伟达的竞争进一步升级。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Yahoo Finance</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/" target="_blank" class="news-item">
-                    <h3>谷歌推出Gemini Omni：全能型多模态AI模型</h3>
-                    <p>谷歌发布Gemini Omni，这是一个支持从任意输入创建内容并可用自然语言进行编辑的全能型AI模型，进一步拓展了多模态AI的能力边界。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">blog.google</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">11 minutes ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.businessinsider.com/satya-nadella-microsoft-ai-leadership-reset-2026-5" target="_blank" class="news-item">
-                    <h3>纳德拉重组微软：围绕AI重塑高层权力架构</h3>
-                    <p>微软CEO萨提亚·纳德拉拆解了沿用数十年的高级领导层架构，组建新的核心圈层，围绕人工智能重新分配权力，标志着微软组织架构的重大转型。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Business Insider</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.pbs.org/newshour/politics/watch-trump-explains-why-he-postponed-signing-ai-executive-order" target="_blank" class="news-item">
-                    <h3>特朗普解释推迟签署AI行政令的原因</h3>
-                    <p>美国总统特朗普取消了原定的人工智能行政令签署仪式，理由是担心该命令可能削弱美国在AI领域的竞争优势，引发了对美国AI政策走向的新思考。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">PBS</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">21 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.fool.com/investing/2026/05/22/nvidia-ai-partner-bargain-hiding-corning/" target="_blank" class="news-item">
-                    <h3>英伟达最新AI合作方：低调的隐形宝藏，现在还值得买入吗？</h3>
-                    <p>英伟达与康宁等低调公司的AI合作引起投资者关注，分析人士审视这些藏在眼皮底下的合作伙伴是否仍是值得买入的价值标的。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">The Motley Fool</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.bu.edu/wheelock/news/articles/2026/a-new-way-of-looking-at-the-ai-conversation/" target="_blank" class="news-item">
-                    <h3>重新审视AI对话：教育领域的新视角</h3>
-                    <p>波士顿大学博士生Maya Bialik合著新书《不可替代：AI如何改变一切（又什么都没改变）》，探讨AI在教学中的角色定位，为教育科技领域提供了新思考。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Boston University</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.fridaythings.com/recent-posts/granta-commonwealth-prize-jamir-nazir-ai-serpent-in-the-grove" target="_blank" class="news-item">
-                    <h3>最新AI文学丑闻的核心问题并非AI本身</h3>
-                    <p>特立尼达作家赢得文学奖后被指控使用AI创作，引发网络热议。然而深入分析发现，这场争议的核心其实并非AI技术，而是文学界更深层的系统性偏见。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Friday Things</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.cbsnews.com/newyork/video/nyc-comptroller-warns-of-potential-ai-fallout/" target="_blank" class="news-item">
-                    <h3>纽约审计长警告：AI可能引发经济衰退需储备资金</h3>
-                    <p>纽约市审计长Mark Levine敦促立法者建立应急基金，以应对人工智能可能引发的经济衰退风险，保护纽约市民免受AI带来的劳动力市场冲击。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">CBS News</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.politico.com/news/2026/05/21/house-ai-talks-spark-backlash-from-ny-state-lawmakers-00933075" target="_blank" class="news-item">
-                    <h3>纽约州议员炮轰国会AI谈判：要求众议院代表投反对票</h3>
-                    <p>纽约州人工智能法案的两位发起议员要求代表该州的众议院民主党人拒绝一项早期阶段的国会AI法案，州级与联邦层面的AI监管分歧进一步加剧。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Politico</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        
-        <div id="news-2026-05-21" class="day-news-container ">
-            <div class="update-info"><p>📅 日报日期: 2026-05-21 · 共有 9 条资讯</p></div>
-            
-            <div class="featured-news">
-                <span class="tag">🔥 重点头条</span>
-                <h2>SpaceX、OpenAI和Anthropic争相冲刺上市</h2>
-                <p class="summary">SpaceX、OpenAI和Anthropic这三家AI领域巨头正争相测试投资者对股票市场的兴趣。它们各自准备首次公开募股（IPO），标志着AI行业从私募市场向公开资本市场的重大转变。</p>
-                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div>
-                        <span class="source">The New York Times</span>
-                        <span style="margin-left:1rem; color:#888;">2 hours ago</span>
-                    </div>
-                    <a href="https://www.nytimes.com/2026/05/21/business/dealbook/spacex-openai-anthropic-ipo.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-                </div>
-            </div>
-        
-            <h3 class="news-section-title">📰 更多资讯</h3>
-            <div class="news-grid">
-                <a href="https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/" target="_blank" class="news-item">
-                    <h3>Gemini for Science：AI实验工具开启科学探索新时代</h3>
-                    <p>Google推出全新Gemini for Science计划，发布多项AI实验工具帮助科研人员进行科学发现。包括Google Antigravity中的科学技能以及Google Labs上的三个实验性工具，旨在加速科学研究进程。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">blog.google</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.bloomberg.com/news/articles/2026-05-21/anthropic-s-new-consulting-venture-makes-its-first-acquisition" target="_blank" class="news-item">
-                    <h3>Anthropic新咨询部门完成首次收购</h3>
-                    <p>由Blackstone、Anthropic PBC和Hellman & Friedman联合投资的新AI企业服务公司，完成了对旧金山一家公司的首次收购。这标志着Anthropic从模型开发商向企业服务生态的扩展迈出重要一步。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Bloomberg.com</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.aljazeera.com/economy/2026/5/21/nvidia-posts-record-profit-and-revenue-amid-ai-chip-boom" target="_blank" class="news-item">
-                    <h3>英伟达公布创纪录利润583亿美元，AI芯片需求持续火爆</h3>
-                    <p>芯片巨头英伟达宣布800亿美元股票回购计划和股息上调，为股东带来丰厚回报。受AI芯片需求持续增长的推动，公司营收和利润均创下历史新高。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Al Jazeera</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">8 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027" target="_blank" class="news-item">
-                    <h3>英伟达发布2027财年第一季度财报：营收816亿美元</h3>
-                    <p>英伟达（NASDAQ: NVDA）公布截至2026年4月26日的第一季度财报，创下816亿美元的季度营收纪录，环比增长20%，同比增长显著。AI训练和推理芯片需求是主要增长驱动力。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">NVIDIA Newsroom</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://hai.stanford.edu/news/new-approach-to-scaling-laws-could-change-how-ai-models-are-trained" target="_blank" class="news-item">
-                    <h3>AI缩放定律新方法有望改变模型训练方式</h3>
-                    <p>斯坦福HAI研究院的研究人员借鉴测量科学和教育领域的统计学概念，大幅降低了预测模型性能扩展规律所需的计算资源需求。这一突破可能改变未来AI模型的训练策略和资源配置。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Stanford HAI</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">13 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.networkworld.com/article/3562856/nvidia-latest-news-and-insights__trashed.html" target="_blank" class="news-item">
-                    <h3>英伟达最新动态：产品与公司新闻概览</h3>
-                    <p>本文汇总了AI和处理器巨头英伟达的最新产品发布和公司新闻，帮助投资者和技术爱好者全面了解这家芯片巨头的最近动向。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Network World</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://gizmodo.com/pentagon-reportedly-plans-to-adopt-and-weaponize-latest-cyber-capable-ai-models-2000761651" target="_blank" class="news-item">
-                    <h3>五角大楼据报计划采用并武器化最新AI模型</h3>
-                    <p>报道称，五角大楼计划将具备网络攻击能力的最新AI模型用于军事目的，其中可能涉及Anthropic的Claude Mythos Preview模型，尽管该公司已被标记为供应链风险。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Gizmodo</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.fool.com/investing/2026/05/21/is-nvidia-a-buy-after-their-latest-earnings-report/" target="_blank" class="news-item">
-                    <h3>英伟达财报后值得买入吗？分析师深度解读</h3>
-                    <p>英伟达预计本季度销售额同比增长高达95%，而且这还不包括中国市场的收入。投资者正在评估在创纪录的财报发布后，英伟达股票是否仍然值得买入。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">The Motley Fool</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        
     </main>
-    
-    <footer>
+<footer>
         <p>© 2026 旺财Jarvis. Build by Iron Man.</p>
     </footer>
 
