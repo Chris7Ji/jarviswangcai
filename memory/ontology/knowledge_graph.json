@@ -159,6 +159,14 @@
       }
     },
     {
+      "id": "doc:working-buffer.md",
+      "type": "Document",
+      "label": "working-buffer.md",
+      "properties": {
+        "path": "working-buffer.md"
+      }
+    },
+    {
       "id": "doc:ascend_ai_officer.md",
       "type": "Document",
       "label": "ascend_ai_officer.md",
@@ -889,6 +897,36 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-20-session-summary.md",
+      "type": "Document",
+      "label": "2026-04-20-session-summary.md",
+      "properties": {
+        "path": "memory/2026-04-20-session-summary.md"
+      }
+    },
+    {
+      "id": "concept:reply_to_current",
+      "type": "Concept",
+      "label": "reply_to_current",
+      "properties": {}
+    },
+    {
+      "id": "doc:memory/working-buffer.md",
+      "type": "Document",
+      "label": "working-buffer.md",
+      "properties": {
+        "path": "memory/working-buffer.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-new-session.md",
+      "type": "Document",
+      "label": "2026-04-20-new-session.md",
+      "properties": {
+        "path": "memory/2026-04-20-new-session.md"
+      }
+    },
+    {
       "id": "doc:memory/domain-jarviswangcai-top.md",
       "type": "Document",
       "label": "domain-jarviswangcai-top.md",
@@ -897,11 +935,75 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-20-0634.md",
+      "type": "Document",
+      "label": "2026-04-20-0634.md",
+      "properties": {
+        "path": "memory/2026-04-20-0634.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0630.md",
+      "type": "Document",
+      "label": "2026-04-20-0630.md",
+      "properties": {
+        "path": "memory/2026-04-20-0630.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-05-29.md",
       "type": "Document",
       "label": "2026-05-29.md",
       "properties": {
         "path": "memory/2026-05-29.md"
+      }
+    },
+    {
+      "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_GUIDE.md",
+      "properties": {
+        "path": "memory/MEMORY_SYSTEM_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-16.md",
+      "type": "Document",
+      "label": "2026-04-16.md",
+      "properties": {
+        "path": "memory/2026-04-16.md"
+      }
+    },
+    {
+      "id": "doc:memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "type": "Document",
+      "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "properties": {
+        "path": "memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "memory/2026-06-11.md"
+      }
+    },
+    {
+      "id": "doc:memory/ascend_cann_knowledge.md",
+      "type": "Document",
+      "label": "ascend_cann_knowledge.md",
+      "properties": {
+        "path": "memory/ascend_cann_knowledge.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-15.md",
+      "type": "Document",
+      "label": "2026-04-15.md",
+      "properties": {
+        "path": "memory/2026-04-15.md"
       }
     },
     {
@@ -921,11 +1023,35 @@
       }
     },
     {
+      "id": "doc:memory/2026-04-20-0627.md",
+      "type": "Document",
+      "label": "2026-04-20-0627.md",
+      "properties": {
+        "path": "memory/2026-04-20-0627.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-05-04.md",
+      "type": "Document",
+      "label": "2026-05-04.md",
+      "properties": {
+        "path": "memory/2026-05-04.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-05-30.md",
       "type": "Document",
       "label": "2026-05-30.md",
       "properties": {
         "path": "memory/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-04-20-0632.md",
+      "type": "Document",
+      "label": "2026-04-20-0632.md",
+      "properties": {
+        "path": "memory/2026-04-20-0632.md"
       }
     },
     {
@@ -2629,6 +2755,60 @@
       }
     },
     {
+      "id": "concept:私有知识星图自动构建",
+      "type": "Concept",
+      "label": "私有知识星图自动构建",
+      "properties": {}
+    },
+    {
+      "id": "concept:Obsidian 知识库",
+      "type": "Concept",
+      "label": "Obsidian 知识库",
+      "properties": {}
+    },
+    {
+      "id": "concept:概念关联",
+      "type": "Concept",
+      "label": "概念关联",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识网络",
+      "type": "Concept",
+      "label": "知识网络",
+      "properties": {}
+    },
+    {
+      "id": "concept:关系密度",
+      "type": "Concept",
+      "label": "关系密度",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识发现",
+      "type": "Concept",
+      "label": "知识发现",
+      "properties": {}
+    },
+    {
+      "id": "concept:本体图谱",
+      "type": "Concept",
+      "label": "本体图谱",
+      "properties": {}
+    },
+    {
+      "id": "concept:知识检索",
+      "type": "Concept",
+      "label": "知识检索",
+      "properties": {}
+    },
+    {
+      "id": "concept:AI分析",
+      "type": "Concept",
+      "label": "AI分析",
+      "properties": {}
+    },
+    {
       "id": "doc:.learnings/QUARTERLY_REVIEW.md",
       "type": "Document",
       "label": "QUARTERLY_REVIEW.md",
@@ -3379,12 +3559,6 @@
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-session-summary.md"
       }
-    },
-    {
-      "id": "concept:reply_to_current",
-      "type": "Concept",
-      "label": "reply_to_current",
-      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/memory/working-buffer.md",
@@ -4345,60 +4519,6 @@
       "properties": {
         "path": "jiaviswangcai.ai/.learnings/LEARNINGS.md"
       }
-    },
-    {
-      "id": "concept:私有知识星图自动构建",
-      "type": "Concept",
-      "label": "私有知识星图自动构建",
-      "properties": {}
-    },
-    {
-      "id": "concept:Obsidian 知识库",
-      "type": "Concept",
-      "label": "Obsidian 知识库",
-      "properties": {}
-    },
-    {
-      "id": "concept:概念关联",
-      "type": "Concept",
-      "label": "概念关联",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识网络",
-      "type": "Concept",
-      "label": "知识网络",
-      "properties": {}
-    },
-    {
-      "id": "concept:关系密度",
-      "type": "Concept",
-      "label": "关系密度",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识发现",
-      "type": "Concept",
-      "label": "知识发现",
-      "properties": {}
-    },
-    {
-      "id": "concept:本体图谱",
-      "type": "Concept",
-      "label": "本体图谱",
-      "properties": {}
-    },
-    {
-      "id": "concept:知识检索",
-      "type": "Concept",
-      "label": "知识检索",
-      "properties": {}
-    },
-    {
-      "id": "concept:AI分析",
-      "type": "Concept",
-      "label": "AI分析",
-      "properties": {}
     },
     {
       "id": "doc:jiaviswangcai.ai/.learnings/QUARTERLY_REVIEW.md",
@@ -6743,11 +6863,27 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-13.md",
+      "type": "Document",
+      "label": "2026-06-13.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-13.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-03.md",
       "type": "Document",
       "label": "2026-06-03.md",
       "properties": {
         "path": "memory/dreaming/deep/2026-06-03.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/deep/2026-06-12.md",
+      "type": "Document",
+      "label": "2026-06-12.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-12.md"
       }
     },
     {
@@ -6767,6 +6903,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-11.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-01.md",
       "type": "Document",
       "label": "2026-06-01.md",
@@ -6780,6 +6924,14 @@
       "label": "2026-06-05.md",
       "properties": {
         "path": "memory/dreaming/deep/2026-06-05.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/deep/2026-06-14.md",
+      "type": "Document",
+      "label": "2026-06-14.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-14.md"
       }
     },
     {
@@ -6839,11 +6991,27 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-13.md",
+      "type": "Document",
+      "label": "2026-06-13.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-13.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-03.md",
       "type": "Document",
       "label": "2026-06-03.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-06-03.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-06-12.md",
+      "type": "Document",
+      "label": "2026-06-12.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-12.md"
       }
     },
     {
@@ -6863,6 +7031,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-11.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-01.md",
       "type": "Document",
       "label": "2026-06-01.md",
@@ -6876,6 +7052,14 @@
       "label": "2026-06-05.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-06-05.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-06-14.md",
+      "type": "Document",
+      "label": "2026-06-14.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-14.md"
       }
     },
     {
@@ -6941,11 +7125,27 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/light/2026-06-13.md",
+      "type": "Document",
+      "label": "2026-06-13.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-13.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/light/2026-06-03.md",
       "type": "Document",
       "label": "2026-06-03.md",
       "properties": {
         "path": "memory/dreaming/light/2026-06-03.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-12.md",
+      "type": "Document",
+      "label": "2026-06-12.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-12.md"
       }
     },
     {
@@ -6965,6 +7165,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/light/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-11.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/light/2026-06-01.md",
       "type": "Document",
       "label": "2026-06-01.md",
@@ -6978,6 +7186,14 @@
       "label": "2026-06-05.md",
       "properties": {
         "path": "memory/dreaming/light/2026-06-05.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-14.md",
+      "type": "Document",
+      "label": "2026-06-14.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-14.md"
       }
     },
     {
@@ -7048,6 +7264,14 @@
       "label": "LICENSE.md",
       "properties": {
         "path": "venv_tavily/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+      }
+    },
+    {
+      "id": "doc:venv_tavily/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md",
+      "type": "Document",
+      "label": "LICENSE.md",
+      "properties": {
+        "path": "venv_tavily/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md"
       }
     },
     {
@@ -8908,6 +9132,11 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:memory/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
       "target": "tag:44639",
       "relation": "has_tag"
@@ -9638,6 +9867,86 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:AI分析",
+      "relation": "mentions"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/CSS_GUIDELINES.md",
       "target": "tag:FFFFFF",
       "relation": "has_tag"
@@ -9734,12 +10043,12 @@
     },
     {
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
-      "target": "concept:报错_ETIMEDOUT",
+      "target": "concept:Gemini",
       "relation": "mentions"
     },
     {
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
-      "target": "concept:Gemini",
+      "target": "concept:报错_ETIMEDOUT",
       "relation": "mentions"
     },
     {
@@ -10693,6 +11002,86 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:.learnings/LEARNINGS.md",
+      "target": "concept:AI分析",
+      "relation": "mentions"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/CSS_GUIDELINES.md",
       "target": "tag:FFFFFF",
       "relation": "has_tag"
@@ -10789,12 +11178,12 @@
     },
     {
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
-      "target": "concept:报错_ETIMEDOUT",
+      "target": "concept:Gemini",
       "relation": "mentions"
     },
     {
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
-      "target": "concept:Gemini",
+      "target": "concept:报错_ETIMEDOUT",
       "relation": "mentions"
     },
     {
