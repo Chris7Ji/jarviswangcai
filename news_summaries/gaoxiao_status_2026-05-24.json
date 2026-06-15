@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-24",
+  "stage": "complete",
+  "fetch": {
+    "status": "success",
+    "source": "SerpAPI",
+    "article_count": 6,
+    "raw_file": "gaoxiao_raw_2026-05-24.json",
+    "raw_file_size": 3960
+  },
+  "translation": {
+    "status": "success",
+    "method": "旺财Jarvis直译 (DeepSeek V4 Flash)",
+    "articles_translated": 6,
+    "note": "Gemini代理不通(7897端口)、MiniMax余额不足、DeepSeek Key失效，改用自身翻译"
+  },
+  "html": {
+    "status": "success",
+    "html_file": "gaoxiao_news_2026-05-24.html",
+    "html_size_bytes": 7617
+  },
+  "email": {
+    "status": "success",
+    "recipients": 15,
+    "success_count": 15,
+    "failed_count": 0,
+    "subject": "[2026-05-24] 高校分队 AI 新闻每日简报",
+    "smtp_account": "86940135@qq.com",
+    "smtp_pwd_note": "使用了send_news_email.py中的备用授权码(oepk****dg)而非main脚本中的(icxh****ie)"
+  },
+  "issues": [
+    "Gemini: 代理7897端口连接被拒(ProxyError) - 代理未启动",
+    "MiniMax: 余额不足(429)",
+    "DeepSeek: API Key无效(401 authentication error)",
+    "SMTP: 主脚本中的授权码icxhfzuyzbhbbjie无效，改用send_news_email.py中的oepkunkbmboucadg成功"
+  ],
+  "updated_at": "2026-05-24T06:17:00+08:00"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Anthropic估值9000亿美元：这家AI巨头如何快速崛起",
+    "summary": "人工智能巨头Anthropic最新估值达9000亿美元，超越OpenAI成为全球最有价值的AI初创公司。据《纽约时报》报道，Anthropic在最新一轮融资中获得650亿美元投资，由Altimeter Capital、Dragoneer、Greenoaks和红杉资本领投，投后估值达9650亿美元。其成功的背后是强大的技术实力和明确的商业战略，但也面临着行业竞争加剧、监管压力增大等挑战。这一估值水平标志着AI行业的竞争格局正在发生重大转变。",
+    "category": "行业动态",
+    "link": "https://www.nytimes.com/2026/05/29/business/dealbook/anthropic-ai-openai.html"
+  },
+  {
+    "title": "Anthropic完成H轮650亿美元融资，估值逼近万亿美元",
+    "summary": "Anthropic正式宣布完成H轮650亿美元融资，由Altimeter Capital、Dragoneer、Greenoaks和红杉资本联合领投，投后估值高达9650亿美元。这笔巨额融资不仅刷新了AI领域的融资纪录，更使Anthropic超越OpenAI成为硅谷估值最高的AI公司。资金将用于扩大AI模型研发、建设算力基础设施以及拓展企业级应用市场。这一里程碑事件反映出资本市场对AI赛道的高度信心。",
+    "category": "融资动态",
+    "link": "https://www.anthropic.com/news/series-h"
+  },
+  {
+    "title": "NIST扩大AI联盟范围，面向全球招募新成员",
+    "summary": "美国国家标准与技术研究院（NIST）宣布扩大其AI安全联盟（AISC）的覆盖范围，并面向全球征集新成员加入。该联盟将聚焦AI创新与落地应用，设立六个工作组分别研究AI测量科学、评估标准、风险管理等关键议题。此次扩员反映了各国政府加强AI治理和标准化建设的迫切需求，对于关注AI安全与合规的从业者来说是一个重要的政策信号。",
+    "category": "政策标准",
+    "link": "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members"
+  },
+  {
+    "title": "OpenAI启动生物防御计划，推出Rosalind生物防御工具",
+    "summary": "OpenAI正式启动生物防御计划，推出名为Rosalind的AI生物防御工具，旨在利用AI加速生物学和生命科学领域的进步，增强大流行病防范能力。该工具将帮助科学家更快地识别和应对生物威胁，同时推动公共卫生体系的数字化升级。Axios独家报道了这一消息，OpenAI表示这是其AI安全战略的重要组成部分，展示了AI在造福人类社会方面的巨大潜力。",
+    "category": "产品发布",
+    "link": "https://www.axios.com/2026/05/29/openai-biodefense-program"
+  },
+  {
+    "title": "欧盟发布AI高风险系统分类新指南",
+    "summary": "欧盟委员会于5月19日发布了关于AI高风险系统分类的最新指南草案。该指南明确了哪些AI系统属于《AI法案》监管的高风险类别，为企业合规提供了更清晰的框架。指南涵盖了医疗、交通、执法、就业等多个领域的AI应用分类标准，是欧盟AI监管体系完善的重要一步。对于在欧盟市场开展AI业务的企业来说，及时了解和遵守这些新规至关重要。",
+    "category": "政策标准",
+    "link": "https://www.jdsupra.com/legalnews/ai-act-update-european-commission-8386734/"
+  },
+  {
+    "title": "AI重塑职场格局：新培训计划助力劳动者跟上变革步伐",
+    "summary": "随着AI技术持续重塑工作方式和职场格局，一项创新的实践培训项目正在帮助劳动者掌握AI时代所需的技能。该项目由联邦新闻网络报道，通过与战略专家Mika Cross和Oath and Oak的Ted Adair合作，为在职人员提供AI工具的实操训练。这一案例表明，面对AI带来的职业变革，系统性的技能培训和终身学习已成为保持竞争力的关键。",
+    "category": "行业动态",
+    "link": "https://federalnewsnetwork.com/artificial-intelligence/2026/05/as-ai-reshapes-work-a-new-program-is-showing-what-it-takes-to-keep-up/"
+  }
+]

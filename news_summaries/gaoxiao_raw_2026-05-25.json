@@ -1,0 +1,48 @@
+{
+  "fetched_at": "2026-05-25T06:15:26.209004",
+  "count": 6,
+  "articles": [
+    {
+      "title": "Inside the British Lab Hunting for Dangers Lurking in A.I.",
+      "snippet": "The government's A.I. Security Institute, staffed by alumni from OpenAI and Google, is becoming a model for countries grappling with A.I.'s emerging risks.",
+      "link": "https://www.nytimes.com/2026/05/24/technology/uk-ai-safety-institute.html",
+      "source": "The New York Times",
+      "date": "13 hours ago"
+    },
+    {
+      "title": "New 'AI scientists' are improving—but reveal their fundamental limits",
+      "snippet": "Many of the most exciting discoveries in science involve highly specialized knowledge and making connections between far-flung facts.",
+      "link": "https://phys.org/news/2026-05-ai-scientists-reveal-fundamental-limits.html",
+      "source": "Phys.org",
+      "date": "3 hours ago"
+    },
+    {
+      "title": "ECB summons banks to urge them to fix flaws exposed by latest AI models",
+      "snippet": "The European Central Bank is to urge banks to speed up work to protect their IT systems, having summoned lenders to a meeting on Tuesday to discuss cyber...",
+      "link": "https://www.ft.com/content/482c56aa-6d2b-4456-9d33-b42dc30788bd?syn-25a6b1a6=1",
+      "source": "Financial Times",
+      "date": "5 hours ago"
+    },
+    {
+      "title": "Texas university to launch master's program in AI",
+      "snippet": "Baylor is launching a new AI master's program as part of its nearly $1 billion budget, aiming to train tech talent with ethics and hands-on skills.",
+      "link": "https://www.chron.com/texas/article/baylor-ai-masters-program-22274436.php",
+      "source": "Chron",
+      "date": "4 hours ago"
+    },
+    {
+      "title": "How New College Grads Can Succeed in an AI Economy",
+      "snippet": "It's graduation season, and people entering the workforce now can turn the 2026 hiring slowdown into a career launchpad using practical skills — and some...",
+      "link": "https://www.govtech.com/blogs/lohrmann-on-cybersecurity/how-new-college-grads-can-succeed-in-an-ai-economy",
+      "source": "GovTech",
+      "date": "12 hours ago"
+    },
+    {
+      "title": "AI is speeding up the quantum threat to crypto, security experts warn",
+      "snippet": "The crypto industry has spent years debating whether quantum computing poses an existential threat to blockchains like Bitcoin and Ethereum.",
+      "link": "https://www.coindesk.com/tech/2026/05/24/ai-is-speeding-up-the-quantum-threat-to-crypto-security-experts-warn",
+      "source": "CoinDesk",
+      "date": "8 hours ago"
+    }
+  ]
+}

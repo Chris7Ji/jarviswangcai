@@ -1,0 +1,28 @@
+{
+  "stage": "complete",
+  "date": "2026-05-23",
+  "fetch": {
+    "status": "success",
+    "articles_count": 6,
+    "raw_file": "gaoxiao_raw_2026-05-23.json",
+    "raw_file_size": 4337
+  },
+  "translation": {
+    "status": "success",
+    "model_used": "旺财直译（替代）",
+    "note": "Gemini/MiniMax/DeepSeek API均异常，改用内建翻译",
+    "articles_translated": 6
+  },
+  "html": {
+    "status": "success",
+    "html_file": "gaoxiao_news_2026-05-23.html",
+    "html_file_size": 6518
+  },
+  "email": {
+    "status": "success",
+    "recipients": 15,
+    "success_count": 15,
+    "failed_count": 0,
+    "subject": "[2026-05-23] 高校分队 AI 新闻每日简报"
+  }
+}

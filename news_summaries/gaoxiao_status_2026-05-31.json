@@ -1,0 +1,1 @@
+{"date": "2026-05-31", "stage": "all_complete", "articles_fetched": 6, "articles_translated": 6, "emails_sent": 15, "failed": 0, "note": "脚本内置翻译API全部故障（Gemini代理不通、MiniMax余额不足、DeepSeek密钥无效），已使用默认大模型手动翻译并补发", "timestamp": "2026-05-31T06:20+08:00"}

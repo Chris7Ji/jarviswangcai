@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-16",
+  "stage": "step3_email_failed",
+  "raw_source": "Tavily (SerpAPI 429)",
+  "article_count": 6,
+  "translation_method": "AI直接翻译（Gemini密钥泄露、MiniMax余额不足、DeepSeek密钥无效）",
+  "step1_fetch": "✅ 完成 (Tavily代替SerpAPI)",
+  "step2_translate_html": "✅ 完成 (HTML 8.1KB, 6条翻译)",
+  "step3_send_email": "❌ 失败 (QQ SMTP授权码过期，无法登录)",
+  "html_path": "news_summaries/gaoxiao_news_2026-05-16.html",
+  "issues": [
+    "SerpAPI 429 rate limited - 改用Tavily抓取",
+    "Gemini API key reported as leaked (403)",
+    "MiniMax insufficient balance (429)",
+    "DeepSeek API key invalid (401)",
+    "QQ SMTP authorization code expired - 所有端口均无法登录",
+    "翻译由AI直接完成"
+  ],
+  "updated_at": "2026-05-16T06:42:00+08:00"
+}

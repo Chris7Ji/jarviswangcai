@@ -1,0 +1,48 @@
+{
+  "news_results": [
+    {
+      "title": "Runway started by helping filmmakers. Now it wants to beat Google at AI.",
+      "snippet": "AI video generation startup Runway doesn't have the typical Silicon Valley pedigree. Its three founders — two from Chile, one from Greece — met at NYU's Tisch School of the Arts and built the company in New York. Runway could be one of the most consequential AI companies today. Its founders believe the next form of AI intelligence won't be built from text, but from video and world models that learn how the world works, not just how humans describe it. Runway co-Founder and co-CEO Anastasis Germanidis said training models directly on observational data from the world is the next frontier of AI.",
+      "link": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+      "source": "TechCrunch",
+      "date": "Fri, 15 May 2026 14:00:00 GMT"
+    },
+    {
+      "title": "Asia stocks gain on AI enthusiasm as Trump meets Xi",
+      "snippet": "Stocks rose on Thursday, powered by AI fervour as investors looked past the risk of higher interest rates, while a high-stakes summit between U.S. President Donald Trump and China's Xi Jinping provided few surprises.",
+      "link": "https://www.reuters.com/world/china/global-markets-wrapup-1pix-2026-05-14/",
+      "source": "Reuters",
+      "date": "Thu, 14 May 2026 01:41:14 GMT"
+    },
+    {
+      "title": "U.S. and China Will Start Discussing A.I. Safety, Bessent Says",
+      "snippet": "The United States and China will discuss guardrails on artificial intelligence, including establishing a protocol for keeping powerful A.I. models out of the hands of nonstate actors, Treasury Secretary Scott Bessent said on Thursday.",
+      "link": "https://www.nytimes.com/2026/05/14/world/asia/china-us-ai-safety.html",
+      "source": "New York Times",
+      "date": "Fri, 15 May 2026 03:55:47 GMT"
+    },
+    {
+      "title": "OpenAI Considers Legal Action Against Apple in Strained Relationship",
+      "snippet": "OpenAI is considering taking legal action against Apple over its integration of OpenAI's ChatGPT chatbot in its devices, a person familiar with the company's decision-making said. The companies struck a deal two years ago as part of Apple's promised overhaul of artificial intelligence products like Siri.",
+      "link": "https://www.nytimes.com/2026/05/14/technology/openai-apple-legal-action.html",
+      "source": "New York Times",
+      "date": "Fri, 15 May 2026 00:48:15 GMT"
+    },
+    {
+      "title": "OpenAI Trial: Closing Arguments Begin in Elon Musk vs. Sam Altman Case",
+      "snippet": "In closing arguments, a lawyer for Elon Musk hammered the credibility of Sam Altman, OpenAI's chief executive. An OpenAI lawyer argued that Mr. Musk's case against the company was groundless, as both sides delivered their closing arguments in a trial with potentially seismic implications for the AI race.",
+      "link": "https://www.nytimes.com/live/2026/05/14/technology/openai-trial-sam-altman-elon-musk",
+      "source": "New York Times",
+      "date": "Thu, 14 May 2026 15:01:16 GMT"
+    },
+    {
+      "title": "Anthropic, Gates Foundation launch $200 million partnership for AI in health, education",
+      "snippet": "Anthropic and the Gates Foundation have pledged $200 million to back artificial intelligence-related public goods and areas including health and education. Support from Anthropic's technical staff and usage credits for its Claude AI will account for its half of the financial commitment.",
+      "link": "https://www.reuters.com/business/retail-consumer/anthropic-gates-foundation-launch-200-million-partnership-ai-health-education-2026-05-14/",
+      "source": "Reuters",
+      "date": "Thu, 14 May 2026 15:02:15 GMT"
+    }
+  ],
+  "fetched_from": "Tavily (SerpAPI rate limited)",
+  "fetch_time": "2026-05-16T06:42:00+08:00"
+}

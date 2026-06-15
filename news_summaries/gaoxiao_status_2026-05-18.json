@@ -1,0 +1,13 @@
+{
+  "date": "2026-05-18",
+  "stage": "step3_failed",
+  "fetched_count": 8,
+  "translated_count": 8,
+  "source": "Tavily (SerpAPI exhausted)",
+  "translation_method": "Manual (all 3 APIs failed: Gemini key leaked, MiniMax insufficient balance, DeepSeek invalid key)",
+  "output_html": "news_summaries/gaoxiao_news_2026-05-18.html",
+  "output_size_bytes": 9816,
+  "updated_at": "2026-05-18T06:18:30.105993",
+  "email_status": "failed",
+  "email_error": "QQ mail authorization code \"icxhfzuyzbhbbjie\" rejected with 535 Login fail. The auth code has likely expired or been regenerated."
+}

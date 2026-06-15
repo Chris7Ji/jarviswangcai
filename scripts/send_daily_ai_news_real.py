@@ -5,6 +5,7 @@ import ssl
 import time
 import subprocess
 from datetime import datetime
+from urllib.parse import urlparse
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -35,14 +36,40 @@ TO_EMAILS = [
 ]
 
 def fetch_real_news():
-    print("Fetching from SerpAPI...")
-    url = f"https://serpapi.com/search.json?q=AI+OR+OpenAI+OR+Anthropic+OR+Nvidia+latest+news&tbm=nws&api_key={SERPAPI_KEY}&tbs=qdr:d2&gl=us&hl=en"
+    """Use Tavily as primary search (SerpAPI quota exhausted)"""
+    print("Fetching from Tavily (SerpAPI fallback)...")
     try:
-        resp = requests.get(url, timeout=15)
-        if resp.status_code == 200:
-            return resp.json().get('news_results', [])[:6] # Top 6 articles
+        result = subprocess.run(
+            ['bash', '/Users/jiyingguo/.openclaw/workspace/skills/tavily-search/search.sh',
+             'OpenAI Anthropic Nvidia AI latest news June 2026', 'basic', '8'],
+            capture_output=True, text=True, timeout=60
+        )
+        # Read the JSON result file
+        with open('/tmp/tavily_search_result.json', 'r') as f:
+            data = json.load(f)
+        results = data.get('results', [])
+        news_items = []
+        for r in results:
+            title = r.get('title', '')
+            content = r.get('content', '')
+            url = r.get('url', '')
+            # Extract domain as source
+            from urllib.parse import urlparse
+            domain = urlparse(url).netloc
+            source = domain.replace('www.', '').split('.')[0].title() if domain else 'Unknown'
+            if title and url:
+                news_items.append({
+                    'title': title,
+                    'snippet': content[:300],
+                    'link': url,
+                    'source': source
+                })
+        # Limit to top 6
+        return news_items[:6]
     except Exception as e:
-        print("SerpAPI Error:", e)
+        print("Tavily Error:", e)
+        import traceback
+        traceback.print_exc()
     return []
 
 def call_gemini(prompt):

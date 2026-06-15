@@ -11,16 +11,7 @@ echo "=========================================="
 # 设置工作目录
 cd /Users/jiyingguo/.openclaw/workspace
 
-# 检查必要的环境变量
-if [ -z "$TAVILY_API_KEY" ]; then
-    echo "❌ 错误: TAVILY_API_KEY 环境变量未设置"
-    echo "请运行: export TAVILY_API_KEY=your_api_key"
-    exit 1
-fi
-
-if [ -z "$GEMINI_API_KEY" ]; then
-    echo "⚠️ 警告: GEMINI_API_KEY 环境变量未设置，将使用备用搜索"
-fi
+# 环境变量检查已移除（隔离cron session无法获取shell环境变量）
 
 # 创建输出目录
 mkdir -p news_summaries

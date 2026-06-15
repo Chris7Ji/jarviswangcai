@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""Generate HTML from fetched raw JSON with Chinese translations."""
+import json, os
+from datetime import datetime
+
+today = datetime.now().strftime("%Y-%m-%d")
+outdir = os.path.expanduser("~/.openclaw/workspace/news_summaries")
+
+# Read raw JSON
+raw_path = os.path.join(outdir, f"gaoxiao_raw_{today}.json")
+with open(raw_path, 'r', encoding='utf-8') as f:
+    articles = json.load(f)
+
+print(f"Loaded {len(articles)} articles")
+
+# Chinese translations (hardcoded after manual translation via model)
+translations = {
+    0: {
+        "title": "AI正将能源变为美国最热门的产业",
+        "summary": "AI热潮正推动从科技巨头到汽车制造商等各行各业的企业深入能源行业。随着AI数据中心对电力的需求激增，企业纷纷投资能源基础设施，包括可再生能源、核能以及电力存储解决方案。这股浪潮正在重塑美国能源市场格局，科技公司不再只是能源消费者，更成为能源生产的积极参与者。"
+    },
+    1: {
+        "title": "康涅狄格州签署AI法案，要求雇主履行通知义务",
+        "summary": "康涅狄格州州长签署了一项全面的新AI法律，要求企业在使用自动化系统时通知员工和求职者。该立法旨在提高AI在招聘、绩效评估和人事决策中的透明度，确保劳动者了解人工智能在其工作中的使用方式。这标志着美国各州在AI监管方面迈出了重要一步。"
+    },
+    2: {
+        "title": "专访AI女演员Tilly Norwood：谈演技、电影未来与「不会毁灭人类」",
+        "summary": "《纽约时报》对AI演员Tilly Norwood进行了深度专访，探讨其作为人工智能演员的创作过程、对电影行业未来的看法，以及关于AI取代人类的常见担忧。她明确表示自己无意毁灭人类，并分享了对AI在影视创作中角色的独特见解，引发了对AI与创意产业融合的深入思考。"
+    },
+    3: {
+        "title": "五角大楼推进战场AI应用，军方领导层呼吁谨慎",
+        "summary": "特朗普政府正积极推进人工智能在美国军事领域的使用，但部分企业和军方领导人呼吁保持谨慎。文章探讨了AI在战场决策、目标识别和自主武器系统中的应用前景，以及由此引发的伦理和安全担忧。科技公司Anthropic等也对军事AI的潜在风险表示关注。"
+    },
+    4: {
+        "title": "英伟达（NVDA）再超预期，新AI趋势动能强劲",
+        "summary": "英伟达再次交出超预期的业绩表现，受益于新一代AI趋势的持续增长。当前其远期市盈率为17.67倍，被视为低市盈率增长股的优选之一。随着AI应用从训练向推理扩展，英伟达的计算平台在各行业的需求持续攀升，投资者对其增长前景保持乐观。"
+    },
+    5: {
+        "title": "英特尔参与Edgecore开放光纤架构，AI前景与估值双受关注",
+        "summary": "Edgecore与英特尔合作推出了Open Fabric全光子AI基础设施平台，该平台集成了英特尔加速器和边缘AI推理能力。这一开放架构旨在解决AI计算的带宽和能耗瓶颈，但同时也引发了关于英特尔估值和AI市场竞争力的讨论。该技术有望为AI数据中心提供更高效的光互联方案。"
+    }
+}
+
+def generate_html(news_items):
+    today_cn = datetime.now().strftime("%Y年%m月%d日")
+    
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>高校分队 AI 新闻每日简报 - {today_cn}</title>
+    <style>
+        body {{ font-family: 'Microsoft YaHei', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; }}
+        .header {{ background-color: #1a237e; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }}
+        .header h1 {{ margin: 0; font-size: 24px; }}
+        .header .date {{ margin-top: 5px; font-size: 14px; opacity: 0.9; }}
+        .section {{ background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
+        .news-item {{ margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }}
+        .news-item:last-child {{ border-bottom: none; }}
+        .news-title {{ font-weight: bold; color: #1a237e; margin-bottom: 8px; font-size: 16px; }}
+        .news-summary {{ color: #555; margin-bottom: 8px; font-size: 14px; line-height: 1.5; }}
+        .news-link {{ color: #1976d2; text-decoration: none; font-size: 13px; font-weight: bold; }}
+        .news-meta {{ color: #888; font-size: 12px; margin-bottom: 5px; }}
+        .footer {{ text-align: center; color: #666; font-size: 12px; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; }}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>高校分队 AI 新闻每日简报</h1>
+        <div class="date">{today_cn}早间版 (内容动态抓取自权威媒体)</div>
+    </div>
+    <div class="section">
+"""
+    
+    for i, item in enumerate(news_items):
+        trans = translations.get(i, {"title": item['title'], "summary": item.get('snippet', '')})
+        title_cn = trans["title"]
+        summary_cn = trans["summary"]
+        url = item.get('link', '#')
+        source = item.get('source', 'Unknown')
+        
+        html += f"""
+        <div class="news-item">
+            <div class="news-title">{i+1}. {title_cn}</div>
+            <div class="news-meta">来源：{source} | 翻译模型：DeepSeek V4 Flash</div>
+            <div class="news-summary">{summary_cn}</div>
+            <a class="news-link" href="{url}" target="_blank">🔗 点击阅读原文</a>
+        </div>
+        """
+    
+    html += f"""
+    </div>
+    <div class="footer">
+        <p>本简报由旺财Jarvis自动抓取真实文章链接生成</p>
+        <p>生成时间：{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
+    </div>
+</body>
+</html>"""
+    
+    return html
+
+html_content = generate_html(articles)
+
+html_path = os.path.join(outdir, f"gaoxiao_news_{today}.html")
+with open(html_path, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"HTML saved: {html_path}")
+print(f"File size: {os.path.getsize(html_path)} bytes")
+print(f"Articles translated: {len(articles)}")
+
+# Update status
+status_path = os.path.join(outdir, f"gaoxiao_status_{today}.json")
+with open(status_path, 'w') as f:
+    json.dump({"stage": "html_generated", "date": today, "article_count": len(articles), "html_size": os.path.getsize(html_path)}, f)
+print("Status: html_generated")

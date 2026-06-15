@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Runway started by helping filmmakers. Now it wants to beat Google at AI.",
+    "snippet": "AI video generation startup Runway doesn't have the typical Silicon Valley pedigree. Its three founders — two from Chile, one from Greece — met at NYU's Tisch School of the Arts and built the company in New York. Runway could be one of the most consequential AI companies today. Its founders believe the next form of AI intelligence won't be built from text, but from video and world models that learn how the world works, not just how humans describe it. Runway co-Founder and co-CEO Anastasis Germanidis said training models directly on observational data from the world is the next frontier of AI.",
+    "link": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+    "source": "TechCrunch",
+    "date": "Fri, 15 May 2026 14:00:00 GMT",
+    "trans_title": "Runway：从帮助电影人到挑战谷歌AI的蜕变",
+    "trans_summary": "AI视频生成初创公司Runway正站在AI行业的风口浪尖。这家由三位NYU校友（两位来自智利、一位来自希腊）创立的公司，最初专注于帮助电影制作人，如今却立志超越谷歌成为AI领域的领导者。Runway联合创始人兼CEO Anastasis Germanidis认为，下一阶段的AI智能将不再基于文本构建，而是来自视频和能够理解世界运转方式的世界模型。如果Runway押注视频生成作为通向世界模型路径的策略成功，其影响将从好莱坞延伸到药物发现领域。",
+    "model": "旺财Jarvis（所有翻译API均不可用，由AI直接翻译）"
+  },
+  {
+    "title": "Asia stocks gain on AI enthusiasm as Trump meets Xi",
+    "snippet": "Stocks rose on Thursday, powered by AI fervour as investors looked past the risk of higher interest rates, while a high-stakes summit between U.S. President Donald Trump and China's Xi Jinping provided few surprises.",
+    "link": "https://www.reuters.com/world/china/global-markets-wrapup-1pix-2026-05-14/",
+    "source": "Reuters",
+    "date": "Thu, 14 May 2026 01:41:14 GMT",
+    "trans_title": "AI热潮推动亚洲股市上涨，特朗普与习近平会晤",
+    "trans_summary": "在AI热潮的推动下，亚太股市周四普遍上涨。投资者暂时搁置了对利率上升风险的担忧，同时高度关注的特朗普与习近平峰会未出现意外情况。中国蓝筹股指数盘中触及2021年底以来最高水平后有所回落，人民币兑美元则升至三年新高。这一轮行情充分体现了AI主题对全球资本市场的强大驱动力。",
+    "model": "旺财Jarvis（所有翻译API均不可用，由AI直接翻译）"
+  },
+  {
+    "title": "U.S. and China Will Start Discussing A.I. Safety, Bessent Says",
+    "snippet": "The United States and China will discuss guardrails on artificial intelligence, including establishing a protocol for keeping powerful A.I. models out of the hands of nonstate actors, Treasury Secretary Scott Bessent said on Thursday.",
+    "link": "https://www.nytimes.com/2026/05/14/world/asia/china-us-ai-safety.html",
+    "source": "New York Times",
+    "date": "Fri, 15 May 2026 03:55:47 GMT",
+    "trans_title": "美国财长贝森特：美中将启动AI安全对话",
+    "trans_summary": "美国财政部长斯科特·贝森特周四表示，美国和中国将就人工智能的安全护栏展开讨论，包括建立协议以防止强大AI模型落入非国家行为者手中。这一表态是在特朗普与习近平北京峰会期间作出的。虽然双方都意识到AI带来的潜在威胁，但没有任何一方愿意放慢AI发展的步伐，这使得中美AI安全合作既必要又充满挑战。",
+    "model": "旺财Jarvis（所有翻译API均不可用，由AI直接翻译）"
+  },
+  {
+    "title": "OpenAI Considers Legal Action Against Apple in Strained Relationship",
+    "snippet": "OpenAI is considering taking legal action against Apple over its integration of OpenAI's ChatGPT chatbot in its devices, a person familiar with the company's decision-making said. The companies struck a deal two years ago as part of Apple's promised overhaul of artificial intelligence products like Siri.",
+    "link": "https://www.nytimes.com/2026/05/14/technology/openai-apple-legal-action.html",
+    "source": "New York Times",
+    "date": "Fri, 15 May 2026 00:48:15 GMT",
+    "trans_title": "OpenAI考虑对苹果采取法律行动，合作关系陷入紧张",
+    "trans_summary": "据报道，OpenAI正在考虑对苹果公司采取法律行动，原因是双方关于ChatGPT集成到苹果设备的合作关系出现严重裂痕。两年前双方达成协议，将ChatGPT整合到苹果的AI产品中（包括Siri的升级），但如今OpenAI对苹果的集成方式感到不满。此举正值OpenAI与Elon Musk的侵权诉讼接近尾声之际，使得这家AI巨头的法律挑战变得更加复杂。",
+    "model": "旺财Jarvis（所有翻译API均不可用，由AI直接翻译）"
+  },
+  {
+    "title": "OpenAI Trial: Closing Arguments Begin in Elon Musk vs. Sam Altman Case",
+    "snippet": "In closing arguments, a lawyer for Elon Musk hammered the credibility of Sam Altman, OpenAI's chief executive. An OpenAI lawyer argued that Mr. Musk's case against the company was groundless, as both sides delivered their closing arguments in a trial with potentially seismic implications for the AI race.",
+    "link": "https://www.nytimes.com/live/2026/05/14/technology/openai-trial-sam-altman-elon-musk",
+    "source": "New York Times",
+    "date": "Thu, 14 May 2026 15:01:16 GMT",
+    "trans_title": "OpenAI庭审进入结案陈词：Elon Musk诉Sam Altman案接近尾声",
+    "trans_summary": "Elon Musk诉OpenAI案进入结案陈词阶段。Musk的律师对OpenAI CEO Sam Altman的可信度进行了猛烈攻击，而OpenAI的律师则辩称Musk的指控毫无根据。双方围绕OpenAI从非营利向盈利转型的争议进行了激烈的法庭辩论。此案可能对AI行业产生深远影响，涉及创始人责任、AI公司治理结构等核心问题。",
+    "model": "旺财Jarvis（所有翻译API均不可用，由AI直接翻译）"
+  },
+  {
+    "title": "Anthropic, Gates Foundation launch $200 million partnership for AI in health, education",
+    "snippet": "Anthropic and the Gates Foundation have pledged $200 million to back artificial intelligence-related public goods and areas including health and education. Support from Anthropic's technical staff and usage credits for its Claude AI will account for its half of the financial commitment.",
+    "link": "https://www.reuters.com/business/retail-consumer/anthropic-gates-foundation-launch-200-million-partnership-ai-health-education-2026-05-14/",
+    "source": "Reuters",
+    "date": "Thu, 14 May 2026 15:02:15 GMT",
+    "trans_title": "Anthropic与盖茨基金会联合启动2亿美元AI合作项目",
+    "trans_summary": "AI公司Anthropic与比尔及梅琳达·盖茨基金会宣布共同投入2亿美元，用于支持人工智能相关的公共产品，重点关注健康和教育领域。Anthropic将提供技术支持和Claude AI的使用额度（占承诺的一半），盖茨基金会则提供资金支持和项目设计经验。双方特别关注如何改善AI在数十种非洲语言上的表现，计划通过公开数据集帮助全行业提升模型能力。",
+    "model": "旺财Jarvis（所有翻译API均不可用，由AI直接翻译）"
+  }
+]

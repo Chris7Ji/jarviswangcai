@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-19",
+  "step1_fetch": {
+    "status": "done",
+    "source": "Tavily (SerpAPI quota exhausted)",
+    "count": 8,
+    "time": "06:15"
+  },
+  "step2_translate": {
+    "status": "done",
+    "method": "旺财Jarvis direct translation",
+    "count": 8,
+    "html_size": 5801,
+    "time": "06:18"
+  },
+  "step3_send": {
+    "status": "failed",
+    "reason": "QQ邮箱SMTP授权码过期/无效(535 Login Fail)",
+    "recipients": 15,
+    "time": "06:18:39"
+  }
+}

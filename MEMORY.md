@@ -23,8 +23,8 @@
 - API Key: tvly-dev…7MV5
 
 ## 模型配置
-- 默认模型: deepseek/deepseek-v4-flash
-- 备用: deepseek/deepseek-chat
+- 默认模型: qwen/qwen3.7-max（阿里通义千问）
+- 备用: deepseek/deepseek-v4-flash
 - 已删除: minimax-portal/MiniMax-M2.7-highspeed（2026-05-30移除）
 
 ## 图片生成配置 (2026-03-21更新)
@@ -152,34 +152,6 @@
 - Codex plugin: ✅ 已连接 (gpt-5.4 / gpt-5.4-mini / gpt-5.3-codex 等)
 - 使用: `/model codex` 切换, `/codex status` 查看状态
 
-## Promoted From Short-Term Memory (2026-06-02)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:20:20 -->
-- 老板指令：三个故障翻译删除，统一翻译替换使用当前默认大模型 [score=0.858 recalls=0 avg=0.620 source=memory/2026-05-29.md:20-20]
-
-## Promoted From Short-Term Memory (2026-06-06)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:40:41 -->
-- 发现重复文件（需关注）: `MEMORY_backup_2026-03-10.md` 和 `MEMORY_backup_2026-03-11.md` 同时存在于 workspace 根目录和 `memory/archive/` 中，内容完全一致; 暂未处理，待老板确认后再删除 [score=0.923 recalls=0 avg=0.620 source=memory/2026-05-29.md:40-41]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:6:8 -->
-- 变更内容: **AGENTS.md**: 第二核心原则由「翻译模型三级容灾机制」改为「翻译统一使用默认大模型」; **USER.md**: Context中模型使用偏好由三级降级改为统一使用默认大模型; **MEMORY.md**: 翻译配置由DeepSeek-Chat改为统一使用默认大模型（deepseek/deepseek-v4-flash） [score=0.923 recalls=0 avg=0.620 source=memory/2026-05-29.md:6-8]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:12:15 -->
-- Minimax 大模型配置已删除: 删除原因: 老板要求; 涉及: minimax-portal, minimax-cn provider, auth profiles, plugins, agent fallbacks; imageModel.primary → 改为 google/gemini-3.1-flash-lite; minimax 模型引用从 creator 和 canmou 的 fallbacks 中移除 [score=0.906 recalls=0 avg=0.620 source=memory/2026-05-30.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:4:5 -->
-- Gemini API Key 更新: 旧 Key（已泄露）: `AIzaSyD…pN9s（已废弃）`; 新 Key: `AIzaSyB…uBCU（完整Key存于 openclaw.json）` [score=0.906 recalls=0 avg=0.620 source=memory/2026-05-30.md:4-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:7:9 -->
-- Gemini API Key 更新: [x] openclaw.json → models.providers.google.apiKey; [x] MEMORY.md （图片生成配置 + 命令模板）; [x] Gateway 已重启生效 [score=0.906 recalls=0 avg=0.620 source=memory/2026-05-30.md:7-9]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:11:13 -->
-- 旧方案（已删除）: google/gemini-3.1-flash-lite-preview（优先）; minimax-portal/MiniMax-M2.7-highspeed（降级）; deepseek-chat（兜底） [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-29.md:11-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:16:17 -->
-- 新方案: 任何英文翻译任务统一使用当前运行的默认大模型进行翻译; 当前默认模型: deepseek/deepseek-v4-flash [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-29.md:16-17]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:25:28 -->
-- 归档脚本逻辑检查: 检查 `memory/` 下所有 `.md` 文件; 30天阈值：2026-04-29 之前; **内存根目录文件年龄**:; `2026-05-04.md` → 25天 ✅ 未到期 [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-29.md:25-28]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:29:32 -->
-- 归档脚本逻辑检查: `2026-05-29.md` → 0天 ✅; `MEMORY_SYSTEM_BUILD_GUIDE.md` → 5天 ✅; `domain-jarviswangcai-top.md` → 0天 ✅; `user_preferences.md` → 14天 ✅ [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-29.md:29-32]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:33:33 -->
-- 归档脚本逻辑检查: **结论**: 无文件需自动归档 [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-29.md:33-33]
-
 ## Promoted From Short-Term Memory (2026-06-07)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:18:19 -->
@@ -188,3 +160,33 @@
 - 碎片清理: **发现** `working-buffer.md`（39天前，2026-03-19会话工作缓冲）存在于workspace根目录; **处理**：已归档至 `memory/archive/working-buffer_2026-03-19.md`，删除原始文件 [score=0.890 recalls=0 avg=0.620 source=memory/2026-05-29.md:36-37]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-29.md:44:45 -->
 - 归档目录现状: `archive/` 中共 58 个文件：2月3个，3月32个，4月16个，5月3个（含刚归档的working-buffer）; 本体论知识图谱: 412KB（ontology/下graph.jsonl + knowledge_graph.json） [score=0.890 recalls=0 avg=0.620 source=memory/2026-05-29.md:44-45]
+
+## Promoted From Short-Term Memory (2026-06-14)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:13:13 -->
+- Conversation Summary: 关于你之前问的**连续失败原因定位**，这里是我查到的分析结果： [score=0.807 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:13-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:18:20 -->
+- 症状: 多个复杂任务（新闻、日记、健康、知识分析等）连续失败; 错误统一为 `Request was aborted`; 都在运行约 **6~7分钟**后被终止（不管 timeoutSeconds 设多长） [score=0.807 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:18-20]
+
+## Promoted From Short-Term Memory (2026-06-15)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:18:18 -->
+- 📰 AI新闻日报自动更新脚本: **cron**: 每天 08:00（新增 `cron_8eb7cd57`） [score=0.839 recalls=0 avg=0.620 source=memory/2026-06-11.md:18-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:4:7 -->
+- 🐛 网站 bug 修复: **问题**: `www.jarviswangcai.top/diary.html` 空白页面; **根因**: `js/diary.js` 三个致命错误叠加:; Git 冲突标记残留 (`<<<<<<<` / `=======` / `>>>>>>>`); `20260514` 日记 content 模板字面量结束反引号换成单引号 `'` [score=0.839 recalls=0 avg=0.620 source=memory/2026-06-11.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-11.md:8:11 -->
+- 🐛 网站 bug 修复: `20260512` 日记后 68 行残留 HTML 泄漏; **修复**: 删除冲突标记、单引号→反引号还原、删除外泄 HTML + 补闭合结构; **验证**: `node --check` + `agent-browser` 截图确认 ✅; **时间线**：改为倒序（最新在上），标题显示从 18 字→24 字 [score=0.839 recalls=0 avg=0.620 source=memory/2026-06-11.md:8-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:24:25 -->
+- 排查结果: **① API 网络正常 ✅** DeepSeek API 响应时间 0.3~1s，DNS 解析正常，不是网络问题 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:24-25]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:27:28 -->
+- 排查结果: **② API 密钥有效 ✅** 当前主会话模型正常响应，密钥没问题 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:27-28]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:3:5 -->
+- Session: 2026-06-10 17:45:28 GMT+8: **Session Key**: agent:main:feishu:direct:ou_b6c7778820b20031cd97bdc45d1cd9fa; **Session ID**: 4fe82fb1-8053-47f5-945b-efff6604a9ec; **Source**: webchat [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:3-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:30:31 -->
+- 排查结果: **③ 简单任务不受影响 ✅** Obsidian同步(14s)、日记验证(12s)、知识星图(39s)、DNS检查(58s) 全都正常跑完 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:30-31]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:38:41 -->
+- 🎯 核心原因: stalled session: state=processing age=1058s reason=blocked_tool_call activeTool=process activeToolAge=1016s cronJob="高校分队-AI新闻每日简报" [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:38-41]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:35:35 -->
+- 🎯 核心原因: 看日志发现的关键线索（5月12日记录）： [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:35-35]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1745.md:45:45 -->
+- 🎯 核心原因: **真相：复杂的 cron 任务在调用 `exec` 执行 shell/python 脚本时卡住了**，`process` 工具没等到脚本返回，任务被 Gateway 视为"悬空(stalled)"，最终强制中止。这类任务都需要跑 Python 脚本（抓取新闻、发邮件、git 推送等），耗时较长，而隔离 session 的生命周期/超时不如主 session 宽松。 [score=0.812 recalls=0 avg=0.620 source=memory/2026-06-10-1745.md:45-45]

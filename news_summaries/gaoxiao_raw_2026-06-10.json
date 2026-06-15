@@ -1,0 +1,68 @@
+[
+  {
+    "position": 1,
+    "link": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "title": "Claude Fable 5 and Claude Mythos 5",
+    "source": "Anthropic",
+    "date": "6 hours ago",
+    "published_at": "2026-06-09 17:08:42 UTC",
+    "snippet": "Today we're launching Claude Fable 5: a Mythos-class model that we've made safe for general use.",
+    "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAP1BMVEX6-vf6-vcAAAD8_Pn6-vf6-vf___36-vf6-vf6-vegoJ_x8e5tbWzQ0M5dXVzMzMkqKiofHx_GxsSFhYMvLy-J4OLLAAAACnRSTlMW____1tf_29ndrNH5PgAAAHdJREFUGJVdjosOgzAIRellQ1dKH-r_f-vKZo31ljThJJxcone4ZSV6hSkLhUf-gPvzGUASoiLJBRRoHeoAEpFQDFEGqIcgS6snYMOuGRph_AP92nNqyZXZNqtNsmvJlZtI_0txrTvYK0kvx1fTe_V13j9Ey7x_AeisA83eCbIsAAAAAElFTkSuQmCC.png",
+    "thumbnail": "https://serpapi.com/searches/6a28a22e88de92749a883bec/images/EyLsaD1Q5Djgleh05Ts3wPBuirOqe306G_Blly9vwGI.jpeg"
+  },
+  {
+    "position": 2,
+    "link": "https://abcnews.com/Business/openai-company-chatgpt-files-ipo/story?id=133219801",
+    "title": "What to know about the OpenAI IPO",
+    "source": "ABC News - Breaking News, Latest News and Videos",
+    "date": "9 hours ago",
+    "published_at": "2026-06-09 14:12:03 UTC",
+    "snippet": "OpenAI, the artificial-intelligence company behind ChatGPT, announced it had filed confidentially for an initial public offering (IPO), setting up the firm...",
+    "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAABXUlEQVQ4ja2TMYvqUBSEJ6baxqCIpNSUIhIL6zQ2Fop_xZ9gZ2VxQQRb_8nWoo2Nhf4LlcDN_V6ThNXdddn33oFpLjOHe-bMkT5XX9Ja0klSmuOUv8Vf8Mt6k7SR5CTxDVzOeftK_P5C-Iz35yabX4gLbApx_PztIAgYjUZ4nveqgcv90loS9XqdXq-H7_sMBgMA2u02URSVokqlQrfbpVarFW9rSTpNJhNutxsA-_2e4XAIgLUWAGMM1WqV3W4HwPV6ZTwek29H6fF4ZLFYEIYhl8uF7XYLQJIkJEkCwHK55Hw-E4Yhs9mM1WqFpLRSGOGcU5ZlAkpnrbVyzkmSPM8TIGutrLXKsqzkPYyQpinz-RxjDEUZYwiCgMPhAMD9fmc6nZYjlCZ2Oh1arRbNZhNJRFH0YKLv-8RxTKPReDCx_0P6Xq2xjPY_BUn6D1Eumvz1MX2sWN-fc_-Z_AcvEzD5JqpY4wAAAABJRU5ErkJggg.png",
+    "thumbnail": "https://serpapi.com/searches/6a28a22e88de92749a883bec/images/EWEDbQA16k8PhiWU8bwL_qImF5oUgyrgPaNekLdxfyE.jpeg"
+  },
+  {
+    "position": 3,
+    "link": "https://www.cnn.com/2026/06/09/tech/openai-ipo-anthropic-wall-street",
+    "title": "The hard part is about to begin for the world’s biggest AI companies",
+    "source": "CNN",
+    "date": "8 hours ago",
+    "published_at": "2026-06-09 15:50:49 UTC",
+    "snippet": "OpenAI, Anthropic and SpaceX will soon have a new boss to answer to: Wall Street. ChatGPT maker OpenAI is the latest AI giant to announce plans to go public...",
+    "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEXXAADYAADWAADLAADSAADUAADVAADOAADTAADQAADMAADbAADHAADdAADhAADqAADzAADs1dX0AADtAADMHx_UhITTlZXJKSnbk5PPTEzMX1-_Pz_Vm5u1IyPDFBTjxcXJj4-7VFTrzMzBTk7y5uayMjLCXV3COTnVpqbftLXJa2vn19feOzvy3t7jv7_epqfGc3PTFRW_HR2UABl0AAAA00lEQVQYlSWP22KCMBBEd7O5EAiEGCxqsWgUIdqm1f__uIb2vM152J0BIsUlICLIQpeGgIziDKsMCE3GgFIF1s0fNXAqgfOcrfXe2my0BiFz9u2mbb1tqoIDw2771u_2m8Oufh-OAuBjfJzOKXSDu5yvEwO8XWfbBzcsLi7jKu6Prv0cQwhj-kpZwNF9H7bpMsSfe4qTBAn7JcX47N1NLzEfLQS-5rn3dn7a12T4WmUtlmmaiikFZcmh-m9eSU0ExpAu8jpExtU6jkypucjfmFgF_QKkRxDUQQWobQAAAABJRU5ErkJggg.png",
+    "thumbnail": "https://serpapi.com/searches/6a28a22e88de92749a883bec/images/-atAhIqpun6M_W8j-0qtiqXLoivQuv1S8KsGg0LQYb4.jpeg"
+  },
+  {
+    "position": 4,
+    "link": "https://www.wsj.com/tech/ai/anthropic-claude-fable-ai-model-f41fb5d7",
+    "title": "Anthropic Releases New ‘Mythos-Class’ Model to General Public With Guardrails",
+    "source": "WSJ",
+    "date": "5 hours ago",
+    "published_at": "2026-06-09 18:38:00 UTC",
+    "snippet": "Queries about dangerous topics such as cybersecurity or bioweapons will be steered to older Opus model.",
+    "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAYFBMVEX____c3NwAAAC-vr4mJia6urqRkZG0tLTm5ubf39_IyMj7-_uHh4dBQUGsrKxXV1ednZ3w8PA8PDx2dnYcHByjo6PNzc0PDw8yMjJJSUmNjY0qKir19fV1dXWmpqbLy8uWKfoBAAAAc0lEQVQYla3Pyw6DIBCF4V-mgIBY0KpYe3n_tyxt6sZl00kmOfkWkzPwj4m6P2Nc0pY86AqjbS-In5jg5CrYMShkXmgq1MWVJjqhrHwB5Y2pYbnuEJNXtGRF2D7Q9XlDbgz3R3kfxc50-CRWnuuhUvjtkxcBwwPrTWhR4QAAAABJRU5ErkJggg.png",
+    "thumbnail": "https://serpapi.com/searches/6a28a22e88de92749a883bec/images/0xa5x-lIF_dzVf3I3rMLIfMa9PoCNuCPcalGx6c7zsQ.jpeg"
+  },
+  {
+    "position": 5,
+    "link": "https://www.nytimes.com/2026/06/09/technology/anthropic-ai-claude-fable-mythos.html",
+    "title": "Anthropic Releases ‘Safe’ Version of Its Mythos A.I. Technology",
+    "source": "The New York Times",
+    "date": "6 hours ago",
+    "published_at": "2026-06-09 17:16:42 UTC",
+    "snippet": "In April, Anthropic unveiled a new artificial intelligence system called Claude Mythos. But the company said it couldn't share its new A.I. with the public...",
+    "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAPFBMVEVHcEwYGBgSEhISEhISEhISEhIUFBQTExMSEhISEhISEhITExMUFBQSEhISEhITExMSEhIUFBQSEhISEhL42RT4AAAAE3RSTlMACZeErvEZXUviw28vNrg_0jTFJOpWkAAAAHJJREFUGJV1j0sWxCAIBDsGBDTf4f53HZIXyWamV1JovxL4n7rksTDTDrg-8-x32OkBrelsFxo3dJcOlbJmB_HJhinn7iJ-4FMHMD8DdN8GiDZxg-Qj8028oKK8Hi2WlYYHOBwsTLIVdKu-fwEm1RW_8wVuUgSmQporvgAAAABJRU5ErkJggg.png",
+    "thumbnail": "https://serpapi.com/searches/6a28a22e88de92749a883bec/images/nvDMPm_CTDFOCr4izHkgctTyjdtbh0V0bEKR42XlfWU.jpeg"
+  },
+  {
+    "position": 6,
+    "link": "https://www.politico.com/news/2026/06/09/anthropic-makes-mythos-level-ai-model-available-to-the-public-00954829",
+    "title": "Anthropic releases a less-powerful version of its most advanced model",
+    "source": "Politico",
+    "date": "4 hours ago",
+    "published_at": "2026-06-09 19:17:53 UTC",
+    "snippet": "Anthropic on Tuesday unveiled a new “Mythos-class” model for general use, as concerns around the release of advanced artificial intelligence tools with...",
+    "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAG1BMVEXXGSD__v740tPsjZHZIyrwpqjoen3lZ2vgTlMj_8VEAAAAPklEQVQYlZ3MOw4AIAhEQRYFvP-JpTF8ChPdcjZ5RH9T9o0ZMCAi4Az-LlgFglYwrAQehbRoFE7jBsoN3rYBZpUAsUa4ttUAAAAASUVORK5CYII.png",
+    "thumbnail": "https://serpapi.com/searches/6a28a22e88de92749a883bec/images/dH3lsekoc6Juy-8FDxViBdUr-7ENz0pNkuoYFsHBZmM.jpeg"
+  }
+]

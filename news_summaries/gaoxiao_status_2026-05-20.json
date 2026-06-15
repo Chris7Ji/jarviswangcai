@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-20",
+  "step1_fetch": {
+    "status": "done",
+    "source": "Tavily (SerpAPI 429, 备用搜索成功)",
+    "count": 6,
+    "time": "06:15"
+  },
+  "step2_translate": {
+    "status": "done",
+    "method": "旺财Jarvis直接翻译(DeepSeek V4应急) - 原3模型均失败: Gemini代理不通; MiniMax余额不足; DeepSeek Key失效",
+    "count": 6,
+    "html_size": 6146,
+    "time": "06:17"
+  },
+  "step3_send": {
+    "status": "failed",
+    "reason": "QQ邮箱SMTP授权码过期/无效(535 Login Fail)，连续第2天(5月19日同样问题)。需在QQ邮箱设置中重新生成授权码",
+    "recipients": 15,
+    "time": "06:17:21"
+  }
+}

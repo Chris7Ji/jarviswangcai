@@ -1,0 +1,16 @@
+{
+  "date": "2026-05-21",
+  "stage": "email_failed",
+  "article_count": 6,
+  "html_size": 9086,
+  "html_path": "news_summaries/gaoxiao_news_2026-05-21.html",
+  "raw_path": "news_summaries/gaoxiao_raw_2026-05-21.json",
+  "translated_path": "news_summaries/gaoxiao_translated_2026-05-21.json",
+  "step1_fetch": "success - 6 articles",
+  "step2_translate_html": "success - 9086 bytes",
+  "step3_email": "failed",
+  "errors": [
+    "QQ邮箱SMTP认证失败 - 所有已知授权码均失效",
+    "需要登录QQ邮箱生成新授权码"
+  ]
+}

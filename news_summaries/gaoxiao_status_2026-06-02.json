@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-02",
+  "stage": "completed",
+  "success": true,
+  "message": "All 3 steps done",
+  "timestamp": "2026-06-02T06:22:00+08:00",
+  "html_size_bytes": 6459,
+  "articles": 6,
+  "emails_sent": 15,
+  "emails_failed": 0
+}

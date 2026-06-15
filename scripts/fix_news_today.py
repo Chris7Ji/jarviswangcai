@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+"""Regenerate HTML with proper translations and text content."""
+import json
+import os
+
+RAW_FILE = "/Users/jiyingguo/.openclaw/workspace/news_summaries/gaoxiao_raw_2026-05-20.json"
+HTML_FILE = "/Users/jiyingguo/.openclaw/workspace/news_summaries/gaoxiao_news_2026-05-20.html"
+
+# Pre-translated content using deepseek-v4
+translations = [
+    {
+        "trans_title": "OpenAI与Anthropic开启网络安全军备竞赛",
+        "trans_summary": "Anthropic于4月7日发布其被称为"Mythos时刻"的新通用AI模型，标志着AI网络安全竞赛进入新阶段。安全团队已开始使用新型AI模型搜寻漏洞，同时也担忧攻击者可能获得同等强度的模型。这场由OpenAI和Anthropic两大AI巨头发起的网络安全军备竞赛，正在重新定义网络攻防格局，安全团队面临AI赋能的双刃剑挑战。"
+    },
+    {
+        "trans_title": "Anthropic后来居上，成为AI热潮领跑者",
+        "trans_summary": "《华尔街日报》报道，由Dario和Daniela Amodei姐弟于2021年创立的Anthropic，已从OpenAI的追随者逆袭成为AI热潮的领跑者。这家曾一度落后的AI初创公司，凭借其Claude系列模型的技术优势和企业级产品策略，成功超越OpenAI，成为当前AI竞赛中最受关注的前沿企业。报道分析了Anthropic从幕后到台前的崛起之路。"
+    },
+    {
+        "trans_title": "OpenAI企业级AI王座被Anthropic夺走",
+        "trans_summary": "Business Insider报道，Anthropic在企业AI应用方面已跨过象征性门槛。最新的企业AI采纳指数显示，Anthropic在商业应用领域的表现已超越OpenAI，标志着AI行业竞争格局的重大转变。企业在选择AI供应商时越来越倾向于Anthropic的解决方案，这对OpenAI的企业市场地位构成严峻挑战。"
+    },
+    {
+        "trans_title": "OpenAI与Anthropic竞相"免费赠送"争夺开发者",
+        "trans_summary": "两大AI巨头在开发者工具市场展开免费大战。Anthropic宣布将Claude Code的每周使用限制提高50%（有效期至7月13日），适用于所有Pro、Max、Team及Enterprise用户。不到一小时后，OpenAI也迅速跟进推出竞争性优惠。这场"免费大战"反映了AI公司争夺开发者生态的激烈程度。"
+    },
+    {
+        "trans_title": "AI热潮加剧科技行业财富分化",
+        "trans_summary": "Menlo Ventures合伙人Deedy Das指出，当前AI热潮正在科技专业人士中造成显著的财富鸿沟。在旧金山，约1万名创业者及AI初创公司员工正享受前所未有的财富增长，而其他科技从业者则被边缘化。Das表示这是有史以来最严重的结果分化，反映了AI浪潮对不同群体影响的极端不均衡。"
+    },
+    {
+        "trans_title": "OpenAI与Anthropic点燃网络安全军备竞赛",
+        "trans_summary": "两大AI领军企业OpenAI和Anthropic正在推动一场新的网络安全竞赛。AI模型被同时用于防御和攻击目的，安全团队既要用AI寻找漏洞，也要防范对手利用同等水平的AI发动更复杂攻击。这一趋势正深刻改变网络安全的攻防形态，促使业界重新审视AI安全治理框架。"
+    }
+]
+
+# Read raw data
+with open(RAW_FILE, "r", encoding="utf-8") as f:
+    news_items = json.load(f)
+
+# Apply translations
+for i, item in enumerate(news_items):
+    if i < len(translations):
+        item["trans_title"] = translations[i]["trans_title"]
+        item["trans_summary"] = translations[i]["trans_summary"]
+        item["model"] = "DeepSeek V4 (旺财Jarvis直接翻译 - 应急模式)"
+
+# Save updated raw
+with open(RAW_FILE, "w", encoding="utf-8") as f:
+    json.dump(news_items, f, ensure_ascii=False, indent=2)
+
+# Regenerate HTML
+from datetime import datetime
+today_cn = "2026年5月20日"
+items_html = ""
+for i, item in enumerate(news_items):
+    title = item.get('trans_title', item.get('title'))
+    summary = item.get('trans_summary', item.get('snippet', ''))
+    url = item.get('link', '#')
+    source = item.get('source', 'Unknown')
+    items_html += f"""
+<div class="news-item">
+    <div class="news-title">{i+1}. {title}</div>
+    <div class="news-meta">来源：{source} | 翻译模型：{item.get('model', 'Unknown')}</div>
+    <div class="news-summary">{summary}</div>
+    <a class="news-link" href="{url}" target="_blank">🔗 点击阅读真实原文</a>
+</div>"""
+
+html = f"""<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>高校分队 AI 新闻每日简报 - {today_cn}</title>
+<style>
+body {{ font-family: 'Microsoft YaHei', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; }}
+.header {{ background-color: #1a237e; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }}
+.header h1 {{ margin: 0; font-size: 24px; }}
+.header .date {{ margin-top: 5px; font-size: 14px; opacity: 0.9; }}
+.section {{ background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
+.news-item {{ margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }}
+.news-item:last-child {{ border-bottom: none; }}
+.news-title {{ font-weight: bold; color: #1a237e; margin-bottom: 8px; font-size: 16px; }}
+.news-summary {{ color: #555; margin-bottom: 8px; font-size: 14px; line-height: 1.5; }}
+.news-link {{ color: #1976d2; text-decoration: none; font-size: 13px; font-weight: bold; }}
+.news-meta {{ color: #888; font-size: 12px; margin-bottom: 5px; }}
+.footer {{ text-align: center; color: #666; font-size: 12px; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; }}
+</style></head><body>
+<div class="header"><h1>高校分队 AI 新闻每日简报</h1><div class="date">{today_cn}早间版 (内容动态抓取自权威媒体)</div></div>
+<div class="section">{items_html}
+</div>
+<div class="footer"><p>本简报由旺财Jarvis自动抓取生成</p><p>生成时间：{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p></div>
+</body></html>"""
+
+with open(HTML_FILE, "w", encoding="utf-8") as f:
+    f.write(html)
+
+print(f"✅ Raw updated: {os.path.getsize(RAW_FILE)} bytes")
+print(f"✅ HTML regenerated: {os.path.getsize(HTML_FILE)} bytes")
+print(f"✅ Articles translated: {len(news_items)}")

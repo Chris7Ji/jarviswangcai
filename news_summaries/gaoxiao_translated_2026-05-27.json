@@ -1,0 +1,56 @@
+[
+  {
+    "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+    "snippet": "Pope Leo XIV's spiritual message on artificial intelligence arrived as Silicon Valley's A.I. enthusiasts pursue their own spirituality through technology.",
+    "trans_title": "AI中心地带：技术专家无视教皇利奥对人工智能的警告",
+    "trans_summary": "教皇利奥十四世就人工智能发表的宗教训导，恰逢硅谷AI爱好者正通过技术追求自己的精神寄托。《纽约时报》报道指出，科技界对教皇关于AI伦理和人类尊严的警告普遍持冷淡态度，认为技术发展的步伐不会因宗教劝详而放缓。这种分歧凸显了科技与宗教在AI时代日益加深的价值观冲突。",
+    "source": "The New York Times",
+    "link": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+    "model": "旺财Jarvis 翻译（Gemini/MiniMax/DeepSeek API均不可用）"
+  },
+  {
+    "title": "The Despair of the Professor in the Age of A.I.",
+    "snippet": "Was it always the case that half of our students would cheat if it were easy enough?” Jay Caspian Kang reports.",
+    "trans_title": "AI时代教授的绝望",
+    "trans_summary": "《纽约客》记者Jay Caspian Kang撰文探讨AI对学术诚信的冲击。文章提出一个令人不安的问题：“是否只要作弊足够容易，就总有一半的学生会这样做？”随着AI工具的普及，教授们面临着前所未有的教学困境——如何区分学生的真实能力和AI辅助成果，以及如何在技术浪潮中重新定义教育的价值。",
+    "source": "The New Yorker",
+    "link": "https://www.newyorker.com/news/fault-lines/the-despair-of-the-professor-in-the-age-of-ai",
+    "model": "旺财Jarvis 翻译（Gemini/MiniMax/DeepSeek API均不可用）"
+  },
+  {
+    "title": "Hybrid by design: Engineering the new model for federal AI delivery",
+    "snippet": "Booz Allen and Future Tech leaders share how using hybrid design, edge AI and GPUs can accelerate secure federal AI deployment.",
+    "trans_title": "混合设计：联邦AI交付的新模型工程",
+    "trans_summary": "Booz Allen和Future Tech的领导者分享了如何利用混合设计、边缘AI和GPU加速安全的联邦AI部署。这种新型架构结合了云端和边缘计算的优势，能够在确保安全合规的前提下，大幅提升政府部门AI应用的部署速度和效率，为美国联邦机构的AI落地提供了可复制的工程范式。",
+    "source": "Federal News Network",
+    "link": "https://federalnewsnetwork.com/artificial-intelligence/2026/05/hybrid-by-design-engineering-the-new-model-for-federal-ai-delivery/",
+    "model": "旺财Jarvis 翻译（Gemini/MiniMax/DeepSeek API均不可用）"
+  },
+  {
+    "title": "California judges are testing a new AI clerk, and you won’t know if it’s looking at your case",
+    "snippet": "Courts in Los Angeles and Riverside counties are testing an artificial intelligence tool and deciding whether it can be used in high-stakes criminal cases.",
+    "trans_title": "加州法官试用AI书记员，案件当事人将不知情",
+    "trans_summary": "加州洛杉矶县和河滨县的法院正在测试一款人工智能工具，并决定是否将其用于高风险的刑事案件。该AI工具可以辅助法官处理案件文档和初步审查，但当事人不会知道自己的案件是否由AI处理。此举引发了关于司法透明度、公平性和公民权利的广泛讨论。",
+    "source": "CalMatters",
+    "link": "https://calmatters.org/economy/technology/2026/05/ai-los-angeles-riverside-courts/",
+    "model": "旺财Jarvis 翻译（Gemini/MiniMax/DeepSeek API均不可用）"
+  },
+  {
+    "title": "Gov. Landry announces new multi-billion-dollar AI data center in Rapides Parish",
+    "snippet": "Governor Landry announces a new data center is breaking ground in Boyce.",
+    "trans_title": "路易斯安那州长宣布新建数十亿美元AI数据中心",
+    "trans_summary": "路易斯安那州州长Landry宣布在拉皮德教区的博伊斯市破土动工建设一个全新的AI数据中心，投资规模达数十亿美元。该项目预计将为当地创造大量就业机会，并推动该州成为美国南部AI基础设施的重要枢纽。数据中心的建设反映了美国各州竞相吸引AI产业投资的趋势。",
+    "source": "KALB",
+    "link": "https://www.kalb.com/2026/05/26/live-2-gov-landry-announces-new-multi-billion-dollar-ai-data-center-rapides-parish/",
+    "model": "旺财Jarvis 翻译（Gemini/MiniMax/DeepSeek API均不可用）"
+  },
+  {
+    "title": "MBARI researchers share latest AI tools for ocean imagery analysis at Marine Imaging Workshop",
+    "snippet": "Last week, a team of MBARI researchers participated in the sixth Marine Imaging Workshop, sharing new technology for observing marine life,...",
+    "trans_title": "MBARI研究人员在海洋影像研讨会上分享最新AI图像分析工具",
+    "trans_summary": "上周，蒙特雷湾水族馆研究所（MBARI）研究团队参加了第六届海洋影像研讨会，分享了用于观测海洋生物的新技术。这些AI工具能够自动分析和识别海洋图像中的生物种类，大幅提升海洋生态研究的效率和精度。该技术有望在气候变化监测和海洋保护中发挥重要作用。",
+    "source": "MBARI",
+    "link": "https://www.mbari.org/news/mbari-researchers-share-latest-ai-tools-for-ocean-imagery-analysis-at-marine-imaging-workshop/",
+    "model": "旺财Jarvis 翻译（Gemini/MiniMax/DeepSeek API均不可用）"
+  }
+]

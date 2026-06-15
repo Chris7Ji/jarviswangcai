@@ -1,0 +1,90 @@
+{
+  "news": [
+    {
+      "title": "Google I/O 2026: Every AI Drop Since Last Year",
+      "snippet": "Gemini 3.1 Pro is the latest model, building on its reasoning abilities. Google doesn't do as many iterative models as OpenAI and Anthropic.",
+      "url": "https://www.cnet.com/tech/services-and-software/google-i-o-2026-ai-releases-over-the-past-year/",
+      "source": "CNET",
+      "date": "Thu, 14 May 2026 12:00:00 GMT"
+    },
+    {
+      "title": "Anthropic Was Behind. Now It's the AI Boom's Front-Runner.",
+      "snippet": "Siblings Daniela and Dario Amodei both worked at OpenAI before they co-founded Anthropic in 2021. Now Anthropic leads the AI race.",
+      "url": "https://www.wsj.com/tech/ai/anthropic-was-behind-now-its-the-ai-booms-front-runner-5020f621",
+      "source": "WSJ",
+      "date": "Wed, 13 May 2026 14:00:00 GMT"
+    },
+    {
+      "title": "OpenAI and Anthropic kicked off a new arms race for cyber defense",
+      "snippet": "Security teams already use new AI models to search for vulnerabilities while also worrying about attackers gaining access to models of similar strength.",
+      "url": "https://www.businessinsider.com/openai-and-anthropic-kick-off-cybersecurity-frenzy-2026-5",
+      "source": "Business Insider",
+      "date": "Mon, 18 May 2026 09:00:05 GMT"
+    },
+    {
+      "title": "OpenAI just lost its enterprise AI crown to Anthropic",
+      "snippet": "Anthropic has steadily gained momentum with corporate customers over the past year. Then, in late 2025 and early 2026, adoption surged.",
+      "url": "https://www.businessinsider.com/anthropic-tops-openai-business-ai-adoption-ramp-index-2026-5",
+      "source": "Business Insider",
+      "date": "Wed, 13 May 2026 14:00:01 GMT"
+    },
+    {
+      "title": "Anthropic now has more business customers than OpenAI, according to Ramp data",
+      "snippet": "On OpenRouter's leaderboard, which samples a different portion of users, OpenAI loses some market share to Anthropic.",
+      "url": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+      "source": "TechCrunch",
+      "date": "Wed, 13 May 2026 14:00:00 GMT"
+    },
+    {
+      "title": "OpenAI and Anthropic Are Trying to Out-Freebie Each Other",
+      "snippet": "Anthropic posted that it was increasing Claude Code's weekly limits by 50% until July 13.",
+      "url": "https://www.businessinsider.com/openai-anthropic-out-freebie-each-other-codex-claude-code-2026-5",
+      "source": "Business Insider",
+      "date": "Thu, 14 May 2026 06:08:45 GMT"
+    },
+    {
+      "title": "Notable Researchers Join $4 Billion Effort to Build Self-Improving A.I.",
+      "snippet": "Companies like Anthropic and OpenAI released new A.I. systems late last year that were particularly good at writing computer code.",
+      "url": "https://www.nytimes.com/2026/05/13/technology/recursive-superintelligence-funding-ai.html",
+      "source": "The New York Times",
+      "date": "Wed, 13 May 2026 09:02:46 GMT"
+    },
+    {
+      "title": "Elon Musk, Sam Altman and the world's billionaires are terrified of the Google AI genius",
+      "snippet": "Musk is back on his Hassabis hobbyhorse, worrying about DeepMind controlling superintelligence.",
+      "url": "https://www.pcgamer.com/software/ai/elon-musk-sam-altman-and-the-worlds-billionaires-are-terrified-of-the-google-ai-genius-behind-a-25-year-old-computer-game-because-they-think-he-might-actually-end-up-controlling-god/",
+      "source": "PC Gamer",
+      "date": "Tue, 12 May 2026 21:49:12 GMT"
+    },
+    {
+      "title": "3 charts to catch up on the OpenAI-Anthropic rivalry",
+      "snippet": "Whoever goes public first at the higher multiple anchors how the entire frontier AI category gets priced.",
+      "url": "https://pitchbook.com/news/articles/3-charts-to-catch-up-on-the-openai-anthropic-rivalry",
+      "source": "PitchBook",
+      "date": "Fri, 15 May 2026 21:55:10 GMT"
+    },
+    {
+      "title": "AI Boom Creates Wealth Divide Among Tech Professionals",
+      "snippet": "The AI boom is creating a widening wealth gap among tech professionals.",
+      "url": "https://www.startupecosystem.ca/news/ai-boom-creates-wealth-divide-among-tech-professionals/",
+      "source": "Startup Ecosystem Canada",
+      "date": "Sun, 17 May 2026 00:04:23 GMT"
+    },
+    {
+      "title": "Where the former Google executive who backed OpenAI and Anthropic is investing now",
+      "snippet": "An early backer of OpenAI and Anthropic is now betting on wellness.",
+      "url": "https://www.businessinsider.com/early-backer-openai-and-anthropic-is-now-betting-on-wellness-2026-5",
+      "source": "Business Insider",
+      "date": "Mon, 18 May 2026 21:32:53 GMT"
+    },
+    {
+      "title": "Adaption aims big with AutoScientist, an AI tool that helps models train themselves",
+      "snippet": "Adaption launches AutoScientist, an AI tool that helps models train themselves.",
+      "url": "https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist-an-ai-tool-that-helps-models-train-themselves/",
+      "source": "TechCrunch",
+      "date": "Wed, 13 May 2026"
+    }
+  ],
+  "count": 12,
+  "fetched_at": "2026-05-19"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The $100,000 visa fee isn't stopping OpenAI, Anthropic, and Nvidia as they battle for AI talent",
+    "snippet": "Federal data shows Anthropic, OpenAI, and Nvidia filed more H-1B visa applications for new hires and renewals in the second quarter of fiscal 2026 than they did a year earlier, as other tech giants pulled back from the program.",
+    "link": "https://www.businessinsider.com/h-1b-visa-filings-rise-for-anthropic-openai-nvidia-2026-6",
+    "source": "Business Insider"
+  },
+  {
+    "title": "Anthropic, Nvidia Sway Judge to Split Authors' AI Copyright Suit",
+    "snippet": "A group of big tech companies convinced a federal judge to split up authors' copyright lawsuit accusing them of pirating books to build artificial intelligence models.",
+    "link": "https://news.bloomberglaw.com/ip-law/anthropic-nvidia-sway-judge-to-split-authors-ai-copyright-suit",
+    "source": "Bloomberg Law News"
+  },
+  {
+    "title": "OpenAI files for US IPO after Anthropic as AI giants head to public markets",
+    "snippet": "ChatGPT-maker OpenAI confidentially filed for a U.S. initial public offering on Monday, joining rival Anthropic in a push toward the stock market as investors seek exposure to the AI boom.",
+    "link": "https://www.reuters.com/technology/openai-files-us-ipo-after-anthropic-ai-giants-head-public-markets-2026-06-08/",
+    "source": "Reuters"
+  },
+  {
+    "title": "Anthropic Unveils Claude Fable 5: A Breakthrough in AI Technology",
+    "snippet": "Anthropic has launched Claude Fable 5, its most advanced AI model to date, now publicly available. Built on the same foundation as the restricted Mythos 5, Claude Fable 5 includes enhanced safety features.",
+    "link": "https://www.startupecosystem.ca/news/anthropic-unveils-claude-fable-5-a-breakthrough-in-ai-technology/",
+    "source": "Startup Ecosystem Canada"
+  },
+  {
+    "title": "Perplexity planning IPO in 2028 regardless of what happens to Anthropic or OpenAI",
+    "snippet": "AI firm Perplexity is planning to go public in 2028 regardless of how the market receives the listings of Anthropic and OpenAI, CNBC reported.",
+    "link": "https://www.reuters.com/business/perplexity-planning-ipo-2028-regardless-what-happens-anthropic-or-openai-ceo-2026-06-09/",
+    "source": "Reuters"
+  },
+  {
+    "title": "Anthropic releases a less-powerful version of its most advanced model",
+    "snippet": "Anthropic on Tuesday unveiled a new Mythos-class model for general use. The new model, Fable 5, performs at a level similar to Anthropic's most advanced Claude Mythos model, though with built-in safeguards against cyberattack and bioweapon misuse.",
+    "link": "https://www.politico.com/news/2026/06/09/anthropic-makes-mythos-level-ai-model-available-to-the-public-00954829",
+    "source": "Politico"
+  }
+]
