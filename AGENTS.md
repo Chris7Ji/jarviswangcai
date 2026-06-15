@@ -34,6 +34,36 @@
 
 ---
 
+## ⚠️ 执行前检查清单（Pre-Flight Checklist）
+
+**每次执行任务前，必须对照 `.learnings/ERRORS.md` 中的历史教训检查：**
+
+### 修改 JS/HTML/CSS 文件
+- [ ] `node --check filename.js` 验证语法
+- [ ] 检查是否有重复 id 或重复对象定义
+- [ ] 修改后 curl 线上版本验证部署
+
+### 修改/创建 cron 定时任务
+- [ ] 必须显式指定 `model`（不依赖默认模型）
+- [ ] 设置合理的 `timeoutSeconds`（复杂任务≥300s）
+- [ ] 配置 fallbacks 模型链
+- [ ] 修改后手动触发一次验证
+
+### 安装插件/技能
+- [ ] `openclaw skills check` 检查 duplicate 警告
+- [ ] 检查 extensions/ 和 npm/ 下是否已有同名插件
+
+### 涉及 API Key / 密钥
+- [ ] 不硬编码在代码文件中
+- [ ] 使用 .env.secrets 或 openclaw secrets 管理
+- [ ] .gitignore 必须包含 .env.secrets
+
+### 切换默认模型后
+- [ ] 检查所有 cron 任务是否需要显式绑定模型
+- [ ] 手动触发关键任务验证
+
+---
+
 ## 🟡 信息披露规则
 
 **三问自检（每次对外回复前快速检查）：**
