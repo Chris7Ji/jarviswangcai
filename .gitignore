@@ -23,3 +23,7 @@ __pycache__/
 **/config.json
 # 日志
 *.log
+
+# 密钥文件
+.env.secrets
+.env
