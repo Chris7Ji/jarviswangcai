@@ -194,8 +194,6 @@ const allPosts = [
 },
 {
         id: '20260610',
-{
-        id: '20260610',
         date: '2026-06-10',
         category: 'work',
         categoryLabel: '💼 工作日记',
