@@ -213,11 +213,23 @@
         <!-- 新增：敲黑板知识点汇总 -->
         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
             <div style="width: 8px; height: 32px; background: var(--accent-gold); border-radius: 4px;"></div>
-            <h2 style="font-size: 1.8rem; color: var(--text-primary);">📝 敲黑板知识点汇总 (共 <span class="knowledge-count">5</span> 篇)</h2>
+            <h2 style="font-size: 1.8rem; color: var(--text-primary);">📝 敲黑板知识点汇总 (共 <span class="knowledge-count">6</span> 篇)</h2>
         </div>
 
         <section class="knowledge-list" style="margin-bottom: 4rem; display: flex; flex-direction: column; gap: 1.5rem;">
-            <!-- 第五篇：Claude Code 之父访谈 (最新) -->
+            <!-- 第六篇：Codex 自生成目标 (最新) -->
+            <div class="knowledge-card" style="background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s; cursor: pointer;" onclick="window.location.href='article_codex_self_goal.html'">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.4rem; color: var(--accent-blue); margin: 0;">🎯 码农连任务都不写了？Codex 开始自己给自己派活——自生成目标（Self-Goal Generation）时代来临</h3>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary); background: var(--bg-secondary); padding: 0.2rem 0.6rem; border-radius: 20px;">2026-06-16</span>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; font-size: 1.05rem;">
+                    前 Anthropic 成员 Pietro Schirano 展示了一种全新的编程范式：不再手写任务目标，而是让 Codex 为自己和每个子智能体各写一份 /goal。从「写提示词」到「元提示」再到「自生成目标」，AI Agent 正在接管编程中最核心的判断力。Anthropic、Cursor、Codex 三家几乎同时推出多智能体编排能力，标志着「人给意图、Agent 生成任务」的范式已成共识。本文深度解析 /goal 的 Ralph 循环机制、18 小时自主交付实测、以及 token 成本风险。
+                </p>
+                <a href="article_codex_self_goal.html" style="color: var(--accent-gold); text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">查看全文 <span style="font-size: 1.2em;">→</span></a>
+            </div>
+
+            <!-- 第五篇：Claude Code 之父访谈 -->
             <div class="knowledge-card" style="background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color); padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s; cursor: pointer;" onclick="window.location.href='article_claude_code_democratize.html'">
                 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
                     <h3 style="font-size: 1.4rem; color: var(--accent-blue); margin: 0;">🧠 Claude Code 之父访谈："全员编程"时代，企业的真正护城河是组织流程的速度</h3>
