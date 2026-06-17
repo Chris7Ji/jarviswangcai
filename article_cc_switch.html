@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Switch 完全指南：一个应用管理 Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes Agent - 旺财Jarvis</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+    <style>
+        :root {
+            --bg: #f8f9fc; --surface: #ffffff; --text: #1a1a2e; --muted: #5a5a7a;
+            --accent: #D4A84B; --accent-light: #fef3c7; --accent2: #3D9CA8;
+            --border: #e2e8f0; --code-bg: #0f172a; --code-text: #e2e8f0;
+            --tag-bg: #f1f5f9; --tag-text: #475569;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.75; font-size: 16px; }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+        header.hero { background: linear-gradient(135deg, #D4A84B 0%, #3D9CA8 100%); color: #fff; padding: 72px 20px 64px; text-align: center; }
+        header.hero .eyebrow { display: inline-block; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 4px 16px; font-size: 13px; letter-spacing: 0.05em; margin-bottom: 20px; }
+        header.hero h1 { font-size: clamp(24px, 5vw, 36px); font-weight: 800; line-height: 1.25; margin-bottom: 16px; }
+        header.hero .meta { font-size: 14px; opacity: 0.85; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        article { padding: 48px 0 80px; }
+        article h2 { font-size: 22px; font-weight: 700; margin: 56px 0 20px; padding-bottom: 10px; border-bottom: 2px solid var(--border); color: #0f172a; display: flex; align-items: center; gap: 0.5rem; }
+        article h3 { font-size: 18px; font-weight: 700; margin: 32px 0 14px; color: #1e293b; }
+        article h4 { font-size: 15px; font-weight: 700; margin: 20px 0 10px; color: #334155; }
+        article p { margin-bottom: 16px; }
+        article ul, article ol { padding-left: 24px; margin-bottom: 16px; }
+        article li { margin-bottom: 6px; }
+        article pre { background: var(--code-bg); color: var(--code-text); border-radius: 10px; padding: 20px 24px; overflow-x: auto; font-size: 13.5px; line-height: 1.65; margin: 20px 0; font-family: "SF Mono","Fira Code","Consolas",monospace; }
+        article code { font-family: "SF Mono","Fira Code","Consolas",monospace; font-size: 13.5px; background: #f1f5f9; color: #0f172a; padding: 2px 6px; border-radius: 4px; }
+        article pre code { background: transparent; color: inherit; padding: 0; font-size: inherit; }
+        article a { color: var(--accent2); text-decoration: none; border-bottom: 1px solid rgba(61,156,168,0.3); }
+        article a:hover { color: var(--accent); border-color: var(--accent); }
+        .sec-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: var(--accent); color: #fff; border-radius: 50%; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+        .callout { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 24px 0; font-size: 15px; }
+        .callout .emoji { font-size: 20px; margin-right: 8px; }
+        .intro-note { background: linear-gradient(135deg, #eff6ff, #f5f3ff); border-left: 4px solid var(--accent2); border-radius: 0 8px 8px 0; padding: 18px 24px; margin-bottom: 40px; font-size: 15px; }
+        .intro-note strong { color: var(--accent2); }
+        .table-wrap { overflow-x: auto; margin: 24px 0; border-radius: 10px; border: 1px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--surface); }
+        thead { background: #f8fafc; }
+        th { text-align: left; padding: 11px 16px; font-weight: 600; color: #475569; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+        td { padding: 10px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+        tr:last-child td { border-bottom: none; }
+        tbody tr:hover { background: #f8fafc; }
+        .tag { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-size: 12px; padding: 2px 10px; border-radius: 20px; font-family: "SF Mono","Fira Code",monospace; margin: 0 2px; }
+        .diagram { background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; overflow-x: auto; font-size: 13px; line-height: 1.6; font-family: "SF Mono","Fira Code",monospace; margin: 20px 0; color: #334155; }
+        .highlight-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px 18px; margin: 20px 0; font-size: 14px; }
+        .highlight-box.info { background: #eff6ff; border-color: #bfdbfe; }
+        .highlight-box .hb-title { font-weight: 700; margin-bottom: 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #D4A84B; }
+        .highlight-box.info .hb-title { color: var(--accent2); }
+        .summary-card { background: linear-gradient(135deg, #fffbeb, #eff6ff); border: 1px solid #fde68a; border-radius: 12px; padding: 24px 28px; margin: 40px 0; }
+        .summary-card h3 { margin-top: 0; color: #92400e; }
+        .step-flow { display: flex; gap: 12px; flex-wrap: wrap; margin: 20px 0; }
+        .step-flow .step { flex: 1; min-width: 140px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center; font-size: 13px; }
+        .step-flow .step .step-num { display: block; width: 28px; height: 28px; background: var(--accent); color: #fff; border-radius: 50%; line-height: 28px; text-align: center; font-weight: 700; font-size: 13px; margin: 0 auto 8px; }
+        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent2); text-decoration: none; font-weight: 600; margin: 2rem 0; padding: 10px 20px; border: 2px solid var(--accent2); border-radius: 8px; transition: all 0.3s; }
+        .back-link:hover { background: var(--accent2); color: #fff; }
+        footer { background: #2C3E50; color: #94a3b8; padding: 32px 20px; text-align: center; font-size: 14px; }
+        footer a { color: var(--accent); }
+        @media (max-width: 640px) { header.hero { padding: 48px 16px 40px; } header.hero h1 { font-size: 22px; } .step-flow { flex-direction: column; } article { padding: 32px 0 60px; } }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <span class="eyebrow">🔧 AI 编程工具</span>
+        <h1>CC Switch 完全指南<br>一个应用管理 7 款 AI 编程 CLI 工具</h1>
+        <div class="meta">
+            <span>📅 2026-06-17</span>
+            <span>✍️ 旺财Jarvis</span>
+            <span>⏱️ 约25分钟阅读</span>
+            <span>🏷️ Claude Code · Codex · Gemini CLI · OpenCode · OpenClaw · Hermes</span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+<article>
+
+<div class="intro-note">
+    <strong>📌 本文导读：</strong>CC Switch 是一个开源桌面应用，用于统一管理 Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes Agent 等 AI 编程 CLI 工具的供应商配置、MCP 服务器、Skills 和用量统计。本文从安装到进阶用法，手把手教你如何让 CC Switch 与各工具协同工作。
+</div>
+
+<h2 style="border:none;font-size:1.6rem;text-align:center;margin:2rem 0;background:linear-gradient(135deg,#D4A84B,#3D9CA8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">CC Switch 完全使用指南</h2>
+<p class="subtitle">一个桌面应用，统管所有 AI 编程 CLI 工具 — 供应商、MCP、Prompts、Skills 一站搞定</p>
+
+<!-- 目录 -->
+<nav class="toc">
+  <h3>📑 目录</h3>
+  <ol>
+    <li><a href="#sec1">为什么需要 CC Switch</a></li>
+    <li><a href="#sec2">CC Switch 是什么</a></li>
+    <li><a href="#sec3">安装与配置</a></li>
+    <li><a href="#sec4">核心功能详解</a></li>
+    <li><a href="#sec5">与 Claude Code 配合使用</a></li>
+    <li><a href="#sec6">与 Codex 配合使用</a></li>
+    <li><a href="#sec7">与 OpenCode 配合使用</a></li>
+    <li><a href="#sec8">与 Hermes Agent 配合使用</a></li>
+    <li><a href="#sec9">与 OpenClaw 配合使用</a></li>
+    <li><a href="#sec10">最佳实践与常见问题</a></li>
+  </ol>
+</nav>
+
+<!-- ==================== 第一章 ==================== -->
+<h2 id="sec1"><span class="sec-num">1</span> 为什么需要 CC Switch</h2>
+
+<p>2025 年以来，AI 编程 CLI 工具迎来爆发式增长。Claude Code、Codex、Gemini CLI、OpenCode……每一款都功能强大，但当你同时使用多个工具时，<strong>管理噩梦</strong>也随之而来：</p>
+<img src="images/cc-switch-hub.jpg" alt="CC Switch 架构中心图 — 一个应用连接 7 款 AI 编程工具" style="width:100%;border-radius:10px;margin:1.5rem 0;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+
+<div class="feature-grid">
+  <div class="feature-card">
+    <div class="icon">🔑</div>
+    <h4>API Key 散落各处</h4>
+    <p>每个工具有自己的配置文件，官方 Key、中转 Key、多个账号来回切换，容易混淆。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">🔌</div>
+    <h4>MCP 重复配置</h4>
+    <p>同一个 MCP 服务器要在 Claude Code 配一遍，又在 OpenCode 配一遍，同步困难。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">📝</div>
+    <h4>Prompts 文件碎片化</h4>
+    <p>CLAUDE.md、AGENTS.md、GEMINI.md 分散在各项目目录，内容难以统一维护。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">📊</div>
+    <h4>用量无法追踪</h4>
+    <p>不同供应商的账单各看各的，不知道一个月到底花了多少钱。</p>
+  </div>
+</div>
+
+<div class="highlight-box">
+  <h4>💡 CC Switch 的解决思路</h4>
+  <p>把所有 AI 编程 CLI 工具的<strong>供应商配置、MCP 服务器、Prompts、Skills、用量统计</strong>收归到一个统一的桌面应用里，通过系统托盘一键切换，彻底告别手动编辑配置文件的时代。</p>
+</div>
+
+
+<!-- ==================== 第二章 ==================== -->
+<h2 id="sec2"><span class="sec-num">2</span> CC Switch 是什么</h2>
+
+<p>CC Switch 是一个<strong>开源桌面应用</strong>，专为 AI 编程 CLI 工具设计的统一工作流管理器。它不是一个 IDE 插件，而是一个独立的桌面客户端，运行在系统托盘中，随时可用。</p>
+
+<h3>支持的工具一览</h3>
+
+<div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin:1rem 0;">
+  <span class="tool-badge claude">🟠 Claude Code</span>
+  <span class="tool-badge desktop">🟡 Claude Desktop</span>
+  <span class="tool-badge codex">🟢 Codex</span>
+  <span class="tool-badge gemini">🔵 Gemini CLI</span>
+  <span class="tool-badge opencode">🟣 OpenCode</span>
+  <span class="tool-badge openclaw">💜 OpenClaw</span>
+  <span class="tool-badge hermes">🩷 Hermes Agent</span>
+</div>
+
+<h3>架构总览</h3>
+
+<div class="diagram">
+┌─────────────────────────────────────────────────────────┐
+│                    CC Switch Desktop                     │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌─────────┐ │
+│  │ 供应商管理 │  │ MCP 管理  │  │ Prompts  │  │  Skills │ │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬────┘ │
+│       │              │              │              │      │
+│  ┌────┴──────────────┴──────────────┴──────────────┴───┐ │
+│  │              本地代理 & 故障转移引擎                   │ │
+│  │    (格式转换 · 自动故障转移 · 熔断器 · 健康监控)       │ │
+│  └────────────────────────┬────────────────────────────┘ │
+│                           │                              │
+│  ┌────────────────────────┴────────────────────────────┐ │
+│  │            统一数据存储层 (SQLite)                    │ │
+│  │   ~/.cc-switch/cc-switch.db + settings.json          │ │
+│  └─────────────────────────────────────────────────────┘ │
+└──────────────────────────┬──────────────────────────────┘
+                           │
+          ┌────────────────┼────────────────┐
+          ▼                ▼                ▼
+   ┌────────────┐  ┌────────────┐  ┌────────────┐
+   │Claude Code │  │   Codex    │  │Gemini CLI  │  ...
+   └────────────┘  └────────────┘  └────────────┘
+</div>
+
+<h3>数据存储结构</h3>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>路径</th><th>用途</th><th>说明</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>~/.cc-switch/cc-switch.db</code></td><td>主数据库</td><td>SQLite 格式，存储所有供应商、MCP、会话等数据</td></tr>
+      <tr><td><code>~/.cc-switch/settings.json</code></td><td>应用设置</td><td>UI 偏好、代理配置、同步设置</td></tr>
+      <tr><td><code>~/.cc-switch/backups/</code></td><td>自动备份</td><td>定时备份数据库，支持一键恢复</td></tr>
+      <tr><td><code>~/.cc-switch/skills/</code></td><td>技能目录</td><td>安装的所有 Skills 存放于此</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ==================== 第三章 ==================== -->
+<h2 id="sec3"><span class="sec-num">3</span> 安装与配置</h2>
+
+<h3>3.1 各平台安装</h3>
+
+<h4>macOS（推荐 Homebrew）</h4>
+<pre><code><span class="comment"># 使用 Homebrew 安装（最简单）</span>
+<span class="cmd">brew install</span> --cask cc-switch
+
+<span class="comment"># 验证安装</span>
+<span class="cmd">ls</span> /Applications/CC\ Switch.app</code></pre>
+
+<div class="callout tip">
+  <strong>✅ 提示</strong>
+  macOS 用户首次打开时，如果提示"无法验证开发者"，请前往 <strong>系统设置 → 隐私与安全性</strong>，点击"仍要打开"。
+</div>
+
+<h4>Windows</h4>
+<pre><code><span class="comment"># 方式一：下载 MSI 安装包（推荐）</span>
+<span class="comment"># 访问 GitHub Releases 页面下载最新 .msi 文件</span>
+<span class="comment"># 双击安装即可</span>
+
+<span class="comment"># 方式二：下载 Portable ZIP（免安装）</span>
+<span class="comment"># 解压到任意目录，运行 cc-switch.exe</span></code></pre>
+
+<h4>Linux</h4>
+<pre><code><span class="comment"># Arch Linux (AUR)</span>
+<span class="cmd">paru</span> -S cc-switch
+
+<span class="comment"># Debian / Ubuntu</span>
+<span class="cmd">wget</span> https://github.com/anthropics/cc-switch/releases/latest/download/cc-switch_amd64.deb
+<span class="cmd">sudo dpkg</span> -i cc-switch_amd64.deb
+
+<span class="comment"># Fedora / RHEL</span>
+<span class="cmd">sudo rpm</span> -i cc-switch_x86_64.rpm
+
+<span class="comment"># 通用 AppImage</span>
+<span class="cmd">chmod</span> +x cc-switch.AppImage
+<span class="cmd">./cc-switch.AppImage</span></code></pre>
+
+<h3>3.2 首次启动与配置导入</h3>
+
+<ol class="step-list">
+  <li>
+    <strong>启动 CC Switch</strong><br>
+    安装完成后打开应用，系统托盘会出现 CC Switch 图标（⚡）。
+  </li>
+  <li>
+    <strong>导入现有配置</strong><br>
+    首次启动时，CC Switch 会自动检测已安装的 CLI 工具，并提示你导入现有配置。它会自动扫描以下路径：
+    <pre><code><span class="comment"># Claude Code 配置</span>
+~/.claude/settings.json
+~/.claude/.credentials.json
+
+<span class="comment"># Codex 配置</span>
+~/.codex/config.toml
+
+<span class="comment"># Gemini CLI 配置</span>
+~/.gemini/settings.json
+
+<span class="comment"># OpenCode 配置</span>
+~/.config/opencode/config.json</code></pre>
+  </li>
+  <li>
+    <strong>添加第一个供应商</strong><br>
+    点击左侧导航栏的「供应商」，从 50+ 预设供应商中选择，或点击「自定义」添加私有 API。
+  </li>
+  <li>
+    <strong>测试连通性</strong><br>
+    添加供应商后，点击「测试连接」按钮验证 API Key 是否有效。
+  </li>
+</ol>
+
+<div class="callout info">
+  <strong>ℹ️ 关于预设供应商</strong>
+  CC Switch 内置 50+ 供应商预设，覆盖 Anthropic 官方、OpenAI 官方、Google 官方以及主流中转服务商。选择预设后只需填入 API Key 即可，无需手动配置 Endpoint。
+</div>
+
+
+<!-- ==================== 第四章 ==================== -->
+<h2 id="sec4"><span class="sec-num">4</span> 核心功能详解</h2>
+
+<h3>4.1 供应商管理</h3>
+
+<p>供应商管理是 CC Switch 的核心功能。你可以把它理解为一个<strong>「AI API Key 的密码管理器」</strong>。</p>
+
+<h4>添加供应商</h4>
+<ol class="step-list">
+  <li>
+    打开 CC Switch → 左侧导航「供应商」
+  </li>
+  <li>
+    点击右上角「+ 添加供应商」
+  </li>
+  <li>
+    从预设列表中选择（如 <code>Anthropic Official</code>、<code>OpenAI Official</code>），或选择「自定义」手动配置
+  </li>
+  <li>
+    填入 API Key，选择模型偏好
+  </li>
+  <li>
+    点击「测试连接」确认有效 → 保存
+  </li>
+</ol>
+
+<h4>系统托盘快速切换</h4>
+<p>这是 CC Switch 最实用的功能之一。点击系统托盘图标，即可看到所有已配置的供应商列表，<strong>一键切换</strong>当前活跃的 API 提供商。切换后，所有已配置的 CLI 工具会自动使用新的供应商。</p>
+
+<div class="callout tip">
+  <strong>✅ 热切换 vs 冷切换</strong>
+  <ul style="margin:0.5rem 0 0; padding-left:1.5rem;">
+    <li><strong>Claude Code</strong>：支持热切换，无需重启终端</li>
+    <li><strong>Codex</strong>：需要重启终端才能生效（冷切换）</li>
+    <li><strong>Gemini CLI</strong>：支持热切换</li>
+    <li><strong>OpenCode</strong>：支持热切换</li>
+  </ul>
+</div>
+
+<h3>4.2 本地代理与故障转移</h3>
+
+<p>CC Switch 内置了一个轻量级本地代理服务器，提供以下高级能力：</p>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>功能</th><th>说明</th><th>适用场景</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>格式转换</strong></td><td>自动在不同 API 格式之间转换（如 OpenAI ↔ Anthropic）</td><td>使用 Anthropic 模型接入 OpenAI 兼容端点</td></tr>
+      <tr><td><strong>自动故障转移</strong></td><td>主供应商不可用时自动切换到备用供应商</td><td>保障 7×24 不间断使用</td></tr>
+      <tr><td><strong>熔断器</strong></td><td>连续失败 N 次后暂时禁用某供应商</td><td>避免反复请求已宕机的服务</td></tr>
+      <tr><td><strong>健康监控</strong></td><td>实时监控各供应商的响应时间和可用状态</td><td>快速定位性能问题</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>配置故障转移链</h4>
+<pre><code><span class="comment"># 在 CC Switch 中设置供应商优先级：</span>
+<span class="comment"># 主供应商:   Anthropic Official (优先级 1)</span>
+<span class="comment"># 备用供应商: 中转服务 A (优先级 2)</span>
+<span class="comment"># 兜底供应商: 中转服务 B (优先级 3)</span>
+
+<span class="comment"># 熔断器配置：</span>
+<span class="comment"># - 连续失败次数: 3</span>
+<span class="comment"># - 熔断恢复时间: 60 秒</span>
+<span class="comment"># - 健康检查间隔: 30 秒</span></code></pre>
+
+<h3>4.3 统一 MCP 管理</h3>
+
+<p>MCP（Model Context Protocol）是让 AI 工具调用外部服务能力的协议。CC Switch 提供了<strong>一个面板管理所有工具的 MCP 服务器</strong>，并支持双向同步。</p>
+
+<h4>添加 MCP 服务器</h4>
+<ol class="step-list">
+  <li>打开 CC Switch → 左侧导航「MCP」</li>
+  <li>点击「+ 添加 MCP 服务器」</li>
+  <li>选择服务器类型：
+    <ul>
+      <li><strong>Stdio</strong>：本地命令行工具（如 <code>filesystem-server</code>、<code>sqlite-server</code>）</li>
+      <li><strong>SSE</strong>：远程 HTTP 服务</li>
+    </ul>
+  </li>
+  <li>填写配置信息（命令、参数、环境变量等）</li>
+  <li>勾选要同步到的目标工具（Claude Code / Codex / OpenCode 等）</li>
+  <li>点击保存 → 自动写入各工具的配置文件</li>
+</ol>
+
+<h4>双向同步机制</h4>
+<div class="comparison-row">
+  <div class="before">
+    <h4 style="color:#ef4444; margin-top:0;">❌ 没有 CC Switch 之前</h4>
+    <pre style="margin:0.5rem 0; font-size:0.8rem;"><code><span class="comment"># 在 Claude Code 中手动添加</span>
+~/.claude/mcp.json  ← 手动编辑
+
+<span class="comment"># 在 OpenCode 中再添加一遍</span>
+~/.config/opencode/mcp.json  ← 再编辑
+
+<span class="comment"># 改了一个忘了另一个 → 不同步</span></code></pre>
+  </div>
+  <div class="after">
+    <h4 style="color:#22c55e; margin-top:0;">✅ 使用 CC Switch 之后</h4>
+    <pre style="margin:0.5rem 0; font-size:0.8rem;"><code><span class="comment"># 在 CC Switch 面板添加一次</span>
+CC Switch MCP 面板  ← 统一配置
+
+<span class="comment"># 自动同步到所有勾选的工具</span>
+~/.claude/mcp.json      ✅ 自动写入
+~/.config/opencode/mcp  ✅ 自动写入</code></pre>
+  </div>
+</div>
+
+<h3>4.4 Prompts 管理</h3>
+
+<p>每个 AI 编程工具都有自己的系统提示词文件格式：</p>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>工具</th><th>Prompt 文件</th><th>存放位置</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Claude Code</td><td><code>CLAUDE.md</code></td><td>项目根目录 / <code>~/.claude/CLAUDE.md</code></td></tr>
+      <tr><td>OpenClaw</td><td><code>AGENTS.md</code></td><td>工作区根目录</td></tr>
+      <tr><td>Gemini CLI</td><td><code>GEMINI.md</code></td><td>项目根目录 / <code>~/.gemini/GEMINI.md</code></td></tr>
+      <tr><td>Codex</td><td><code>AGENTS.md</code></td><td>项目根目录</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>CC Switch 的 Prompts 管理器提供：</p>
+<ul>
+  <li><strong>Markdown 编辑器</strong>：内置语法高亮、实时预览</li>
+  <li><strong>模板库</strong>：预设常用 Prompt 模板（代码审查、TDD、重构等）</li>
+  <li><strong>跨应用同步</strong>：一份 Prompt 内容自动适配不同工具的文件格式</li>
+  <li><strong>版本历史</strong>：自动保存每次修改，支持回滚</li>
+</ul>
+
+<h3>4.5 Skills 管理</h3>
+
+<p>Skills（技能）是可复用的工作流扩展包，通常包含 Prompt 模板、脚本和配置文件。CC Switch 提供了技能的一键安装和管理。</p>
+
+<h4>安装方式</h4>
+<pre><code><span class="comment"># 方式一：从 GitHub 安装</span>
+<span class="comment"># 在 CC Switch → Skills 页面，粘贴 GitHub 仓库 URL</span>
+<span class="comment"># 例如: https://github.com/user/awesome-skill</span>
+
+<span class="comment"># 方式二：从本地 ZIP 安装</span>
+<span class="comment"># 下载 ZIP 文件后，拖拽到 CC Switch 的 Skills 页面</span>
+
+<span class="comment"># 方式三：命令行安装</span>
+<span class="cmd">cc-switch</span> skills install https://github.com/user/skill-name</code></pre>
+
+<p>安装后的 Skills 存放在 <code>~/.cc-switch/skills/</code> 目录下，CC Switch 会自动将其链接到对应工具的技能目录。</p>
+
+<h3>4.6 用量统计</h3>
+
+<p>CC Switch 通过本地代理层记录每一次 API 调用，提供跨供应商的统一用量视图：</p>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>统计维度</th><th>说明</th><th>可视化</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>支出金额</strong></td><td>按供应商、按工具、按时间统计实际花费</td><td>折线图 + 饼图</td></tr>
+      <tr><td><strong>请求次数</strong></td><td>每日/每周/每月的 API 调用次数</td><td>柱状图</td></tr>
+      <tr><td><strong>Token 用量</strong></td><td>输入/输出 Token 分别统计</td><td>堆叠面积图</td></tr>
+      <tr><td><strong>模型分布</strong></td><td>各模型的使用占比</td><td>环形图</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+<div class="callout info">
+  <strong>ℹ️ 用量数据存储在本地</strong>
+  所有用量数据仅存储在本地 SQLite 数据库中（<code>~/.cc-switch/cc-switch.db</code>），不会上传到任何服务器。你可以通过「导出」功能生成 CSV 报告。
+</div>
+
+<h3>4.7 会话管理</h3>
+
+<p>CC Switch 可以浏览、搜索和恢复所有已配置 CLI 工具的会话历史：</p>
+<ul>
+  <li><strong>跨工具浏览</strong>：在一个界面查看 Claude Code、Codex、Gemini CLI 等所有工具的会话</li>
+  <li><strong>全文搜索</strong>：按关键词、日期、工具类型筛选会话</li>
+  <li><strong>会话恢复</strong>：一键恢复之前的会话上下文继续工作</li>
+  <li><strong>标签管理</strong>：为重要会话添加标签，方便归档和查找</li>
+</ul>
+
+<h3>4.8 云同步</h3>
+
+<p>如果你有多台设备，CC Switch 支持通过云存储同步配置：</p>
+
+<div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin:1rem 0;">
+  <span class="tag blue">Dropbox</span>
+  <span class="tag blue">OneDrive</span>
+  <span class="tag blue">iCloud</span>
+  <span class="tag blue">WebDAV</span>
+</div>
+
+<h4>配置云同步</h4>
+<ol class="step-list">
+  <li>打开 CC Switch → 设置 → 同步</li>
+  <li>选择云存储提供商</li>
+  <li>授权登录（或填写 WebDAV 地址）</li>
+  <li>选择同步内容：
+    <ul>
+      <li>✅ 供应商配置（不含 API Key — 安全考虑）</li>
+      <li>✅ MCP 服务器配置</li>
+      <li>✅ Prompts 模板</li>
+      <li>✅ Skills 列表</li>
+      <li>⬜ API Key（默认不同步，可手动开启加密同步）</li>
+    </ul>
+  </li>
+  <li>点击「立即同步」完成首次上传</li>
+</ol>
+
+<div class="callout warning">
+  <strong>⚠️ 安全提示</strong>
+  API Key 默认不参与云同步。如果开启加密同步，CC Switch 会使用 AES-256 加密后再上传。建议设置一个强密码用于加密/解密。
+</div>
+
+
+<!-- ==================== 第五章 ==================== -->
+<h2 id="sec5"><span class="sec-num">5</span> 与 Claude Code 配合使用</h2>
+
+<p><span class="tool-badge claude">🟠 Claude Code</span> 是 Anthropic 官方的编程 CLI 工具，也是 CC Switch 最深度集成的工具之一。</p>
+
+<h3>5.1 管理多个 API Key</h3>
+
+<p>很多开发者同时使用 Anthropic 官方 API 和第三方中转服务。CC Switch 让这一切变得简单：</p>
+
+<ol class="step-list">
+  <li>
+    <strong>添加 Anthropic 官方供应商</strong><br>
+    CC Switch → 供应商 → 添加 → 选择 <code>Anthropic Official</code> → 填入官方 API Key
+  </li>
+  <li>
+    <strong>添加中转服务</strong><br>
+    供应商 → 添加 → 选择对应的中转预设（如 <code>OpenRouter</code>）→ 填入中转 Key
+  </li>
+  <li>
+    <strong>一键切换</strong><br>
+    点击系统托盘图标 → 选择要使用的供应商 → Claude Code 下一次请求自动使用新 Key
+  </li>
+</ol>
+
+<div class="callout tip">
+  <strong>✅ 热切换优势</strong>
+  Claude Code 支持热切换——你不需要关闭终端或重启 Claude Code 进程。切换供应商后，下一次 API 调用会自动使用新的供应商。这对于在官方 API 限额用完时快速切换到中转服务非常有用。
+</div>
+
+<h3>5.2 通过 Prompts 管理 CLAUDE.md</h3>
+
+<p>CC Switch 的 Prompts 编辑器可以直接编辑和同步 <code>CLAUDE.md</code> 文件：</p>
+
+<pre><code><span class="comment"># 在 CC Switch Prompts 编辑器中编写</span>
+
+<span class="keyword">## 项目规范</span>
+- 使用 TypeScript 严格模式
+- 所有函数必须有 JSDoc 注释
+- 测试覆盖率不低于 80%
+
+<span class="keyword">## 代码风格</span>
+- 优先使用函数式编程范式
+- 变量命名使用 camelCase
+- 常量使用 UPPER_SNAKE_CASE
+
+<span class="keyword">## 禁止事项</span>
+- 不要使用 any 类型
+- 不要使用 console.log（用 logger 替代）</code></pre>
+
+<p>编辑完成后，点击「同步到 Claude Code」，CC Switch 会自动将内容写入 <code>~/.claude/CLAUDE.md</code>。</p>
+
+<h3>5.3 MCP 服务器统一管理</h3>
+
+<p>在 CC Switch 中添加的 MCP 服务器会自动同步到 Claude Code 的配置文件：</p>
+
+<pre><code><span class="comment"># CC Switch 自动写入的 Claude Code MCP 配置</span>
+<span class="comment"># 文件: ~/.claude/mcp.json</span>
+{
+  <span class="string">"mcpServers"</span>: {
+    <span class="string">"filesystem"</span>: {
+      <span class="string">"command"</span>: <span class="string">"npx"</span>,
+      <span class="string">"args"</span>: [<span class="string">"-y"</span>, <span class="string">"@modelcontextprotocol/server-filesystem"</span>, <span class="string">"/path/to/dir"</span>]
+    },
+    <span class="string">"sqlite"</span>: {
+      <span class="string">"command"</span>: <span class="string">"npx"</span>,
+      <span class="string">"args"</span>: [<span class="string">"-y"</span>, <span class="string">"@modelcontextprotocol/server-sqlite"</span>, <span class="string">"/path/to/db"</span>]
+    }
+  }
+}</code></pre>
+
+<h3>5.4 常用工作流</h3>
+
+<div class="highlight-box">
+  <h4>🔄 日常开发工作流</h4>
+  <ol>
+    <li>打开 CC Switch → 确认当前活跃供应商</li>
+    <li>启动 Claude Code → 开始编程</li>
+    <li>如果官方 API 限额用完 → 系统托盘切换到中转服务 → 继续编程</li>
+    <li>工作结束后 → CC Switch 查看本次会话的 Token 消耗</li>
+  </ol>
+</div>
+
+
+<!-- ==================== 第六章 ==================== -->
+<h2 id="sec6"><span class="sec-num">6</span> 与 Codex 配合使用</h2>
+
+<p><span class="tool-badge codex">🟢 Codex</span> 是 OpenAI 的编程 CLI 工具。CC Switch 帮助你管理多个 OpenAI 账号和供应商。</p>
+
+<h3>6.1 管理多个 OpenAI 账号</h3>
+
+<p>如果你同时拥有个人 Plus 账号和团队 Team 账号，CC Switch 可以轻松管理：</p>
+
+<ol class="step-list">
+  <li>
+    <strong>添加 OpenAI 供应商</strong><br>
+    CC Switch → 供应商 → 添加 → 选择 <code>OpenAI Official</code><br>
+    可以添加多个 OpenAI 供应商实例，分别对应不同账号
+  </li>
+  <li>
+    <strong>为每个账号命名</strong><br>
+    例如：<code>OpenAI - Personal (Plus)</code>、<code>OpenAI - Team</code>
+  </li>
+  <li>
+    <strong>切换供应商</strong><br>
+    系统托盘 → 选择目标 OpenAI 供应商
+  </li>
+</ol>
+
+<div class="callout warning">
+  <strong>⚠️ 重要：Codex 需要冷切换</strong>
+  与 Claude Code 不同，Codex 在启动时会读取 API 配置并缓存。切换供应商后，<strong>必须重启终端并重新启动 Codex</strong> 才能生效。建议：
+  <ol style="margin:0.5rem 0 0; padding-left:1.5rem;">
+    <li>在系统托盘切换供应商</li>
+    <li>关闭当前 Codex 会话（<code>Ctrl+C</code>）</li>
+    <li>重新打开终端</li>
+    <li>重新启动 Codex</li>
+  </ol>
+</div>
+
+<h3>6.2 Codex 配置同步</h3>
+
+<p>CC Switch 会自动将供应商配置写入 Codex 的配置文件：</p>
+
+<pre><code><span class="comment"># Codex 配置文件（CC Switch 自动管理）</span>
+<span class="comment"># 文件: ~/.codex/config.toml</span>
+
+[model]
+provider = <span class="string">"openai"</span>
+model = <span class="string">"o4-mini"</span>
+
+[api]
+<span class="comment"># CC Switch 代理模式下的配置</span>
+base_url = <span class="string">"http://localhost:cc-switch-port/v1"</span>
+<span class="comment"># API Key 由 CC Switch 代理层注入，无需在此填写</span></code></pre>
+
+<h3>6.3 Codex + CC Switch 工作流</h3>
+
+<div class="highlight-box">
+  <h4>🔄 多账号切换工作流</h4>
+  <ol>
+    <li>工作时间内 → 使用 Team 账号（更高限额）</li>
+    <li>个人项目 → 切换到 Personal Plus 账号</li>
+    <li>CC Switch 分别追踪每个账号的用量</li>
+    <li>月底通过用量统计对比各账号花费</li>
+  </ol>
+</div>
+
+
+<!-- ==================== 第七章 ==================== -->
+<h2 id="sec7"><span class="sec-num">7</span> 与 OpenCode 配合使用</h2>
+
+<p><span class="tool-badge opencode">🟣 OpenCode</span> 是一款开源的编程 CLI 工具，支持多种 AI 模型后端。CC Switch 为其提供供应商、MCP 和 Skills 的统一管理。</p>
+
+<h3>7.1 配置供应商</h3>
+
+<ol class="step-list">
+  <li>
+    <strong>在 CC Switch 中添加供应商</strong><br>
+    添加你需要的 AI 服务供应商（可以是 Anthropic、OpenAI、Google 或其他兼容端点）
+  </li>
+  <li>
+    <strong>同步到 OpenCode</strong><br>
+    CC Switch 会自动将 API 配置写入 OpenCode 的配置文件：
+    <pre><code><span class="comment"># OpenCode 配置（CC Switch 自动管理）</span>
+<span class="comment"># 文件: ~/.config/opencode/config.json</span>
+{
+  <span class="string">"provider"</span>: {
+    <span class="string">"name"</span>: <span class="string">"anthropic"</span>,
+    <span class="string">"apiKey"</span>: <span class="string">"managed-by-cc-switch"</span>,
+    <span class="string">"baseUrl"</span>: <span class="string">"http://localhost:cc-switch-port"</span>
+  }
+}</code></pre>
+  </li>
+  <li>
+    <strong>支持热切换</strong><br>
+    OpenCode 支持供应商热切换，无需重启
+  </li>
+</ol>
+
+<h3>7.2 MCP 配置同步</h3>
+
+<p>在 CC Switch 的 MCP 面板中添加服务器时，勾选「OpenCode」，配置会自动同步到 OpenCode 的 MCP 配置文件。OpenCode 下次启动时会自动加载新的 MCP 服务器。</p>
+
+<h3>7.3 通过 Skills 扩展 OpenCode</h3>
+
+<p>CC Switch 的 Skills 管理为 OpenCode 提供了强大的扩展能力：</p>
+
+<pre><code><span class="comment"># 为 OpenCode 安装技能</span>
+<span class="comment"># 在 CC Switch → Skills 页面操作</span>
+
+<span class="comment"># 示例：安装 "Code Review" 技能</span>
+<span class="comment"># 1. 粘贴 GitHub URL: https://github.com/user/code-review-skill</span>
+<span class="comment"># 2. 选择目标工具: OpenCode</span>
+<span class="comment"># 3. 点击安装</span>
+
+<span class="comment"># 安装后，OpenCode 会自动获得代码审查相关的能力</span></code></pre>
+
+
+<!-- ==================== 第八章 ==================== -->
+<h2 id="sec8"><span class="sec-num">8</span> 与 Hermes Agent 配合使用</h2>
+
+<p><span class="tool-badge hermes">🩷 Hermes Agent</span> 是一个自主式 AI 代理框架，专注于自动化任务执行。CC Switch 为其提供基础的供应商和扩展管理。</p>
+
+<h3>8.1 供应商配置</h3>
+
+<ol class="step-list">
+  <li>
+    <strong>在 CC Switch 中管理 Hermes 使用的 AI 后端</strong><br>
+    Hermes Agent 需要 LLM 后端来驱动其自主决策。在 CC Switch 中添加对应的供应商：
+    <pre><code><span class="comment"># Hermes Agent 支持的模型后端</span>
+<span class="comment"># - Claude (Anthropic)</span>
+<span class="comment"># - GPT-4 (OpenAI)</span>
+<span class="comment"># - Gemini (Google)</span>
+<span class="comment"># 通过 CC Switch 统一切换</span></code></pre>
+  </li>
+  <li>
+    <strong>设置故障转移</strong><br>
+    由于 Hermes Agent 通常执行长时间运行的自主任务，建议配置至少 2 个供应商形成故障转移链，避免中途因 API 限额中断任务。
+  </li>
+</ol>
+
+<h3>8.2 MCP 和 Skills 统一安装</h3>
+
+<p>Hermes Agent 通过 MCP 获取外部工具能力，通过 Skills 获取预定义的工作流。在 CC Switch 中：</p>
+
+<ul>
+  <li><strong>MCP</strong>：在 MCP 面板添加服务器 → 勾选「Hermes Agent」→ 自动同步配置</li>
+  <li><strong>Skills</strong>：安装技能时选择目标为 Hermes Agent → 自动部署到 Hermes 的技能目录</li>
+</ul>
+
+<div class="callout info">
+  <strong>ℹ️ Hermes Agent 长时间任务建议</strong>
+  对于运行时间较长的 Hermes 任务（如自动化测试、批量代码修改），建议：
+  <ul style="margin:0.5rem 0 0; padding-left:1.5rem;">
+    <li>开启 CC Switch 的自动故障转移功能</li>
+    <li>设置熔断器阈值为 5 次连续失败</li>
+    <li>配置至少一个备用供应商</li>
+  </ul>
+</div>
+
+
+<!-- ==================== 第九章 ==================== -->
+<h2 id="sec9"><span class="sec-num">9</span> 与 OpenClaw 配合使用</h2>
+
+<p><span class="tool-badge openclaw">💜 OpenClaw</span> 是一个开源 AI Agent 平台，支持多渠道（飞书、微信、Web）接入。CC Switch 与 OpenClaw 的集成最为深入。</p>
+
+<h3>9.1 供应商和 API Key 管理</h3>
+
+<p>OpenClaw 作为一个 Agent 平台，可能需要同时使用多个 AI 模型（主模型、图像识别模型、TTS 模型等）。CC Switch 帮助你统一管理：</p>
+
+<ol class="step-list">
+  <li>
+    <strong>配置主模型供应商</strong><br>
+    在 CC Switch 中添加 OpenClaw 的主力 LLM 供应商（如 <code>qwen/qwen3-max</code>、<code>claude-sonnet-4</code> 等）
+  </li>
+  <li>
+    <strong>配置辅助模型</strong><br>
+    为 OpenClaw 的不同功能模块配置不同的供应商：
+    <ul>
+      <li>图像识别：<code>MiniMax-M2.7</code> 或 <code>GPT-4o</code></li>
+      <li>TTS 语音：<code>Azure TTS</code></li>
+      <li>图像生成：<code>DALL-E 3</code> 或 <code>Midjourney</code></li>
+    </ul>
+  </li>
+  <li>
+    <strong>一键切换所有模型</strong><br>
+    通过 CC Switch 的系统托盘，一键切换 OpenClaw 使用的全套供应商配置
+  </li>
+</ol>
+
+<h3>9.2 MCP 服务器配置</h3>
+
+<p>OpenClaw 通过 MCP 获得丰富的外部工具能力。CC Switch 让 MCP 配置变得可视化：</p>
+
+<pre><code><span class="comment"># 常用的 OpenClaw MCP 服务器（通过 CC Switch 管理）</span>
+
+<span class="keyword">filesystem</span>  — 文件系统操作（读写、搜索）
+<span class="keyword">sqlite</span>      — SQLite 数据库操作
+<span class="keyword">github</span>      — GitHub API（Issues、PRs、Actions）
+<span class="keyword">feishu</span>      — 飞书 API（文档、日历、消息）
+<span class="keyword">browser</span>     — 网页浏览与数据抓取
+<span class="keyword">memory</span>      — 长期记忆存储</code></pre>
+
+<p>在 CC Switch 的 MCP 面板中添加以上服务器，勾选同步到 OpenClaw，即可一键部署。</p>
+
+<h3>9.3 工作区编辑器</h3>
+
+<p>CC Switch 为 OpenClaw 提供了专门的工作区编辑器，可以直接编辑 OpenClaw 的核心配置文件：</p>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>文件</th><th>用途</th><th>编辑方式</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>AGENTS.md</code></td><td>Agent 行为规范、安全红线、团队定义</td><td>CC Switch → Prompts → OpenClaw</td></tr>
+      <tr><td><code>SOUL.md</code></td><td>Agent 人格、语气、回复风格</td><td>CC Switch → Prompts → OpenClaw</td></tr>
+      <tr><td><code>TOOLS.md</code></td><td>工具配置、API 密钥路径</td><td>CC Switch → 工作区编辑器</td></tr>
+      <tr><td><code>USER.md</code></td><td>用户偏好、个人信息</td><td>CC Switch → 工作区编辑器</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>9.4 Skills 安装与管理</h3>
+
+<p>OpenClaw 拥有丰富的技能生态系统。通过 CC Switch 安装 Skills 非常简单：</p>
+
+<pre><code><span class="comment"># 示例：为 OpenClaw 安装技能</span>
+
+<span class="comment"># 1. 打开 CC Switch → Skills</span>
+<span class="comment"># 2. 搜索或粘贴 GitHub URL</span>
+<span class="comment"># 3. 选择目标: OpenClaw</span>
+<span class="comment"># 4. 点击安装</span>
+
+<span class="comment"># 常用 OpenClaw 技能：</span>
+<span class="comment"># - daily-report: 日报自动生成</span>
+<span class="comment"># - stock-monitor: 股票行情监控</span>
+<span class="comment"># - feishu-doc: 飞书文档管理</span>
+<span class="comment"># - competitor-analysis: 竞品分析</span>
+<span class="comment"># - bilibili-monitor: B站热门监控</span></code></pre>
+
+<div class="highlight-box">
+  <h4>🔗 OpenClaw + CC Switch 完整工作流</h4>
+  <ol>
+    <li>CC Switch 配置所有供应商（主模型 + 图像 + TTS + 图像生成）</li>
+    <li>CC Switch MCP 面板添加所有需要的 MCP 服务器</li>
+    <li>CC Switch Skills 页面安装所需技能</li>
+    <li>CC Switch Prompts 编辑器维护 AGENTS.md 和 SOUL.md</li>
+    <li>启动 OpenClaw → 所有配置自动就绪</li>
+    <li>通过 CC Switch 系统托盘随时切换供应商</li>
+    <li>通过 CC Switch 用量统计追踪 OpenClaw 的消耗</li>
+  </ol>
+</div>
+
+
+<!-- ==================== 第十章 ==================== -->
+<h2 id="sec10"><span class="sec-num">10</span> 最佳实践与常见问题</h2>
+
+<h3>10.1 最佳实践</h3>
+
+<div class="feature-grid">
+  <div class="feature-card">
+    <div class="icon">🔐</div>
+    <h4>定期备份</h4>
+    <p>CC Switch 会自动备份数据库到 <code>~/.cc-switch/backups/</code>。建议将备份目录加入云同步，或定期手动拷贝到安全位置。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">🏷️</div>
+    <h4>供应商命名规范</h4>
+    <p>使用清晰的命名规范，如 <code>[工具] 供应商名 - 用途</code>：<br>
+    <code>Claude - 官方 - 主力</code><br>
+    <code>Claude - 中转A - 备用</code><br>
+    <code>OpenAI - Team - 工作</code></p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">⚡</div>
+    <h4>故障转移必备</h4>
+    <p>至少配置 2 个供应商形成故障转移链。推荐：1 个官方 + 1~2 个中转服务。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">📊</div>
+    <h4>设置预算警报</h4>
+    <p>在 CC Switch 用量统计中设置月度预算上限，达到 80% 时收到提醒，避免超支。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">🔄</div>
+    <h4>MCP 按需启用</h4>
+    <p>不要同时启用所有 MCP 服务器。只启用当前项目需要的，减少 Token 消耗（每个 MCP 工具的 schema 都会占用上下文窗口）。</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">📝</div>
+    <h4>Prompts 分层管理</h4>
+    <p>将 Prompts 分为「全局通用」和「项目专属」两层。全局 Prompt 通过 CC Switch 同步到所有项目，项目级 Prompt 在各项目目录中维护。</p>
+  </div>
+</div>
+
+<h3>10.2 常见问题 FAQ</h3>
+
+<h4>Q1：切换供应商后，Claude Code 没有生效？</h4>
+<div class="callout info">
+  <strong>排查步骤</strong>
+  <ol style="margin:0.5rem 0 0; padding-left:1.5rem;">
+    <li>确认 Claude Code 的配置已被 CC Switch 接管（检查 <code>~/.claude/settings.json</code> 中是否包含 CC Switch 的代理地址）</li>
+    <li>确认 CC Switch 本地代理正在运行（设置 → 代理 → 查看状态）</li>
+    <li>尝试在 Claude Code 中发送一条测试消息，观察 CC Switch 代理日志</li>
+  </ol>
+</div>
+
+<h4>Q2：Codex 切换供应商后报错？</h4>
+<div class="callout warning">
+  <strong>解决方法</strong>
+  <p style="margin:0.5rem 0 0;">Codex 需要冷切换。请关闭终端 → 重新打开 → 重新启动 Codex。如果问题持续，检查 <code>~/.codex/config.toml</code> 是否正确指向 CC Switch 代理。</p>
+</div>
+
+<h4>Q3：MCP 服务器同步后，工具没有识别到？</h4>
+<div class="callout info">
+  <strong>排查步骤</strong>
+  <ol style="margin:0.5rem 0 0; padding-left:1.5rem;">
+    <li>确认目标工具已重启（MCP 配置通常在启动时加载）</li>
+    <li>在 CC Switch → MCP 页面检查同步状态，确认显示「✅ 已同步」</li>
+    <li>手动检查目标工具的 MCP 配置文件，确认内容已写入</li>
+    <li>确认 MCP 服务器的命令路径正确（使用绝对路径而非相对路径）</li>
+  </ol>
+</div>
+
+<h4>Q4：云同步后，另一台设备的配置没有更新？</h4>
+<div class="callout info">
+  <strong>解决方法</strong>
+  <ol style="margin:0.5rem 0 0; padding-left:1.5rem;">
+    <li>在两台设备上都点击「立即同步」</li>
+    <li>检查云存储空间是否充足</li>
+    <li>确认两台设备的 CC Switch 版本一致（旧版本可能不支持新配置格式）</li>
+  </ol>
+</div>
+
+<h4>Q5：如何完全卸载 CC Switch？</h4>
+<pre><code><span class="comment"># macOS</span>
+<span class="cmd">brew uninstall</span> --cask cc-switch
+<span class="cmd">rm</span> -rf ~/.cc-switch    <span class="comment"># 删除所有数据（谨慎操作）</span>
+
+<span class="comment"># Linux</span>
+<span class="cmd">sudo apt remove</span> cc-switch     <span class="comment"># Debian/Ubuntu</span>
+<span class="cmd">sudo rpm -e</span> cc-switch         <span class="comment"># Fedora/RHEL</span>
+<span class="cmd">rm</span> -rf ~/.cc-switch
+
+<span class="comment"># Windows</span>
+<span class="comment"># 通过「设置 → 应用 → 卸载」或运行卸载程序</span>
+<span class="comment"># 手动删除 %USERPROFILE%\.cc-switch 目录</span></code></pre>
+
+<div class="callout danger">
+  <strong>🚨 卸载前请备份</strong>
+  卸载 CC Switch 不会自动删除 <code>~/.cc-switch/</code> 目录，但建议手动备份该目录后再卸载，以防数据丢失。备份内容包括所有供应商配置、MCP 设置、Prompts 和用量数据。
+</div>
+
+<h3>10.3 性能优化建议</h3>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>优化项</th><th>建议</th><th>效果</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>代理端口</td><td>避免与其他本地服务端口冲突</td><td>减少连接错误</td></tr>
+      <tr><td>数据库维护</td><td>每月执行一次「设置 → 数据库 → 压缩」</td><td>减少磁盘占用，提升查询速度</td></tr>
+      <tr><td>用量数据清理</td><td>设置自动清理 90 天前的详细日志</td><td>防止数据库无限增长</td></tr>
+      <tr><td>Skills 管理</td><td>定期清理不再使用的 Skills</td><td>减少启动加载时间</td></tr>
+      <tr><td>MCP 服务器</td><td>只启用当前需要的 MCP 服务器</td><td>减少 Token 消耗和内存占用</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 结尾 -->
+<div class="highlight-box" style="margin-top:3rem;">
+  <h4>📌 总结</h4>
+  <p>CC Switch 是一个<strong>AI 编程 CLI 工具的统一管理平台</strong>。如果你同时使用多个 AI 编程工具，需要频繁切换不同的 API 供应商，或者希望在一个地方管理所有的 MCP、Prompts 和 Skills，那么 CC Switch 是你工作流中不可或缺的一环。</p>
+  <p style="margin-bottom:0;"><strong>核心价值：一个应用，统管所有 AI 编程工具。系统托盘一键切换，告别手动编辑配置文件。</strong></p>
+</div>
+
+<p style="text-align:center; color:var(--muted); margin-top:3rem; font-size:0.9rem;">
+  <span class="tag gold">CC Switch</span>
+  <span class="tag blue">开源</span>
+  <span class="tag green">跨平台</span>
+  <span class="tag purple">AI 编程</span>
+  <span class="tag gold">工作流管理</span>
+</p>
+
+</div><!-- /.article-body --
+
+    <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid var(--border);">
+        <h3>📚 延伸阅读</h3>
+        <ul>
+            <li><a href="https://ccswitch.io/zh/" target="_blank">CC Switch 官方网站</a></li>
+            <li><a href="https://github.com/farion1231/cc-switch" target="_blank">CC Switch GitHub 仓库</a></li>
+            <li><a href="https://ccswitch.io/zh/docs" target="_blank">CC Switch 官方文档</a></li>
+            <li><a href="https://docs.openclaw.ai" target="_blank">OpenClaw 官方文档</a></li>
+        </ul>
+    </div>
+
+    <a href="skills.html" class="back-link">← 返回技能与知识点汇总</a>
+
+</article>
+</main>
+
+<footer>
+    <div class="container">
+        本文由 <a href="https://www.jarviswangcai.top/">旺财Jarvis</a> 团队整理编写，内容基于 CC Switch 官方文档及社区实践。参考来源：<a href="https://ccswitch.io">ccswitch.io</a> · <a href="https://github.com/farion1231/cc-switch">GitHub</a>
+    </div>
+</footer>
+
+</body>
+</html>
