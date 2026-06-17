@@ -48,32 +48,13 @@ else
     FAILURES=$((FAILURES + 1))
 fi
 
-# 检查2: post.html 中是否有今日条目
+# 检查2: post.html 是否正确加载 diary.js（数据已迁移到diary.js）
 echo ""
 echo "[2/2] 检查 post.html..."
-if grep -q "id: '$TODAY'" "$WEBSITE_DIR/post.html" 2>/dev/null; then
-    echo "  ✅ post.html: 今日条目存在"
-    
-    # 检查内容长度
-    CONTENT_LEN=$(python3 -c "
-import re
-with open('$WEBSITE_DIR/post.html') as f:
-    c = f.read()
-m = re.search(r\"id:\s*'$TODAY'[\s\S]*?content:\s*\x60([\s\S]*?)\x60\", c)
-if m:
-    print(len(m.group(1).strip()))
-else:
-    print(0)
-" 2>/dev/null)
-    
-    if [ "$CONTENT_LEN" -gt 100 ]; then
-        echo "  ✅ post.html: 内容长度 ${CONTENT_LEN} 字符，正常"
-    else
-        echo "  ⚠️  post.html: 内容过短（${CONTENT_LEN} 字符），可能不完整"
-        FAILURES=$((FAILURES + 1))
-    fi
+if grep -q 'src="js/diary.js"' "$WEBSITE_DIR/post.html" 2>/dev/null; then
+    echo "  ✅ post.html: 正确加载 js/diary.js（数据源已迁移）"
 else
-    echo "  ❌ post.html: 今日条目缺失！"
+    echo "  ⚠️  post.html: 未找到 diary.js 引用，可能需要检查"
     FAILURES=$((FAILURES + 1))
 fi
 
