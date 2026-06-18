@@ -35,7 +35,7 @@ RECIPIENTS = [
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "86940135@qq.com"
-SENDER_PASSWORD = "icxhfzuyzbhbbjie"
+SENDER_PASSWORD = "vaakmbilbrjkbhgg"
 
 def get_beijing_date():
     """获取北京时间日期"""

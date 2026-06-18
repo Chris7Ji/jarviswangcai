@@ -39,7 +39,7 @@ def send_ai_news_email_15():
     ]
     
     # QQ邮箱授权码
-    password = 'icxhfzuyzbhbbjie'
+    password = 'vaakmbilbrjkbhgg'
     
     # 获取动态日期
     today = datetime.now()

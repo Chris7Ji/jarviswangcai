@@ -19,7 +19,7 @@ from pathlib import Path
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "86940135@qq.com"
-SENDER_PASSWORD = "icxhfzuyzbhbbjie"
+SENDER_PASSWORD = "vaakmbilbrjkbhgg"
 
 RECIPIENTS = [
     "jiyingguo@huawei.com",

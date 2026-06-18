@@ -28,7 +28,7 @@ from typing import List, Optional
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "86940135@qq.com"
-SENDER_PASSWORD = "icxhfzuyzbhbbjie"  # QQ邮箱授权码
+SENDER_PASSWORD = "vaakmbilbrjkbhgg"  # QQ邮箱授权码
 
 # 收件人列表
 RECIPIENTS = [

@@ -4,7 +4,7 @@ import ssl
 SMTP_SERVER = 'smtp.qq.com'
 SMTP_PORT = 587
 EMAIL = '86940135@qq.com'
-PASSWORD = 'icxhfzuyzbhbbjie'
+PASSWORD = 'vaakmbilbrjkbhgg'
 
 try:
     print("尝试连接到SMTP服务器...")

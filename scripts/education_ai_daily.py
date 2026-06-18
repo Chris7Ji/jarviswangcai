@@ -151,7 +151,7 @@ def send_email(summary):
     """发送邮件"""
     try:
         sender_email = "86940135@qq.com"
-        sender_password = "icxhfzuyzbhbbjie"
+        sender_password = "vaakmbilbrjkbhgg"
         recipients = ["86940135@qq.com", "jiyingguo@huawei.com"]
         
         msg = MIMEMultipart()

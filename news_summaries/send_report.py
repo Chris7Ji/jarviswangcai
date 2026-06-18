@@ -4,7 +4,7 @@ import os, smtplib, sys
 from email.mime.text import MIMEText
 from email.header import Header
 
-PWD = "icxhfzuyzbhbbjie"
+PWD = "vaakmbilbrjkbhgg"
 
 with open(os.path.expanduser("~/.openclaw/workspace/news_summaries/openclaw_news_high_quality_2026-05-21.md")) as f:
     content = f.read()

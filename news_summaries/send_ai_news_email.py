@@ -20,7 +20,7 @@ def send_ai_news_email():
     receivers = ['jiyingguo@huawei.com', 'xushengsheng@huawei.com', '86940135@qq.com']
     
     # QQ邮箱授权码（根据TOOLS.md配置）
-    password = 'icxhfzuyzbhbbjie'  # 2026-03-18更新，已全局记录
+    password = 'vaakmbilbrjkbhgg'  # 2026-03-18更新，已全局记录
     
     # 邮件主题
     subject = '[2026-03-19] 高校分队- AI 新闻每日简报'

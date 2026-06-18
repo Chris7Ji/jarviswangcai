@@ -12,7 +12,7 @@ import json
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "86940135@qq.com"
-SENDER_AUTH_CODE = "icxhfzuyzbhbbjie"
+SENDER_AUTH_CODE = "vaakmbilbrjkbhgg"
 
 # Recipients (15 people, primary)
 RECIPIENTS = [

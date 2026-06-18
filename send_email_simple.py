@@ -12,7 +12,7 @@ import time
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 EMAIL = "86940135@qq.com"
-PASSWORD = "icxhfzuyzbhbbjie"
+PASSWORD = "vaakmbilbrjkbhgg"
 
 # 只测试发送给2个邮箱
 TO_EMAILS = [

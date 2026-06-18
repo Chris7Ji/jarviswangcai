@@ -15,7 +15,7 @@ SERPAPI_KEY = "b28c2426b9015470508315f27a6782b552a5a5b39550fbc9b62ff381e67c360f"
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 EMAIL = "86940135@qq.com"
-PASSWORD = "icxhfzuyzbhbbjie"
+PASSWORD = "vaakmbilbrjkbhgg"
 
 TO_EMAILS = [
     "liuwei44259@huawei.com",

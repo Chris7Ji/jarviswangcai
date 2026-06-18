@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 smtp_server = "smtp.qq.com"
 smtp_port = 587
 sender_email = "86940135@qq.com"
-sender_password = "icxhfzuyzbhbbjie"
+sender_password = "vaakmbilbrjkbhgg"
 
 # 收件人列表
 recipients = [

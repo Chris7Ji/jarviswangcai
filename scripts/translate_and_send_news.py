@@ -119,7 +119,7 @@ def send_email(html_body, subject):
     SMTP_SERVER = "smtp.qq.com"
     SMTP_PORT = 587
     EMAIL = "86940135@qq.com"
-    PASSWORD = "icxhfzuyzbhbbjie"
+    PASSWORD = "vaakmbilbrjkbhgg"
     try:
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT, timeout=20) as server:
             server.starttls(context=context)

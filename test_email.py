@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 SMTP_SERVER = 'smtp.qq.com'
 SMTP_PORT = 587
 EMAIL = '86940135@qq.com'
-PASSWORD = 'icxhfzuyzbhbbjie'
+PASSWORD = 'vaakmbilbrjkbhgg'
 
 # 测试发送到第一个邮箱
 TO_EMAIL = 'jiyingguo@huawei.com'

@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 EMAIL = "86940135@qq.com"
-PASSWORD = "icxhfzuyzbhbbjie"
+PASSWORD = "vaakmbilbrjkbhgg"
 
 TO_EMAILS = [
     "liuwei44259@huawei.com",

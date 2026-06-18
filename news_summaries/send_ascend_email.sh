@@ -10,7 +10,7 @@ EMAIL_SUBJECT="🚀 华为昇腾生态日报 - $(date '+%Y年%m月%d日')"
 EMAIL_CONTENT_FILE="/Users/jiyingguo/.openclaw/workspace/news_summaries/ascend_news_$(date '+%Y-%m-%d').md"
 SMTP_SERVER="smtp.qq.com"
 SMTP_PORT="587"
-EMAIL_PASSWORD="icxhfzuyzbhbbjie"  # 全局配置的QQ邮箱授权码
+EMAIL_PASSWORD="vaakmbilbrjkbhgg"  # 全局配置的QQ邮箱授权码
 
 # 检查报告文件是否存在
 if [ ! -f "$EMAIL_CONTENT_FILE" ]; then

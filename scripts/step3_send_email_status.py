@@ -11,7 +11,7 @@ status = {
     "article_count": 6,
     "html_size": 9086,
     "email_attempt": "failed",
-    "email_error": "QQ Mail SMTP 535: 账号异常/密码错误/服务未开启。两个授权码(oepkunkbmboucadg, icxhfzuyzbhbbjie)均失效，需要重新生成SMTP授权码",
+    "email_error": "QQ Mail SMTP 535: 账号异常/密码错误/服务未开启。两个授权码(oepkunkbmboucadg, vaakmbilbrjkbhgg)均失效，需要重新生成SMTP授权码",
     "errors": ["SMTP authentication failed - all known passwords invalid"],
     "recommendation": "请登录QQ邮箱 -> 设置 -> 账户 -> 生成新授权码，更新TOOLS.md"
 }

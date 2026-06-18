@@ -29,7 +29,7 @@ from typing import List, Optional, Dict, Tuple
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "86940135@qq.com"
-SENDER_PASSWORD = "icxhfzuyzbhbbjie"  # QQ邮箱授权码
+SENDER_PASSWORD = "vaakmbilbrjkbhgg"  # QQ邮箱授权码
 
 # 华为邮箱SMTP配置（如需要）
 HUAWEI_SMTP_SERVER = "smtp.huawei.com"

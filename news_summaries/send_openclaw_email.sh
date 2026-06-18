@@ -5,7 +5,7 @@
 set -e
 
 # 配置
-EMAIL_PASSWORD="icxhfzuyzbhbbjie"
+EMAIL_PASSWORD="vaakmbilbrjkbhgg"
 SENDER_EMAIL="86940135@qq.com"
 RECIPIENTS=("86940135@qq.com" "jiyingguo@huawei.com")
 NEWS_DIR="/Users/jiyingguo/.openclaw/workspace/news_summaries"

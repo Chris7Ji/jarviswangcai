@@ -61,7 +61,7 @@ from datetime import datetime
 # 邮件配置
 sender_email = "86940135@qq.com"
 receiver_emails = ["86940135@qq.com", "jiyingguo@huawei.com"]
-password = "icxhfzuyzbhbbjie"  # QQ邮箱授权码
+password = "vaakmbilbrjkbhgg"  # QQ邮箱授权码
 
 # 邮件内容
 subject = "🤖 AI新闻日报 - 2026年3月18日"

@@ -10,7 +10,7 @@ import socket
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 EMAIL = "86940135@qq.com"
-PASSWORD = "icxhfzuyzbhbbjie"
+PASSWORD = "vaakmbilbrjkbhgg"
 
 def test_smtp_connection():
     print("=== 详细SMTP连接测试 ===")

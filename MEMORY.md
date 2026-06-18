@@ -45,7 +45,7 @@
 - 正确SSML格式：直接放文本，不加prosody标签
 
 ### 邮件授权码（全局）
-- QQ邮箱: icxhfzuyzbhbbjie
+- QQ邮箱: vaakmbilbrjkbhgg
 
 ### Tavily API（全局）
 - API Key: tvly-dev…7MV5

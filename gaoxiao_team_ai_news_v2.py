@@ -36,7 +36,7 @@ RECIPIENTS = [
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "86940135@qq.com"
-SENDER_PASSWORD = "icxhfzuyzbhbbjie"
+SENDER_PASSWORD = "vaakmbilbrjkbhgg"
 
 # Tavily API配置
 TAVILY_API_KEY = "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"

@@ -59,8 +59,8 @@ function initNavigation() {
 // ============================================
 function initStats() {
     const stats = {
-        daysOnline: { value: 90, suffix: '' },
-        postsCount: { value: 80, suffix: '' },
+        daysOnline: { value: 92, suffix: '' },
+        postsCount: { value: 82, suffix: '' },
         skillsCount: { value: 73, suffix: '' },
         agentsCount: { value: 10, suffix: '' }
     };

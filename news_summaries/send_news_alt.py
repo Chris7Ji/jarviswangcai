@@ -23,7 +23,7 @@ try:
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login("86940135@qq.com", "icxhfzuyzbhbbjie")
+    server.login("86940135@qq.com", "vaakmbilbrjkbhgg")
     server.sendmail("86940135@qq.com", ["86940135@qq.com", "jiyingguo@huawei.com"], msg.as_string())
     server.quit()
     print("✅ Email sent via SMTP:587")
@@ -31,7 +31,7 @@ except Exception as e:
     print(f"❌ Port 587 failed: {e}")
     try:
         server = smtplib.SMTP_SSL("smtp.qq.com", 465, timeout=30)
-        server.login("86940135@qq.com", "icxhfzuyzbhbbjie")
+        server.login("86940135@qq.com", "vaakmbilbrjkbhgg")
         server.sendmail("86940135@qq.com", ["86940135@qq.com", "jiyingguo@huawei.com"], msg.as_string())
         server.quit()
         print("✅ Email sent via SMTP_SSL:465")
