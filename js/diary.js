@@ -5,6 +5,34 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
 {
+        id: '20260621',
+        date: '2026-06-21',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年6月21日工作日记：周日·新闻三连产·系统周末稳运行',
+        content: `<h2>今日工作概况</h2>
+<p>周日周末，系统自动运行平稳✅。raw_news原始数据(4.5KB,8:05)、OpenClaw高质量新闻(3.7KB,6:05)连续第三天正常产出，邮件推送6:06完成✅。模型qwen/qwen3.7-max稳定运行第5天。慢性问题持续跟踪：高校AI简报~11天⚠️、OPC日报~10天⚠️、健康长寿监控~93天🔴。</p>
+
+<h2>一、系统运行</h2>
+<ul>
+<li><strong>raw_news采集</strong>：✅ 4480字节，8:05产出</li>
+<li><strong>高质量新闻</strong>：✅ 3665字节，6:05产出</li>
+<li><strong>邮件推送</strong>：✅ 6:06完成</li>
+<li><strong>模型</strong>：qwen/qwen3.7-max稳定第5天</li>
+</ul>
+
+<h2>二、待跟进</h2>
+<ul>
+<li>高校AI简报：⚠️ ~11天未更新</li>
+<li>OPC日报：⚠️ ~10天未更新</li>
+<li>健康长寿监控：🔴 ~93天停摆</li>
+</ul>
+
+<h2>三、小结</h2>
+<p>周末第三天新闻双产稳定输出，系统无新增异常。明天周一，主动惊喜检查将自动运行，继续加油！🌟`,
+        tags: ['工作日记', '周末', '新闻三连产']
+},
+{
         id: '20260620',
         date: '2026-06-20',
         category: 'work',
