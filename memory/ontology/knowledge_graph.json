@@ -383,12 +383,6 @@
       }
     },
     {
-      "id": "concept:WikiLink",
-      "type": "Concept",
-      "label": "WikiLink",
-      "properties": {}
-    },
-    {
       "id": "doc:HEARTBEAT.md",
       "type": "Document",
       "label": "HEARTBEAT.md",
@@ -509,6 +503,12 @@
       }
     },
     {
+      "id": "concept:WikiLink",
+      "type": "Concept",
+      "label": "WikiLink",
+      "properties": {}
+    },
+    {
       "id": "concept:Gemini",
       "type": "Concept",
       "label": "Gemini",
@@ -580,6 +580,24 @@
       "id": "tag:4A7BB5",
       "type": "Tag",
       "label": "#4A7BB5",
+      "properties": {}
+    },
+    {
+      "id": "tag:d46a3a",
+      "type": "Tag",
+      "label": "#d46a3a",
+      "properties": {}
+    },
+    {
+      "id": "tag:1a1a2e",
+      "type": "Tag",
+      "label": "#1a1a2e",
+      "properties": {}
+    },
+    {
+      "id": "tag:FF8C42",
+      "type": "Tag",
+      "label": "#FF8C42",
       "properties": {}
     },
     {
@@ -943,11 +961,27 @@
       }
     },
     {
+      "id": "doc:memory/2026-06-15-1808.md",
+      "type": "Document",
+      "label": "2026-06-15-1808.md",
+      "properties": {
+        "path": "memory/2026-06-15-1808.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-04-20-0630.md",
       "type": "Document",
       "label": "2026-04-20-0630.md",
       "properties": {
         "path": "memory/2026-04-20-0630.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-06-15-1852.md",
+      "type": "Document",
+      "label": "2026-06-15-1852.md",
+      "properties": {
+        "path": "memory/2026-06-15-1852.md"
       }
     },
     {
@@ -959,11 +993,27 @@
       }
     },
     {
+      "id": "doc:memory/2026-06-15-1846.md",
+      "type": "Document",
+      "label": "2026-06-15-1846.md",
+      "properties": {
+        "path": "memory/2026-06-15-1846.md"
+      }
+    },
+    {
       "id": "doc:memory/MEMORY_SYSTEM_GUIDE.md",
       "type": "Document",
       "label": "MEMORY_SYSTEM_GUIDE.md",
       "properties": {
         "path": "memory/MEMORY_SYSTEM_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-06-16-1115.md",
+      "type": "Document",
+      "label": "2026-06-16-1115.md",
+      "properties": {
+        "path": "memory/2026-06-16-1115.md"
       }
     },
     {
@@ -975,11 +1025,35 @@
       }
     },
     {
+      "id": "doc:memory/2026-06-15-1847.md",
+      "type": "Document",
+      "label": "2026-06-15-1847.md",
+      "properties": {
+        "path": "memory/2026-06-15-1847.md"
+      }
+    },
+    {
       "id": "doc:memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
       "type": "Document",
       "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
       "properties": {
         "path": "memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-06-16.md",
+      "type": "Document",
+      "label": "2026-06-16.md",
+      "properties": {
+        "path": "memory/2026-06-16.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-06-15-1853.md",
+      "type": "Document",
+      "label": "2026-06-15-1853.md",
+      "properties": {
+        "path": "memory/2026-06-15-1853.md"
       }
     },
     {
@@ -1007,6 +1081,22 @@
       }
     },
     {
+      "id": "doc:memory/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "memory/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:memory/2026-06-15-1852-2.md",
+      "type": "Document",
+      "label": "2026-06-15-1852-2.md",
+      "properties": {
+        "path": "memory/2026-06-15-1852-2.md"
+      }
+    },
+    {
       "id": "doc:memory/2026-06-10-1745.md",
       "type": "Document",
       "label": "2026-06-10-1745.md",
@@ -1015,11 +1105,11 @@
       }
     },
     {
-      "id": "doc:memory/user_preferences.md",
+      "id": "doc:memory/2026-06-15-1853-2.md",
       "type": "Document",
-      "label": "user_preferences.md",
+      "label": "2026-06-15-1853-2.md",
       "properties": {
-        "path": "memory/user_preferences.md"
+        "path": "memory/2026-06-15-1853-2.md"
       }
     },
     {
@@ -1163,6 +1253,20 @@
       "properties": {
         "path": "news_summaries/openclaw_news_2026-03-16_formatted.md"
       }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-16.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-16.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-16.md"
+      }
+    },
+    {
+      "id": "tag:1449",
+      "type": "Tag",
+      "label": "#1449",
+      "properties": {}
     },
     {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-02.md",
@@ -1409,11 +1513,27 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_2026-06-18.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-18.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-06-18.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/ai_news_2026-03-03.md",
       "type": "Document",
       "label": "ai_news_2026-03-03.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-03.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-17.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-17.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-17.md"
       }
     },
     {
@@ -1591,6 +1711,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_2026-06-17.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-17.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-06-17.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-28_09-12.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-03-28_09-12.md",
@@ -1629,6 +1757,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-18.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-18.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-18.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/ai_news_2026-03-14_enhanced.md",
       "type": "Document",
       "label": "ai_news_2026-03-14_enhanced.md",
@@ -1650,6 +1786,14 @@
       "label": "ascend_news_2026-03-11.md",
       "properties": {
         "path": "news_summaries/ascend_news_2026-03-11.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_2026-06-16.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-16.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-06-16.md"
       }
     },
     {
@@ -1698,6 +1842,14 @@
       "label": "openclaw_news_high_quality_2026-05-27.md",
       "properties": {
         "path": "news_summaries/openclaw_news_high_quality_2026-05-27.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-19.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-19.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-19.md"
       }
     },
     {
@@ -1869,6 +2021,22 @@
       "type": "Tag",
       "label": "#51359",
       "properties": {}
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_2026-06-15.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-15.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_2026-06-21.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-21.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-06-21.md"
+      }
     },
     {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-03-15.md",
@@ -2235,6 +2403,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_2026-06-20.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-20.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_2026-06-20.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-05-25.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-05-25.md",
@@ -2311,6 +2487,14 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-20.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-20.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-20.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/cron_status_2026-03-04.md",
       "type": "Document",
       "label": "cron_status_2026-03-04.md",
@@ -2343,11 +2527,27 @@
       }
     },
     {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-21.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-21.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-21.md"
+      }
+    },
+    {
       "id": "doc:news_summaries/openclaw_news_high_quality_2026-04-01.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-04-01.md",
       "properties": {
         "path": "news_summaries/openclaw_news_high_quality_2026-04-01.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/openclaw_news_high_quality_2026-06-15.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-15.md",
+      "properties": {
+        "path": "news_summaries/openclaw_news_high_quality_2026-06-15.md"
       }
     },
     {
@@ -2476,6 +2676,14 @@
       "label": "ai_news_2026-03-05.md",
       "properties": {
         "path": "news_summaries/ai_news_2026-03-05.md"
+      }
+    },
+    {
+      "id": "doc:news_summaries/health_longevity_2026-06-15.md",
+      "type": "Document",
+      "label": "health_longevity_2026-06-15.md",
+      "properties": {
+        "path": "news_summaries/health_longevity_2026-06-15.md"
       }
     },
     {
@@ -3289,6 +3497,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/DREAMS.md",
+      "type": "Document",
+      "label": "DREAMS.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/DREAMS.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/USER.md",
       "type": "Document",
       "label": "USER.md",
@@ -3577,6 +3793,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/domain-jarviswangcai-top.md",
+      "type": "Document",
+      "label": "domain-jarviswangcai-top.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/domain-jarviswangcai-top.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/2026-04-20-0634.md",
       "type": "Document",
       "label": "2026-04-20-0634.md",
@@ -3585,11 +3809,43 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1808.md",
+      "type": "Document",
+      "label": "2026-06-15-1808.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1808.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/2026-04-20-0630.md",
       "type": "Document",
       "label": "2026-04-20-0630.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-04-20-0630.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1852.md",
+      "type": "Document",
+      "label": "2026-06-15-1852.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1852.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-05-29.md",
+      "type": "Document",
+      "label": "2026-05-29.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-05-29.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1846.md",
+      "type": "Document",
+      "label": "2026-06-15-1846.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1846.md"
       }
     },
     {
@@ -3609,11 +3865,35 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1847.md",
+      "type": "Document",
+      "label": "2026-06-15-1847.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1847.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
       "type": "Document",
       "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1853.md",
+      "type": "Document",
+      "label": "2026-06-15-1853.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1853.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-11.md"
       }
     },
     {
@@ -3633,11 +3913,35 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/memory/user_preferences.md",
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15.md",
       "type": "Document",
-      "label": "user_preferences.md",
+      "label": "2026-06-15.md",
       "properties": {
-        "path": "jiaviswangcai.ai/memory/user_preferences.md"
+        "path": "jiaviswangcai.ai/memory/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1852-2.md",
+      "type": "Document",
+      "label": "2026-06-15-1852-2.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1852-2.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-10-1745.md",
+      "type": "Document",
+      "label": "2026-06-10-1745.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-10-1745.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-06-15-1853-2.md",
+      "type": "Document",
+      "label": "2026-06-15-1853-2.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-06-15-1853-2.md"
       }
     },
     {
@@ -3654,6 +3958,14 @@
       "label": "2026-05-04.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/2026-05-04.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/2026-05-30.md"
       }
     },
     {
@@ -3729,6 +4041,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/translation_task.md",
+      "type": "Document",
+      "label": "translation_task.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/translation_task.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_2026-03-16_formatted.md",
       "type": "Document",
       "label": "openclaw_news_2026-03-16_formatted.md",
@@ -3750,6 +4070,22 @@
       "label": "ai_news_2026-03-12_enhanced.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/ai_news_2026-03-12_enhanced.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-02.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-02.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-02.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-18.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md"
       }
     },
     {
@@ -3809,6 +4145,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-19.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-19.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-19.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/ai_news_2026-03-17.md",
       "type": "Document",
       "label": "ai_news_2026-03-17.md",
@@ -3838,6 +4182,14 @@
       "label": "openclaw_news_high_quality_2026-04-07.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-04-07.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-29.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md"
       }
     },
     {
@@ -3897,6 +4249,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-22.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/ascend_news_2026-03-15.md",
       "type": "Document",
       "label": "ascend_news_2026-03-15.md",
@@ -3934,6 +4294,14 @@
       "label": "openclaw_news_high_quality_2026-03-17.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-17.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-26.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-26.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-26.md"
       }
     },
     {
@@ -4001,6 +4369,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-27.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-27.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/明日策略调整.md",
       "type": "Document",
       "label": "明日策略调整.md",
@@ -4030,6 +4406,22 @@
       "label": "openclaw_news_high_quality_2026-03-26.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-26.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-17.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-23.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-23.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-23.md"
       }
     },
     {
@@ -4065,11 +4457,27 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_2026-06-15.md",
+      "type": "Document",
+      "label": "openclaw_news_2026-06-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_2026-06-15.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-15.md",
       "type": "Document",
       "label": "openclaw_news_high_quality_2026-03-15.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-24.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-24.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-24.md"
       }
     },
     {
@@ -4113,6 +4521,22 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-20.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-30.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-30.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-30.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/ascend_news_2026-03-17.md",
       "type": "Document",
       "label": "ascend_news_2026-03-17.md",
@@ -4153,6 +4577,22 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-21.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-21.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-21.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-31.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/ascend_news_2026-03-16.md",
       "type": "Document",
       "label": "ascend_news_2026-03-16.md",
@@ -4182,6 +4622,14 @@
       "label": "ai_news_2026-02-25.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/ai_news_2026-02-25.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-25.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-05-25.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-25.md"
       }
     },
     {
@@ -4281,11 +4729,27 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-15.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-15.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/news_summaries/ai_news_2026-03-16_formatted.md",
       "type": "Document",
       "label": "ai_news_2026-03-16_formatted.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/ai_news_2026-03-16_formatted.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "type": "Document",
+      "label": "openclaw_news_high_quality_2026-06-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md"
       }
     },
     {
@@ -4326,6 +4790,14 @@
       "label": "ai_news_2026-03-05.md",
       "properties": {
         "path": "jiaviswangcai.ai/news_summaries/ai_news_2026-03-05.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/news_summaries/health_longevity_2026-06-15.md",
+      "type": "Document",
+      "label": "health_longevity_2026-06-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/news_summaries/health_longevity_2026-06-15.md"
       }
     },
     {
@@ -4561,11 +5033,83 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/SESSION-STATE.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/IDENTITY.md",
+      "type": "Document",
+      "label": "IDENTITY.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/IDENTITY.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/HEARTBEAT.md",
+      "type": "Document",
+      "label": "HEARTBEAT.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/HEARTBEAT.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/USER.md",
+      "type": "Document",
+      "label": "USER.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/USER.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/SOUL.md",
+      "type": "Document",
+      "label": "SOUL.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/SOUL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/AGENTS.md",
+      "type": "Document",
+      "label": "AGENTS.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/AGENTS.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/backup/2026-06/TOOLS.md",
+      "type": "Document",
+      "label": "TOOLS.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/backup/2026-06/TOOLS.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/.openclaw/tmp/functional-audit-report.md",
+      "type": "Document",
+      "label": "functional-audit-report.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/.openclaw/tmp/functional-audit-report.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/notes/areas/recurring-patterns.md",
       "type": "Document",
       "label": "recurring-patterns.md",
       "properties": {
         "path": "jiaviswangcai.ai/notes/areas/recurring-patterns.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/notes/areas/SESSION-STATE.md",
+      "type": "Document",
+      "label": "SESSION-STATE.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/notes/areas/SESSION-STATE.md"
       }
     },
     {
@@ -5321,11 +5865,211 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "type": "Document",
+      "label": "LEARNINGS_2026-06-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/archive/monthly/2026-06/ERRORS_2026-06-01.md",
+      "type": "Document",
+      "label": "ERRORS_2026-06-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/archive/monthly/2026-06/ERRORS_2026-06-01.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-02.md",
+      "type": "Document",
+      "label": "2026-03-02.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-02.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-26.md",
+      "type": "Document",
+      "label": "2026-03-26.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-26.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/archive/2026-02-28.md",
       "type": "Document",
       "label": "2026-02-28.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/archive/2026-02-28.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_BUILD_GUIDE.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/MEMORY_SYSTEM_BUILD_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-0440.md",
+      "type": "Document",
+      "label": "2026-04-02-0440.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-02-0440.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-session-summary.md",
+      "type": "Document",
+      "label": "2026-04-20-session-summary.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-20-session-summary.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-06.md",
+      "type": "Document",
+      "label": "2026-03-06.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-06.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-16.md",
+      "type": "Document",
+      "label": "2026-03-16.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-16.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-22.md",
+      "type": "Document",
+      "label": "2026-03-22.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-22.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-new-session.md",
+      "type": "Document",
+      "label": "2026-04-20-new-session.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-20-new-session.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-07.md",
+      "type": "Document",
+      "label": "2026-03-07.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-07.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-0634.md",
+      "type": "Document",
+      "label": "2026-04-20-0634.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-20-0634.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-17.md",
+      "type": "Document",
+      "label": "2026-03-17.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-17.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/working-buffer_2026-03-19.md",
+      "type": "Document",
+      "label": "working-buffer_2026-03-19.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/working-buffer_2026-03-19.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-23.md",
+      "type": "Document",
+      "label": "2026-03-23.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-23.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-03.md",
+      "type": "Document",
+      "label": "2026-03-03.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-03.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-0630.md",
+      "type": "Document",
+      "label": "2026-04-20-0630.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-20-0630.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-29-400-status-code-no-body.md",
+      "type": "Document",
+      "label": "2026-03-29-400-status-code-no-body.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-29-400-status-code-no-body.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-08.md",
+      "type": "Document",
+      "label": "2026-03-08.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-08.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-14-0829.md",
+      "type": "Document",
+      "label": "2026-03-14-0829.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-14-0829.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-10-session-start.md",
+      "type": "Document",
+      "label": "2026-04-10-session-start.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-10-session-start.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-13.md",
+      "type": "Document",
+      "label": "2026-04-13.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-13.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/MEMORY_SYSTEM_GUIDE.md",
+      "type": "Document",
+      "label": "MEMORY_SYSTEM_GUIDE.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/MEMORY_SYSTEM_GUIDE.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/working-buffer_2026-05-23.md",
+      "type": "Document",
+      "label": "working-buffer_2026-05-23.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/working-buffer_2026-05-23.md"
       }
     },
     {
@@ -5337,6 +6081,14 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-cann-expansion.md",
+      "type": "Document",
+      "label": "2026-04-02-cann-expansion.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-02-cann-expansion.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/archive/2026-02-27.md",
       "type": "Document",
       "label": "2026-02-27.md",
@@ -5345,11 +6097,99 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-29.md",
+      "type": "Document",
+      "label": "2026-03-29.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-29.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-16.md",
+      "type": "Document",
+      "label": "2026-04-16.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-16.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "type": "Document",
+      "label": "OPENCLAW_MEMORY_SYSTEM_FINAL.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/OPENCLAW_MEMORY_SYSTEM_FINAL.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/archive/2026-02-23.md",
       "type": "Document",
       "label": "2026-02-23.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/archive/2026-02-23.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-19.md",
+      "type": "Document",
+      "label": "2026-03-19.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-19.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-new-session.md",
+      "type": "Document",
+      "label": "2026-03-28-new-session.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-28-new-session.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-29-dns-fix.md",
+      "type": "Document",
+      "label": "2026-03-29-dns-fix.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-29-dns-fix.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/ascend_cann_knowledge.md",
+      "type": "Document",
+      "label": "ascend_cann_knowledge.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/ascend_cann_knowledge.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-10-content-sync.md",
+      "type": "Document",
+      "label": "2026-04-10-content-sync.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-10-content-sync.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "type": "Document",
+      "label": "2026-03-28-openclaw-config-tips.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-15.md",
+      "type": "Document",
+      "label": "2026-04-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-01.md",
+      "type": "Document",
+      "label": "2026-04-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-01.md"
       }
     },
     {
@@ -5369,6 +6209,30 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-30-1718.md",
+      "type": "Document",
+      "label": "2026-03-30-1718.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-30-1718.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/ARCHIVE_LOG.md",
+      "type": "Document",
+      "label": "ARCHIVE_LOG.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/ARCHIVE_LOG.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-20-ai-news-retry.md",
+      "type": "Document",
+      "label": "2026-03-20-ai-news-retry.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-20-ai-news-retry.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/archive/voice_recognition_project.md",
       "type": "Document",
       "label": "voice_recognition_project.md",
@@ -5377,11 +6241,597 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/memory/archive/user_preferences.md",
+      "type": "Document",
+      "label": "user_preferences.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/user_preferences.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/memory/archive/2026-02-25.md",
       "type": "Document",
       "label": "2026-02-25.md",
       "properties": {
         "path": "jiaviswangcai.ai/memory/archive/2026-02-25.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-30.md",
+      "type": "Document",
+      "label": "2026-03-30.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-30.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-29-自建Analytics方案.md",
+      "type": "Document",
+      "label": "2026-03-29-自建Analytics方案.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-29-自建Analytics方案.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-13-安全审计与加固.md",
+      "type": "Document",
+      "label": "2026-04-13-安全审计与加固.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-13-安全审计与加固.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-04.md",
+      "type": "Document",
+      "label": "2026-03-04.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-04.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-0627.md",
+      "type": "Document",
+      "label": "2026-04-20-0627.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-20-0627.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-css-fix-links.md",
+      "type": "Document",
+      "label": "2026-04-02-css-fix-links.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-02-css-fix-links.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/MEMORY_backup_2026-03-11.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-11.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/MEMORY_backup_2026-03-11.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-14.md",
+      "type": "Document",
+      "label": "2026-03-14.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-14.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-05-21.md",
+      "type": "Document",
+      "label": "2026-05-21.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-05-21.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-31-chinese-output.md",
+      "type": "Document",
+      "label": "2026-03-31-chinese-output.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-31-chinese-output.md"
+      }
+    },
+    {
+      "id": "concept:概念",
+      "type": "Concept",
+      "label": "概念",
+      "properties": {}
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-30-1430.md",
+      "type": "Document",
+      "label": "2026-03-30-1430.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-30-1430.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-01.md",
+      "type": "Document",
+      "label": "2026-03-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-01.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-05-04.md",
+      "type": "Document",
+      "label": "2026-05-04.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-05-04.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-0632.md",
+      "type": "Document",
+      "label": "2026-04-20-0632.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-04-20-0632.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-31.md",
+      "type": "Document",
+      "label": "2026-03-31.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-31.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-30-exec-debug.md",
+      "type": "Document",
+      "label": "2026-03-30-exec-debug.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-30-exec-debug.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/MEMORY_backup_2026-03-10.md",
+      "type": "Document",
+      "label": "MEMORY_backup_2026-03-10.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/MEMORY_backup_2026-03-10.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-05-24.md",
+      "type": "Document",
+      "label": "2026-05-24.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-05-24.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/archive/2026-03-15.md",
+      "type": "Document",
+      "label": "2026-03-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/archive/2026-03-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-09.md",
+      "type": "Document",
+      "label": "2026-06-09.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-09.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-08.md",
+      "type": "Document",
+      "label": "2026-06-08.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-08.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-07.md",
+      "type": "Document",
+      "label": "2026-06-07.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-07.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-13.md",
+      "type": "Document",
+      "label": "2026-06-13.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-13.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-03.md",
+      "type": "Document",
+      "label": "2026-06-03.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-03.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-12.md",
+      "type": "Document",
+      "label": "2026-06-12.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-12.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-02.md",
+      "type": "Document",
+      "label": "2026-06-02.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-02.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-06.md",
+      "type": "Document",
+      "label": "2026-06-06.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-06.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-11.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-01.md",
+      "type": "Document",
+      "label": "2026-06-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-01.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-05.md",
+      "type": "Document",
+      "label": "2026-06-05.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-05.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-14.md",
+      "type": "Document",
+      "label": "2026-06-14.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-14.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-04.md",
+      "type": "Document",
+      "label": "2026-06-04.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-04.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-06-10.md",
+      "type": "Document",
+      "label": "2026-06-10.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-06-10.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-05-31.md",
+      "type": "Document",
+      "label": "2026-05-31.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-05-31.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/deep/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/deep/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-09.md",
+      "type": "Document",
+      "label": "2026-06-09.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-09.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-08.md",
+      "type": "Document",
+      "label": "2026-06-08.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-08.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-07.md",
+      "type": "Document",
+      "label": "2026-06-07.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-07.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-13.md",
+      "type": "Document",
+      "label": "2026-06-13.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-13.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-03.md",
+      "type": "Document",
+      "label": "2026-06-03.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-03.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-12.md",
+      "type": "Document",
+      "label": "2026-06-12.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-12.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-02.md",
+      "type": "Document",
+      "label": "2026-06-02.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-02.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-06.md",
+      "type": "Document",
+      "label": "2026-06-06.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-06.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-11.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-01.md",
+      "type": "Document",
+      "label": "2026-06-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-01.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-05.md",
+      "type": "Document",
+      "label": "2026-06-05.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-05.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-14.md",
+      "type": "Document",
+      "label": "2026-06-14.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-14.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-04.md",
+      "type": "Document",
+      "label": "2026-06-04.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-04.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-06-10.md",
+      "type": "Document",
+      "label": "2026-06-10.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-06-10.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-05-31.md",
+      "type": "Document",
+      "label": "2026-05-31.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-05-31.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/rem/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/rem/2026-05-30.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-09.md",
+      "type": "Document",
+      "label": "2026-06-09.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-09.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-08.md",
+      "type": "Document",
+      "label": "2026-06-08.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-08.md"
+      }
+    },
+    {
+      "id": "tag:0a0a1a",
+      "type": "Tag",
+      "label": "#0a0a1a",
+      "properties": {}
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-07.md",
+      "type": "Document",
+      "label": "2026-06-07.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-07.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-13.md",
+      "type": "Document",
+      "label": "2026-06-13.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-13.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-03.md",
+      "type": "Document",
+      "label": "2026-06-03.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-03.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-12.md",
+      "type": "Document",
+      "label": "2026-06-12.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-12.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-02.md",
+      "type": "Document",
+      "label": "2026-06-02.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-02.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-06.md",
+      "type": "Document",
+      "label": "2026-06-06.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-06.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-11.md",
+      "type": "Document",
+      "label": "2026-06-11.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-11.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-01.md",
+      "type": "Document",
+      "label": "2026-06-01.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-01.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-05.md",
+      "type": "Document",
+      "label": "2026-06-05.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-05.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-14.md",
+      "type": "Document",
+      "label": "2026-06-14.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-14.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-04.md",
+      "type": "Document",
+      "label": "2026-06-04.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-04.md"
+      }
+    },
+    {
+      "id": "tag:FF6B35",
+      "type": "Tag",
+      "label": "#FF6B35",
+      "properties": {}
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-10.md",
+      "type": "Document",
+      "label": "2026-06-10.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-06-10.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-05-31.md",
+      "type": "Document",
+      "label": "2026-05-31.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-05-31.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-05-30.md",
+      "type": "Document",
+      "label": "2026-05-30.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/memory/dreaming/light/2026-05-30.md"
       }
     },
     {
@@ -5502,6 +6952,14 @@
       "label": "TOOLS.md",
       "properties": {
         "path": "backup/2026-06/TOOLS.md"
+      }
+    },
+    {
+      "id": "doc:.openclaw/tmp/functional-audit-report.md",
+      "type": "Document",
+      "label": "functional-audit-report.md",
+      "properties": {
+        "path": ".openclaw/tmp/functional-audit-report.md"
       }
     },
     {
@@ -6673,6 +8131,14 @@
       }
     },
     {
+      "id": "doc:memory/archive/user_preferences.md",
+      "type": "Document",
+      "label": "user_preferences.md",
+      "properties": {
+        "path": "memory/archive/user_preferences.md"
+      }
+    },
+    {
       "id": "doc:memory/archive/2026-02-25.md",
       "type": "Document",
       "label": "2026-02-25.md",
@@ -6761,12 +8227,6 @@
       }
     },
     {
-      "id": "concept:概念",
-      "type": "Concept",
-      "label": "概念",
-      "properties": {}
-    },
-    {
       "id": "doc:memory/archive/2026-03-30-1430.md",
       "type": "Document",
       "label": "2026-03-30-1430.md",
@@ -6839,6 +8299,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-19.md",
+      "type": "Document",
+      "label": "2026-06-19.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-19.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-09.md",
       "type": "Document",
       "label": "2026-06-09.md",
@@ -6847,11 +8315,27 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-18.md",
+      "type": "Document",
+      "label": "2026-06-18.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-18.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-08.md",
       "type": "Document",
       "label": "2026-06-08.md",
       "properties": {
         "path": "memory/dreaming/deep/2026-06-08.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/deep/2026-06-17.md",
+      "type": "Document",
+      "label": "2026-06-17.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-17.md"
       }
     },
     {
@@ -6895,6 +8379,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-16.md",
+      "type": "Document",
+      "label": "2026-06-16.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-16.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-06.md",
       "type": "Document",
       "label": "2026-06-06.md",
@@ -6919,6 +8411,22 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/deep/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/deep/2026-06-21.md",
+      "type": "Document",
+      "label": "2026-06-21.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-21.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/deep/2026-06-05.md",
       "type": "Document",
       "label": "2026-06-05.md",
@@ -6932,6 +8440,14 @@
       "label": "2026-06-14.md",
       "properties": {
         "path": "memory/dreaming/deep/2026-06-14.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/deep/2026-06-20.md",
+      "type": "Document",
+      "label": "2026-06-20.md",
+      "properties": {
+        "path": "memory/dreaming/deep/2026-06-20.md"
       }
     },
     {
@@ -6967,6 +8483,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-19.md",
+      "type": "Document",
+      "label": "2026-06-19.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-19.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-09.md",
       "type": "Document",
       "label": "2026-06-09.md",
@@ -6975,11 +8499,27 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-18.md",
+      "type": "Document",
+      "label": "2026-06-18.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-18.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-08.md",
       "type": "Document",
       "label": "2026-06-08.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-06-08.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-06-17.md",
+      "type": "Document",
+      "label": "2026-06-17.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-17.md"
       }
     },
     {
@@ -7023,6 +8563,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-16.md",
+      "type": "Document",
+      "label": "2026-06-16.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-16.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-06.md",
       "type": "Document",
       "label": "2026-06-06.md",
@@ -7047,6 +8595,22 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/rem/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-06-21.md",
+      "type": "Document",
+      "label": "2026-06-21.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-21.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/rem/2026-06-05.md",
       "type": "Document",
       "label": "2026-06-05.md",
@@ -7060,6 +8624,14 @@
       "label": "2026-06-14.md",
       "properties": {
         "path": "memory/dreaming/rem/2026-06-14.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/rem/2026-06-20.md",
+      "type": "Document",
+      "label": "2026-06-20.md",
+      "properties": {
+        "path": "memory/dreaming/rem/2026-06-20.md"
       }
     },
     {
@@ -7095,12 +8667,58 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/light/2026-06-19.md",
+      "type": "Document",
+      "label": "2026-06-19.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-19.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/light/2026-06-09.md",
       "type": "Document",
       "label": "2026-06-09.md",
       "properties": {
         "path": "memory/dreaming/light/2026-06-09.md"
       }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-18.md",
+      "type": "Document",
+      "label": "2026-06-18.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-18.md"
+      }
+    },
+    {
+      "id": "tag:f8f9fc",
+      "type": "Tag",
+      "label": "#f8f9fc",
+      "properties": {}
+    },
+    {
+      "id": "tag:ffffff",
+      "type": "Tag",
+      "label": "#ffffff",
+      "properties": {}
+    },
+    {
+      "id": "tag:5a5a7a",
+      "type": "Tag",
+      "label": "#5a5a7a",
+      "properties": {}
+    },
+    {
+      "id": "tag:e2e8f0",
+      "type": "Tag",
+      "label": "#e2e8f0",
+      "properties": {}
+    },
+    {
+      "id": "tag:0f172a",
+      "type": "Tag",
+      "label": "#0f172a",
+      "properties": {}
     },
     {
       "id": "doc:memory/dreaming/light/2026-06-08.md",
@@ -7111,10 +8729,12 @@
       }
     },
     {
-      "id": "tag:0a0a1a",
-      "type": "Tag",
-      "label": "#0a0a1a",
-      "properties": {}
+      "id": "doc:memory/dreaming/light/2026-06-17.md",
+      "type": "Document",
+      "label": "2026-06-17.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-17.md"
+      }
     },
     {
       "id": "doc:memory/dreaming/light/2026-06-07.md",
@@ -7157,6 +8777,14 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/light/2026-06-16.md",
+      "type": "Document",
+      "label": "2026-06-16.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-16.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/light/2026-06-06.md",
       "type": "Document",
       "label": "2026-06-06.md",
@@ -7181,6 +8809,22 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/light/2026-06-15.md",
+      "type": "Document",
+      "label": "2026-06-15.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-15.md"
+      }
+    },
+    {
+      "id": "doc:memory/dreaming/light/2026-06-21.md",
+      "type": "Document",
+      "label": "2026-06-21.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-21.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/light/2026-06-05.md",
       "type": "Document",
       "label": "2026-06-05.md",
@@ -7197,18 +8841,20 @@
       }
     },
     {
+      "id": "doc:memory/dreaming/light/2026-06-20.md",
+      "type": "Document",
+      "label": "2026-06-20.md",
+      "properties": {
+        "path": "memory/dreaming/light/2026-06-20.md"
+      }
+    },
+    {
       "id": "doc:memory/dreaming/light/2026-06-04.md",
       "type": "Document",
       "label": "2026-06-04.md",
       "properties": {
         "path": "memory/dreaming/light/2026-06-04.md"
       }
-    },
-    {
-      "id": "tag:FF6B35",
-      "type": "Tag",
-      "label": "#FF6B35",
-      "properties": {}
     },
     {
       "id": "doc:memory/dreaming/light/2026-06-10.md",
@@ -7417,6 +9063,22 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/SKILL.md",
+      "type": "Document",
+      "label": "SKILL.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/ui-ux-pro-max/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/skill-card.md",
+      "type": "Document",
+      "label": "skill-card.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/ui-ux-pro-max/skill-card.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/skills/tavily-search/SKILL.md",
       "type": "Document",
       "label": "SKILL.md",
@@ -7527,86 +9189,6 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/corrections.md",
-      "type": "Document",
-      "label": "corrections.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/corrections.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/memory-template.md",
-      "type": "Document",
-      "label": "memory-template.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/memory-template.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/operations.md",
-      "type": "Document",
-      "label": "operations.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/operations.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/setup.md",
-      "type": "Document",
-      "label": "setup.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/setup.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/learning.md",
-      "type": "Document",
-      "label": "learning.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/learning.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/boundaries.md",
-      "type": "Document",
-      "label": "boundaries.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/boundaries.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/reflections.md",
-      "type": "Document",
-      "label": "reflections.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/reflections.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/memory.md",
-      "type": "Document",
-      "label": "memory.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/memory.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/scaling.md",
-      "type": "Document",
-      "label": "scaling.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/scaling.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/self-improving/SKILL.md",
-      "type": "Document",
-      "label": "SKILL.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/self-improving/SKILL.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/skills/self-improving-agent/SKILL.md",
       "type": "Document",
       "label": "SKILL.md",
@@ -7629,11 +9211,19 @@
       }
     },
     {
-      "id": "doc:jiaviswangcai.ai/skills/nano-banana-2/SKILL.md",
+      "id": "doc:jiaviswangcai.ai/skills/copywriting/SKILL.md",
       "type": "Document",
       "label": "SKILL.md",
       "properties": {
-        "path": "jiaviswangcai.ai/skills/nano-banana-2/SKILL.md"
+        "path": "jiaviswangcai.ai/skills/copywriting/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/copywriting/skill-card.md",
+      "type": "Document",
+      "label": "skill-card.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/copywriting/skill-card.md"
       }
     },
     {
@@ -8045,22 +9635,6 @@
       "properties": {}
     },
     {
-      "id": "doc:jiaviswangcai.ai/skills/feishu-bitable/README.md",
-      "type": "Document",
-      "label": "README.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/feishu-bitable/README.md"
-      }
-    },
-    {
-      "id": "doc:jiaviswangcai.ai/skills/feishu-bitable/SKILL.md",
-      "type": "Document",
-      "label": "SKILL.md",
-      "properties": {
-        "path": "jiaviswangcai.ai/skills/feishu-bitable/SKILL.md"
-      }
-    },
-    {
       "id": "doc:jiaviswangcai.ai/skills/12306/README.md",
       "type": "Document",
       "label": "README.md",
@@ -8311,6 +9885,46 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/SKILL.md",
+      "type": "Document",
+      "label": "SKILL.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/skill-card.md",
+      "type": "Document",
+      "label": "skill-card.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/skill-card.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/humanizer/README.md",
+      "type": "Document",
+      "label": "README.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/humanizer/README.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/humanizer/SKILL.md",
+      "type": "Document",
+      "label": "SKILL.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/humanizer/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/humanizer/skill-card.md",
+      "type": "Document",
+      "label": "skill-card.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/humanizer/skill-card.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/skills/games/SKILL.md",
       "type": "Document",
       "label": "SKILL.md",
@@ -8396,6 +10010,94 @@
       "label": "SKILL.md",
       "properties": {
         "path": "jiaviswangcai.ai/skills/email-manager/SKILL.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/playbook-flowchart.md",
+      "type": "Document",
+      "label": "playbook-flowchart.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/playbook-flowchart.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/playbook-uml.md",
+      "type": "Document",
+      "label": "playbook-uml.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/playbook-uml.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/playbook-swimlane.md",
+      "type": "Document",
+      "label": "playbook-swimlane.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/playbook-swimlane.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/format-selection-guide.md",
+      "type": "Document",
+      "label": "format-selection-guide.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/format-selection-guide.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/json-schema-guide.md",
+      "type": "Document",
+      "label": "json-schema-guide.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/json-schema-guide.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/layout-quality-guide.md",
+      "type": "Document",
+      "label": "layout-quality-guide.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/layout-quality-guide.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/playbook-architecture.md",
+      "type": "Document",
+      "label": "playbook-architecture.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/playbook-architecture.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/playbook-excalidraw.md",
+      "type": "Document",
+      "label": "playbook-excalidraw.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/playbook-excalidraw.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/interaction-intake-guide.md",
+      "type": "Document",
+      "label": "interaction-intake-guide.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/interaction-intake-guide.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/network-topology-examples.md",
+      "type": "Document",
+      "label": "network-topology-examples.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/network-topology-examples.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/diagram-generator/references/playbook-network-topology.md",
+      "type": "Document",
+      "label": "playbook-network-topology.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/diagram-generator/references/playbook-network-topology.md"
       }
     },
     {
@@ -8969,6 +10671,22 @@
       }
     },
     {
+      "id": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md",
+      "type": "Document",
+      "label": "upstream-README.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md"
+      }
+    },
+    {
+      "id": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-skill-content.md",
+      "type": "Document",
+      "label": "upstream-skill-content.md",
+      "properties": {
+        "path": "jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-skill-content.md"
+      }
+    },
+    {
       "id": "doc:jiaviswangcai.ai/skills/evolink-music/references/music-api-params.md",
       "type": "Document",
       "label": "music-api-params.md",
@@ -9072,11 +10790,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:PROGRESS.md",
-      "target": "concept:WikiLink",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:MEMORY.md",
       "target": "concept:WikiLink",
       "relation": "mentions"
@@ -9094,6 +10807,21 @@
     {
       "source": "doc:DREAMS.md",
       "target": "tag:4A7BB5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:DREAMS.md",
+      "target": "tag:d46a3a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:DREAMS.md",
+      "target": "tag:1a1a2e",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:DREAMS.md",
+      "target": "tag:FF8C42",
       "relation": "has_tag"
     },
     {
@@ -9159,6 +10887,11 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-19.md",
       "target": "tag:50034",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_high_quality_2026-06-16.md",
+      "target": "tag:1449",
       "relation": "has_tag"
     },
     {
@@ -9399,6 +11132,11 @@
     {
       "source": "doc:news_summaries/openclaw_news_high_quality_2026-03-23.md",
       "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:news_summaries/openclaw_news_2026-06-16.md",
+      "target": "tag:1449",
       "relation": "has_tag"
     },
     {
@@ -10032,11 +11770,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:jiaviswangcai.ai/PROGRESS.md",
-      "target": "concept:WikiLink",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
       "target": "concept:WikiLink",
       "relation": "mentions"
@@ -10050,6 +11783,16 @@
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
       "target": "concept:报错_ETIMEDOUT",
       "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/DREAMS.md",
+      "target": "tag:4A7BB5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/DREAMS.md",
+      "target": "tag:d46a3a",
+      "relation": "has_tag"
     },
     {
       "source": "doc:jiaviswangcai.ai/MASCOT.md",
@@ -10117,6 +11860,31 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83280",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83279",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83278",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83277",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83276",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-04-06.md",
       "target": "tag:60590",
       "relation": "has_tag"
@@ -10134,6 +11902,41 @@
     {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-04-07.md",
       "target": "tag:60544",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82070",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:77995",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:78652",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82070",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:77995",
       "relation": "has_tag"
     },
     {
@@ -10272,8 +12075,88 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:84986",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:85102",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:85112",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:84076",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-23.md",
       "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45427",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45415",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:81864",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45404",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45390",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82751",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82749",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82747",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82744",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82735",
       "relation": "has_tag"
     },
     {
@@ -10304,6 +12187,31 @@
     {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-21.md",
       "target": "tag:51359",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:83300",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:83301",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:83130",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:80645",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:82180",
       "relation": "has_tag"
     },
     {
@@ -10382,6 +12290,36 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-21.md",
+      "target": "tag:211",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:86875",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:87409",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:86699",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:87354",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:86699",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:20177",
       "relation": "has_tag"
@@ -10424,6 +12362,86 @@
     {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:12975",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-25.md",
+      "target": "tag:53215",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-25.md",
+      "target": "tag:55902",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:86875",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:87409",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:87399",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:87375",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88129",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88136",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88141",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88162",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88182",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88105",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88183",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88231",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:83115",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88749",
       "relation": "has_tag"
     },
     {
@@ -10737,6 +12755,161 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:AI分析",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-29-400-status-code-no-body.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-css-fix-links.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-css-fix-links.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-31-chinese-output.md",
+      "target": "concept:概念",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-08.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-07.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-02.md",
+      "target": "tag:4A7BB5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-06.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-04.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-04.md",
+      "target": "tag:FF6B35",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:archive/monthly/2026-04/THIRD_PARTY_PUBLISH_GUIDE.md",
       "target": "tag:1E3A5F",
       "relation": "has_tag"
@@ -10972,6 +13145,46 @@
       "relation": "mentions"
     },
     {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:D4A84B",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:3D9CA8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:f8f9fc",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:ffffff",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:1a1a2e",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:5a5a7a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:e2e8f0",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-18.md",
+      "target": "tag:0f172a",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:memory/dreaming/light/2026-06-08.md",
       "target": "tag:0a0a1a",
       "relation": "has_tag"
@@ -10989,6 +13202,11 @@
     {
       "source": "doc:memory/dreaming/light/2026-06-06.md",
       "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:memory/dreaming/light/2026-06-20.md",
+      "target": "tag:1a1a2e",
       "relation": "has_tag"
     },
     {
@@ -11167,11 +13385,6 @@
       "relation": "has_tag"
     },
     {
-      "source": "doc:jiaviswangcai.ai/PROGRESS.md",
-      "target": "concept:WikiLink",
-      "relation": "mentions"
-    },
-    {
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
       "target": "concept:WikiLink",
       "relation": "mentions"
@@ -11185,6 +13398,16 @@
       "source": "doc:jiaviswangcai.ai/MEMORY.md",
       "target": "concept:报错_ETIMEDOUT",
       "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/DREAMS.md",
+      "target": "tag:4A7BB5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/DREAMS.md",
+      "target": "tag:d46a3a",
+      "relation": "has_tag"
     },
     {
       "source": "doc:jiaviswangcai.ai/MASCOT.md",
@@ -11252,6 +13475,31 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83280",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83279",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83278",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83277",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-18.md",
+      "target": "tag:83276",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-04-06.md",
       "target": "tag:60590",
       "relation": "has_tag"
@@ -11269,6 +13517,41 @@
     {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-04-07.md",
       "target": "tag:60544",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82070",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:77995",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:78652",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:82070",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-29.md",
+      "target": "tag:77995",
       "relation": "has_tag"
     },
     {
@@ -11407,8 +13690,88 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:84986",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:85102",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:85112",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-22.md",
+      "target": "tag:84076",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-23.md",
       "target": "tag:51500",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-27.md",
+      "target": "tag:82264",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45427",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45415",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:81864",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45404",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:45390",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82751",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82749",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82747",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82744",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-17.md",
+      "target": "tag:82735",
       "relation": "has_tag"
     },
     {
@@ -11439,6 +13802,31 @@
     {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-21.md",
       "target": "tag:51359",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:83300",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:83301",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:83130",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:80645",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-20.md",
+      "target": "tag:82180",
       "relation": "has_tag"
     },
     {
@@ -11517,6 +13905,36 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-21.md",
+      "target": "tag:211",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:86875",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:87409",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:86699",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:87354",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-31.md",
+      "target": "tag:86699",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:20177",
       "relation": "has_tag"
@@ -11559,6 +13977,86 @@
     {
       "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-03-20.md",
       "target": "tag:12975",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-25.md",
+      "target": "tag:53215",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-05-25.md",
+      "target": "tag:55902",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:86875",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:87409",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:87399",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:87375",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88129",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88136",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88141",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88162",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88182",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88105",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88183",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88231",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:83115",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/news_summaries/openclaw_news_high_quality_2026-06-01.md",
+      "target": "tag:88749",
       "relation": "has_tag"
     },
     {
@@ -12482,6 +14980,31 @@
       "relation": "has_tag"
     },
     {
+      "source": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md",
+      "target": "tag:E8B4B8",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md",
+      "target": "tag:A8D5BA",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md",
+      "target": "tag:D4AF37",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md",
+      "target": "tag:FFF5F5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/skills/ui-ux-pro-max/references/upstream-README.md",
+      "target": "tag:2D3436",
+      "relation": "has_tag"
+    },
+    {
       "source": "doc:jiaviswangcai.ai/archive/monthly/2026-04/THIRD_PARTY_PUBLISH_GUIDE.md",
       "target": "tag:1E3A5F",
       "relation": "has_tag"
@@ -12589,6 +15112,161 @@
     {
       "source": "doc:jiaviswangcai.ai/archive/monthly/2026-04/MANUAL_PUBLISH_GUIDE.md",
       "target": "tag:f47c20",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:概念关联",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识网络",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:关系密度",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识发现",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:Obsidian 知识库",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:私有知识星图自动构建",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:本体图谱",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:知识检索",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/archive/monthly/2026-06/LEARNINGS_2026-06-01.md",
+      "target": "concept:AI分析",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-04-20-session-summary.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-29-400-status-code-no-body.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-28-openclaw-config-tips.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-css-fix-links.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-04-02-css-fix-links.md",
+      "target": "concept:reply_to_current",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/archive/2026-03-31-chinese-output.md",
+      "target": "concept:概念",
+      "relation": "mentions"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-08.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-07.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-02.md",
+      "target": "tag:4A7BB5",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-06.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-04.md",
+      "target": "tag:0a0a1a",
+      "relation": "has_tag"
+    },
+    {
+      "source": "doc:jiaviswangcai.ai/memory/dreaming/light/2026-06-04.md",
+      "target": "tag:FF6B35",
       "relation": "has_tag"
     }
   ]
