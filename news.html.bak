@@ -61,8 +61,9 @@
     </header>
     
     <div class="news-date-selector">
-                                                                                <div class="date-pills" id="datePillsContainer">
-        <button class="date-pill active" data-date="2026-06-19" onclick="showDate('2026-06-19')">6月19日 (最新)</button>
+                                                                                        <div class="date-pills" id="datePillsContainer">
+        <button class="date-pill active" data-date="2026-06-20" onclick="showDate('2026-06-20')">6月20日 (最新)</button>
+        <button class="date-pill" data-date="2026-06-19" onclick="showDate('2026-06-19')">6月19日</button>
         <button class="date-pill" data-date="2026-06-18" onclick="showDate('2026-06-18')">6月18日</button>
         <button class="date-pill" data-date="2026-06-17" onclick="showDate('2026-06-17')">6月17日</button>
         <button class="date-pill" data-date="2026-06-16" onclick="showDate('2026-06-16')">6月16日</button>
@@ -75,11 +76,74 @@
         <button class="date-pill" data-date="2026-06-02" onclick="showDate('2026-06-02')">6月2日</button>
         <button class="date-pill" data-date="2026-06-01" onclick="showDate('2026-06-01')">6月1日</button>
         <button class="date-pill" data-date="2026-05-31" onclick="showDate('2026-05-31')">5月31日</button>
-        <button class="date-pill" data-date="2026-05-30" onclick="showDate('2026-05-30')">5月30日</button>
             
         </div>
     <main class="news-container">
-<div id="news-2026-06-19" class="day-news-container active">
+<div id="news-2026-06-20" class="day-news-container active">
+<div class="update-info"><p>📅 日报日期: 2026-06-20 · 共 8 条资讯</p></div>
+<div class="featured-news">
+<span class="tag">🔥 重点头条</span>
+<h2>The trends that will shape AI and tech in 2026 - IBM</h2>
+<p class="summary">Reporter Anabelle Nicoud spoke to several experts across AI, security, quantum and beyond to better understand where tech will take us in 2026.</p>
+<div class="meta" style="margin-top:1rem;font-size:0.9rem;">
+<div><span class="source">AI News</span></div>
+<a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" target="_blank" style="color:#667eea;font-weight:bold;">阅读原文 →</a>
+</div></div>
+<h3 class="news-section-title">📰 更多资讯</h3>
+<div class="news-grid">
+<a href="https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026" target="_blank" class="news-item">
+<h3>What&#39;s next in AI: 7 trends to watch in 2026 - Microsoft Source</h3>
+<p>Seven AI trends to watch in 2026 will make AI a true partner — boosting teamwork, security, research momentum and infrastructure efficiency.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.youtube.com/watch?v=IjHIE2DMUNg&amp;vl=en" target="_blank" class="news-item">
+<h3>15 New Things AI Can Do in 2026 That Were Impossible Last Year</h3>
+<p>... AI news: ai.uncovered.official For sponsorship inquiries please contact us at: contact@aiuncovered.tech or: ai.uncovered.ai@gmail.com.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.infotech.com/research/ss/ai-trends-2026" target="_blank" class="news-item">
+<h3>AI Trends 2026 | Info-Tech Research Group</h3>
+<p>1. Foundational AI principles will rewrite organizational DNA · 2. From copilots to vibe coding: AI will continue to reinvent IT · 3. Agentic AI will come of age</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://sloanreview.mit.edu/article/five-trends-in-ai-and-data-science-for-2026" target="_blank" class="news-item">
+<h3>Five Trends in AI and Data Science for 2026</h3>
+<p>From the AI bubble to GenAI&#39;s rise as an organizational tool, these are the 2026 AI trends to watch. Explore new data and advice from AI experts</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.reuters.com/technology/artificial-intelligence" target="_blank" class="news-item">
+<h3>Artificial Intelligence - AI News - Reuters</h3>
+<p>Explore the latest artificial intelligence news with Reuters - from AI breakthroughs and technology trends to regulation, ethics, business and global</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence" target="_blank" class="news-item">
+<h3>Artificial Intelligence News - ScienceDaily</h3>
+<p>[AI-Powered Robot Learns How to Harvest Tomatoes More Efficiently](https://www.sciencedaily.com/releases/2026/03/260317064512.htm). [Scientists Discover AI Can Make Humans More Creative](https://www.sciencedaily.com/releases/2026/03/260315004355.htm). [Scientists Built the Hardest AI Test Ever and the Results Are Surprising](https://www.sciencedaily.com/releases/2026/03/260313002650.htm). *   [AI Robot Harvests Tomatoes Efficiently](https://www.sciencedaily.com/releases/2026/03/260317064512.htm). *   [AI Might Unlock Human Creativity](https://www.sciencedaily.com/releases/2026/03/260315004355.htm). *   [Headlines](https://www.sciencedaily.com/news/computers_math/artificial_intelligence#headlines). [Researchers Tested AI Against 100,000 Humans on Creativity](https://www.sciencedaily.com/releases/2026/01/260125083356.htm). Researchers Warn Quantum Computers Have Serious Security Flaws](https://www.sciencedaily.com/releases/2026/01/260120000330.htm). [What If AI Becomes Conscious and We Never Know](https://www.sciencedaily.com/releases/2025/12/251221043223.htm). [This Tiny Chip Could Change the Future of Quantum Computing](https://www.sciencedaily.com/releases/2025/12/251226045341.htm). [The Human Brain May Work More Like AI Than Anyone Expected](https://www.sciencedaily.com/releases/2026/01/260120000308.htm). *   [Researchers Tested AI Against 100,000 Humans on Creativity](https://www.sciencedaily.com/releases/2026/01/260125083356.htm). Researchers Warn Quantum Computers Have Serious Security Flaws](https://www.sciencedaily.com/releases/2026/01/260120000330.htm). *   [What If AI Becomes Conscious and We Never Know](https://www.sciencedaily.com/releases/2025/12/251221043223.htm). *   [This Tiny Chip Could Change the Future of Quantum Computing](https://www.sciencedaily.com/releases/2025/12/251226045341.htm). *   [The Human Brain May Work More Like AI Than Anyone Expected](https://www.sciencedaily.com/releases/2026/01/260120000308.htm). *   [Breakthrough Optical Processor Lets AI Compute at the Speed of Light](https://www.sciencedaily.com/releases/2025/10/251027224833.htm). This New AI Just Found It](https://www.sciencedaily.com/releases/2025/10/251013040314.htm).</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://aibreakthroughawards.com" target="_blank" class="news-item">
+<h3>AI Breakthrough Awards</h3>
+<p>[![Image 1: AI Breakthrough Awards](https://aibreakthroughawards.com/wp-content/uploads/2018/03/AI_Breakthrough_Awards_Logo-outlined-1.png)](https://aibreakthroughawards.com/). ![Image 2: AI_Breakthrough_Awards_Logo](https://aibreakthroughawards.com/wp-content/uploads/2023/04/AI_Breakthrough_Awards_Logo.png). Now in its 9th year, the annual AI Breakthrough Awards reflect nearly a decade at the forefront of the Artificial Intelligence industry – tracking its evolution from early experimentation to real-world, enterprise-scale impact. ![Image 3](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-004.png). ![Image 20](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-008.png). An AI Breakthrough Award positions your organization among the innovators defining the future of intelligent technology. ![Image 21](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-004.png). ![Image 22](https://aibreakthroughawards.com/wp-content/uploads/2023/03/AI-Illustrations_05.png). The AI Breakthrough Awards program offers an unparalleled opportunity to showcase your innovation, gain global recognition and solidify your position as a leader in the AI industry. Winning an AI Breakthrough Award highlights your company as a trailblazer in AI technology innovation. With thousands of nominations coming in each year across a wide range of categories, winning an AI Breakthrough Award places your organization among the top innovators in the global artificial intelligence technology space. As an AI Breakthrough winner, you become part of a global community of artificial intelligence technology innovators.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+</div>
+</div>
+
+<div id="news-2026-06-19" class="day-news-container">
 <div class="update-info"><p>📅 日报日期: 2026-06-19 · 共 8 条资讯</p></div>
 <div class="featured-news">
 <span class="tag">🔥 重点头条</span>
@@ -1131,110 +1195,6 @@ ai.uncovered.ai@gmail.com
                         <div>
                             <span class="source">The New York Times</span>
                             <span style="margin-left:1rem; color:#888; font-size:0.8rem;">24 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-<div id="news-2026-05-30" class="day-news-container">
-            <div class="update-info"><p>📅 日报日期: 2026-05-30 · 共有 8 条资讯</p></div>
-            
-            <div class="featured-news">
-                <span class="tag">🔥 重点头条</span>
-                <h2>Anthropic超越OpenAI成为最具价值AI初创公司，最新融资估值逼近万亿美元</h2>
-                <p class="summary">Anthropic在最新一轮650亿美元融资后，成为硅谷估值最高的AI公司，总估值逼近1万亿美元，超越OpenAI成为行业新领头羊。</p>
-                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div>
-                        <span class="source">CNBC</span>
-                        <span style="margin-left:1rem; color:#888;">1 day ago</span>
-                    </div>
-                    <a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-                </div>
-            </div>
-        
-            <h3 class="news-section-title">📰 更多资讯</h3>
-            <div class="news-grid">
-                <a href="https://www.nytimes.com/2026/05/30/us/politics/anthropic-openai-super-pacs-midterms.html" target="_blank" class="news-item">
-                    <h3>「这是一场战争」：强大的AI超级政治行动委员会如何在中期选举中对决</h3>
-                    <p>一个与Anthropic结盟，另一个与OpenAI关联。两大AI超级政治行动委员会正投入数百万美元影响中期选举，引发各界对AI政治影响力的担忧。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">The New York Times</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">5 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.scientificamerican.com/article/new-protein-folding-ai-vastly-expands-on-alphafolds-efforts/" target="_blank" class="news-item">
-                    <h3>新型蛋白质折叠AI大幅扩展AlphaFold的研究成果</h3>
-                    <p>名为ESMFold2的新型AI工具生成了开源蛋白质图谱，极大扩展了已知蛋白质宇宙的边界，为药物研发和生物学研究提供全新资源。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Scientific American</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.kget.com/news/local-news/csub-partners-with-ai-company-for-new-first-in-the-nation-program/" target="_blank" class="news-item">
-                    <h3>加州州立大学贝克斯菲尔德分校与OpenAI合作推出全美首个校企AI合作项目</h3>
-                    <p>人工智能公司与大学的首次合作项目在贝克斯菲尔德落地。CSUB与OpenAI联手推出全美首创的合作计划，推动AI教育与产业融合。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">KGET.com</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">14 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://fedscoop.com/nist-ai-consortium-reemerges-new-name-scope-members/" target="_blank" class="news-item">
-                    <h3>NIST AI联盟更名换面重新启动，扩大范围并招募新成员</h3>
-                    <p>美国国家标准与技术研究院（NIST）旗下的AI联盟以新名称和更广泛的使命重新启动。此前其AI安全研究所已更名为AI标准与创新中心。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">FedScoop</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">16 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members" target="_blank" class="news-item">
-                    <h3>NIST扩大AI联盟范围，面向全球招募新成员</h3>
-                    <p>该联盟将聚焦AI创新与应用，设立六个工作组分别专注于AI测量科学与评估的不同方面，推动AI标准化进程。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">National Institute of Standards and Technology (.gov)</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://federalnewsnetwork.com/artificial-intelligence/2026/05/as-ai-reshapes-work-a-new-program-is-showing-what-it-takes-to-keep-up/" target="_blank" class="news-item">
-                    <h3>AI重塑工作方式，新项目展示员工如何跟上变革步伐</h3>
-                    <p>随着AI改变工作方式，一项全新的实践项目正在展示员工需要具备哪些技能才能跟上技术变革，为劳动力适应AI时代提供参考路径。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Federal News Network</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">19 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://simplywall.st/stocks/us/semiconductors/nasdaq-on/on-semiconductor/news/on-semiconductors-ai-data-center-surge-fuels-beat-and-raises/amp" target="_blank" class="news-item">
-                    <h3>安森美半导体AI数据中心业务激增推动业绩超预期，估值问题随之而来</h3>
-                    <p>安森美半导体公布第一季度业绩，营收和利润均超预期。公司强调AI数据中心收入增长是主要驱动力，但高速增长也引发了对其估值合理性的讨论。</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Simply Wall Street</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
                         </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
