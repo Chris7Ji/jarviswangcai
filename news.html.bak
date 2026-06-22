@@ -61,8 +61,9 @@
     </header>
     
     <div class="news-date-selector">
-                                                                                        <div class="date-pills" id="datePillsContainer">
-        <button class="date-pill active" data-date="2026-06-20" onclick="showDate('2026-06-20')">6月20日 (最新)</button>
+                                                                                                <div class="date-pills" id="datePillsContainer">
+        <button class="date-pill active" data-date="2026-06-21" onclick="showDate('2026-06-21')">6月21日 (最新)</button>
+        <button class="date-pill" data-date="2026-06-20" onclick="showDate('2026-06-20')">6月20日</button>
         <button class="date-pill" data-date="2026-06-19" onclick="showDate('2026-06-19')">6月19日</button>
         <button class="date-pill" data-date="2026-06-18" onclick="showDate('2026-06-18')">6月18日</button>
         <button class="date-pill" data-date="2026-06-17" onclick="showDate('2026-06-17')">6月17日</button>
@@ -75,11 +76,74 @@
         <button class="date-pill" data-date="2026-06-04" onclick="showDate('2026-06-04')">6月4日</button>
         <button class="date-pill" data-date="2026-06-02" onclick="showDate('2026-06-02')">6月2日</button>
         <button class="date-pill" data-date="2026-06-01" onclick="showDate('2026-06-01')">6月1日</button>
-        <button class="date-pill" data-date="2026-05-31" onclick="showDate('2026-05-31')">5月31日</button>
             
         </div>
     <main class="news-container">
-<div id="news-2026-06-20" class="day-news-container active">
+<div id="news-2026-06-21" class="day-news-container active">
+<div class="update-info"><p>📅 日报日期: 2026-06-21 · 共 8 条资讯</p></div>
+<div class="featured-news">
+<span class="tag">🔥 重点头条</span>
+<h2>The Latest AI News and Breakthroughs That Matter Most</h2>
+<p class="summary">Stay ahead with the latest AI news, AI breakthroughs, AI controversies, AI innovations and agentic AI news from May and June 2026.</p>
+<div class="meta" style="margin-top:1rem;font-size:0.9rem;">
+<div><span class="source">AI News</span></div>
+<a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" style="color:#667eea;font-weight:bold;">阅读原文 →</a>
+</div></div>
+<h3 class="news-section-title">📰 更多资讯</h3>
+<div class="news-grid">
+<a href="https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026" target="_blank" class="news-item">
+<h3>What&#39;s next in AI: 7 trends to watch in 2026 - Microsoft Source</h3>
+<p>Seven AI trends to watch in 2026 will make AI a true partner — boosting teamwork, security, research momentum and infrastructure efficiency.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.infotech.com/research/ss/ai-trends-2026" target="_blank" class="news-item">
+<h3>AI Trends 2026 | Info-Tech Research Group</h3>
+<p>1. Foundational AI principles will rewrite organizational DNA · 2. From copilots to vibe coding: AI will continue to reinvent IT · 3. Agentic AI will come of age</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" target="_blank" class="news-item">
+<h3>The trends that will shape AI and tech in 2026 - IBM</h3>
+<p>Reporter Anabelle Nicoud spoke to several experts across AI, security, quantum and beyond to better understand where tech will take us in 2026.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://sloanreview.mit.edu/article/five-trends-in-ai-and-data-science-for-2026" target="_blank" class="news-item">
+<h3>Five Trends in AI and Data Science for 2026</h3>
+<p>From the AI bubble to GenAI&#39;s rise as an organizational tool, these are the 2026 AI trends to watch. Explore new data and advice from AI experts</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.youtube.com/watch?v=IjHIE2DMUNg&amp;vl=en" target="_blank" class="news-item">
+<h3>15 New Things AI Can Do in 2026 That Were Impossible Last Year</h3>
+<p>... AI news: ai.uncovered.official For sponsorship inquiries please contact us at: contact@aiuncovered.tech or: ai.uncovered.ai@gmail.com.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://aibreakthroughawards.com" target="_blank" class="news-item">
+<h3>AI Breakthrough Awards</h3>
+<p>[![Image 1: AI Breakthrough Awards](https://aibreakthroughawards.com/wp-content/uploads/2018/03/AI_Breakthrough_Awards_Logo-outlined-1.png)](https://aibreakthroughawards.com/). ![Image 2: AI_Breakthrough_Awards_Logo](https://aibreakthroughawards.com/wp-content/uploads/2023/04/AI_Breakthrough_Awards_Logo.png). Now in its 9th year, the annual AI Breakthrough Awards reflect nearly a decade at the forefront of the Artificial Intelligence industry – tracking its evolution from early experimentation to real-world, enterprise-scale impact. ![Image 3](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-004.png). ![Image 20](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-008.png). An AI Breakthrough Award positions your organization among the innovators defining the future of intelligent technology. ![Image 21](https://aibreakthroughawards.com/wp-content/uploads/2023/03/ai-004.png). ![Image 22](https://aibreakthroughawards.com/wp-content/uploads/2023/03/AI-Illustrations_05.png). The AI Breakthrough Awards program offers an unparalleled opportunity to showcase your innovation, gain global recognition and solidify your position as a leader in the AI industry. Winning an AI Breakthrough Award highlights your company as a trailblazer in AI technology innovation. With thousands of nominations coming in each year across a wide range of categories, winning an AI Breakthrough Award places your organization among the top innovators in the global artificial intelligence technology space. As an AI Breakthrough winner, you become part of a global community of artificial intelligence technology innovators.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.reddit.com/r/explainlikeimfive/comments/1101w9e/eli5_the_breakthrough_that_lead_to_the_current" target="_blank" class="news-item">
+<h3>The breakthrough that lead to the current surge in Artificial Intelligence.</h3>
+<p>I can think of three main ones; hardware becoming better, big open-source or curated datasets, and the rise of more advanced learning algorithms like neural</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+</div>
+</div>
+
+<div id="news-2026-06-20" class="day-news-container">
 <div class="update-info"><p>📅 日报日期: 2026-06-20 · 共 8 条资讯</p></div>
 <div class="featured-news">
 <span class="tag">🔥 重点头条</span>
@@ -1091,110 +1155,6 @@ ai.uncovered.ai@gmail.com
                         <div>
                             <span class="source">The Guardian</span>
                             <span style="margin-left:1rem; color:#888; font-size:0.8rem;">2 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-<div id="news-2026-05-31" class="day-news-container">
-            <div class="update-info"><p>📅 日报日期: 2026-05-31 · 共有 8 条资讯</p></div>
-            
-            <div class="featured-news">
-                <span class="tag">🔥 重点头条</span>
-                <h2>NVDA Stock Quote Price and Forecast</h2>
-                <p class="summary">View NVIDIA Corporation NVDA stock quote prices, financial information, real-time forecasts, and company news from CNN.</p>
-                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div>
-                        <span class="source">CNN</span>
-                        <span style="margin-left:1rem; color:#888;">3 hours ago</span>
-                    </div>
-                    <a href="https://www.cnn.com/markets/stocks/NVDA" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-                </div>
-            </div>
-        
-            <h3 class="news-section-title">📰 更多资讯</h3>
-            <div class="news-grid">
-                <a href="https://stocktwits.com/news-articles/markets/equity/michael-burry-calls-adobe-a-fat-pitch-in-latest-saas-analysis-backs-firefly-and-ai-tie-ups-with-open-ai-google/cZgSWDzRet8" target="_blank" class="news-item">
-                    <h3>Michael Burry Calls Adobe A ‘Fat Pitch’ In Latest Saas Analysis – Backs Firefly And AI Tie-Ups With OpenAI, Google</h3>
-                    <p>The Big Short” argued that Adobe's forward outlook remains stronger than the market assumes, despite fears that AI could disrupt its core creative software...</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Stocktwits</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">9 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.ft.com/content/da80e72b-31e5-42ca-995c-5fc7d457915e?syn-25a6b1a6=1" target="_blank" class="news-item">
-                    <h3>AI is here. What do you want from it?</h3>
-                    <p>The technology's development belongs to everyone — share your vision with us.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Financial Times</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">10 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.aol.com/articles/anthropic-just-delivered-spectacular-news-230500725.html" target="_blank" class="news-item">
-                    <h3>Anthropic Just Delivered Spectacular News For Amazon and Alphabet</h3>
-                    <p>AI start-up Anthropic just raised $65 billion at a post-money valuation of $965 billion. The company also launched its latest model, Claude Opus 4.8.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">AOL.com</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 hour ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.nytimes.com/2026/05/30/opinion/ai-high-school.html" target="_blank" class="news-item">
-                    <h3>Opinion | The First A.I. High School in the U.S. Is Surprisingly Human</h3>
-                    <p>Schools are not like start-ups, because children's minds should not be tied to the whims of the marketplace.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">The New York Times</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">1 day ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://simplywall.st/stocks/us/tech/nyse-jbl/jabil/news/jabil-leans-on-ai-infrastructure-growth-as-stock-trades-abov/amp" target="_blank" class="news-item">
-                    <h3>Jabil Leans On AI Infrastructure Growth As Stock Trades Above Targets</h3>
-                    <p>Jabil's Intelligent Infrastructure division reported a 52% year over year revenue increase, driven by demand for AI enabled data center and networking...</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Simply Wall Street</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://apnews.com/article/ai-song-generator-musician-parkinsons-ac2a6ed263256c12f68eb827f7e8238a" target="_blank" class="news-item">
-                    <h3>AI helped a musician with Parkinson’s finish his new album when he could no longer play guitar</h3>
-                    <p>Artificial intelligence is helping a London-based singer-songwriter continue writing and recording music after Parkinson's disease largely took away his...</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">AP News</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">21 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.nytimes.com/2026/05/29/business/economy/ai-jobs-productivity.html" target="_blank" class="news-item">
-                    <h3>A.I. Doesn’t Have to Mean Layoffs</h3>
-                    <p>A French multinational, Schneider Electric, decided to use artificial intelligence in manufacturing to make workers more productive, rather than to replace...</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">The New York Times</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">24 hours ago</span>
                         </div>
                         <span>阅读原文 &rarr;</span>
                     </div>
