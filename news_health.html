@@ -1,170 +1,258 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🧬 健康长寿科研成果简报 | 2026年6月17日</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f0f4f8; color: #1a202c; line-height: 1.7; }
-  .container { max-width: 780px; margin: 0 auto; padding: 24px 16px; }
-  .header { background: linear-gradient(135deg, #0d9488 0%, #2563eb 100%); color: #fff; padding: 36px 28px; border-radius: 16px; margin-bottom: 28px; text-align: center; }
-  .header h1 { font-size: 26px; margin-bottom: 8px; }
-  .header .date { font-size: 15px; opacity: 0.9; }
-  .header .subtitle { font-size: 13px; opacity: 0.75; margin-top: 6px; }
-  .card { background: #fff; border-radius: 14px; padding: 24px 26px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 5px solid #0d9488; transition: transform 0.2s; }
-  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
-  .card:nth-child(2) { border-left-color: #2563eb; }
-  .card:nth-child(3) { border-left-color: #7c3aed; }
-  .card:nth-child(4) { border-left-color: #db2777; }
-  .card:nth-child(5) { border-left-color: #ea580c; }
-  .card .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; color: #fff; }
-  .card:nth-child(1) .badge { background: #0d9488; }
-  .card:nth-child(2) .badge { background: #2563eb; }
-  .card:nth-child(3) .badge { background: #7c3aed; }
-  .card:nth-child(4) .badge { background: #db2777; }
-  .card:nth-child(5) .badge { background: #ea580c; }
-  .card h2 { font-size: 19px; margin-bottom: 8px; color: #111827; }
-  .card .meta { font-size: 13px; color: #6b7280; margin-bottom: 12px; }
-  .card .meta span { margin-right: 16px; }
-  .card .summary { font-size: 15px; color: #374151; }
-  .card .summary p { margin-bottom: 8px; }
-  .card .tags { margin-top: 12px; }
-  .card .tags span { display: inline-block; font-size: 12px; background: #f3f4f6; color: #4b5563; padding: 3px 10px; border-radius: 12px; margin-right: 6px; margin-bottom: 4px; }
-  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 20px 0; }
-  .footer a { color: #6b7280; text-decoration: none; }
-  .toc { background: #fff; border-radius: 14px; padding: 20px 26px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-  .toc h3 { font-size: 16px; margin-bottom: 12px; color: #111827; }
-  .toc ol { padding-left: 20px; }
-  .toc li { margin-bottom: 6px; font-size: 14px; }
-  .toc a { color: #2563eb; text-decoration: none; }
-  .toc a:hover { text-decoration: underline; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏥 健康长寿科研成果简报 - 2026年6月22日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header .date {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .header .subtitle {
+            font-size: 0.95em;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+        .article {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+            border-left: 5px solid;
+        }
+        .article:hover { transform: translateY(-3px); }
+        .article:nth-child(1) { border-left-color: #e74c3c; }
+        .article:nth-child(2) { border-left-color: #3498db; }
+        .article:nth-child(3) { border-left-color: #2ecc71; }
+        .article:nth-child(4) { border-left-color: #f39c12; }
+        .article:nth-child(5) { border-left-color: #9b59b6; }
+        .article .number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        .article:nth-child(1) .number { background: #e74c3c; }
+        .article:nth-child(2) .number { background: #3498db; }
+        .article:nth-child(3) .number { background: #2ecc71; }
+        .article:nth-child(4) .number { background: #f39c12; }
+        .article:nth-child(5) .number { background: #9b59b6; }
+        .article h2 {
+            display: inline;
+            font-size: 1.25em;
+            color: #2c3e50;
+        }
+        .article .meta {
+            margin: 12px 0;
+            font-size: 0.88em;
+            color: #7f8c8d;
+        }
+        .article .meta span {
+            margin-right: 15px;
+        }
+        .article .meta .tag {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            color: #555;
+        }
+        .article .abstract {
+            font-size: 0.98em;
+            line-height: 1.75;
+            color: #444;
+            margin-top: 12px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .article .source-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .article .source-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 0.88em;
+        }
+        .footer a { color: white; text-decoration: none; }
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .keywords .tag {
+            background: #e8f4f8;
+            color: #2980b9;
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-size: 0.82em;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <h1>🧬 健康长寿科研成果简报</h1>
-    <div class="date">2026年6月17日（周二）</div>
-    <div class="subtitle">关键词：逆龄药物 · 干细胞再生 · 电脉冲抗衰 · AI长寿模型 · NAD+研究</div>
-  </div>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 健康长寿科研成果简报</h1>
+            <div class="date">📅 2026年6月22日（周一）</div>
+            <div class="subtitle">来源：Nature Genetics · Nature Aging · NPJ Aging · Shock · FightAging.org</div>
+        </div>
 
-  <div class="toc">
-    <h3>📋 本期目录</h3>
-    <ol>
-      <li><a href="#b1">里程碑：全球首个逆龄药物首次注入人体</a></li>
-      <li><a href="#b2">重大突破：衰老血液干细胞成功重返年轻</a></li>
-      <li><a href="#b3">电脉冲逆转衰老：海鞘实验显著延长寿命</a></li>
-      <li><a href="#b4">英矽智能联手Human Longevity打造首个长寿AI基础模型</a></li>
-      <li><a href="#b5">新研究颠覆流行长寿补充剂的科学论据</a></li>
-    </ol>
-  </div>
+        <!-- Article 1 -->
+        <div class="article">
+            <span class="number">1</span>
+            <h2>表观遗传早衰综合征：DNA甲基化时钟与衰老病理的因果联系</h2>
+            <div class="meta">
+                <span>📰 Nature Genetics</span>
+                <span>📅 2026-06-17</span>
+                <span class="tag">🔬 表观遗传重编程</span>
+            </div>
+            <div class="keywords">
+                <span class="tag">DNA甲基化</span>
+                <span class="tag">表观遗传时钟</span>
+                <span class="tag">早衰综合征</span>
+                <span class="tag">干细胞功能障碍</span>
+            </div>
+            <div class="abstract">
+                随着年龄增长，基因组中会出现类似时钟的DNA甲基化变化，但这些变化究竟是衰老的"乘客"还是"驱动者"一直存在争议。本研究首次报告了一种全新的表观遗传驱动的加速衰老综合征，将年龄相关的DNA高甲基化与干细胞功能障碍及组织衰退直接联系起来。研究发现，DNMT3A基因的功能获得性突变导致了成人干细胞功能受损，进而引发多组织早衰样病理变化。这一突破性发现为理解表观遗传变化在衰老中的因果作用提供了关键证据，也为开发靶向表观遗传时钟的抗衰老疗法开辟了新途径。
+            </div>
+            <a href="https://www.nature.com/articles/s41588-026-02632-9" class="source-link" target="_blank">🔗 阅读原文 →</a>
+        </div>
 
-  <div class="card" id="b1">
-    <span class="badge">🔥 头条突破</span>
-    <h2>全球首个逆龄药物首次注入人体</h2>
-    <div class="meta">
-      <span>📰 Business Insider / Fox News / NDTV</span>
-      <span>📅 2026年6月9日</span>
-    </div>
-    <div class="summary">
-      <p>2026年6月9日，多家国际主流媒体（Business Insider、Fox News、NDTV、Morning Brew等）同步报道了一项里程碑式的事件：全球首个"逆龄药物"（reverse-aging drug）首次被注入人体，标志着抗衰老研究从实验室走向临床的重要一步。</p>
-      <p>该试验被描述为"突破性衰老逆转治疗"（Groundbreaking Aging Reversal Trial），首位患者已成功接受给药。这是人类历史上首次尝试通过药物手段系统性逆转人体衰老进程，引发了科学界和公众的广泛关注。此前，衰老逆转研究主要局限于动物模型和细胞实验，此次人体试验的成功启动意味着抗衰老医学正式迈入临床验证阶段。</p>
-      <p>该事件也引发了关于伦理、安全性和长期效果的激烈讨论。多位科学家呼吁保持审慎乐观，强调后续需要严格的临床试验数据来验证其安全性和有效性。</p>
-    </div>
-    <div class="tags">
-      <span>#逆龄药物</span>
-      <span>#临床试验</span>
-      <span>#抗衰老</span>
-      <span>#里程碑</span>
-    </div>
-  </div>
+        <!-- Article 2 -->
+        <div class="article">
+            <span class="number">2</span>
+            <h2>衰老小鼠中Senolytic治疗的分子与生理效应全景分析</h2>
+            <div class="meta">
+                <span>📰 Nature Aging</span>
+                <span>📅 2026-06-17</span>
+                <span class="tag">💊 Senolytics</span>
+            </div>
+            <div class="keywords">
+                <span class="tag">达沙替尼</span>
+                <span class="tag">槲皮素</span>
+                <span class="tag">单细胞转录组</span>
+                <span class="tag">免疫重塑</span>
+                <span class="tag">纤维化</span>
+            </div>
+            <div class="abstract">
+                Senolytics（衰老细胞清除药物）如达沙替尼联合槲皮素（D+Q）在调控衰老方面展现出巨大潜力，但其组织特异性疗效和最佳干预时机仍知之甚少。本研究通过多组织单细胞分析技术，在不同衰老表型和组织背景下，对D+Q治疗在衰老小鼠中的效果进行了全面评估。研究发现，D+Q治疗在免疫、纤维化和代谢方面均产生了显著重塑效果，且早期和长期干预显示出更强的疗效。该研究为优化senolytic治疗方案、理解其作用机制提供了前所未有的分子层面证据，对推动抗衰老临床试验具有重要指导意义。
+            </div>
+            <a href="https://www.nature.com/articles/s43587-026-01130-1" class="source-link" target="_blank">🔗 阅读原文 →</a>
+        </div>
 
-  <div class="card" id="b2">
-    <span class="badge">🩸 干细胞再生</span>
-    <h2>重大突破：衰老血液干细胞成功重返年轻</h2>
-    <div class="meta">
-      <span>📰 ScienceDaily / Nature</span>
-      <span>📅 2026年5月12日 / 4月17日</span>
-    </div>
-    <div class="summary">
-      <p>2026年5月12日，ScienceDaily报道了一项被称为"重大抗衰老突破"的研究成果：科学家成功将衰老的血液干细胞恢复至年轻状态。这一发现为通过干细胞疗法对抗衰老相关疾病开辟了新路径。</p>
-      <p>此前在4月17日，权威期刊《Nature》发表了一篇题为"Blood as the mirror and modulator of aging: mechanistic insights and rejuvenation strategies"（血液作为衰老的镜子与调节器：机制洞察与再生策略）的综述文章，系统梳理了血液在衰老过程中的核心调控角色，以及通过血液干预实现机体再生的科学基础。</p>
-      <p>血液干细胞（造血干细胞）是维持免疫系统和血液系统正常运作的基石。随着年龄增长，这些干细胞的功能逐渐衰退，导致免疫力下降、慢性炎症增加和多种老年疾病。研究人员通过特定的分子干预手段，成功逆转了这些干细胞的衰老标志物，使其功能恢复到接近年轻状态。这一成果为开发基于干细胞再生的抗衰老疗法奠定了重要基础。</p>
-    </div>
-    <div class="tags">
-      <span>#血液干细胞</span>
-      <span>#再生医学</span>
-      <span>#Nature</span>
-      <span>#细胞再生</span>
-    </div>
-  </div>
+        <!-- Article 3 -->
+        <div class="article">
+            <span class="number">3</span>
+            <h2>限时进食将小鼠健康寿命置于"时钟"调控之下</h2>
+            <div class="meta">
+                <span>📰 Nature Aging</span>
+                <span>📅 2026-06-05</span>
+                <span class="tag">🍽️ 限时进食</span>
+            </div>
+            <div class="keywords">
+                <span class="tag">时间限制性喂养</span>
+                <span class="tag">健康寿命</span>
+                <span class="tag">性别差异</span>
+                <span class="tag">衰老病理</span>
+            </div>
+            <div class="abstract">
+                由Iiams等人开展的一项新研究揭示，终身对非肥胖倾向小鼠进行标准饮食的限时进食（Time-Restricted Feeding, TRF），能够显著延长其健康寿命（healthspan），且在衰老相关病理和寿命方面表现出性别特异性效应。研究表明，TRF不仅改善了代谢健康指标，还延迟了多种年龄相关疾病的发生。这一发现为人类间歇性禁食的抗衰老益处提供了重要的实验支撑，并强调了在制定饮食干预策略时需要考虑性别差异。该研究为将限时进食作为简单可行的延缓衰老手段提供了坚实的科学依据。
+            </div>
+            <a href="https://www.nature.com/articles/s43587-026-01145-8" class="source-link" target="_blank">🔗 阅读原文 →</a>
+        </div>
 
-  <div class="card" id="b3">
-    <span class="badge">⚡ 电脉冲抗衰</span>
-    <h2>电脉冲逆转衰老：海鞘实验显著延长寿命</h2>
-    <div class="meta">
-      <span>📰 Phys.org / UC San Diego / Earth.com / BGR</span>
-      <span>📅 2026年5月28日</span>
-    </div>
-    <div class="summary">
-      <p>2026年5月28日，多家科学媒体报道了一项来自加州大学圣地亚哥分校的突破性发现：短暂的电脉冲可以显著延长海鞘（sea squirts）的寿命，其机制是通过"充电"式激活衰老的干细胞实现年龄逆转。</p>
-      <p>海鞘是一种与人类有较近进化关系的海洋生物，其干细胞衰老机制与人类有诸多相似之处。研究人员发现，通过施加特定的短暂电脉冲，可以有效"重启"衰老干细胞的再生能力，使老化组织恢复活力，从而显著延长了实验个体的寿命。</p>
-      <p>这一发现为人类抗衰老研究提供了全新的思路和线索。电刺激作为一种非药物、非侵入性的干预手段，如果能在人体中得到验证，将为延缓衰老和治疗年龄相关疾病提供一种全新、安全且经济的技术路径。研究团队计划进一步在哺乳动物模型中验证这一效果。</p>
-    </div>
-    <div class="tags">
-      <span>#电脉冲</span>
-      <span>#干细胞充电</span>
-      <span>#海鞘</span>
-      <span>#寿命延长</span>
-    </div>
-  </div>
+        <!-- Article 4 -->
+        <div class="article">
+            <span class="number">4</span>
+            <h2>免疫衰老在多器官衰老中的作用机制与转化机遇</h2>
+            <div class="meta">
+                <span>📰 NPJ Aging</span>
+                <span>📅 2026-06-19</span>
+                <span class="tag">🧬 免疫衰老</span>
+            </div>
+            <div class="keywords">
+                <span class="tag">免疫衰老</span>
+                <span class="tag">多器官串扰</span>
+                <span class="tag">Senolytic</span>
+                <span class="tag">Senomorphic</span>
+                <span class="tag">健康寿命延长</span>
+            </div>
+            <div class="abstract">
+                本综述全面阐述了免疫衰老（Immunosenescence）在全身性及多器官衰老中的作用机制，深入探讨了器官间串扰如何加速衰老进程。文章指出，免疫系统的衰老不仅导致机体对感染的易感性增加和疫苗应答减弱，还通过慢性炎症信号影响心脏、大脑、肝脏等多个器官的功能衰退。研究特别讨论了包括senolytic（衰老细胞清除）和senomorphic（衰老细胞表型调节）在内的治疗策略在健康寿命延长方面的潜力与局限性，为未来抗衰老免疫疗法的开发提供了重要理论框架和转化方向。
+            </div>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=immunosenescence+aging+2026" class="source-link" target="_blank">🔗 阅读原文 →</a>
+        </div>
 
-  <div class="card" id="b4">
-    <span class="badge">🤖 AI+长寿</span>
-    <h2>英矽智能联手Human Longevity打造首个长寿AI基础模型</h2>
-    <div class="meta">
-      <span>📰 Insilico Medicine / 美通社</span>
-      <span>📅 2026年5月27日 / 4月21日</span>
-    </div>
-    <div class="summary">
-      <p>2026年5月27日，AI驱动的药物研发公司英矽智能（Insilico Medicine）宣布与全球领先的长寿科学机构Human Longevity达成战略合作，双方将共同开发业界首个面向长寿科学的人工智能基础模型（AI Foundation Model），旨在加速衰老相关疾病的药物发现。</p>
-      <p>此前在4月21日，英矽智能已宣布成立业界首个"长寿委员会"（Longevity Board），由礼来公司分子发现集团副总裁担任主席，汇聚全球衰老研究领域的顶尖科学家，加速AI驱动的衰老研究药物发现。</p>
-      <p>该合作将利用英矽智能在AI药物发现方面的技术优势，结合Human Longevity在衰老生物学和长寿科学领域的深厚积累，通过大规模多组学数据训练AI模型，系统性地识别衰老相关的药物靶点和生物标志物。这标志着AI技术在长寿科学领域的应用从概念验证走向规模化部署，有望大幅缩短抗衰老药物的研发周期。</p>
-    </div>
-    <div class="tags">
-      <span>#AI药物发现</span>
-      <span>#英矽智能</span>
-      <span>#长寿科学</span>
-      <span>#基础模型</span>
-    </div>
-  </div>
+        <!-- Article 5 -->
+        <div class="article">
+            <span class="number">5</span>
+            <h2>靶向细胞衰老促进老年小鼠烧伤创面愈合</h2>
+            <div class="meta">
+                <span>📰 Shock</span>
+                <span>📅 2026-06-22</span>
+                <span class="tag">🩹 细胞再生</span>
+            </div>
+            <div class="keywords">
+                <span class="tag">细胞衰老</span>
+                <span class="tag">创面愈合</span>
+                <span class="tag">烧伤</span>
+                <span class="tag">老年医学</span>
+            </div>
+            <div class="abstract">
+                老年人因烧伤等创伤导致的创面愈合困难一直是临床难题。本研究首次在老年小鼠烧伤模型中评估了靶向清除衰老细胞对创面愈合的促进作用。研究发现，衰老细胞在烧伤创面中大量积累，分泌促炎因子和基质金属蛋白酶，阻碍了正常的组织修复进程。通过应用senolytic药物选择性清除这些衰老细胞，老年小鼠的创面愈合速度和质量均获得显著改善，炎症反应得到更好调控，胶原沉积和血管新生也明显增强。这一发现为改善老年人创伤修复能力提供了全新的治疗策略，具有重要的临床转化前景。
+            </div>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=senolytics+wound+healing+aging+2026" class="source-link" target="_blank">🔗 阅读原文 →</a>
+        </div>
 
-  <div class="card" id="b5">
-    <span class="badge">⚠️ 重要警示</span>
-    <h2>新研究颠覆流行长寿补充剂的科学论据</h2>
-    <div class="meta">
-      <span>📰 The New York Times / ScienceDaily</span>
-      <span>📅 2026年5月23日 / 5月27日</span>
+        <div class="footer">
+            <p>📊 本简报由 AI 自动采集生成 | 数据更新时间：2026-06-22 08:47 CST</p>
+            <p style="margin-top: 8px;">搜索关键词：longevity research, anti-aging breakthrough, senolytics, epigenetic reprogramming, NAD+ NMN, 抗衰老研究, 长寿科学, 细胞再生</p>
+            <p style="margin-top: 8px;">数据来源：<a href="https://www.nature.com">Nature</a> · <a href="https://pubmed.ncbi.nlm.nih.gov">PubMed</a> · <a href="https://www.fightaging.org">FightAging.org</a></p>
+        </div>
     </div>
-    <div class="summary">
-      <p>2026年5月23日，《纽约时报》报道了一项引发广泛关注的新研究，该研究"颠覆了人们对一种流行长寿补充剂的认知"（Upends the Argument for a Popular Longevity Supplement），对该补充剂的科学依据提出了根本性质疑。</p>
-      <p>几乎同一时期（5月27日），ScienceDaily报道了一项更令人警醒的发现：一种广受欢迎的抗衰老药物组合在小鼠实验中导致了严重的脑损伤。这一结果对当前抗衰老补充剂市场中的热门产品敲响了安全警钟。</p>
-      <p>这两项研究共同提醒公众和科学界：抗衰老领域的快速发展伴随着不可忽视的风险。许多在市场上热销的长寿补充剂（如NAD+前体NMN、雷帕霉素类似物等）尚未经过充分的人体安全验证。科学界呼吁消费者在选择抗衰老产品时应更加审慎，优先参考经过严格临床试验验证的数据，而非仅凭动物实验或理论推导。这也凸显了加强抗衰老产品监管的紧迫性。</p>
-    </div>
-    <div class="tags">
-      <span>#长寿补充剂</span>
-      <span>#安全风险</span>
-      <span>#NAD+</span>
-      <span>#NMN</span>
-      <span>#监管</span>
-    </div>
-  </div>
-
-  <div class="footer">
-    <p>📧 本简报由 OpenClaw AI 自动生成 | 数据来源：Google News、Nature、ScienceDaily、PubMed</p>
-    <p>生成时间：2026-06-17 09:07 CST | <a href="https://jiaviswangcai.ai">jiaviswangcai.ai</a></p>
-  </div>
-</div>
 </body>
 </html>
