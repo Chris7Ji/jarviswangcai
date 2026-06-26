@@ -61,8 +61,9 @@
     </header>
     
     <div class="news-date-selector">
-                                                                                                                        <div class="date-pills" id="datePillsContainer">
-        <button class="date-pill active" data-date="2026-06-24" onclick="showDate('2026-06-24')">6月24日 (最新)</button>
+                                                                                                                                <div class="date-pills" id="datePillsContainer">
+        <button class="date-pill active" data-date="2026-06-25" onclick="showDate('2026-06-25')">6月25日 (最新)</button>
+        <button class="date-pill" data-date="2026-06-24" onclick="showDate('2026-06-24')">6月24日</button>
         <button class="date-pill" data-date="2026-06-23" onclick="showDate('2026-06-23')">6月23日</button>
         <button class="date-pill" data-date="2026-06-22" onclick="showDate('2026-06-22')">6月22日</button>
         <button class="date-pill" data-date="2026-06-21" onclick="showDate('2026-06-21')">6月21日</button>
@@ -75,11 +76,76 @@
         <button class="date-pill" data-date="2026-06-14" onclick="showDate('2026-06-14')">6月14日</button>
         <button class="date-pill" data-date="2026-06-13" onclick="showDate('2026-06-13')">6月13日</button>
         <button class="date-pill" data-date="2026-06-12" onclick="showDate('2026-06-12')">6月12日</button>
-        <button class="date-pill" data-date="2026-06-09" onclick="showDate('2026-06-09')">6月9日</button>
             
         </div>
     <main class="news-container">
-<div id="news-2026-06-24" class="day-news-container active">
+<div id="news-2026-06-25" class="day-news-container active">
+<div class="update-info"><p>📅 日报日期: 2026-06-25 · 共 8 条资讯</p></div>
+<div class="featured-news">
+<span class="tag">🔥 重点头条</span>
+<h2>The latest AI news we announced in May 2026</h2>
+<p class="summary">Google&#39;s May 2026 updates center on the new &quot;agentic&quot; era, featuring the Gemini 3.5 model and Gemini Omni for advanced reasoning and creation.</p>
+<div class="meta" style="margin-top:1rem;font-size:0.9rem;">
+<div><span class="source">AI News</span></div>
+<a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026" target="_blank" style="color:#667eea;font-weight:bold;">阅读原文 →</a>
+</div></div>
+<h3 class="news-section-title">📰 更多资讯</h3>
+<div class="news-grid">
+<a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" target="_blank" class="news-item">
+<h3>The trends that will shape AI and tech in 2026</h3>
+<p>Reporter Anabelle Nicoud spoke to several experts across AI, security, quantum and beyond to better understand where tech will take us in 2026.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026" target="_blank" class="news-item">
+<h3>What&#39;s next in AI: 7 trends to watch in 2026</h3>
+<p>Seven AI trends to watch in 2026 will make AI a true partner — boosting teamwork, security, research momentum and infrastructure efficiency.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://techcrunch.com/category/artificial-intelligence" target="_blank" class="news-item">
+<h3>AI News &amp; Artificial Intelligence</h3>
+<p>AI News coverage on artificial intelligence and machine learning tech, the companies building them, and the ethical issues AI raises today.</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://sloanreview.mit.edu/article/five-trends-in-ai-and-data-science-for-2026" target="_blank" class="news-item">
+<h3>Five Trends in AI and Data Science for 2026</h3>
+<p>From the AI bubble to GenAI&#39;s rise as an organizational tool, these are the 2026 AI trends to watch. Explore new data and advice from AI experts</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://www.reuters.com/technology/artificial-intelligence" target="_blank" class="news-item">
+<h3>Artificial Intelligence - AI News</h3>
+<p>Artificial Intelligence is creating the next normal June 22, 2026 Trump signs orders calling for powerful quantum computer, targeting 2028. Modular for $4</p>
+<div class="meta">
+<div><span class="source">AI News</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://techhistorylab.com/alphago-artificial-intelligence-breakthrough" target="_blank" class="news-item">
+<h3>AlphaGo Artificial Intelligence Breakthrough Shock</h3>
+<p>Title: AlphaGo Artificial Intelligence Breakthrough Shock
+# The Shocking AlphaGo Breakthrough: How AI Mastered the World’s Most Complex Game. Illustration showing the AlphaGo Artificial Intelligence Breakthrough, featuring a robot AI system playing Go against Lee Sedol with a neural network display representing advanced AI learning. The **AlphaGo Artificial Intelligence Breakthrough** stands as one of the most revolutionary milestones in modern AI history. Unlike earlier AI systems that relied on brute-force computing, AlphaGo introduced a new paradigm by combining neural networks with advanced search algorithms. The AlphaGo Artificial Intelligence Breakthrough was not just about winning a game—it marked the arrival of a new era in artificial intelligence, where learning systems could tackle highly complex, real-world problems. The AlphaGo Artificial Intelligence Breakthrough proved those predictions wrong, demonstrating that new AI approaches could handle even the most complex decision spaces. The AlphaGo Artificial Intelligence Breakthrough was made possible by a unique architecture that combined neural networks with search algorithms. This combination was the core of the AlphaGo Artificial Intelligence Breakthrough. This moment became a symbol of the AlphaGo Artificial Intelligence Breakthrough, showing that AI could generate creative solutions beyond human expectations. The AlphaGo Artificial Intelligence Breakthrough was not just about machine dominance—it also highlighted the beauty of human creativity. ## Beyond the Board: The Technical Legacy of AlphaGo. The AlphaGo Artificial Intelligence Breakthrough had far-reaching implications beyond the game of Go. The AlphaGo Artificial Intelligence Breakthrough has therefore influenced multiple industries beyond gaming. One of the most important lessons from the AlphaGo Artificial Intelligence Breakthrough is the shift from programming to learning. This shift is also reflected in modern techniques such as self supervised learning in artificial intelligence, where AI models train themselves using vast amounts of unlabeled data. ### What is the AlphaGo Artificial Intelligence Breakthrough? It refers to DeepMind’s AlphaGo defeating world champion Lee Sedol in 2016, demonstrating advanced AI capabilities using neural networks and reinforcement learning. AlphaGo combined policy networks, value networks, and Monte Carlo Tree Search to learn strategies rather than relying purely on computation. The **AlphaGo Artificial Intelligence Breakthrough** marked a historic turning point in artificial intelligence. By mastering one of the most complex games ever created, AlphaGo proved that machines could learn, adapt, and even display creativity.</p>
+<div class="meta">
+<div><span class="source">techhistorylab.com</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+<a href="https://breakthrough.neliti.com/tag/artificial-intelligence" target="_blank" class="news-item">
+<h3>artificial intelligence - Breakthrough</h3>
+<p>Title: artificial intelligence - Breakthrough
+# artificial intelligence. ## Researchers aim to revolutionise retail through through AI and in-store Cameras. Researchers from Queensland University propose utilising AI and in-store cameras to optimise store layouts, enhance customer experience, and drive sales, revolutionising retail strategy and in-store marketing. ## Artificial intelligence creates a new paradigm for patient reimbursement and healthcare administration. Artificial Intelligence is revolutionizing healthcare administration, enhancing accuracy in claims processing and eligibility verification, and fortifying fraud detection, leading to greater efficiency and reduced costs. ## Increase in AI utilisation helps us learn about human brain function. AI allows for a simulation of neural networks reminiscent of neural networks found in the human brain. image from company called online shop. Artificial intelligence/Business/E-commerce. ## Retail stores are using AI to monitor customer behaviour and improve store layouts. Businesses can use in-store cameras and artificial intelligence to better understand customer behaviour and design shop layouts that will increase sales. Artificial intelligence/Computer science/Machine learning. ## Researchers develop automated approach to debugging software. By identifying defective code automatically, developers can reduce time spent on debugging and refocus their efforts on designing new or improving existing software.</p>
+<div class="meta">
+<div><span class="source">neliti.com</span></div>
+<span>阅读原文 &rarr;</span>
+</div></a>
+</div>
+</div>
+
+<div id="news-2026-06-24" class="day-news-container">
 <div class="update-info"><p>📅 日报日期: 2026-06-24 · 共 8 条资讯</p></div>
 <div class="featured-news">
 <span class="tag">🔥 重点头条</span>
@@ -988,98 +1054,6 @@ ai.uncovered.ai@gmail.com
 </div></a>
 </div>
 </div>
-
-<div id="news-2026-06-09" class="day-news-container">
-            <div class="update-info"><p>📅 日报日期: 2026-06-09 · 共有 7 条资讯</p></div>
-            
-            <div class="featured-news">
-                <span class="tag">🔥 重点头条</span>
-                <h2>Apple introduces Siri AI, a profoundly more capable and personal assistant</h2>
-                <p class="summary">Powered by Apple Intelligence, the new version of Siri is profoundly more capable and conversational, and deeply integrated across products.</p>
-                <div class="meta" style="margin-top: 1rem; font-size: 0.9rem;">
-                    <div>
-                        <span class="source">Apple</span>
-                        <span style="margin-left:1rem; color:#888;">10 hours ago</span>
-                    </div>
-                    <a href="https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/" target="_blank" style="color:#667eea;font-weight:bold;margin-left:1rem;">阅读原文 →</a>
-                </div>
-            </div>
-        
-            <h3 class="news-section-title">📰 更多资讯</h3>
-            <div class="news-grid">
-                <a href="https://www.axios.com/2026/06/09/apple-siri-ai-agents-wwdc" target="_blank" class="news-item">
-                    <h3>Apple's Siri AI is both cool and 2 years too late</h3>
-                    <p>OpenAI and Anthropic have been locked in a hype battle promoting their agentic AI tools for both coders and office workers.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Axios</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">4 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.nytimes.com/2026/06/08/technology/openai-ipo.html" target="_blank" class="news-item">
-                    <h3>OpenAI Files Confidentially for IPO as AI Companies Rush to Wall St.</h3>
-                    <p>The company hopes to raise billions in a highly anticipated public offering that could unlock a new generation of tech industry wealth.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">The New York Times</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://news.crunchbase.com/venture/new-unicorn-startups-may-2026-openai-anthropic-ipos-spacex-robotics/" target="_blank" class="news-item">
-                    <h3>AI Services And Robotics Lead Diverse Crop Of 29 New May Unicorns As SpaceX, Anthropic And OpenAI Line Up Blockbuster Exits</h3>
-                    <p>A total of 29 companies joined The Crunchbase Unicorn Board in May, but the standout trend was not new AI models, but rather the businesses helping...</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">Crunchbase News</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">3 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.npr.org/2026/06/08/nx-s1-5847937/apple-wwdc-2026-siri-ai-tim-cook" target="_blank" class="news-item">
-                    <h3>Hey, Siri: Apple just announced a long-awaited AI update</h3>
-                    <p>At its annual developers' conference, Apple put the spotlight on new AI features, while highlighting security and child safety — and critiquing the...</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">NPR</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html" target="_blank" class="news-item">
-                    <h3>OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut</h3>
-                    <p>OpenAI's confidential filing lands days before SpaceX is set to go public and a week after Anthropic announced its confidential disclosure with the SEC.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">CNBC</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">17 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            
-                <a href="https://www.nbcnews.com/tech/tech-news/apple-renames-siri-siri-ai-new-push-artificial-intelligence-rcna349048" target="_blank" class="news-item">
-                    <h3>Apple renames Siri as ‘Siri AI’ with new push into artificial intelligence</h3>
-                    <p>The overhaul puts Siri into more direct competition with modern AI assistants such as ChatGPT.</p>
-                    <div class="meta">
-                        <div>
-                            <span class="source">NBC News</span>
-                            <span style="margin-left:1rem; color:#888; font-size:0.8rem;">18 hours ago</span>
-                        </div>
-                        <span>阅读原文 &rarr;</span>
-                    </div>
-                </a>
-            </div>
-        </div>
     </main>
 <footer>
         <p>© 2026 旺财Jarvis. Build by Iron Man.</p>
