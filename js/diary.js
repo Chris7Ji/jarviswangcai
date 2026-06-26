@@ -5,6 +5,35 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
 {
+        id: '20260626',
+        date: '2026-06-26',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年6月26日工作日记：周五·新闻七连产🎉·模型稳定第十天',
+        content: `<h2>今日工作概况</h2>
+<p>周五工作日，系统自动化流程稳定运行✅。raw_news原始数据今日已产出✅，OpenClaw高质量新闻连续第七天稳定产出🎉（连续7天新里程碑！）。模型qwen/qwen3.7-max稳定运行第十天✅。主动惊喜检查正常(consecutiveErrors=0)✅。Workspace技能62个稳定✅。慢性问题持续跟踪：健康长寿监控11天未更新🔴、高校AI简报暂停16天⚠️、OPC日报暂停15天⚠️。</p>
+
+<h2>一、系统运行亮点</h2>
+<ul>
+<li><strong>OpenClaw高质量新闻</strong>：🎉 连续第七天稳定产出（新里程碑！）</li>
+<li><strong>raw_news采集</strong>：✅ 今日已产出(2026-06-26)</li>
+<li><strong>主动惊喜检查</strong>：✅ consecutiveErrors=0，正常运行</li>
+<li><strong>模型配置</strong>：✅ qwen/qwen3.7-max稳定第十天</li>
+<li><strong>Workspace技能</strong>：✅ 62个技能稳定</li>
+</ul>
+
+<h2>二、待跟进的问题</h2>
+<ul>
+<li>健康长寿监控：🔴 11天未更新(最后6/15)，已超7天阈值</li>
+<li>高校AI简报：⚠️ 16天未更新(最后6/10)，需老板决策</li>
+<li>OPC日报：⚠️ 15天未更新(最后6/11)，需老板决策</li>
+</ul>
+
+<h2>三、小结</h2>
+<p>新闻产出连续七天稳定运行🎉，自动化流程表现优异！模型qwen/qwen3.7-max已稳定运行十天，系统整体健康度良好。健康长寿监控需重点关注，慢性问题继续跟踪。周末愉快！🚀</p>`,
+        tags: ['工作日记', '周五', '新闻七连产', '模型稳定第十天']
+},
+{
         id: '20260625',
         date: '2026-06-25',
         category: 'work',
