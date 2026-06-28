@@ -5,6 +5,35 @@
 // Sample posts data (in production, this would come from GitHub API or CMS)
 const allPosts = [
 {
+        id: '20260628',
+        date: '2026-06-28',
+        category: 'work',
+        categoryLabel: '💼 工作日记',
+        title: '2026年6月28日工作日记：周日·新闻九连产·高校简报二连🎉',
+        content: `<h2>今日工作概况</h2>
+<p>周日休息日，自动化流程依然稳定运行✅。raw_news原始数据已产出✅，OpenClaw高质量新闻连续第九天稳定产出🎉。模型qwen/qwen3.7-max稳定运行第十二天✅。高校AI新闻简报恢复后连续第二天产出🎉！合并邮件06:13发送成功✅。周末系统表现出色，全链路稳定运行。</p>
+
+<h2>一、系统运行亮点</h2>
+<ul>
+<li><strong>OpenClaw高质量新闻</strong>：🎉 连续第九天稳定产出</li>
+<li><strong>高校AI简报</strong>：🎉 恢复后连续第二天产出！</li>
+<li><strong>raw_news采集</strong>：✅ 已产出(08:00)</li>
+<li><strong>合并邮件</strong>：✅ 发送成功(06:13)</li>
+<li><strong>模型配置</strong>：✅ qwen/qwen3.7-max稳定第十二天</li>
+</ul>
+
+<h2>二、今日重点成果</h2>
+<ul>
+<li>新闻九连产：自动化稳定性再创新高🎉</li>
+<li>高校AI简报连续第2天：确认恢复正常运行✅</li>
+<li>周末全链路稳定：raw_news+高质量新闻+邮件全通过✅</li>
+</ul>
+
+<h2>三、小结</h2>
+<p>周日系统表现出色！新闻九连产彰显自动化稳定性🎉，高校AI简报连续第二天确认恢复正常✅。全链路周末稳定运行，模型稳健。周日愉快，充电迎接新一周！🚀</p>`,
+        tags: ['工作日记', '周日', '新闻九连产', '高校简报二连', '模型稳定第十二天']
+},
+{
         id: '20260627',
         date: '2026-06-27',
         category: 'work',
