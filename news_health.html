@@ -3,280 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧬 健康长寿科研成果简报 - 2026年6月29日</title>
+    <title>健康长寿科研成果简报 - 2026年6月29日</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 50%, #0d2137 100%);
-            color: #e0e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
             line-height: 1.8;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
+            color: #333;
             max-width: 900px;
             margin: 0 auto;
+            padding: 20px;
+            background: #f5f7fa;
         }
         .header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, rgba(0,200,150,0.15), rgba(0,100,200,0.15));
-            border-radius: 20px;
-            border: 1px solid rgba(0,200,150,0.3);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
             margin-bottom: 30px;
-            backdrop-filter: blur(10px);
+            text-align: center;
         }
         .header h1 {
-            font-size: 2em;
-            background: linear-gradient(90deg, #00e6a0, #00b4d8, #7b68ee);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
+            margin: 0;
+            font-size: 28px;
         }
         .header .date {
-            font-size: 1.1em;
-            color: #88a0b8;
-        }
-        .header .subtitle {
-            font-size: 0.95em;
-            color: #6a8090;
-            margin-top: 8px;
+            margin-top: 10px;
+            opacity: 0.9;
+            font-size: 16px;
         }
         .breakthrough {
-            background: linear-gradient(135deg, rgba(20,30,50,0.9), rgba(15,25,45,0.95));
-            border-radius: 16px;
-            padding: 28px;
-            margin-bottom: 24px;
-            border: 1px solid rgba(0,180,216,0.2);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            border-left: 4px solid #667eea;
         }
-        .breakthrough::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 4px;
-            height: 100%;
-            border-radius: 4px 0 0 4px;
-        }
-        .breakthrough:nth-child(1)::before { background: linear-gradient(180deg, #ff6b6b, #ee5a24); }
-        .breakthrough:nth-child(2)::before { background: linear-gradient(180deg, #00e6a0, #00b894); }
-        .breakthrough:nth-child(3)::before { background: linear-gradient(180deg, #7b68ee, #6c5ce7); }
-        .breakthrough:nth-child(4)::before { background: linear-gradient(180deg, #ffd93d, #f0932b); }
-        .breakthrough:nth-child(5)::before { background: linear-gradient(180deg, #00b4d8, #0077b6); }
-        .breakthrough:hover {
-            border-color: rgba(0,180,216,0.5);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(0,180,216,0.15);
-        }
-        .breakthrough-num {
-            display: inline-block;
-            width: 32px;
-            height: 32px;
-            line-height: 32px;
-            text-align: center;
-            border-radius: 50%;
-            font-weight: bold;
-            font-size: 0.9em;
-            margin-right: 12px;
-        }
-        .breakthrough:nth-child(1) .breakthrough-num { background: rgba(255,107,107,0.2); color: #ff6b6b; }
-        .breakthrough:nth-child(2) .breakthrough-num { background: rgba(0,230,160,0.2); color: #00e6a0; }
-        .breakthrough:nth-child(3) .breakthrough-num { background: rgba(123,104,238,0.2); color: #7b68ee; }
-        .breakthrough:nth-child(4) .breakthrough-num { background: rgba(255,217,61,0.2); color: #ffd93d; }
-        .breakthrough:nth-child(5) .breakthrough-num { background: rgba(0,180,216,0.2); color: #00b4d8; }
         .breakthrough h2 {
-            font-size: 1.25em;
+            color: #2c3e50;
+            font-size: 20px;
+            margin-top: 0;
             margin-bottom: 12px;
-            display: flex;
-            align-items: center;
         }
         .meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 16px;
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ecf0f1;
         }
-        .meta-item {
-            font-size: 0.85em;
-            padding: 4px 12px;
-            border-radius: 20px;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
+        .meta span {
+            margin-right: 20px;
         }
-        .meta-source { color: #00e6a0; }
-        .meta-date { color: #88a0b8; }
-        .meta-tag { color: #ffd93d; }
         .summary {
-            font-size: 0.98em;
-            color: #c0d0e0;
+            color: #34495e;
+            font-size: 15px;
             line-height: 1.9;
-            padding: 16px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 10px;
-            border-left: 3px solid rgba(0,180,216,0.3);
+            text-align: justify;
         }
-        .link-row {
-            margin-top: 14px;
-        }
-        .link-row a {
-            color: #00b4d8;
+        .source-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #667eea;
             text-decoration: none;
-            font-size: 0.9em;
-            transition: color 0.2s;
+            font-size: 14px;
         }
-        .link-row a:hover { color: #00e6a0; text-decoration: underline; }
+        .source-link:hover {
+            text-decoration: underline;
+        }
         .footer {
             text-align: center;
-            padding: 30px 20px;
-            color: #5a7080;
-            font-size: 0.85em;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            margin-top: 20px;
+            color: #95a5a6;
+            font-size: 13px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
         }
-        .footer a { color: #00b4d8; text-decoration: none; }
-        .highlight { color: #00e6a0; font-weight: 600; }
-        .impact-badge {
+        .tag {
             display: inline-block;
-            padding: 2px 10px;
+            background: #ecf0f1;
+            color: #7f8c8d;
+            padding: 3px 10px;
             border-radius: 12px;
-            font-size: 0.78em;
-            font-weight: 600;
-            margin-left: 8px;
-            vertical-align: middle;
+            font-size: 12px;
+            margin-right: 8px;
         }
-        .impact-high { background: rgba(255,107,107,0.2); color: #ff6b6b; border: 1px solid rgba(255,107,107,0.3); }
-        .impact-medium { background: rgba(255,217,61,0.2); color: #ffd93d; border: 1px solid rgba(255,217,61,0.3); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🧬 健康长寿科研成果简报</h1>
-            <div class="date">2026年6月29日 · 第25周</div>
-            <div class="subtitle">涵盖抗衰老、长寿医学、细胞再生领域最新突破</div>
-        </div>
+    <div class="header">
+        <h1>🧬 健康长寿科研成果简报</h1>
+        <div class="date">2026年6月29日 | 抗衰老与长寿科学最新动态</div>
+    </div>
 
-        <!-- 突破1: Life Biosciences ER-100 -->
-        <div class="breakthrough">
-            <h2>
-                <span class="breakthrough-num">1</span>
-                全球首个"逆转衰老"基因疗法ER-100首次注入人体
-                <span class="impact-badge impact-high">🔥 里程碑</span>
-            </h2>
-            <div class="meta">
-                <span class="meta-item meta-source">📰 Business Insider / 科技日报</span>
-                <span class="meta-item meta-date">📅 2026年6月</span>
-                <span class="meta-item meta-tag">🏷️ 表观遗传重编程</span>
-            </div>
-            <div class="summary">
-                美国生物技术公司<span class="highlight">Life Biosciences</span>于2026年6月宣布，其开发的<span class="highlight">ER-100基因疗法</span>已首次用于人体临床试验。该疗法基于诺贝尔奖得主山中伸弥（Shinya Yamanaka）发现的"山中因子"（Yamanaka factors），采用<span class="highlight">部分细胞重编程（Partial Cellular Reprogramming）</span>技术，旨在让老化细胞的表观遗传状态恢复年轻，而非完全逆转为干细胞。这被欧洲新闻网称为"人类首次接受旨在逆转细胞衰老的治疗"。该疗法通过AAV载体将OSK转录因子递送至靶细胞，在动物实验中已成功将小鼠剩余寿命延长约30%。OpenAI CEO Sam Altman等科技领袖对此表示高度关注，认为这标志着衰老从"不可逆过程"向"可治疗疾病"的范式转变。
-            </div>
-            <div class="link-row">
-                <a href="https://www.businessinsider.com/first-ever-reverse-aging-treatment-injected-into-a-human-2026-6" target="_blank">🔗 Business Insider 原文</a>
-                &nbsp;|&nbsp;
-                <a href="https://news.sciencenet.cn/htmlnews/2026/6/566991.shtm" target="_blank">🔗 科技日报深度解读</a>
-            </div>
+    <div class="breakthrough">
+        <h2>🔬 1. 全球首例逆转衰老药物首次注入人体</h2>
+        <div class="meta">
+            <span>📰 来源：Business Insider</span>
+            <span>📅 日期：2026年6月</span>
         </div>
+        <div class="summary">
+            <p>2026年6月，全球首次将逆转衰老（reverse-aging）药物注射到人体中，标志着细胞重编程技术从实验室走向临床应用的重大突破。该技术基于2007年诺贝尔奖得主山中伸弥（Shinya Yamanaka）发现的"山中因子"（Yamanaka Factors）——四种特定蛋白质，能够将成体细胞重新编程为类似年轻细胞的状态。</p>
+            <p>细胞重编程被认为是长寿科学领域最具吸引力的理论之一，近二十年来一直令科学家着迷。此次人体试验的成功实施，意味着科学家终于在安全可控的条件下，将这一理论转化为实际的临床干预手段。这为未来治疗衰老相关疾病、延长健康寿命开辟了全新的道路，是再生医学和抗衰老研究的里程碑式进展。</p>
+        </div>
+        <span class="tag">细胞重编程</span>
+        <span class="tag">山中因子</span>
+        <span class="tag">临床试验</span>
+        <br>
+        <a href="https://www.businessinsider.com/first-ever-reverse-aging-treatment-injected-into-a-human-2026-6" class="source-link" target="_blank">🔗 阅读原文 →</a>
+    </div>
 
-        <!-- 突破2: Senolytic-regenerative combo -->
-        <div class="breakthrough">
-            <h2>
-                <span class="breakthrough-num">2</span>
-                协同衰老细胞清除+再生疗法显著延长健康寿命和总寿命
-                <span class="impact-badge impact-high">🔥 突破性</span>
-            </h2>
-            <div class="meta">
-                <span class="meta-item meta-source">📰 Journal of Translational Medicine</span>
-                <span class="meta-item meta-date">📅 2026年6月8日</span>
-                <span class="meta-item meta-tag">🏷️ Senolytics + 干细胞</span>
-            </div>
-            <div class="summary">
-                发表于《转化医学杂志》的一项重要研究展示了一种<span class="highlight">双重抗衰老策略</span>：研究人员将基于树突状细胞的衰老细胞清除免疫疗法<span class="highlight">SenoVax™</span>与同源多能干细胞衍生的间充质干细胞（MSC）相结合。该组合疗法首先通过SenoVax精准识别并清除体内积累的老化细胞（这些细胞分泌的SASP因子会抑制组织再生），随后注入年轻的MSC进行组织修复。在肝脏损伤和加速衰老的小鼠模型中，该疗法不仅显著改善了肝功能指标，还<span class="highlight">大幅延长了健康寿命（healthspan）和总寿命（lifespan）</span>。这一"先清后修"的策略为抗衰老治疗提供了全新范式，克服了此前单独使用干细胞或单独使用senolytics效果有限的瓶颈。
-            </div>
-            <div class="link-row">
-                <a href="https://doi.org/10.1007/s10522-025-10240-z" target="_blank">🔗 DOI: 10.1007/s10522-025-10240-z</a>
-                &nbsp;|&nbsp;
-                <a href="https://pubmed.ncbi.nlm.nih.gov/42260530/" target="_blank">🔗 PubMed PMID: 42260530</a>
-            </div>
+    <div class="breakthrough">
+        <h2>🧪 2. 哈佛教授David Sinclair：衰老即将可逆转</h2>
+        <div class="meta">
+            <span>📰 来源：世界政府峰会（WGS 2026）</span>
+            <span>📅 日期：2026年2月5日</span>
         </div>
+        <div class="summary">
+            <p>在2026年迪拜世界政府峰会上，哈佛医学院遗传学教授David Sinclair宣布，衰老很快将被视为一种可治疗的医学状况，而非生命的必然过程。他指出，人类正处于见证自清洁水源和疫苗发现以来最重大健康变革的前夜。</p>
+            <p>Sinclair团队的研究表明，衰老是由DNA的化学变化驱动的，而非不可逆的损伤。他将这一过程比作CD上的划痕——DNA保存着年轻的原始"音乐"，但随时间推移被打乱。利用改良的山中基因（Yamanaka genes），其团队已在动物实验中实现数周内逆转高达75%的衰老组织，并成功恢复了失明动物的视力。</p>
+            <p>更重要的是，美国FDA已批准首个表观遗传重编程疗法的人体试验，最初针对青光眼等眼部疾病，未来有望扩展至全身。Sinclair还强调了延长健康寿命的巨大经济价值：仅美国一国，延长一年健康寿命就能在2050年前创造约38万亿美元的经济价值。</p>
+        </div>
+        <span class="tag">表观遗传重编程</span>
+        <span class="tag">FDA批准</span>
+        <span class="tag">David Sinclair</span>
+        <br>
+        <a href="https://www.worldgovernmentssummit.org/media-hub/news/detail/ageing-could-soon-be-reversible-says-harvard-scientist-at-wgs-2026" class="source-link" target="_blank">🔗 阅读原文 →</a>
+    </div>
 
-        <!-- 突破3: NAD+ Systematic Review -->
-        <div class="breakthrough">
-            <h2>
-                <span class="breakthrough-num">3</span>
-                NAD⁺补充抗衰老系统评价：临床前与临床证据全面汇总
-                <span class="impact-badge impact-medium">⭐ 权威综述</span>
-            </h2>
-            <div class="meta">
-                <span class="meta-item meta-source">📰 Ageing Research Reviews</span>
-                <span class="meta-item meta-date">📅 2026年4月</span>
-                <span class="meta-item meta-tag">🏷️ NAD⁺ / NMN / NR</span>
-            </div>
-            <div class="summary">
-                《衰老研究评论》发表的这篇<span class="highlight">PRISMA标准系统评价</span>，全面梳理了2010年至2025年10月间所有关于NAD⁺提升策略的同行评审研究。该综述涵盖生活方式干预、口服前体补充（包括<span class="highlight">烟酰胺核糖NR和烟酰胺单核苷酸NMN</span>）以及静脉注射NAD⁺等多种方案。系统评价发现：在啮齿动物模型中，NAD⁺前体补充在改善代谢功能、增强线粒体活性、延缓肌肉萎缩方面表现出一致的正向效果；在人体临床试验中，NR和NMN展现了良好的安全性和生物利用度，部分研究显示其在改善胰岛素敏感性、降低炎症标志物和提升体能方面具有积极信号。综述同时指出，当前证据尚不足以支持"万能抗衰"的过度宣传，<span class="highlight">个性化剂量方案和长期安全性</span>仍是未来研究的关键方向。
-            </div>
-            <div class="link-row">
-                <a href="https://doi.org/10.1016/j.arr.2026.103057" target="_blank">🔗 DOI: 10.1016/j.arr.2026.103057</a>
-                &nbsp;|&nbsp;
-                <a href="https://pubmed.ncbi.nlm.nih.gov/41655607/" target="_blank">🔗 PubMed PMID: 41655607</a>
-            </div>
+    <div class="breakthrough">
+        <h2>🏛️ 3. 第12届ARDD会议：全球专家指明衰老干预行动方向</h2>
+        <div class="meta">
+            <span>📰 来源：Aging-US期刊</span>
+            <span>📅 日期：2026年4月21日</span>
         </div>
+        <div class="summary">
+            <p>2026年4月6日发表在Aging-US期刊第18卷的会议报告显示，第12届衰老研究与药物发现（ARDD）会议在哥本哈根大学召开，全面回顾了衰老生物学的最新进展。全球顶尖专家汇聚一堂，讨论如何将对衰老机制的理解转化为可操作的人体干预措施。</p>
+            <p>报告指出，衰老研究正从临床前概念验证阶段，加速向临床评估转化。与肿瘤学、传染病和心脏病学类似，衰老科学正在接纳联合疗法和辅助用药的模式——例如GLP-1受体激动剂与SGLT2抑制剂的组合、激素替代疗法与雷帕霉素类似物的组合。这意味着长寿科学正在走向成熟的临床标准化阶段，使动物模型的转化跳跃变得不再那么关键，从而加速了整个领域的进展。</p>
+        </div>
+        <span class="tag">ARDD会议</span>
+        <span class="tag">临床转化</span>
+        <span class="tag">联合疗法</span>
+        <br>
+        <a href="https://www.aging-us.com/news-room/global-experts-highlight-path-toward-actionable-interventions-in-human-aging" class="source-link" target="_blank">🔗 阅读原文 →</a>
+    </div>
 
-        <!-- 突破4: NMN/PQQ/EGT Framework -->
-        <div class="breakthrough">
-            <h2>
-                <span class="breakthrough-num">4</span>
-                综合抗衰老新框架：NMN/NR + PQQ + EGT 靶向三大衰老机制
-                <span class="impact-badge impact-medium">⭐ 创新框架</span>
-            </h2>
-            <div class="meta">
-                <span class="meta-item meta-source">📰 Redox Biology</span>
-                <span class="meta-item meta-date">📅 2026年6月</span>
-                <span class="meta-item meta-tag">🏷️ 线粒体 / 氧化还原</span>
-            </div>
-            <div class="summary">
-                《氧化还原生物学》发表的一项研究提出了<span class="highlight">整合式抗衰老框架</span>，同时靶向衰老的三大核心分子机制：<span class="highlight">NAD⁺稳态、线粒体质量控制和氧化还原稳定性</span>。该框架联合使用NMN/NR（恢复NAD⁺水平，激活Sirtuins长寿蛋白）、PQQ（吡咯喹啉醌，促进线粒体新生和生物合成）以及EGT（麦角硫因，一种强效线粒体抗氧化剂，保护线粒体免受氧化损伤）。研究发现，这三种物质形成协同效应：NMN为线粒体提供"燃料"，PQQ帮助"建造新工厂"，EGT则充当"防护盾"。在衰老加速模型中，该组合显著改善了线粒体功能、减少了氧化应激损伤、恢复了代谢灵活性，并降低了多种衰老相关生物标志物。这一框架为<span class="highlight">多靶点联合干预衰老</span>提供了坚实的理论基础和实验证据。
-            </div>
-            <div class="link-row">
-                <a href="https://doi.org/10.1016/j.redbi.2026.xxxxxx" target="_blank">🔗 PubMed PMID: 42068909</a>
-                &nbsp;|&nbsp;
-                <a href="https://pubmed.ncbi.nlm.nih.gov/42068909/" target="_blank">🔗 PubMed 链接</a>
-            </div>
+    <div class="breakthrough">
+        <h2>🧬 4. "青春图谱"（Atlas of Rejuvenation）：CRISPR筛选解码年轻化基因</h2>
+        <div class="meta">
+            <span>📰 来源：Labiotech / 多家生物技术公司报告</span>
+            <span>📅 日期：2026年</span>
         </div>
+        <div class="summary">
+            <p>2026年，领先的抗衰老生物技术公司成功构建了首个"青春图谱"（Atlas of Rejuvenation）。通过全基因组CRISPR筛选结合单细胞RNA测序技术，研究人员分析了超过300万个细胞，产生了20TB的数据，成功解码了人类干细胞中固有的"年轻化机制"，鉴定出超过100个相关基因。</p>
+            <p>理解与年轻化相关的基因，将使得通过重新利用现有药物来逆转多个衰老标志成为可能，从而延长健康寿命。同时，针对个体衰老标志修复的基因靶点，将为开发衰老相关疾病的新型治疗提供重要方向。此外，美国ARPA-H机构宣布资助包括Cambrian Bio在内的七个研究团队，通过PROSPR项目开发延长健康寿命的工具和疗法，旨在通过检测和干预衰老的最早期变化来延长人们的健康年数。全球抗衰老市场预计到2030年将超过4200亿美元。</p>
+        </div>
+        <span class="tag">CRISPR筛选</span>
+        <span class="tag">青春图谱</span>
+        <span class="tag">ARPA-H PROSPR</span>
+        <br>
+        <a href="https://www.labiotech.eu/best-biotech/anti-aging-biotech-companies" class="source-link" target="_blank">🔗 阅读原文 →</a>
+    </div>
 
-        <!-- 突破5: Extracellular Vesicles -->
-        <div class="breakthrough">
-            <h2>
-                <span class="breakthrough-num">5</span>
-                工程化细胞外囊泡（EVs）：抗衰老治疗的新兴纳米平台
-                <span class="impact-badge impact-medium">⭐ 前沿技术</span>
-            </h2>
-            <div class="meta">
-                <span class="meta-item meta-source">📰 Aging Cell</span>
-                <span class="meta-item meta-date">📅 2026年7月</span>
-                <span class="meta-item meta-tag">🏷️ 细胞外囊泡 / 纳米递送</span>
-            </div>
-            <div class="summary">
-                顶级期刊《Aging Cell》发表了一篇关于<span class="highlight">工程化细胞外囊泡（Extracellular Vesicles, EVs）</span>用于抗衰老治疗的系统性综述。EVs是细胞自然分泌的纳米级膜泡，能够携带蛋白质、mRNA、miRNA等生物活性分子穿越组织屏障（包括血脑屏障），实现精准的细胞间通讯调控。综述系统梳理了EVs在抗衰老中的多重机制：<span class="highlight">抑制慢性炎症（inflammaging）、修复线粒体功能、调控表观遗传改变、恢复细胞间通讯</span>等。特别值得关注的是，年轻细胞来源的EVs在动物实验中展现出显著的"旁分泌效应"——即使不直接移植年轻细胞，仅注射其分泌的EVs也能改善老年个体的组织功能和认知能力。工程化改造技术（如表面修饰、载荷装载）进一步提升了EVs的靶向性和治疗效果，使其成为下一代抗衰老药物递送平台的有力候选。
-            </div>
-            <div class="link-row">
-                <a href="https://doi.org/10.1016/j.tibtech.2024.03.004" target="_blank">🔗 DOI: 10.1016/j.tibtech.2024.03.004</a>
-                &nbsp;|&nbsp;
-                <a href="https://pubmed.ncbi.nlm.nih.gov/42337937/" target="_blank">🔗 PubMed PMID: 42337937</a>
-            </div>
+    <div class="breakthrough">
+        <h2>💊 5. NAD+前体与尿石素A：从实验室到临床的营养抗衰新策略</h2>
+        <div class="meta">
+            <span>📰 来源：Healthspan / Semantic Scholar综述</span>
+            <span>📅 日期：2025-2026年</span>
         </div>
+        <div class="summary">
+            <p>NAD+前体（烟酰胺核糖NR和烟酰胺单核苷酸NMN）以及尿石素A（Urolithin A）在2025-2026年间取得了重要的临床进展。最新研究表明，在健康老年人中，每日补充1000mg尿石素A持续4个月，可显著降低血浆神经酰胺水平——这是与心血管风险密切相关的脂质生物标志物。这一发现表明尿石素A可通过改善线粒体质量控制来降低年龄相关的心脏病风险。</p>
+            <p>与此同时，NMN的人体临床试验也传来好消息：一项安慰剂对照试验报告，NMN补充可改善糖尿病前期绝经后女性的胰岛素敏感性。这些营养干预策略与senolytics（衰老细胞清除药物）、mTOR抑制剂（如雷帕霉素）和二甲双胍一起，构成了多靶点抗衰老治疗矩阵。科学家们认为，未来的"老年治疗"方案将是这些策略的组合使用——衰老细胞清除药物搭配NAD+增强剂、自噬激活剂和抗炎药物的联合方案，不仅能延缓衰老相关疾病的发生，还可能逆转部分被认为不可逆的组织功能障碍。</p>
+        </div>
+        <span class="tag">NAD+/NMN</span>
+        <span class="tag">尿石素A</span>
+        <span class="tag">线粒体健康</span>
+        <br>
+        <a href="https://www.gethealthspan.com/research/article/top-ten-longevity-anti-aging-breakthroughs-of-2025" class="source-link" target="_blank">🔗 阅读原文 →</a>
+    </div>
 
-        <div class="footer">
-            <p>🤖 本简报由AI自动监控生成 | 数据来源：PubMed、Tavily News Search、科技日报</p>
-            <p>📊 搜索关键词：longevity research, anti-aging breakthrough, senolytics, epigenetic reprogramming, NAD⁺ NMN, 抗衰老研究, 长寿科学, 细胞再生</p>
-            <p style="margin-top: 12px;">
-                Powered by <a href="https://jiaviswangcai.ai" target="_blank">Jarvis旺财AI</a> · OpenClaw
-            </p>
-        </div>
+    <div class="footer">
+        <p>📧 本简报由 AI 助手自动生成 | 数据来源：PubMed、学术数据库、科技媒体</p>
+        <p>🤖 Powered by OpenClaw | 旺财Jarvis AI 助手</p>
+        <p>📅 生成时间：2026年6月29日 09:09 (CST)</p>
     </div>
 </body>
 </html>
