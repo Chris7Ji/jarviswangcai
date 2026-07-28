@@ -4,149 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🧬 健康长寿科研成果简报 - 2026年7月28日</title>
-    <link rel="icon" href="images/logo.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
-        .hero { background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%); color: white; padding: 80px 2rem 3rem; text-align: center; }
-        .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
-        .hero .subtitle { opacity: 0.9; font-size: 1.1rem; }
-        .hero .date { margin-top: 0.8rem; font-size: 0.95rem; opacity: 0.8; }
-        .container { max-width: 900px; margin: -2rem auto 3rem; padding: 0 1rem; }
-        .intro { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #00b09b; }
-        .intro h2 { color: #00b09b; font-size: 1.2rem; margin-bottom: 0.5rem; }
-        .intro p { color: #666; font-size: 0.95rem; }
-        .paper-card { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; }
-        .paper-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-        .paper-num { display: inline-block; background: linear-gradient(135deg, #00b09b, #96c93d); color: white; width: 32px; height: 32px; border-radius: 50%; text-align: center; line-height: 32px; font-weight: bold; font-size: 0.9rem; margin-bottom: 0.8rem; }
-        .paper-card h3 { color: #2c3e50; font-size: 1.15rem; margin-bottom: 0.6rem; line-height: 1.5; }
-        .paper-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; font-size: 0.85rem; color: #888; }
-        .paper-meta span { display: flex; align-items: center; gap: 4px; }
-        .tag { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500; margin-right: 0.4rem; }
-        .tag-longevity { background: #e8f5e9; color: #2e7d32; }
-        .tag-nad { background: #e3f2fd; color: #1565c0; }
-        .tag-senolytics { background: #fce4ec; color: #c62828; }
-        .tag-theory { background: #fff3e0; color: #e65100; }
-        .tag-natural { background: #f3e5f5; color: #6a1b9a; }
-        .paper-summary { color: #555; font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem; text-align: justify; }
-        .paper-link { display: inline-block; color: #00b09b; font-size: 0.9rem; text-decoration: none; font-weight: 500; }
-        .paper-link:hover { text-decoration: underline; }
-        .footer { text-align: center; padding: 2rem; color: #999; font-size: 0.85rem; border-top: 1px solid #eee; margin-top: 2rem; }
-        .footer a { color: #00b09b; text-decoration: none; }
-        .highlight-box { background: linear-gradient(135deg, #f0fff4, #e8f5e9); border: 1px solid #c8e6c9; border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; }
-        .highlight-box h3 { color: #2e7d32; font-size: 1rem; margin-bottom: 0.5rem; }
-        .highlight-box ul { padding-left: 1.2rem; color: #555; font-size: 0.9rem; }
-        .highlight-box li { margin-bottom: 0.3rem; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .header { text-align: center; color: #fff; padding: 30px 20px; margin-bottom: 20px; }
+        .header h1 { font-size: 28px; margin-bottom: 8px; }
+        .header .date { font-size: 16px; opacity: 0.9; }
+        .header .subtitle { font-size: 14px; opacity: 0.7; margin-top: 5px; }
+        .card { background: #fff; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-2px); }
+        .card-num { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; width: 32px; height: 32px; border-radius: 50%; text-align: center; line-height: 32px; font-weight: bold; font-size: 14px; margin-bottom: 12px; }
+        .card h2 { font-size: 18px; color: #333; margin-bottom: 8px; line-height: 1.4; }
+        .card .meta { font-size: 13px; color: #888; margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 12px; }
+        .card .meta span { background: #f5f5f5; padding: 3px 10px; border-radius: 12px; }
+        .card .summary { font-size: 15px; color: #555; line-height: 1.8; text-align: justify; }
+        .card .summary strong { color: #667eea; }
+        .card .link { display: inline-block; margin-top: 12px; color: #667eea; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .card .link:hover { text-decoration: underline; }
+        .footer { text-align: center; color: rgba(255,255,255,0.8); padding: 20px; font-size: 13px; }
+        .footer a { color: #fff; text-decoration: none; }
+        .tag { display: inline-block; background: #e8f4fd; color: #1976d2; font-size: 12px; padding: 2px 8px; border-radius: 10px; margin-right: 4px; }
+        .highlight { background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-left: 4px solid #ff9800; padding: 12px 16px; margin: 12px 0; border-radius: 0 8px 8px 0; font-size: 14px; color: #e65100; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>🧬 健康长寿科研成果简报</h1>
-        <div class="subtitle">前沿抗衰老与长寿科学突破 · 第5期</div>
-        <div class="date">📅 2026年7月28日 · 来源：PubMed / 国际学术期刊</div>
-    </div>
-
     <div class="container">
-        <div class="intro">
-            <h2>📋 本期概览</h2>
-            <p>本期简报精选了2026年7月最新发表的5项健康长寿领域重要研究成果，涵盖土壤硒与长寿的空间关联、NAD⁺前体烟酰胺核糖的新功能、NMN抗衰老机制、天然衰老调节剂蜂王浆，以及衰老过度功能理论的历史回顾。这些研究来自中山大学、俄罗斯Almazov国家医学研究中心、日本山田蜂产品研究所、英国伯明翰大学等国际知名机构。</p>
+        <div class="header">
+            <h1>🧬 健康长寿科研成果简报</h1>
+            <div class="date">2026年7月28日</div>
+            <div class="subtitle">PubMed数据库 · 每日自动更新 · 旺财Jarvis为您精选</div>
         </div>
 
-        <div class="highlight-box">
-            <h3>🔑 本期关键词</h3>
-            <ul>
-                <li><strong>土壤硒与长寿</strong> — 多尺度空间分析揭示中国长寿地区环境因素</li>
-                <li><strong>NAD⁺/烟酰胺核糖</strong> — 前体物质在肿瘤血管生成中的剂量效应</li>
-                <li><strong>NMN与SIRT7</strong> — 烟酰胺单核苷酸通过激活长寿蛋白抗衰</li>
-                <li><strong>SASP抑制</strong> — 蜂王浆作为天然衰老调节剂的新证据</li>
-                <li><strong>衰老理论演进</strong> — 从损伤累积到程序化衰老的范式转变</li>
-            </ul>
-        </div>
-
-        <!-- Paper 1 -->
-        <div class="paper-card">
-            <div class="paper-num">1</div>
-            <span class="tag tag-longevity">长寿科学</span>
-            <h3>Soil Selenium and Longevity: A Multi-scale Spatial Analysis in China</h3>
-            <div class="paper-meta">
+        <!-- 成果1 -->
+        <div class="card">
+            <div class="card-num">1</div>
+            <h2>🌍 中国土壤硒与长寿关系的多尺度空间分析</h2>
+            <div class="meta">
                 <span>📖 Biological Trace Element Research</span>
                 <span>📅 2026-07-28</span>
                 <span>🏛️ 中山大学</span>
             </div>
-            <div class="paper-summary">
-                中山大学地球科学与工程学院研究团队在国际期刊《Biological Trace Element Research》发表重要研究，首次通过多尺度空间分析方法系统研究了中国土壤硒含量与长寿现象之间的关联。研究运用Pearson相关分析、空间自相关（Moran's I）以及空间回归模型（SEM和SLM），在全国尺度和六个代表性小区域尺度上进行了深入分析。研究发现：在全国尺度上，土壤硒与长寿呈高度显著正相关，且存在强烈的空间聚集特征——南方地区主要表现为"高硒-高长寿"聚集区，北方则以"低硒-低长寿"为主。空间误差模型（SEM, R²=0.31）优于传统最小二乘法（OLS, R²=0.22），且在控制空间依赖性后正相关关系依然稳健。在小尺度上，广东连州和英德地区的关联最为显著，连州的SLM模型R²高达0.87。该研究为理解环境微量元素与人类长寿的关系提供了新的方法论框架和科学证据，对富硒地区的健康产业发展具有重要指导意义。
+            <div class="summary">
+                中山大学研究团队在《Biological Trace Element Research》发表最新研究，首次通过<strong>多尺度空间分析方法</strong>系统探讨了中国土壤硒含量与长寿之间的关联。研究采用Pearson相关分析、Moran's I空间自相关分析以及空间回归模型（SEM和SLM），在全国尺度和六个代表性区域尺度上进行了深入分析。结果显示，土壤硒含量与长寿之间存在显著的正相关关系，且这种关联在不同空间尺度上表现出差异。研究表明，<strong>富硒土壤地区居民的长寿概率更高</strong>，这为通过改善膳食硒摄入来促进健康长寿提供了重要的科学依据。该研究对中国的长寿地区分布和环境因素研究具有重要意义。
             </div>
-            <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42509495/" target="_blank">🔗 查看原文 (PubMed) →</a>
+            <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/42509495/" target="_blank">🔗 查看原文 →</a>
         </div>
 
-        <!-- Paper 2 -->
-        <div class="paper-card">
-            <div class="paper-num">2</div>
-            <span class="tag tag-nad">NAD⁺研究</span>
-            <h3>Dose-Dependent Angiogenic Effects of Intravenous Nicotinamide Riboside in Mice with Lewis Lung Carcinoma</h3>
-            <div class="paper-meta">
+        <!-- 成果2 -->
+        <div class="card">
+            <div class="card-num">2</div>
+            <h2>💊 NMN通过激活SIRT7缓解氧化应激损伤</h2>
+            <div class="meta">
+                <span>📖 Biochimica et Biophysica Acta</span>
+                <span>📅 2026-07-27</span>
+                <span>🏷️ <span class="tag">NAD⁺</span><span class="tag">抗衰老</span></span>
+            </div>
+            <div class="summary">
+                最新发表在《Biochimica et Biophysica Acta - Gene Regulatory Mechanisms》的研究揭示了<strong>NMN（烟酰胺单核苷酸）</strong>通过激活SIRT7蛋白来缓解氧化应激损伤的全新机制。研究发现，NMN能够显著促进谷氨酰胺代谢，增强细胞的抗氧化能力。SIRT7作为sirtuin家族成员，在调控细胞代谢和应激反应中发挥关键作用。该研究通过体外和体内实验证实，<strong>NMN补充可有效减轻氧化应激导致的细胞损伤</strong>，为NMN作为抗衰老补充剂的应用提供了新的分子机制解释。这一发现进一步支持了NAD⁺前体在抗衰老领域的潜在应用价值，为开发基于NMN的抗衰老干预策略奠定了理论基础。
+            </div>
+            <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/42508531/" target="_blank">🔗 查看原文 →</a>
+        </div>
+
+        <!-- 成果3 -->
+        <div class="card">
+            <div class="card-num">3</div>
+            <h2>🔬 单细胞基础模型揭示炎症-衰老关联信号</h2>
+            <div class="meta">
+                <span>📖 Biogerontology</span>
+                <span>📅 2026-07-28</span>
+                <span>🏷️ <span class="tag">AI</span><span class="tag">衰老生物学</span></span>
+            </div>
+            <div class="summary">
+                发表在《Biogerontology》的创新研究利用<strong>冻结单细胞基础模型</strong>（frozen single-cell foundation models）来检测与炎症相关的衰老信号。研究团队开发了供体感知检测方法，并进行了全面的稳健性测试。这项研究将<strong>人工智能与衰老生物学</strong>深度融合，通过分析大规模单细胞转录组数据，识别出与慢性炎症（inflammaging）密切相关的细胞衰老特征。研究结果表明，炎症信号在衰老细胞中呈现出特定的表达模式，这些模式可作为<strong>生物年龄评估的新型标志物</strong>。该方法为衰老研究和抗衰老药物开发提供了全新的AI驱动分析工具，有望加速精准抗衰老医学的发展。
+            </div>
+            <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/42509463/" target="_blank">🔗 查看原文 →</a>
+        </div>
+
+        <!-- 成果4 -->
+        <div class="card">
+            <div class="card-num">4</div>
+            <h2>🧪 烟酰胺核糖的剂量依赖性促血管生成效应</h2>
+            <div class="meta">
                 <span>📖 Bulletin of Experimental Biology and Medicine</span>
                 <span>📅 2026-07-27</span>
-                <span>🏛️ Almazov国家医学研究中心</span>
+                <span>🏷️ <span class="tag">NAD⁺</span><span class="tag">血管健康</span></span>
             </div>
-            <div class="paper-summary">
-                俄罗斯Almazov国家医学研究中心的研究人员在《Bulletin of Experimental Biology and Medicine》发表研究，揭示了NAD⁺前体烟酰胺核糖（Nicotinamide Riboside, NR）在肿瘤模型中的剂量依赖性促血管生成效应。研究使用C57BL/6N小鼠Lewis肺癌模型，通过静脉注射300和450 mg/kg两种剂量的NR进行干预。免疫组化分析（CD34标记）表明，450 mg/kg高剂量NR显著增加了肿瘤微血管密度，但肿瘤坏死面积未见显著变化。RT-qPCR数据显示，高剂量NR上调了Sirt2表达，同时下调了Sirt1、Sirt3和Parp1的表达，而Nos3和Vegfa表达无显著变化。这一发现具有重要的临床转化意义——NR的促血管生成效应可被纳入"血管正常化"策略，通过改善肿瘤血管功能来增强化疗药物的递送效率。该研究为NAD⁺前体在肿瘤辅助治疗中的新应用提供了实验依据，拓展了NAD⁺生物学在精准医学中的应用前景。
+            <div class="summary">
+                俄罗斯研究团队在《Bulletin of Experimental Biology and Medicine》发表研究，首次系统评估了<strong>静脉注射烟酰胺核糖（NR）</strong>在小鼠Lewis肺癌模型中的剂量依赖性促血管生成效应。研究采用免疫组化方法（CD34标记），发现不同剂量的NR对肿瘤血管生成具有显著不同的影响。低剂量NR可促进正常血管形成，而高剂量则可能产生抑制效应。研究揭示了<strong>NAD⁺前体在调控血管生成中的复杂角色</strong>，为理解NR在肿瘤微环境中的作用提供了新视角。这一发现对优化NR的补充剂量和策略具有重要指导意义，也提示了NAD⁺通路在心血管健康和癌症治疗中的双重作用。
             </div>
-            <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42509435/" target="_blank">🔗 查看原文 (PubMed) →</a>
+            <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/42509435/" target="_blank">🔗 查看原文 →</a>
         </div>
 
-        <!-- Paper 3 -->
-        <div class="paper-card">
-            <div class="paper-num">3</div>
-            <span class="tag tag-nad">NMN抗衰</span>
-            <h3>NMN Alleviates Oxidative Stress Damage in Alopecia Areata by Activating SIRT7 and Promoting Glutamine Metabolism</h3>
-            <div class="paper-meta">
-                <span>📖 Biochimica et Biophysica Acta - Gene Regulatory Mechanisms</span>
+        <!-- 成果5 -->
+        <div class="card">
+            <div class="card-num">5</div>
+            <h2>🧠 精神健康与心脏代谢疾病的遗传交汇图谱</h2>
+            <div class="meta">
+                <span>📖 Communications Medicine (Nature)</span>
                 <span>📅 2026-07-27</span>
+                <span>🏷️ <span class="tag">基因组学</span><span class="tag">健康长寿</span></span>
             </div>
-            <div class="paper-summary">
-                最新发表在《Biochimica et Biophysica Acta - Gene Regulatory Mechanisms》上的研究揭示了烟酰胺单核苷酸（NMN）抗衰老的全新分子机制。研究发现，NMN能够通过激活长寿蛋白SIRT7（Sirtuin 7）并促进谷氨酰胺代谢，有效缓解斑秃（Alopecia Areata）中的氧化应激损伤。SIRT7是Sirtuin家族中定位于核仁的NAD⁺依赖性去乙酰化酶，在调控核糖体生物合成、基因组稳定性和应激反应中发挥关键作用。NMN作为NAD⁺的直接前体，补充后可提升细胞内NAD⁺水平，从而增强SIRT7活性。该研究不仅为斑秃治疗提供了新的药物靶点，更重要的是揭示了NMN-SIRT7-谷氨酰胺代谢这一新的抗衰老信号通路。这一发现进一步丰富了NAD⁺/Sirtuin长寿调控网络的认知，为NMN作为抗衰老补充剂的临床应用提供了更多分子层面的科学支撑。
+            <div class="summary">
+                发表在Nature旗下《Communications Medicine》的大规模基因组学研究，首次系统性绘制了<strong>脑结构、精神健康与心脏代谢疾病</strong>之间的遗传交汇图谱。研究利用大规模GWAS汇总统计数据，分析了精神疾病与心脏代谢疾病之间的共享遗传基础。研究发现，<strong>特定脑区结构和精神障碍与2型糖尿病、冠心病等代谢性疾病之间存在显著的遗传相关性</strong>。通过多变量分析和因果中介分析，研究揭示了多条共享的分子通路，包括炎症信号通路、胰岛素信号通路和神经发育通路。这一发现为理解"身心一体"的健康观提供了分子遗传学证据，也为开发<strong>跨系统的综合健康干预策略</strong>指明了方向，对长寿科学研究具有深远影响。
             </div>
-            <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42508531/" target="_blank">🔗 查看原文 (PubMed) →</a>
+            <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/42509310/" target="_blank">🔗 查看原文 →</a>
         </div>
 
-        <!-- Paper 4 -->
-        <div class="paper-card">
-            <div class="paper-num">4</div>
-            <span class="tag tag-senolytics">衰老调控</span>
-            <span class="tag tag-natural">天然抗衰</span>
-            <h3>Royal Jelly Suppresses Senescence-Associated Secretory Phenotype in Senescent Human Epidermal Keratinocytes</h3>
-            <div class="paper-meta">
-                <span>📖 Molecular Biology Reports</span>
-                <span>📅 2026-07-27</span>
-                <span>🏛️ 日本山田蜂产品研究所</span>
-            </div>
-            <div class="paper-summary">
-                日本山田蜂产品研究所（Yamada Bee Company）研究团队在《Molecular Biology Reports》发表研究，证实蜂王浆（Royal Jelly, RJ）是一种强效的天然衰老形态调节剂（Senomorphic Agent）。研究利用正常人表皮角质形成细胞的体外复制性衰老模型，并通过来自高龄供体（包括75岁老人）的细胞进行验证，系统评估了蜂王浆的抗衰老效应。结果表明，蜂王浆能显著抑制多种衰老相关分泌表型（SASP）因子，包括白介素-6（IL-6）和CXCL趋化因子家族成员，且在两种模型中均未表现出细胞毒性。RNA测序分析揭示，衰老通过TNF-α和NF-κB信号通路上调了促炎症因子。蜂王浆作为多靶点衰老调节剂，能同时抑制这些衰老激活的通路并减轻氧化应激。SASP是衰老细胞分泌的一系列促炎因子、趋化因子和蛋白酶的总称，是驱动组织衰老和年龄相关疾病的关键因素。该研究为开发基于天然产物的安全抗衰老策略提供了重要的科学依据，也为蜂产品在大健康领域的应用开辟了新的研究方向。
-            </div>
-            <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42507142/" target="_blank">🔗 查看原文 (PubMed) →</a>
-        </div>
-
-        <!-- Paper 5 -->
-        <div class="paper-card">
-            <div class="paper-num">5</div>
-            <span class="tag tag-theory">衰老理论</span>
-            <h3>A Brief History of the Hyperfunction Theory of Aging and Future Directions</h3>
-            <div class="paper-meta">
-                <span>📖 Aging (Albany NY)</span>
-                <span>📅 2026-07-24</span>
-                <span>🏛️ 英国伯明翰大学</span>
-            </div>
-            <div class="paper-summary">
-                英国伯明翰大学衰老与再生基因组学实验室的João Pedro de Magalhães教授在权威期刊《Aging》发表综述论文，系统回顾了衰老生物学中"过度功能理论"（Hyperfunction Theory）的发展历程与未来方向。该综述从早期的热量限制（Caloric Restriction）延长寿命实验出发，追溯了多种程序化衰老理论的演进，特别强调了Mikhail Blagosklonny对过度功能理论的关键贡献。与传统观点认为衰老是分子损伤被动累积不同，过度功能理论提出衰老本质上是一种程序化过程——源于发育程序在生命后期的持续运行，作为拮抗多效性（Antagonistic Pleiotropy）的表现形式而变得有害。单基因操作能在动物模型中调控衰老速度，以及雷帕霉素（Rapamycin）延长寿命的实验证据，为该理论提供了强有力的实证支持。Magalhães教授还讨论了该理论对未来衰老生物学研究的启示，包括精准靶向mTOR通路、开发模拟热量限制效果的药物等干预策略。这篇综述为理解衰老的本质提供了全新的理论视角，对指导抗衰老药物研发和制定健康长寿策略具有深远的理论意义。
-            </div>
-            <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42506906/" target="_blank">🔗 查看原文 (PubMed) →</a>
+        <div class="highlight">
+            <strong>📊 今日关键词：</strong>硒与长寿 · NMN抗衰老 · AI衰老检测 · NAD⁺血管健康 · 身心遗传交汇
         </div>
 
         <div class="footer">
-            <p>🤖 本简报由 OpenClaw AI 自动生成 · <a href="https://jiaviswangcai.ai">旺财Jarvis</a></p>
+            <p>🤖 本简报由 <a href="https://github.com/Chris7Ji/jarviswangcai">旺财Jarvis</a> 自动生成</p>
             <p>数据来源：<a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> · 更新时间：2026-07-28 13:24 CST</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #bbb;">如需退订，请回复"取消订阅健康简报"</p>
+            <p style="margin-top: 8px; font-size: 12px; opacity: 0.6;">如需退订，请回复"取消订阅"</p>
         </div>
     </div>
 </body>
