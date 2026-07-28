@@ -1,0 +1,1402 @@
+{
+  "meta": {
+    "generated": "2026-07-28T13:26:04",
+    "total_files_scanned": 154,
+    "total_nodes": 101,
+    "total_edges": 31,
+    "total_tags": 15,
+    "total_wikilinks": 6
+  },
+  "nodes": [
+    {
+      "id": "#AI助手",
+      "type": "tag"
+    },
+    {
+      "id": "#AgenticRuntime",
+      "type": "tag"
+    },
+    {
+      "id": "#D4A84B",
+      "type": "tag"
+    },
+    {
+      "id": "#FF8C42",
+      "type": "tag"
+    },
+    {
+      "id": "#OpenClaw",
+      "type": "tag"
+    },
+    {
+      "id": "#e2e8f0",
+      "type": "tag"
+    },
+    {
+      "id": "#f8f9fc",
+      "type": "tag"
+    },
+    {
+      "id": "#ffffff",
+      "type": "tag"
+    },
+    {
+      "id": "#企业AI",
+      "type": "tag"
+    },
+    {
+      "id": "#供应链安全",
+      "type": "tag"
+    },
+    {
+      "id": "#开源AI",
+      "type": "tag"
+    },
+    {
+      "id": "#成本优化",
+      "type": "tag"
+    },
+    {
+      "id": "#本地部署",
+      "type": "tag"
+    },
+    {
+      "id": "#版本更新",
+      "type": "tag"
+    },
+    {
+      "id": "#行业竞争",
+      "type": "tag"
+    },
+    {
+      "id": "2026-05-29",
+      "type": "file"
+    },
+    {
+      "id": "2026-05-30",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-15-sessions-merged",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-16",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-16-1115",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-17",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-18",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-19",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-20",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-21",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-22",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-23",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-24",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-25",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-26",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-27",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-27-1706",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-27-1706-2",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-28",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-29",
+      "type": "file"
+    },
+    {
+      "id": "2026-06-30",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-01",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-02",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-03",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-04",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-05",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-06",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-07",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-08",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-09",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-10",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-11",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-12",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-13",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-14",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-15",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-24",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-25",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-26",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-27",
+      "type": "file"
+    },
+    {
+      "id": "2026-07-28",
+      "type": "file"
+    },
+    {
+      "id": "AGENTS",
+      "type": "file"
+    },
+    {
+      "id": "ARCHIVE_LOG",
+      "type": "file"
+    },
+    {
+      "id": "DREAMS",
+      "type": "file"
+    },
+    {
+      "id": "MEMORY",
+      "type": "file"
+    },
+    {
+      "id": "SOUL",
+      "type": "file"
+    },
+    {
+      "id": "TOOLS",
+      "type": "file"
+    },
+    {
+      "id": "ai_news_2026-06-27",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-06-29",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-16",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-17",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-18",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-20",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-21",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-22",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-23",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-24",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-25",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-27",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-29",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-06-30",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-07-07",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-16",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-17",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-18",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-19",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-20",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-21",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-22",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-23",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-24",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-25",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-26",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-27",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-28",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-29",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-06-30",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-07-07",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-07-08",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_high_quality_2026-07-09",
+      "type": "file"
+    },
+    {
+      "id": "reply_to:38e5c154-42f5-4f80-9c8e-6aa5c9de0c47",
+      "type": "concept"
+    },
+    {
+      "id": "reply_to:5d2d9b35-85a0-4d72-81e0-43fee3c81aa2",
+      "type": "concept"
+    },
+    {
+      "id": "reply_to:7b4fb463-f1b4-4fdd-a76f-c86159d8ac75",
+      "type": "concept"
+    },
+    {
+      "id": "reply_to:9f9b26ed-655c-4a52-84bf-8718eed071d6",
+      "type": "concept"
+    },
+    {
+      "id": "reply_to_current",
+      "type": "concept"
+    },
+    {
+      "id": "working-buffer",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "source": "2026-06-29",
+      "target": "reply_to:7b4fb463-f1b4-4fdd-a76f-c86159d8ac75",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-29",
+      "target": "reply_to:9f9b26ed-655c-4a52-84bf-8718eed071d6",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-29",
+      "target": "reply_to:5d2d9b35-85a0-4d72-81e0-43fee3c81aa2",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-18",
+      "target": "#D4A84B",
+      "type": "tag"
+    },
+    {
+      "source": "2026-06-18",
+      "target": "#f8f9fc",
+      "type": "tag"
+    },
+    {
+      "source": "2026-06-18",
+      "target": "#ffffff",
+      "type": "tag"
+    },
+    {
+      "source": "2026-06-18",
+      "target": "#e2e8f0",
+      "type": "tag"
+    },
+    {
+      "source": "2026-07-02",
+      "target": "reply_to_current",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-06-22",
+      "target": "#FF8C42",
+      "type": "tag"
+    },
+    {
+      "source": "2026-06-30",
+      "target": "reply_to:38e5c154-42f5-4f80-9c8e-6aa5c9de0c47",
+      "type": "wikilink"
+    },
+    {
+      "source": "2026-07-01",
+      "target": "reply_to_current",
+      "type": "wikilink"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-23",
+      "target": "#供应链安全",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-23",
+      "target": "#版本更新",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-23",
+      "target": "#企业AI",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-23",
+      "target": "#成本优化",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-23",
+      "target": "#行业竞争",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-23",
+      "target": "#供应链安全",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-23",
+      "target": "#版本更新",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-23",
+      "target": "#企业AI",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-23",
+      "target": "#成本优化",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-23",
+      "target": "#行业竞争",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-30",
+      "target": "#OpenClaw",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-30",
+      "target": "#开源AI",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-30",
+      "target": "#AgenticRuntime",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-30",
+      "target": "#AI助手",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_2026-06-30",
+      "target": "#本地部署",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-30",
+      "target": "#OpenClaw",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-30",
+      "target": "#开源AI",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-30",
+      "target": "#AgenticRuntime",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-30",
+      "target": "#AI助手",
+      "type": "tag"
+    },
+    {
+      "source": "openclaw_news_high_quality_2026-06-30",
+      "target": "#本地部署",
+      "type": "tag"
+    }
+  ],
+  "tags": {
+    "AI助手": [
+      "openclaw_news_2026-06-30",
+      "openclaw_news_high_quality_2026-06-30"
+    ],
+    "AgenticRuntime": [
+      "openclaw_news_2026-06-30",
+      "openclaw_news_high_quality_2026-06-30"
+    ],
+    "D4A84B": [
+      "2026-06-18"
+    ],
+    "FF8C42": [
+      "2026-06-22"
+    ],
+    "OpenClaw": [
+      "openclaw_news_2026-06-30",
+      "openclaw_news_high_quality_2026-06-30"
+    ],
+    "e2e8f0": [
+      "2026-06-18"
+    ],
+    "f8f9fc": [
+      "2026-06-18"
+    ],
+    "ffffff": [
+      "2026-06-18"
+    ],
+    "企业AI": [
+      "openclaw_news_2026-06-23",
+      "openclaw_news_high_quality_2026-06-23"
+    ],
+    "供应链安全": [
+      "openclaw_news_2026-06-23",
+      "openclaw_news_high_quality_2026-06-23"
+    ],
+    "开源AI": [
+      "openclaw_news_2026-06-30",
+      "openclaw_news_high_quality_2026-06-30"
+    ],
+    "成本优化": [
+      "openclaw_news_2026-06-23",
+      "openclaw_news_high_quality_2026-06-23"
+    ],
+    "本地部署": [
+      "openclaw_news_2026-06-30",
+      "openclaw_news_high_quality_2026-06-30"
+    ],
+    "版本更新": [
+      "openclaw_news_2026-06-23",
+      "openclaw_news_high_quality_2026-06-23"
+    ],
+    "行业竞争": [
+      "openclaw_news_2026-06-23",
+      "openclaw_news_high_quality_2026-06-23"
+    ]
+  },
+  "files": {
+    ".openclaw/tmp/feedback-2026-06-29.md": {
+      "id": "feedback-2026-06-29",
+      "path": ".openclaw/tmp/feedback-2026-06-29.md",
+      "type": "file"
+    },
+    "AGENTS.md": {
+      "id": "AGENTS",
+      "path": "AGENTS.md",
+      "type": "file"
+    },
+    "DREAMS.md": {
+      "id": "DREAMS",
+      "path": "DREAMS.md",
+      "type": "file"
+    },
+    "MEMORY.md": {
+      "id": "MEMORY",
+      "path": "MEMORY.md",
+      "type": "file"
+    },
+    "SOUL.md": {
+      "id": "SOUL",
+      "path": "SOUL.md",
+      "type": "file"
+    },
+    "TOOLS.md": {
+      "id": "TOOLS",
+      "path": "TOOLS.md",
+      "type": "file"
+    },
+    "memory/2026-07-24.md": {
+      "id": "2026-07-24",
+      "path": "memory/2026-07-24.md",
+      "type": "file"
+    },
+    "memory/2026-07-27.md": {
+      "id": "2026-07-27",
+      "path": "memory/2026-07-27.md",
+      "type": "file"
+    },
+    "memory/archive/2026-05-29.md": {
+      "id": "2026-05-29",
+      "path": "memory/archive/2026-05-29.md",
+      "type": "file"
+    },
+    "memory/archive/2026-05-30.md": {
+      "id": "2026-05-30",
+      "path": "memory/archive/2026-05-30.md",
+      "type": "file"
+    },
+    "memory/archive/2026-06-15-sessions-merged.md": {
+      "id": "2026-06-15-sessions-merged",
+      "path": "memory/archive/2026-06-15-sessions-merged.md",
+      "type": "file"
+    },
+    "memory/archive/2026-06-16-1115.md": {
+      "id": "2026-06-16-1115",
+      "path": "memory/archive/2026-06-16-1115.md",
+      "type": "file"
+    },
+    "memory/archive/2026-06-16.md": {
+      "id": "2026-06-16",
+      "path": "memory/archive/2026-06-16.md",
+      "type": "file"
+    },
+    "memory/archive/2026-06-27-1706-2.md": {
+      "id": "2026-06-27-1706-2",
+      "path": "memory/archive/2026-06-27-1706-2.md",
+      "type": "file"
+    },
+    "memory/archive/2026-06-27-1706.md": {
+      "id": "2026-06-27-1706",
+      "path": "memory/archive/2026-06-27-1706.md",
+      "type": "file"
+    },
+    "memory/archive/ARCHIVE_LOG.md": {
+      "id": "ARCHIVE_LOG",
+      "path": "memory/archive/ARCHIVE_LOG.md",
+      "type": "file"
+    },
+    "memory/archive/working-buffer.md": {
+      "id": "working-buffer",
+      "path": "memory/archive/working-buffer.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-16.md": {
+      "id": "2026-06-16",
+      "path": "memory/dreaming/deep/2026-06-16.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-17.md": {
+      "id": "2026-06-17",
+      "path": "memory/dreaming/deep/2026-06-17.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-18.md": {
+      "id": "2026-06-18",
+      "path": "memory/dreaming/deep/2026-06-18.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-19.md": {
+      "id": "2026-06-19",
+      "path": "memory/dreaming/deep/2026-06-19.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-20.md": {
+      "id": "2026-06-20",
+      "path": "memory/dreaming/deep/2026-06-20.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-21.md": {
+      "id": "2026-06-21",
+      "path": "memory/dreaming/deep/2026-06-21.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-22.md": {
+      "id": "2026-06-22",
+      "path": "memory/dreaming/deep/2026-06-22.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-23.md": {
+      "id": "2026-06-23",
+      "path": "memory/dreaming/deep/2026-06-23.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-24.md": {
+      "id": "2026-06-24",
+      "path": "memory/dreaming/deep/2026-06-24.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-25.md": {
+      "id": "2026-06-25",
+      "path": "memory/dreaming/deep/2026-06-25.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-26.md": {
+      "id": "2026-06-26",
+      "path": "memory/dreaming/deep/2026-06-26.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-27.md": {
+      "id": "2026-06-27",
+      "path": "memory/dreaming/deep/2026-06-27.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-28.md": {
+      "id": "2026-06-28",
+      "path": "memory/dreaming/deep/2026-06-28.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-29.md": {
+      "id": "2026-06-29",
+      "path": "memory/dreaming/deep/2026-06-29.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-06-30.md": {
+      "id": "2026-06-30",
+      "path": "memory/dreaming/deep/2026-06-30.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-01.md": {
+      "id": "2026-07-01",
+      "path": "memory/dreaming/deep/2026-07-01.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-02.md": {
+      "id": "2026-07-02",
+      "path": "memory/dreaming/deep/2026-07-02.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-03.md": {
+      "id": "2026-07-03",
+      "path": "memory/dreaming/deep/2026-07-03.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-04.md": {
+      "id": "2026-07-04",
+      "path": "memory/dreaming/deep/2026-07-04.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-05.md": {
+      "id": "2026-07-05",
+      "path": "memory/dreaming/deep/2026-07-05.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-06.md": {
+      "id": "2026-07-06",
+      "path": "memory/dreaming/deep/2026-07-06.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-07.md": {
+      "id": "2026-07-07",
+      "path": "memory/dreaming/deep/2026-07-07.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-08.md": {
+      "id": "2026-07-08",
+      "path": "memory/dreaming/deep/2026-07-08.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-09.md": {
+      "id": "2026-07-09",
+      "path": "memory/dreaming/deep/2026-07-09.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-10.md": {
+      "id": "2026-07-10",
+      "path": "memory/dreaming/deep/2026-07-10.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-11.md": {
+      "id": "2026-07-11",
+      "path": "memory/dreaming/deep/2026-07-11.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-12.md": {
+      "id": "2026-07-12",
+      "path": "memory/dreaming/deep/2026-07-12.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-13.md": {
+      "id": "2026-07-13",
+      "path": "memory/dreaming/deep/2026-07-13.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-14.md": {
+      "id": "2026-07-14",
+      "path": "memory/dreaming/deep/2026-07-14.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-15.md": {
+      "id": "2026-07-15",
+      "path": "memory/dreaming/deep/2026-07-15.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-24.md": {
+      "id": "2026-07-24",
+      "path": "memory/dreaming/deep/2026-07-24.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-25.md": {
+      "id": "2026-07-25",
+      "path": "memory/dreaming/deep/2026-07-25.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-26.md": {
+      "id": "2026-07-26",
+      "path": "memory/dreaming/deep/2026-07-26.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-27.md": {
+      "id": "2026-07-27",
+      "path": "memory/dreaming/deep/2026-07-27.md",
+      "type": "file"
+    },
+    "memory/dreaming/deep/2026-07-28.md": {
+      "id": "2026-07-28",
+      "path": "memory/dreaming/deep/2026-07-28.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-16.md": {
+      "id": "2026-06-16",
+      "path": "memory/dreaming/light/2026-06-16.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-17.md": {
+      "id": "2026-06-17",
+      "path": "memory/dreaming/light/2026-06-17.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-18.md": {
+      "id": "2026-06-18",
+      "path": "memory/dreaming/light/2026-06-18.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-19.md": {
+      "id": "2026-06-19",
+      "path": "memory/dreaming/light/2026-06-19.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-20.md": {
+      "id": "2026-06-20",
+      "path": "memory/dreaming/light/2026-06-20.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-21.md": {
+      "id": "2026-06-21",
+      "path": "memory/dreaming/light/2026-06-21.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-22.md": {
+      "id": "2026-06-22",
+      "path": "memory/dreaming/light/2026-06-22.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-23.md": {
+      "id": "2026-06-23",
+      "path": "memory/dreaming/light/2026-06-23.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-24.md": {
+      "id": "2026-06-24",
+      "path": "memory/dreaming/light/2026-06-24.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-25.md": {
+      "id": "2026-06-25",
+      "path": "memory/dreaming/light/2026-06-25.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-26.md": {
+      "id": "2026-06-26",
+      "path": "memory/dreaming/light/2026-06-26.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-27.md": {
+      "id": "2026-06-27",
+      "path": "memory/dreaming/light/2026-06-27.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-28.md": {
+      "id": "2026-06-28",
+      "path": "memory/dreaming/light/2026-06-28.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-29.md": {
+      "id": "2026-06-29",
+      "path": "memory/dreaming/light/2026-06-29.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-06-30.md": {
+      "id": "2026-06-30",
+      "path": "memory/dreaming/light/2026-06-30.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-01.md": {
+      "id": "2026-07-01",
+      "path": "memory/dreaming/light/2026-07-01.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-02.md": {
+      "id": "2026-07-02",
+      "path": "memory/dreaming/light/2026-07-02.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-03.md": {
+      "id": "2026-07-03",
+      "path": "memory/dreaming/light/2026-07-03.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-04.md": {
+      "id": "2026-07-04",
+      "path": "memory/dreaming/light/2026-07-04.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-05.md": {
+      "id": "2026-07-05",
+      "path": "memory/dreaming/light/2026-07-05.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-06.md": {
+      "id": "2026-07-06",
+      "path": "memory/dreaming/light/2026-07-06.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-07.md": {
+      "id": "2026-07-07",
+      "path": "memory/dreaming/light/2026-07-07.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-08.md": {
+      "id": "2026-07-08",
+      "path": "memory/dreaming/light/2026-07-08.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-09.md": {
+      "id": "2026-07-09",
+      "path": "memory/dreaming/light/2026-07-09.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-10.md": {
+      "id": "2026-07-10",
+      "path": "memory/dreaming/light/2026-07-10.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-11.md": {
+      "id": "2026-07-11",
+      "path": "memory/dreaming/light/2026-07-11.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-12.md": {
+      "id": "2026-07-12",
+      "path": "memory/dreaming/light/2026-07-12.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-13.md": {
+      "id": "2026-07-13",
+      "path": "memory/dreaming/light/2026-07-13.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-14.md": {
+      "id": "2026-07-14",
+      "path": "memory/dreaming/light/2026-07-14.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-15.md": {
+      "id": "2026-07-15",
+      "path": "memory/dreaming/light/2026-07-15.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-24.md": {
+      "id": "2026-07-24",
+      "path": "memory/dreaming/light/2026-07-24.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-25.md": {
+      "id": "2026-07-25",
+      "path": "memory/dreaming/light/2026-07-25.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-26.md": {
+      "id": "2026-07-26",
+      "path": "memory/dreaming/light/2026-07-26.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-27.md": {
+      "id": "2026-07-27",
+      "path": "memory/dreaming/light/2026-07-27.md",
+      "type": "file"
+    },
+    "memory/dreaming/light/2026-07-28.md": {
+      "id": "2026-07-28",
+      "path": "memory/dreaming/light/2026-07-28.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-16.md": {
+      "id": "2026-06-16",
+      "path": "memory/dreaming/rem/2026-06-16.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-17.md": {
+      "id": "2026-06-17",
+      "path": "memory/dreaming/rem/2026-06-17.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-18.md": {
+      "id": "2026-06-18",
+      "path": "memory/dreaming/rem/2026-06-18.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-19.md": {
+      "id": "2026-06-19",
+      "path": "memory/dreaming/rem/2026-06-19.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-20.md": {
+      "id": "2026-06-20",
+      "path": "memory/dreaming/rem/2026-06-20.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-21.md": {
+      "id": "2026-06-21",
+      "path": "memory/dreaming/rem/2026-06-21.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-22.md": {
+      "id": "2026-06-22",
+      "path": "memory/dreaming/rem/2026-06-22.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-23.md": {
+      "id": "2026-06-23",
+      "path": "memory/dreaming/rem/2026-06-23.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-24.md": {
+      "id": "2026-06-24",
+      "path": "memory/dreaming/rem/2026-06-24.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-25.md": {
+      "id": "2026-06-25",
+      "path": "memory/dreaming/rem/2026-06-25.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-26.md": {
+      "id": "2026-06-26",
+      "path": "memory/dreaming/rem/2026-06-26.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-27.md": {
+      "id": "2026-06-27",
+      "path": "memory/dreaming/rem/2026-06-27.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-28.md": {
+      "id": "2026-06-28",
+      "path": "memory/dreaming/rem/2026-06-28.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-29.md": {
+      "id": "2026-06-29",
+      "path": "memory/dreaming/rem/2026-06-29.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-06-30.md": {
+      "id": "2026-06-30",
+      "path": "memory/dreaming/rem/2026-06-30.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-01.md": {
+      "id": "2026-07-01",
+      "path": "memory/dreaming/rem/2026-07-01.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-02.md": {
+      "id": "2026-07-02",
+      "path": "memory/dreaming/rem/2026-07-02.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-03.md": {
+      "id": "2026-07-03",
+      "path": "memory/dreaming/rem/2026-07-03.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-04.md": {
+      "id": "2026-07-04",
+      "path": "memory/dreaming/rem/2026-07-04.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-05.md": {
+      "id": "2026-07-05",
+      "path": "memory/dreaming/rem/2026-07-05.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-06.md": {
+      "id": "2026-07-06",
+      "path": "memory/dreaming/rem/2026-07-06.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-07.md": {
+      "id": "2026-07-07",
+      "path": "memory/dreaming/rem/2026-07-07.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-08.md": {
+      "id": "2026-07-08",
+      "path": "memory/dreaming/rem/2026-07-08.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-09.md": {
+      "id": "2026-07-09",
+      "path": "memory/dreaming/rem/2026-07-09.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-10.md": {
+      "id": "2026-07-10",
+      "path": "memory/dreaming/rem/2026-07-10.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-11.md": {
+      "id": "2026-07-11",
+      "path": "memory/dreaming/rem/2026-07-11.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-12.md": {
+      "id": "2026-07-12",
+      "path": "memory/dreaming/rem/2026-07-12.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-13.md": {
+      "id": "2026-07-13",
+      "path": "memory/dreaming/rem/2026-07-13.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-14.md": {
+      "id": "2026-07-14",
+      "path": "memory/dreaming/rem/2026-07-14.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-15.md": {
+      "id": "2026-07-15",
+      "path": "memory/dreaming/rem/2026-07-15.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-24.md": {
+      "id": "2026-07-24",
+      "path": "memory/dreaming/rem/2026-07-24.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-25.md": {
+      "id": "2026-07-25",
+      "path": "memory/dreaming/rem/2026-07-25.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-26.md": {
+      "id": "2026-07-26",
+      "path": "memory/dreaming/rem/2026-07-26.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-27.md": {
+      "id": "2026-07-27",
+      "path": "memory/dreaming/rem/2026-07-27.md",
+      "type": "file"
+    },
+    "memory/dreaming/rem/2026-07-28.md": {
+      "id": "2026-07-28",
+      "path": "memory/dreaming/rem/2026-07-28.md",
+      "type": "file"
+    },
+    "news_summaries/ai_news_2026-06-27.md": {
+      "id": "ai_news_2026-06-27",
+      "path": "news_summaries/ai_news_2026-06-27.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-16.md": {
+      "id": "openclaw_news_2026-06-16",
+      "path": "news_summaries/openclaw_news_2026-06-16.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-17.md": {
+      "id": "openclaw_news_2026-06-17",
+      "path": "news_summaries/openclaw_news_2026-06-17.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-18.md": {
+      "id": "openclaw_news_2026-06-18",
+      "path": "news_summaries/openclaw_news_2026-06-18.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-20.md": {
+      "id": "openclaw_news_2026-06-20",
+      "path": "news_summaries/openclaw_news_2026-06-20.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-21.md": {
+      "id": "openclaw_news_2026-06-21",
+      "path": "news_summaries/openclaw_news_2026-06-21.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-22.md": {
+      "id": "openclaw_news_2026-06-22",
+      "path": "news_summaries/openclaw_news_2026-06-22.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-23.md": {
+      "id": "openclaw_news_2026-06-23",
+      "path": "news_summaries/openclaw_news_2026-06-23.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-24.md": {
+      "id": "openclaw_news_2026-06-24",
+      "path": "news_summaries/openclaw_news_2026-06-24.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-25.md": {
+      "id": "openclaw_news_2026-06-25",
+      "path": "news_summaries/openclaw_news_2026-06-25.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-27.md": {
+      "id": "openclaw_news_2026-06-27",
+      "path": "news_summaries/openclaw_news_2026-06-27.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-29.md": {
+      "id": "openclaw_news_2026-06-29",
+      "path": "news_summaries/openclaw_news_2026-06-29.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-06-30.md": {
+      "id": "openclaw_news_2026-06-30",
+      "path": "news_summaries/openclaw_news_2026-06-30.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_2026-07-07.md": {
+      "id": "openclaw_news_2026-07-07",
+      "path": "news_summaries/openclaw_news_2026-07-07.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-16.md": {
+      "id": "openclaw_news_high_quality_2026-06-16",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-16.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-17.md": {
+      "id": "openclaw_news_high_quality_2026-06-17",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-17.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-18.md": {
+      "id": "openclaw_news_high_quality_2026-06-18",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-18.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-19.md": {
+      "id": "openclaw_news_high_quality_2026-06-19",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-19.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-20.md": {
+      "id": "openclaw_news_high_quality_2026-06-20",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-20.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-21.md": {
+      "id": "openclaw_news_high_quality_2026-06-21",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-21.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-22.md": {
+      "id": "openclaw_news_high_quality_2026-06-22",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-22.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-23.md": {
+      "id": "openclaw_news_high_quality_2026-06-23",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-23.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-24.md": {
+      "id": "openclaw_news_high_quality_2026-06-24",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-24.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-25.md": {
+      "id": "openclaw_news_high_quality_2026-06-25",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-25.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-26.md": {
+      "id": "openclaw_news_high_quality_2026-06-26",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-26.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-27.md": {
+      "id": "openclaw_news_high_quality_2026-06-27",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-27.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-28.md": {
+      "id": "openclaw_news_high_quality_2026-06-28",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-28.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-29.md": {
+      "id": "openclaw_news_high_quality_2026-06-29",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-29.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-06-30.md": {
+      "id": "openclaw_news_high_quality_2026-06-30",
+      "path": "news_summaries/openclaw_news_high_quality_2026-06-30.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-07-07.md": {
+      "id": "openclaw_news_high_quality_2026-07-07",
+      "path": "news_summaries/openclaw_news_high_quality_2026-07-07.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-07-08.md": {
+      "id": "openclaw_news_high_quality_2026-07-08",
+      "path": "news_summaries/openclaw_news_high_quality_2026-07-08.md",
+      "type": "file"
+    },
+    "news_summaries/openclaw_news_high_quality_2026-07-09.md": {
+      "id": "openclaw_news_high_quality_2026-07-09",
+      "path": "news_summaries/openclaw_news_high_quality_2026-07-09.md",
+      "type": "file"
+    }
+  }
+}
