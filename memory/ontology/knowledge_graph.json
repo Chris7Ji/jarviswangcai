@@ -1,72 +1,76 @@
 {
   "meta": {
-    "generated": "2026-07-28T13:26:04",
-    "total_files_scanned": 154,
-    "total_nodes": 101,
-    "total_edges": 31,
-    "total_tags": 15,
-    "total_wikilinks": 6
+    "generated": "2026-07-28T13:37:57",
+    "total_files_scanned": 179,
+    "total_nodes": 126,
+    "total_edges": 32,
+    "total_tags": 7,
+    "total_wikilinks": 20
   },
   "nodes": [
     {
-      "id": "#AI助手",
-      "type": "tag"
+      "id": "reply_to:5d2d9b35-85a0-4d72-81e0-43fee3c81aa2",
+      "type": "concept"
     },
     {
-      "id": "#AgenticRuntime",
-      "type": "tag"
+      "id": "reply_to:7b4fb463-f1b4-4fdd-a76f-c86159d8ac75",
+      "type": "concept"
     },
     {
-      "id": "#D4A84B",
-      "type": "tag"
+      "id": "reply_to:9f9b26ed-655c-4a52-84bf-8718eed071d6",
+      "type": "concept"
     },
     {
-      "id": "#FF8C42",
-      "type": "tag"
+      "id": "reply_to_current",
+      "type": "concept"
     },
     {
-      "id": "#OpenClaw",
-      "type": "tag"
+      "id": "上级姓名",
+      "type": "concept"
     },
     {
-      "id": "#e2e8f0",
-      "type": "tag"
+      "id": "同事A",
+      "type": "concept"
     },
     {
-      "id": "#f8f9fc",
-      "type": "tag"
+      "id": "客户B",
+      "type": "concept"
     },
     {
-      "id": "#ffffff",
-      "type": "tag"
+      "id": "客户名称",
+      "type": "concept"
     },
     {
-      "id": "#企业AI",
-      "type": "tag"
+      "id": "成员A",
+      "type": "concept"
     },
     {
-      "id": "#供应链安全",
-      "type": "tag"
+      "id": "成员B",
+      "type": "concept"
     },
     {
-      "id": "#开源AI",
-      "type": "tag"
+      "id": "联系人姓名",
+      "type": "concept"
     },
     {
-      "id": "#成本优化",
-      "type": "tag"
+      "id": "问题描述",
+      "type": "concept"
     },
     {
-      "id": "#本地部署",
-      "type": "tag"
+      "id": "项目A",
+      "type": "concept"
     },
     {
-      "id": "#版本更新",
-      "type": "tag"
+      "id": "项目B",
+      "type": "concept"
     },
     {
-      "id": "#行业竞争",
-      "type": "tag"
+      "id": "项目X",
+      "type": "concept"
+    },
+    {
+      "id": "项目名称",
+      "type": "concept"
     },
     {
       "id": "2026-05-29",
@@ -245,6 +249,10 @@
       "type": "file"
     },
     {
+      "id": "LICENSE",
+      "type": "file"
+    },
+    {
       "id": "MEMORY",
       "type": "file"
     },
@@ -257,11 +265,75 @@
       "type": "file"
     },
     {
+      "id": "_模板_团队成员",
+      "type": "file"
+    },
+    {
+      "id": "_模板_客户",
+      "type": "file"
+    },
+    {
+      "id": "_模板_每日状态",
+      "type": "file"
+    },
+    {
+      "id": "_模板_联系人",
+      "type": "file"
+    },
+    {
+      "id": "_模板_项目",
+      "type": "file"
+    },
+    {
       "id": "ai_news_2026-06-27",
       "type": "file"
     },
     {
+      "id": "feedback-2026-04-27",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-05-04",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-05-11",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-05-18",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-05-25",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-06-01",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-06-15",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-06-22",
+      "type": "file"
+    },
+    {
       "id": "feedback-2026-06-29",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-06-30",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-07-06",
+      "type": "file"
+    },
+    {
+      "id": "feedback-2026-07-13",
       "type": "file"
     },
     {
@@ -314,6 +386,10 @@
     },
     {
       "id": "openclaw_news_2026-07-07",
+      "type": "file"
+    },
+    {
+      "id": "openclaw_news_2026-07-28",
       "type": "file"
     },
     {
@@ -389,39 +465,63 @@
       "type": "file"
     },
     {
-      "id": "reply_to:38e5c154-42f5-4f80-9c8e-6aa5c9de0c47",
-      "type": "concept"
-    },
-    {
-      "id": "reply_to:5d2d9b35-85a0-4d72-81e0-43fee3c81aa2",
-      "type": "concept"
-    },
-    {
-      "id": "reply_to:7b4fb463-f1b4-4fdd-a76f-c86159d8ac75",
-      "type": "concept"
-    },
-    {
-      "id": "reply_to:9f9b26ed-655c-4a52-84bf-8718eed071d6",
-      "type": "concept"
-    },
-    {
-      "id": "reply_to_current",
-      "type": "concept"
-    },
-    {
       "id": "working-buffer",
       "type": "file"
+    },
+    {
+      "id": "#D4A84B",
+      "type": "tag"
+    },
+    {
+      "id": "#YYYY-MM",
+      "type": "tag"
+    },
+    {
+      "id": "#e2e8f0",
+      "type": "tag"
+    },
+    {
+      "id": "#f8f9fc",
+      "type": "tag"
+    },
+    {
+      "id": "#ffffff",
+      "type": "tag"
+    },
+    {
+      "id": "#合作伙伴",
+      "type": "tag"
+    },
+    {
+      "id": "#团队成员",
+      "type": "tag"
+    },
+    {
+      "id": "#客户",
+      "type": "tag"
+    },
+    {
+      "id": "#每日状态",
+      "type": "tag"
+    },
+    {
+      "id": "#联系人",
+      "type": "tag"
+    },
+    {
+      "id": "#项目",
+      "type": "tag"
     }
   ],
   "edges": [
     {
       "source": "2026-06-29",
-      "target": "reply_to:7b4fb463-f1b4-4fdd-a76f-c86159d8ac75",
+      "target": "reply_to:9f9b26ed-655c-4a52-84bf-8718eed071d6",
       "type": "wikilink"
     },
     {
       "source": "2026-06-29",
-      "target": "reply_to:9f9b26ed-655c-4a52-84bf-8718eed071d6",
+      "target": "reply_to:7b4fb463-f1b4-4fdd-a76f-c86159d8ac75",
       "type": "wikilink"
     },
     {
@@ -431,17 +531,12 @@
     },
     {
       "source": "2026-06-18",
-      "target": "#D4A84B",
-      "type": "tag"
-    },
-    {
-      "source": "2026-06-18",
       "target": "#f8f9fc",
       "type": "tag"
     },
     {
       "source": "2026-06-18",
-      "target": "#ffffff",
+      "target": "#D4A84B",
       "type": "tag"
     },
     {
@@ -450,19 +545,9 @@
       "type": "tag"
     },
     {
-      "source": "2026-07-02",
-      "target": "reply_to_current",
-      "type": "wikilink"
-    },
-    {
-      "source": "2026-06-22",
-      "target": "#FF8C42",
+      "source": "2026-06-18",
+      "target": "#ffffff",
       "type": "tag"
-    },
-    {
-      "source": "2026-06-30",
-      "target": "reply_to:38e5c154-42f5-4f80-9c8e-6aa5c9de0c47",
-      "type": "wikilink"
     },
     {
       "source": "2026-07-01",
@@ -470,124 +555,132 @@
       "type": "wikilink"
     },
     {
-      "source": "openclaw_news_high_quality_2026-06-23",
-      "target": "#供应链安全",
+      "source": "_模板_客户",
+      "target": "#合作伙伴",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_high_quality_2026-06-23",
-      "target": "#版本更新",
+      "source": "_模板_客户",
+      "target": "#客户",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_high_quality_2026-06-23",
-      "target": "#企业AI",
+      "source": "_模板_客户",
+      "target": "联系人姓名",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_客户",
+      "target": "项目A",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_客户",
+      "target": "项目B",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_联系人",
+      "target": "#联系人",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_high_quality_2026-06-23",
-      "target": "#成本优化",
+      "source": "_模板_联系人",
+      "target": "#合作伙伴",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_high_quality_2026-06-23",
-      "target": "#行业竞争",
+      "source": "_模板_联系人",
+      "target": "项目名称",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_团队成员",
+      "target": "#团队成员",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_2026-06-23",
-      "target": "#供应链安全",
+      "source": "_模板_团队成员",
+      "target": "项目A",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_团队成员",
+      "target": "项目B",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_团队成员",
+      "target": "上级姓名",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_项目",
+      "target": "#项目",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_2026-06-23",
-      "target": "#版本更新",
+      "source": "_模板_项目",
+      "target": "成员B",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_项目",
+      "target": "客户名称",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_项目",
+      "target": "成员A",
+      "type": "wikilink"
+    },
+    {
+      "source": "_模板_每日状态",
+      "target": "#YYYY-MM",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_2026-06-23",
-      "target": "#企业AI",
+      "source": "_模板_每日状态",
+      "target": "#每日状态",
       "type": "tag"
     },
     {
-      "source": "openclaw_news_2026-06-23",
-      "target": "#成本优化",
-      "type": "tag"
+      "source": "_模板_每日状态",
+      "target": "问题描述",
+      "type": "wikilink"
     },
     {
-      "source": "openclaw_news_2026-06-23",
-      "target": "#行业竞争",
-      "type": "tag"
+      "source": "_模板_每日状态",
+      "target": "项目A",
+      "type": "wikilink"
     },
     {
-      "source": "openclaw_news_2026-06-30",
-      "target": "#OpenClaw",
-      "type": "tag"
+      "source": "_模板_每日状态",
+      "target": "项目X",
+      "type": "wikilink"
     },
     {
-      "source": "openclaw_news_2026-06-30",
-      "target": "#开源AI",
-      "type": "tag"
+      "source": "_模板_每日状态",
+      "target": "同事A",
+      "type": "wikilink"
     },
     {
-      "source": "openclaw_news_2026-06-30",
-      "target": "#AgenticRuntime",
-      "type": "tag"
+      "source": "_模板_每日状态",
+      "target": "项目B",
+      "type": "wikilink"
     },
     {
-      "source": "openclaw_news_2026-06-30",
-      "target": "#AI助手",
-      "type": "tag"
-    },
-    {
-      "source": "openclaw_news_2026-06-30",
-      "target": "#本地部署",
-      "type": "tag"
-    },
-    {
-      "source": "openclaw_news_high_quality_2026-06-30",
-      "target": "#OpenClaw",
-      "type": "tag"
-    },
-    {
-      "source": "openclaw_news_high_quality_2026-06-30",
-      "target": "#开源AI",
-      "type": "tag"
-    },
-    {
-      "source": "openclaw_news_high_quality_2026-06-30",
-      "target": "#AgenticRuntime",
-      "type": "tag"
-    },
-    {
-      "source": "openclaw_news_high_quality_2026-06-30",
-      "target": "#AI助手",
-      "type": "tag"
-    },
-    {
-      "source": "openclaw_news_high_quality_2026-06-30",
-      "target": "#本地部署",
-      "type": "tag"
+      "source": "_模板_每日状态",
+      "target": "客户B",
+      "type": "wikilink"
     }
   ],
   "tags": {
-    "AI助手": [
-      "openclaw_news_2026-06-30",
-      "openclaw_news_high_quality_2026-06-30"
-    ],
-    "AgenticRuntime": [
-      "openclaw_news_2026-06-30",
-      "openclaw_news_high_quality_2026-06-30"
-    ],
     "D4A84B": [
       "2026-06-18"
     ],
-    "FF8C42": [
-      "2026-06-22"
-    ],
-    "OpenClaw": [
-      "openclaw_news_2026-06-30",
-      "openclaw_news_high_quality_2026-06-30"
+    "YYYY-MM": [
+      "_模板_每日状态"
     ],
     "e2e8f0": [
       "2026-06-18"
@@ -598,33 +691,24 @@
     "ffffff": [
       "2026-06-18"
     ],
-    "企业AI": [
-      "openclaw_news_2026-06-23",
-      "openclaw_news_high_quality_2026-06-23"
+    "合作伙伴": [
+      "_模板_客户",
+      "_模板_联系人"
     ],
-    "供应链安全": [
-      "openclaw_news_2026-06-23",
-      "openclaw_news_high_quality_2026-06-23"
+    "团队成员": [
+      "_模板_团队成员"
     ],
-    "开源AI": [
-      "openclaw_news_2026-06-30",
-      "openclaw_news_high_quality_2026-06-30"
+    "客户": [
+      "_模板_客户"
     ],
-    "成本优化": [
-      "openclaw_news_2026-06-23",
-      "openclaw_news_high_quality_2026-06-23"
+    "每日状态": [
+      "_模板_每日状态"
     ],
-    "本地部署": [
-      "openclaw_news_2026-06-30",
-      "openclaw_news_high_quality_2026-06-30"
+    "联系人": [
+      "_模板_联系人"
     ],
-    "版本更新": [
-      "openclaw_news_2026-06-23",
-      "openclaw_news_high_quality_2026-06-23"
-    ],
-    "行业竞争": [
-      "openclaw_news_2026-06-23",
-      "openclaw_news_high_quality_2026-06-23"
+    "项目": [
+      "_模板_项目"
     ]
   },
   "files": {
@@ -656,6 +740,16 @@
     "TOOLS.md": {
       "id": "TOOLS",
       "path": "TOOLS.md",
+      "type": "file"
+    },
+    "daily-status/_模板_每日状态.md": {
+      "id": "_模板_每日状态",
+      "path": "daily-status/_模板_每日状态.md",
+      "type": "file"
+    },
+    "jiaviswangcai.ai/MEMORY.md": {
+      "id": "MEMORY",
+      "path": "jiaviswangcai.ai/MEMORY.md",
       "type": "file"
     },
     "memory/2026-07-24.md": {
@@ -1308,6 +1402,11 @@
       "path": "news_summaries/openclaw_news_2026-07-07.md",
       "type": "file"
     },
+    "news_summaries/openclaw_news_2026-07-28.md": {
+      "id": "openclaw_news_2026-07-28",
+      "path": "news_summaries/openclaw_news_2026-07-28.md",
+      "type": "file"
+    },
     "news_summaries/openclaw_news_high_quality_2026-06-16.md": {
       "id": "openclaw_news_high_quality_2026-06-16",
       "path": "news_summaries/openclaw_news_high_quality_2026-06-16.md",
@@ -1396,6 +1495,116 @@
     "news_summaries/openclaw_news_high_quality_2026-07-09.md": {
       "id": "openclaw_news_high_quality_2026-07-09",
       "path": "news_summaries/openclaw_news_high_quality_2026-07-09.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-04-27.md": {
+      "id": "feedback-2026-04-27",
+      "path": "ontology-sync/feedback/feedback-2026-04-27.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-05-04.md": {
+      "id": "feedback-2026-05-04",
+      "path": "ontology-sync/feedback/feedback-2026-05-04.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-05-11.md": {
+      "id": "feedback-2026-05-11",
+      "path": "ontology-sync/feedback/feedback-2026-05-11.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-05-18.md": {
+      "id": "feedback-2026-05-18",
+      "path": "ontology-sync/feedback/feedback-2026-05-18.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-05-25.md": {
+      "id": "feedback-2026-05-25",
+      "path": "ontology-sync/feedback/feedback-2026-05-25.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-06-01.md": {
+      "id": "feedback-2026-06-01",
+      "path": "ontology-sync/feedback/feedback-2026-06-01.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-06-15.md": {
+      "id": "feedback-2026-06-15",
+      "path": "ontology-sync/feedback/feedback-2026-06-15.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-06-22.md": {
+      "id": "feedback-2026-06-22",
+      "path": "ontology-sync/feedback/feedback-2026-06-22.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-06-29.md": {
+      "id": "feedback-2026-06-29",
+      "path": "ontology-sync/feedback/feedback-2026-06-29.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-06-30.md": {
+      "id": "feedback-2026-06-30",
+      "path": "ontology-sync/feedback/feedback-2026-06-30.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-07-06.md": {
+      "id": "feedback-2026-07-06",
+      "path": "ontology-sync/feedback/feedback-2026-07-06.md",
+      "type": "file"
+    },
+    "ontology-sync/feedback/feedback-2026-07-13.md": {
+      "id": "feedback-2026-07-13",
+      "path": "ontology-sync/feedback/feedback-2026-07-13.md",
+      "type": "file"
+    },
+    "projects/_模板_项目.md": {
+      "id": "_模板_项目",
+      "path": "projects/_模板_项目.md",
+      "type": "file"
+    },
+    "references/clients/_模板_客户.md": {
+      "id": "_模板_客户",
+      "path": "references/clients/_模板_客户.md",
+      "type": "file"
+    },
+    "references/contacts/_模板_联系人.md": {
+      "id": "_模板_联系人",
+      "path": "references/contacts/_模板_联系人.md",
+      "type": "file"
+    },
+    "references/team/_模板_团队成员.md": {
+      "id": "_模板_团队成员",
+      "path": "references/team/_模板_团队成员.md",
+      "type": "file"
+    },
+    "venv_tavily/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md": {
+      "id": "LICENSE",
+      "path": "venv_tavily/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md",
+      "type": "file"
+    },
+    "venv_tavily/lib/python3.14/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md": {
+      "id": "LICENSE",
+      "path": "venv_tavily/lib/python3.14/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+      "type": "file"
+    },
+    "venv_tavily/lib/python3.14/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md": {
+      "id": "LICENSE",
+      "path": "venv_tavily/lib/python3.14/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md",
+      "type": "file"
+    },
+    "venv_tavily/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md": {
+      "id": "LICENSE",
+      "path": "venv_tavily/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
+      "type": "file"
+    },
+    "venv_tavily/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md": {
+      "id": "LICENSE",
+      "path": "venv_tavily/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "type": "file"
+    },
+    "venv_tavily/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md": {
+      "id": "LICENSE",
+      "path": "venv_tavily/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
       "type": "file"
     }
   }
