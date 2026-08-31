@@ -1,0 +1,32 @@
+# 保护网站核心文件
+!index.html
+!post.html
+!diary.html
+!about.html
+!news.html
+!news_health.html
+!skills.html
+!ascend.html
+!CNAME
+!.nojekyll
+!css/
+!css/style.css
+!css/diary.css
+!css/post.css
+!css/about.css
+!css/article.css
+!css/skills.css
+!js/
+!images/
+
+# 忽略不需要跟踪的文件
+.DS_Store
+__pycache__/
+*.pyc
+.openclaw/
+.learnings/
+memory/
+MEMORY.md
+MEMORY_backup_*.md
+*.log
+node_modules/
