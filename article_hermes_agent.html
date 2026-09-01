@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent：开发者的下一代自主进化 AI 代理 - 旺财Jarvis</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+    <style>
+        :root {
+            --bg: #f8f9fc;
+            --surface: #ffffff;
+            --text: #1a1a2e;
+            --muted: #5a5a7a;
+            --accent: #D4A84B;
+            --accent-light: #fef3c7;
+            --accent2: #3D9CA8;
+            --border: #e2e8f0;
+            --code-bg: #0f172a;
+            --code-text: #e2e8f0;
+            --tag-bg: #f1f5f9;
+            --tag-text: #475569;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+        header.hero {
+            background: linear-gradient(135deg, #D4A84B 0%, #3D9CA8 100%);
+            color: #fff;
+            padding: 72px 20px 64px;
+            text-align: center;
+        }
+        header.hero .eyebrow {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            padding: 4px 16px;
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+        header.hero h1 {
+            font-size: clamp(26px, 5vw, 40px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        header.hero .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        article { padding: 48px 0 80px; }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 56px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 32px 0 14px;
+            color: #1e293b;
+        }
+        h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin: 20px 0 10px;
+            color: #334155;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        p { margin-bottom: 16px; }
+
+        .intro-note {
+            background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+            border-left: 4px solid var(--accent2);
+            border-radius: 0 8px 8px 0;
+            padding: 18px 24px;
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+        .intro-note strong { color: var(--accent2); }
+
+        .callout {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 0 10px 10px 0;
+            padding: 18px 22px;
+            margin: 24px 0;
+            font-size: 15px;
+        }
+        .callout .emoji { font-size: 20px; margin-right: 8px; }
+
+        .tag {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-family: "SF Mono", "Fira Code", monospace;
+            margin: 0 2px;
+        }
+
+        .table-wrap { overflow-x: auto; margin: 24px 0; border-radius: 10px; border: 1px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--surface); }
+        thead { background: #f8fafc; }
+        th { text-align: left; padding: 11px 16px; font-weight: 600; color: #475569; border-bottom: 1px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+        td { padding: 10px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+        tr:last-child td { border-bottom: none; }
+        tbody tr:hover { background: #f8fafc; }
+
+        pre {
+            background: var(--code-bg);
+            color: var(--code-text);
+            border-radius: 10px;
+            padding: 20px 24px;
+            overflow-x: auto;
+            font-size: 13.5px;
+            line-height: 1.65;
+            margin: 20px 0;
+            font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+        }
+        code {
+            font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+            font-size: 13.5px;
+            background: #f1f5f9;
+            color: #0f172a;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        pre code { background: transparent; color: inherit; padding: 0; font-size: inherit; }
+
+        .sec-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 13px;
+            font-weight: 700;
+            margin-right: 8px;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        ul, ol { padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+
+        .highlight-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .highlight-box.info { background: #eff6ff; border-color: #bfdbfe; }
+        .highlight-box .hb-title { font-weight: 700; margin-bottom: 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #D4A84B; }
+        .highlight-box.info .hb-title { color: var(--accent2); }
+
+        .diagram {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px 24px;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 1.6;
+            font-family: "SF Mono", "Fira Code", monospace;
+            margin: 20px 0;
+            color: #334155;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #D4A84B, #3D9CA8);
+            color: #fff;
+            border-radius: 14px;
+            padding: 28px 32px;
+            margin: 40px 0;
+        }
+        .summary-card h3 { color: #fff; margin-top: 0; font-size: 18px; }
+        .summary-card ul { padding-left: 20px; }
+        .summary-card li { margin-bottom: 8px; color: rgba(255,255,255,0.88); }
+
+        footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 13px; color: var(--muted); }
+        footer a { color: var(--accent2); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            background: rgba(253, 251, 247, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #D4A84B;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+        .nav-logo:hover { color: #B8922F; }
+        .logo-img { height: 36px; width: 36px; border-radius: 8px; object-fit: cover; }
+        .nav-menu { display: flex; list-style: none; gap: 30px; }
+        .nav-menu a {
+            color: #5a5a7a;
+            font-weight: 500;
+            padding: 8px 0;
+            text-decoration: none;
+            position: relative;
+        }
+        .nav-menu a:hover, .nav-menu a.active { color: #D4A84B; }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 0 0;
+            font-size: 14px;
+            color: var(--muted);
+            margin-top: 70px;
+        }
+        .breadcrumb a { color: var(--accent2); text-decoration: none; font-weight: 500; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .script-box {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+        .script-box h4 {
+            color: #D4A84B;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+        .script-box pre {
+            margin: 0;
+            background: transparent;
+            padding: 0;
+            font-size: 13px;
+            color: #e2e8f0;
+        }
+
+        @media (max-width: 600px) {
+            h2 { font-size: 19px; }
+            pre { font-size: 12px; padding: 14px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" class="logo-img" alt="旺财">
+            <span>旺财Jarvis</span>
+        </a>
+        <ul class="nav-menu">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="diary.html">📖 成长日记</a></li>
+            <li><a href="skills.html" class="active">💡 技能与功能</a></li>
+            <li><a href="ascend.html">⛰️ 昇腾AI知识</a></li>
+            <li><a href="news.html">🚀 AI新闻日报</a></li>
+            <li><a href="about.html">👤 关于我</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="breadcrumb">
+        <a href="skills.html">← 💡 技能与功能</a>
+        <span>/</span>
+        <span>Hermes Agent</span>
+    </div>
+</div>
+
+<header class="hero">
+    <div class="container">
+        <div class="eyebrow">🤖 AI Agent 深度解析</div>
+        <h1>Hermes Agent：开发者的<br>下一代自主进化 AI 代理</h1>
+        <div class="meta">
+            <span>📦 Nous Research 开源框架</span>
+            <span>📅 整理：2026-04-13</span>
+            <span>🏷️ AI Agent · 自主进化 · macOS 部署</span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <article>
+
+        <div class="intro-note">
+            <strong>💡 前置说明：</strong>Hermes Agent 是由 Nous Research 开发的开源自主 AI 代理框架。本文将从技术原理、核心特性、架构解析三个维度进行深度剖析，并提供<strong>官方一键安装命令</strong>，帮助开发者快速拥有属于自己的自主进化 AI 助手。
+        </div>
+
+        <!-- 一、项目概述 -->
+        <h2><span class="sec-num">一</span>什么是 Hermes Agent？</h2>
+
+        <p>Hermes Agent 是一款面向开发者的<strong>自主式 AI 代理（Autonomous AI Agent）</strong>框架。与传统的 AI 聊天机器人不同，它不只是一个"你问我答"的工具，而是一个能够<strong>理解目标、规划步骤、执行任务、自我修正</strong>的智能系统。</p>
+
+        <div class="callout">
+            <span class="emoji">🏭</span>传统 AI 是你的"顾问"——你问，它答。而 Hermes Agent 是你的"数字实习生"——你告诉它"帮我把这个项目部署到服务器上"，它会自主完成代码检查、环境配置、依赖安装、部署验证等一系列动作，中途遇到问题还会主动向你确认。
+        </div>
+
+        <h3>1.1 核心定位：自主进化的 AI 工作者</h3>
+        <p>Hermes Agent 的核心使命是：将 AI 从"被动回答者"转变为"主动执行者"。它具备以下核心能力：</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>核心能力</th><th>说明</th><th>实际价值</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>目标理解</strong></td><td>理解高层指令，自动拆解为可执行步骤</td><td>你只需要说"What"，它负责"How"</td></tr>
+                    <tr><td><strong>自主规划</strong></td><td>基于 LLM 的 Chain-of-Thought 推理</td><td>中遇到障碍自动回溯调整策略</td></tr>
+                    <tr><td><strong>工具调用</strong></td><td>读写文件、执行终端命令、调用 API</td><td>真正替代人工操作电脑</td></tr>
+                    <td><strong>持续记忆</strong></td><td>持久化本地数据库，跨会话积累经验</td><td>越用越懂你，效率不断提升</td></tr>
+                    <tr><td><strong>自我修正</strong></td><td>执行失败后自动分析原因并重试</td><td>大幅减少人工干预次数</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>1.2 三层核心架构</h3>
+        <p>Hermes Agent 的技术架构分为三层，每一层都有明确的职责分工：</p>
+
+        <div class="diagram">
+感知层（Perception Layer）
+    ├── 指令接收器：解析自然语言指令
+    ├── 上下文管理器：维护会话状态和历史记忆
+    └── 意图分类器：判断用户真实目标
+
+推理层（Reasoning Layer）
+    ├── Chain-of-Thought 推理引擎
+    ├── 任务规划器：将目标拆解为步骤序列
+    ├── 自我反思模块：执行失败时分析原因
+    └── 知识检索：结合长期记忆做决策
+
+执行层（Action Layer）
+    ├── 文件系统工具：读、写、搜索文件
+    ├── 终端工具：执行 shell 命令
+    ├── API 工具：调用外部服务
+    └── 浏览器工具：网页搜索与数据提取
+        </div>
+
+        <h3>1.3 Hermes Agent vs 传统 AI 工具对比</h3>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>对比维度</th><th>传统 AI（ChatGPT 等）</th><th>Hermes Agent</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>交互模式</strong></td><td>单次问答</td><td>持续自主执行</td></tr>
+                    <tr><td><strong>任务执行</strong></td><td>只能给建议</td><td>直接操作文件和终端</td></tr>
+                    <tr><td><strong>记忆能力</strong></td><td>仅限当前会话</td><td>持久化数据库，跨会话积累</td></tr>
+                    <tr><td><strong>错误处理</strong></td><td>报错即停止</td><td>自动分析原因并重试</td></tr>
+                    <tr><td><strong>部署方式</strong></td><td>云服务，完全依赖第三方</td><td>本地运行，完全自主可控</td></tr>
+                    <tr><td><strong>定制化</strong></td><td>有限定制</td><td>完全开源，可深度定制</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 二、技术特性 -->
+        <h2><span class="sec-num">二</span>为什么开发者需要 Hermes Agent？</h2>
+
+        <p>作为开发者，我们每天都在处理大量重复性的技术任务。Hermes Agent 正是为了解决这些痛点而生的。</p>
+
+        <h3>2.1 四大典型应用场景</h3>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>场景</th><th>传统方式</th><th>Hermes Agent 方式</th><th>效率提升</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>代码审查</strong></td><td>手动打开文件，逐行检查</td><td>一句指令，全流程自动完成</td><td>5x+</td></tr>
+                    <tr><td><strong>环境部署</strong></td><td>查文档→输命令→等结果→Debug</td><td>描述目标，自主完成并汇报</td><td>10x+</td></tr>
+                    <tr><td><strong>API 测试</strong></td><td>Postman 配环境，手动填写参数</td><td>直接说"帮我测这个接口并生成报告"</td><td>3x+</td></tr>
+                    <tr><td><strong>文档生成</strong></td><td>复制粘贴，手动编写 Markdown</td><td>自动解析代码生成完整文档</td><td>4x+</td></tr>
+                    <tr><td><strong>日志分析</strong></td><td>手动 grep/wc，分析错误模式</td><td>描述问题，自动扫描并给出诊断</td><td>6x+</td></tr>
+                    <tr><td><strong>代码迁移</strong></td><td>逐文件手动移植和调试</td><td>描述源和目标，自主完成迁移</td><td>8x+</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>2.2 开发者专属特性</h3>
+
+        <h4>🔧 深度终端集成</h4>
+        <p>Hermes Agent 可以直接在您的终端中执行命令，就像一个经验丰富的运维工程师：</p>
+        <pre><code># 你说：帮我把这个 Django 项目部署到 Docker
+# Hermes 自动完成：
+# 1. 检测环境（Docker、Docker Compose 版本）
+# 2. 创建 Dockerfile
+# 3. 配置 docker-compose.yml
+# 4. 构建镜像
+# 5. 启动容器并验证
+# 6. 汇报结果</code></pre>
+
+        <h4>📂 智能文件系统操作</h4>
+        <p>它不只是机械地读写文件，而是理解代码结构和业务逻辑：</p>
+        <pre><code># 你说：帮我把这个 REST API 改成 GraphQL
+# Hermes 会：
+# 1. 扫描现有 API 路由定义
+# 2. 分析数据模型关系
+# 3. 设计 GraphQL Schema
+# 4. 逐步重构每个 endpoint
+# 5. 编写测试验证兼容性</code></pre>
+
+        <h4>🧠 长期记忆与学习</h4>
+        <p>Hermes Agent 会记录每次交互中学到的经验，下次遇到类似问题时自动应用：</p>
+        <div class="diagram">
+第1次：部署失败，原因是 Docker 网络配置错误
+    ↓ 记录到长期记忆库
+第2次：检测到类似的部署任务
+    ↓ 自动应用上次学到的经验
+    ↓ 跳过常见错误，直接使用正确配置
+    ↓ 成功！耗时减少 80%</div>
+
+        <!-- 三、MacOS 部署指南 -->
+        <h2><span class="sec-num">三</span>MacOS 快速部署指南（独立环境）</h2>
+
+        <p>我们推荐使用<strong>独立 Conda 环境</strong>来部署 Hermes Agent，实现与系统 Python 环境的完美隔离，避免依赖冲突。同时提供<strong>一键安装脚本</strong>，让部署变得前所未有的简单。</p>
+
+        <h3>3.1 前置要求检查</h3>
+        <p>在开始之前，请确保您的 Mac 满足以下条件：</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>要求项</th><th>最低版本</th><th>推荐版本</th><th>检查命令</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>macOS</strong></td><td>12.0 Monterey</td><td>13.0 Ventura+</td><td>sw_vers</td></tr>
+                    <tr><td><strong>芯片</strong></td><td>Apple Silicon M1/M2/M3/M4</td><td>M2 Pro/Max 以上</td><td>uname -m</td></tr>
+                    <tr><td><strong>Homebrew</strong></td><td>-</td><td>最新稳定版</td><td>brew --version</td></tr>
+                    <tr><td><strong>Conda</strong></td><td>Miniconda 23.x</td><td>Miniconda 24.x</td><td>conda --version</td></tr>
+                    <tr><td><strong>内存</strong></td><td>8GB</td><td>16GB+</td><td>sysctl hw.memsize</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>3.2 一、安装 Homebrew（如果还没有）</h3>
+        <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
+
+        <h3>3.3 二、安装 Miniconda</h3>
+        <pre><code># 下载 Miniconda 安装脚本
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+
+# 运行安装（按提示操作）
+bash Miniconda3-latest-MacOSX-arm64.sh
+
+# 初始化 conda（安装程序会自动提示，回复 yes）
+source ~/miniconda3/bin/activate
+conda init zsh</code></pre>
+
+        <h3>3.4 三、官方一键安装（推荐）</h3>
+
+        <p>Hermes Agent 官方提供了<strong>一条命令搞定一切</strong>的安装方式，真正实现"零依赖、零配置"。官方使用 <code>uv</code> 作为包管理器（比 pip 快 10-100 倍），自动处理 Python 版本、环境隔离、依赖安装。</p>
+
+        <div class="script-box">
+            <h4>📜 官方一键安装命令</h4>
+            <pre><code># 官方一键安装（一条命令搞定一切）
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
+        </div>
+
+        <h3>3.5 四、官方安装步骤详解</h3>
+
+        <h4>Step 1：一键安装</h4>
+        <pre><code># 在终端执行这条命令，即可完成全部安装
+# 自动安装 uv、Python 3.11、克隆仓库、配置环境
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
+
+        <h4>Step 2：配置模型</h4>
+        <pre><code># 交互式配置向导（推荐首次使用）
+hermes setup
+
+# 或者手动选择模型提供商
+hermes model</code></pre>
+        <p>支持以下模型接入方式：</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>接入方式</th><th>说明</th><th>适用场景</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Nous Portal</strong></td><td>OAuth 一键授权</td><td>官方推荐，最简单</td></tr>
+                    <tr><td><strong>OpenRouter</strong></td><td>API Key 接入 200+ 模型</td><td>需要 OpenRouter 账号</td></tr>
+                    <tr><td><strong>自定义 API</strong></td><td>任何 OpenAI 兼容端点</td><td>自建模型服务</td></tr>
+                    <tr><td><strong>本地 vLLM</strong></td><td>完全本地化运行</td><td>隐私敏感场景</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h4>Step 3：开始对话</h4>
+        <pre><code># 启动完整的交互式 CLI
+hermes</code></pre>
+
+        <h4>Step 4：接入多平台消息（可选）</h4>
+        <pre><code># 引导式配置 Telegram/Discord/Slack/WhatsApp
+hermes gateway setup
+
+# 启动消息网关
+hermes gateway
+
+# 安装为系统服务（后台运行）
+hermes gateway install</code></pre>
+
+        <h4>Step 5：保持更新</h4>
+        <pre><code># 一键更新到最新版本
+hermes update</code></pre>
+
+        <div class="highlight-box info">
+            <div class="hb-title">💡 官方安装优势</div>
+            官方安装脚本使用 <strong>uv</strong> 包管理器，自动处理 Python 版本、环境隔离、所有依赖安装。无需 sudo 权限，一条命令即可完成全部配置。同时支持自动更新功能，确保始终使用最新版本。<br><br>
+            <strong>系统要求：</strong>Linux、macOS 或 WSL2（Windows 原生支持仍在实验中）
+        </div>
+
+        <!-- 四、安全性建议 -->
+        <h2><span class="sec-num">四</span>安全性建议</h2>
+
+        <p>Hermes Agent 是一个功能强大的自主执行框架，在带来便利的同时也需要注意安全风险。以下是我们整理的 5 条黄金安全法则：</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>序号</th><th>安全建议</th><th>具体做法</th><th>风险等级</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><strong>🔑 API Key 安全</strong></td><td>绝不把 Key 硬编码进代码或脚本，使用 .env 文件管理，并确保 .env 在 .gitignore 中</td><td>🔴 高</td></tr>
+                    <tr><td>2</td><td><strong>🏛️ 权限最小化</strong></td><td>在 config 中设置 Agent 的操作权限范围，敏感操作开启"审批模式"</td><td>🔴 高</td></tr>
+                    <tr><td>3</td><td><strong>📂 文件操作审计</strong></td><td>定期检查 <code>~/.hermes/logs/</code> 中的操作日志，审计所有文件修改记录</td><td>🟡 中</td></tr>
+                    <tr><td>4</td><td><strong>🌐 网络隔离</strong></td><td>生产环境建议配合 VPN 或代理使用，避免 Agent 直连不可信的外部服务</td><td>🟡 中</td></tr>
+                    <tr><td>5</td><td><strong>🔄 依赖更新</strong></td><td>定期运行 <code>pip list --outdated</code> 检查安全更新，及时修补漏洞</td><td>🟢 低</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- 五、总结 -->
+        <h2><span class="sec-num">五</span>总结与展望</h2>
+
+        <div class="summary-card">
+            <h3>🎯 一句话总结</h3>
+            <p style="margin-bottom: 16px; color: rgba(255,255,255,0.9);">Hermes Agent 把开发者从"执行者"解放成"指挥者"——<strong>你只需要定义 What，让它负责 How。</strong></p>
+            <h3 style="margin-top: 16px;">📋 核心要点回顾</h3>
+            <ul>
+                <li><strong>架构清晰</strong>：感知层 → 推理层 → 执行层，三层分工明确</li>
+                <li><strong>能力强大</strong>：目标理解、自主规划、工具调用、持续记忆、自我修正</li>
+                <li><strong>部署简单</strong>：官方一条命令安装，零配置，5 分钟完成</li>
+                <li><strong>完全可控</strong>：本地运行，开源可控，数据不出本地</li>
+                <li><strong>安全第一</strong>：遵循最小权限原则，定期审计操作日志</li>
+            </ul>
+        </div>
+
+        <h3>🚀 官方一键安装（最简方式）</h3>
+        <p>只需执行以下<strong>一条命令</strong>，即可完成全部部署工作：</p>
+
+        <pre><code># 官方一键安装（推荐）
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash</code></pre>
+
+        <div class="callout">
+            <span class="emoji">🚀</span>通过官方<strong>一条命令安装</strong>，您可以在 5 分钟内完成 Hermes Agent 的完整安装配置。整个过程全自动完成，包括 uv 包管理器安装、Python 3.11 配置、环境隔离、依赖安装。官方安装还支持<strong>自动更新</strong>和<strong>多平台消息网关</strong>（Telegram/Discord/Slack/WhatsApp），是体验最完整的部署方式！
+        </div>
+
+        <!-- 六、参考资料 -->
+        <h2><span class="sec-num">六</span>参考资料</h2>
+        <ul>
+            <li>Hermes Agent 官网：<a href="https://hermes-agent.nousresearch.com/" target="_blank">https://hermes-agent.nousresearch.com/</a></li>
+            <li>Nous Research GitHub：<a href="https://github.com/nousresearch/hermes-agent" target="_blank">https://github.com/nousresearch/hermes-agent</a></li>
+            <li>MiniMax API 文档：<a href="https://platform.minimax.io/docs/token-plan/hermes-agent" target="_blank">MiniMax 集成指南</a></li>
+        </ul>
+
+    </article>
+</main>
+
+<footer>
+    <div class="container">
+        本文由 <a href="https://www.jarviswangcai.top/">旺财Jarvis</a> 团队整理编写，内容基于 Hermes Agent 官方文档及社区实践。
+    </div>
+</footer>
+
+</body>
+</html>
